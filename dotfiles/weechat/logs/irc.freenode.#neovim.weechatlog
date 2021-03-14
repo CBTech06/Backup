@@ -1,0 +1,837 @@
+2020-02-29 13:20:14	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #neovim
+2020-02-29 13:20:14	--	Topic for #neovim is "Register with NickServ to talk | Vim fork focused on extensibility and usability -- https://github.com/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim -- Gitter: https://gitter.im/neovim/neovim"
+2020-02-29 13:20:14	--	Topic set by jamessan (~jamessan@debian/developer/jamessan) on Thu, 27 Sep 2018 03:36:33
+2020-02-29 13:20:14	--	Channel #neovim: 1181 nicks (0 ops, 0 voices, 1181 normals)
+2020-02-29 13:20:16	--	Channel created on Fri, 31 Jan 2014 17:44:47
+2020-02-29 13:20:19	captainchris	hello everybody 
+2020-02-29 13:21:30	captainchris	it is possible to use bold font for c++ words like using namespace std::cout ... 
+2020-02-29 13:21:34	captainchris	like geany 
+2020-02-29 13:22:18	-->	threenuc__ (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has joined #neovim
+2020-02-29 13:24:29	<--	threenuc_ (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has quit (Ping timeout: 240 seconds)
+2020-02-29 13:25:38	-->	ahmed_elgabri (~ahmedelga@92.223.89.133) has joined #neovim
+2020-02-29 13:28:09	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f023:90e2:44d9:59ca) has quit (Ping timeout: 240 seconds)
+2020-02-29 13:28:13	-->	pxs (~pxs@176.60.177.40) has joined #neovim
+2020-02-29 13:31:28	<--	ahmed_elgabri (~ahmedelga@92.223.89.133) has quit (Read error: Connection reset by peer)
+2020-02-29 13:32:47	-->	ahmed_elgabri (~ahmedelga@92.223.89.133) has joined #neovim
+2020-02-29 13:37:25	-->	chargen (~chargen@12.111.135.37.dynamic.jazztel.es) has joined #neovim
+2020-02-29 13:45:14	-->	threenuc_ (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has joined #neovim
+2020-03-17 17:33:23	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #neovim
+2020-03-17 17:33:23	--	Topic for #neovim is "Register with NickServ to talk | Vim fork focused on extensibility and usability -- https://github.com/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim -- Gitter: https://gitter.im/neovim/neovim"
+2020-03-17 17:33:23	--	Topic set by jamessan (~jamessan@debian/developer/jamessan) on Thu, 27 Sep 2018 03:36:33
+2020-03-17 17:33:23	--	Channel #neovim: 1242 nicks (0 ops, 0 voices, 1242 normals)
+2020-03-17 17:33:25	--	Channel created on Fri, 31 Jan 2014 17:44:47
+2020-03-17 17:33:39	<--	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-03-17 17:34:11	-->	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined #neovim
+2020-03-17 17:35:20	<--	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has quit (Quit: ZNC 1.8.x-nightly-20190530-13450c7f - https://znc.in)
+2020-03-17 17:35:21	<--	mega_mar11 (~mega_marw@p57B83304.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-03-17 17:35:21	<--	cottoneyejim (~cottoneye@95.155.56.31) has quit (Ping timeout: 256 seconds)
+2020-03-17 17:35:33	captainchris	hi everybody 
+2020-03-17 17:35:51	captainchris	I need to install colorscheme purify https://github.com/kyoz/purify/blob/master/vim/colors/purify.vim
+2020-03-17 17:36:04	captainchris	but i have lot's of errors
+2020-03-17 17:36:12	captainchris	E117: Unknown function: purify#get_colors
+2020-03-17 17:36:26	captainchris	E121: Undefined variable: s:colors
+2020-03-17 17:36:35	captainchris	E15: Invalid expression: s:colors.green
+2020-03-17 17:36:43	captainchris	do you have an idea ??
+2020-03-17 17:37:00	<--	vivtorok (~jackdanie@91.126.18.115) has quit (Quit: vivtorok)
+2020-03-17 17:37:30	-->	jackdaniels (~jackdanie@91.126.18.115) has joined #neovim
+2020-03-17 17:38:51	-->	mega_mar11 (~mega_marw@p5084A3B2.dip0.t-ipconnect.de) has joined #neovim
+2020-03-17 17:39:01	<--	that_lurker (~that_lurk@cable-tku-50ddf8-209.dhcp.inet.fi) has quit (Ping timeout: 265 seconds)
+2020-03-17 17:39:29	<--	jackdaniels (~jackdanie@91.126.18.115) has quit (Client Quit)
+2020-03-17 17:40:01	-->	jackdaniels (~jackdanie@91.126.18.115) has joined #neovim
+2020-03-17 17:41:17	-->	that_lurker (~that_lurk@cable-tku-50ddf8-209.dhcp.inet.fi) has joined #neovim
+2020-03-17 17:41:28	BenJacksonGitter	https://github.com/kyoz/purify/tree/master/vim#installation
+2020-03-17 17:42:02	<--	mega_marw1 (~mega_marw@p5084AA30.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2020-03-17 17:42:09	<--	jackdaniels (~jackdanie@91.126.18.115) has quit (Client Quit)
+2020-03-17 17:42:55	-->	jackdaniels (~jackdanie@91.126.18.115) has joined #neovim
+2020-03-17 17:43:26	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.7.1)
+2020-03-17 17:43:47	-->	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has joined #neovim
+2020-03-17 17:52:59	-->	fooobarrr (~fooobarrr@marangoni.bu.edu) has joined #neovim
+2020-03-17 17:52:59	<--	fooobarrr (~fooobarrr@marangoni.bu.edu) has quit (Changing host)
+2020-03-17 17:52:59	-->	fooobarrr (~fooobarrr@unaffiliated/fooobarrr) has joined #neovim
+2020-03-17 17:53:12	--	jackdaniels is now known as vivtorok
+2020-03-17 17:53:24	<--	vivtorok (~jackdanie@91.126.18.115) has quit (Quit: vivtorok)
+2020-03-17 17:54:07	-->	jackdaniels (~jackdanie@91.126.18.115) has joined #neovim
+2020-03-17 17:55:51	<--	jackdaniels (~jackdanie@91.126.18.115) has quit (Client Quit)
+2020-03-17 17:56:27	-->	jackdaniels (~jackdanie@91.126.18.115) has joined #neovim
+2020-03-17 17:56:41	--	jackdaniels is now known as vivtorok
+2020-03-17 17:57:35	<--	vivtorok (~jackdanie@91.126.18.115) has quit (Client Quit)
+2020-03-17 17:58:04	-->	jackdaniels (~jackdanie@91.126.18.115) has joined #neovim
+2020-03-17 17:58:39	<--	deevus (~simon@101.114.4.73) has quit (Ping timeout: 240 seconds)
+2020-03-17 18:02:09	-->	tototest99 (~Thunderbi@agrenoble-552-1-294-220.w92-129.abo.wanadoo.fr) has joined #neovim
+2020-03-17 18:04:18	<--	Neurognostic (~neurognos@gateway/tor-sasl/neurognostic) has quit (Quit: Leaving)
+2020-03-17 18:04:58	<--	chargen (~chargen@166.108.135.37.dynamic.jazztel.es) has quit (Quit: BBL)
+2020-03-17 18:12:11	<--	ktilcu (~ktilcu@47.201.184.114) has quit (Ping timeout: 256 seconds)
+2020-03-17 18:14:53	-->	ktilcu (~ktilcu@47.201.184.114) has joined #neovim
+2020-03-17 18:15:18	--	jackdaniels is now known as vivtorok
+2020-03-17 18:17:34	-->	chargen (~chargen@166.108.135.37.dynamic.jazztel.es) has joined #neovim
+2020-03-17 18:19:22	-->	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has joined #neovim
+2020-03-17 18:20:15	-->	natechan (~natechan@108-233-125-227.lightspeed.sntcca.sbcglobal.net) has joined #neovim
+2020-03-17 18:21:49	<--	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has quit (Ping timeout: 256 seconds)
+2020-03-17 18:25:35	-->	deevus (~simon@101.114.4.73) has joined #neovim
+2020-03-17 18:31:31	<--	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Remote host closed the connection)
+2020-03-17 18:31:53	<--	vivtorok (~jackdanie@91.126.18.115) has quit (Quit: vivtorok)
+2020-03-17 18:32:07	-->	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined #neovim
+2020-03-17 18:33:01	<--	KRootGitter[m] (gitterkrae@gateway/shell/matrix.org/x-vuhdwfbhddoahtlh) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	TaeWonHaGitter[m (gitterqvac@gateway/shell/matrix.org/x-mtzxgzixobrfyllb) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	lerleriver[m] (lerleriver@gateway/shell/matrix.org/x-kxszdzffqyfpmapo) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	UrmishShahGitter (gittersurm@gateway/shell/matrix.org/x-hwengcaptidpbgxj) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	BagratAznauryanG (gitterbagr@gateway/shell/matrix.org/x-kpenzrqnyeqztias) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	NDc2MTc2Njk2ZTZm (gitterbyte@gateway/shell/matrix.org/x-fyxjuxtaoyyfedty) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	MarcusKlaasdeVri (gitterma3@gateway/shell/matrix.org/x-pomagcctzcasiaft) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	swampertx[m] (swampertxm@gateway/shell/matrix.org/x-wzyrwgcjzvilgand) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:01	<--	MatthieuCoudronG (gitterteto@gateway/shell/matrix.org/x-tbusssrlcwewhmws) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:11	-->	lerleriver[m] (lerleriver@gateway/shell/matrix.org/x-alifzwwxoiqkmptx) has joined #neovim
+2020-03-17 18:33:12	-->	UrmishShahGitter (gittersurm@gateway/shell/matrix.org/x-rjcsgarwikgwzctp) has joined #neovim
+2020-03-17 18:33:12	-->	KRootGitter[m] (gitterkrae@gateway/shell/matrix.org/x-yjmwljpegwtfymds) has joined #neovim
+2020-03-17 18:33:12	-->	TaeWonHaGitter[m (gitterqvac@gateway/shell/matrix.org/x-gekqfedbkpadzsvk) has joined #neovim
+2020-03-17 18:33:12	-->	swampertx[m] (swampertxm@gateway/shell/matrix.org/x-wancahairheqlzir) has joined #neovim
+2020-03-17 18:33:12	-->	BagratAznauryanG (gitterbagr@gateway/shell/matrix.org/x-mtyxrpugmnpdlwdt) has joined #neovim
+2020-03-17 18:33:12	-->	NDc2MTc2Njk2ZTZm (gitterbyte@gateway/shell/matrix.org/x-qeqztevdgpnqxgzx) has joined #neovim
+2020-03-17 18:33:17	-->	MarcusKlaasdeVri (gitterma3@gateway/shell/matrix.org/x-wbehknmpmnnxomzl) has joined #neovim
+2020-03-17 18:33:23	-->	MatthieuCoudronG (gitterteto@gateway/shell/matrix.org/x-maxnkfqjqbdrshah) has joined #neovim
+2020-03-17 18:33:26	<--	geraldodevGitter (gittergera@gateway/shell/matrix.org/x-dyrkquvnpnmtwugu) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	M42trianglesGitt (gitter42tr@gateway/shell/matrix.org/x-tswyxlmagxvaxvrl) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	JamesMcCoyGitter (gitterja2@gateway/shell/matrix.org/x-okhrdgicnpurpyoh) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	ragavkumarvGitte (gitterraga@gateway/shell/matrix.org/x-xukcfopdsxcynpfk) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	SassanHaradjiGit (gittersass@gateway/shell/matrix.org/x-lzyhofxjdjnkyyzs) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	oni-linkGitter[m (gitteroni-@gateway/shell/matrix.org/x-irdiowietcmvljae) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	bokwoon95Gitter[ (gitterbokw@gateway/shell/matrix.org/x-uyuofcqsfomddtaa) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	ANGkeithGitter[m (gitterangk@gateway/shell/matrix.org/x-eatwuzbpkiobplcx) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	CinghioPinghioGi (gittercing@gateway/shell/matrix.org/x-siflwacsrrsozbtt) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	SiresGitter[m] (gitter1sir@gateway/shell/matrix.org/x-ifsfxevtoqodnvcf) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	TyOverbyGitter[m (gittertyro@gateway/shell/matrix.org/x-ambtctohlfvllkpu) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:26	<--	qinggueeGitter[m (gitterqing@gateway/shell/matrix.org/x-jyeyhccgcmopbxxi) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:33:36	-->	ANGkeithGitter[m (gitterangk@gateway/shell/matrix.org/x-wfkzxnrpmgdqyjae) has joined #neovim
+2020-03-17 18:33:38	<--	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2020-03-17 18:33:39	-->	geraldodevGitter (gittergera@gateway/shell/matrix.org/x-srnrkerruqdbnkeo) has joined #neovim
+2020-03-17 18:33:40	-->	TyOverbyGitter[m (gittertyro@gateway/shell/matrix.org/x-yorkgfjnxxxsqbwy) has joined #neovim
+2020-03-17 18:33:41	-->	qinggueeGitter[m (gitterqing@gateway/shell/matrix.org/x-istcmsopuvayxkap) has joined #neovim
+2020-03-17 18:34:16	<--	RussellKenningto (gitterarus@gateway/shell/matrix.org/x-yonpxzcobcmzvnyx) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:34:16	<--	RobinSkahjem-Eri (gitteriron@gateway/shell/matrix.org/x-leijnubofzqxkgts) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:34:16	<--	b-r-o-c-kGitter[ (gitterb-r-@gateway/shell/matrix.org/x-axbeazmzdufskkcv) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:34:23	-->	RussellKenningto (gitterarus@gateway/shell/matrix.org/x-mokgiewdmsyjepeg) has joined #neovim
+2020-03-17 18:34:23	-->	RobinSkahjem-Eri (gitteriron@gateway/shell/matrix.org/x-zhsvogsoudqytfcc) has joined #neovim
+2020-03-17 18:34:41	<--	JeremyStewardGit (gitterth1@gateway/shell/matrix.org/x-jsvwxeudpbjrxowx) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:34:47	-->	JeremyStewardGit (gitterth1@gateway/shell/matrix.org/x-rabnzrhywovmkcwi) has joined #neovim
+2020-03-17 18:34:49	<--	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:b92c:c680:82ef:7361) has quit (Quit: WeeChat 2.7.1)
+2020-03-17 18:34:55	-->	JamesMcCoyGitter (gitterja2@gateway/shell/matrix.org/x-ocfcinpjwozyrnna) has joined #neovim
+2020-03-17 18:34:56	-->	bokwoon95Gitter[ (gitterbokw@gateway/shell/matrix.org/x-hraoahmmolzzowcd) has joined #neovim
+2020-03-17 18:34:56	-->	SiresGitter[m] (gitter1sir@gateway/shell/matrix.org/x-nqmjucfuoikqhuqt) has joined #neovim
+2020-03-17 18:34:56	-->	M42trianglesGitt (gitter42tr@gateway/shell/matrix.org/x-hbzwcyanwdqulwgl) has joined #neovim
+2020-03-17 18:34:56	-->	CinghioPinghioGi (gittercing@gateway/shell/matrix.org/x-ignknzyclydbwhem) has joined #neovim
+2020-03-17 18:34:57	-->	oni-linkGitter[m (gitteroni-@gateway/shell/matrix.org/x-qnxslzijfydsvjdl) has joined #neovim
+2020-03-17 18:34:57	-->	fmns[m] (fmnsmatrix@gateway/shell/matrix.org/x-swebjhjbuxgyxmad) has joined #neovim
+2020-03-17 18:34:59	-->	ragavkumarvGitte (gitterraga@gateway/shell/matrix.org/x-nlnxyegwtgukvkll) has joined #neovim
+2020-03-17 18:35:04	-->	SassanHaradjiGit (gittersass@gateway/shell/matrix.org/x-xkdijlrqmwijfouu) has joined #neovim
+2020-03-17 18:35:27	-->	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has joined #neovim
+2020-03-17 18:36:00	-->	b-r-o-c-kGitter[ (gitterb-r-@gateway/shell/matrix.org/x-qvieydnedbdfovrq) has joined #neovim
+2020-03-17 18:36:33	<--	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-03-17 18:36:38	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:b92c:c680:82ef:7361) has joined #neovim
+2020-03-17 18:37:14	<--	pxs (~pxs@176.60.139.209) has quit (Read error: Connection reset by peer)
+2020-03-17 18:37:24	-->	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined #neovim
+2020-03-17 18:40:41	<--	oFrog (~pavlo.bla@78-10-229-167.static.ip.netia.com.pl) has quit (Ping timeout: 250 seconds)
+2020-03-17 18:47:36	<--	SteveVermeulenGi (gittersver@gateway/shell/matrix.org/x-emffkgewkgpyqobo) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:47:43	-->	SteveVermeulenGi (gittersver@gateway/shell/matrix.org/x-vkkdvznsvohzlunx) has joined #neovim
+2020-03-17 18:49:16	<--	Gitter[m]7 (gitterveri@gateway/shell/matrix.org/x-yhqecfxjvnyjrdii) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	ArithranThuraire (gitterarit@gateway/shell/matrix.org/x-jhdwsflzporbemia) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	ovkGitter[m] (gitterovkm@gateway/shell/matrix.org/x-teoatnamcdjkhyod) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	cgntrn[m] (cgntrnmatr@gateway/shell/matrix.org/x-dqroabxyfjmaaugn) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	KartikAgaramGitt (gitterakka@gateway/shell/matrix.org/x-kxhnjkkhwcmnvrgf) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	StevenDobayGitte (gitterstev@gateway/shell/matrix.org/x-otwdrbqtkcbowwef) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	AbhijeetGitter[m (gitterab6@gateway/shell/matrix.org/x-lpuxjpkgpmhfxwwu) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	RobertMeltonGitt (gitterro1@gateway/shell/matrix.org/x-mwqzjsvnvacyqjpr) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:16	<--	JrmeReybertGitte (gitterjrey@gateway/shell/matrix.org/x-syzlvmdslwccrimz) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:49:24	-->	ArithranThuraire (gitterarit@gateway/shell/matrix.org/x-ogfakyzaqztuiusc) has joined #neovim
+2020-03-17 18:49:25	-->	AbhijeetGitter[m (gitterab6@gateway/shell/matrix.org/x-rkdkrjwutenvrnyp) has joined #neovim
+2020-03-17 18:49:25	-->	RobertMeltonGitt (gitterro1@gateway/shell/matrix.org/x-cqqkmevxcvuohabu) has joined #neovim
+2020-03-17 18:49:25	-->	StevenDobayGitte (gitterstev@gateway/shell/matrix.org/x-ncntlpmszqtcorxt) has joined #neovim
+2020-03-17 18:49:25	-->	ovkGitter[m] (gitterovkm@gateway/shell/matrix.org/x-rfjwrzfsynhrjlij) has joined #neovim
+2020-03-17 18:49:25	-->	Gitter[m]7 (gitterveri@gateway/shell/matrix.org/x-melcrdsosnddeknc) has joined #neovim
+2020-03-17 18:49:25	-->	cgntrn[m] (cgntrnmatr@gateway/shell/matrix.org/x-siptewdewqhzzqqk) has joined #neovim
+2020-03-17 18:49:25	-->	JrmeReybertGitte (gitterjrey@gateway/shell/matrix.org/x-ltomnsjhalgeukfn) has joined #neovim
+2020-03-17 18:49:26	-->	KartikAgaramGitt (gitterakka@gateway/shell/matrix.org/x-xevdnggmtpsqnzvu) has joined #neovim
+2020-03-17 18:50:06	<--	OndejKintGitter[ (gittertoas@gateway/shell/matrix.org/x-xacjaboijhrqamon) has quit (Ping timeout: 245 seconds)
+2020-03-17 18:50:13	-->	OndejKintGitter[ (gittertoas@gateway/shell/matrix.org/x-rsuuywxtqchxdyfa) has joined #neovim
+2020-03-17 18:51:55	-->	chunkhan1 (~chunkhang@175.137.62.150) has joined #neovim
+2020-03-17 18:56:26	<--	chunkhan1 (~chunkhang@175.137.62.150) has quit (Ping timeout: 264 seconds)
+2020-03-17 18:57:51	<--	Finlay (~FPD@5.151.46.55) has quit (Read error: Connection reset by peer)
+2020-03-17 18:58:06	-->	Finlay (~FPD@5.151.46.55) has joined #neovim
+2020-03-17 18:58:34	-->	DibbTubberOne (~DibbDibbe@2a02:908:961:67e0:3273:4053:e4a5:4c76) has joined #neovim
+2020-03-17 19:01:17	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:b92c:c680:82ef:7361) has quit (Ping timeout: 272 seconds)
+2020-03-17 19:04:46	<--	chargen (~chargen@166.108.135.37.dynamic.jazztel.es) has quit (Quit: BBL)
+2020-03-17 19:06:01	<--	tofulm (~tofulm@129.161.185.81.rev.sfr.net) has quit (Ping timeout: 256 seconds)
+2020-03-17 19:06:05	-->	ZubairAbidGitter (gitterzuba@gateway/shell/matrix.org/x-cfklhlxkngjtfgik) has joined #neovim
+2020-03-17 19:06:05	ZubairAbidGitter	For GSoC this year
+2020-03-17 19:06:21	ZubairAbidGitter	What does the "Support for Lua plugins and configuration" project entail?
+2020-03-17 19:07:06	<--	acardace (~acardace@host73-49-dynamic.55-79-r.retail.telecomitalia.it) has quit (Quit: Leaving)
+2020-03-17 19:07:15	-->	TheFuzzball (~TheFuzzba@149.22.7.223) has joined #neovim
+2020-03-17 19:07:43	-->	oFrog (~pavlo.bla@78-10-229-167.static.ip.netia.com.pl) has joined #neovim
+2020-03-17 19:10:21	<--	gravitron (~gravity@2604:180:3:677::8dba) has quit (Quit: ZNC 1.6.1+deb1~ubuntu14.04.0 - http://znc.in)
+2020-03-17 19:12:45	<--	coellobranco (~FoRcEr@44.113.165.83.dynamic.reverse-mundo-r.com) has quit (Quit: Leaving)
+2020-03-17 19:12:58	jaawerth[m]	zubairabid: right now there's not really a unified API for lua plugins beyond the package.path syncing with runtimepath and the regular lua require system
+2020-03-17 19:13:09	jaawerth[m]	and there's no real autoloading for it iwthout including some viml bits
+2020-03-17 19:13:23	jaawerth[m]	so there's still a need for standardized lua plugin management/config apis of some sort
+2020-03-17 19:14:43	-->	coellobranco (~FoRcEr@44.113.165.83.dynamic.reverse-mundo-r.com) has joined #neovim
+2020-03-17 19:19:53	-->	tofulm (~tofulm@81.238.125.78.rev.sfr.net) has joined #neovim
+2020-03-17 19:21:10	-->	mega_marw1 (~mega_marw@p5DC1C22A.dip0.t-ipconnect.de) has joined #neovim
+2020-03-17 19:21:40	jaawerth[m]	oh you probably mean like what specifically is on the todo list for it lol
+2020-03-17 19:23:45	-->	chunkhan1 (~chunkhang@175.137.62.150) has joined #neovim
+2020-03-17 19:24:38	<--	mega_mar11 (~mega_marw@p5084A3B2.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2020-03-17 19:25:31	<--	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has quit (Remote host closed the connection)
+2020-03-17 19:28:07	<--	chunkhan1 (~chunkhang@175.137.62.150) has quit (Ping timeout: 256 seconds)
+2020-03-17 19:32:25	smolckGitter[m]	I hope `init.lua` ;)
+2020-03-17 19:32:49	jaawerth[m]	that would be a good first step, yes ;-)
+2020-03-17 19:35:22	-->	FPD (~FPD@5.151.46.55) has joined #neovim
+2020-03-17 19:35:33	<--	Finlay (~FPD@5.151.46.55) has quit (Read error: Connection reset by peer)
+2020-03-17 19:36:45	-->	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has joined #neovim
+2020-03-17 19:37:56	<--	raichoo (~raichoo@dslb-092-073-195-121.092.073.pools.vodafone-ip.de) has quit (Quit: Lost terminal)
+2020-03-17 19:41:33	-->	cschneid- (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined #neovim
+2020-03-17 19:42:02	<--	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 264 seconds)
+2020-03-17 19:43:32	ZubairAbidGitter	@jaawerth:matrix.org yeah, but knowing that helps too, thanks
+2020-03-17 19:43:37	<--	TheFuzzball (~TheFuzzba@149.22.7.223) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-17 19:46:45	ZubairAbidGitter	So it would help to take a look at how plugins are written in lua, if I'm getting this right?
+2020-03-17 19:49:50	jaawerth[m]	I'm guessing from the quote you already saw https://github.com/neovim/neovim/wiki/GSoC-2020-Ideas#support-for-Lua-plugins-and-configuration right? beyond what's there, since it's a gsoc thing, and bfredl and norcalli are listed as mentors for it, they likely have some thoughts on this and maybe even good places to start
+2020-03-17 19:50:33	jaawerth[m]	(one of 'em will probably chime in when they see this ;-) )
+2020-03-17 19:51:36	jaawerth[m]	but yeah looking at existing lua plugins would be a good start. they aren't always easy to find but one I know of offhand is nvimux. oh and iron.nvim
+2020-03-17 19:52:48	BjrnLinseGitter[	yea that project is a bit open ended.
+2020-03-17 19:52:48	jaawerth[m]	I've got one, but it would probably be confusing as a reference since it's entirely there to bridge lua to fennel, and I've got a (paused) rewrite that I'll probably resume amid the pandemic lockin to rewrite it entirely in precompiled fennel
+2020-03-17 19:58:08	-->	Finlay (~FPD@5.151.46.55) has joined #neovim
+2020-03-17 19:58:13	<--	FPD (~FPD@5.151.46.55) has quit (Read error: Connection reset by peer)
+2020-03-17 20:00:01	BjrnLinseGitter[	my country is a bit behind on the lock-in thing but it will happen anytime here soon.
+2020-03-17 20:00:25	BjrnLinseGitter[	"in theory" I should still work 100% on my PHd while at home but we will see how that goes :P
+2020-03-17 20:01:45	jaawerth[m]	I'm not technically locked in but with the social distancing stuff in place in the US it's like.. and it happened while I've been contracting and consulting so I shall have a fair amount of free time for a while depending on what the 100% remote hiring situation looks like
+2020-03-17 20:02:21	jaawerth[m]	I just need to make the most of the free time or I'll regret it
+2020-03-17 20:03:49	<--	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has quit (Ping timeout: 256 seconds)
+2020-03-17 20:05:50	-->	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has joined #neovim
+2020-03-17 20:07:59	BjrnLinseGitter[	"insert random bad joke about social distancing and Scandinavian people"
+2020-03-17 20:08:16	BjrnLinseGitter[	streets almost empty? well that just looks like Tuesday to me :P
+2020-03-17 20:09:34	-->	mega_mar11 (~mega_marw@p57B83442.dip0.t-ipconnect.de) has joined #neovim
+2020-03-17 20:09:38	-->	FreeFull (~freefull@defocus/sausage-lover) has joined #neovim
+2020-03-17 20:10:34	-->	gargantua_kerr[m (gargantuak@gateway/shell/matrix.org/x-fllvuruxtieurkaa) has joined #neovim
+2020-03-17 20:11:11	-->	cottoneyejim (~cottoneye@95.155.56.31) has joined #neovim
+2020-03-17 20:12:53	<--	mega_marw1 (~mega_marw@p5DC1C22A.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-03-17 20:13:05	jaawerth[m]	lol
+2020-03-17 20:14:11	jaawerth[m]	so far this has been a great excuse for me to catch up on such important work as watching the 2000's-era Toho Godzilla movies I hadn't seen yet
+2020-03-17 20:14:44	jaawerth[m]	(in other news, wow Shin Godzilla is great)
+2020-03-17 20:15:01	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:b92c:c680:82ef:7361) has joined #neovim
+2020-03-17 20:19:49	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:b92c:c680:82ef:7361) has quit (Ping timeout: 272 seconds)
+2020-03-17 20:31:33	-->	mega_marw1 (~mega_marw@p57B8300A.dip0.t-ipconnect.de) has joined #neovim
+2020-03-17 20:34:59	<--	mega_mar11 (~mega_marw@p57B83442.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-03-17 20:44:23	-->	sfvm (~sfvm@37.228.247.184) has joined #neovim
+2020-03-17 20:45:18	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #neovim
+2020-03-17 20:45:23	-->	lnds (~lnds@87-60-5-172-dynamic.dk.customer.tdc.net) has joined #neovim
+2020-03-17 20:47:52	-->	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has joined #neovim
+2020-03-17 21:00:08	<--	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2020-03-17 21:03:01	-->	alerque1 (~caleb@213.153.138.205) has joined #neovim
+2020-03-17 21:04:37	-->	jstein (~jstein@gentoo/developer/jstein) has joined #neovim
+2020-03-17 21:09:12	<--	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has quit (Read error: Connection reset by peer)
+2020-03-17 21:09:37	-->	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has joined #neovim
+2020-03-17 21:15:59	<--	Finlay (~FPD@5.151.46.55) has quit
+2020-03-17 21:18:03	<--	sunjon (~sunjon@37-247-17-246.customers.ownit.se) has quit (Ping timeout: 256 seconds)
+2020-03-17 21:18:17	<--	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Remote host closed the connection)
+2020-03-17 21:19:03	-->	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined #neovim
+2020-03-17 21:19:25	-->	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has joined #neovim
+2020-03-17 21:21:25	<--	Trel|Mobile (~Trel@c-76-117-237-163.hsd1.nj.comcast.net) has quit (Quit: Trel|Mobile)
+2020-03-17 21:32:09	-->	mega_mar11 (~mega_marw@p57B83D42.dip0.t-ipconnect.de) has joined #neovim
+2020-03-17 21:34:58	<--	Carp (~rue@1-162-45-127.dynamic-ip.hinet.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-17 21:35:26	<--	mega_marw1 (~mega_marw@p57B8300A.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2020-03-17 21:44:45	-->	irc_user (uid423822@gateway/web/irccloud.com/x-wqyoikyzefahqqfa) has joined #neovim
+2020-03-17 21:44:56	<--	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2020-03-17 21:46:50	<--	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has quit (Ping timeout: 264 seconds)
+2020-03-17 21:47:09	-->	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has joined #neovim
+2020-03-17 21:48:54	gargantua_kerr[m	Hi all, I have been a vim user since a few months, and I tried neovim as well.
+2020-03-17 21:48:54	gargantua_kerr[m	Neovim is pretty cool!
+2020-03-17 21:48:57	gargantua_kerr[m	I was looking forward to contribute; I can program in C to an intermediate level, and have basic idea about Makefiles.
+2020-03-17 21:48:57	-->	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined #neovim
+2020-03-17 21:49:37	<--	cschneid- (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 250 seconds)
+2020-03-17 21:49:45	gargantua_kerr[m	Could someone point me to a few resources to learn a few more stuff, if this seems lacking && also help me get started here?
+2020-03-17 21:50:25	gargantua_kerr[m	PS: I'm not here for GSoC (atleast this year) but just because it looks pretty interesting, :)
+2020-03-17 21:51:36	jaawerth[m]	I'm not one of the core nvim devs, but: the gsoc list can still be a good way to mine contribution ideas - a lot of stuff there can use plenty of help alongside whatever a gsoc student does and/or doesn't get taken on. beyond that I'd suggest looking at the gh issues, particularly the ones in the 0.5.0 milestone
+2020-03-17 21:52:02	<--	DibbTubberOne (~DibbDibbe@2a02:908:961:67e0:3273:4053:e4a5:4c76) has quit (Quit: Leaving)
+2020-03-17 21:52:33	jaawerth[m]	(I'm not much of a contributor to nvim itself at all yet but I've poked around for stuff to do once I hvae time so these are just my own approaches to it)
+2020-03-17 21:53:03	jaawerth[m]	as for stuff to learn, beyond C, nvim uses a lot of lua both internally and as a focus for added support in its apis since the goal is to make it a first class language alongside viml
+2020-03-17 21:53:05	<--	nbits (~nbits@200-162-254-220.corp.ajato.com.br) has quit (Remote host closed the connection)
+2020-03-17 21:53:41	<--	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2020-03-17 21:54:47	jaawerth[m]	if you haven't used lua before, its real easy to learn, especially if you already know other languages
+2020-03-17 21:54:48	-->	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has joined #neovim
+2020-03-17 21:55:11	--	jzelinskie is now known as jzelinskie[m]
+2020-03-17 21:55:28	gargantua_kerr[m	@jaawerth:matrix.org: Thanks!
+2020-03-17 21:55:28	gargantua_kerr[m	Does basic idea about make + C work to 'start' contributing?
+2020-03-17 21:55:39	-->	jzelinskie (sid17772@gateway/web/irccloud.com/x-xquyyyzhouogspyc) has joined #neovim
+2020-03-17 21:55:43	gargantua_kerr[m	@jaawerth:matrix.org: Lua docs look good! Shall start with it, then.
+2020-03-17 21:58:00	<--	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-17 21:59:17	<--	ellcs (~ellcs@200116b868d4e40062f677fffebe55f5.dip.versatel-1u1.de) has quit (Ping timeout: 246 seconds)
+2020-03-17 21:59:55	jaawerth[m]	lua docs are a good resource for sure. and you can do quick lookkups of the docs using devdocs.io or zeal/dash docsets. as a primer/crash course/reference I'm also a big fan of https://learnxinyminutes.com/docs/lua
+2020-03-17 22:01:19	jaawerth[m]	which is particularly useful for folks who've seen so many languages they often get impatient digging through all the verbose exlpanations and lessons and are just want to get their hands dirty
+2020-03-17 22:02:18	BjrnLinseGitter[	gargantua_kerr: intermediate level C sounds good
+2020-03-17 22:02:45	BjrnLinseGitter[	we have tasks marked with "good first issue", which might be a good starting point
+2020-03-17 22:03:26	gargantua_kerr[m	@jaawerth:matrix.org: Many thanks! \o/
+2020-03-17 22:04:31	gargantua_kerr[m	Björn Linse (Gitter): That is helpful. Thanks, and shall take a look, :)
+2020-03-17 22:06:05	BjrnLinseGitter[	another common task is to port vim patches to neovim (which might require some changes due to refactors/different C style in neovim)
+2020-03-17 22:06:57	gargantua_kerr[m	> which is particularly useful for folks who've seen so many languages they often get impatient digging through all the verbose exlpanations and lessons and are just want to get their hands dirty
+2020-03-17 22:06:57	gargantua_kerr[m	This particularly looks nice, it saves me through the complete process of going through entire docs, :)
+2020-03-17 22:08:51	gargantua_kerr[m	> another common task is to port vim patches to neovim (which might require some changes due to refactors/different C style in neovim)
+2020-03-17 22:08:51	gargantua_kerr[m	Sounds good; I'll probably have to first study neovim source code a little before I go about doing that. But thanks for the pointers!
+2020-04-05 10:18:40	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #neovim
+2020-04-05 10:18:40	--	Topic for #neovim is "Register with NickServ to talk | Vim fork focused on extensibility and usability -- https://github.com/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim -- Gitter: https://gitter.im/neovim/neovim"
+2020-04-05 10:18:40	--	Topic set by jamessan (~jamessan@debian/developer/jamessan) on Thu, 27 Sep 2018 03:36:33
+2020-04-05 10:18:40	--	Channel #neovim: 1172 nicks (0 ops, 0 voices, 1172 normals)
+2020-04-05 10:18:42	--	Channel created on Fri, 31 Jan 2014 17:44:47
+2020-04-05 10:18:49	captainchris	hi everybody
+2020-04-05 10:19:16	captainchris	I installed plugin to create latex in neotex with plugged 
+2020-04-05 10:19:35	captainchris	but I don't have :Neotex in nvim 
+2020-04-05 10:19:52	captainchris	I installed vim-latex-live-preview 
+2020-04-05 10:19:59	captainchris	it is the same  problem 
+2020-04-05 10:29:28	-->	linarcx (~linarcx@151.242.161.236) has joined #neovim
+2020-04-05 10:30:42	<--	oFrog (~pavlo.bla@78-10-229-167.static.ip.netia.com.pl) has quit (Ping timeout: 260 seconds)
+2020-04-05 10:33:45	-->	OhYash1 (~Thunderbi@106.79.196.178) has joined #neovim
+2020-04-05 10:35:42	<--	CommanderViral1 (~Commander@2001:19f0:5:4652:5400:1ff:fe88:c679) has quit (Quit: ZNC 1.7.1+deb1+bionic1 - https://znc.in)
+2020-04-05 10:36:01	-->	CommanderViral (~Commander@2001:19f0:5:4652:5400:1ff:fe88:c679) has joined #neovim
+2020-04-05 10:36:13	<--	ohyash (~Thunderbi@106.79.206.237) has quit (Ping timeout: 264 seconds)
+2020-04-05 10:36:13	--	OhYash1 is now known as ohyash
+2020-04-05 10:38:30	<--	amahl (~amahl@87-95-128-122.bb.dnainternet.fi) has quit (Ping timeout: 260 seconds)
+2020-04-05 10:40:04	<--	coellobranco (~FoRcEr@44.113.165.83.dynamic.reverse-mundo-r.com) has quit (Quit: Leaving)
+2020-04-05 10:42:47	-->	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:4110:acba:69db:d652) has joined #neovim
+2020-04-05 10:44:04	-->	cottoneyejim (~cottoneye@95.155.56.31) has joined #neovim
+2020-04-05 10:47:30	<--	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:4110:acba:69db:d652) has quit (Ping timeout: 272 seconds)
+2020-04-05 10:55:35	-->	oFrog (~pavlo.bla@78-10-229-167.static.ip.netia.com.pl) has joined #neovim
+2020-04-05 10:55:43	<--	choco (~choco@139.59.214.16) has quit (Read error: Connection reset by peer)
+2020-04-05 10:56:07	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Ping timeout: 240 seconds)
+2020-04-05 10:56:22	-->	tototest99 (~Thunderbi@agrenoble-651-1-475-33.w90-42.abo.wanadoo.fr) has joined #neovim
+2020-04-05 10:57:52	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-05 11:08:47	<--	ohyash (~Thunderbi@106.79.196.178) has quit (Ping timeout: 265 seconds)
+2020-04-05 11:10:34	<--	cottoneyejim (~cottoneye@95.155.56.31) has quit (Quit: cottoneyejim)
+2020-04-18 19:24:31	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #neovim
+2020-04-18 19:24:31	--	Topic for #neovim is "Register with NickServ to talk | Vim fork focused on extensibility and usability -- https://github.com/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim -- Gitter: https://gitter.im/neovim/neovim"
+2020-04-18 19:24:31	--	Topic set by jamessan (~jamessan@debian/developer/jamessan) on Thu, 27 Sep 2018 03:36:33
+2020-04-18 19:24:31	--	Channel #neovim: 1058 nicks (0 ops, 0 voices, 1058 normals)
+2020-04-18 19:24:33	--	Channel created on Fri, 31 Jan 2014 17:44:47
+2020-04-18 19:24:35	captainchris	hi everybody 
+2020-04-18 19:25:14	captainchris	Is it possible to color a line with nnoremap ? 
+2020-04-18 19:39:07	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has quit (Ping timeout: 246 seconds)
+2020-04-18 19:41:13	-->	jstein (~jstein@gentoo/developer/jstein) has joined #neovim
+2020-04-18 19:44:24	-->	bitnoize (~mitya@158.255.208.222) has joined #neovim
+2020-04-18 19:46:54	<--	alexherbo2 (~alexherbo@aputeaux-555-1-43-125.w90-43.abo.wanadoo.fr) has quit (Ping timeout: 258 seconds)
+2020-04-18 19:52:16	-->	alexherbo2 (~alexherbo@aputeaux-555-1-43-125.w90-43.abo.wanadoo.fr) has joined #neovim
+2020-04-18 19:53:11	TJDeVriesGitter[	How do you mean? I'm not sure I understand.
+2020-04-18 19:53:12	-->	crose (~weechat@2001:41d0:fe1d:5300:3512:16d2:5d96:3072) has joined #neovim
+2020-04-18 19:54:02	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has joined #neovim
+2020-04-18 19:54:47	-->	ellcs (~ellcs@200116b86896b100d927d2de070929e0.dip.versatel-1u1.de) has joined #neovim
+2020-04-18 19:59:00	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has quit (Ping timeout: 265 seconds)
+2020-04-18 20:18:35	-->	kenji (~kenji@i577B0E81.versanet.de) has joined #neovim
+2020-04-18 20:19:09	<--	mcepl (~matej@195.250.132.148) has quit (Ping timeout: 256 seconds)
+2020-04-18 20:25:03	-->	eater9- (~eater@216-180-84-145.starry-inc.net) has joined #neovim
+2020-04-18 20:25:07	-->	guyzmo (~guyzmo@leloop/guyzmo) has joined #neovim
+2020-04-18 20:25:14	<--	eater9 (~eater@216-180-84-145.starry-inc.net) has quit (Ping timeout: 256 seconds)
+2020-04-18 20:25:57	<--	meain (~meain@103.38.13.102) has quit (Ping timeout: 256 seconds)
+2020-04-18 20:26:27	-->	threenuc (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has joined #neovim
+2020-04-18 20:31:48	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has joined #neovim
+2020-04-18 20:33:45	<--	kenji (~kenji@i577B0E81.versanet.de) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-04-18 20:34:50	-->	kenji (~kenji@i577B0E81.versanet.de) has joined #neovim
+2020-04-18 20:36:04	-->	mcepl (~matej@195.250.132.148) has joined #neovim
+2020-04-18 20:36:10	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has quit (Ping timeout: 246 seconds)
+2020-04-18 20:39:47	<--	bvdw (~bas@5.9.139.181) has quit (Remote host closed the connection)
+2020-04-18 20:46:12	captainchris	TJDeVriesGitter[: I would like to highlight a title. 
+2020-04-18 20:47:25	captainchris	for example  GITHUB HOWTO . I would like hightlight with F4 keys permanatly
+2020-04-18 20:47:47	<--	cryptopsy (~cryptopsy@unaffiliated/cryptopsy) has left #neovim
+2020-04-18 20:48:10	-->	meain (~meain@103.38.13.102) has joined #neovim
+2020-04-18 20:51:53	TJDeVriesGitter[	maybe `matchadd` or `matchaddpos`?
+2020-04-18 20:58:04	-->	bvdw (~bas@5.9.139.181) has joined #neovim
+2020-04-18 20:59:08	captainchris	ok And how to remap the current line ?? 
+2020-04-18 20:59:25	-->	smatting_ (~stefan@p2E50596C.dip0.t-ipconnect.de) has joined #neovim
+2020-04-18 20:59:29	<--	bvdw (~bas@5.9.139.181) has quit (Remote host closed the connection)
+2020-04-18 21:00:22	MatthieuCoudronG	@BK1603 might be simpler to keep your code in backup_utils.c in fileio.c
+2020-04-18 21:00:39	MatthieuCoudronG	is it in a working state ?
+2020-04-18 21:01:33	ShreyanshChouhan	@teto, Yep, the backup is definitely working, and I also got the rename working. I thought seperating the stuff would be better? I can definitely move everything to fileio.c if it is required.
+2020-04-18 21:01:55	TJDeVriesGitter[	`getline('.')`?
+2020-04-18 21:01:57	MatthieuCoudronG	open a PR so one can comment
+2020-04-18 21:02:31	ShreyanshChouhan	@teto Sure
+2020-04-18 21:03:55	<--	smatting_ (~stefan@p2E50596C.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-04-18 21:06:30	ShreyanshChouhan	@teto, done! :)
+2020-04-18 21:06:51	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has joined #neovim
+2020-04-18 21:13:42	MatthieuCoudronG	@BK1603 dont make another PR, create a new clean branch locally, switch to the PR branch and run `git reset --hard <CLEAN_BRANCH>`
+2020-04-18 21:17:16	<--	brtastic (~Thunderbi@2a02:a315:413a:7580:879e:25b4:92ae:7858) has quit (Ping timeout: 272 seconds)
+2020-04-18 21:17:45	<--	meain (~meain@103.38.13.102) has quit (Ping timeout: 258 seconds)
+2020-04-18 21:22:01	-->	raichoo (~raichoo@dslb-092-073-215-143.092.073.pools.vodafone-ip.de) has joined #neovim
+2020-04-18 21:22:17	ShreyanshChouhan	@teto, oh yeah that makes sense, just a minute
+2020-04-18 21:25:57	-->	meain (~meain@103.38.13.102) has joined #neovim
+2020-04-18 21:27:34	<--	tabaqui1 (~tabaqui@46.39.45.169) has quit (Ping timeout: 256 seconds)
+2020-04-18 21:31:50	<--	eljef (eljef@Home.Eljef.Me) has quit (Quit: eljef)
+2020-04-18 21:34:37	ShreyanshChouhan	@teto done!
+2020-04-18 21:35:05	<--	meain (~meain@103.38.13.102) has quit (Ping timeout: 256 seconds)
+2020-04-18 21:38:45	<--	mcepl (~matej@195.250.132.148) has quit (Ping timeout: 264 seconds)
+2020-04-18 21:41:41	<--	ellcs (~ellcs@200116b86896b100d927d2de070929e0.dip.versatel-1u1.de) has quit (Ping timeout: 240 seconds)
+2020-04-18 21:43:19	<--	raichoo (~raichoo@dslb-092-073-215-143.092.073.pools.vodafone-ip.de) has quit (Quit: Lost terminal)
+2020-04-18 21:43:38	-->	mcepl (~matej@195.250.132.148) has joined #neovim
+2020-04-18 21:44:50	-->	eljef (eljef@Home.Eljef.Me) has joined #neovim
+2020-04-18 21:45:00	<--	eljef (eljef@Home.Eljef.Me) has quit (Client Quit)
+2020-04-18 21:48:14	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has quit (Ping timeout: 265 seconds)
+2020-04-18 21:49:43	-->	eljef (eljef@Home.Eljef.Me) has joined #neovim
+2020-04-18 21:52:30	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:463:4361:bbf4:bd54) has joined #neovim
+2020-04-18 22:02:04	<--	mcepl (~matej@195.250.132.148) has quit (Ping timeout: 256 seconds)
+2020-04-18 22:02:12	-->	mcepl_ (~matej@193.86.92.178) has joined #neovim
+2020-04-18 22:04:15	-->	linarcx (~linarcx@151.241.235.111) has joined #neovim
+2020-04-18 22:06:42	-->	meain (~meain@103.38.13.102) has joined #neovim
+2020-04-18 22:06:50	-->	cryptopsy (~cryptopsy@95.76.17.49) has joined #neovim
+2020-04-18 22:06:50	<--	cryptopsy (~cryptopsy@95.76.17.49) has quit (Changing host)
+2020-04-18 22:06:50	-->	cryptopsy (~cryptopsy@unaffiliated/cryptopsy) has joined #neovim
+2020-04-18 22:11:04	<--	meain (~meain@103.38.13.102) has quit (Ping timeout: 250 seconds)
+2020-04-18 22:12:26	<--	eljef (eljef@Home.Eljef.Me) has quit (Quit: eljef)
+2020-04-18 22:14:38	<--	zacts (~zacts@dragora/developer/zacts) has quit (Quit: WeeChat 2.7.1)
+2020-04-18 22:15:28	-->	eljef (eljef@Home.Eljef.Me) has joined #neovim
+2020-04-18 22:19:10	<--	ldiamond (~ldiamond@unaffiliated/ldiamond) has quit (Ping timeout: 265 seconds)
+2020-04-18 22:23:12	<--	threenuc (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has quit (Ping timeout: 250 seconds)
+2020-04-18 22:33:54	<--	logicp (~logicp@otwaon1073w-grc-04-184-144-79-188.dsl.bell.ca) has quit (Ping timeout: 260 seconds)
+2020-04-18 22:36:36	-->	threenuc (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has joined #neovim
+2020-04-18 22:40:06	<--	linarcx (~linarcx@151.241.235.111) has quit (Quit: WeeChat 2.8)
+2020-04-18 22:48:00	-->	meain (~meain@103.38.13.102) has joined #neovim
+2020-04-18 22:52:34	<--	meain (~meain@103.38.13.102) has quit (Ping timeout: 260 seconds)
+2020-04-18 22:56:32	-->	ldiamond (~ldiamond@modemcable141.101-203-24.mc.videotron.ca) has joined #neovim
+2020-04-18 23:01:17	<--	Ingvix (~Ingvix@134.19.189.116) has quit (Quit: öh)
+2020-04-18 23:01:36	-->	Ingvix (~Ingvix@134.19.189.116) has joined #neovim
+2020-04-18 23:02:12	<--	Coornail (~Coornail@104.248.162.98) has quit (Ping timeout: 256 seconds)
+2020-04-18 23:03:02	-->	Coornail (~Coornail@104.248.162.98) has joined #neovim
+2020-04-18 23:03:15	-->	gypaetus (~arch@ec2-3-127-36-23.eu-central-1.compute.amazonaws.com) has joined #neovim
+2020-04-18 23:11:42	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-18 23:22:20	<--	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has quit (Quit: WeeChat 2.8)
+2020-04-18 23:22:36	-->	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has joined #neovim
+2020-04-18 23:22:51	<--	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has quit (Client Quit)
+2020-04-18 23:23:20	-->	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has joined #neovim
+2020-04-18 23:26:00	<--	sunn (~sunn@cpc97878-walt21-2-0-cust10.13-2.cable.virginm.net) has quit (Ping timeout: 256 seconds)
+2020-04-18 23:28:22	-->	sunn (sunn@gateway/vpn/privateinternetaccess/sunn) has joined #neovim
+2020-04-18 23:29:20	-->	meain (~meain@103.38.13.102) has joined #neovim
+2020-04-18 23:33:50	<--	meain (~meain@103.38.13.102) has quit (Ping timeout: 258 seconds)
+2020-04-18 23:39:45	<--	kenji (~kenji@i577B0E81.versanet.de) has quit (Ping timeout: 256 seconds)
+2020-04-18 23:45:43	-->	kenji (~kenji@i577B0E81.versanet.de) has joined #neovim
+2020-04-18 23:48:06	<--	amahl_ (~amahl@87-95-128-122.bb.dnainternet.fi) has quit (Ping timeout: 256 seconds)
+2020-04-18 23:51:11	<--	Huck777 (~Huck777@unaffiliated/huck777) has quit (Quit: ZNC - https://znc.in)
+2020-04-18 23:53:58	<--	sunn (sunn@gateway/vpn/privateinternetaccess/sunn) has quit (Quit: WeeChat 2.6)
+2020-04-18 23:57:30	<--	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has quit (Quit: WeeChat 2.8)
+2020-04-18 23:58:10	-->	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has joined #neovim
+2020-04-18 23:59:07	-->	bvdw (~bas@5.9.139.181) has joined #neovim
+2020-04-18 23:59:32	<--	bvdw (~bas@5.9.139.181) has quit (Remote host closed the connection)
+2020-04-19 00:00:46	-->	meain (~meain@103.38.13.102) has joined #neovim
+2020-04-19 00:02:45	<--	cotko (~cotko@93-103-115-77.dynamic.t-2.net) has quit (Ping timeout: 264 seconds)
+2020-04-19 00:02:49	-->	gypaetus_ (~arch@ec2-52-29-26-131.eu-central-1.compute.amazonaws.com) has joined #neovim
+2020-04-19 00:03:10	<--	tos9 (~tos9@python/site-packages/tos9) has quit (Quit: Bye)
+2020-04-19 00:04:47	-->	tos9 (~tos9@python/site-packages/tos9) has joined #neovim
+2020-04-19 00:05:15	<--	meain (~meain@103.38.13.102) has quit (Ping timeout: 256 seconds)
+2020-04-19 00:05:45	<--	gypaetus (~arch@ec2-3-127-36-23.eu-central-1.compute.amazonaws.com) has quit (Ping timeout: 264 seconds)
+2020-04-19 00:06:57	<--	alexherbo2 (~alexherbo@aputeaux-555-1-43-125.w90-43.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-04-19 00:07:15	-->	logicp (~logicp@otwaon1073w-grc-04-184-144-79-188.dsl.bell.ca) has joined #neovim
+2020-04-19 00:11:27	<--	coellobranco (~FoRcEr@44.113.165.83.dynamic.reverse-mundo-r.com) has quit (Quit: Leaving)
+2020-04-20 22:11:32	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #neovim
+2020-04-20 22:11:32	--	Topic for #neovim is "Register with NickServ to talk | Vim fork focused on extensibility and usability -- https://github.com/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim -- Gitter: https://gitter.im/neovim/neovim"
+2020-04-20 22:11:32	--	Topic set by jamessan (~jamessan@debian/developer/jamessan) on Thu, 27 Sep 2018 03:36:33
+2020-04-20 22:11:32	--	Channel #neovim: 1066 nicks (0 ops, 0 voices, 1066 normals)
+2020-04-20 22:11:34	--	Channel created on Fri, 31 Jan 2014 17:44:47
+2020-04-20 22:11:36	captainchris	hi everybody 
+2020-04-20 22:12:22	-->	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:9155:1d6:13fd:26f) has joined #neovim
+2020-04-20 22:12:39	-->	Elodin (~weechat@unaffiliated/padawan) has joined #neovim
+2020-04-20 22:13:16	Elodin	hello, have anybody had any luck while running coc-python within a virtualenv?
+2020-04-20 22:13:41	<--	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has quit (Quit: WeeChat 2.8)
+2020-04-20 22:16:08	TJDeVriesGitter[	you probably need to somehow tell coc-python which python to execute, which would be whereever your venv python is
+2020-04-20 22:17:03	<--	waterhouse4701 (~waterhous@2400:2410:a582:400:be5f:f4ff:fe3a:b0b0) has quit (Ping timeout: 260 seconds)
+2020-04-20 22:19:15	<--	Mossepo (~Mossepo@185.204.1.205) has quit (Quit: WeeChat 2.8)
+2020-04-20 22:19:23	captainchris	how do you do for reading doc. sometimes help contains 2000 lines for subject.do you read the doc entirelly ?? 
+2020-04-20 22:19:31	-->	waterhouse4701 (~waterhous@2400:2410:a582:400:be5f:f4ff:fe3a:b0b0) has joined #neovim
+2020-04-20 22:20:05	Elodin	TJDeVriesGitter[: i think i already did: https://i.imgur.com/oyYGdDG.png
+2020-04-20 22:20:13	TJDeVriesGitter[	sometimes, yes
+2020-04-20 22:20:28	TJDeVriesGitter[	It can pay off in the long run knowing lots of new things
+2020-04-20 22:21:10	TJDeVriesGitter[	@elodin there's a thing for "venvPath" that maybe is what you should use. Not sure though, might want to ask on coc or coc-python
+2020-04-20 22:21:34	<--	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:9155:1d6:13fd:26f) has quit (Ping timeout: 272 seconds)
+2020-04-20 22:22:00	<--	sjl (~sjl@cpe-66-66-5-59.rochester.res.rr.com) has quit (Ping timeout: 265 seconds)
+2020-04-20 22:22:42	captainchris	TJDeVriesGitter[: and you remember all things
+2020-04-20 22:22:51	captainchris	you have a massive brain 
+2020-04-20 22:23:06	TJDeVriesGitter[	haha, no, but now I can remember where to search
+2020-04-20 22:23:12	TJDeVriesGitter[	or I use `:helpgrep <topic>`
+2020-04-20 22:24:22	-->	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:58b3:5a68:5003:7729) has joined #neovim
+2020-04-20 22:26:38	-->	meain (~meain@103.38.14.33) has joined #neovim
+2020-04-20 22:26:43	<--	sunn (sunn@gateway/vpn/privateinternetaccess/sunn) has quit (Ping timeout: 256 seconds)
+2020-04-20 22:28:42	TJDeVriesGitter[	But I do also have a massive brain -- unfortunately it just translates to a big head and not intelligence :'(
+2020-04-20 22:29:56	captainchris	;)
+2020-04-20 22:30:01	-->	turona (~quassel@2a01:c22:b065:4900:1a79:a04:2fa1:28f7) has joined #neovim
+2020-04-20 22:30:45	<--	meain (~meain@103.38.14.33) has quit (Ping timeout: 240 seconds)
+2020-04-20 22:31:46	-->	Futt[m] (futtmatrix@gateway/shell/matrix.org/x-gqftmlkqggpsgljs) has joined #neovim
+2020-04-20 22:33:52	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 264 seconds)
+2020-04-20 22:38:36	-->	sunn (~sunn@cpc97878-walt21-2-0-cust10.13-2.cable.virginm.net) has joined #neovim
+2020-04-20 22:41:27	<--	freddyruxpin (~freddyrux@pool-173-61-191-241.cmdnnj.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2020-04-20 22:42:08	-->	cnsvc (~cnsvc@gateway/tor-sasl/cnsvc) has joined #neovim
+2020-04-20 22:42:37	-->	freddyruxpin (~freddyrux@pool-173-61-191-241.cmdnnj.fios.verizon.net) has joined #neovim
+2020-04-20 22:46:09	-->	kuzyn (~kuzyn@cpc126836-lewi25-2-0-cust185.2-4.cable.virginm.net) has joined #neovim
+2020-04-20 22:46:30	-->	alexherbo24 (~alexherbo@astlambert-652-1-13-67.w86-249.abo.wanadoo.fr) has joined #neovim
+2020-04-20 22:47:45	<--	alexherbo2 (~alexherbo@astlambert-652-1-13-67.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-04-20 22:47:46	--	alexherbo24 is now known as alexherbo2
+2020-04-20 22:48:07	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #neovim
+2020-04-20 22:53:55	<--	alexherbo2 (~alexherbo@astlambert-652-1-13-67.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-04-20 22:54:52	-->	alexherbo2 (~alexherbo@astlambert-652-1-13-67.w86-249.abo.wanadoo.fr) has joined #neovim
+2020-04-20 22:57:02	<--	brtastic (~Thunderbi@2a02:a315:413a:7580:879e:25b4:92ae:7858) has quit (Ping timeout: 272 seconds)
+2020-04-20 22:58:34	-->	alexherbo26 (~alexherbo@astlambert-652-1-13-67.w86-249.abo.wanadoo.fr) has joined #neovim
+2020-04-20 22:58:40	<--	Aquazi (uid312403@gateway/web/irccloud.com/x-xbiyrwtrtzmceexp) has quit (Quit: Connection closed for inactivity)
+2020-04-20 23:00:40	<--	alexherbo2 (~alexherbo@astlambert-652-1-13-67.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-04-20 23:00:40	--	alexherbo26 is now known as alexherbo2
+2020-04-20 23:02:39	<--	jinmiaoluo (~jinmiaolu@149.129.73.107) has quit (Ping timeout: 256 seconds)
+2020-04-20 23:05:13	-->	jinmiaoluo (~jinmiaolu@149.129.73.107) has joined #neovim
+2020-04-20 23:07:34	<--	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-04-20 23:07:48	-->	meain (~meain@103.38.14.33) has joined #neovim
+2020-04-20 23:09:53	-->	cnsvc_ (~cnsvc@gateway/tor-sasl/cnsvc) has joined #neovim
+2020-04-20 23:12:02	<--	meain (~meain@103.38.14.33) has quit (Ping timeout: 250 seconds)
+2020-04-20 23:13:52	<--	ellcs (~ellcs@200116b868f5bc001e7f9006b2dd7a20.dip.versatel-1u1.de) has quit (Ping timeout: 252 seconds)
+2020-04-20 23:18:04	-->	jakbyte (~jakbyte@2600:1700:fc0:8650::2f) has joined #neovim
+2020-04-20 23:29:50	<--	sunn (~sunn@cpc97878-walt21-2-0-cust10.13-2.cable.virginm.net) has quit (Quit: WeeChat 2.6)
+2020-04-20 23:30:02	<--	jakbyte (~jakbyte@2600:1700:fc0:8650::2f) has quit (Quit: WeeChat 2.8)
+2020-04-20 23:31:35	-->	jakbyteGitter[m] (gitterro_5@gateway/shell/matrix.org/x-btcsxexznresgayd) has joined #neovim
+2020-04-20 23:31:36	jakbyteGitter[m]	hello! i'm trying to set a custom error, warning, etc. sign for nvim-lsp, but whenever my lsp is started, it seems to overwrite my signs with the defaults. can anyone help?
+2020-04-20 23:34:30	<--	alexherbo2 (~alexherbo@astlambert-652-1-13-67.w86-249.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-04-20 23:37:51	LeoNerd	Huh... I thought that nvim was sometimes getting confused about fast-typed <Esc>: being interpreted as <Alt-:> even through all my CSIu'ed termkey hackery.
+2020-04-20 23:38:08	LeoNerd	After much instrumentation it turns out: no. Just sometimes I manage to type fast enough that my keyboard doesn't actually register the <Esc> key at all
+2020-04-20 23:38:12	LeoNerd	so I type a plain : in insert mode
+2020-04-20 23:43:10	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:43:32	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:43:33	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:43:52	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:43:53	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:44:12	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:44:14	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:44:33	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:44:35	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:44:54	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:44:56	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:45:14	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:45:16	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:45:33	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:45:34	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:45:53	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:45:55	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:46:13	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:46:15	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:46:33	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:46:34	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:46:52	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:46:54	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:47:10	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:47:12	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:49:06	-->	meain (~meain@103.38.14.33) has joined #neovim
+2020-04-20 23:49:47	<--	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:58b3:5a68:5003:7729) has quit (Ping timeout: 246 seconds)
+2020-04-20 23:53:50	<--	meain (~meain@103.38.14.33) has quit (Ping timeout: 265 seconds)
+2020-04-20 23:54:32	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:54:35	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:54:54	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:54:58	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:55:55	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:55:58	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Excess Flood)
+2020-04-20 23:56:42	-->	opal (~wowaname@volatile/founder/wowaname) has joined #neovim
+2020-04-20 23:58:14	<--	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has quit (Quit: ZNC 1.8.x-nightly-20190530-13450c7f - https://znc.in)
+2020-04-20 23:59:09	<--	cottoneyejim (~cottoneye@46.161.90.204) has quit (Ping timeout: 256 seconds)
+2020-04-21 00:01:39	-->	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has joined #neovim
+2020-04-21 00:05:24	TJDeVriesGitter[	@jakbyte how are you assigning them?
+2020-04-21 00:06:59	jakbyteGitter[m]	like `sign define LspDiagnosticsErrorSign`
+2020-04-21 00:07:09	jakbyteGitter[m]	would i need to undefine it if it's defined?
+2020-04-21 00:08:06	MathiasFuenegger	I think it's because they're currently being redefined all the time.  https://github.com/neovim/neovim/blob/2b00d1d09c0ff7ee6cc2de7ba70d9e84167540e5/runtime/lua/vim/lsp/util.lua#L765-L768 - I was wondering about why already
+2020-04-21 00:09:15	MathiasFuenegger	(edited) ... why already => ... why already. But you could override the global. ` let g:LspDiagnosticsErrorSign = 'E'`
+2020-04-21 00:11:24	<--	amahl_ (~amahl@87-95-128-122.bb.dnainternet.fi) has quit (Ping timeout: 250 seconds)
+2020-04-21 00:12:43	jakbyteGitter[m]	how would i set the `texthl` using that method?
+2020-04-29 23:04:44	-->	captainchris (~captainch@2a01:cb1d:342:4200:b3eb:7c30:215c:d58d) has joined #neovim
+2020-04-29 23:04:44	--	Topic for #neovim is "Register with NickServ to talk | Vim fork focused on extensibility and usability -- https://github.com/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim -- Gitter: https://gitter.im/neovim/neovim"
+2020-04-29 23:04:44	--	Topic set by jamessan (~jamessan@debian/developer/jamessan) on Thu, 27 Sep 2018 03:36:33
+2020-04-29 23:04:44	--	Channel #neovim: 1090 nicks (0 ops, 0 voices, 1090 normals)
+2020-04-29 23:04:46	--	Channel created on Fri, 31 Jan 2014 17:44:47
+2020-04-29 23:04:49	captainchris	hi everybody 
+2020-04-29 23:05:12	<--	ghost01 (~ghost01@2.27.164.22) has quit (Quit: WeeChat 1.9.1)
+2020-04-29 23:05:23	captainchris	Anyone uses zathura as PDF viewer. I would like to know if it is possible to remap ` key to go to marks
+2020-04-29 23:06:16	-->	fmeetze (~user@068-116-055-230.biz.spectrum.com) has joined #neovim
+2020-04-29 23:11:04	-->	threenuc_ (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has joined #neovim
+2020-04-29 23:13:41	<--	threenuc__ (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has quit (Ping timeout: 244 seconds)
+2020-04-29 23:15:31	<--	sunn (~sunn@cpc97878-walt21-2-0-cust10.13-2.cable.virginm.net) has quit (Quit: WeeChat 2.8)
+2020-04-29 23:18:29	<--	grenbriar (~grenbriar@108.61.78.139) has quit (Quit: Leaving)
+2020-04-29 23:22:45	<--	alerque (~caleb@176.43.187.80) has quit (Quit: WeeChat 2.8)
+2020-04-29 23:23:20	<--	afuentes (~kusanagi@170.206.11.37.dynamic.jazztel.es) has quit (Ping timeout: 264 seconds)
+2020-04-29 23:25:45	JustinMKeyesGitt	@BK1603 did you already read the notes in `src/nvim/memfile_defs.h`
+2020-04-29 23:26:29	JustinMKeyesGitt	and the headers in `memfile.c` + `memline.c`
+2020-04-29 23:26:48	JustinMKeyesGitt	i will attempt a tl;dr:
+2020-04-29 23:27:32	<--	bitnoize (~mitya@leetka.whteam.net) has quit (Ping timeout: 264 seconds)
+2020-04-29 23:28:16	JustinMKeyesGitt	memfile is the "swap file", i.e. the memlines are written to a file on the filesystem. This was Vim's own "virtual memory system". Partly for memory-constrained systems, partly for recovering after system crash, and partly a way to support loading files that do not fit into memory
+2020-04-29 23:28:40	<--	kekePower (~kekePower@ti0238a330-1073.bb.online.no) has quit (Ping timeout: 244 seconds)
+2020-04-29 23:29:56	JustinMKeyesGitt	> @BK1603 did you already read the notes in `src/nvim/memfile_defs.h`
+2020-04-29 23:29:56	JustinMKeyesGitt	sorry I meant `memline_defs.h`
+2020-04-29 23:30:23	 *	JustinMKeyesGitt sent a long message:  < https://matrix.org/_matrix/media/r0/download/matrix.org/TxxLrKaONFQwgVqIpEtOnZFJ >
+2020-04-29 23:31:35	 *	JustinMKeyesGitt sent a long message:  < https://matrix.org/_matrix/media/r0/download/matrix.org/QkIGyZTGGySfpFOLRYrCbUho >
+2020-04-29 23:33:19	JustinMKeyesGitt	tl;dr: it's basically a shallow tree , almost a list, of lines, for the purpose of avoiding some degenerate performance issues *within a buffer*. But *within a line* performance sucks.
+2020-04-29 23:34:30	-->	bigjazzsound (~craig.fie@75-60-207-113.lightspeed.tukrga.sbcglobal.net) has joined #neovim
+2020-04-29 23:34:40	-->	threenuc__ (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has joined #neovim
+2020-04-29 23:35:20	<--	Maxattax (~max@107-217-95-124.lightspeed.iplsin.sbcglobal.net) has quit (Ping timeout: 264 seconds)
+2020-04-29 23:36:59	ShreyanshChouhan	I did read these headers, there are still a few things that I do not understand: what is the line number of a cached line in `memline`? Also is `ml_stack` populated when we search for a line? So that it stores the path of the most recently accessed line?
+2020-04-29 23:37:03	-->	Maxattax (~max@50-195-160-193-static.hfc.comcastbusiness.net) has joined #neovim
+2020-04-29 23:37:05	<--	threenuc_ (~threenuc@088156143133.dynamic-2-waw-k-3-3-0.vectranet.pl) has quit (Ping timeout: 246 seconds)
+2020-04-29 23:38:06	ShreyanshChouhan	comment for `linenr_T ml_line_lnum` says that it is the line number of a cached line
+2020-04-29 23:39:25	ShreyanshChouhan	Which line is cached? And are these lines having the same meaning as a line in the buffer (total lines being the last number displayed by `:set number`)? Or are these lines different?
+2020-10-11 16:41:00	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #neovim
+2020-10-11 16:41:00	--	Topic for #neovim is "Vim fork focused on extensibility and usability -- https://github.com/neovim/neovim -- Help sustain Neovim: https://salt.bountysource.com/teams/neovim -- Gitter: https://gitter.im/neovim/neovim"
+2020-10-11 16:41:00	--	Topic set by mhi^ (~mhi^@unaffiliated/mhi/x-9993184) on Sun, 21 Jun 2020 14:43:10
+2020-10-11 16:41:00	--	Channel #neovim: 1476 nicks (0 ops, 0 voices, 1476 normals)
+2020-10-11 16:41:01	--	Channel created on Fri, 31 Jan 2014 17:44:47
+2020-10-11 16:41:04	captainchris	hello everybody 
+2020-10-11 16:41:31	-->	Bond_009[m] (bond009mat@gateway/shell/matrix.org/x-yzzncteqylwmrghl) has joined #neovim
+2020-10-11 16:41:40	sunjon	https://pastebin.com/raw/wKqZM4sy rather (fixed loading buffer)
+2020-10-11 16:41:42	-->	JayDoubleu (sid339529@gateway/web/irccloud.com/x-caxosytkpunpqgdh) has joined #neovim
+2020-10-11 16:41:43	captainchris	!paste
+2020-10-11 16:42:26	-->	CraftedCart[m] (craftedcar@gateway/shell/matrix.org/x-pvcbtbvhoiaaihhj) has joined #neovim
+2020-10-11 16:42:43	-->	ranaexmachina (ranaexmach@gateway/shell/matrix.org/x-dykhuzwvihpanvho) has joined #neovim
+2020-10-11 16:42:56	-->	MiguelGitter[m] (gitterofra@gateway/shell/matrix.org/x-rzubhstxzpahthkt) has joined #neovim
+2020-10-11 16:42:56	-->	ofrades[m] (ofradesmat@gateway/shell/matrix.org/x-quisfxbfjvwoctjo) has joined #neovim
+2020-10-11 16:42:56	-->	Ulfnic (ulfnicmatr@gateway/shell/matrix.org/x-kmykkfkguujoezbu) has joined #neovim
+2020-10-11 16:42:56	-->	MazenAmrGitter[m (gittermaze@gateway/shell/matrix.org/x-pcpwdwdurwjcwmcm) has joined #neovim
+2020-10-11 16:42:56	-->	pierreprinetti[m (pierreprin@gateway/shell/matrix.org/x-poivxkdohvqcoxfy) has joined #neovim
+2020-10-11 16:42:57	-->	MaxKovganGitter[ (gittermvkm@gateway/shell/matrix.org/x-kapmfzgfpttpjydy) has joined #neovim
+2020-10-11 16:42:57	-->	GilbertoDiazGitt (gitterdiaz@gateway/shell/matrix.org/x-lzhwghairvpbstfb) has joined #neovim
+2020-10-11 16:42:57	-->	MathijsBakkerGit (gitte3386@gateway/shell/matrix.org/x-qtvzryghjaeqozvl) has joined #neovim
+2020-10-11 16:42:57	-->	MaxGohGitter[m] (gittermaxg@gateway/shell/matrix.org/x-vofbnbbjjecdkjyo) has joined #neovim
+2020-10-11 16:42:57	-->	MatjCeplGitter[m (gittermc1@gateway/shell/matrix.org/x-zxyxycewwpipfvsw) has joined #neovim
+2020-10-11 16:42:58	-->	mecusorinGitter[ (gittermecu@gateway/shell/matrix.org/x-xhuafxwywfcsueft) has joined #neovim
+2020-10-11 16:42:58	-->	AndreaSchiaviniG (gitterme2@gateway/shell/matrix.org/x-efsejybfpluvgmtd) has joined #neovim
+2020-10-11 16:42:58	-->	KrzysztofMiskoGi (gitterkmia@gateway/shell/matrix.org/x-ossfqyobautqurcj) has joined #neovim
+2020-10-11 16:42:58	-->	KeerthanJaicGitt (gitterjckm@gateway/shell/matrix.org/x-piyxjqacdjxmpkkl) has joined #neovim
+2020-10-11 16:42:58	-->	jamestthompson3G (gitterj22@gateway/shell/matrix.org/x-uqmagbscrmhthemv) has joined #neovim
+2020-10-11 16:42:59	-->	M21WAAG3Y7 (gitte3395@gateway/shell/matrix.org/x-wfdodtpeolwkcytw) has joined #neovim
+2020-10-11 16:42:59	-->	NachumBarcohenGi (gitternaba@gateway/shell/matrix.org/x-bgoffdzrrgnqiely) has joined #neovim
+2020-10-11 16:42:59	-->	JakobGMGitter[m] (gitterjako@gateway/shell/matrix.org/x-nimxbwpumnhuxaot) has joined #neovim
+2020-10-11 16:43:03	-->	AhmedCharles[m] (acharlesma@gateway/shell/matrix.org/x-gmzwdyltjquowveg) has joined #neovim
+2020-10-11 16:43:03	-->	MonImitatorGitte (gittermon-@gateway/shell/matrix.org/x-yhfekiqvyzjppvri) has joined #neovim
+2020-10-11 16:43:03	-->	ch3[m] (ch3matrixo@gateway/shell/matrix.org/x-sdlmblkipmptfmkj) has joined #neovim
+2020-10-11 16:43:04	-->	ShidongWang[m] (wsdjegmatr@gateway/shell/matrix.org/x-kzlhezdrpwsupkqi) has joined #neovim
+2020-10-11 16:43:04	-->	johnmiked15Gitte (gitterjo1@gateway/shell/matrix.org/x-ksammukobvlrgzpn) has joined #neovim
+2020-10-11 16:43:04	-->	JebBeichGitter[m (gitterjebb@gateway/shell/matrix.org/x-guwpgzyrlwtsodxf) has joined #neovim
+2020-10-11 16:43:05	-->	DavidHazelGitter (gitterdhaz@gateway/shell/matrix.org/x-leayteuhdnghcpdn) has joined #neovim
+2020-10-11 16:43:05	-->	k0zl0wsqi_d3f4ul (gitterkozl@gateway/shell/matrix.org/x-rpwejfgovinkvhzq) has joined #neovim
+2020-10-11 16:43:05	-->	matyklugDebbuged (gittermaty@gateway/shell/matrix.org/x-vzftnuhacobxolun) has joined #neovim
+2020-10-11 16:43:06	-->	ookfof[m] (ookfofru-m@gateway/shell/matrix.org/x-rokphfdtbglyczix) has joined #neovim
+2020-10-11 16:43:11	captainchris	I would start nvim with persistent fold. I googled a momment but I don't found a solution for my problem 
+2020-10-11 16:43:14	captainchris	https://pastebin.com/jRxNcKiC
+2020-10-11 16:44:15	-->	KevinDisneurGitt (gitterkdis@gateway/shell/matrix.org/x-guvncwtaobvozbet) has joined #neovim
+2020-10-11 16:44:16	-->	icecreamcake101G (gittericec@gateway/shell/matrix.org/x-gbaypeshzmscdrqb) has joined #neovim
+2020-10-11 16:44:16	sunjon	what did you try so far?
+2020-10-11 16:44:30	-->	JordanRGitter[m] (gitterjord@gateway/shell/matrix.org/x-aacvgrpzquuohajx) has joined #neovim
+2020-10-11 16:44:31	-->	KristijanHusakGi (gitte3400@gateway/shell/matrix.org/x-zyoqmzmwaskudxbb) has joined #neovim
+2020-10-11 16:44:33	captainchris	line 90 91 I tried with autocmd BufWinLeave * mkview. also autocmd BufWinLeave *.* mkview ... 
+2020-10-11 16:44:38	captainchris	but nothing works 
+2020-10-11 16:44:54	-->	sonnext[m] (sonnextmat@gateway/shell/matrix.org/x-zjkzowpatyevlbsh) has joined #neovim
+2020-10-11 16:44:59	-->	ipsodGitter[m] (gitteripso@gateway/shell/matrix.org/x-elrolsrztyroutpf) has joined #neovim
+2020-10-11 16:45:02	-->	matt[m]5 (mattpodder@gateway/shell/matrix.org/x-tzwfonldhwheosoi) has joined #neovim
+2020-10-11 16:45:06	-->	gitter_kubek2k[m (gitterkube@gateway/shell/matrix.org/x-pbkhtnzokoxpbqmh) has joined #neovim
+2020-10-11 16:45:07	-->	notafile (notafilema@gateway/shell/matrix.org/x-sydsbkvnngcffiup) has joined #neovim
+2020-10-11 16:45:41	-->	AugustMasquelier (gitterlevo@gateway/shell/matrix.org/x-szmqwzxojykaxuzr) has joined #neovim
+2020-10-11 16:45:45	-->	M0Y[m] (y3sush1pri@gateway/shell/matrix.org/x-utyxwgrnkzuamyew) has joined #neovim
+2020-10-11 16:45:57	-->	JanEdmundLazoGit (gitterjanl@gateway/shell/matrix.org/x-vqfmnozmdzjspywr) has joined #neovim
+2020-10-11 16:46:00	-->	AleksandrovVladi (gitterinvi@gateway/shell/matrix.org/x-gqdmgrvqnijzrvcj) has joined #neovim
+2020-10-11 16:46:09	-->	tek[m] (tektrypio@gateway/shell/matrix.org/x-kbhoaoifmbsjihcm) has joined #neovim
+2020-10-11 16:46:12	-->	MnsAnsgariussonG (gittermatt@gateway/shell/matrix.org/x-npfirwxolfwgmfhd) has joined #neovim
+2020-10-11 16:46:13	-->	MarceloJacobusGi (gittermjac@gateway/shell/matrix.org/x-gkoqqsnlsgiwzrid) has joined #neovim
+2020-10-11 16:46:13	-->	fperson[m] (fpersontch@gateway/shell/matrix.org/x-ygwmbojqlxfghkge) has joined #neovim
+2020-10-11 16:46:14	-->	KunXiGitter[m] (gitterkunx@gateway/shell/matrix.org/x-dclsfamypqqgrsoy) has joined #neovim
+2020-10-11 16:46:15	-->	wam[m] (wammatrixo@gateway/shell/matrix.org/x-moiwndnttocppbai) has joined #neovim
+2020-10-11 16:46:18	-->	dogamak1 (~dogamak@pipari.karhusaari.me) has joined #neovim
+2020-10-11 16:46:19	-->	wraptile (wraptilema@gateway/shell/matrix.org/x-pczhtmpmyoamudse) has joined #neovim
+2020-10-11 16:46:30	-->	NematjonGitter[m (gitternema@gateway/shell/matrix.org/x-xpaylaockmouprae) has joined #neovim
+2020-10-11 16:46:36	-->	TimotheSterleGit (gitternano@gateway/shell/matrix.org/x-ihzjnlyfpxxorgvp) has joined #neovim
+2020-10-11 16:46:38	-->	KunalTyagiGitter (gitterkuna@gateway/shell/matrix.org/x-jgfyqxmfhugkcakc) has joined #neovim
+2020-10-11 16:46:43	-->	kraem (kraemmatri@gateway/shell/matrix.org/x-bwmmosyevpyjaxxz) has joined #neovim
+2020-10-11 16:46:54	-->	morguldir (criminalma@gateway/shell/matrix.org/x-sroyujozfiyuzejq) has joined #neovim
+2020-10-11 16:47:22	-->	ArkadiyGitter[m] (gitterbeau@gateway/shell/matrix.org/x-lnwwsnjwxviabdqe) has joined #neovim
+2020-10-11 16:47:22	-->	BenNataGitter[m] (gitterbent@gateway/shell/matrix.org/x-gffdaxaweicryyne) has joined #neovim
+2020-10-11 16:47:22	-->	ThiagodeArrudaGi (gittertarr@gateway/shell/matrix.org/x-qahbxccyljbgpiqz) has joined #neovim
+2020-10-11 16:47:23	-->	esty[m] (estymatrix@gateway/shell/matrix.org/x-skznvcoovhqtqvge) has joined #neovim
+2020-10-11 16:47:23	-->	cak054[m] (cak054matr@gateway/shell/matrix.org/x-ybqyantecclrkocy) has joined #neovim
+2020-10-11 16:47:23	-->	M0x777[m] (m0x777matr@gateway/shell/matrix.org/x-rksuielseggghzdv) has joined #neovim
+2020-10-11 16:47:26	-->	gasull[m] (gasullmatr@gateway/shell/matrix.org/x-osnecvrppqesiysu) has joined #neovim
+2020-10-11 16:47:26	-->	tttom[m] (tttommatri@gateway/shell/matrix.org/x-ubytuwosgjqchrej) has joined #neovim
+2020-10-11 16:47:26	-->	doomer[m] (ashandmema@gateway/shell/matrix.org/x-pdiqclmgtqatqpya) has joined #neovim
+2020-10-11 16:47:27	-->	mstvn[m] (mstvnmatri@gateway/shell/matrix.org/x-klypzglhgljujgkd) has joined #neovim
+2020-10-11 16:47:34	-->	CalebMaclennanGi (gitteraler@gateway/shell/matrix.org/x-vocrrtointfkyyyi) has joined #neovim
+2020-10-11 16:47:36	captainchris	If i quit the file and :loadview I have fold 
+2020-10-11 16:47:41	-->	slabity (slabitymat@gateway/shell/matrix.org/x-itkutcpvpufxvdtm) has joined #neovim
+2020-10-11 16:47:42	-->	mcepl[m] (mceplmatri@gateway/shell/matrix.org/x-aqzrikuolsunioqp) has joined #neovim
+2020-10-11 16:47:44	-->	camelcase[m] (camelcaseh@gateway/shell/matrix.org/x-klhlgolzljfiokrr) has joined #neovim
+2020-10-11 16:47:56	-->	dkasak[m] (dkasakterm@gateway/shell/matrix.org/x-szvlkgborpiigsux) has joined #neovim
+2020-10-11 16:47:58	-->	ferdinand[m] (ferdinandm@gateway/shell/matrix.org/x-unwpgfgdeegwlclb) has joined #neovim
+2020-10-11 16:48:12	-->	colemickens (colemicken@pdpc/supporter/professional/geomyidae) has joined #neovim
+2020-10-11 16:48:12	-->	Shakawat[m] (shaheen02@gateway/shell/matrix.org/x-ekaknenndvidpkzj) has joined #neovim
+2020-10-11 16:48:45	-->	Ananace (acekittenf@gateway/shell/matrix.org/x-cvswzvbhgmpropgh) has joined #neovim
+2020-10-11 16:48:48	-->	unclechu (unclechuma@gateway/shell/matrix.org/x-bhndimvrkskoumgf) has joined #neovim
+2020-10-11 16:49:17	sunjon	I'd remove the `silent`s while you're debugging
+2020-10-11 16:49:53	sunjon	i use expression folds
+2020-10-11 16:50:08	sunjon	and I think I';m just going to be googling on your behalf
+2020-10-11 16:51:12	sunjon	there's stackexchange, stackoverflow, vim.wiki and blog posts with folk discussing the setup and nuances in "vim fold persistent" google search.
+2020-10-11 16:53:49	captainchris	google  says the command I tried I don't know why tha't doesn't work
+2020-10-11 16:54:15	sunjon	it says that there's an issue from using "*" for a start, and offers an alternative
+2020-10-11 16:54:31	captainchris	I tried * *.* ?* 
+2020-10-11 16:55:00	sunjon	as far as I was aware, your pastebin was "the command I tried"
+2020-10-11 16:55:53	sunjon	you've checked the `viewoptions` setting?
+2020-10-11 16:57:15	captainchris	How did you do that ?? 
+2020-10-11 16:57:33	sunjon	I'm just reading from the pages I already suggested
+2020-10-11 17:04:44	<--	d1cor (~d1cor@unaffiliated/d1cor) has quit (Ping timeout: 240 seconds)
+2020-10-11 17:05:21	-->	fmossy[m] (xmppfmossy@gateway/shell/matrix.org/x-jaelqatoihvtcdch) has joined #neovim
+2020-10-11 17:06:20	-->	narimiran (~miran@unaffiliated/miran) has joined #neovim
+2020-10-11 17:10:43	-->	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 17:15:04	<--	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 17:17:22	<--	ahmedelgabri (~ahmedelga@77-164-236-89.fixed.kpn.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 17:20:55	<--	jabster28 (~jabster28@2a02:c7f:604e:c000:d9ec:3305:2a84:6ece) has quit (Ping timeout: 240 seconds)
+2020-10-11 17:21:04	captainchris	sunjon
+2020-10-11 17:21:07	captainchris	nothing change
+2020-10-11 17:22:00	<--	da39a3ee5e6b4b0d (~textual@n11211935170.netvigator.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-10-11 17:22:24	-->	jabster28 (~jabster28@97e0f070.skybroadband.com) has joined #neovim
+2020-10-11 17:22:58	captainchris	I don't understand why it doesn't working
+2020-10-11 17:23:28	-->	mozzarella (~sam@unaffiliated/sam113101) has joined #neovim
+2020-10-11 17:26:48	<--	jabster28 (~jabster28@97e0f070.skybroadband.com) has quit (Ping timeout: 244 seconds)
+2020-10-11 17:30:56	-->	ahmedelgabri (~ahmedelga@77-164-236-89.fixed.kpn.net) has joined #neovim
+2020-10-11 17:34:23	<--	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 265 seconds)
+2020-10-11 17:35:55	ahmedelgabri	Hey everyone, I'm trying to port some stuff in my config to Lua from Vimscript. But I'm getting an error when I do `autocmd FileType * lua require('foo').bar()` but when doing the same thing with something like `autocmd BufWinEnter * lua require('foo').bar()` works fine
+2020-10-11 17:37:10	-->	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 17:42:59	-->	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 17:44:40	<--	ixru (~ixru@cm-84.214.47.230.getinternet.no) has quit (Read error: Connection reset by peer)
+2020-10-11 17:48:01	<--	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 260 seconds)
+2020-10-11 17:53:37	-->	jabster28 (~jabster28@2a02:c7f:604e:c000:d9ec:3305:2a84:6ece) has joined #neovim
+2020-10-11 17:54:15	<--	efertone[m] (efertonema@gateway/shell/matrix.org/x-ajezikhpicvtqwnp) has quit (Quit: Idle for 30+ days)
+2020-10-11 17:54:16	<--	deevus (~simon@101.112.108.11) has quit (Quit: The Lounge - https://thelounge.github.io)
+2020-10-11 17:55:14	-->	wyclif (~wyclif@unaffiliated/wyclif) has joined #neovim
+2020-10-11 17:57:16	ahmedelgabri	Ignore that, I was not returning the module from the lua file :facepalm:
+2020-10-11 17:58:25	<--	ist5shreawf[m] (ist5shreaw@gateway/shell/matrix.org/x-uftndfdzcyergtej) has quit (Quit: Idle for 30+ days)
+2020-10-11 17:58:35	<--	ren0thing (ren0thingm@gateway/shell/matrix.org/x-mgotfuquvqqyiurs) has quit (Quit: Idle for 30+ days)
+2020-10-11 17:59:41	<--	wyclif (~wyclif@unaffiliated/wyclif) has quit (Ping timeout: 258 seconds)
+2020-10-11 18:01:03	<--	wilhelm[m] (wilhelmnet@gateway/shell/matrix.org/x-fjmoeayyxuzrxcbk) has quit (Quit: Idle for 30+ days)
+2020-10-11 18:01:43	captainchris	sunjon: you're my only hope
+2020-10-11 18:01:56	<--	truthseeker (~avalance@110.235.224.217) has quit (Ping timeout: 256 seconds)
+2020-10-11 18:03:17	captainchris	Okay I nderstand something
+2020-10-11 18:03:40	captainchris	I can fold other file but not .md file (vimwiki)
+2020-10-11 18:04:55	<--	freerangechicken (chickenbut@gateway/shell/matrix.org/x-uimghsuwpkkxxvcu) has quit (Quit: Idle for 30+ days)
+2020-10-11 18:13:54	<--	thoros (~thoros@194-96-55-156.hdsl.highway.telekom.at) has quit (Quit: WeeChat 2.9)
+2020-10-11 18:13:55	<--	jabster28 (~jabster28@2a02:c7f:604e:c000:d9ec:3305:2a84:6ece) has quit (Ping timeout: 240 seconds)
+2020-10-11 18:14:34	-->	deevus (~simon@101.112.108.11) has joined #neovim
+2020-10-11 18:18:19	<--	astronavt (~astronavt@unaffiliated/astronavt) has quit (Quit: Leaving)
+2020-10-11 18:18:48	-->	astronavt (~astronavt@unaffiliated/astronavt) has joined #neovim
+2020-10-11 18:20:51	<--	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 256 seconds)
+2020-10-11 18:23:08	-->	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 18:27:46	<--	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 18:39:54	<--	palooka-jock (~mike@45.126.44.146) has quit (Ping timeout: 256 seconds)
+2020-10-11 18:52:46	<--	mandeep (uid394387@gateway/web/irccloud.com/x-ntcfsntzqkdwcpxg) has quit (Quit: Connection closed for inactivity)
+2020-10-11 18:59:46	<--	gagbo__ (~gagbo@unaffiliated/gagbo) has quit (Ping timeout: 240 seconds)
+2020-10-11 19:02:44	<--	ahmedelgabri (~ahmedelga@77-164-236-89.fixed.kpn.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 19:06:10	<--	ib07 (~quassel@193-83-159-246.hdsl.highway.telekom.at) has quit (Ping timeout: 246 seconds)
+2020-10-11 19:06:47	-->	ib07 (~quassel@193-83-159-246.hdsl.highway.telekom.at) has joined #neovim
+2020-10-11 19:09:48	-->	david2 (~david2@212-186-25-215.cable.dynamic.surfer.at) has joined #neovim
+2020-10-11 19:10:20	<--	astronavt (~astronavt@unaffiliated/astronavt) has quit (Read error: Connection reset by peer)
+2020-10-11 19:10:21	<--	ib07 (~quassel@193-83-159-246.hdsl.highway.telekom.at) has quit (Max SendQ exceeded)
+2020-10-11 19:10:36	-->	ib07 (~quassel@193-83-159-246.hdsl.highway.telekom.at) has joined #neovim
+2020-10-11 19:10:47	-->	astronavt (~astronavt@unaffiliated/astronavt) has joined #neovim
+2020-10-11 19:10:52	<--	astronavt (~astronavt@unaffiliated/astronavt) has quit (Remote host closed the connection)
+2020-10-11 19:13:00	<--	cheet (~cheet@modemcable246.155-226-192.mc.videotron.ca) has quit (Quit: ZNC 1.8.x-nightly-20190530-13450c7f - https://znc.in)
+2020-10-11 19:14:11	<--	ib07 (~quassel@193-83-159-246.hdsl.highway.telekom.at) has quit (Max SendQ exceeded)
+2020-10-11 19:14:31	-->	ib07 (~quassel@193-83-159-246.hdsl.highway.telekom.at) has joined #neovim
+2020-10-11 19:15:05	-->	cheet (~cheet@modemcable246.155-226-192.mc.videotron.ca) has joined #neovim
+2020-10-11 19:27:08	<--	Acacia (~Acacia@unaffiliated/acacia) has quit (Remote host closed the connection)
+2020-10-11 19:29:13	-->	cottoneyejim (~cottoneye@APN-123-250-25-gprs.simobil.net) has joined #neovim
+2020-10-11 19:30:04	-->	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 19:33:02	-->	cottoney1 (~cottoneye@89-212-210-249.dynamic.t-2.net) has joined #neovim
+2020-10-11 19:34:24	-->	ellcs1 (~ellcs@200116b864af220062f677fffebe55f5.dip.versatel-1u1.de) has joined #neovim
+2020-10-11 19:34:28	-->	ajnasz_ (~ajnasz@05BB8F10.catv.pool.telekom.hu) has joined #neovim
+2020-10-11 19:35:27	<--	cottoneyejim (~cottoneye@APN-123-250-25-gprs.simobil.net) has quit (Ping timeout: 244 seconds)
+2020-10-11 19:35:30	<--	ajnasz (~ajnasz@05BB8F10.catv.pool.telekom.hu) has quit (Ping timeout: 256 seconds)
+2020-10-11 19:36:30	-->	Acacia (~Acacia@unaffiliated/acacia) has joined #neovim
+2020-10-11 19:38:16	-->	astronavt (~astronavt@unaffiliated/astronavt) has joined #neovim
+2020-10-11 19:38:54	<--	ib07 (~quassel@193-83-159-246.hdsl.highway.telekom.at) has quit (Ping timeout: 256 seconds)
+2020-10-11 19:40:03	-->	cnsvc (~cnsvc@gateway/tor-sasl/cnsvc) has joined #neovim
+2020-10-11 19:43:04	<--	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 19:43:19	-->	wyclif (~wyclif@unaffiliated/wyclif) has joined #neovim
+2020-10-11 19:44:16	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.9)
+2020-10-11 19:45:01	<--	ajnasz_ (~ajnasz@05BB8F10.catv.pool.telekom.hu) has quit (Ping timeout: 246 seconds)
+2020-10-11 19:47:32	fmossy[m]	offtopic: does somebody can suggest a chat about Spaceemacs?
+2020-10-11 19:47:44	<--	wyclif (~wyclif@unaffiliated/wyclif) has quit (Ping timeout: 240 seconds)
+2020-10-11 19:48:33	-->	ajnasz (~ajnasz@05BB8F10.catv.pool.telekom.hu) has joined #neovim
+2020-10-11 19:49:00	<--	Acacia (~Acacia@unaffiliated/acacia) has quit (Quit: leaving)
+2020-10-11 19:51:02	-->	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 19:51:23	-->	yyvt (~yyvt@4E5C23CD.dsl.pool.telekom.hu) has joined #neovim
+2020-10-11 19:54:18	-->	wyclif (~wyclif@unaffiliated/wyclif) has joined #neovim
+2020-10-11 19:55:02	-->	jabster28 (~jabster28@97e0f070.skybroadband.com) has joined #neovim
+2020-10-11 19:55:22	<--	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 19:58:01	-->	ahmedelgabri (~ahmedelga@77-164-236-89.fixed.kpn.net) has joined #neovim
+2020-10-11 20:07:47	-->	Acacia (~Acacia@unaffiliated/acacia) has joined #neovim
+2020-10-11 20:18:04	<--	jabster28 (~jabster28@97e0f070.skybroadband.com) has quit (Ping timeout: 240 seconds)
+2020-10-11 20:19:39	<--	honigkuchen (~honigkuch@ip5f5b9b83.dynamic.kabel-deutschland.de) has quit (Quit: Leaving)
+2020-10-11 20:23:30	<--	Acacia (~Acacia@unaffiliated/acacia) has quit (Ping timeout: 244 seconds)
+2020-10-11 20:24:00	-->	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 20:25:30	-->	Acacia (~Acacia@unaffiliated/acacia) has joined #neovim
+2020-10-11 20:26:25	<--	Acacia (~Acacia@unaffiliated/acacia) has quit (Client Quit)
+2020-10-11 20:28:40	<--	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 244 seconds)
+2020-10-11 20:29:01	-->	kupi (uid212005@gateway/web/irccloud.com/x-qqaeittltyajhdin) has joined #neovim
+2020-10-11 20:41:11	BjrnLinseGitter[	@smolck bother me 3AM
+2020-10-11 20:41:12	BjrnLinseGitter[	you know it
+2020-10-11 20:41:24	ThomasVigourouxG	Hey everyone
+2020-10-11 20:41:47	smolckGitter[m]	@bfredl hehe it's probably 3AM or close to it somewhere . . .
+2020-10-11 20:42:24	smolckGitter[m]	@vigoux 'ello
+2020-10-11 20:42:38	smolckGitter[m]	(edited) @vigoux 'ello => @vigoux Greetings
+2020-10-11 20:42:43	ThomasVigourouxG	How are things ?
+2020-10-11 20:43:24	smolckGitter[m]	Decent ish, you?
+2020-10-11 20:43:32	BjrnLinseGitter[	beginbot spam
+2020-10-11 20:43:36	ThomasVigourouxG	pretty gud
+2020-10-11 20:46:32	smolckGitter[m]	@vigoux have you tried out uivonim?
+2020-10-11 20:46:36	smolckGitter[m]	out of curiosity
+2020-10-11 20:46:46	ThomasVigourouxG	Yep
+2020-10-11 20:46:48	ThomasVigourouxG	Not that long tho
+2020-10-11 20:47:03	smolckGitter[m]	thoughts?
+2020-10-11 20:47:58	ThomasVigourouxG	Strangely it ran quite slowly on my machine
+2020-10-11 20:47:59	ThomasVigourouxG	Other than that
+2020-10-11 20:48:06	ThomasVigourouxG	Finally we got a good ui for neovim
+2020-10-11 20:48:33	smolckGitter[m]	interesting . . . I wonder if it'll run quicker after https://github.com/smolck/uivonim/pull/20 is merged
+2020-10-11 20:48:40	smolckGitter[m]	how'd you run it?
+2020-10-11 20:49:20	ThomasVigourouxG	Through the build steps in the readme
+2020-10-11 20:49:52	-->	brandonkal (~brandonka@unaffiliated/brandonkal) has joined #neovim
+2020-10-11 20:50:11	smolckGitter[m]	I guess electron will be electron ;)
+2020-10-11 20:50:28	smolckGitter[m]	would be nice to replace that someday, but I imagine that day is a fair bit off
+2020-10-11 20:50:37	-->	puremourning (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #neovim
+2020-10-11 20:50:40	ThomasVigourouxG	Yeah, I quite hate electron tbh
+2020-10-11 20:50:54	ThomasVigourouxG	I know it's cool to quickly/easily build apps but ...
+2020-10-11 20:51:37	ThomasVigourouxG	But if I was using uis, i'd be using uivonim
+2020-10-11 20:51:46	ThomasVigourouxG	I recommended it to a friend even
+2020-10-11 20:52:13	BjrnLinseGitter[	i might try it tonite
+2020-10-11 20:52:19	BjrnLinseGitter[	if the riesling makes me crazy enough
+2020-10-11 20:52:48	smolckGitter[m]	well thanks @vigoux . . . I'm curious what is it that keeps you from using a UI, all else being equal?
+2020-10-11 20:53:08	ThomasVigourouxG	Just that I like using terms
+2020-10-11 20:53:27	smolckGitter[m]	fair enough, terminals are cool
+2020-10-11 20:53:28	ThomasVigourouxG	I built my workflow around that, like, code, build, test, commit
+2020-10-11 20:53:49	BjrnLinseGitter[	is there an AUR for neouivonim?
+2020-10-11 20:53:54	BjrnLinseGitter[	asking for a friend
+2020-10-11 20:54:12	smolckGitter[m]	@bfredl not yet
+2020-10-11 20:54:20	ThomasVigourouxG	But I know people not liking this scheme, so when they tend to thing `nvim bad bc terminal` I tend to say `uinovim`
+2020-10-11 20:54:34	BjrnLinseGitter[	is it hard to install?
+2020-10-11 20:54:35	ThomasVigourouxG	(edited) ... to thing `nvim ... => ... to think `nvim ...
+2020-10-11 20:54:37	ThomasVigourouxG	nope
+2020-10-11 20:54:37	BjrnLinseGitter[	do you need to the yarn?
+2020-10-11 20:54:41	BjrnLinseGitter[	and the npm?
+2020-10-11 20:54:45	ThomasVigourouxG	nope
+2020-10-11 20:54:45	smolckGitter[m]	no, just download the release
+2020-10-11 20:54:46	BjrnLinseGitter[	and the elektron?
+2020-10-11 20:54:48	smolckGitter[m]	use the binary though
+2020-10-11 20:54:51	smolckGitter[m]	appimage is slow
+2020-10-11 20:54:56	smolckGitter[m]	at least on my system
+2020-10-11 20:54:56	BjrnLinseGitter[	i wanna bulid from souce
+2020-10-11 20:55:01	BjrnLinseGitter[	becuz otherwise i cannot patch it
+2020-10-11 20:55:05	smolckGitter[m]	then prepare to download all the things
+2020-10-11 20:55:14	BjrnLinseGitter[	becuz IME will  be broken
+2020-10-11 20:55:17	BjrnLinseGitter[	but i can fix it
+2020-10-11 20:55:20	BjrnLinseGitter[	if i haz the source
+2020-10-11 20:55:32	smolckGitter[m]	I feel like I should know what IME stands for
+2020-10-11 20:55:37	BjrnLinseGitter[	`df`
+2020-10-11 20:55:42	BjrnLinseGitter[	6666 MB
+2020-10-11 20:55:46	BjrnLinseGitter[	is that enough?
+2020-10-11 20:56:03	BjrnLinseGitter[	i won't explain it.
+2020-10-11 20:56:03	smolckGitter[m]	what?
+2020-10-11 20:56:04	BjrnLinseGitter[	just send the pr
+2020-10-11 20:56:15	BjrnLinseGitter[	with only codes no words
+2020-10-11 20:56:31	BjrnLinseGitter[	I mean i have 6666 mb free space on nvme0
+2020-10-11 20:56:34	smolckGitter[m]	oh yeah that's plenty probably
+2020-10-11 20:56:53	sunjon	BjrnLinseGitter[: if I use `nvim_buf_set_keymap()` on a buffer in a floating window, I get core dumps
+2020-10-11 20:57:13	BjrnLinseGitter[	talking about code is like dancing about architechture
+2020-10-11 20:57:19	BjrnLinseGitter[	you are supposed to code the code
+2020-10-11 20:57:20	BjrnLinseGitter[	and talk the talk
+2020-10-11 20:57:24	ThomasVigourouxG	lol @bfredl with your multiluahl we might be a bit early on schedule for language injection
+2020-10-11 20:57:32	BjrnLinseGitter[	sunjon: full traceback or it did not happen
+2020-10-11 20:57:42	sunjon	how to

@@ -1,0 +1,23 @@
+2020-03-29 11:31:07	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #xcb
+2020-03-29 11:31:07	--	Topic for #xcb is "X protocol C-language Binding (XCB) -- http://xcb.freedesktop.org/"
+2020-03-29 11:31:07	--	Topic set by ppl (~a@CPE00222d18b141-CM00222d18b13d.cpe.net.cable.rogers.com) on Sun, 02 May 2010 00:41:05
+2020-03-29 11:31:07	--	Channel #xcb: 22 nicks (0 ops, 0 voices, 22 normals)
+2020-03-29 11:31:07	--	URL for #XCB: http://xcb.freedesktop.org/
+2020-03-29 11:31:09	--	Channel created on Sun, 26 Nov 2006 07:43:41
+2020-03-29 11:31:11	captainchris	hi everybody 
+2020-03-29 11:37:50	captainchris	is there no books on xcbProgramming ?
+2020-03-29 11:38:05	captainchris	does xlib and xcb programming is similar ?? 
+2020-03-29 12:15:12	-->	scde (~scde@p5B267D1E.dip0.t-ipconnect.de) has joined #xcb
+2020-03-29 12:52:47	<--	scde (~scde@p5B267D1E.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2020-03-29 13:00:48	psychon	captainchris: xlib and xcb programming is similar and most parts, but there are also differences
+2020-03-29 13:00:56	psychon	and I do not know about any books
+2020-03-29 13:01:13	psychon	the xcb API mostly maps 1:1 to the X11 protocol
+2020-03-29 13:01:19	psychon	Xlib does some "sugar ontop"
+2020-03-29 13:01:39	psychon	https://www.x.org/releases/X11R7.6/doc/xproto/x11protocol.html explains the X11 protocol
+2020-03-29 13:02:27	captainchris	Ok acctually I read XCB documentation 
+2020-03-29 13:02:36	captainchris	but it's really poor
+2020-03-29 13:04:06	captainchris	but thank you for your information 
+2020-03-29 13:05:32	psychon	most of XCB is directly the X11 protocol and that link ^ explains the protocol (well, not "explains", it's a reference)
+2020-03-29 13:05:59	psychon	basically, all you need to know is that the reference talks about CreateWindow and the corresponding xcb function is called xcb_create_window
+2020-03-29 14:49:49	-->	scde (~scde@p200300D38F43758041F4278E9D78D8FD.dip0.t-ipconnect.de) has joined #xcb
+2020-03-29 15:36:24	<--	scde (~scde@p200300D38F43758041F4278E9D78D8FD.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)

@@ -1,0 +1,13 @@
+# GIMP gimp-airbrush-tool options
+
+(foreground (color-rgb 0.15686274509803921 0.15686274509803921 0.15686274509803921))
+(brush "2. Hardness 050")
+(dynamics "Dynamics Off")
+(gradient "FG to BG (RGB)")
+(palette "Default")
+(brush-size 96)
+(brush-hardness 0.5)
+(brush-force 0.81999999999999995)
+(jitter-amount 4.5700000000000003)
+
+# end of gimp-airbrush-tool options

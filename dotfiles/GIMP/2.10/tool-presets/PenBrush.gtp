@@ -1,0 +1,25 @@
+# GIMP tool preset file
+
+(stock-id "gimp-tool-paintbrush")
+(name "PenBrush")
+(tool-options "GimpPaintOptions"
+    (tool "gimp-paintbrush-tool")
+    (brush "2. Hardness 100")
+    (dynamics "SketchBrush")
+    (gradient "FG to BG (RGB)")
+    (palette "Default")
+    (brush-size 5.000000)
+    (dynamics-expanded yes)
+    (fade-length 166.000000)
+    (use-smoothing yes)
+    (smoothing-quality 11)
+    (smoothing-factor 124.800000))
+(use-fg-bg no)
+(use-brush yes)
+(use-dynamics yes)
+(use-gradient yes)
+(use-pattern no)
+(use-palette yes)
+(use-font no)
+
+# end of GIMP tool preset file

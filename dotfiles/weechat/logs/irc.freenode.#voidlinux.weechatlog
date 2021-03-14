@@ -1,0 +1,835 @@
+2020-10-24 21:01:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #voidlinux
+2020-10-24 21:01:10	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2020-10-24 21:01:10	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2020-10-24 21:01:10	--	Channel #voidlinux: 395 nicks (0 ops, 0 voices, 395 normals)
+2020-10-24 21:01:12	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2020-10-24 21:01:14	captainchris	hi everybody 
+2020-10-24 21:01:17	nonchip	and if the prof knows anything about what they should be teaching, the first thing they'd teach you would be not to believe them everything
+2020-10-24 21:01:36	-->	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has joined #voidlinux
+2020-10-24 21:01:44	nonchip	how can that be pushing anything except someone's curiosity and drive to think critically about things?
+2020-10-24 21:01:45	earnestly	Is that what yours taught you?
+2020-10-24 21:02:01	ericonr	captainchris: hi
+2020-10-24 21:02:58	nonchip	no, we didn't have that. well maybe my religion teacher a bit, she at least didn't just go "here's what the bible says" but also "and here's what other books say, oh and what do you think, and why might that've been useful back then and is it still?"
+2020-10-24 21:04:22	ericonr	nonchip: is it okay to thank god for me never having attended religion classes?
+2020-10-24 21:04:43	earnestly	ericonr: It wouldn't mean very much to you would it though
+2020-10-24 21:04:46	nonchip	which i mean is probably better to do in religion than maths, but i don't see how applying that same thinking to more facets of society than just religion is a bad thing? unless that is you do have an agenda you don't want people to think about
+2020-10-24 21:05:00	captainchris	I discovered void linux with youtube movie 
+2020-10-24 21:05:21	captainchris	I'm archlinux user since 5 years 
+2020-10-24 21:05:32	earnestly	nonchip: They are doing it in maths, 2+2=5
+2020-10-24 21:05:36	nonchip	ericonr: i mean depends. do you believe in a god? if yes, do you believe they'd care? if yes do you believe they'd find it ok? if yes or any of the before were no, go ahead
+2020-10-24 21:06:19	nonchip	earnestly: if that were true you wouldn't have been able to send that rather ...... interesting line now would you?
+2020-10-24 21:06:32	earnestly	nonchip: Hm?
+2020-10-24 21:06:43	ericonr	nonchip: I was mostly joking :P
+2020-10-24 21:06:47	nonchip	oh just that we know maths work because computers just work because of it
+2020-10-24 21:06:51	nonchip	*maths works
+2020-10-24 21:06:56	ericonr	captainchris: we are in a movie??
+2020-10-24 21:07:25	dTal	computers work??
+2020-10-24 21:07:35	nonchip	ericonr: feels like it sometimes. one of them really bad cringy wannabe-"comedy" ones.
+2020-10-24 21:07:40	nonchip	dTal: sometimes :P
+2020-10-24 21:07:47	<--	CameronKatri (~CameronKa@2600:1702:2ea0:d7d0:b674:8b5:6531:d913) has quit (Quit: WeeChat 2.9)
+2020-10-24 21:07:51	nonchip	well technically they work almost all the time
+2020-10-24 21:07:55	earnestly	nonchip: Ah I see what you mean.  Like bridges not collapsing and other successful feats of engineering
+2020-10-24 21:08:01	nonchip	yup
+2020-10-24 21:08:34	nonchip	wouldn't work if 4 was 5
+2020-10-24 21:08:42	earnestly	Certainly wouldn't
+2020-10-24 21:08:52	nonchip	just ask Gul Madred.
+2020-10-24 21:09:13	ericonr	nonchip: well
+2020-10-24 21:09:19	ericonr	4 being 5 is just security factor
+2020-10-24 21:09:21	earnestly	Not familiar?
+2020-10-24 21:09:29	ericonr	I think it could work
+2020-10-24 21:09:30	earnestly	With that name
+2020-10-24 21:09:34	ericonr	at least for bridges
+2020-10-24 21:09:38	nonchip	earnestly: oh don't worry you'd get along great
+2020-10-24 21:09:54	earnestly	Seems to be from star trek
+2020-10-24 21:10:06	earnestly	nonchip: Ah, the 4 lights guy
+2020-10-24 21:10:11	nonchip	yup.
+2020-10-24 21:10:21	captainchris	ericonr: no ;) that's luke smith movie 
+2020-10-24 21:10:30	<--	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has quit (Remote host closed the connection)
+2020-10-24 21:10:39	ericonr	ah
+2020-10-24 21:10:43	nonchip	he had similar arguments to justify things...
+2020-10-24 21:10:45	ericonr	so a bad movie, got it
+2020-10-24 21:10:47	st3r4g	no completion for doas? :C
+2020-10-24 21:10:53	earnestly	nonchip: There are four lights
+2020-10-24 21:10:56	ericonr	st3r4g: fish does it :)
+2020-10-24 21:11:11	<--	hyper_dave (~hyper_dav@197.156.86.37) has quit (Ping timeout: 272 seconds)
+2020-10-24 21:11:13	st3r4g	no completion for doas on bash? :C
+2020-10-24 21:11:22	-->	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has joined #voidlinux
+2020-10-24 21:11:45	ericonr	lol
+2020-10-24 21:11:52	<--	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has quit (Remote host closed the connection)
+2020-10-24 21:12:16	-->	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has joined #voidlinux
+2020-10-24 21:12:26	<--	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has quit (Remote host closed the connection)
+2020-10-24 21:12:26	nonchip	earnestly: except you kinda sounded more like there were 5 went "you can't protest because people are getting murdered, because there's always two sides to a story" as if that somehow makes the victimized side undeserving of being listened to
+2020-10-24 21:12:33	nonchip	*when you went
+2020-10-24 21:12:36	earnestly	nonchip: There are four lights!
+2020-10-24 21:12:43	-->	hyper_dave (~hyper_dav@196.191.53.193) has joined #voidlinux
+2020-10-24 21:13:12	nonchip	and now i'mma go to bed because this is getting us nowhere and i'm both figuratively sick of this conversation and literally sick of a cold
+2020-10-24 21:13:35	ericonr	nonchip: cheers
+2020-10-24 21:13:36	<--	Acacia (~Acacia@unaffiliated/acacia) has quit (Ping timeout: 272 seconds)
+2020-10-24 21:14:02	<--	anansi1 (~samedi@172.93.230.108) has quit (Ping timeout: 260 seconds)
+2020-10-24 21:14:03	-->	Acacia (~Acacia@unaffiliated/acacia) has joined #voidlinux
+2020-10-24 21:14:07	-->	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has joined #voidlinux
+2020-10-24 21:15:09	<--	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has quit (Remote host closed the connection)
+2020-10-24 21:15:47	-->	anansi1 (~samedi@172.93.230.108) has joined #voidlinux
+2020-10-24 21:16:49	-->	minikN (~demis@2001:16b8:2e3f:8000:ed1:90fe:9744:9940) has joined #voidlinux
+2020-10-24 21:28:17	<--	runrin (~runrin@unaffiliated/runrin) has quit (Ping timeout: 272 seconds)
+2020-10-24 21:29:43	-->	nrb (~nrb@mue-88-130-61-169.dsl.tropolys.de) has joined #voidlinux
+2020-10-24 21:29:51	nrb	i have an idea for xbps, maybe someone else will like it too
+2020-10-24 21:30:01	nrb	why not adding some sort of labels option when u install a pkg
+2020-10-24 21:30:37	nrb	like xbps-install -S gnome-terminal -l DE
+2020-10-24 21:30:46	ericonr	like metadata?
+2020-10-24 21:31:11	nrb	if i list installed packages with xbps-query -m or whatever and i give a flag like -l (list by labels), it will show me what package are under the label DE
+2020-10-24 21:31:27	nrb	it would be useful if u wanna install packages separately which are meant to form a bigger thing like your own DE
+2020-10-24 21:31:46	nrb	you could also organize stuff like xbps-install -S vim tmux -l worktools
+2020-10-24 21:32:04	nrb	now you know if you want to list your worktools you just do xbps-query -ml and see what is there for worktools
+2020-10-24 21:32:30	nrb	also you often have this problem when u install something like wine, you need to install many additional dependencies, if you wanna uninstall wine it's a problem to find unused packages again
+2020-10-24 21:32:35	captainchris	is voidlinux based on arch ?? 
+2020-10-24 21:32:42	duncaen	no?
+2020-10-24 21:32:45	nrb	no it's not, it's an independent distro
+2020-10-24 21:33:02	duncaen	its like the first point on voidlinux.org
+2020-10-24 21:33:30	minikN	:D
+2020-10-24 21:34:05	captainchris	I like lightweight distro 
+2020-10-24 21:34:06	nrb	i just uninstalled NsCDE, it required me to install many additional separate dependencies, now i don't know what these packages were because i didn't save them or anything
+2020-10-24 21:34:17	nrb	if i would do xbps-install name -l nscde for every package i install, i could easily identify it
+2020-10-24 21:34:29	captainchris	I love tiling windows and lightweight app like qutebrowser weechat cmus .... 
+2020-10-24 21:34:52	nrb	ericonr: yes, it could be realized through metadata, just save the labelname if it was given for the installed package or w/e
+2020-10-24 21:35:08	minikN	captainchris: But those have nothing to do with void. Have they?
+2020-10-24 21:39:45	duncaen	nrb: apk has something like that I think is better than calling it label
+2020-10-24 21:39:57	duncaen	they use the name virtual packages for that
+2020-10-24 21:40:14	duncaen	apk add --virtual devel gcc make
+2020-10-24 21:40:25	duncaen	so the virtual package devel will depend on gcc and make
+2020-10-24 21:40:36	duncaen	the default is world I think
+2020-10-24 21:40:49	duncaen	and world depends on all installed and virtual packages
+2020-10-24 21:40:52	nrb	i just want an easy to use and fast way to label packages
+2020-10-24 21:41:00	-->	hd (~hd@31.223.100.108) has joined #voidlinux
+2020-10-24 21:41:05	nrb	xbps-install -S libsomething32-devel -l wine-libs
+2020-10-24 21:41:14	nrb	so i know if i uninstall wine, i just look for wine-libs
+2020-10-24 21:41:17	nrb	and see what i have to uninstall
+2020-10-24 21:41:28	duncaen	which is similiar or the same for your usecase
+2020-10-24 21:41:45	duncaen	but if you do it with virtual packages as concept you get something like xbps-remove -R wine-libs too
+2020-10-24 21:41:49	-->	tvtoon (~tvtoon@168.197.234.201) has joined #voidlinux
+2020-10-24 21:42:00	nrb	is it a package in void repo? (apk)
+2020-10-24 21:42:15	duncaen	apk-tools is packaged, its the package manager from alpine linux
+2020-10-24 21:42:28	<--	hd (~hd@31.223.100.108) has quit (Client Quit)
+2020-10-24 21:42:34	duncaen	not compatible with xbps
+2020-10-24 21:42:40	nrb	exactly
+2020-10-24 21:42:54	nrb	my idea is simple, maybe i will take a look at it
+2020-10-24 21:42:56	nrb	and do it for myself
+2020-10-24 21:43:20	duncaen	well its not a good design
+2020-10-24 21:43:38	duncaen	solves nothing other then your specific usecase
+2020-10-24 21:43:52	duncaen	which you could do with plain text files with list of packages
+2020-10-24 21:43:55	nrb	this is why i might do it myself
+2020-10-24 21:44:12	nrb	yeah plain text is also ok
+2020-10-24 21:44:25	-->	ProtoMan (~weechat@unaffiliated/protoman) has joined #voidlinux
+2020-10-24 21:45:17	<--	nrb (~nrb@mue-88-130-61-169.dsl.tropolys.de) has quit (Quit: Lost terminal)
+2020-10-24 21:46:29	<--	av0idr (avoidr@cmdline.org) has quit (Changing host)
+2020-10-24 21:46:30	-->	av0idr (avoidr@utox/developer/avoidr) has joined #voidlinux
+2020-10-24 21:46:35	--	av0idr is now known as avoidr
+2020-10-24 21:49:25	-->	cjpbirkbeck (~cjpbirkbe@198.13.162.145) has joined #voidlinux
+2020-10-24 21:53:02	maciozo	is it at all possible to revert package updates on void? without rebuilding them manually, of course
+2020-10-24 21:55:05	noah_h	Man I'm a little tired of Salt breaking every other update usually due to weird upstream Python issues :/
+2020-10-24 21:56:19	maciozo	at least your DE isn't crashing every couple of minutes~
+2020-10-24 21:57:10	ericonr	maciozo: xdwongrade with the packages in /var/cache/xbps
+2020-10-24 21:57:16	ericonr	unless you cleaned that up
+2020-10-24 21:57:25	maciozo	;_;
+2020-10-24 21:57:34	noah_h	maciozo: DE can't crash if don't have a DE :)
+2020-10-24 21:57:34	maciozo	well rip me lol
+2020-10-24 21:57:55	maciozo	yeah ik, but tiling just ain't for me
+2020-10-24 21:58:04	noah_h	maciozo: fair
+2020-10-24 21:58:53	ericonr	well there isn't only tiling
+2020-10-24 21:58:58	maciozo	on the plus side, the wm portion doesn't crash, so i can at least manually restart plasmashell lol
+2020-10-24 21:58:59	ericonr	WMs come in all shapes and sizes
+2020-10-24 21:59:19	ericonr	still, did you check your files and such with xbps-pkgdb?
+2020-10-24 21:59:41	ericonr	Johnnynator daily drives KDE and I think he'd have noticed issues
+2020-10-24 22:00:10	<--	hyper_dave (~hyper_dav@196.191.53.193) has quit (Ping timeout: 260 seconds)
+2020-10-24 22:01:05	maciozo	is xbps-pkgdb supposed to print something?
+2020-10-24 22:04:31	Johnnynator	maciozo: Are you on musl?
+2020-10-24 22:04:36	maciozo	nope
+2020-10-24 22:05:04	maciozo	the only non-standard thing i have, afaik, is a modified (and probably rather old at this point) xf86-video-amdgpu
+2020-10-24 22:05:25	-->	hyper_dave (~hyper_dav@197.156.103.213) has joined #voidlinux
+2020-10-24 22:05:32	maciozo	i had to patch it to get resuming and display switching to work
+2020-10-24 22:05:51	Johnnynator	Mh... Than I don't what the issue might be. The only crash I saw in 5.20+ was piprwire caused, so I disabled it. (Or just never enabled)
+2020-10-24 22:06:09	-->	pwasp (~pwasp@90.166.147.138) has joined #voidlinux
+2020-10-24 22:06:42	maciozo	piprwire?
+2020-10-24 22:06:49	-->	yo9fah (~yo9fah@2a02:2f0d:e308:1e00:4572:12eb:dda3:e07c) has joined #voidlinux
+2020-10-24 22:07:03	maciozo	or pipewire? hmm, i don't have that installed
+2020-10-24 22:07:39	Johnnynator	Yeah, pipewire. Plasma can use it for screen recording on Wayland.
+2020-10-24 22:07:52	maciozo	ah, i see. i'm also running xorg
+2020-10-24 22:08:00	maciozo	guess i could try wayland
+2020-10-24 22:08:14	maciozo	brb then
+2020-10-24 22:10:22	-->	ap4y (~ap4y@125-239-22-192-fibre.sparkbb.co.nz) has joined #voidlinux
+2020-10-24 22:11:03	noah_h	Aha Salt is borked bc they were using internal _private properties from the Python STD lib and from Python 3.8 -> 3.9 those internal properties changed and now here we are :/
+2020-10-24 22:11:50	noah_h	Let me see if I can grab this patch I found from RedHat and put it in void-packages
+2020-10-24 22:11:52	<--	hyper_dave (~hyper_dav@197.156.103.213) has quit (Ping timeout: 256 seconds)
+2020-10-24 22:13:32	maciozo	ah, well, wayland is totally broken for me on kde
+2020-10-24 22:13:48	-->	hyper_dave (~hyper_dav@197.156.86.43) has joined #voidlinux
+2020-10-24 22:13:49	maciozo	does the ol' windows thing when dragging windows, and the shell won't run at all
+2020-10-24 22:17:40	maciozo	also, since adding Polish to KDE, for some reason the sudo password prompt in the terminal is in Polish, despite English still being the default.
+2020-10-24 22:17:40	<--	pwasp (~pwasp@90.166.147.138) has quit (Read error: Connection reset by peer)
+2020-10-24 22:17:46	maciozo	Oh well, that I can live with lol
+2020-10-24 22:18:50	<--	ap4y (~ap4y@125-239-22-192-fibre.sparkbb.co.nz) has quit (Ping timeout: 260 seconds)
+2020-10-24 22:19:50	-->	krg623z390p (~krg623z39@2600:1700:9750:b740:74ff:3ae4:2604:e729) has joined #voidlinux
+2020-10-24 22:22:44	-->	pwasp (~pwasp@90.166.147.138) has joined #voidlinux
+2020-10-24 22:28:18	<--	struchu (~struchu@staticline-31-183-173-174.toya.net.pl) has quit (Ping timeout: 240 seconds)
+2020-10-24 22:31:05	<--	nolo18 (~nolo18@172.red-88-13-166.dynamicip.rima-tde.net) has quit (Ping timeout: 260 seconds)
+2020-10-24 22:33:43	<--	egrain (thomas@31.204.155.215) has quit (Remote host closed the connection)
+2020-10-24 22:34:32	<--	earnestly (~earnestly@unaffiliated/earnestly) has left #voidlinux ("WeeChat 3.0-dev")
+2020-10-24 22:37:44	-->	b (coffee@gateway/vpn/privateinternetaccess/b) has joined #voidlinux
+2020-10-24 22:37:44	<--	pwasp (~pwasp@90.166.147.138) has quit (Read error: Connection reset by peer)
+2020-10-24 22:39:11	-->	runrin (~runrin@unaffiliated/runrin) has joined #voidlinux
+2020-10-24 22:40:34	noah_h	ayo got Salt working
+2020-10-24 22:42:16	-->	pwasp (~pwasp@90.166.147.138) has joined #voidlinux
+2020-10-24 22:42:57	-->	ap4y (~ap4y@125-239-22-192-fibre.sparkbb.co.nz) has joined #voidlinux
+2020-11-30 21:29:33	-->	captainchris (~captainch@2001:861:3181:3540:f71e:6ac3:b9c5:ee) has joined #voidlinux
+2020-11-30 21:29:33	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2020-11-30 21:29:33	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2020-11-30 21:29:33	--	Channel #voidlinux: 420 nicks (0 ops, 0 voices, 420 normals)
+2020-11-30 21:29:35	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2020-11-30 21:29:38	captainchris	Hi everybody 
+2020-11-30 21:30:47	captainchris	I have a samsung NC10 netbook It is working with archlinux32 bit. Can i install 686 voidlinux ??
+2020-11-30 21:30:59	nrb	should work, why wouldn't it?
+2020-11-30 21:31:40	nrb	i would even recommend it because xbps is fast, for me it's faster than pacman on weak hardware like rpi3
+2020-11-30 21:32:07	captainchris	I have all my computer on linux since 5 years
+2020-11-30 21:32:13	ericonr	nrb: just xbps-pkgdb -a to check your files
+2020-11-30 21:32:17	captainchris	And i would change to void 
+2020-11-30 21:32:22	-->	ofiala (~ofiala@94.199.96.206) has joined #voidlinux
+2020-11-30 21:32:22	ericonr	then xbps-install -f any failing ones that you care about
+2020-11-30 21:33:00	nrb	okay thanks
+2020-11-30 21:33:12	nrb	captainchris: go for it,
+2020-11-30 21:33:20	captainchris	okay thank's
+2020-11-30 21:33:28	--	ofiala is now known as onf
+2020-11-30 21:36:05	cameronnemo	branon: yeah downgrade might help, let me know if it does
+2020-11-30 21:36:25	<--	VadPerevad (~VadPereva@95-37-36-144.dynamic.mts-nn.ru) has quit (Ping timeout: 240 seconds)
+2020-11-30 21:41:28	-->	Vulpes (~user@unaffiliated/vulpes) has joined #voidlinux
+2020-11-30 21:43:17	-->	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has joined #voidlinux
+2020-11-30 21:43:30	<--	nrb (~nrb@87.123.206.107) has quit (Quit: Lost terminal)
+2020-11-30 21:43:40	shahab	ericonr, I used "xbps-src fetch glibc ..." to get the sources and now I am debugging.
+2020-11-30 21:44:01	shahab	I've gotta say, the set up time in void was reasonably low. that is very good.
+2020-11-30 21:44:40	shahab	having the sources in the dbg packages would be the best
+2020-11-30 21:45:12	ericonr	I won't say it's WIP
+2020-11-30 21:45:16	ericonr	because it isn't
+2020-11-30 21:45:24	ericonr	although... it's work in planning
+2020-11-30 21:45:27	ericonr	so WIP
+2020-11-30 21:45:47	shahab	not that it is my problem right now, but if somebody needs to debug a different/lower version of a package, this way (having dbg and sources in one package) would make things much simpler.
+2020-11-30 21:45:54	<--	trmg (~trmg@jb.vofr.net) has quit (Remote host closed the connection)
+2020-11-30 21:45:56	shahab	haha
+2020-11-30 21:46:05	shahab	so it's not a WIP but is a WIP
+2020-11-30 21:46:13	-->	trmg (~trmg@jb.vofr.net) has joined #voidlinux
+2020-11-30 21:48:22	--	irc: disconnected from server
+2020-12-01 22:46:50	-->	captainchris (~captainch@2001:861:3181:3540:9e33:c22e:1581:96fa) has joined #voidlinux
+2020-12-01 22:46:50	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2020-12-01 22:46:50	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2020-12-01 22:46:50	--	Channel #voidlinux: 421 nicks (0 ops, 0 voices, 421 normals)
+2020-12-01 22:46:52	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2020-12-01 22:47:07	Socke	atkka: well, you won't get any faster than pure alsa
+2020-12-01 22:47:10	ndowens	I was using pulse but pipewire is working fine, atleast in firefox/chrome for me(in my testing so far)
+2020-12-01 22:47:50	<--	orkim (~orkim@unaffiliated/orkim) has quit (Quit: quit)
+2020-12-01 22:47:51	ndowens	havent tried in a media player yet, for some reason, my setup I am sure, media players and such I couldnt hear audio
+2020-12-01 22:47:58	ndowens	with pulse
+2020-12-01 22:48:10	atkka	with more and more seeming to require pulse will pipewire spoof the pulse dependency?
+2020-12-01 22:48:16	captainchris	Hi everybody, I'm new to void. Imade a fresh install but lot's of library print Exec Format error. I need to reinstall one by one and force the reinstallation 
+2020-12-01 22:48:23	-->	orkim (~orkim@unaffiliated/orkim) has joined #voidlinux
+2020-12-01 22:48:37	ericonr	that's a corrupted drive or you installed the wrong arch
+2020-12-01 22:48:52	captainchris	and the biggest problem is man it print -b : 1: Syntax error: unterminated quoted string 
+2020-12-01 22:49:42	captainchris	I downloaded void-live-x86_64-musl 
+2020-12-01 22:49:50	captainchris	It is correct 
+2020-12-01 22:50:14	ndowens	may have installed glibc pkgs instead of musl?
+2020-12-01 22:50:40	captainchris	I don't know i installed package with xbps-install -S 
+2020-12-01 22:50:54	atkka	did you export XBPS_ARCH=musl
+2020-12-01 22:50:59	captainchris	nope
+2020-12-01 22:51:09	atkka	I'm pretty sure that is needed before install
+2020-12-01 22:51:10	captainchris	Okay I retry tomorow 
+2020-12-01 22:51:22	atkka	haven't ran the musl flavor in a bit though
+2020-12-01 22:52:03	captainchris	thank's guys
+2020-12-01 22:52:09	ericonr	hm shouldn't be required
+2020-12-01 22:52:12	ericonr	you are installing from musl
+2020-12-01 22:52:16	ericonr	just run xbps-pkgdb -a
+2020-12-01 22:52:21	atkka	it used to be if doing chroot install
+2020-12-01 22:52:23	ericonr	and it should complain about your packages
+2020-12-01 22:52:29	ericonr	atkka: ooh
+2020-12-01 22:52:31	ericonr	true
+2020-12-01 22:52:37	ericonr	or possibly not
+2020-12-01 22:52:46	ericonr	there's some weird logic around the arch stuff
+2020-12-01 22:53:29	ndowens	captainchris: next time do: ARCH=x86_64-musl xbps-install -S -r /mnt -R $REPO_URL base-system
+2020-12-01 22:53:35	atkka	I had to explicitly export the XBPS_ARCH even when booting from musl live image before xbps-install -S -R -r /mnt
+2020-12-01 22:53:38	captainchris	ericonr: your command print lot's of error hash mismatch ... 
+2020-12-01 22:53:38	atkka	etc
+2020-12-01 22:53:44	ndowens	on one line replace $REPO_URL with the url of course
+2020-12-01 22:53:56	captainchris	ok I retry an install tomorow 
+2020-12-01 22:54:05	captainchris	yes all my pkg are wrong ;) 
+2020-12-01 22:54:09	ericonr	captainchris: oops
+2020-12-01 22:54:20	ericonr	so do xbps-install -f $all_those_packages
+2020-12-01 22:54:34	ericonr	although you should look into how they got screwed
+2020-12-01 22:55:50	captainchris	thanks guys for your help
+2020-12-03 20:27:43	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #voidlinux
+2020-12-03 20:27:43	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2020-12-03 20:27:43	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2020-12-03 20:27:43	--	Channel #voidlinux: 424 nicks (0 ops, 0 voices, 424 normals)
+2020-12-03 20:27:43	--	URL for #voidlinux: https://www.voidlinux.org
+2020-12-03 20:27:46	captainchris	Hi everybody 
+2020-12-03 20:27:48	ericonr	aldcor: are you the person with an open issue in the spotifyd repo?
+2020-12-03 20:27:49	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2020-12-03 20:27:59	aldcor	ericonr: no
+2020-12-03 20:28:02	maldridge	greetings captainchris
+2020-12-03 20:28:22	ericonr	aldcor: indeed, you aren't :P https://github.com/Spotifyd/spotifyd/issues/720
+2020-12-03 20:28:52	zdykstra	neffi: yeah, some of the recent things I've learned about bcachefs are disturbing.
+2020-12-03 20:29:25	aldcor	i learned about spotifyd and spotify tui about 30mins ago
+2020-12-03 20:29:36	-->	krg623z390p (~krg623z39@2600:1700:9750:b748:fbf9:3e31:411c:515b) has joined #voidlinux
+2020-12-03 20:29:43	aldcor	i will check that link
+2020-12-03 20:29:49	captainchris	I need to install nvidia340 I read on the manual I need to use nonfree repo.I installed void-repo-nonfree 
+2020-12-03 20:30:02	ericonr	aldcor: https://bsd.ac/szliv3r
+2020-12-03 20:30:07	captainchris	But I didn't have nvidia340 with xquery -Rs nvidia 
+2020-12-03 20:30:12	ericonr	you need to do the API setup
+2020-12-03 20:30:27	anddam	hi
+2020-12-03 20:30:27	ericonr	it needs a user id that's a code, it isn't your email
+2020-12-03 20:30:32	ericonr	at least I think that won't work at all
+2020-12-03 20:30:39	ericonr	captainchris: run xbps-install -S
+2020-12-03 20:30:42	neffi	There's more to data integrity than checksumming everything. ZFS is carefully designed and implemented for robustness and integrity as a constraint. bcache's designers just don't strike me as the type to carefully contemplate design choices, to be frank
+2020-12-03 20:31:08	anddam	semi-OT question: how can I manage mimetypes in my xorg session?
+2020-12-03 20:31:08	neffi	I put it below btrfs in the list of uninteresting shit nobody needs
+2020-12-03 20:31:39	anddam	case in point I am downloading a few CSV files, some have application/csv media type, other have text/plain
+2020-12-03 20:31:40	-->	moonpaduser (~moonpadus@dynamic-046-114-150-168.46.114.pool.telefonica.de) has joined #voidlinux
+2020-12-03 20:31:59	ericonr	anddam: I use .config/mimeapps.list
+2020-12-03 20:32:05	aldcor	ericonr: thanks! and where should that file be?
+2020-12-03 20:32:05	ericonr	but that might not be what you want
+2020-12-03 20:32:11	anddam	when I call xdg-open on the latter type it gets opened with emacs
+2020-12-03 20:32:18	anddam	ericonr: I think I am a step behind that
+2020-12-03 20:32:26	ericonr	anddam: in that case, that is what you want
+2020-12-03 20:32:41	ericonr	aldcor: read their readme :P
+2020-12-03 20:32:46	<--	kageru (~kageru@2a04:4540:6f17:6400:1265:210f:c59a:da79) has quit (Ping timeout: 272 seconds)
+2020-12-03 20:32:47	ericonr	it explains the whole thing
+2020-12-03 20:32:49	aldcor	ok
+2020-12-03 20:33:00	anddam	ericonr: I do have a .config/mimeapps.list
+2020-12-03 20:33:20	anddam	but it associates a media type to a handler
+2020-12-03 20:34:01	anddam	I want to either have any *.csv named files associated to application/csv, or have xdg do some magic on the content and figure that it's a damn CSV
+2020-12-03 20:34:15	<--	toluschr (~toluschr@xdsl-87-78-61-227.nc.de) has quit (Remote host closed the connection)
+2020-12-03 20:34:50	captainchris	ericonr 
+2020-12-03 20:34:53	captainchris	thank's
+2020-12-03 20:35:30	ericonr	anddam: ah
+2020-12-03 20:35:35	ericonr	idk then
+2020-12-03 20:35:52	anddam	me neither
+2020-12-03 20:35:58	anddam	do you know who would know that?
+2020-12-03 20:36:08	ericonr	fdo developers?
+2020-12-03 20:36:08	anddam	I guess arch wiki
+2020-12-03 20:36:15	ericonr	also arch wiki
+2020-12-03 20:36:16	anddam	fdo == ?
+2020-12-03 20:36:21	ericonr	freedesktop.org
+2020-12-03 20:36:22	anddam	freedesktop.org
+2020-12-03 20:36:24	anddam	got it
+2020-12-03 20:36:27	ericonr	jinx
+2020-12-03 20:36:35	nbm	i just add xdg-mime default blablablabla.desktop text/csv
+2020-12-03 20:36:35	anddam	double jinx
+2020-12-03 20:36:42	nbm	in .xprofile
+2020-12-03 20:36:57	nbm	it just werkz
+2020-12-03 20:37:04	anddam	nbm: ok, but a) how does that help with my issue? and b) you should only need that once
+2020-12-03 20:37:09	anddam	no need to put it in profile
+2020-12-03 20:37:21	anddam	its changes are persistent
+2020-12-03 20:37:34	nbm	i do that because mimeapps.list is shit
+2020-12-03 20:37:47	ericonr	my mimeapps.list works fine
+2020-12-03 20:37:59	anddam	I think xdfg-mime default is writing the config you pass someplace
+2020-12-03 20:38:01	captainchris	Anyone uses nouveau driver. I found it very unstable. lot's of bug with it 
+2020-12-03 20:38:06	anddam	likely .config/mimeapps.list
+2020-12-03 20:38:11	anddam	nbm: ^
+2020-12-03 20:38:26	anddam	anyway my issue is that I download fubar.csv and its reported media type is "text/plain"
+2020-12-03 20:38:31	anddam	rather than "text/csv"
+2020-12-03 20:38:39	anddam	some heuristic is broken
+2020-12-03 20:39:01	nbm	hmmmmmm ericonr can you preserve mimeapps.list in dotfiles
+2020-12-03 20:39:09	nbm	like with any other config file
+2020-12-03 20:39:22	anddam	ohhh wait
+2020-12-03 20:39:35	anddam	[ ] user
+2020-12-03 20:39:44	anddam	Whitelist (2).csv:  UTF-8 Unicode (with BOM) text
+2020-12-03 20:39:52	anddam	it's the effing BOM
+2020-12-03 20:40:05	anddam	Whitelist.csv:      CSV text
+2020-12-03 20:40:27	anddam	nbm: sure you can
+2020-12-03 20:40:37	nbm	ok i'll give it a second try
+2020-12-03 20:40:53	nbm	last time mimeapps didn't persist and got rewritten
+2020-12-03 20:40:58	anddam	nbm: again, check man because I think your xdg-mime default is actually adding a line there
+2020-12-03 20:41:08	nbm	yes i just checked
+2020-12-03 20:41:09	anddam	because someone else put some xdg-mime default in other profile files
+2020-12-03 20:41:15	nbm	it's adding everything there
+2020-12-03 20:41:27	anddam	my issue deepens
+2020-12-03 20:43:18	aldcor	ericonr: do you have spotifyd runing on voidlinux?
+2020-12-03 20:43:37	ericonr	listening to it right now
+2020-12-03 20:43:54	ericonr	that second link I sent was my config file, just replaced the parts about my user
+2020-12-03 20:45:54	ericonr	neffi: the encryption scheme for bcachefs seems interesting, tho
+2020-12-03 20:46:07	ericonr	chacha20+poly1305 is very good
+2020-12-03 20:46:37	aldcor	i still have that error note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+2020-12-03 20:46:49	aldcor	am I missing some package?
+2020-12-03 20:47:50	ericonr	aldcor: did you create the config?
+2020-12-03 20:47:55	ericonr	in the proper place and such
+2020-12-03 20:48:03	ericonr	try running strace spotifyd to see what it complains about
+2020-12-03 20:48:50	aldcor	so, I created spotifyd.cond in ~/.config/spotifyd/
+2020-12-03 20:48:57	aldcor	.conf*
+2020-12-03 20:49:43	aldcor	also cache folder
+2020-12-03 20:49:55	aldcor	i chose alsa as backend though
+2020-12-03 20:50:01	ericonr	welp, try running `strace spotifyd` to see what it says is going wrong
+2020-12-03 20:50:08	ericonr	there will an ENOENT somewhere
+2020-12-03 20:51:07	<--	gravicappa (~gravicapp@136.169.224.50) has quit (Ping timeout: 246 seconds)
+2020-12-03 20:51:25	aldcor	massive output. some pulseaudio and libs being mentioned
+2020-12-03 20:52:33	ericonr	should be one of the last ENOENTs
+2020-12-03 20:52:59	ericonr	you probably want strace spotifyd 2>/path/to/log
+2020-12-03 20:53:19	ericonr	or strace -o /path/to/log spotifyd
+2020-12-03 20:54:54	<--	bfrost (~bfrost@h-203-104.A151.priv.bahnhof.se) has quit (Quit: WeeChat 3.0)
+2020-12-03 20:57:16	aldcor	there are tons of enoents :) https://0x0.st/i7In.txt
+2020-12-03 20:57:22	aldcor	40
+2020-12-03 20:57:46	cameronnemo	Any thoughts on those Panda Wireless USB devices?
+2020-12-03 20:58:13	<--	ShinyRice (~shinyrice@143.143.135.37.dynamic.jazztel.es) has quit (Quit: WeeChat 3.0)
+2020-12-03 20:58:41	ericonr	cameronnemo: isn't panda the x86 SBC maker?
+2020-12-03 20:59:08	ericonr	aldcor: wtf
+2020-12-03 20:59:08	cameronnemo	I think it is a different company
+2020-12-03 20:59:27	ericonr	it's dying because it can't open syslog???
+2020-12-03 20:59:27	cameronnemo	http://www.pandawireless.com/
+2020-12-03 20:59:34	ericonr	ffs people
+2020-12-03 20:59:45	ericonr	lack of syslog _isn't_ a fatal error
+2020-12-03 21:00:23	ahesford	it should be
+2020-12-03 21:00:42	ericonr	even moreso with that wonderful error message
+2020-12-03 21:00:59	ericonr	aldcor: https://docs.voidlinux.org/config/services/logging.html
+2020-12-03 21:01:08	ericonr	follow that stuff and you should be good
+2020-12-03 21:01:12	ahesford	how many problems have you seen on reddit that boil down to, "Help! I don't know what's going on, and I don't have logs!"
+2020-12-03 21:01:47	ericonr	it's spotifyd, you can just run it in the foreground :P
+2020-12-03 21:02:07	-->	wfnintr (~wfnintr@gateway/tor-sasl/n0a110w) has joined #voidlinux
+2020-12-03 21:02:08	<--	edmrk (~edmrk@5.20.78.49) has quit (Remote host closed the connection)
+2020-12-03 21:02:14	<--	wfnintr (~wfnintr@gateway/tor-sasl/n0a110w) has left #voidlinux
+2020-12-03 21:02:25	zdykstra	Look to the logs on the first light of the fifth day, at down look at /var/log/syslog.
+2020-12-03 21:02:44	ahesford	I'd like to see base-system depend on some kind of syslog and some kind of crond
+2020-12-03 21:03:12	whatisthematrix[	<zdykstra "Look to the logs on the first li"> Gandalf?
+2020-12-03 21:03:21	zdykstra	correcto
+2020-12-03 21:03:23	-->	AlaskanEmily (~Emily@75-164-133-67.ptld.qwest.net) has joined #voidlinux
+2020-12-03 21:03:30	whatisthematrix[	<ahesford "I'd like to see base-system depe"> Its literally two packages to install though.
+2020-12-03 21:03:43	ahesford	and yet a lot of people don't
+2020-12-03 21:04:02	ahesford	and dependencies of base-system, like mdocml, install crontabs that are never run
+2020-12-03 21:04:18	ericonr	hmmmmmm
+2020-12-03 21:04:25	zdykstra	yes, I could get behind that 100%
+2020-12-03 21:04:25	ahesford	no unix system is complete without some crond and logging solution
+2020-12-03 21:04:31	ericonr	why does my system not try to connect to those sockets?
+2020-12-03 21:04:35	ericonr	is this an alsa thing?
+2020-12-03 21:04:59	<--	VadPerevad (~VadPereva@95-37-36-144.dynamic.mts-nn.ru) has quit (Ping timeout: 240 seconds)
+2020-12-03 21:05:17	ericonr	I wonder if I don't see this because my version only has portaudio backend
+2020-12-03 21:05:33	ericonr	hmmmm I should use packages from repo more often
+2020-12-03 21:06:04	<--	anansi (~samedi@213.232.87.78) has quit (Ping timeout: 264 seconds)
+2020-12-03 21:06:28	ahesford	welcome to voigentoo, where we go to all of the trouble of building packages just so you can build your own
+2020-12-03 21:06:55	nbm	lol
+2020-12-03 21:07:08	nbm	voitoo
+2020-12-03 21:07:17	-->	flyren (~kvirc@191.189.140.70) has joined #voidlinux
+2020-12-03 21:07:58	ericonr	ok the repo version works here
+2020-12-03 21:08:07	ericonr	let's test in a namespace without /dev/log
+2020-12-03 21:08:57	ericonr	wtf
+2020-12-03 21:10:28	ericonr	welp, I have no idea what this is supposed to be
+2020-12-03 21:10:53	ericonr	my version doesn't even try to talk to /dev/log :/
+2020-12-03 21:11:12	ericonr	aldcor: if you could run with RUST_BACKTRACE=1, that'd be neat
+2020-12-03 21:11:51	<--	wAmpIre (svelt@2001:67c:14c:12f::2:1) has quit (Quit: leaving)
+2020-12-03 21:11:54	ericonr	aedinius: does poweeeerrbook have logging?
+2020-12-03 21:12:21	-->	wAmpIre (svelt@2001:67c:14c:12f::2:1) has joined #voidlinux
+2020-12-03 21:13:19	aldcor	ericonr: now errors anymore. Now I have to configure tui
+2020-12-03 21:13:32	ericonr	damnit, I wanted to find the error :D
+2020-12-03 21:13:49	ericonr	aldcor: can I share your strace?
+2020-12-03 21:14:00	aldcor	sure
+2020-12-03 21:14:22	ericonr	thanks
+2020-12-03 21:17:08	aldcor	this must be huge "wtf" in `your world` :D anyway, I can run spotifyd now at least and even have syslog :D
+2020-12-03 21:18:13	ericonr	aldcor: what do you mean?
+2020-12-03 21:18:21	ericonr	and great :D
+2020-12-03 21:19:39	aldcor	with `share` I assumed I will become voidlinux meme or smth.. where do you want to share it?
+2020-12-03 21:19:41	-->	kerframil (~kerframil@gentoo/user/kerframil) has joined #voidlinux
+2020-12-03 21:19:58	ericonr	oh, as a bug report :)
+2020-12-03 21:20:22	aldcor	note "install syslog"  too ?
+2020-12-03 21:20:23	_0x1bi_	hey, guys
+2020-12-03 21:20:33	nbm	hi
+2020-12-03 21:20:39	_0x1bi_	for whatever reason I have no sound coming from my hdmi connection
+2020-12-03 21:20:43	ericonr	aldcor: no, spotifyd should fix this
+2020-12-03 21:20:52	ericonr	there's no reason to require it
+2020-12-03 21:20:54	aldcor	oh, great
+2020-12-03 21:21:05	nbm	_0x1bi_: using pulseaudio?
+2020-12-03 21:21:12	_0x1bi_	nbm, just alsa
+2020-12-03 21:21:19	_0x1bi_	should I install pulseaudio as well?
+2020-12-03 21:21:49	nbm	only alsa can be troublesome with external audio and different outputs
+2020-12-03 21:22:10	nbm	install pulseaudio yes (I can't believe I'm saying this)
+2020-12-03 21:23:15	nbm	but dont launch it as root service
+2020-12-03 21:24:55	_0x1bi_	nbm installed, still nothing
+2020-12-03 21:25:41	nbm	install pavucontrol or pavucontrol-qt and mess with the Configuration tab settings
+2020-12-03 21:25:51	nbm	hope it can detect your hdmi
+2020-12-03 21:28:05	ericonr	_0x1bi_: do you have a dbus session?
+2020-12-03 21:28:16	ericonr	https://docs.voidlinux.org/config/session-management.html
+2020-12-03 21:28:16	_0x1bi_	nbm, done, detected hdmi
+2020-12-03 21:28:37	nbm	based
+2020-12-03 21:29:08	ericonr	I didn't know there was a pavucontrol-qt
+2020-12-03 21:29:17	_0x1bi_	ericonr, yes, even dbus is cancer
+2020-12-03 21:29:25	_0x1bi_	s/even/& though/
+2020-12-03 21:29:30	<--	moonpaduser (~moonpadus@dynamic-046-114-150-168.46.114.pool.telefonica.de) has quit (Quit: WeeChat 3.0)
+2020-12-03 21:30:15	nbm	ericonr: i dont know which one is better
+2020-12-03 21:30:21	-->	nullcone (uid11626@gateway/web/irccloud.com/x-lrdrsmddcltwuvmj) has joined #voidlinux
+2020-12-03 21:30:48	-->	anansi (~samedi@92.119.17.121) has joined #voidlinux
+2020-12-03 21:34:37	<--	skuzzymiglet (~skuzzymig@host-92-4-146-193.as43234.net) has quit (Read error: Connection reset by peer)
+2020-12-06 13:11:05	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #voidlinux
+2020-12-06 13:11:05	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2020-12-06 13:11:05	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2020-12-06 13:11:05	--	Channel #voidlinux: 411 nicks (0 ops, 0 voices, 411 normals)
+2020-12-06 13:11:05	--	URL for #voidlinux: https://www.voidlinux.org
+2020-12-06 13:11:07	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2020-12-06 13:11:09	captainchris	Hi everybody 
+2020-12-06 13:11:36	<--	freevan_ (~freevan@90.166.147.138) has quit (Read error: No route to host)
+2020-12-06 13:11:52	-->	freevan (~freevan@90.166.147.138) has joined #voidlinux
+2020-12-06 13:11:58	-->	jellyb (~h.novak@gateway/tor-sasl/jellyb) has joined #voidlinux
+2020-12-06 13:13:13	-->	freevan_ (~freevan@90.166.147.138) has joined #voidlinux
+2020-12-06 13:13:13	<--	freevan (~freevan@90.166.147.138) has quit (Read error: Connection reset by peer)
+2020-12-06 13:15:51	motorto	Hi captainchris
+2020-12-06 13:16:06	captainchris	Hi motorto 
+2020-12-06 13:16:13	captainchris	how are oyu doing today ?? 
+2020-12-06 13:16:52	motorto	fine , studying algorithmics
+2020-12-06 13:17:00	motorto	what about you ?
+2020-12-06 13:17:32	captainchris	Fine I'm trying to resolve my problem with nouveau and hw accelleration on void linux ;)
+2020-12-06 13:18:11	motorto	Hum using optimus laptop or nope ?
+2020-12-06 13:19:20	captainchris	nope 
+2020-12-06 13:20:00	captainchris	I have an old nvidia gt240 but when i watch a movie with mpv my computer freeze beacause it uses gpu instead vdpau-copy 
+2020-12-06 13:20:28	captainchris	and I don'ty play game and I prefer to use nouveau instead nvidia
+2020-12-06 13:21:54	<--	kfvn (~weechat@gateway/tor-sasl/kh4ydn) has quit (Remote host closed the connection)
+2020-12-06 13:22:05	<--	skuzzymiglet (~skuzzymig@host-92-4-146-193.as43234.net) has quit (Ping timeout: 272 seconds)
+2020-12-06 13:22:18	-->	kfvn (~weechat@gateway/tor-sasl/kh4ydn) has joined #voidlinux
+2020-12-06 13:29:08	motorto	Force the use of the hw acelleration on mpv on the command line and see if it works
+2020-12-06 13:29:58	motorto	mpv --hwdec=API video.mp3
+2020-12-06 13:30:01	motorto	*mp4
+2020-12-06 13:30:06	motorto	but you get it :)
+2020-12-06 13:32:45	<--	nullcone (uid11626@gateway/web/irccloud.com/x-plqhlpgwkivmdilu) has quit (Quit: Connection closed for inactivity)
+2020-12-06 13:37:50	captainchris	Yes but the problem persist 
+2020-12-06 13:37:53	<--	moonpaduser (~moonpadus@dynamic-046-114-145-217.46.114.pool.telefonica.de) has quit (Ping timeout: 256 seconds)
+2020-12-06 13:38:24	captainchris	And I installed non-free pkg but nvidia340 doesn't appears
+2020-12-06 13:39:31	-->	moonpaduser (~moonpadus@dynamic-046-114-151-196.46.114.pool.telefonica.de) has joined #voidlinux
+2020-12-06 13:39:47	<--	x1e9 (~xm@lfbn-lil-1-696-203.w81-254.abo.wanadoo.fr) has quit (Quit: WeeChat 2.8)
+2020-12-06 13:39:57	<--	drmbls (~marius@78-56-83-14.static.zebra.lt) has quit (Quit: WeeChat 2.9)
+2020-12-06 13:40:13	-->	drmbls (~marius@78-56-83-14.static.zebra.lt) has joined #voidlinux
+2020-12-06 13:41:05	motorto	do you have xf86-video-nouveau and mesa-dri installed ?
+2020-12-06 13:41:37	motorto	captainchris: you on musl ?
+2020-12-06 13:41:47	captainchris	yes 
+2020-12-06 13:42:41	captainchris	motorto: I have mesa mesa-dri mesa-nouveau-dri mesa-vaapi mesa-vdpau
+2020-12-06 13:43:04	captainchris	and i set DRI_PRIME=1 and VDPAU_DRIVER=nouveau 
+2020-12-06 13:47:40	<--	jellyb (~h.novak@gateway/tor-sasl/jellyb) has quit (Remote host closed the connection)
+2020-12-06 13:48:21	-->	minikN (~demis@2001:16b8:2ead:4a00:8fc3:f9cf:400a:7143) has joined #voidlinux
+2020-12-06 13:50:18	captainchris	do you use nvidia(nouveau)  or amd ?? 
+2020-12-06 13:51:01	<--	motorto (~cerqueira@176.79.33.48) has quit (Ping timeout: 244 seconds)
+2020-12-06 13:51:27	-->	jellyb (~h.novak@gateway/tor-sasl/jellyb) has joined #voidlinux
+2020-12-06 13:52:57	-->	motorto (~cerqueira@dsl-33-48.bl27.telepac.pt) has joined #voidlinux
+2020-12-06 13:54:30	captainchris	Ok on reddit it says nvidia doesn't support musl 
+2020-12-06 13:55:40	-->	little-nemo (~little-ne@2a01:cb14:cd8:c300:92ea:82fd:3968:db55) has joined #voidlinux
+2020-12-06 13:55:47	<--	little-nemo (~little-ne@2a01:cb14:cd8:c300:92ea:82fd:3968:db55) has quit (Remote host closed the connection)
+2020-12-06 13:57:47	captainchris	I'm new to voidlinux and I installed void using msl what is the best for you glibc or musl ?? 
+2020-12-06 13:58:54	<--	minikN (~demis@2001:16b8:2ead:4a00:8fc3:f9cf:400a:7143) has quit (Remote host closed the connection)
+2020-12-06 14:04:50	-->	skuzzymiglet (~skuzzymig@host-92-4-146-193.as43234.net) has joined #voidlinux
+2020-12-06 14:07:24	motorto	Exactly you cant use propiertary drivers on musl
+2020-12-06 14:07:26	motorto	only glibc
+2020-12-06 14:07:55	motorto	I use glibc because I still depend on some propiertary stuff (zoom) for example
+2020-12-06 14:08:10	motorto	Nevertheless nouveau should work
+2020-12-06 14:08:21	motorto	with hardware acelaration I think
+2020-12-06 14:09:24	motorto	Try mpv --hwdec=vaapi video.mp4
+2020-12-06 14:09:43	motorto	And look for the output if it still using hardware acell or it did fallback to software
+2020-12-06 14:11:15	motorto	https://imgur.com/a/usGTujO
+2020-12-06 14:11:39	motorto	See the line saying "Using hardware decoding (vaapi)"
+2020-12-06 14:14:32	<--	skuzzymiglet (~skuzzymig@host-92-4-146-193.as43234.net) has quit (Ping timeout: 272 seconds)
+2020-12-06 14:14:37	motorto	captainchris: .
+2020-12-06 14:17:52	aldcor	fbgrab doesn't work. it makes empty file or it says `couldn't open /dev/console`. Other options to copy error msg which shows up when I turn on external sound card?
+2020-12-06 14:19:39	-->	noob8650 (~noob8650@unaffiliated/noob8650) has joined #voidlinux
+2020-12-06 14:20:01	captainchris	motorto I didn't use vaapi I only uses vdpau
+2020-12-06 14:23:52	motorto	Well acording to arch wiki nouveau supports hardware acell via vappi
+2020-12-06 14:23:57	motorto	https://wiki.archlinux.org/index.php/Hardware_video_acceleration#NVIDIA
+2020-12-06 14:24:01	motorto	Actually both
+2020-12-06 14:26:23	-->	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has joined #voidlinux
+2020-12-06 14:26:34	-->	little-nemo (~little-ne@2a01:cb14:cd8:c300:92ea:82fd:3968:db55) has joined #voidlinux
+2020-12-06 14:30:59	aldcor	hm. /proc/asound/modules is read-only even with sudo. How would I change that file?
+2020-12-06 14:31:08	aldcor	s/change/edit/
+2020-12-06 14:32:16	captainchris	:q
+2020-12-06 14:32:21	captainchris	sorry 
+2020-12-14 21:12:11	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #voidlinux
+2020-12-14 21:12:11	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2020-12-14 21:12:11	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2020-12-14 21:12:11	--	Channel #voidlinux: 414 nicks (0 ops, 0 voices, 414 normals)
+2020-12-14 21:12:11	--	URL for #voidlinux: https://www.voidlinux.org
+2020-12-14 21:12:13	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2020-12-14 21:12:15	captainchris	hello everybody 
+2020-12-14 21:12:39	captainchris	j #antix
+2020-12-14 21:14:26	eoli3n	hm hm https://freedesktop.org/wiki/Software/gummiboot
+2020-12-14 21:15:14	eoli3n	gummiboot is deprecated, it will work anyway, but not sure i want to configure it
+2020-12-14 21:15:37	-->	nullcone (uid11626@gateway/web/irccloud.com/x-rxmjoehimsxvidya) has joined #voidlinux
+2020-12-14 21:16:53	ericonr	we use the, ahem, "maintained" gummiboot from alpine
+2020-12-14 21:17:03	eoli3n	saw this
+2020-12-14 21:17:09	eoli3n	that's where i found the link
+2020-12-14 21:17:12	eoli3n	http://54.37.137.89/pkgs.void/package/gummiboot
+2020-12-14 21:17:36	eoli3n	but ... you know ^^ lets try the zfsbootmenu way directly
+2020-12-14 21:20:12	eoli3n	just a thing, how did you asciinema a reboot... ?
+2020-12-14 21:22:16	ericonr	secret sauce
+2020-12-14 21:22:23	ericonr	and virtual machines
+2020-12-14 21:22:23	eoli3n	come on :P
+2020-12-14 21:22:34	ericonr	at least I think that one was vm
+2020-12-14 21:22:39	eoli3n	so mysterious
+2020-12-14 21:22:58	eoli3n	how can you asciinema on a VM
+2020-12-14 21:23:53	nonchip	one way that comes to mind: you can connect to it via virtual serial port and record from the outside while it's rebooting
+2020-12-14 21:24:09	eoli3n	hm, never tried this
+2020-12-14 21:24:34	nonchip	because unlike ssh that's gonna be up almost immediately so the only thing you miss is the bios
+2020-12-14 21:25:27	<--	fanta1 (~fanta1@p200300f76f02c100017180df77d34422.dip0.t-ipconnect.de) has quit (Quit: fanta1)
+2020-12-14 21:28:28	eoli3n	is there any xbps hook to automate boot env creation ?
+2020-12-14 21:28:54	eoli3n	i did this for zectl and pacman : https://github.com/eoli3n/zectl-pacman-hook
+2020-12-14 21:29:04	nonchip	yeah most boot envs use it, check for how e.g. dracut or zfsbootmenu do it
+2020-12-14 21:29:47	eoli3n	i don't get your answer
+2020-12-14 21:29:53	eoli3n	maybe i misexplained what i want
+2020-12-14 21:30:25	eoli3n	or ... ok, dracut has a hook to create zfsbootmenu AND a bootenv ?
+2020-12-14 21:33:35	nonchip	not sure what exactly you mean by bootenv, but dracut and zfsbootmenu both take care of updating their stuff automatically
+2020-12-14 21:34:08	eoli3n	zroot/ROOT/void.2019.10.04    1.20M   582G     7.17G  /
+2020-12-14 21:34:09	eoli3n	zroot/ROOT/void.2019.11.01    10.9G   582G     7.17G  /
+2020-12-14 21:34:16	eoli3n	https://github.com/zbm-dev/zfsbootmenu#system-prereqs
+2020-12-14 21:34:18	ericonr	are those cloned datasets?
+2020-12-14 21:34:54	eoli3n	isn't a boot env a dataset with /boot managed ?
+2020-12-14 21:35:03	ericonr	ah, that's from the example
+2020-12-14 21:35:07	eoli3n	yes
+2020-12-14 21:35:23	ericonr	not managed, it's just /boot as void leaves it
+2020-12-14 21:35:26	nonchip	again, i don't know what "a boot env" is supposed to be, but those there are root filesystems
+2020-12-14 21:35:27	ericonr	with initramfs and ernel
+2020-12-14 21:35:29	ericonr	kernel
+2020-12-14 21:35:30	-->	stzsch (~stzsch@187.44.81.18) has joined #voidlinux
+2020-12-14 21:35:43	eoli3n	a boot env is a bootable zfs snapshot
+2020-12-14 21:36:04	ericonr	 /boot just can't be a mount point
+2020-12-14 21:36:24	eoli3n	so my question is, zfsbootmenu provide a way to boot boot env, but how to automate boot env creation
+2020-12-14 21:36:30	ericonr	you don't do anything
+2020-12-14 21:36:40	ericonr	the root filesystem already has all you need
+2020-12-14 21:36:44	eoli3n	ok, so it managed this by default
+2020-12-14 21:36:52	eoli3n	hm
+2020-12-14 21:36:52	ericonr	(assuming you added the required files in /etc/dracut.conf.d)
+2020-12-14 21:37:07	eoli3n	what do you mean by "the root filesystem already has all you need"
+2020-12-14 21:37:08	ericonr	so the final initramfs contains zfs modules
+2020-12-14 21:37:09	eoli3n	all i need to ?
+2020-12-14 21:37:15	eoli3n	that's not my question
+2020-12-14 21:37:19	ericonr	all zbm needs to boot into it, rather
+2020-12-14 21:37:33	eoli3n	ok so lets restart fresh
+2020-12-14 21:37:41	eoli3n	my question is not "how zbm works" but
+2020-12-14 21:37:50	eoli3n	it is used to boot zfs snapshot
+2020-12-14 21:37:53	eoli3n	+s
+2020-12-14 21:37:57	eoli3n	how to create those
+2020-12-14 21:38:33	eoli3n	in the exmeple you can see two snapshots
+2020-12-14 21:38:42	nonchip	by making snapshots.
+2020-12-14 21:38:43	eoli3n	are they automatically created when kernel upgraded ?
+2020-12-14 21:38:43	<--	jleightcap (~jleightca@c-174-60-161-106.hsd1.pa.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-12-14 21:38:47	nonchip	no
+2020-12-14 21:38:49	ericonr	ah, no
+2020-12-14 21:38:55	eoli3n	ok, so that's what i'm asking for :)
+2020-12-14 21:38:58	ericonr	heh
+2020-12-14 21:39:07	ericonr	I just do hourly/daily/weekly/monthly snapshots
+2020-12-14 21:39:40	ericonr	and that catches any of my destructive tendencies
+2020-12-14 21:39:46	eoli3n	:)
+2020-12-14 21:39:49	nonchip	they're made when you make them, or you could use a program like sanoid to automate that
+2020-12-14 21:39:59	eoli3n	is that easy to write xbps hooks ?
+2020-12-14 21:40:19	eoli3n	firstly, does xbps support hooks ?
+2020-12-14 21:40:23	 *	ericonr looks around for xbps hooks
+2020-12-14 21:40:28	 *	ericonr can't find any
+2020-12-14 21:40:34	-->	jleightcap (~jleightca@2601:98a:300:49c:8f48:3b40:afb7:26ee) has joined #voidlinux
+2020-12-14 21:40:36	eoli3n	https://github.com/void-linux/xbps/issues/304
+2020-12-14 21:40:45	nonchip	last time i checked it was pretty much impossible unless you're making a package that wants to react to a select few of events
+2020-12-14 21:40:54	eoli3n	hm
+2020-12-14 21:41:10	eoli3n	https://github.com/pandom79/xbps/tree/new-xbps#Xbps-hooks
+2020-12-14 21:41:33	eoli3n	seriously
+2020-12-14 21:41:38	eoli3n	the commit has 4hours
+2020-12-14 21:41:43	eoli3n	if that's not luck...
+2020-12-14 21:41:52	ericonr	it's probably been rebased lol
+2020-12-14 21:42:04	eoli3n	 
+2020-12-14 21:42:05	eoli3n	pandom79 New feature : xbps hooks 23e7515 4 hours ago
+2020-12-14 21:42:05	eoli3n	 
+2020-12-14 21:42:10	ericonr	that's been done for a while now
+2020-12-14 21:42:37	eoli3n	void linux is calling me
+2020-12-14 21:44:04	nonchip	i know all of those words but i have no idea what you just said :D
+2020-12-14 21:44:25	eoli3n	zfsbootmenu is much better than zectl, with zectl you need separated /boot to be read by bootloader. Then you can't create more boot env than you /boot size can support
+2020-12-14 21:44:54	eoli3n	than your*
+2020-12-14 21:45:09	nonchip	pretty sure you still need that, but just to install zfsbootmenu into
+2020-12-14 21:45:09	eoli3n	sometimes, i don't know what i'm saying too :)
+2020-12-14 21:45:47	ericonr	nonchip: but once you have that, you can install any number of distros/whatever and it will still work :)
+2020-12-14 21:45:48	eoli3n	i don't think, zectl is boot env manager for systemd-boot/gummiboot
+2020-12-14 21:45:56	nonchip	ericonr: yup
+2020-12-14 21:46:05	ericonr	not that I use it for much
+2020-12-14 21:46:15	ericonr	I have only a musl and a glibc BE
+2020-12-14 21:46:34	eoli3n	you mean that you still use a bootloader to not be stuck on you zfs boot envs ?
+2020-12-14 21:46:38	nonchip	eoli3n: no i mean you still need a boot partition for uefi (mounted to /boot/efi) but your actual /boot with the kernels is in the zfs like you said
+2020-12-14 21:46:50	ericonr	^^
+2020-12-14 21:46:53	eoli3n	nonchip so i misexplained
+2020-12-14 21:47:12	nonchip	because you need something in /boot/efi to load zfsbootmenu
+2020-12-14 21:47:19	-->	Lense (~Lense@li283-116.members.linode.com) has joined #voidlinux
+2020-12-14 21:47:39	eoli3n	you can't make an efi file and set it default with efibootmgr ?
+2020-12-14 21:48:02	ericonr	yes, but you still need to put it somewhere
+2020-12-14 21:48:06	nonchip	and where would that file go? ;)
+2020-12-14 21:48:11	ericonr	unless you use a USB drive for that
+2020-12-14 21:48:12	eoli3n	yes in a separated /efi
+2020-12-14 21:48:13	ericonr	which is an option
+2020-12-14 21:48:23	eoli3n	but /boot is embeeded in the snapshot
+2020-12-14 21:48:24	nonchip	well a separated /boot/efi usually but yes
+2020-12-14 21:48:27	eoli3n	which is not with zectl
+2020-12-14 21:48:44	nonchip	yeah /boot is in the zfs, but /boot/efi is a mountpoint for the separate efi boot partition.
+2020-12-14 21:49:10	eoli3n	with zectl you need kernel/initrd to be readable by your bootloader, so you can't embed them in the snapshot
+2020-12-14 21:49:19	-->	well_laid_lawn (~Jean-luc@58-6-241-248.tpgi.com.au) has joined #voidlinux
+2020-12-14 21:49:39	nonchip	yeah i think zectl just configures the bootloader.
+2020-12-14 21:49:43	eoli3n	it does yes
+2020-12-14 21:49:47	eoli3n	https://github.com/johnramsden/zectl/blob/master/docs/plugins/systemdboot.md
+2020-12-14 21:49:58	nonchip	but zfsbootmenu is actually a tiny linux that gets booted and then boots your actual one
+2020-12-14 21:50:07	eoli3n	and it snapshot kernel/initrd manually
+2020-12-14 21:50:20	eoli3n	yep i get that, and that's the clever way :)
+2020-12-14 21:50:36	nonchip	yup
+2020-12-14 21:51:12	eoli3n	hm then what's the lightest choice if i still want a bootloader ?
+2020-12-14 21:51:35	eoli3n	a not deprecated one
+2020-12-14 21:51:39	eoli3n	:°
+2020-12-14 21:51:52	aedinius	hm, i guess zbm requires efi
+2020-12-14 21:52:03	eoli3n	yes
+2020-12-14 21:52:05	nonchip	eoli3n: i use refind
+2020-12-14 21:52:14	eoli3n	hm
+2020-12-14 21:52:22	eoli3n	it look like overkill as grub
+2020-12-14 21:52:27	eoli3n	to me
+2020-12-14 21:52:32	nonchip	aedinius: no https://github.com/zbm-dev/zfsbootmenu/wiki/Void-Linux----Single-disk-syslinux-MBR
+2021-02-21 17:53:00	-->	captainchris (~captainch@2001:861:3181:3540:2e69:17de:6354:db14) has joined #voidlinux
+2021-02-21 17:53:00	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2021-02-21 17:53:01	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2021-02-21 17:53:01	--	Channel #voidlinux: 413 nicks (0 ops, 0 voices, 413 normals)
+2021-02-21 17:53:01	--	URL for #voidlinux: https://www.voidlinux.org
+2021-02-21 17:53:01	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2021-02-21 17:58:37	-->	st3r4g (~stefano@host-95-250-36-44.retail.telecomitalia.it) has joined #voidlinux
+2021-02-21 18:02:24	<--	freevan (~freevan@194.37.96.105) has quit (Ping timeout: 240 seconds)
+2021-02-21 18:04:36	-->	freevan (~freevan@90.166.147.138) has joined #voidlinux
+2021-02-21 18:07:44	--	PeterEaston is now known as TheJollyRoger
+2021-02-21 18:08:44	-->	kerframil (~kerframil@gentoo/user/kerframil) has joined #voidlinux
+2021-02-21 18:09:35	-->	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has joined #voidlinux
+2021-02-21 18:11:56	<--	Dotz0cat (~Dotz0cat@h69.191.187.173.dynamic.ip.windstream.net) has quit (Ping timeout: 264 seconds)
+2021-02-21 18:12:10	-->	Dotz0cat_ (~Dotz0cat@h42.133.187.173.dynamic.ip.windstream.net) has joined #voidlinux
+2021-02-21 18:20:06	<--	iskander (~iskander@45.86.201.20) has quit (Quit: bye)
+2021-02-21 18:20:51	feranur	prof_bloodstone: try alsamixer and see if there are any buttons muting sound output, or sliders all the way down that shouldn't be. also, make sure you're outputting to the correct soundcard.
+2021-02-21 18:22:51	-->	iskander (~iskander@45.86.200.11) has joined #voidlinux
+2021-02-21 18:25:00	-->	jellyb (~h.novak@gateway/tor-sasl/jellyb) has joined #voidlinux
+2021-02-21 18:28:36	<--	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has quit (Ping timeout: 272 seconds)
+2021-02-21 18:30:41	<--	gravicappa (~gravicapp@h37-122-117-69.dyn.bashtel.ru) has quit (Ping timeout: 260 seconds)
+2021-02-21 18:31:35	-->	gravicappa (~gravicapp@h62-133-180-169.dyn.bashtel.ru) has joined #voidlinux
+2021-02-21 18:35:18	-->	oliverwiegers (~oliverwie@p2e53346b.dip0.t-ipconnect.de) has joined #voidlinux
+2021-02-21 18:36:52	-->	fes (~fes@46.59.20.170) has joined #voidlinux
+2021-02-21 18:38:07	fes	hi. i have installed nvidia390-dkms but it does not seem to load correctly. All I get is a resolution of 640x480. Any ideas why this might be?
+2021-02-21 18:39:20	fes	i have installed the alpha gnome glibc iso
+2021-02-21 18:41:39	fes	dmesg says that it has initialized nvidia-drm 0.0.0 and nvidia-modeset has loaded NVIDIA Kernel Mode Setting Driver for Unix platforms 390.141
+2021-02-21 18:43:20	-->	SXCL (~SXCL@2a01:c23:c042:b600:48e9:257b:d8db:2a7a) has joined #voidlinux
+2021-02-21 18:43:28	fes	also another issue i have had with the latest installations the last couple of years is that the keyboard layout (sv_latin1) i setup when installing is not loaded so the login (gdm and also lightdm) has the english layout and first when I am logged in the destop environment sets the correct keyboard layout)
+2021-02-21 18:48:15	<--	oliverwiegers (~oliverwie@p2e53346b.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2021-02-21 18:55:22	ericonr	fes: I think it should work, but no idea :/
+2021-02-21 18:55:30	ericonr	the nvidia 390 thingy
+2021-02-21 18:55:46	ericonr	where do you see the resolution options?
+2021-02-21 18:56:25	fes	ericonr, in Gnome's settings windows.
+2021-02-21 18:57:15	<--	st3r4g (~stefano@host-95-250-36-44.retail.telecomitalia.it) has quit (Ping timeout: 240 seconds)
+2021-02-21 18:58:05	fes	it is the only resolution available
+2021-02-21 18:58:26	<--	SXCL (~SXCL@2a01:c23:c042:b600:48e9:257b:d8db:2a7a) has quit (Remote host closed the connection)
+2021-02-21 18:58:55	-->	SXCL (~SXCL@2a01:c23:c042:b600:48e9:257b:d8db:2a7a) has joined #voidlinux
+2021-02-21 19:00:10	<--	drmbls (~marius@78-56-83-14.static.zebra.lt) has quit (Quit: WeeChat 3.0.1)
+2021-02-21 19:00:42	-->	kupi (uid212005@gateway/web/irccloud.com/x-pssuakftcukcxfkk) has joined #voidlinux
+2021-02-21 19:02:01	-->	egrain (felix@31.204.155.215) has joined #voidlinux
+2021-02-21 19:02:51	-->	bone-baboon (bone-baboo@gateway/vpn/privateinternetaccess/bone-baboon) has joined #voidlinux
+2021-02-21 19:03:57	<--	SXCL (~SXCL@2a01:c23:c042:b600:48e9:257b:d8db:2a7a) has quit (Ping timeout: 272 seconds)
+2021-02-21 19:07:35	bone-baboon	I am using Void.  I have `libressl` version 3.1.5 installed.  Void does not have an `openssl` package.  when I run `openssl genpkey -algorithm x25519` I get the error "Algorithm x25519 not found".  I have searched the output of `openssl list-*` with `grep` for "25519" and did not get any results.  I do not see 25519 in the output of `openssl ecparam -list_curves`.
+2021-02-21 19:07:40	bone-baboon	However on another system with `openssl` installed this command works: `openssl genpkey -algorithm x25519`.
+2021-02-21 19:07:53	bone-baboon	What is the `libressl` equivalent to this `openssl` command?
+2021-02-21 19:09:06	ericonr	bone-baboon: the libressl package provides the openssl command
+2021-02-21 19:10:44	bone-baboon	ericonr: Yes you are correct.  For example when I run `openssl version` it output "LibreSSL 3.1.5".
+2021-02-21 19:11:43	-->	SXCL (~SXCL@2a01:c23:c042:b600:48e9:257b:d8db:2a7a) has joined #voidlinux
+2021-02-21 19:15:33	aedinius	hm, libressl is supposed to support it
+2021-02-21 19:17:05	-->	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has joined #voidlinux
+2021-02-21 19:17:23	-->	carp (~carp____@2a02:2168:aa8d:8800:75bb:af9d:2863:2965) has joined #voidlinux
+2021-02-21 19:18:22	aedinius	since 2.5.1
+2021-02-21 19:18:22	<--	CarlosEDP (~CarlosEDP@187.101.226.117) has quit (Read error: Connection reset by peer)
+2021-02-21 19:18:26	<--	carp (~carp____@2a02:2168:aa8d:8800:75bb:af9d:2863:2965) has quit (Client Quit)
+2021-02-21 19:18:50	-->	CarlosEDP (~CarlosEDP@187.101.226.117) has joined #voidlinux
+2021-02-21 19:19:06	-->	MegaCarp (~carp____@2a02:2168:aa8d:8800:75bb:af9d:2863:2965) has joined #voidlinux
+2021-02-21 19:26:06	-->	well_laid_lawn (~Jean-luc@193-116-82-88.tpgi.com.au) has joined #voidlinux
+2021-02-21 19:26:52	-->	eoli3n (~eoli3n@82-64-112-150.subs.proxad.net) has joined #voidlinux
+2021-02-21 19:28:54	<--	work_ (uid44037@gateway/web/irccloud.com/x-teliwapeeepccexf) has quit (Ping timeout: 240 seconds)
+2021-02-21 19:29:25	<--	kozowu (uid44796@gateway/web/irccloud.com/x-mirfwtuhrmimndjb) has quit (Ping timeout: 264 seconds)
+2021-02-21 19:29:31	-->	st3r4g (~stefano@host-95-250-36-44.retail.telecomitalia.it) has joined #voidlinux
+2021-02-21 19:30:02	-->	work_ (uid44037@gateway/web/irccloud.com/x-tlctqgieihyapyhm) has joined #voidlinux
+2021-02-21 19:30:56	-->	kozowu (uid44796@gateway/web/irccloud.com/x-wlfxxlfkkrrqlsqe) has joined #voidlinux
+2021-02-21 19:31:39	fes	any idea why nvidia390-dkms isn't working correctly?
+2021-02-21 19:33:47	<--	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has quit (Ping timeout: 246 seconds)
+2021-02-21 19:34:12	ifreund	... why can't I run a script that has r and x bits set?
+2021-02-21 19:34:32	-->	jle (~jle@unaffiliated/jod) has joined #voidlinux
+2021-02-21 19:35:02	ericonr	noexec in filesystem?
+2021-02-21 19:35:55	aedinius	fes: I need more information
+2021-02-21 19:36:13	quinq	ifreund, no hands?
+2021-02-21 19:36:30	aedinius	ifreund: are the bits set for a different user? ;]
+2021-02-21 19:36:41	ifreund	ericonr: ding ding ding
+2021-02-21 19:36:42	ifreund	thanks
+2021-02-21 19:36:48	aedinius	lol
+2021-02-21 19:37:41	 *	quinq is jealous of the Gremlins plush toy ericonr just won
+2021-02-21 19:37:42	fes	aedinius, what information would you like me to get for you?
+2021-02-21 19:38:28	aedinius	fes: what does "isn't working correctly" mean? kernel version, etc, would be nice.
+2021-02-21 19:38:36	aedinius	is this a fresh install, old update, etc
+2021-02-21 19:39:10	fes	fresh install (gnome x86_64 glibc), 5.10.17_1, nvidia390-dkms
+2021-02-21 19:39:34	-->	nullcone (uid11626@gateway/web/irccloud.com/x-cpajmesmndejreoi) has joined #voidlinux
+2021-02-21 19:40:41	aedinius	so is dkms failing to build or ?
+2021-02-21 19:41:13	fes	it says that it is building it and that creating a new initramfs
+2021-02-21 19:41:18	aedinius	output and logs would be nice, you can share them via a pastebin
+2021-02-21 19:41:24	<--	bone-baboon (bone-baboo@gateway/vpn/privateinternetaccess/bone-baboon) has quit (Ping timeout: 240 seconds)
+2021-02-21 19:41:33	fes	dmesg log?
+2021-02-21 19:41:57	aedinius	Well, if there's an error you're hitting
+2021-02-21 19:42:13	nashimus_	I apologize, I know very little about configuring sound... How can I check my audio sample rate from the command line? I'm using ALSA and pulseaudio.
+2021-02-21 19:42:31	feranur	fes: wrt the keyboard issue, did you set it in /etc/rc.conf ? also, maybe it needs to be "sv-latin1" (hyphen instead of underscore)
+2021-02-21 19:42:53	nashimus_	Sound works great with web browser, but is garbled in steam (flatpak). I wanted to try changing the sample rate to see if that helps.
+2021-02-21 19:42:58	<--	SXCL (~SXCL@2a01:c23:c042:b600:48e9:257b:d8db:2a7a) has quit (Read error: Connection reset by peer)
+2021-02-21 19:43:01	fes	feranur, i choose the one in the void-installer
+2021-02-21 19:43:03	quinq	nashimus_, are you sure that's possible, using both alsa and pulseaudio?
+2021-02-21 19:43:28	nashimus_	quinq: not sure. Perhaps the correct statement would be "they're both installed.."
+2021-02-21 19:43:31	feranur	well, look at /etc/rc.conf and set it there if it isn't.
+2021-02-21 19:43:38	aedinius	quinq: alsa is still the kernel interface
+2021-02-21 19:43:43	-->	SXCL (~SXCL@dynamic-095-117-013-012.95.117.pool.telefonica.de) has joined #voidlinux
+2021-02-21 19:44:24	nashimus_	alsamixer (terminal) seems to work when adjusting levels
+2021-02-21 19:44:39	quinq	right
+2021-02-21 19:46:19	fes	aedinius, https://pastebin.com/pGrzdjvt
+2021-02-21 19:47:11	ericonr	aedinius: did you see the actual issue fes has? something about GNOME config only showing a single (small) resolutions
+2021-02-21 19:47:42	fes	feranur, in rc.conf I have an KEYMAP=sv-latin1 entry
+2021-02-21 19:47:48	aedinius	ericonr: oh, no
+2021-02-21 19:48:07	<--	jle (~jle@unaffiliated/jod) has quit (Changing host)
+2021-02-21 19:48:07	-->	jle (~jle@unaffiliated/jle) has joined #voidlinux
+2021-02-21 19:51:03	feranur	fes: do you have kbd and kbd-data installed? otherwise no idea, maybe the *dm are doing something stupid.
+2021-02-21 19:51:59	fes	feranur, both kbd and kbd-data are installed
+2021-02-21 19:52:50	feranur	yeah, sorry, out of ideas then :(
+2021-02-21 19:53:14	ericonr	maybe you need to configure Xorg itself?
+2021-02-21 19:53:18	-->	ricci (~ricci@net-188-218-241-143.cust.vodafonedsl.it) has joined #voidlinux
+2021-02-21 19:53:31	ericonr	like /etc/X11 or a specific directory for the display manager
+2021-02-21 19:54:19	-->	v0idkr4f1 (~v0idkr4ft@89.47.234.244) has joined #voidlinux
+2021-02-21 19:54:40	<--	kempe (~kempe@gateway/tor-sasl/kempe) has quit (Remote host closed the connection)
+2021-02-21 19:57:29	<--	v0idkr4ft (~v0idkr4ft@138.199.52.57) has quit (Ping timeout: 260 seconds)
+2021-02-21 19:57:57	<--	dahlya (~dahlya@ip-96-43-224-154.dsl.netrevolution.com) has quit (Quit: WeeChat 2.3)
+2021-02-21 19:58:23	-->	kempe (~kempe@gateway/tor-sasl/kempe) has joined #voidlinux
+2021-02-21 19:58:59	<--	mahmutov (~milisman@unaffiliated/mahmutov) has quit (Ping timeout: 246 seconds)
+2021-02-21 19:59:29	-->	mahmutov (~milisman@unaffiliated/mahmutov) has joined #voidlinux
+2021-02-21 19:59:41	<--	egrain (felix@31.204.155.215) has quit (Remote host closed the connection)
+2021-02-21 19:59:54	fes	thank you all for trying to help.
+2021-02-21 20:01:46	<--	fes (~fes@46.59.20.170) has quit (Quit: Leaving)
+2021-02-21 20:03:11	-->	hyper_dave (~hyper_dav@197.156.122.159) has joined #voidlinux
+2021-02-21 20:04:16	<--	kfvn (~weechat@gateway/tor-sasl/kh4ydn) has quit (Ping timeout: 268 seconds)
+2021-02-21 20:05:08	-->	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has joined #voidlinux
+2021-02-21 20:06:09	-->	kfvn (~weechat@gateway/tor-sasl/kh4ydn) has joined #voidlinux
+2021-02-21 20:11:35	<--	daphnis (~daphnis@cm-84.214.179.98.getinternet.no) has quit (Ping timeout: 240 seconds)
+2021-02-21 20:11:40	-->	bone-baboon (bone-baboo@gateway/vpn/privateinternetaccess/bone-baboon) has joined #voidlinux
+2021-02-21 20:15:19	-->	krg623z390p (~krg623z39@2600:1700:9750:b748:fbf9:3e31:411c:515b) has joined #voidlinux
+2021-02-21 20:21:32	<--	anthepro (~anthepro@unaffiliated/anthepro) has quit (Quit: good riddance)
+2021-02-21 20:22:18	-->	anthepro (~anthepro@unaffiliated/anthepro) has joined #voidlinux
+2021-02-21 20:23:24	<--	anthepro (~anthepro@unaffiliated/anthepro) has quit (Client Quit)
+2021-02-21 20:24:21	-->	anthepro (~anthepro@unaffiliated/anthepro) has joined #voidlinux
+2021-02-21 20:25:51	<--	jellyb (~h.novak@gateway/tor-sasl/jellyb) has quit (Ping timeout: 268 seconds)
+2021-02-21 20:26:10	-->	jellyb (~h.novak@gateway/tor-sasl/jellyb) has joined #voidlinux
+2021-02-21 20:26:16	<--	anthepro (~anthepro@unaffiliated/anthepro) has quit (Client Quit)
+2021-02-21 20:26:49	-->	anthepro (~anthepro@unaffiliated/anthepro) has joined #voidlinux
+2021-02-21 20:32:34	-->	xaltsc_ (~xaltsc@unaffiliated/xaltsc) has joined #voidlinux
+2021-02-21 20:34:10	<--	xaltsc (~xaltsc@unaffiliated/xaltsc) has quit (Ping timeout: 265 seconds)
+2021-02-21 20:41:49	<--	st3r4g (~stefano@host-95-250-36-44.retail.telecomitalia.it) has quit (Ping timeout: 260 seconds)
+2021-02-21 20:43:52	-->	xAx (~Lectron@2600:1700:3c00:f560::37) has joined #voidlinux
+2021-02-21 20:45:22	-->	PeterEaston (~Jolly_Rog@gateway/tor-sasl/thejollyroger) has joined #voidlinux
+2021-02-21 20:45:53	<--	TheJollyRoger (~Jolly_Rog@gateway/tor-sasl/thejollyroger) has quit (Quit: TheJollyRoger)
+2021-02-21 20:46:04	--	PeterEaston is now known as TheJollyRoger
+2021-02-21 20:47:20	-->	pinote (~pinote@177.17.88.77) has joined #voidlinux
+2021-02-21 20:47:56	<--	xaltsc_ (~xaltsc@unaffiliated/xaltsc) has quit (Ping timeout: 264 seconds)
+2021-02-21 20:49:53	-->	xaltsc_ (~xaltsc@unaffiliated/xaltsc) has joined #voidlinux
+2021-03-10 22:26:32	-->	captainchris (~captainch@2001:861:3181:3540:2e69:17de:6354:db14) has joined #voidlinux
+2021-03-10 22:26:32	--	Topic for #voidlinux is "The Void Linux distribution https://www.voidlinux.org || images: https://alpha.de.repo.voidlinux.org/live/current || Getting Started: https://docs.voidlinux.org/xbps/ && https://docs.voidlinux.org/config/services/"
+2021-03-10 22:26:32	--	Topic set by maldridge (~maldridge@69.13.217.92) on Sun, 02 Aug 2020 22:02:44
+2021-03-10 22:26:32	--	Channel #voidlinux: 424 nicks (0 ops, 0 voices, 424 normals)
+2021-03-10 22:26:33	--	Channel created on Thu, 23 Jul 2015 09:32:22
+2021-03-10 22:26:33	--	URL for #voidlinux: https://www.voidlinux.org
+2021-03-10 22:27:22	-->	roarde (~roarde@pdpc/supporter/active/roarde) has joined #voidlinux
+2021-03-10 22:29:00	-->	st3r4g (~stefano@host-79-49-68-165.retail.telecomitalia.it) has joined #voidlinux
+2021-03-10 22:32:25	<--	gspe (~gspe@82.84.77.94) has quit (Quit: gspe)
+2021-03-10 22:32:36	-->	gspe (~gspe@82.84.77.94) has joined #voidlinux
+2021-03-10 22:34:12	-->	rogerx (~rogerx@h21.167.133.40.static.ip.windstream.net) has joined #voidlinux
+2021-03-10 22:37:08	rogerx	Anybody know where the Linux TV dvb-apps package is for Void Linux? (eg. dvbscan, azap, czap, zap, ...)  Seemingly searched everywhere and haven't found much related to Linux TV.
+2021-03-10 22:39:30	zdykstra	doesn't look like it's packaged for Void
+2021-03-10 22:41:11	<--	xaltsc (~xaltsc@unaffiliated/xaltsc) has quit (Ping timeout: 260 seconds)

@@ -1,0 +1,899 @@
+2020-01-26 20:50:42	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-01-26 20:50:42	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-01-26 20:50:42	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-01-26 20:50:42	--	Channel #wxwidgets: 39 nicks (0 ops, 0 voices, 39 normals)
+2020-01-26 20:50:44	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-01-26 20:50:45	captainchris	hello 
+2020-01-26 21:00:20	 *	specing rings bell
+2020-01-26 21:00:31	specing	captainchris: ICEBERG ON THE STARBOARD SIDE!
+2020-01-26 21:01:15	captainchris	oh yeah fuck me 
+2020-01-26 21:01:30	captainchris	with your iceberg
+2020-01-26 21:15:09	specing	:)
+2020-01-26 22:21:32	-->	darkbit_ (~darkbit@152.32.100.37) has joined #wxwidgets
+2020-03-23 22:20:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-03-23 22:20:10	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-03-23 22:20:10	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-03-23 22:20:10	--	Channel #wxwidgets: 39 nicks (0 ops, 0 voices, 39 normals)
+2020-03-23 22:20:12	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-03-23 22:20:18	captainchris	hi everybody
+2020-03-23 22:21:20	captainchris	I'm new on wxwidgets I'm trying to code hello world from the wxwidget site 
+2020-03-23 22:21:46	captainchris	I have GUI but I don't have menu and statusbar 
+2020-03-23 22:21:53	captainchris	I paste my code 
+2020-03-23 22:22:02	captainchris	https://pastebin.com/250WsSiY
+2020-03-23 22:22:09	captainchris	Header file 
+2020-03-23 22:22:19	captainchris	https://pastebin.com/iEyWTtmk
+2020-03-23 22:22:24	captainchris	CPP file
+2020-03-23 22:23:15	captainchris	do you have an idea ?? 
+2020-03-23 22:25:46	DavidGH	captainchris: Caused by your OS or theme not liking *bars?
+2020-03-23 22:26:44	DavidGH	What happens if you build wx yourself and build/run the 'minimal' sample?
+2020-03-23 22:26:44	DavidGH	(Or, if your OS provides binaries of the samples, run it direct)
+2020-03-23 22:28:19	captainchris	I have i3WM
+2020-03-23 22:29:12	captainchris	but I must have to menufile 
+2020-03-23 22:29:35	captainchris	I'm going to add text label on my wxframe
+2020-03-23 22:30:39	specing	captainchris: why wx?
+2020-03-23 22:30:49	DavidGH	I've never used i3WM. Do other similar programs have bars?
+2020-03-23 22:31:14	captainchris	no I havge no titlebar 
+2020-03-23 22:31:26	captainchris	but i have menubar in other application 
+2020-03-23 22:31:39	DavidGH	OK
+2020-03-23 22:35:40	captainchris	I'm trying to add a button to my frame 
+2020-03-23 22:35:51	captainchris	and I look if it works
+2020-03-23 22:56:56	<--	_zxq9_ (~zxq9@FL1-119-244-160-177.okn.mesh.ad.jp) has quit (Quit: バイバイ！ (^_^)/~)
+2020-03-23 23:02:24	captainchris	I have a problem with my button  undefined reference to `wxControl::SetFont(wxFont const&)'
+2020-03-23 23:02:50	captainchris	If i disable constructor for my button I don't have error
+2020-03-23 23:06:02	DavidGH	Have you updated the pastebins with the button code?
+2020-03-23 23:06:16	captainchris	 nope 
+2020-03-23 23:06:29	captainchris	I'm doing it 
+2020-03-23 23:08:03	captainchris	https://pastebin.com/UDHFmJD5
+2020-03-23 23:08:27	captainchris	I tried with wxT("Quit")
+2020-03-23 23:08:31	captainchris	but same problem 
+2020-03-23 23:13:01	DavidGH	You seem to be trying to derive your Button class from wxFrame
+2020-03-23 23:13:31	DavidGH	why not from wxButton, if indeed you need a subclassed button at all?
+2020-03-23 23:14:34	DavidGH	I strongly suggest that you download the wxWidgets tarball (probably the latest stable, 3.0.4) and at least _look_ at the samples/ dir
+2020-03-23 23:15:00	DavidGH	Ideally build wx3.0.4 too. Then you can build and run any of the samples
+2020-03-23 23:16:04	captainchris	I'm on arch and i have the wxgtk3 3.0.4-2
+2020-03-23 23:18:06	DavidGH	Does it come with a samples package, or supply the samples in some other way?
+2020-03-23 23:19:12	DavidGH	If not, it's still worth downloading the tarball. You can probably configure/build the samples against your distro's wx
+2020-03-23 23:20:54	captainchris	I have sample ont github 
+2020-03-23 23:21:41	captainchris	on zetcode class inherite from wxFrame 
+2020-03-23 23:21:46	captainchris	http://zetcode.com/gui/wxwidgets/firstprograms/
+2020-03-23 23:27:50	DavidGH	That sample calls its subclassed wxFrame 'Button' (which is silly, but...)
+2020-03-23 23:28:31	DavidGH	but it's still a frame. It adds a wxButton later:
+2020-03-23 23:28:37	DavidGH	wxButton *button = new wxButton(panel, wxID_EXIT, wxT("Quit"),   wxPoint(20, 20));
+2020-03-23 23:29:39	DavidGH	All you need to do is to put that code line, and other relevant ones, into your original tutorial code
+2020-03-23 23:30:04	captainchris	iin my wxFrame implementation ?? 
+2020-03-23 23:30:18	 *	DavidGH still recommends the wx samples, which are _known_ to work
+2020-03-23 23:30:36	DavidGH	Into the original code you pastebinned
+2020-03-23 23:31:33	DavidGH	You need a frame class, derived from wxFrame. You add other things inside the frame constructor
+2020-03-23 23:31:53	DavidGH	Those other things can include a wxButton, which you _don't_ subclass
+2020-03-23 23:32:13	DavidGH	(unless you think you can design a better button than wx/gtk+)
+2020-03-23 23:36:39	specing	captainchris: why are you using wxwidgets and not gtk directly?
+2020-03-23 23:37:23	captainchris	why wxwidget is bad ??
+2020-03-23 23:38:05	specing	I'm not implying that
+2020-03-23 23:38:08	specing	I'm just asking
+2020-03-23 23:38:37	captainchris	everybody says wxwidget is better
+2020-03-23 23:40:21	specing	I've done some work maintaining a wxwidgets app. While the API is stable over a very long time, the problem is that some things are very hard to do. Such as theming (that modern users expect)
+2020-03-23 23:41:27	captainchris	It's my first time with GUI I code with sfml and I would create a tilemap editor to improve my skill 
+2020-03-23 23:41:47	captainchris	I choice wxwidget after a search on internet
+2020-03-23 23:42:43	captainchris	my first choice was fltk  and after i decided to change for wxwidget 
+2020-03-23 23:54:24	captainchris	Ok I ve found the solution 
+2020-03-24 00:05:30	captainchris	on my makefile I build my project with wx-config-gtk3 on CXXFLAGS and I missed on LIBS
+2020-03-24 00:05:47	captainchris	I used wx-config
+2020-03-24 00:06:53	captainchris	and I have menubar and statusbar :(
+2020-03-24 00:07:09	captainchris	I'm really stupid. thx for your help 
+2020-03-24 18:09:03	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-03-24 18:09:03	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-03-24 18:09:03	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-03-24 18:09:03	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-03-24 18:09:05	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-03-24 18:09:10	captainchris	hi everybody 
+2020-03-24 18:26:31	captainchris	I would like to create a tile map editor 
+2020-03-24 18:26:57	captainchris	what is the best widget to show the tile ?? 
+2020-03-24 18:27:01	captainchris	wxImage ?
+2020-03-24 18:53:13	-->	Iarfen (~quassel@181.43.131.144) has joined #wxwidgets
+2020-03-24 19:50:26	robert_	okay, this is weird
+2020-03-24 19:51:18	robert_	drawing a rectangle (dc.DrawRectangle(m_pos.x, m_pos.y, width(), height())) draws it larger than DrawLine thinks it is
+2020-03-24 19:52:40	<--	Iarfen (~quassel@181.43.131.144) has quit (Remote host closed the connection)
+2020-03-24 19:54:54	robert_	drawing a rectangle (dc.DrawRectangle(m_pos.x, m_pos.y, width(), height())) draws it larger than DrawLine thinks it is
+2020-03-24 19:54:55	robert_	er
+2020-03-24 20:00:05	robert_	oh
+2020-03-24 20:00:13	robert_	that explains it. nevermind. :D
+2020-03-24 21:00:58	captainchris	I need to create 2d tilemap editor what is the best control to show and edit map wxImage  
+2020-03-24 21:09:13	captainchris	wxGrid??
+2020-03-24 21:15:18	DavidGH	captainchris: I've no knowledge/experience of tilemap editors, but I doubt that wxGrid is what you want
+2020-03-24 21:16:38	captainchris	Hi david yes. but i don't know if wxImage is the good solution 
+2020-03-24 21:16:39	DavidGH	If you want images in a grid pattern, wxStaticBitmaps in a gridsizer sounds more likely
+2020-03-24 21:21:16	captainchris	I think I will use a panel like image panel on the wxwiki 
+2020-03-24 22:47:41	robert_	so hum, how do I use a FlexGridSizer? like how do I specify what row/column it's in?
+2020-03-24 22:47:55	robert_	(sorry, for example, a Static text control)
+2020-03-24 23:12:01	-->	SimoneCnt (47e9f57e@unaffiliated/simonecnt) has joined #wxwidgets
+2020-03-24 23:14:47	DavidGH	robert_: If you grep the samples/ dir you'll find lots of examples
+2020-03-24 23:14:54	DavidGH	One is the dnd sample
+2020-03-24 23:15:10	SimoneCnt	Hello, I created a wxRichTextCtrl to display some data. The code works fine, but on MacOS I cannot select the displayed data and copy them to the clipboard. On Linux it works fine. It is a bug on MacOS or I am missing something?
+2020-03-24 23:16:42	captainchris	ok bye everybody
+2020-03-24 23:16:52	captainchris	see on 2021 ;)
+2020-03-25 15:46:11	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-03-25 15:46:11	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-03-25 15:46:11	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-03-25 15:46:11	--	Channel #wxwidgets: 45 nicks (0 ops, 0 voices, 45 normals)
+2020-03-25 15:46:13	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-03-25 15:46:17	captainchris	hey 
+2020-03-25 15:52:56	captainchris	Hi have GUI with wxframe 
+2020-03-25 15:53:55	captainchris	with size 1024x1280. I added a wxpanel with colour red 50,50. the problem is the wxpanel fill all window in red 
+2020-03-25 15:54:04	captainchris	and not a box 50,50
+2020-03-25 15:54:34	captainchris	https://pastebin.com/t45wzVuk
+2020-03-25 15:55:13	specing	captainchris: use a sizer and fill the rest of the space with fillers
+2020-03-25 16:11:50	captainchris	ok
+2020-03-25 16:28:57	robert_	hum
+2020-03-25 16:29:19	robert_	so dragging my window around my canvas gives me interesting results
+2020-03-25 16:30:05	robert_	the rectangle it thinks is the available area shrinks if it I drag it toward the bottom of my canvas
+2020-03-25 16:30:43	<--	Haohmaru (~Haohmaru@195.24.53.110) has quit
+2020-03-25 16:30:54	robert_	oh
+2020-03-25 16:30:58	robert_	fixed it. :D
+2020-03-25 16:44:03	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2020-03-25 16:44:24	robert_	or not
+2020-03-25 16:44:26	robert_	partly
+2020-03-25 17:33:39	<--	Elirips (~Elirips@242.109.22.178.ftth.as8758.net) has quit (Quit: KVIrc 5.0.0 Aria http://www.kvirc.net/)
+2020-03-25 17:39:52	captainchris	I downloaded wxwidgets it is possible to build only samples ?? 
+2020-03-25 18:05:23	DavidGH	captainchris: You need to run ./configure in the (extracted tarball) wx dir, using similar options to those of your system's wx install
+2020-03-25 18:05:55	DavidGH	e.g. ./configure --with-gtk=3
+2020-03-25 18:06:28	DavidGH	Then you should be able to cd into samples/ and run make -j to build them all,
+2020-03-25 18:07:02	DavidGH	or e.g. cd samples/minimal && make   to build just that sample
+2020-03-25 18:34:11	robert_	so can I justify text with wx?
+2020-03-25 18:34:30	robert_	like how it appears in a book, nice and aligned
+2020-03-25 18:35:49	robert_	or 'text-align: justify' (in css)
+2020-03-25 18:38:49	captainchris	.david thanks
+2020-03-25 18:40:59	DavidGH	robert_: Inside which control? e.g. are you using wxRichTextCtrl, or wxHtml* or...
+2020-03-25 18:42:37	robert_	Any control, I I need a text label to be justified.
+2020-03-25 18:43:54	robert_	I am asking if it's easy enough to accomplish using something not html
+2020-03-25 18:44:41	DavidGH	As you'd have seen from its doc page, wxStaticText supports e.g. wxALIGN_LEFT, but it doesn't pretend to be a richtext control
+2020-03-25 18:45:16	DavidGH	OTOH wxRichTextCtrl is a bit over-the-top for a simple label
+2020-03-25 18:46:15	robert_	yeah
+2020-03-25 18:47:08	DavidGH	As ever, run some relevant wx samples and see what suits you
+2020-03-25 18:52:53	robert_	am, was just wondering if you had anything that came to mind. :D
+2020-03-25 18:53:26	robert_	anyway https://i2.wp.com/justinakapaste.com/wp-content/uploads/2014/11/tumblr_n03c59E4SK1trn8dmo4_500.jpg, kind of like this, lol
+2020-03-25 19:17:19	DavidGH	robert_: Which of the jpg files were you thinking of?
+2020-03-25 19:17:42	DavidGH	s/files/fields
+2020-03-25 19:27:47	robert_	the text up top; it should justify if it wraps more than one line
+2020-03-25 19:32:54	DavidGH	If you're using wx3.1 wxStaticText supports https://docs.wxwidgets.org/trunk/classwx_control.html#afeb308dc3b54d8d735b33cb250395503
+2020-03-25 19:33:08	DavidGH	Otherwise probably a read-only wxTextCtrl
+2020-03-25 19:35:21	robert_	yeah I'm using 3.x
+2020-03-25 19:39:13	robert_	I just want a label that applies justification like in a book, lol
+2020-03-25 19:58:04	-->	Human_G33k (~HumanG33k@62.147.242.8) has joined #wxwidgets
+2020-03-25 20:06:05	<--	iRET (sid422602@gateway/web/irccloud.com/x-luppgwecarlcmwcz) has quit (Excess Flood)
+2020-03-25 20:06:27	-->	iRET (sid422602@gateway/web/irccloud.com/x-bottzwqmlshxeaea) has joined #wxwidgets
+2020-03-25 20:22:13	DavidGH	I think you'll find that 3.x isn't good enough; it includes 3.0.* but you'd need 3.1.*
+2020-03-25 20:34:15	<--	Human_G33k (~HumanG33k@62.147.242.8) has quit (Remote host closed the connection)
+2020-03-25 20:34:29	-->	Human_G33k (~HumanG33k@62.147.242.8) has joined #wxwidgets
+2020-03-25 21:12:06	-->	Galactica (~UserNick@139.red-83-54-120.dynamicip.rima-tde.net) has joined #wxwidgets
+2020-03-25 21:13:47	<--	PeRy_SoY (~UserNick@139.red-83-54-120.dynamicip.rima-tde.net) has quit (Ping timeout: 264 seconds)
+2020-03-26 20:31:18	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-03-26 20:31:18	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-03-26 20:31:18	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-03-26 20:31:18	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-03-26 20:31:20	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-03-26 21:59:13	captainchris	Can i set position and size with wxpanel  ??
+2020-03-26 21:59:42	captainchris	I try to put in wxboxsizer but I can't set position
+2020-03-26 22:00:40	specing	the sizer is there specifically so you don't have to deal with positions
+2020-03-26 22:01:37	captainchris	ok 
+2020-03-26 22:02:12	captainchris	I need to realize a tilemap editor
+2020-03-26 22:02:36	captainchris	and I need a panel to put my tile inside at position 500,700
+2020-03-26 22:05:11	specing	we've all got work to do
+2020-03-26 22:06:42	captainchris	OK you don't want to help me
+2020-03-26 22:06:44	captainchris	thx
+2020-03-26 22:07:56	specing	play around, and once you have a specific question you can ask
+2020-03-26 22:08:08	specing	this isn't paid support, you'll have to sign up separately for that
+2020-03-26 22:09:00	captainchris	please don't disturb me if you don't want to help me 
+2020-03-26 22:09:02	captainchris	I'm working 
+2020-03-26 22:16:57	specing	Haha
+2020-03-26 22:18:15	<--	Echoes (sid422602@gateway/web/irccloud.com/x-tfunezjbwcskpfle) has quit (Excess Flood)
+2020-03-26 22:18:37	-->	Echoes (sid422602@gateway/web/irccloud.com/x-lwnowmlcuhyutbuo) has joined #wxwidgets
+2020-03-26 22:29:29	captainchris	;)
+2020-03-26 22:29:40	captainchris	I'm laugh specing
+2020-03-26 22:29:46	captainchris	laughing 
+2020-03-26 22:30:02	captainchris	<3
+2020-03-26 22:33:27	captainchris	specing: 
+2020-03-26 22:33:41	captainchris	don't cry
+2020-03-26 22:33:47	captainchris	I love you 
+2020-03-26 22:34:06	captainchris	will you marry me ?? 
+2020-03-26 22:45:50	captainchris	I will be the mand and you'll be my women
+2020-03-26 22:45:53	captainchris	men 
+2020-03-26 22:49:59	DavidGH	captainchris: Please stay on topic
+2020-03-26 22:52:10	captainchris	sorry ;(
+2020-03-26 22:52:40	captainchris	DavidGH: <3
+2020-03-26 22:56:37	captainchris	BAN ME ild vicious 
+2020-03-26 22:56:46	captainchris	old vicious
+2020-03-26 23:20:25	-->	Auria (~Instantbi@supertuxkart/dev/Auria) has joined #wxwidgets
+2020-03-30 20:50:19	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-03-30 20:50:19	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-03-30 20:50:19	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-03-30 20:50:19	--	Channel #wxwidgets: 39 nicks (0 ops, 0 voices, 39 normals)
+2020-03-30 20:50:21	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-03-30 21:13:47	-->	Elirips (~Elirips@84-72-42-3.dclient.hispeed.ch) has joined #wxwidgets
+2020-03-30 21:22:49	<--	Elirips (~Elirips@84-72-42-3.dclient.hispeed.ch) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2020-03-30 21:58:02	robert_	DavidGH: I snipped it down to just the class I'm having issues with. :D
+2020-03-30 22:09:18	DavidGH	You are trying to catch mouseevents in a wxPanel. Does the panel have any child controls?
+2020-03-30 22:09:39	DavidGH	If so, they won't tell the panel about their mouseevents
+2020-03-30 22:10:41	DavidGH	Does OnMouseEvent() catch anything? You're only printing if dragging is found, not if it isn't
+2020-03-30 22:12:37	DavidGH	A general comment: you are starting with something complicated and trying to get it to work.
+2020-03-30 22:13:48	DavidGH	I strongly suggest that you keep it simple; make a minimal program that just tests mouse events,
+2020-03-30 22:13:48	DavidGH	not something that resembles the final product
+2020-03-30 22:14:10	DavidGH	Once it works, morph it into what you really want
+2020-03-30 22:25:27	robert_	okay
+2020-03-30 22:25:53	robert_	so it catches events
+2020-03-30 22:25:54	robert_	however
+2020-03-30 22:26:07	robert_	I get no events when trying to drag the button around
+2020-03-30 22:31:22	DavidGH	Maybe the button is receiving the events. If so, the panel won't see them
+2020-03-30 22:31:58	DavidGH	You would need to tell the button to pass them on to the panel e.g. by using Bind()
+2020-03-30 22:37:08	robert_	I handle both, though
+2020-03-30 22:38:08	robert_	instance is the button
+2020-03-30 22:42:09	robert_	hmmm
+2020-04-15 22:29:14	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-04-15 22:29:14	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-15 22:29:14	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-15 22:29:14	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-04-15 22:29:15	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-15 22:29:17	captainchris	hi everybody 
+2020-04-15 22:29:27	captainchris	I'm trying to add icon in list view 
+2020-04-15 22:29:38	captainchris	https://pastebin.com/QDnKK5Au
+2020-04-15 22:29:45	captainchris	But I have an error 
+2020-04-15 22:31:34	captainchris	sorry I have found 
+2020-04-22 21:13:53	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-04-22 21:13:53	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-22 21:13:53	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-22 21:13:53	--	Channel #wxwidgets: 45 nicks (0 ops, 0 voices, 45 normals)
+2020-04-22 21:13:56	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-22 21:13:57	captainchris	hi everybody 
+2020-04-22 21:15:45	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-04-22 21:15:46	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-22 21:15:46	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-22 21:15:46	--	Channel #wxwidgets: 45 nicks (0 ops, 0 voices, 45 normals)
+2020-04-22 21:15:47	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-22 21:34:12	captainchris	It is possible to draw with dc in wxframe with multiple panel
+2020-04-22 21:34:18	captainchris	https://pastebin.com/Zhh7Y6RX
+2020-04-22 21:34:30	captainchris	I made this but it doesn't work 
+2020-04-22 21:34:37	captainchris	https://pastebin.com/VtB36jHA
+2020-04-22 21:34:49	captainchris	I have my text drawn 
+2020-04-22 21:34:56	captainchris	but all interface doesn't appear 
+2020-04-22 21:39:51	captainchris	can we draw with dc without event table ??
+2020-04-22 21:40:37	captainchris	I'm reading doc and it says But this absolutely doesn't mean that using tables is the preferred way 
+2020-04-22 21:54:06	ln-	no, there should be only one panel
+2020-04-22 22:11:27	captainchris	ok 
+2020-04-22 22:11:46	captainchris	I would like to realize tilemap editor 
+2020-04-22 22:12:04	captainchris	to draw map can I use wxScrolledwindows ?? 
+2020-04-22 22:21:25	ln-	wxPaintDC inside a wxScrolledWindow probably
+2020-04-22 22:30:29	<--	paulk2 (~paulk@50.35.23.102) has quit (Ping timeout: 256 seconds)
+2020-04-22 22:55:26	-->	paulk2 (~paulk@50.35.23.102) has joined #wxwidgets
+2020-04-22 22:59:08	captainchris	ln- scrolled window inside paintDC, but the constructor of paintDC(wxWindow *window)
+2020-04-22 22:59:42	captainchris	sorry invert, paintDC inside scrolledwindows
+2020-04-23 11:30:13	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-04-23 11:30:13	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-23 11:30:13	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-23 11:30:13	--	Channel #wxwidgets: 44 nicks (0 ops, 0 voices, 44 normals)
+2020-04-23 11:30:15	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-23 11:30:15	captainchris	hello 
+2020-04-23 11:30:40	captainchris	can i Use wxscrolledwindows without class 
+2020-04-23 11:31:07	captainchris	I have a GUI class who inherite wxFrame I want a scrolled window inside of it 
+2020-04-23 11:33:25	DavidGH	captainchris: Do you mean "...without subclassing"?
+2020-04-23 11:34:00	captainchris	yes like class GUI: public wxFrame 
+2020-04-23 11:34:28	captainchris	{ wxScrolledWindow* scrolledwin ....
+2020-04-23 11:34:43	DavidGH	See the samples that come with the wxWidgets source.
+2020-04-23 11:35:46	DavidGH	There's the 'propgrid' sample that certainly does. There's also a 'scoll' sample that you should look at.
+2020-04-23 11:36:16	DavidGH	*'scroll' sample
+2020-04-23 11:36:56	captainchris	ok I see dnd sample and all use wxscrolledwindow inherited 
+2020-04-23 11:37:42	DavidGH	^^
+2020-04-23 11:38:13	captainchris	simple question 
+2020-04-23 11:38:28	DavidGH	m_panel = new wxScrolledWindow(...)
+2020-04-23 11:38:37	captainchris	do you think it's possible to code without sample just to use api??
+2020-04-23 11:39:10	DavidGH	'code without sample' ??
+2020-04-23 11:39:21	captainchris	yes 
+2020-04-23 11:39:30	DavidGH	What does that mean?
+2020-04-23 11:39:49	captainchris	programming application without sample just with api 
+2020-04-23 11:40:16	DavidGH	I don't understand what you mean by 'sample'
+2020-04-23 11:40:50	DavidGH	The wxWidgets samples, that are there to help you understand how to do things?
+2020-04-23 11:41:17	captainchris	yes but do you think we programming without ??
+2020-04-23 11:41:33	captainchris	just with API documentation
+2020-04-23 11:41:33	<--	HumanGeek (~HumanG33k@62.147.242.8) has quit (Remote host closed the connection)
+2020-04-23 11:42:17	DavidGH	So your question is: "Why do you suggest looking at the wx samples?"
+2020-04-23 11:42:28	-->	HumanGeek (~HumanG33k@62.147.242.8) has joined #wxwidgets
+2020-04-23 11:42:42	DavidGH	Yes, it's _possible_ to use just the docs
+2020-04-23 11:42:50	captainchris	ok 
+2020-04-23 11:43:15	DavidGH	But! If that fails, if you read the docs but they don't answer your questions,
+2020-04-23 11:43:25	DavidGH	then look at the samples
+2020-04-23 11:44:06	DavidGH	Build the relevant samples too, and run them
+2020-04-23 11:44:30	DavidGH	That way you can see what wxWidgets can do
+2020-04-23 11:44:58	captainchris	yes 
+2020-04-23 12:58:45	captainchris	It's very difficult for me because I'm french and my english is not very good ;)
+2020-04-23 13:58:27	-->	KAHR-Alpha (~Alpha@lfbn-rei-1-228-93.w86-225.abo.wanadoo.fr) has joined #wxwidgets
+2020-04-23 22:03:24	-->	captainchris (~captainch@2a01:cb1d:342:4200:b3eb:7c30:215c:d58d) has joined #wxwidgets
+2020-04-23 22:03:24	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-23 22:03:24	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-23 22:03:24	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-04-23 22:03:26	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-23 22:03:34	captainchris	Hello
+2020-04-23 22:03:41	captainchris	i have a question 
+2020-04-23 22:04:20	captainchris	in zetcode wxwidget tutorial , they use Connect(wxEVT_MOVE,wxMoveEventHandler(Move::OnMove));
+2020-04-23 22:04:22	-->	fdelapena (~fdelapena@unaffiliated/fdelapena) has joined #wxwidgets
+2020-04-23 22:06:20	captainchris	I'm on API of wxwidget wxEVTHandler and the two connect
+2020-04-23 22:06:23	captainchris	https://pastebin.com/z9HMbJbX
+2020-04-24 13:25:21	-->	captainchris (~captainch@2a01:cb1d:342:4200:b3eb:7c30:215c:d58d) has joined #wxwidgets
+2020-04-24 13:25:21	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-24 13:25:21	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-24 13:25:21	--	Channel #wxwidgets: 40 nicks (0 ops, 0 voices, 40 normals)
+2020-04-24 13:25:23	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-24 13:37:07	captainchris	I created a wxClientDC it works but it draw my img outside my window
+2020-04-24 13:37:12	captainchris	https://gist.github.com/captainchris06210/b0327e6a52e71c3b16cb143acc9cf321
+2020-04-24 13:37:47	captainchris	I took example on sample 
+2020-04-24 13:41:31	DavidGH	captainchris: If you use a wxScrolledWindow, you need to account for the scroll position somehow
+2020-04-24 13:41:38	DavidGH	AFAICT, you don't do that
+2020-04-24 13:41:59	DavidGH	Look again at the 'scroll' sample to see how that does it
+2020-04-24 13:42:20	captainchris	I didn't take the good sample sorry 
+2020-04-24 13:42:29	captainchris	I took docview 
+2020-04-24 13:45:42	captainchris	I understand nothing. On the doc it says Don't store a wxClientDC object 
+2020-04-24 13:48:43	DavidGH	That's right. And the way you did it in the code you pastebinned is correct
+2020-04-24 13:49:39	captainchris	;) One day, I will be a good programmer 
+2020-04-24 13:49:49	captainchris	one day maybe  ... 
+2020-04-24 18:46:51	-->	captainchris (~captainch@2a01:cb1d:342:4200:b3eb:7c30:215c:d58d) has joined #wxwidgets
+2020-04-24 18:46:51	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-24 18:46:51	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-24 18:46:51	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-04-24 18:46:53	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-24 21:39:04	-->	lihora (~lio@201-51-50-99.user3p.veloxzone.com.br) has joined #wxwidgets
+2020-04-24 22:00:05	<--	fdelapena (~fdelapena@unaffiliated/fdelapena) has quit (Quit: "")
+2020-04-24 22:01:41	-->	fdelapena (~fdelapena@unaffiliated/fdelapena) has joined #wxwidgets
+2020-04-24 22:03:27	-->	Kuukunen (~qq@kuukunen.net) has joined #wxwidgets
+2020-04-24 22:13:57	-->	ibrahiah (25c9b86d@37.201.184.109) has joined #wxwidgets
+2020-04-24 22:25:23	<--	ibrahiah (25c9b86d@37.201.184.109) has quit (Remote host closed the connection)
+2020-04-25 21:10:34	-->	captainchris (~captainch@2a01:cb1d:342:4200:b3eb:7c30:215c:d58d) has joined #wxwidgets
+2020-04-25 21:10:34	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.0.7) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-25 21:10:34	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 28 Oct 2019 19:31:03
+2020-04-25 21:10:34	--	Channel #wxwidgets: 44 nicks (0 ops, 0 voices, 44 normals)
+2020-04-25 21:10:36	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-25 21:10:37	captainchris	hello
+2020-04-25 21:15:03	captainchris	I have a question 
+2020-04-25 21:15:17	captainchris	I made this :  Bind(wxEVT_COMMAND_MENU_SELECTED,&GUI::OnQuit,wxID_EXIT,wxID_ANY,this);
+2020-04-25 21:16:37	captainchris	And gcc tells me no matching function for call to ‘GUI::Bind(const wxEventTypeTag<wxCommandEvent>&, void (GUI::*)(wxCommandEvent&), wxStandardID, GUI*)
+2020-04-25 21:20:43	DavidGH	captainchris: Which Bind() function are you trying to use?
+2020-04-25 21:20:43	DavidGH	https://docs.wxwidgets.org/stable/classwx_evt_handler.html#a0f30c8fa5583b4a5f661897d63de3b62 or
+2020-04-25 21:20:43	DavidGH	https://docs.wxwidgets.org/stable/classwx_evt_handler.html#a03cc68ca201fb79c7e837919025be71a
+2020-04-25 21:36:05	captainchris	the second
+2020-04-25 21:37:42	DavidGH	Bind (const EventTag &eventType, void(Class::*method)(EventArg &), EventHandler *handler, int id=wxID_ANY, int lastId=wxID_ANY, wxObject *userData=NULL)
+2020-04-25 21:37:42	DavidGH	So the first parameter, eventType, is wxEVT_COMMAND_MENU_SELECTED. That's fine
+2020-04-25 21:40:55	captainchris	I see that on doc
+2020-04-25 21:40:58	DavidGH	The second parameter, Class::*method, &GUI::OnQuit, is OK too. What about the third?
+2020-04-25 21:40:58	captainchris	Bind(wxEVT_MENU, &MyFrame::OnExit, this, wxID_EXIT);
+2020-04-25 21:41:10	captainchris	but why wxID_EXIT on the end ?? 
+2020-04-25 21:42:08	DavidGH	You could use wxID_ANY (which is -1) for both event-ids if you wanted. But you actually only want to bind exit events
+2020-04-25 21:42:12	captainchris	I do that  Bind(wxEVT_COMMAND_MENU_SELECTED,&GUI::OnQuit,this,wxID_EXIT);
+2020-04-25 21:42:30	DavidGH	So you tell the Bind() to ignore anything that is not wxID_EXIT
+2020-04-25 21:42:34	captainchris	wxID_EXIT is int id 
+2020-04-25 21:42:39	DavidGH	Yes
+2020-04-25 21:43:49	captainchris	I've lo'ts of difficult to read API 
+2020-04-25 21:43:53	DavidGH	The 5th parameter is only used if you need to catch a _range_ of events. The 6th is almost never used so don't worry about it
+2020-04-25 21:44:04	DavidGH	Yes, Bind() is difficult
+2020-04-25 21:44:39	DavidGH	Examples are much easier, though. The wx samples were written before Bind() was invented
+2020-04-25 21:44:54	DavidGH	but it is used in one of them
+2020-04-25 21:46:41	captainchris	Yes it uses connect 
+2020-04-25 21:46:52	captainchris	and i saw on the doc connect is deprecated 
+2020-04-25 21:47:20	captainchris	I need to learning to read API 
+2020-04-25 21:52:16	-->	lihora (~lio@201-51-50-99.user3p.veloxzone.com.br) has joined #wxwidgets
+2020-04-25 21:53:08	<--	AntumDeluge (~AntumDelu@67-42-158-45.ptld.qwest.net) has quit (Read error: Connection reset by peer)
+2020-04-25 22:02:42	captainchris	I change my code
+2020-04-25 22:03:21	captainchris	But since this morning i search why my drawing appear below my panel 
+2020-04-25 22:03:24	captainchris	https://gist.github.com/captainchris06210/9bebaa491c22624e9ce4a49305d2a3ce
+2020-04-25 22:03:41	captainchris	if I don't use setbackgroundcolor I see my pictur
+2020-04-25 22:04:03	captainchris	and If i Setbackground it don't see my picture
+2020-04-25 22:04:26	captainchris	I'm trying with sample and the rectangle appear on blue background 
+2020-04-25 22:11:28	captainchris	I think it's beacause on drawing with wxPaintDC dc(this) and this is GUI and not my panel 
+2020-04-25 22:26:15	<--	paulk (~paulk@50.35.23.102) has quit (Ping timeout: 246 seconds)
+2020-04-25 22:26:34	<--	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-cccsmadiqurampqb) has quit (Excess Flood)
+2020-04-25 22:26:53	-->	ZX-Spectrum (sid422602@gateway/web/irccloud.com/x-qhqefevjhwxuoacr) has joined #wxwidgets
+2020-04-25 22:27:19	captainchris	I think I wll create an another class who inherite from wxScrolledwindow 
+2020-04-25 22:46:39	-->	delt (1000@64.18.186.124) has joined #wxwidgets
+2020-04-25 22:47:49	delt	so, just making sure..... wxApp::OnInit (), OnRun () and OnExit () HAVE to explicitly call the parent class method?
+2020-04-25 22:48:43	delt	ctors/dtors are called automatically, but id' have assumed there was a mechanism to avoid such blatant mistakes....
+2020-04-25 22:50:19	delt	ctor/dtor of parent classes** are called aut...
+2020-04-25 22:57:27	-->	paulk (~paulk@50.35.23.102) has joined #wxwidgets
+2020-04-25 23:54:54	<--	DavidGH (~DGH@host-78-150-8-43.as13285.net) has left #wxwidgets
+2020-04-28 11:42:31	-->	captainchris (~captainch@2a01:cb1d:342:4200:b3eb:7c30:215c:d58d) has joined #wxwidgets
+2020-04-28 11:42:31	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.4, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-04-28 11:42:31	--	Topic set by DavidGH (~DGH@host-78-150-8-43.as13285.net) on Mon, 27 Apr 2020 19:10:19
+2020-04-28 11:42:31	--	Channel #wxwidgets: 45 nicks (0 ops, 0 voices, 45 normals)
+2020-04-28 11:42:34	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-04-28 12:15:55	-->	ondrej008 (uid311009@gateway/web/irccloud.com/x-vzlqkjryvxqccavf) has joined #wxwidgets
+2020-04-28 13:04:23	<--	johonnyn (9b04a395@h-163-149.A498.priv.bahnhof.se) has quit (Remote host closed the connection)
+2020-04-28 13:04:52	-->	johonny (~johonny@h-163-149.A498.priv.bahnhof.se) has joined #wxwidgets
+2020-08-21 13:57:48	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-08-21 13:57:48	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-08-21 13:57:48	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-08-21 13:57:48	--	Channel #wxwidgets: 40 nicks (0 ops, 0 voices, 40 normals)
+2020-08-21 13:57:50	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-08-21 13:57:53	captainchris	hi everybody 
+2020-08-21 14:02:07	captainchris	I'm trying to made a tilemap editor in wx. The map is correct but I have a problem with GetSubImage 
+2020-08-21 14:02:11	captainchris	https://gist.github.com/captainchris06210/46011ab377f933e9a370fce921caa617
+2020-08-21 14:02:34	captainchris	line 158.
+2020-08-21 14:04:17	captainchris	invalid bitmap region. each tiles is correct and I don't understand that is not working 
+2020-08-21 14:05:22	Haohmaru	any pics?
+2020-08-21 14:06:00	captainchris	Yes of course I uploaded it 
+2020-08-21 14:06:32	Haohmaru	..but did you paste a link so we can eyeball it?
+2020-08-21 14:07:15	captainchris	https://postimg.cc/mP2GPbC1
+2020-08-21 14:07:54	captainchris	do you want a img of gui ?? 
+2020-08-21 14:08:19	Haohmaru	that's one texture containing a bunch of different tiles? what's the problem?
+2020-08-21 14:09:23	-->	darkbit (~db@152.32.100.91) has joined #wxwidgets
+2020-08-21 14:09:59	captainchris	Sorry the code is not the good code 
+2020-08-21 14:10:10	captainchris	I upload my new code 
+2020-08-21 14:13:03	captainchris	I made a mistake under vim and I save the wrong code 
+2020-08-21 14:13:06	captainchris	Sorry 
+2020-08-21 14:22:46	captainchris	Ok the good code 
+2020-08-21 14:22:48	captainchris	https://gist.github.com/captainchris06210/209d4ff078a2fb93fda343a6dffc10b8
+2020-08-21 14:24:03	captainchris	assert "rect.x >= 0 && rect.y >= 0 && rect.x + w <= bmpData->m_width && rect.y + h <= bmpData->m_height" failed in GetSubBitmap(): invalid bitmap region
+2020-08-21 14:24:14	captainchris	the region is correct ?? 
+2020-08-21 14:24:40	captainchris	I use the same process under sfml and it's work
+2020-08-21 14:26:25	captainchris	If i keep the cursor on wx windows no problem 
+2020-08-21 14:26:43	captainchris	If the cursor is out the window I have the error 
+2020-08-21 14:28:04	captainchris	sx and sy is between 0 and 128 
+2020-08-21 16:24:06	captainchris	no one can help me ??
+2020-08-21 16:25:21	captainchris	It's not a bug of wxwidget ?? 
+2020-08-21 16:25:24	DavidGH	captainchris: I can't see anything in your posted code that will be affected by the cursor location (do you mean mouse cursor?)
+2020-08-21 16:25:47	captainchris	yes 
+2020-08-21 16:26:05	DavidGH	I suggest you run in your debugger and look at the backtrace when it asserts 
+2020-08-21 16:26:38	DavidGH	Or, second best, put lots of wxLogDebug statements in the code
+2020-08-21 16:26:53	DavidGH	Try to find out what the cursor has to do with the issue
+2020-08-21 16:27:14	captainchris	Yes I ran in the debugger,I can execute the two for loop and if the loop finishes te error appears
+2020-08-21 16:27:46	DavidGH	And the backtrace...?
+2020-08-21 16:28:28	captainchris	How can I do to show backtrace with strace ?? 
+2020-08-21 16:28:44	DavidGH	Who mentioned strace?
+2020-08-21 16:29:06	captainchris	backtracve is the terminal output ??
+2020-08-21 16:29:32	DavidGH	Pause the debugger when the assert happens. Then type: bt
+2020-08-21 16:29:40	captainchris	ok 
+2020-08-21 16:39:25	captainchris	https://gist.github.com/captainchris06210/39f81dbfe9053cfa5d94abb1d7901dc7
+2020-08-21 16:39:28	captainchris	the bt
+2020-08-21 16:42:59	DavidGH	You said you get: assert "rect.x >= 0 && rect.y >= 0 && rect.x + w <= bmpData->m_width...
+2020-08-21 16:43:20	DavidGH	Do you still get that assert? Is it a wx Assert dialog?
+2020-08-21 16:43:36	DavidGH	because the bt is not what I would expect from a wxAssert
+2020-08-21 16:46:12	captainchris	https://pasteimg.com/image/2020-08-21-164413-2560x1024-scrot.2C5O
+2020-08-21 16:46:26	captainchris	first img, If the cursor inside the windows 
+2020-08-21 16:46:52	captainchris	https://pasteimg.com/image/2020-08-21-164527-2560x1024-scrot.2KRM
+2020-08-21 16:48:19	Haohmaru	what's OnPaint() supposed to do?
+2020-08-21 16:49:04	DavidGH	And if you get a bt from that assert dialog...?
+2020-08-21 16:49:53	DavidGH	Also, why is there a mismatch between library versions? Do you need to 'make clean' and rebuild?
+2020-08-21 16:50:03	DavidGH	bbl
+2020-08-21 16:50:04	captainchris	Haohmaru: draw map in panel 
+2020-08-21 16:50:28	captainchris	yes multiple make clean before make
+2020-08-21 16:50:59	Haohmaru	and it crashes in GetSubBitmap() ?
+2020-08-21 16:51:52	captainchris	yes 
+2020-08-21 16:52:05	captainchris	when the loop is finishing
+2020-08-21 16:53:27	captainchris	Okay i have new information when the cursor out the windows X:  -96 sY::  -2720
+2020-08-21 16:53:44	captainchris	but why when the cursor out the window ??
+2020-08-21 16:55:13	Haohmaru	not sure, but normally when dealing with graphics i'd loop over Y then X
+2020-08-21 16:55:29	Haohmaru	aka horizontally
+2020-08-21 16:56:38	Haohmaru	what are NB_TILE_WIDTH and _HEIGHT?
+2020-08-21 16:57:10	captainchris	HEIGHT = 19 width=
+2020-08-21 16:57:15	captainchris	32
+2020-08-21 16:57:53	captainchris	Haohmaru: it's not the same Y and X or X and Y ?? 
+2020-08-21 16:58:27	Haohmaru	what's this "m" thing?
+2020-08-21 16:59:39	captainchris	it's my map object 
+2020-08-21 17:00:33	captainchris	Map m in my class  drawPanel 
+2020-08-21 17:01:22	Haohmaru	okay, you know the code better, check the mathz
+2020-08-21 17:02:00	Haohmaru	i wonder if you're accessing memory outside some buffer and it happens to OMNOM mouse coordinates
+2020-08-21 17:15:27	-->	onox40 (4ffd2521@p4ffd2521.dip0.t-ipconnect.de) has joined #wxwidgets
+2020-08-21 17:16:44	<--	Haohmaru (~Haohmaru@195.24.53.110) has quit
+2020-08-21 17:23:21	-->	paulk (~paulk@50.35.23.102) has joined #wxwidgets
+2020-08-21 18:06:32	captainchris	Okay i used a condition if sX >=0 and <= 128  sY >=0 and <=128 and I have not problem anymore 
+2020-08-21 18:06:52	captainchris	but two lines of my map diseapear when i resize the window
+2020-09-20 14:37:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-09-20 14:37:10	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-09-20 14:37:10	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-09-20 14:37:10	--	Channel #wxwidgets: 37 nicks (0 ops, 0 voices, 37 normals)
+2020-09-20 14:37:12	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-09-20 14:37:15	captainchris	hi everybody 
+2020-09-20 14:43:18	captainchris	https://wandbox.org/permlink/YhnE41goa8sDbA0D
+2020-09-20 14:43:47	captainchris	I try to make a tilemap editor noname-3 noname-4
+2020-09-20 14:44:35	captainchris	to clear old position of my cursor I need to redraw map, btu is there a better solution to avoid rewrite redrawmap 
+2020-09-20 14:45:08	captainchris	I draw map on my panel with onPaint event 
+2020-09-20 14:45:27	captainchris	and after I redraw with redrawmap function 
+2020-09-20 16:28:32	-->	jfsimon1981 (~jfsimon19@238.134.127.78.rev.sfr.net) has joined #wxwidgets
+2020-09-20 16:28:39	jfsimon1981	Good morning,
+2020-09-20 16:33:37	jfsimon1981	(all I wanted to say, discovering wxWidgets, looks very complete and good)
+2020-09-20 17:40:21	captainchris	morning jfsimon
+2020-09-20 17:40:25	captainchris	are you french ?? 
+2020-09-20 17:49:08	jfsimon1981	Yep
+2020-09-20 17:49:51	jfsimon1981	It's very rich environment the wx framework I'm quite impressed, was trying to build apps with SMFL 1 year ago. This library is very complete.
+2020-09-20 17:50:40	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Ping timeout: 260 seconds)
+2020-09-20 17:53:46	captainchris	me too I'm french
+2020-09-20 17:54:20	captainchris	I build 3 project on sfml ( battleship,snake,sokoban)
+2020-09-20 17:54:34	captainchris	and I'm trying to build a map editor on wxwidget
+2020-09-20 17:54:45	captainchris	and you ?? 
+2020-09-20 17:56:59	-->	purplex88 (~purplex88@unaffiliated/purplex88) has joined #wxwidgets
+2020-09-20 17:57:48	jfsimon1981	I don't know, I'm just learning it, cause I'd like to have a good project build up slowly. I'm not exactly sure what yet to build. But something of use to share and sale.
+2020-09-20 18:02:17	jfsimon1981	I built a security software for one client last year with sfml, it was doing work with openssl and other windows utilities. Quite nice project, not big.
+2020-09-20 18:04:09	captainchris	ok
+2020-09-20 18:06:52	captainchris	https://www.youtube.com/watch?v=qY-lMqScmwg
+2020-09-20 18:07:26	captainchris	https://www.youtube.com/watch?v=dYUxu2MpFTc
+2020-09-20 18:07:34	captainchris	https://www.youtube.com/watch?v=uaAHftqQiJM&t=44s
+2020-09-20 18:07:52	captainchris	do you want to stay in contact to learn together
+2020-09-20 18:09:34	jfsimon1981	I see, sure
+2020-09-20 18:10:12	jfsimon1981	jfsimon at startmail.com
+2020-09-20 18:14:58	captainchris	okay
+2020-09-20 18:15:06	captainchris	do you have a github to change code 
+2020-09-20 18:16:26	jfsimon1981	I think yes, a free one. Should be it https://github.com/jfsimon1981
+2020-09-20 18:16:51	captainchris	are you a pilot ??
+2020-09-20 18:21:46	jfsimon1981	Yes
+2020-09-20 18:21:49	jfsimon1981	Learning
+2020-09-20 18:22:41	captainchris	Ok my brother in law is pilot too. It worked for airberlin/germanwings and now he works for cargolux in luxembourrg
+2020-09-20 18:32:41	jfsimon1981	I'm just student for the ppl
+2020-09-20 18:59:47	jfsimon1981	Night,
+2020-09-20 19:08:02	-->	Human_G33k (~HumanG33k@62.147.242.8) has joined #wxwidgets
+2020-09-20 19:10:54	<--	HumanG33k (~HumanG33k@62.147.242.8) has quit (Ping timeout: 240 seconds)
+2020-09-20 19:45:30	-->	purplex88_ (~purplex88@unaffiliated/purplex88) has joined #wxwidgets
+2020-09-20 19:48:40	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Ping timeout: 256 seconds)
+2020-09-20 19:48:50	--	purplex88_ is now known as purplex88
+2020-09-20 19:58:50	-->	KAHR-Alpha (~Alpha@2a01cb0d024a660019d4b955987d155e.ipv6.abo.wanadoo.fr) has joined #wxwidgets
+2020-09-20 21:24:45	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2020-10-04 20:20:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-04 20:20:10	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-04 20:20:10	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-04 20:20:10	--	Channel #wxwidgets: 40 nicks (0 ops, 0 voices, 40 normals)
+2020-10-04 20:20:14	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-04 20:33:27	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-04 20:33:27	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-04 20:33:27	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-04 20:33:27	--	Channel #wxwidgets: 40 nicks (0 ops, 0 voices, 40 normals)
+2020-10-04 20:33:31	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-04 20:42:05	<--	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has left #wxwidgets ("[ GoodBye]")
+2020-10-11 16:40:53	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-11 16:40:53	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-11 16:40:53	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-11 16:40:53	--	Channel #wxwidgets: 38 nicks (0 ops, 0 voices, 38 normals)
+2020-10-11 16:40:57	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-11 17:33:41	-->	sylwek (~sylwek@77.252.63.219) has joined #wxwidgets
+2020-10-11 17:42:02	sylwek	Hi, I noticed that accelerators on gtk platform work fine with Ctrl+(letter), like Ctrl+N, but with plain key letter they don't. Do you know if there's any workaround for this?
+2020-10-11 17:44:44	-->	moza (~moza@h-226-113.A230.priv.bahnhof.se) has joined #wxwidgets
+2020-10-11 17:47:07	<--	sylwek (~sylwek@77.252.63.219) has left #wxwidgets
+2020-10-11 17:48:48	<--	moza (~moza@h-226-113.A230.priv.bahnhof.se) has quit (Client Quit)
+2020-10-11 18:09:04	<--	dvx (~dvx@5.181.92.64) has quit (Quit: dvx)
+2020-10-11 18:19:18	-->	sylwek (~sylwe@77.252.63.219) has joined #wxwidgets
+2020-10-11 19:06:15	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2020-10-11 19:39:25	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Quit: Leaving)
+2020-10-11 19:49:22	<--	sylwek (~sylwe@77.252.63.219) has left #wxwidgets
+2020-10-11 20:35:39	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2020-10-17 17:52:23	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-17 17:52:23	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-17 17:52:23	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-17 17:52:23	--	Channel #wxwidgets: 35 nicks (0 ops, 0 voices, 35 normals)
+2020-10-17 17:52:27	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-17 17:52:28	captainchris	Hi everybody 
+2020-10-17 18:10:58	captainchris	I have a little problem to change wxStaticText value.
+2020-10-17 18:13:45	captainchris	https://pastebin.com/gYKTrZ4p the wxStaticText is tileValue. I create wxStaticText *tileValue in gui.hpp. I allocate tileValue with default constructor in my gui constructor (line25)
+2020-10-17 18:14:32	captainchris	I Create text in addText with  tileValue->Create(secondPanel,wxID_ANY,"Hello",wxDefaultPosition,wxDefaultSize); (line 64)
+2020-10-17 18:15:45	captainchris	And i would like to change value with mousePosition with changeTileValue function (line 85). I tried tileValue->SetLabel("Text"); 
+2020-10-17 18:16:17	captainchris	If i change with setLabel in my function addText it is working 
+2020-10-17 18:16:29	captainchris	How Can I do 
+2020-10-17 18:18:31	captainchris	Here the backtrace https://pastebin.com/WXzgKqbg
+2020-10-17 18:21:58	DavidGH	captainchris: Put a breakpoint on line 85, tileValue->SetLabel(wxEmptyString);
+2020-10-17 18:21:58	DavidGH	Then run the program. Is the breakpoint hit? Is it hit when it *should* be ;)
+2020-10-17 18:24:08	captainchris	yes the breakpoint hit 
+2020-10-17 18:24:59	DavidGH	Also, line 169: GUI g(wxT("wxMapEditor"));
+2020-10-17 18:24:59	DavidGH	Put a breakpoint on line 170, and check the value of 'g'. Compare it with the value of 'this' in the gui constructor. Are they the same?
+2020-10-17 18:25:19	DavidGH	If not, that's your problem.
+2020-10-17 18:28:05	DavidGH	I think you'll find it's different
+2020-10-17 18:28:05	DavidGH	You probably need to use GetParent() to get a pointer to 'g',  not create a new GUI instance.
+2020-10-17 18:45:53	captainchris	Ok i'm trying
+2020-10-17 19:04:10	captainchris	https://pastebin.com/sSCQkJzE
+2020-10-17 19:04:30	captainchris	p this return the value of drawpanel 
+2020-10-17 19:07:45	DavidGH	'p this return the value of drawpanel '  As you would expect.
+2020-10-17 19:07:45	DavidGH	For 'g' you may (I get confused by pointers in this sort of situation) need to do: p &g
+2020-10-17 19:10:45	DavidGH	But what is the value of p this in the GUI ctor? You could also look at the value of 'p mainPanel' there,
+2020-10-17 19:10:45	DavidGH	and later compare it with the value of 'this' at the tileValue->SetLabel breakpoint
+2020-10-17 19:11:43	DavidGH	Or, just trust me and use GetParent() instead of creating a new GUI instance. You will need to static_cast it to GUI
+2020-10-17 19:17:24	captainchris	ok so to use getParent I need to recreate a wxwindows *win and win->getParent() right ?? 
+2020-10-17 19:19:48	DavidGH	But then, when you do 'win.changeTileValue(15); ' it will say that wxWindow doesn't *have* a changeTileValue function
+2020-10-17 19:19:56	DavidGH	so you need to cast it to GUI
+2020-10-17 19:20:14	DavidGH	bbl
+2020-10-17 19:36:47	captainchris	 pWin->(GUI*)changeTileValue(15);   
+2020-10-17 19:37:03	captainchris	it says expected primayr expresion ...
+2020-10-17 19:37:27	captainchris	I try with static_cast<GUI>changeTileValue it the same 
+2020-10-17 20:21:49	DavidGH	captainchris: Try:  (static_cast<GUI>(pWin))->changeTileValue(15); 
+2020-10-17 20:24:26	DavidGH	Sorry, that should be: (static_cast<GUI*>(pWin))->changeTileValue(15);
+2020-10-17 21:04:19	captainchris	ok compil done but the same problem 
+2020-10-17 21:05:22	captainchris	apparently the adress of my new win and gui has the same adress
+2020-10-17 21:05:36	captainchris	p this $1 = (GUI * const) 0x55555566c7e0
+2020-10-17 21:05:50	captainchris	p pWin $2 = (wxWindow *) 0x55555566c7e0
+2020-10-17 21:13:30	DavidGH	The 'new win' is the one you were static_casting; what was the other? Was it in the same method, or in the gui constructor?
+2020-10-17 21:18:34	DavidGH	And please pastebin all of your current code, including the header, so that I can run it here
+2020-10-17 21:18:43	captainchris	I put it in the drawPanel ctor
+2020-10-17 21:18:51	captainchris	ok 
+2020-10-17 21:19:06	captainchris	thank for your help David
+2020-10-17 21:21:20	captainchris	I paste all my file in gist 
+2020-10-17 21:25:52	captainchris	https://gist.github.com/captainchris06210/17a75c4a239905fe9a4f390bb1f9e754
+2020-10-17 21:27:17	DavidGH	And gui.hpp ?
+2020-10-17 21:27:32	DavidGH	and any other files needed to make it build
+2020-10-17 21:29:57	captainchris	All files are in the gist 
+2020-10-17 21:31:48	DavidGH	Ah, sorry. I clicked 'raw' and thought that would give me everything
+2020-10-17 21:49:22	captainchris	it's tricky
+2020-10-17 21:55:30	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2020-10-17 22:02:38	captainchris	If i call changeTileValue from addText function it is working 
+2020-10-17 22:03:11	captainchris	you're right the problem is the transition between gui and drawpanel 
+2020-10-17 22:06:51	DavidGH	I seem to be missing main.hpp
+2020-10-17 22:08:30	captainchris	https://gist.github.com/captainchris06210/82a6e4b84470a8fefd78d58f73fe6384
+2020-10-17 22:08:32	captainchris	sorry 
+2020-10-17 22:17:09	DavidGH	I've now got it to build, but there are missing files:  resources/map1.xml etc
+2020-10-17 22:18:15	DavidGH	This is why I should have said: "Please create a minimal compilable sample that demonstrates the problem" !
+2020-10-17 22:21:23	captainchris	the editor read only the resources/map1.xml
+2020-10-17 22:23:02	DavidGH	void GUI::createListCtrl() { img = wxBitmap("resources/levelgridless.png");
+2020-10-17 22:23:56	DavidGH	tileset.LoadFile("resources/levelgridless.png");     m.loadXML("resources/map1.xml");
+2020-10-17 22:25:04	DavidGH	wxBitmap rect("resources/cursor.png");
+2020-10-17 22:30:55	captainchris	I need to recreate the entire project if i need to remove image
+2020-10-17 22:33:11	DavidGH	Just pastebin those files, then; or zip them first
+2020-10-17 22:33:56	captainchris	ok I zip the project will be  easy to comments lot's of line 
+2020-10-17 22:39:05	captainchris	https://ufile.io/sfgyjfxc
+2020-10-17 22:55:25	captainchris	you have to uncomment line 167 168
+2020-10-17 22:55:34	captainchris	sorry I have commented for a test 
+2020-10-17 22:56:33	captainchris	It's very strange. I create a function sayHello in GUI with just an stdd::cout << "Hello wxwidget" << std::endl;
+2020-10-17 22:57:10	captainchris	in my mouseEvent I add ((GUI*)GetParent())->sayHello();
+2020-10-17 22:57:29	captainchris	and the code print hello ... with error 
+2020-10-17 22:57:34	DavidGH	The crash is prevented by doing: wxWindow* parent = GetParent()->GetParent();
+2020-10-17 22:57:47	DavidGH	instead of  pWin->GetParent();
+2020-10-17 22:58:17	captainchris	I see
+2020-10-17 22:58:23	DavidGH	I hadn't noticed that drawPanel's parent was another panel, not the frame
+2020-10-17 22:58:44	captainchris	because the parent of drawpanel is borderPanel and not GUI no ??
+2020-10-17 22:58:50	DavidGH	Yes
+2020-10-17 22:58:53	captainchris	ok 
+2020-10-17 23:00:53	captainchris	a big big thank's for your help 
+2020-10-17 23:01:38	captainchris	I have a small question for a very good programmer like you 
+2020-10-17 23:02:26	DavidGH	NOT like me. I'm just an amateur
+2020-10-17 23:02:31	captainchris	I have in my OnPaint function that draw map I show cursor and I need to redrawTile to redrawmap 
+2020-10-17 23:02:54	captainchris	there is not a better way to avoir rewrite the same function 
+2020-10-17 23:03:00	captainchris	?? 
+2020-10-17 23:04:58	DavidGH	I didn't understand that. But the general answer is: create a function that can be called from both places
+2020-10-17 23:05:24	DavidGH	Put it in a sensible class e.g. the frame, or the toplevel panel
+2020-10-17 23:06:22	captainchris	sorry for my bad english  OnPaint function and redrawTile function 
+2020-10-17 23:06:36	captainchris	do the same work
+2020-10-17 23:07:15	DavidGH	Yes. As I said ^^
+2020-10-17 23:08:01	DavidGH	BTW, now we know that you need to use GetParent()->GetParent(), which is ugly and might change in the future;
+2020-10-17 23:08:28	DavidGH	a better way of getting a pointer to the frame class is https://docs.wxwidgets.org/stable/group__group__funcmacro__misc.html#ga3a5f33038df32c170c234a0161cfd702
+2020-10-17 23:08:41	DavidGH	wxWindow* wxGetTopLevelParent
+2020-10-17 23:09:19	DavidGH	Anyway, gtg. Bye
+2020-10-17 23:12:02	captainchris	thank's David
+2020-10-17 23:20:59	-->	jarthur (~jarthur@cpe-70-114-215-149.austin.res.rr.com) has joined #wxwidgets
+2020-10-24 21:00:35	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-24 21:00:35	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-24 21:00:35	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-24 21:00:35	--	Channel #wxwidgets: 37 nicks (0 ops, 0 voices, 37 normals)
+2020-10-24 21:00:39	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-24 22:36:45	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2020-10-24 23:30:04	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-24 23:30:04	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-24 23:30:04	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-24 23:30:04	--	Channel #wxwidgets: 36 nicks (0 ops, 0 voices, 36 normals)
+2020-10-24 23:30:08	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-25 19:28:33	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-25 19:28:33	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-25 19:28:33	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-25 19:28:33	--	Channel #wxwidgets: 36 nicks (0 ops, 0 voices, 36 normals)
+2020-10-25 19:28:43	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-25 19:56:02	<--	PeRy_SoY_ (~pi@gateway/tor-sasl/perysoy/x-95510193) has quit (Remote host closed the connection)
+2020-10-25 19:56:49	-->	PeRy_SoY_ (~pi@gateway/tor-sasl/perysoy/x-95510193) has joined #wxwidgets
+2020-10-25 20:51:16	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #wxwidgets
+2020-10-25 21:15:52	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2020-10-31 11:45:08	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-31 11:45:08	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-31 11:45:08	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-31 11:45:08	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-10-31 11:45:13	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-31 12:52:04	-->	KAHR-Alpha (~Alpha@2a01cb0d024a6600203d872dc6ca96bd.ipv6.abo.wanadoo.fr) has joined #wxwidgets
+2020-10-31 17:50:29	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2020-10-31 18:36:56	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Quit: Leaving)
+2020-10-31 19:14:06	<--	sbrothy (~sbrothy@77.241.136.35.bredband.3.dk) has quit (Quit: leaving)
+2020-10-31 20:17:04	-->	dvx (~dvx@5.181.92.64) has joined #wxwidgets
+2020-10-31 22:03:27	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-10-31 22:03:27	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-10-31 22:03:27	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-10-31 22:03:27	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-10-31 22:03:33	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-10-31 22:18:28	<--	dvx (~dvx@5.181.92.64) has quit (Quit: dvx)
+2020-10-31 23:45:28	<--	sbrothy (~sbrothy@87-58-28-154-dynamic.dk.customer.tdc.net) has quit (Quit: leaving)
+2020-11-01 12:18:15	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #wxwidgets
+2020-11-01 12:18:15	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-01 12:18:15	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-01 12:18:15	--	Channel #wxwidgets: 40 nicks (0 ops, 0 voices, 40 normals)
+2020-11-01 12:18:26	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-01 13:02:51	-->	KAHR-Alpha (~Alpha@2a01cb0d024a66004d73db6b455e27e7.ipv6.abo.wanadoo.fr) has joined #wxwidgets
+2020-11-06 20:36:41	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-06 20:36:41	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-06 20:36:41	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-06 20:36:41	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-11-06 20:36:45	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-06 20:42:12	<--	sbrothy (~sbrothy@87-58-28-154-dynamic.dk.customer.tdc.net) has quit (Quit: leaving)
+2020-11-06 20:42:55	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Quit: Leaving)
+2020-11-06 21:25:32	<--	dvx (~dvx@5.181.92.64) has quit (Quit: dvx)
+2020-11-06 22:17:54	<--	darkbit (~db@152.32.100.91) has quit (Ping timeout: 264 seconds)
+2020-11-07 20:45:39	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-07 20:45:39	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-07 20:45:39	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-07 20:45:39	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-11-07 20:45:43	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-07 21:17:03	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2020-11-07 21:18:18	<--	HumanG33k (~HumanG33k@2a01:e0a:5b9:7840:6600:6aff:fe5f:9d6) has quit (Remote host closed the connection)
+2020-11-07 21:18:33	-->	HumanG33k (~HumanG33k@2a01:e0a:5b9:7840:6600:6aff:fe5f:9d6) has joined #wxwidgets
+2020-11-07 21:52:34	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2020-11-07 22:30:25	<--	darkbit (~db@136.158.7.86) has quit (Ping timeout: 260 seconds)
+2020-11-07 23:00:02	<--	gigetoo (~gigetoo@c83-251-253-157.bredband.comhem.se) has quit (Ping timeout: 272 seconds)
+2020-11-07 23:33:02	--	KAHR-Alpha_ is now known as KAHR-Alpha
+2020-11-10 12:44:16	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-10 12:44:16	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-10 12:44:16	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-10 12:44:16	--	Channel #wxwidgets: 44 nicks (0 ops, 0 voices, 44 normals)
+2020-11-10 12:44:20	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-10 12:52:21	<--	mitigate (~mitigate@59.96.48.110) has quit (Ping timeout: 260 seconds)
+2020-11-10 13:28:54	--	irc: disconnected from server
+2020-11-13 21:20:31	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-13 21:20:31	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-13 21:20:31	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-13 21:20:31	--	Channel #wxwidgets: 39 nicks (0 ops, 0 voices, 39 normals)
+2020-11-13 21:20:34	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-13 21:33:12	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2020-11-15 13:02:47	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-15 13:02:47	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-15 13:02:47	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-15 13:02:47	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-11-15 13:02:51	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-15 13:19:32	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-15 13:19:32	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-15 13:19:32	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-15 13:19:32	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-11-15 13:19:37	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-15 21:02:59	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-15 21:02:59	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-15 21:02:59	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-15 21:02:59	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-11-15 21:03:05	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-16 21:39:03	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-16 21:39:03	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-16 21:39:03	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-16 21:39:03	--	Channel #wxwidgets: 37 nicks (0 ops, 0 voices, 37 normals)
+2020-11-16 21:39:08	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-19 19:53:12	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-19 19:53:12	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-19 19:53:12	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-19 19:53:12	--	Channel #wxwidgets: 44 nicks (0 ops, 0 voices, 44 normals)
+2020-11-19 19:53:16	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-19 20:09:14	-->	purplex88_ (~purplex88@unaffiliated/purplex88) has joined #wxwidgets
+2020-11-19 20:09:54	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Ping timeout: 265 seconds)
+2020-11-19 20:10:06	--	purplex88_ is now known as purplex88
+2020-11-22 11:22:12	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-22 11:22:12	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-22 11:22:12	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-22 11:22:12	--	Channel #wxwidgets: 40 nicks (0 ops, 0 voices, 40 normals)
+2020-11-22 11:22:16	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-22 11:23:25	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Quit: Leaving)
+2020-11-22 11:38:53	<--	Net147 (~Net147@unaffiliated/net147) has quit (Quit: Quit)
+2020-11-22 11:40:45	-->	Net147 (~Net147@unaffiliated/net147) has joined #wxwidgets
+2020-11-22 12:34:29	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #wxwidgets
+2020-11-22 13:18:37	-->	shi (~shi@93.190.138.235) has joined #wxwidgets
+2020-11-22 13:21:43	<--	shi_ (~shi@183.14.28.249) has quit (Ping timeout: 240 seconds)
+2020-11-22 13:43:04	<--	shi (~shi@93.190.138.235) has quit (Ping timeout: 264 seconds)
+2020-11-22 14:00:46	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2020-11-22 14:09:54	-->	shi (~shi@183.14.28.249) has joined #wxwidgets
+2020-11-22 14:41:37	<--	shi (~shi@183.14.28.249) has quit (Ping timeout: 260 seconds)
+2020-11-25 20:10:13	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #wxwidgets
+2020-11-25 20:10:13	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.0) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-25 20:10:13	--	Topic set by leio (~leio@gentoo/developer/leio) on Thu, 30 Apr 2020 11:37:24
+2020-11-25 20:10:13	--	Channel #wxwidgets: 39 nicks (0 ops, 0 voices, 39 normals)
+2020-11-25 20:10:18	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-25 20:30:30	<--	rmilldes (~rmilldes@097-100-223-042.res.spectrum.com) has quit (Remote host closed the connection)
+2020-11-25 20:50:33	-->	KAHR-Alpha (~Alpha@2a01cb0d024a66003172f705f16108f1.ipv6.abo.wanadoo.fr) has joined #wxwidgets
+2020-11-29 18:36:41	-->	captainchris (~captainch@2001:861:3181:3540:f71e:6ac3:b9c5:ee) has joined #wxwidgets
+2020-11-29 18:36:41	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-29 18:36:41	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-11-29 18:36:41	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-11-29 18:36:46	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-29 18:51:55	--	irc: disconnected from server
+2020-11-30 21:29:25	-->	captainchris (~captainch@2001:861:3181:3540:f71e:6ac3:b9c5:ee) has joined #wxwidgets
+2020-11-30 21:29:25	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-11-30 21:29:25	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-11-30 21:29:25	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-11-30 21:29:29	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-11-30 21:48:22	--	irc: disconnected from server
+2020-12-01 22:46:44	-->	captainchris (~captainch@2001:861:3181:3540:9e33:c22e:1581:96fa) has joined #wxwidgets
+2020-12-01 22:46:44	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-01 22:46:44	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-01 22:46:44	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-12-01 22:46:48	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-03 20:27:39	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #wxwidgets
+2020-12-03 20:27:39	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-03 20:27:39	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-03 20:27:39	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-12-03 20:27:45	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-03 20:28:47	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2020-12-03 20:42:20	midn	I'm not sure how that would solve the problem. The CallAfter function will warp the pointer, and trigger the mouse handler again, no?
+2020-12-03 20:43:53	midn	I need it to be warped the moment the mouse moves to implement arbitrary-distance dragging
+2020-12-03 20:43:59	midn	Something akin to grabbing an object in Blender
+2020-12-03 20:52:01	DavidGH	I see (I think). So you'd need to reverse what I said:
+2020-12-03 20:52:01	DavidGH	Call warp directly from the motion handler, but first set a bool for ignoring the next 'n' motion events.
+2020-12-03 20:52:20	DavidGH	Also don't Skip() the events
+2020-12-03 20:53:25	midn	This is assuming wxWidgets can't reorder events?
+2020-12-03 20:53:29	midn	Okay then, thank you
+2020-12-03 20:53:48	DavidGH	No, it can't
+2020-12-03 20:54:35	DavidGH	At most, you could override wxApp::FilterEvent and do <whatever> with each relevant event
+2020-12-03 20:55:17	DavidGH	but that doesn't offer an obvous way to reorder
+2020-12-03 20:55:39	midn	No, that was just a separate question, I was just curious
+2020-12-03 21:48:45	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #wxwidgets
+2020-12-03 21:48:45	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-03 21:48:45	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-03 21:48:45	--	Channel #wxwidgets: 42 nicks (0 ops, 0 voices, 42 normals)
+2020-12-03 21:48:49	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-03 22:17:22	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Quit: Leaving)
+2020-12-03 22:30:27	-->	HumanG33k (~HumanG33k@82-64-99-84.subs.proxad.net) has joined #wxwidgets
+2020-12-03 22:32:11	<--	HumanG33k (~HumanG33k@82-64-99-84.subs.proxad.net) has quit (Remote host closed the connection)
+2020-12-03 22:32:39	-->	HumanG33k (~HumanG33k@82-64-99-84.subs.proxad.net) has joined #wxwidgets
+2020-12-04 21:19:17	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #wxwidgets
+2020-12-04 21:19:17	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-04 21:19:17	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-04 21:19:17	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-12-04 21:19:21	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-04 22:20:15	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Quit: Leaving)
+2020-12-04 22:20:58	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2020-12-06 13:01:52	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #wxwidgets
+2020-12-06 13:01:52	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-06 13:01:52	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-06 13:01:52	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-12-06 13:01:56	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-06 14:09:27	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:10:48	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:12:07	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:12:37	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:15:13	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:15:41	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:17:10	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:17:17	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:18:51	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:20:03	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:22:04	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:22:28	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:23:41	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:24:02	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:24:50	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:25:08	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:25:58	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-06 14:26:21	-->	dvx (~dvx@185.63.97.64) has joined #wxwidgets
+2020-12-06 14:26:33	<--	dvx (~dvx@185.63.97.64) has quit (Read error: Connection reset by peer)
+2020-12-12 12:29:05	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #wxwidgets
+2020-12-12 12:29:05	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-12 12:29:05	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-12 12:29:05	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-12-12 12:29:09	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-12 15:11:34	<--	Elysion (~elysion@ppp14-2-78-127.adl-apt-pir-bras31.tpg.internode.on.net) has quit (Remote host closed the connection)
+2020-12-12 15:14:11	-->	Elysion (~elysion@ppp14-2-78-127.adl-apt-pir-bras31.tpg.internode.on.net) has joined #wxwidgets
+2020-12-12 15:48:26	-->	ErkiS (~opera@82.131.86.104.cable.starman.ee) has joined #wxwidgets
+2020-12-14 21:11:58	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #wxwidgets
+2020-12-14 21:11:58	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-14 21:11:58	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-14 21:11:58	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-12-14 21:12:02	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-16 20:13:46	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #wxwidgets
+2020-12-16 20:13:46	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-16 20:13:46	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-16 20:13:46	--	Channel #wxwidgets: 41 nicks (0 ops, 0 voices, 41 normals)
+2020-12-16 20:13:53	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-19 13:16:00	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #wxwidgets
+2020-12-19 13:16:01	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-19 13:16:01	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-19 13:16:01	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-12-19 13:16:06	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2020-12-19 13:29:20	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #wxwidgets
+2020-12-19 13:29:21	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2020-12-19 13:29:21	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2020-12-19 13:29:21	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2020-12-19 13:29:24	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2021-02-21 17:53:01	-->	captainchris (~captainch@2001:861:3181:3540:2e69:17de:6354:db14) has joined #wxwidgets
+2021-02-21 17:53:01	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2021-02-21 17:53:01	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2021-02-21 17:53:01	--	Channel #wxwidgets: 43 nicks (0 ops, 0 voices, 43 normals)
+2021-02-21 17:53:05	--	Channel created on Sun, 26 Nov 2006 07:42:37
+2021-02-21 19:52:47	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined #wxwidgets
+2021-02-21 20:50:22	<--	purplex88 (~purplex88@unaffiliated/purplex88) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2021-03-10 22:26:32	-->	captainchris (~captainch@2001:861:3181:3540:2e69:17de:6354:db14) has joined #wxwidgets
+2021-03-10 22:26:32	--	Topic for #wxwidgets is "Cross-platform GUI Toolkit (current - v3.0.5, python - v4.1.1) || *Don't ask to ask, just ask* but please read http://wxwiki.org/IRC first || Long irc messages? http://pastebin.com/"
+2021-03-10 22:26:32	--	Topic set by DavidGH (~DGH@host-92-21-75-20.as13285.net) on Thu, 26 Nov 2020 18:02:09
+2021-03-10 22:26:32	--	Channel #wxwidgets: 39 nicks (0 ops, 0 voices, 39 normals)
+2021-03-10 22:26:36	--	Channel created on Sun, 26 Nov 2006 07:42:37

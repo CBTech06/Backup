@@ -1,0 +1,259 @@
+# i3 config file (v4)
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+#---- [ VAR ]  ---- #
+
+#set $sup Mod1
+set $mod Mod4
+set $TERM st -c Shell
+# DRAG FLOATING WINDOW #
+floating_modifier $mod
+workspace_layout default  
+
+#---- [ GAPS_BORDERS ] ---- #
+
+default_border pixel 2
+default_floating_border pixel 2
+#smart_borders on 
+#for_window [class="^.*"] border pixel 10
+gaps inner 2 
+gaps outer 2 
+
+font pango: DejaVu Sans Font 9
+
+# ---- [EXEC] ---- #
+
+exec --no-startup-id "~/.config/i3/Scripts/mouse"
+exec --no-startup_id xrandr --output DVI-I-0 --primary output VGA-0
+exec --no-startup-id workrave
+
+bindsym $mod+d  exec "rofi -modi window,run -show run -sidebar-mode -terminal urxvt "
+bindsym Mod1+b  exec "/home/captainchris/.config/i3/Scripts/webSearch"
+bindsym $mod+F1 exec $TERM -e nvim /home/captainchris/.config/i3/config 
+bindsym $mod+Shift+F10 exec "firefox"
+bindsym Print   exec scrot -e 'mv $f ~/Work/Screenshots:w
+
+
+# DISABLE MOUSE #
+bindsym $mod+m exec "~/.config/i3/Scripts/mouse"            
+bindsym $mod+c  kill
+bindsym $mod+Return exec $TERM -c Shell -e tmux 
+
+# ---- [ FOCUS ] ---- #
+ 
+# DISABLE FOCUS 
+focus_follows_mouse no                                      
+
+bindsym $mod+h              focus left
+bindsym $mod+l              focus right
+bindsym $mod+k  	          focus up
+bindsym $mod+j              focus down
+#bindsym $mod+w             focus prev                      
+#bindsym $mod+Shift+Tab     focus next                           
+bindsym $mod+q              focus parent                    
+bindsym $mod+a              focus child                     
+bindsym $mod+Shift+h        move left
+bindsym $mod+Shift+l        move right
+bindsym $mod+Shift+j        move down
+bindsym $mod+Shift+k        move up
+bindsym $mod+Shift+Left     move container to output left
+bindsym $mod+Shift+Right    move container to output Right
+bindsym $mod+space          focus output left
+
+# ---- [ WORKSPACES] ---- #
+ 
+workspace_auto_back_and_forth yes
+bindsym $mod+Escape         workspace back_and_forth
+bindsym $mod+Ctrl+h         workspace prev
+bindsym $mod+Ctrl+l         workspace next
+
+bindsym $mod+semicolon split h              
+bindsym $mod+v split v                      
+
+
+# FULLSCREEN MODE #
+bindsym $mod+f              fullscreen toggle
+bindsym $mod+shift+f        fullscreen toggle global
+
+# ---- [ LAYOUTS ] ---- #
+
+bindsym $mod+s layout stacking
+bindsym $mod+z layout tabbed
+bindsym $mod+e layout toggle split
+
+# TILING /FLOATING #
+bindsym $mod+Tab floating toggle 
+bindsym $mod+Shift+s sticky toggle
+bindsym $mod+n move scratchpad 
+bindsym $mod+Shift+n scratchpad show
+
+# ---- [ CLIENT COLOR CONF ] ---- #
+
+set $FOREGROUND  #999999
+set $BACKGROUND  #282C34
+set $FOCUS_FG #FFFFFF
+set $FOCUS_BG #39648D
+set $FOCUS_BD #FF7600
+set $BORDER #333333
+
+# STATUSBAR #
+set $INACTIVE #282C34
+set $URGENT #FE5E00
+set $URGENT_FG #FFFFFF
+
+# CLASS                  BORDER     BACKGROUND      TEXT         INDICATOR   
+client.focused          $BORDER     $FOCUS_BD       $FOCUS_FG    $BORDER   
+client.focused_inactive $BORDER     $BACKGROUND     $FOCUS_FG    $BORDER       
+client.unfocused        $BORDER     $BACKGROUND     $FOREGROUND  $BORDER       
+
+#  ---- [ MOVE MODE - RESIZE MODE ] ---- #
+  
+mode "[MOVE]" {
+    bindsym k move up 20px
+    bindsym h move left 20px
+    bindsym j move down 20px
+    bindsym l move right 20px
+    bindsym $mod+BackSpace mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "[RESIZE]" {
+        bindsym l           resize shrink width 10 px or 10 ppt
+        bindsym j           resize grow height 10 px or 10 ppt
+        bindsym k           resize shrink height 10 px or 10 ppt
+        bindsym h           resize grow width 10 px or 10 ppt
+
+        # BACK TO NORMAL
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym Mod1+r mode "default"
+}
+
+bindsym $mod+r mode "[RESIZE]"
+bindsym $mod+BackSpace focus floating; mode "[MOVE]"
+
+# ---- [ RELOAD - QUIT ] ---- #
+
+bindsym $mod+Shift+r    reload                
+bindsym $mod+Ctrl+q     exec i3-msg exit
+
+# ---- [ BAR CONF ] ---- #
+
+bindsym $mod+x          bar mode invisible
+bindsym $mod+Shift+x    bar mode dock 
+
+bar {
+    output HDMI-0
+    tray_output HDMI-0
+    status_command i3blocks -c ~/.config/i3/i3block_Left.conf
+
+    colors {
+         background $BACKGROUND
+         statusline #F2F2F2
+         separator  #756D59
+
+                            # BORDER              BG 	             TEXT
+         focused_workspace  $FOCUS_BG         $FOCUS_BG         $FOCUS_FG
+         active_workspace   $INACTIVE 	      $INACTIVE         $FOREGROUND
+         inactive_workspace $INACTIVE         $INACTIVE         $FOREGROUND
+         urgent_workspace   $INACTIVE         $URGENT           $URGENT_FG
+    }
+}
+
+bar {
+    output VGA-0
+    tray_output VGA-0
+
+    status_command i3blocks -c ~/.config/i3/i3block_Right.conf
+    position bottom
+    
+    colors {
+         background $BACKGROUND
+         statusline #F2F2F2
+         separator  #756D59
+
+                            # BORDER              BG 	             TEXT
+         focused_workspace  $FOCUS_BG         $FOCUS_BG         $FOCUS_FG
+         active_workspace   $INACTIVE 	      $INACTIVE         $FOREGROUND
+         inactive_workspace $INACTIVE         $INACTIVE         $FOREGROUND
+         urgent_workspace   $INACTIVE         $URGENT           $URGENT_FG
+    }
+}
+
+# ---- [ WORKSPACE CONF ] ---- #	
+
+set $ws1 [D1:WEB]
+set $ws2 [D2:TERM]
+set $ws3 [D3:GUITAR]
+set $ws4 [D4:OTHER]
+set $ws5 [D5:GFX]
+#set $ws7 [D6:GFX]
+#set $ws8 [D8]
+#set $ws9 [D9]
+
+# ---- [WORKSPACE LAYOUT] ---- #
+ 
+#exec --no-startup-id "i3-msg 'workspace $ws1; append_layout /home/captainchris/.config/i3/layout.json'"
+
+# GO TO N WORKSPACE #
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+#bindsym $mod+6 workspace $ws6
+#bindsym $mod+7 workspace $ws7
+#bindsym $mod+8 workspace $ws8
+#bindsym $mod+9 workspace $ws9
+
+# MOVE FOCUSED CONTAINER TO WORKSPACE #
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5
+#bindsym $mod+Shift+6 move container to workspace $ws6
+#bindsym $mod+Shift+7 move container to workspace $ws7
+#bindsym $mod+Shift+8 move container to workspace $ws8
+#bindsym $mod+Shift+9 move container to workspace $ws9
+
+workspace "$ws1" output HDMI-0
+workspace "$ws2" output HDMI-0
+workspace "$ws3" output HDMI-0
+workspace "$ws4" output HDMI-0
+#workspace "$ws5" output HDMI-0
+#workspace "$ws6" output HDMI-0
+
+
+#  ---- [ ASSIGNMENT] ---- #
+
+assign [class="Firefox"] $ws5
+assign [class="lmms"] $ws4
+#assign [class="Shell"] $ws2
+assign [class="Music"] $ws4
+#assign [class="Tor Browser"] $ws10
+assign [class="Gimp"] $ws
+assign [class="Godot"] $ws5
+assign [class="TuxGuitar"] $ws3
+assign [class="Inkscape"] $ws5
+assign [class="SFML GameDev"] $ws5
+assign [class="qutebrowser"] $ws1
+assign [class="Guitarix"] $ws3
+
+#for_window [class="Notes"]  move scratchpad,move position 580 50, resize set 700 900
+for_window [class="qutebrowser"] focus;
+for_window [class="Shell"] focus; split h 
+for_window [class="TuxGuitar"] focus; layout tabbed
+for_window [class="Guitarix"] split v
+for_window [class="Chat"] focus; splith; splitv
+for_window [class="Music"] focus; splith; splitv; mark "SWAP"
+for_window [title="JDownloader 2"] focus; layout splith
+for_window [class="File"] focus
+for_window [class="lmms"] focus; layout tabbed
+for_window [class="Tor Browser"] focus;
+for_window [class="TuxGuitar"] focus
+for_window [class="Godot"] focus; layout tabbed
+for_window [class="Gimp"] focus
+for_window [class="Inkscape"] focus
+for_window [class="Kodi"] focus
+for_window [class="SFML GameDev"] focus;

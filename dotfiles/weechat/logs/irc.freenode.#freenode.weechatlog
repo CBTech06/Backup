@@ -1,0 +1,1047 @@
+2020-03-26 11:37:07	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #freenode
+2020-03-26 11:37:07	--	Topic for #freenode is "Welcome to #freenode | Don't copy/paste spam | No politics. | Feel free to message staff at any time. You can find us using /stats p (shows immediately-available staff) or /who freenode/staff/* (shows all staff) | https://freenode.net/news/scheduled-maintenance-services-database-spring-cleaning"
+2020-03-26 11:37:07	--	Topic set by mquin on Thu, 27 Feb 2020 16:26:57
+2020-03-26 11:37:08	--	Channel #freenode: 1509 nicks (31 ops, 0 voices, 1478 normals)
+2020-03-26 11:37:08	--	PvNotice(ChanServ): Please read the topic.
+2020-03-26 11:37:08	--	URL for #freenode: https://freenode.net/
+2020-03-26 11:37:09	--	Channel created on Sat, 10 Feb 2001 00:16:24
+2020-03-26 11:37:09	<--	His_Dudeness__ (~His_Duden@ip-176-199-253-59.hsi06.unitymediagroup.de) has quit (Read error: Connection reset by peer)
+2020-03-26 11:37:20	<--	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has quit (Quit: Bye!)
+2020-03-26 11:37:23	@amdj	it is +r so you do need a services account to join it
+2020-03-26 11:37:29	-->	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 11:37:30	tetete	so this is a support channel..
+2020-03-26 11:37:31	wasamasa	#archlinux will give you the finger for manjaro questions
+2020-03-26 11:37:42	indomitable	wasamasa, really?
+2020-03-26 11:37:43	<--	das (~das@unaffiliated/das) has quit (Quit: leaving)
+2020-03-26 11:37:57	indomitable	I'm sure if you're polite and don't make outrageous demands for instant help they aren't all bad
+2020-03-26 11:38:07	wasamasa	no, they're about as arrogant as the hackers in here
+2020-03-26 11:38:16	<--	adriant68 (58749502@88.116.149.2) has left #freenode
+2020-03-26 11:38:17	indomitable	there are hackers in here?
+2020-03-26 11:38:18	indomitable	D:
+2020-03-26 11:38:36	wasamasa	it's like asking ubuntu questions on a debian channels, impolite and ignorant
+2020-03-26 11:38:44	indomitable	isn't manjaro based on arch?
+2020-03-26 11:38:48	-->	gargus (~user@202-159-177-86.dyn.iinet.net.au) has joined #freenode
+2020-03-26 11:38:50	indomitable	I seem to recall it was arch for noobs?
+2020-03-26 11:38:54	wasamasa	yes and it does things differently
+2020-03-26 11:39:13	wasamasa	so #arch can't help you with that because they don't know what's different and don't care
+2020-03-26 11:39:32	indomitable	huh, harsh for one of the largest channels in here, but I guess that's kind of why as well
+2020-03-26 11:39:33	Surmaelk	MrElendig - sounds like a danish phrase ;)
+2020-03-26 11:39:35	wasamasa	likewise for ubuntu and debian
+2020-03-26 11:40:00	wasamasa	or spacemacs and emacs
+2020-03-26 11:40:05	wasamasa	or oh-my-zsh and zsh
+2020-03-26 11:40:06	indomitable	what is spacemacs
+2020-03-26 11:40:08	-->	DelPhyinf (~DelPhyinf@2a02:8388:2283:f380:d16c:66df:b224:ede7) has joined #freenode
+2020-03-26 11:40:08	<--	^Mog^ (~lakitu@unaffiliated/lakitu) has quit (Read error: Connection reset by peer)
+2020-03-26 11:40:21	mst	indomitable: when manjaro first started they told their users to ask the archlinux people for help and *lie* that they were using arch instead of manjaro
+2020-03-26 11:40:31	-->	das (~das@unaffiliated/das) has joined #freenode
+2020-03-26 11:40:33	<--	SeMas (uid32977@gateway/web/irccloud.com/x-lkfufznsrdmnouho) has quit (Quit: Connection closed for inactivity)
+2020-03-26 11:40:46	mst	this has not left the archlinux community particularly fond of providing manjaro support
+2020-03-26 11:40:51	<--	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net - currently broken?)
+2020-03-26 11:40:55	<--	tetete (~My_user_n@110.93.80.83) has left #freenode ("WeeChat 2.7.1")
+2020-03-26 11:40:57	wasamasa	indomitable: since you're such a great hacker I'm sure you'll figure out instantly using your favorite search engine
+2020-03-26 11:41:06	-->	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has joined #freenode
+2020-03-26 11:41:08	indomitable	wasamasa, I am not a hacker at all, I simply have a passing interest in security.
+2020-03-26 11:41:28	-->	tetete (~My_user_n@110.93.80.83) has joined #freenode
+2020-03-26 11:41:50	-->	His_Dudeness__ (~His_Duden@ip-176-199-253-59.hsi06.unitymediagroup.de) has joined #freenode
+2020-03-26 11:41:55	<--	truthr (~truthr@unaffiliated/truthr) has quit (Quit: Let's Talk      www.politics-uncenso.red)
+2020-03-26 11:42:04	-->	foehth (4d6ff570@77.111.245.112) has joined #freenode
+2020-03-26 11:42:26	indomitable	mst, I can see how that would annoy some people. :P
+2020-03-26 11:42:48	@amdj	mst: jeeeez
+2020-03-26 11:42:48	--	JD|cloud is now known as Archini
+2020-03-26 11:42:49	--	Archini is now known as JD|cloud
+2020-03-26 11:44:08	<--	tetete (~My_user_n@110.93.80.83) has left #freenode ("WeeChat 2.7.1")
+2020-03-26 11:44:26	<--	crvi (~crvi@crvi.powered.by.lunarbnc.net) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net)
+2020-03-26 11:44:27	indomitable	amdj, that's one way to reduce tech support costs of a project :-)
+2020-03-26 11:44:42	-->	crvi (~crvi@crvi.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 11:45:06	indomitable	I think I tried manjaro a couple of times, never got it to work, it was more hassle than just installing arch
+2020-03-26 11:45:17	indomitable	which surprisingly worked fine every time I didn't mess up the installation
+2020-03-26 11:45:22	<--	ohnx (~ohnx@unaffiliated/ohnx) has quit (Ping timeout: 246 seconds)
+2020-03-26 11:45:23	-->	pxs_0o (~pxs@176.60.179.138) has joined #freenode
+2020-03-26 11:45:29	-->	Corvus` (~Corvus`@unaffiliated/wolf/x-7838296) has joined #freenode
+2020-03-26 11:45:49	-->	violet (uid194105@gateway/web/irccloud.com/x-awhbkluycbhogsdt) has joined #freenode
+2020-03-26 11:46:00	-->	Gerula (~Gerula@unaffiliated/gerula) has joined #freenode
+2020-03-26 11:46:13	@amdj	I'm a Gentoo Hardened guy for servers/routers/NAS/everything/whatever and Linux Mint for desktops & laptops.
+2020-03-26 11:46:38	indomitable	amdj, I can't imagine I have the patience or linux skills to deal with that. :P
+2020-03-26 11:46:45	indomitable	(Gentoo Hardened)
+2020-03-26 11:47:00	-->	lakitu (~lakitu@unaffiliated/lakitu) has joined #freenode
+2020-03-26 11:47:06	indomitable	Linux Mint has always been fine for me, but the kernel isn't always as up to date as with Arch, so for hardware reasons arch tends to be safer
+2020-03-26 11:47:14	<--	Stuiterbal (Stuiterbal@c-24-5-58-81.hsd1.ca.comcast.net) has quit (Quit: [22:02] <nomadz> als er hier ooit een vrouwenhaat-award komt, dan wil ik die 'de stuiterbal' noemen)
+2020-03-26 11:47:58	@amdj	I only have one hardware niggle
+2020-03-26 11:48:14	indomitable	that's a terrible word and we should stop using it :P
+2020-03-26 11:48:21	@amdj	the subwoofer and speakers in this laptop were wired backwards, so the speaker channel on the chip actually goes to the subwoofer and vice versa.
+2020-03-26 11:48:27	<--	makaveli7 (~makaveli7@unaffiliated/makaveli7) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 11:48:34	indomitable	So you'd need a software fix to patch it
+2020-03-26 11:48:40	@amdj	if you install Windows and then install the OEM chipset & audio drivers, it gets solved. I suspect because the driver reverses the channels.
+2020-03-26 11:48:47	<--	pxs (~pxs@176.60.179.138) has quit (Ping timeout: 260 seconds)
+2020-03-26 11:48:47	indomitable	That's absurd
+2020-03-26 11:48:48	indomitable	lol
+2020-03-26 11:48:58	@amdj	it would be nice if an ALSA quirk could be added to do the same for Linux, but until then I'm just manually swapping the channels in Pulse.
+2020-03-26 11:48:58	indomitable	Wait, your laptop has a subwoofer?
+2020-03-26 11:49:13	Dwarf	My old one did
+2020-03-26 11:49:18	indomitable	In this episode of Pimp My 'Top...
+2020-03-26 11:49:26	Dwarf	It was a dell XPS
+2020-03-26 11:49:34	sysmin	my hp laptop has subwoofer
+2020-03-26 11:49:53	sysmin	It be shaking the chassie
+2020-03-26 11:49:56	-->	tetetete2 (~christoph@110.93.80.83) has joined #freenode
+2020-03-26 11:49:58	indomitable	Dwarf, hello
+2020-03-26 11:50:09	Dwarf	Hi
+2020-03-26 11:50:35	indomitable	tetetete2, congratulations, you're using sasl
+2020-03-26 11:50:53	tetetete2	but my info still showing my gahddd
+2020-03-26 11:50:55	indomitable	now you can rename to tetete and get acquainted with nickserv
+2020-03-26 11:51:02	-->	spinningCat-work (~nebioglu@94.54.219.5) has joined #freenode
+2020-03-26 11:51:05	indomitable	info will show until you register your nick and convince the kind amdj to give you an unaffiliated cloak
+2020-03-26 11:51:11	indomitable	but that's in a few steps
+2020-03-26 11:51:38	-->	u0_a84 (~u0_a84@46-133-78-123.mobile.vf-ua.net) has joined #freenode
+2020-03-26 11:51:40	indomitable	note that people with free time on their hands can figure out your IP even while you're cloaked
+2020-03-26 11:51:43	--	tetetete2 is now known as tetete
+2020-03-26 11:51:47	eyepeetee-	unless you want to use the hidden service
+2020-03-26 11:51:50	indomitable	esp. if you like clicking strange links on IRC (simplest method)
+2020-03-26 11:52:01	indomitable	(just convince someone to click a link you have access to the backend of so you can see their connecting IP)
+2020-03-26 11:52:02	tetete	by using VPN?
+2020-03-26 11:52:09	indomitable	tetete, no, but vpn isn't a bad idea
+2020-03-26 11:52:09	<--	theo (~td512@2ProIntl/td512) has quit (Ping timeout: 264 seconds)
+2020-03-26 11:52:23	eyepeetee-	ok2gncmy
+2020-03-26 11:52:30	indomitable	hidden service is fine I guess, I have it set up, but kind of a pain in the ass for newbies i'd reckon
+2020-03-26 11:52:59	eyepeetee-	....it's okay...to GNC my...onion...
+2020-03-26 11:53:07	@amdj	is our onion service actually hidden though?
+2020-03-26 11:53:11	indomitable	amdj, no
+2020-03-26 11:53:15	indomitable	I doubt that
+2020-03-26 11:53:15	indomitable	lol
+2020-03-26 11:53:24	eyepeetee-	depends on your use case amdj
+2020-03-26 11:53:28	-->	makaveli7 (~makaveli7@unaffiliated/makaveli7) has joined #freenode
+2020-03-26 11:53:30	<--	Habbie (peter@lorentz.7bits.nl) has quit (Quit: WeeChat 1.6)
+2020-03-26 11:53:39	indomitable	hidden means something specific in tor terms eyepeetee-
+2020-03-26 11:54:03	<--	ijens (~ijens@unaffiliated/ijens) has quit (Remote host closed the connection)
+2020-03-26 11:54:05	@amdj	oh I don't mean whether someone can figure out where it's hosted
+2020-03-26 11:54:07	indomitable	it's hidden in the sense it's not accessible from the regular web
+2020-03-26 11:54:07	eyepeetee-	i'm familiar. it still depends on your use case.
+2020-03-26 11:54:08	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 256 seconds)
+2020-03-26 11:54:28	@amdj	I mean whether we're running in HiddenServiceSingleHopMode
+2020-03-26 11:54:38	@amdj	since we don't (or shouldn't) actually care whether it's hidden or not
+2020-03-26 11:54:51	indomitable	I would imagine you're not
+2020-03-26 11:55:00	-->	theo (~td512@209.141.57.101) has joined #freenode
+2020-03-26 11:55:01	<--	theo (~td512@209.141.57.101) has quit (Changing host)
+2020-03-26 11:55:01	-->	theo (~td512@2ProIntl/td512) has joined #freenode
+2020-03-26 11:55:14	@amdj	e: any idea?
+2020-03-26 11:55:24	-->	Habbie (peter@lorentz.7bits.nl) has joined #freenode
+2020-03-26 11:55:47	tetete	ok2gncmy?
+2020-03-26 11:55:52	eyepeetee-	in my opinion, none of the tor hidden services are technically hidden, since they all have to advertise their existance to the tor network, but, the name "Hidden Service" itself, may as well be a trademarked term for a service that's run over tor
+2020-03-26 11:55:56	<--	kkd (~memxor@unaffiliated/kartikeya) has quit (Quit: bye!)
+2020-03-26 11:56:23	<--	PacKetSlayer (PacketSlay@hellomouse/member/packetslayer) has quit (Quit: Woosh!)
+2020-03-26 11:56:26	eyepeetee-	a hidden service is still a hidden service, whether or not it's technically hidden on the level of people knowing it exists
+2020-03-26 11:56:28	indomitable	amdj, the implication being that it's not running HiddenServiceNonAnonymousMode yes?
+2020-03-26 11:56:39	-->	PacKetSlayer (PacketSlay@hellomouse/member/packetslayer) has joined #freenode
+2020-03-26 11:56:58	indomitable	eyepeetee-, again we are talking about something specific
+2020-03-26 11:56:59	indomitable	:P
+2020-03-26 11:57:00	<--	_thelion_ (~matthias@93-82-99-29.adsl.highway.telekom.at) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 11:57:03	-->	ohnx (~ohnx@unaffiliated/ohnx) has joined #freenode
+2020-03-26 11:57:09	@amdj	eyepeetee-: but without HiddenServiceSingleHopMode, the onion service also has a 3-hop circuit between itself and the rendezvous point, so the service itself is also as anonymous as client circuits.
+2020-03-26 11:57:16	indomitable	https://2019.www.torproject.org/docs/tor-manual.html.en#HiddenServiceSingleHopMode
+2020-03-26 11:57:28	eyepeetee-	indomitable: as true as that may be, it's still called a hidden service
+2020-03-26 11:57:46	indomitable	xD
+2020-03-26 11:57:46	eyepeetee-	regardless of the configuration
+2020-03-26 11:57:52	eyepeetee-	and the same to you indomitable
+2020-03-26 11:57:59	-->	pvdp6651 (~pvdp@cpe-120-146-189-241.static.qld.bigpond.net.au) has joined #freenode
+2020-03-26 11:58:11	eyepeetee-	oh, amdj:* on that first message
+2020-03-26 11:58:25	indomitable	a hidden service is technically a term for any service that is unavailable from the internet, but is available from an intranet or darknet
+2020-03-26 11:58:26	eyepeetee-	amdj and indomitable: it's still called a hidden service regardless of the configuration
+2020-03-26 11:58:32	indomitable	generally a darknet of course
+2020-03-26 11:58:39	indomitable	but in this case we aren't anonymizing traffic
+2020-03-26 11:58:47	foehth	when I close my eyes all services are hidden
+2020-03-26 11:58:50	indomitable	there is only one hop in the case amdj talks about
+2020-03-26 11:59:05	indomitable	foehth, not if you have a screen reader.
+2020-03-26 11:59:10	<--	feelgoodlies (~Thunderbi@x2f47c7f.dyn.telefonica.de) has quit (Quit: feelgoodlies)
+2020-03-26 11:59:38	<--	pvdp665 (~pvdp@cpe-120-146-189-241.static.qld.bigpond.net.au) has quit (Ping timeout: 240 seconds)
+2020-03-26 11:59:38	--	pvdp6651 is now known as pvdp665
+2020-03-26 11:59:41	-->	Charus (~null@unaffiliated/charus) has joined #freenode
+2020-03-26 11:59:43	<--	__dutch__ (~DutchIngr@unaffiliated/dutchingraham) has left #freenode ("WeeChat 2.7.1")
+2020-03-26 12:00:15	<--	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has quit (Quit: Bye!)
+2020-03-26 12:00:28	-->	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 12:00:31	indomitable	I guess the client traffic is still protected, but performance is drastically improved by doing it
+2020-03-26 12:00:35	eyepeetee-	and so, there's 2 or 3 ways to look at this in my opinion. you can narrow the granularity down to configuration if you wish to, but, in my opinion, a tor hidden service, or i2p, or whathaveyou, is a hidden service regardless of configuration, and from the point of view of utility, like i said earlier, it's narrowed down to use case. if your goal is to hide yourself from other irc users, it
+2020-03-26 12:00:36	eyepeetee-	doesn't matter the configuration
+2020-03-26 12:00:51	eyepeetee-	right, and furthermore, the traffic
+2020-03-26 12:01:22	@amdj	indomitable: right, that's the idea behind it. if you host an onion service but don't care whether it's anonymous, using a one-hop circuit between you and the RV improves performance. clients still have a 3-hop circuit, so as still as anonymous as before.
+2020-03-26 12:01:26	@amdj	so are still *
+2020-03-26 12:01:28	<--	Amanogawa_Saya (~Amanogawa@175.176.67.224) has quit (Remote host closed the connection)
+2020-03-26 12:02:01	indomitable	amdj, beneficial if you have the security infrastructure in place to take some attacks
+2020-03-26 12:02:07	-->	Amanogawa_Saya (~Amanogawa@175.176.67.224) has joined #freenode
+2020-03-26 12:02:09	indomitable	for obvious reasons one might not want to do this on ones own home computer :P
+2020-03-26 12:02:15	-->	kkd (~memxor@2400:8902::f03c:92ff:feac:6d1) has joined #freenode
+2020-03-26 12:02:16	<--	kkd (~memxor@2400:8902::f03c:92ff:feac:6d1) has quit (Changing host)
+2020-03-26 12:02:16	-->	kkd (~memxor@unaffiliated/kartikeya) has joined #freenode
+2020-03-26 12:02:40	tetete	do i really need to add email address for nickserv
+2020-03-26 12:02:49	eyepeetee-	yep
+2020-03-26 12:02:52	indomitable	tetete, no, not really, iirc
+2020-03-26 12:02:56	indomitable	you can use a throwaway
+2020-03-26 12:02:56	@amdj	if you want to register a services account you need to give a valid email address yes
+2020-03-26 12:03:15	eyepeetee-	most throwaways and tempemails are banned on freenode
+2020-03-26 12:03:22	indomitable	amdj, mails etc are private by default yes?
+2020-03-26 12:03:28	@amdj	indomitable: correct
+2020-03-26 12:03:35	indomitable	eyepeetee-, I doubt that
+2020-03-26 12:03:35	indomitable	lol
+2020-03-26 12:03:39	indomitable	the more you ban the more new ones appear
+2020-03-26 12:03:42	eyepeetee-	okay try for yourself indomitable
+2020-03-26 12:03:50	indomitable	eyepeetee-, that would be incriminating myself :-)
+2020-03-26 12:03:53	@amdj	we do block some tempmail providers that were being used for services abuse
+2020-03-26 12:03:57	eyepeetee-	why would that be incriminating
+2020-03-26 12:04:02	indomitable	if it's not allowed to use them :P
+2020-03-26 12:04:05	<--	rg (~r-g@gateway/tor-sasl/r-g) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	ritalinona (~Other@gateway/tor-sasl/ritalinona) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	smoerk (~quassel@gateway/tor-sasl/smoerk) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	madage (~madage@gateway/tor-sasl/madage) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	martian67 (~martian67@about/linux/regular/martian67) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	vlm (~vlm@gateway/tor-sasl/vlm) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	otome (~otome@gateway/tor-sasl/otome) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	init0 (~nginx@gateway/tor-sasl/init0) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	tryte (~tryte@gateway/tor-sasl/tryte) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	alephZer0 (~spaceCat@gateway/tor-sasl/alephzer0) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	xelxebar (~xelxebar@gateway/tor-sasl/xelxebar) has quit (Read error: Connection reset by peer)
+2020-03-26 12:04:05	<--	cartwright (~chatting@gateway/tor-sasl/cantstanya) has quit (Read error: Connection reset by peer)
+2020-03-26 12:04:05	eyepeetee-	lol
+2020-03-26 12:04:05	<--	vitorhugo_ (~vhns@gateway/tor-sasl/vitorhugo) has quit (Write error: Connection reset by peer)
+2020-03-26 12:04:34	eyepeetee-	i think we have different definitions of the word "incriminating" indomitable but alright
+2020-03-26 12:04:47	indomitable	eyepeetee-, well consult your english dictionary :P
+2020-03-26 12:05:05	-->	smoerk (~quassel@gateway/tor-sasl/smoerk) has joined #freenode
+2020-03-26 12:05:12	eyepeetee-	sure thing
+2020-03-26 12:05:17	eyepeetee-	https://www.merriam-webster.com/dictionary/incriminating
+2020-03-26 12:05:19	<--	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has quit (Quit: Bye)
+2020-03-26 12:05:23	eyepeetee-	it implies crime
+2020-03-26 12:05:29	-->	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 12:05:31	eyepeetee-	hence the root
+2020-03-26 12:05:37	indomitable	"crime or fault"
+2020-03-26 12:05:38	indomitable	is what it says
+2020-03-26 12:05:44	eyepeetee-	right
+2020-03-26 12:06:01	eyepeetee-	and there is no crime or fault in attempting to register a nickname with a blocked email
+2020-03-26 12:06:09	eyepeetee-	everybody uses temp emails
+2020-03-26 12:06:13	eyepeetee-	but freenode does not allow them
+2020-03-26 12:06:13	indomitable	I'm not going to keep talking about this :P
+2020-03-26 12:06:13	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 12:06:21	eyepeetee-	indomitable, whatever you say
+2020-03-26 12:06:31	-->	opal (~wowaname@volatile/founder/wowaname) has joined #freenode
+2020-03-26 12:06:37	tetete	what's the difference if i will not use nickserv :P
+2020-03-26 12:06:39	<--	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net - currently broken?)
+2020-03-26 12:06:41	 *	eyepeetee- slaps opal around a bit with a large trout
+2020-03-26 12:06:43	<--	rappet (~rappet@chizue.rappet.de) has quit (Ping timeout: 246 seconds)
+2020-03-26 12:06:45	indomitable	tetete, you will use nickserv
+2020-03-26 12:06:50	indomitable	because you want to visit good channels :p
+2020-03-26 12:06:52	@e	amdj: we don't set that
+2020-03-26 12:06:54	indomitable	and good channels require registration
+2020-03-26 12:06:54	eyepeetee-	tetete: there are certain channels you cannot join and certain users you cannot message
+2020-03-26 12:06:55	-->	vitorhugo_ (~vhns@gateway/tor-sasl/vitorhugo) has joined #freenode
+2020-03-26 12:06:58	-->	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has joined #freenode
+2020-03-26 12:06:58	-->	alephZer0 (~spaceCat@gateway/tor-sasl/alephzer0) has joined #freenode
+2020-03-26 12:07:05	-->	memxor (~memxor@172.105.239.110) has joined #freenode
+2020-03-26 12:07:05	<--	memxor (~memxor@172.105.239.110) has quit (Changing host)
+2020-03-26 12:07:05	-->	memxor (~memxor@unaffiliated/kartikeya) has joined #freenode
+2020-03-26 12:07:06	eyepeetee-	if you don't register
+2020-03-26 12:07:09	eyepeetee-	with services*
+2020-03-26 12:07:16	foehth	it generally gets annoying enough that you will end up registering
+2020-03-26 12:07:17	opal	not necessary
+2020-03-26 12:07:18	opal	hello e
+2020-03-26 12:07:19	 *	opal slaps eyepeetee- around a bit with a large trout.
+2020-03-26 12:07:19	indomitable	surprising number of tor-sasl users joining, are these your alts eyepeetee- ?:P
+2020-03-26 12:07:27	-->	xelxebar (~xelxebar@gateway/tor-sasl/xelxebar) has joined #freenode
+2020-03-26 12:07:29	<--	kkd (~memxor@unaffiliated/kartikeya) has quit (Ping timeout: 240 seconds)
+2020-03-26 12:07:30	eyepeetee-	opal, the trout is always necessary
+2020-03-26 12:07:31	opal	indomitable ive been here forever
+2020-03-26 12:07:41	opal	the onion probably had a hiccup
+2020-03-26 12:07:43	indomitable	opal, ok, great, I'm not sure why you are telling me that
+2020-03-26 12:07:44	indomitable	lol
+2020-03-26 12:07:48	-->	otome (~otome@gateway/tor-sasl/otome) has joined #freenode
+2020-03-26 12:07:50	-->	rappet (~rappet@chizue.rappet.de) has joined #freenode
+2020-03-26 12:07:56	eyepeetee-	opal ignore indomitable
+2020-03-26 12:07:56	foehth	they're using tor and joined
+2020-03-26 12:08:00	eyepeetee-	he's a clown for hire
+2020-03-26 12:08:02	@amdj	our tor service just shed a few users. we suspect one of the next hops in the majority of the circuits went down (this is another advantage of using single hop mode fwiw e)
+2020-03-26 12:08:07	@mquin	looks like tor hiccuped and the onion server dropped most of its users, so they're all reconnecting now
+2020-03-26 12:08:16	indomitable	(~wowaname@volatile/founder/wowaname) is a tor join?
+2020-03-26 12:08:18	indomitable	:P
+2020-03-26 12:08:20	indomitable	hence my question
+2020-03-26 12:08:24	eyepeetee-	indomitable: ever heard of a netsplit?
+2020-03-26 12:08:29	foehth	aff cloak > gateway cloak
+2020-03-26 12:08:35	eyepeetee-	or is it just taking a while to connect some dots
+2020-03-26 12:08:36	@mquin	that wasn't a netsplit
+2020-03-26 12:08:39	@kline	h opal
+2020-03-26 12:08:40	indomitable	foehth, you aren't allowed to cloak tor-sasl I believe?
+2020-03-26 12:08:47	opal	h kline how u
+2020-03-26 12:08:55	indomitable	I certainly wasn't allowed to
+2020-03-26 12:08:57	@e	indomitable: no, that's not how it works
+2020-03-26 12:09:00	tetete	will register soon. but need to create email.
+2020-03-26 12:09:00	opal	indomitable im cloaked, just an affiliate one though
+2020-03-26 12:09:01	eyepeetee-	opal sorry i haven't come to volatile just yet
+2020-03-26 12:09:05	@amdj	indomitable: gateway cloaks (like tor) override *unaffiliated* cloaks. affiliated cloaks (project cloaks) still win.
+2020-03-26 12:09:09	eyepeetee-	will come some time
+2020-03-26 12:09:11	@kline	opal, havent been at work since monday but not allowed to go home
+2020-03-26 12:09:14	indomitable	amdj, oh okay, neat.
+2020-03-26 12:09:14	@kline	so pretty fucking bored
+2020-03-26 12:09:16	--	memxor is now known as kkd
+2020-03-26 12:09:16	opal	eyepeetee- ah you recognise me then
+2020-03-26 12:09:17	-->	init0 (~nginx@gateway/tor-sasl/init0) has joined #freenode
+2020-03-26 12:09:20	opal	kline rip
+2020-03-26 12:09:22	eyepeetee-	lol opal
+2020-03-26 12:09:29	-->	rg (~r-g@gateway/tor-sasl/r-g) has joined #freenode
+2020-03-26 12:09:30	eyepeetee-	i recognize you, you don't recognize me
+2020-03-26 12:09:33	eyepeetee-	that's alright though
+2020-03-26 12:09:36	indomitable	opal, is it true eyepeetee- is a 1337 haxx0r?
+2020-03-26 12:09:36	@kline	opal, it got bad enough i wrote tools against x11lib yesterday night
+2020-03-26 12:09:41	opal	im bad with names if i should know you
+2020-03-26 12:09:43	<--	pluto1 (~Thunderbi@5.170.80.116) has left #freenode
+2020-03-26 12:09:43	eyepeetee-	i use multiple nicknames opal
+2020-03-26 12:09:45	opal	anyway thanks for the trout slap
+2020-03-26 12:09:50	eyepeetee-	known you for years and years
+2020-03-26 12:10:03	@e	not as well as you know your enter key apparently
+2020-03-26 12:10:07	-->	tryte (~tryte@gateway/tor-sasl/tryte) has joined #freenode
+2020-03-26 12:10:09	-->	help (~ivmar@aftr-109-91-34-189.unity-media.net) has joined #freenode
+2020-03-26 12:10:12	eyepeetee-	booooooooooooooooooo
+2020-03-26 12:10:18	tetete	i like you eyepeetee
+2020-03-26 12:10:21	tetete	lol
+2020-03-26 12:10:23	@e	kline: well, i wrote a regexp that matches perfect numbers
+2020-03-26 12:10:26	indomitable	e, it's important to be well acquainted with your keys, be it the enter key, the return key, or the emoji key!
+2020-03-26 12:10:27	<--	help (~ivmar@aftr-109-91-34-189.unity-media.net) has left #freenode
+2020-03-26 12:10:37	@kline	e, is it a perfect regex?
+2020-03-26 12:10:49	indomitable	kline, regex is an abomination, so that cannot be the case
+2020-03-26 12:10:49	indomitable	:P
+2020-03-26 12:10:59	@e	real regexps aren't an abomination
+2020-03-26 12:11:04	Dwarf	Regex is life
+2020-03-26 12:11:06	<--	das (~das@unaffiliated/das) has left #freenode
+2020-03-26 12:11:12	indomitable	I was linked someone who solved fizz buzz in a typescript linter a few weeks back
+2020-03-26 12:11:14	@e	it's just the perl-inspired insanity that is
+2020-03-26 12:11:14	indomitable	that was a fascinating read
+2020-03-26 12:11:15	indomitable	lol
+2020-03-26 12:11:18	eyepeetee-	opal i used to hang out on volatile a bunch, just haven't been there under eyepeetee
+2020-03-26 12:11:26	indomitable	I mean he solved it with types, pre-compilation.
+2020-03-26 12:11:32	opal	i see
+2020-03-26 12:11:37	opal	h dwarf
+2020-03-26 12:11:42	-->	martian67 (~martian67@about/linux/regular/martian67) has joined #freenode
+2020-03-26 12:11:54	eyepeetee-	what ever happened to the volatile git?
+2020-03-26 12:11:55	indomitable	opal, what is volatile? :O
+2020-03-26 12:12:02	eyepeetee-	i miss the ascii art on there
+2020-03-26 12:12:03	@e	kline: you should get on that fizzbuzz
+2020-03-26 12:12:04	opal	volatile.bz
+2020-03-26 12:12:14	opal	thing i work on i guess
+2020-03-26 12:12:23	-->	vlm (~vlm@gateway/tor-sasl/vlm) has joined #freenode
+2020-03-26 12:12:23	@kline	e, badbuzz?
+2020-03-26 12:12:41	eyepeetee-	only available through commandline now?
+2020-03-26 12:12:56	tetete	if you guys don't use terminal. what are the other options to get here?
+2020-03-26 12:12:58	@e	kline: yes
+2020-03-26 12:13:06	-->	madage (~madage@gateway/tor-sasl/madage) has joined #freenode
+2020-03-26 12:13:31	eyepeetee-	tetete: etch a sketch
+2020-03-26 12:13:33	Dwarf	h opal
+2020-03-26 12:13:36	<--	r00tobo (~r00tobo@unaffiliated/r00tobo) has quit (Quit: Quit!)
+2020-03-26 12:13:56	tetete	the heck hahahaha
+2020-03-26 12:14:29	foehth	eyepeetee- asking for a friend, are you a fan of dongs
+2020-03-26 12:14:45	eyepeetee-	interesting question foehth
+2020-03-26 12:14:50	<--	theo (~td512@2ProIntl/td512) has quit (Ping timeout: 256 seconds)
+2020-03-26 12:15:00	indomitable	tetete, If you stare into a fire you can sometimes see kline discussing how to cook an omelette in here
+2020-03-26 12:15:07	-->	r00tobo (~r00tobo@unaffiliated/r00tobo) has joined #freenode
+2020-03-26 12:15:16	eyepeetee-	why does your friend ask foehth?
+2020-03-26 12:15:39	foehth	because mniip is nosey
+2020-03-26 12:15:40	tetete	sure i will start to stare from now on.
+2020-03-26 12:15:41	-->	u0_a84_ (~u0_a84@109.86.189.201) has joined #freenode
+2020-03-26 12:15:41	indomitable	foehth is probably that Phase dude
+2020-03-26 12:15:44	eyepeetee-	haha
+2020-03-26 12:15:53	eyepeetee-	indomitable:
+2020-03-26 12:15:59	eyepeetee-	 
+2020-03-26 12:16:04	eyepeetee-	foehth: i figured
+2020-03-26 12:16:18	indomitable	eyepeetee-, are you sending me \0 s in the hopes you will reset my wildcard certificate
+2020-03-26 12:16:20	indomitable	:O
+2020-03-26 12:17:10	foehth	indomitable I know that dude though, but not them, no
+2020-03-26 12:17:17	eyepeetee-	indomitable that wasn't \0 but whatever
+2020-03-26 12:17:22	<--	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has quit (Quit: Bye)
+2020-03-26 12:17:22	indomitable	eyepeetee-, it registered as nothing here
+2020-03-26 12:17:23	indomitable	lol
+2020-03-26 12:17:26	-->	feelgoodlies (~Thunderbi@x2f47c7f.dyn.telefonica.de) has joined #freenode
+2020-03-26 12:17:29	indomitable	maybe the client filters it
+2020-03-26 12:17:37	-->	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 12:18:20	eyepeetee-	indomitable it was a nbsp character
+2020-03-26 12:18:33	indomitable	eyepeetee-, second line then? first line literally had nothing in it
+2020-03-26 12:18:42	eyepeetee-	yes the nothing line
+2020-03-26 12:18:45	eyepeetee-	 
+2020-03-26 12:18:54	indomitable	weird thing to send someone
+2020-03-26 12:18:59	eyepeetee-	equivalent to &nbsp; in the browser
+2020-03-26 12:19:04	indomitable	🤷‍♂️
+2020-03-26 12:19:08	eyepeetee-	it was all i had for you
+2020-03-26 12:19:13	<--	u0_a84 (~u0_a84@46-133-78-123.mobile.vf-ua.net) has quit (Ping timeout: 250 seconds)
+2020-03-26 12:19:56	<--	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has quit (Read error: Connection reset by peer)
+2020-03-26 12:19:57	eyepeetee-	foehth: so you like dongs?
+2020-03-26 12:20:04	-->	ritalinona (~Other@gateway/tor-sasl/ritalinona) has joined #freenode
+2020-03-26 12:20:13	foehth	depends on the delivery method
+2020-03-26 12:20:22	eyepeetee-	ah, interesting
+2020-03-26 12:20:43	eyepeetee-	how do you feel about the delivery methods?
+2020-03-26 12:21:11	foehth	well, the ones from a few years ago were pretty good but seems they ran out of stock?
+2020-03-26 12:21:17	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 12:21:38	eyepeetee-	things probably happen sometimes that inhibit dong delivery
+2020-03-26 12:21:50	eyepeetee-	i can only imagine
+2020-03-26 12:22:14	-->	peter_jaffray (~r11@S010600fc8d440a43.wp.shawcable.net) has joined #freenode
+2020-03-26 12:22:19	<--	SirK (uid284297@gateway/web/irccloud.com/x-gbnwtuhipeeqtvjl) has quit (Quit: Connection closed for inactivity)
+2020-03-26 12:22:52	foehth	a dong here and a dong there, maybe a dong over there too every so often has never hurt anyone
+2020-03-26 12:23:11	foehth	but the market is indeed cruel
+2020-03-26 12:23:40	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #freenode
+2020-03-26 12:23:45	eyepeetee-	the market's definitely not too nice sometimes. i do think that dongs put places where they're not wanted is ... not allowed though
+2020-03-26 12:24:02	eyepeetee-	unfortunately *
+2020-03-26 12:24:32	foehth	how did that ml football stuff go anyway
+2020-03-26 12:24:44	eyepeetee-	ah, you've lost me now
+2020-03-26 12:24:58	eyepeetee-	:)
+2020-03-26 12:24:58	tetete	saw kiwi irc. but i like this one better.
+2020-03-26 12:25:27	eyepeetee-	i'm sure that kind of project has to go on a break due to the whole corona thing though
+2020-03-26 12:25:41	tetete	what's dong? :D
+2020-03-26 12:25:49	-->	rpifan (~rpifan@p200300D26714223445D4344BF57533C2.dip0.t-ipconnect.de) has joined #freenode
+2020-03-26 12:26:18	foehth	there was a demand and supply of ascii dong wording that was around for a bit
+2020-03-26 12:26:20	@ilbelkyr	that's not a conversation particularly suited to #freenode
+2020-03-26 12:26:48	@ilbelkyr	(to be clear: please drop it)
+2020-03-26 12:26:54	<--	mgol (~m_gol@84-10-254-144.static.chello.pl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-26 12:27:05	tetete	oh okay.
+2020-03-26 12:27:08	eyepeetee-	ilbelkyr: loud and clear
+2020-03-26 12:27:12	tetete	i will go to the other channels.
+2020-03-26 12:27:28	tetete	thanks a lot guys!
+2020-03-26 12:28:02	-->	}ls{ (~kalle@unaffiliated/ls/x-8089558) has joined #freenode
+2020-03-26 12:28:43	-->	ln (uid235373@gateway/web/irccloud.com/x-cxmpptccykokdxql) has joined #freenode
+2020-03-26 12:28:59	<--	johncob (~johncob@unaffiliated/johncob) has quit (Quit: Leaving)
+2020-03-26 12:29:38	-->	pvdp6655 (~pvdp@cpe-120-146-189-241.static.qld.bigpond.net.au) has joined #freenode
+2020-03-26 12:30:20	-->	littleclover (~littleclo@60.53.23.173) has joined #freenode
+2020-03-26 12:31:15	<--	pvdp665 (~pvdp@cpe-120-146-189-241.static.qld.bigpond.net.au) has quit (Ping timeout: 260 seconds)
+2020-03-26 12:31:15	--	pvdp6655 is now known as pvdp665
+2020-03-26 12:31:25	-->	cartwright (~chatting@gateway/tor-sasl/cantstanya) has joined #freenode
+2020-03-26 12:32:07	-->	johncob (~johncob@unaffiliated/johncob) has joined #freenode
+2020-03-26 12:33:02	<--	tetete (~christoph@110.93.80.83) has quit (Ping timeout: 265 seconds)
+2020-03-26 12:33:43	<--	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net - currently broken?)
+2020-03-26 12:33:46	<--	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has quit (Read error: Connection reset by peer)
+2020-03-26 12:34:01	-->	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has joined #freenode
+2020-03-26 12:35:14	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 12:35:21	<--	littleclover (~littleclo@60.53.23.173) has quit (Quit: leaving)
+2020-03-26 12:36:06	<--	orinthe (~orinthe@unaffiliated/orinthe) has quit (Read error: Connection reset by peer)
+2020-03-26 12:36:32	-->	Kookie (~Kookie@185.40.16.93.rev.sfr.net) has joined #freenode
+2020-03-26 12:36:43	-->	orinthe (~orinthe@unaffiliated/orinthe) has joined #freenode
+2020-03-26 12:37:27	-->	theo (~td512@209.141.57.101) has joined #freenode
+2020-03-26 12:37:27	<--	theo (~td512@209.141.57.101) has quit (Changing host)
+2020-03-26 12:37:27	-->	theo (~td512@2ProIntl/td512) has joined #freenode
+2020-03-26 12:38:42	<--	whatsupboy (~whatsupbo@unaffiliated/scobydoo) has left #freenode ("WeeChat 1.9.1")
+2020-03-26 12:40:14	<--	XanGotBan (~XanGotBan@148.251.76.131) has quit (Quit: Seeya bois.)
+2020-03-26 12:43:39	<--	vlm (~vlm@gateway/tor-sasl/vlm) has quit (Remote host closed the connection)
+2020-03-26 12:44:14	-->	tomgray_ (~tom@ip-107-180-238-108.nodes.dream.io) has joined #freenode
+2020-03-26 12:44:14	-->	vlm (~vlm@gateway/tor-sasl/vlm) has joined #freenode
+2020-03-26 12:44:40	-->	Cohaf (uid344643@wikimedia/Camouflaged-Mirage) has joined #freenode
+2020-03-26 12:44:49	<--	luke-jr (~luke-jr@unaffiliated/luke-jr) has quit (Ping timeout: 240 seconds)
+2020-03-26 12:44:59	-->	XanGotBan (~XanGotBan@148.251.76.131) has joined #freenode
+2020-03-26 12:45:16	-->	luke-jr (~luke-jr@unaffiliated/luke-jr) has joined #freenode
+2020-03-26 12:45:59	-->	voltage_ (~voltage_@unaffiliated/voltage/x-4834960) has joined #freenode
+2020-03-26 12:47:49	<--	genera (~genera@unaffiliated/genera) has quit (Ping timeout: 250 seconds)
+2020-03-26 12:48:04	-->	fsociety (~root@201-51-179-92.user3p.veloxzone.com.br) has joined #freenode
+2020-03-26 12:48:27	--	fsociety is now known as Guest11062
+2020-03-26 12:48:30	<--	isomari (~isomari@41.217.24.195) has quit (Ping timeout: 265 seconds)
+2020-03-26 12:48:54	<--	sins- (sins@moh1224.com) has quit (Read error: Connection reset by peer)
+2020-03-26 12:52:29	--	Mode #freenode [+o eir] by ChanServ
+2020-03-26 12:52:30	--	Mode #freenode [-qo *!*@87.50.113.181 eir] by eir
+2020-03-26 12:54:33	<--	kkd (~memxor@unaffiliated/kartikeya) has quit (Quit: bye!)
+2020-03-26 12:54:55	<--	Grldfrdom (uid391113@gateway/web/irccloud.com/x-jjlfwedafgvdvdwz) has quit (Quit: Connection closed for inactivity)
+2020-03-26 12:57:59	<--	koma (~koma@unaffiliated/koma) has quit (Quit: ZNC - http://znc.in)
+2020-03-26 12:58:05	-->	mgol (~m_gol@84-10-254-144.static.chello.pl) has joined #freenode
+2020-03-26 12:58:14	-->	genera (~genera@unaffiliated/genera) has joined #freenode
+2020-03-26 12:59:01	<--	tomgray_ (~tom@ip-107-180-238-108.nodes.dream.io) has quit (Quit: leaving)
+2020-03-26 12:59:35	-->	kai_ (uid344109@gateway/web/irccloud.com/x-zkqfoadonpkewlwv) has joined #freenode
+2020-03-26 12:59:46	<--	smtx (~smtx@84.39.117.57) has quit
+2020-03-26 12:59:50	-->	koma (~koma@unaffiliated/koma) has joined #freenode
+2020-03-26 13:00:10	-->	akring (6d4d09dd@109.77.9.221) has joined #freenode
+2020-03-26 13:00:13	-->	flarelation (~flarelati@unaffiliated/flarelation) has joined #freenode
+2020-03-26 13:00:37	<--	pxs_0o (~pxs@176.60.179.138) has quit (Read error: Connection reset by peer)
+2020-03-26 13:01:35	-->	tetete (~christoph@110.93.80.83) has joined #freenode
+2020-03-26 13:02:16	<--	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has quit (Read error: Connection reset by peer)
+2020-03-26 13:03:15	-->	virginiemaris1 (~Thunderbi@arl13-1-82-240-5-73.fbx.proxad.net) has joined #freenode
+2020-03-26 13:03:39	<--	Echoes (sid422602@gateway/web/irccloud.com/x-bydlhnfseadliarq) has quit (Excess Flood)
+2020-03-26 13:03:45	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 13:03:57	<--	akring (6d4d09dd@109.77.9.221) has left #freenode
+2020-03-26 13:03:57	-->	Echoes (sid422602@gateway/web/irccloud.com/x-keguligfxtfwdjri) has joined #freenode
+2020-03-26 13:03:58	-->	tomgray_ (~tom@ip-107-180-238-108.nodes.dream.io) has joined #freenode
+2020-03-26 13:04:30	<--	tomgray_ (~tom@ip-107-180-238-108.nodes.dream.io) has quit (Client Quit)
+2020-03-26 13:05:12	-->	FreEm1nD (~FreEm1nD@170.239.232.213) has joined #freenode
+2020-03-26 13:05:33	<--	pglife_bot (~pglife@momjian.us) has quit (Remote host closed the connection)
+2020-03-26 13:05:57	<--	tetete (~christoph@110.93.80.83) has quit (Ping timeout: 264 seconds)
+2020-03-26 13:06:04	<--	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has quit (Quit: Bye!)
+2020-03-26 13:06:14	-->	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 13:06:37	<--	virginiemaris (~Thunderbi@2a01:e35:2f00:5490:cdb5:a84a:fc90:96a1) has quit (Ping timeout: 272 seconds)
+2020-03-26 13:06:37	--	virginiemaris1 is now known as virginiemaris
+2020-03-26 13:06:40	-->	tomgray_ (~tom@ip-107-180-238-108.nodes.dream.io) has joined #freenode
+2020-03-26 13:07:46	-->	smaudet (~smaudet@152.170.215.18) has joined #freenode
+2020-03-26 13:09:22	-->	pglife_bot (~pglife@momjian.us) has joined #freenode
+2020-03-26 13:10:25	-->	virginiemaris1 (~Thunderbi@2a01:e35:2f00:5490:dd92:44c3:224e:c0a0) has joined #freenode
+2020-03-26 13:10:58	-->	mowcat (~mowcat@cpc105070-sgyl40-2-0-cust722.18-2.cable.virginm.net) has joined #freenode
+2020-03-26 13:11:16	-->	sins- (sins@moh1224.com) has joined #freenode
+2020-03-26 13:11:23	<--	virginiemaris (~Thunderbi@arl13-1-82-240-5-73.fbx.proxad.net) has quit (Ping timeout: 260 seconds)
+2020-03-26 13:11:23	--	virginiemaris1 is now known as virginiemaris
+2020-03-26 13:11:31	<--	tomgray_ (~tom@ip-107-180-238-108.nodes.dream.io) has quit (Client Quit)
+2020-03-26 13:12:00	<--	Guest11062 (~root@201-51-179-92.user3p.veloxzone.com.br) has quit (Ping timeout: 256 seconds)
+2020-03-26 13:12:29	<--	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net - currently broken?)
+2020-03-26 13:12:31	<--	tomgray (~tom@ip-107-180-238-108.nodes.dream.io) has quit (Remote host closed the connection)
+2020-03-26 13:12:46	-->	matthiaskrgr (~matthiask@unaffiliated/matthiaskrgr) has joined #freenode
+2020-03-26 13:13:51	-->	tomgray (~tom@ip-107-180-238-108.nodes.dream.io) has joined #freenode
+2020-03-26 13:14:29	<--	tomgray (~tom@ip-107-180-238-108.nodes.dream.io) has quit (Client Quit)
+2020-03-26 13:15:58	-->	tomgray (~tom@ip-107-180-238-108.nodes.dream.io) has joined #freenode
+2020-03-26 13:17:55	-->	tetete (~christoph@110.93.80.83) has joined #freenode
+2020-03-26 13:18:10	-->	cryptodan (~cryptodan@unaffiliated/cryptodan) has joined #freenode
+2020-03-26 13:18:49	<--	theo (~td512@2ProIntl/td512) has quit (Ping timeout: 258 seconds)
+2020-03-26 13:19:09	<--	tallguy (~tallguy_s@unaffiliated/tallguy) has quit (Ping timeout: 264 seconds)
+2020-03-26 13:19:50	<--	tetete (~christoph@110.93.80.83) has left #freenode
+2020-03-26 13:19:55	-->	MrBrave (uid418047@gateway/web/irccloud.com/x-eivpizzgnfvdlluv) has joined #freenode
+2020-03-26 13:20:05	-->	AlmarShenwan (~quassel@2001:16a2:b735:a700:d4ae:bc6e:3093:38a9) has joined #freenode
+2020-03-26 13:21:04	-->	Ded_X (~ded_x@109.123.74.190) has joined #freenode
+2020-03-26 13:21:32	-->	christop1 (~christoph@110.93.80.83) has joined #freenode
+2020-03-26 13:21:40	-->	tsdgeos1 (~tsdgeos@176.113.74.179) has joined #freenode
+2020-03-26 13:22:55	<--	christop1 (~christoph@110.93.80.83) has left #freenode
+2020-03-26 13:23:05	<--	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has quit (Quit: Bye!)
+2020-03-26 13:23:09	<--	AlmarShenwan_ (~quassel@2001:16a2:b735:a700:d4ae:bc6e:3093:38a9) has quit (Ping timeout: 240 seconds)
+2020-03-26 13:23:17	-->	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 13:24:00	<--	vlm (~vlm@gateway/tor-sasl/vlm) has quit (Remote host closed the connection)
+2020-03-26 13:24:47	-->	vlm (~vlm@gateway/tor-sasl/vlm) has joined #freenode
+2020-03-26 13:24:57	<--	longshanks69 (~Thunderbi@193.71.208.46.dyn.plus.net) has quit (Quit: longshanks69)
+2020-03-26 13:24:59	<--	virginiemaris (~Thunderbi@2a01:e35:2f00:5490:dd92:44c3:224e:c0a0) has quit (Ping timeout: 272 seconds)
+2020-03-26 13:25:28	--	Mode #freenode [+o eir] by ChanServ
+2020-03-26 13:25:28	--	Mode #freenode [-qo *!*@hyphovy.net eir] by eir
+2020-03-26 13:28:23	<--	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has quit (Read error: Connection reset by peer)
+2020-03-26 13:29:46	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 13:31:10	-->	FrostyX (~Jakub_Kad@94-21-85-69.pool.digikabel.hu) has joined #freenode
+2020-03-26 13:31:16	<--	AimHere (~David@92.237.236.151) has quit (Ping timeout: 256 seconds)
+2020-03-26 13:31:58	-->	theo (~td512@209.141.57.101) has joined #freenode
+2020-03-26 13:31:58	<--	theo (~td512@209.141.57.101) has quit (Changing host)
+2020-03-26 13:31:58	-->	theo (~td512@2ProIntl/td512) has joined #freenode
+2020-03-26 13:32:52	FrostyX	Hello guys, I was interested in registering #tito channel as a support and development channel around https://github.com/dgoodwin/tito project. However it looks like it is already taken by freenode-staff. Are you using it? Is there any chance of transfering the ownership?
+2020-03-26 13:33:21	MrElendig	FrostyX: https://freenode.net/groupreg
+2020-03-26 13:33:31	u0_a84_	okay
+2020-03-26 13:33:36	MrElendig	FrostyX: assuming you are affiliated with the tito project
+2020-03-26 13:33:48	MrElendig	FrostyX: if not, consider using the ## namespace instead
+2020-03-26 13:34:23	-->	AimHere (~David@92.237.236.151) has joined #freenode
+2020-03-26 13:34:39	<--	foehth (4d6ff570@77.111.245.112) has left #freenode
+2020-03-26 13:34:40	FrostyX	MrElendig: I am currently leading it. You can see https://github.com/dgoodwin/tito/issues/355 for some sort of confirmation
+2020-03-26 13:34:48	@e	FrostyX: hi, can we PM?
+2020-03-26 13:34:58	FrostyX	e: sure
+2020-03-26 13:36:45	-->	tetete (~christoph@110.93.80.83) has joined #freenode
+2020-03-26 13:36:53	tetete	Hello
+2020-03-26 13:37:38	-->	thunderduck (~thunderdu@199.16.96.162) has joined #freenode
+2020-03-26 13:38:10	<--	rg (~r-g@gateway/tor-sasl/r-g) has quit (Remote host closed the connection)
+2020-03-26 13:38:14	<--	silversword_afk_ (silverswor@gateway/vpn/privateinternetaccess/silversword) has quit (Remote host closed the connection)
+2020-03-26 13:38:44	-->	GDiaX (~Medic@118.34.136.95.rev.vodafone.pt) has joined #freenode
+2020-03-26 13:38:47	<--	s9p (~p9sm]@gateway/tor-sasl/p9sm/x-73075872) has quit (Remote host closed the connection)
+2020-03-26 13:38:54	indomitable	tetete, you should register :p
+2020-03-26 13:39:21	-->	silversword_afk_ (silverswor@gateway/vpn/privateinternetaccess/silversword) has joined #freenode
+2020-03-26 13:39:29	-->	s9p (~p9sm]@gateway/tor-sasl/p9sm/x-73075872) has joined #freenode
+2020-03-26 13:39:31	thumbs	indomitable: do you really have to make those knee-jerk responses?
+2020-03-26 13:41:39	indomitable	thumbs, I was told to convert him to the ways of FOSS by e
+2020-03-26 13:42:11	<--	theo (~td512@2ProIntl/td512) has quit (Ping timeout: 260 seconds)
+2020-03-26 13:42:43	<--	tsweeney (~tsweeney@pool-71-248-186-180.bstnma.fios.verizon.net) has quit (Remote host closed the connection)
+2020-03-26 13:42:43	tetete	will do later
+2020-03-26 13:42:59	tetete	Hi thumbs :D
+2020-03-26 13:43:20	<--	tomgray (~tom@ip-107-180-238-108.nodes.dream.io) has quit (Quit: leaving)
+2020-03-26 13:43:37	-->	tomgray (~tom@ip-107-180-238-108.nodes.dream.io) has joined #freenode
+2020-03-26 13:44:39	-->	Atque (~Atque@unaffiliated/atque) has joined #freenode
+2020-03-26 13:45:09	-->	eyepeetee (~ipt@13.92.154.153) has joined #freenode
+2020-03-26 13:45:33	<--	eyepeetee- (~ipt@unaffiliated/eyepeetee) has quit (Ping timeout: 264 seconds)
+2020-03-26 13:47:24	-->	chkrr00k_ (~chkrr00k@unaffiliated/chkrr00k) has joined #freenode
+2020-03-26 13:48:02	-->	Rottingbeef-2 (~Rottingbe@66.44.43.188) has joined #freenode
+2020-03-26 13:49:25	-->	siniStar (~sinistar@atheme/siniStar) has joined #freenode
+2020-03-26 13:49:45	<--	chkrr00k (~chkrr00k@unaffiliated/chkrr00k) has quit (Ping timeout: 264 seconds)
+2020-03-26 13:50:24	-->	theo (~td512@209.141.57.101) has joined #freenode
+2020-03-26 13:50:25	<--	theo (~td512@209.141.57.101) has quit (Changing host)
+2020-03-26 13:50:25	-->	theo (~td512@2ProIntl/td512) has joined #freenode
+2020-03-26 13:50:32	<--	NorthwestVegan (~Northwest@gateway/tor-sasl/northwestvegan) has quit (Remote host closed the connection)
+2020-03-26 13:50:34	-->	Kal3ssiN (~Kal3ssiN@fedora/Kal3ssiN) has joined #freenode
+2020-03-26 13:53:34	-->	tsweeney (~tsweeney@pool-71-248-186-180.bstnma.fios.verizon.net) has joined #freenode
+2020-03-26 13:53:42	-->	manjaro-web|70 (4f8fac8f@gateway/web/cgi-irc/kiwiirc.com/ip.79.143.172.143) has joined #freenode
+2020-03-26 13:53:58	<--	blowry (~blowry@sagan.benjaminlowry.com) has quit (Quit: Leaving)
+2020-03-26 13:54:22	<--	Amanogawa_Saya (~Amanogawa@175.176.67.224) has quit (Remote host closed the connection)
+2020-03-26 13:54:24	-->	blowry (~blowry@2001:19f0:5c01:1524:5400:2ff:fe3e:d51c) has joined #freenode
+2020-03-26 13:54:28	manjaro-web|70	Hello to everyone, I have a problem, there is 10 GB of RAM installed in my computer but Manjaro reads only 3.8 GB. How can I solve this problem?
+2020-03-26 13:54:49	-->	Amanogawa_Saya (~Amanogawa@175.176.67.224) has joined #freenode
+2020-03-26 13:54:59	shadowdaemon	manjaro-web|70: Install Gentoo.
+2020-03-26 13:55:11	<--	tetete (~christoph@110.93.80.83) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 13:55:12	thumbs	shadowdaemon: not helpful, really.
+2020-03-26 13:55:24	MrElendig	manjaro-web|70: uname -m
+2020-03-26 13:55:32	thumbs	manjaro-web|70: you likely want to ask #manjaro, but first, register with services: /msg NickServ help register
+2020-03-26 13:55:33	Werner	Get amd64 version. You probably have x86
+2020-03-26 13:55:43	shadowdaemon	thumbs: It's the only advice I can offer.
+2020-03-26 13:55:53	thumbs	shadowdaemon: it isn't helpful, either way
+2020-03-26 13:56:03	Cenon	ye sounds like someone is running 32bit
+2020-03-26 13:56:37	<--	maxwilliamson (~maxwillia@gateway/tor-sasl/maxwilliamson) has quit (Remote host closed the connection)
+2020-03-26 13:56:56	shadowdaemon	thumbs: I disagree, he might learn something.
+2020-03-26 13:56:58	-->	maxwilliamson (~maxwillia@gateway/tor-sasl/maxwilliamson) has joined #freenode
+2020-03-26 13:57:56	<--	airchild (~airr@crazy-user.136.47.countrybg.net) has quit (Read error: Connection reset by peer)
+2020-03-26 13:58:33	oerheks	manjaro-web|70, your hardware can see only 4 gb, i guess, -2 gb for intergraded GPU mem
+2020-03-26 13:59:19	oerheks	does it show up properly in your bios screen?
+2020-03-26 13:59:27	<--	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has quit (Remote host closed the connection)
+2020-03-26 13:59:42	-->	CodeB_ (~CodeB@a89-153-16-231.cpe.netcabo.pt) has joined #freenode
+2020-03-26 14:01:16	<--	Atque (~Atque@unaffiliated/atque) has quit (Quit: ...)
+2020-03-26 14:01:17	-->	tetete (~christoph@110.93.80.83) has joined #freenode
+2020-03-26 14:01:28	tetete	registered :P
+2020-03-26 14:01:53	-->	Alina-malina (~Alina-mal@unaffiliated/alina-malina) has joined #freenode
+2020-03-26 14:03:29	shadowdaemon	woot
+2020-03-26 14:03:46	<--	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has left #freenode ("/part")
+2020-03-26 14:04:51	indomitable	 tetete congratulations
+2020-03-26 14:05:03	-->	michele-1971 (~michele-1@151.31.177.102) has joined #freenode
+2020-03-26 14:05:03	<--	michele-1971 (~michele-1@151.31.177.102) has quit (Excess Flood)
+2020-03-26 14:05:07	indomitable	tetete, now you might ask one of the staff nicely to give you an unaffiliated cloak
+2020-03-26 14:05:25	-->	johncob_ (~johncob@unaffiliated/johncob) has joined #freenode
+2020-03-26 14:05:37	-->	Jo-Anna (uid57472@gateway/web/irccloud.com/x-bqqxrmwdupzrrfja) has joined #freenode
+2020-03-26 14:06:17	tetete	what's cloak?
+2020-03-26 14:06:19	tetete	hahahaha
+2020-03-26 14:07:08	manjaro-web|70	i have 64 bit system
+2020-03-26 14:07:12	-->	airchuld- (~airr@crazy-user.136.47.countrybg.net) has joined #freenode
+2020-03-26 14:07:14	gildarts	Don't actually need a cloak, though you can ask for one if you want. It slightly obscures your ip address.
+2020-03-26 14:07:15	-->	oliva_ (~oliva_@151.51.216.90) has joined #freenode
+2020-03-26 14:07:46	tetete	now that you mention that. can you help me guys? pleaseee
+2020-03-26 14:07:52	<--	johncob (~johncob@unaffiliated/johncob) has quit (Ping timeout: 256 seconds)
+2020-03-26 14:08:21	<--	theo (~td512@2ProIntl/td512) has quit (Ping timeout: 264 seconds)
+2020-03-26 14:08:59	gildarts	You need a staff member for that. But cloaks don't really hide your ip address, just makes it slightly less obvious.
+2020-03-26 14:09:06	indomitable	tetete, a cloak will make it harder to see your ip on the network
+2020-03-26 14:09:09	indomitable	(irc network)
+2020-03-26 14:09:12	indomitable	not impossible
+2020-03-26 14:09:23	indomitable	but it's generally an ok protection from noobs who want to ddos you or something
+2020-03-26 14:09:38	<--	manjaro-web|70 (4f8fac8f@gateway/web/cgi-irc/kiwiirc.com/ip.79.143.172.143) has quit (Remote host closed the connection)
+2020-03-26 14:09:48	indomitable	e might feel inclined to help you, as he wants to put you on the path to FOSS glory
+2020-03-26 14:10:17	tetete	whou should ask? i dont know any staff
+2020-03-26 14:10:21	--	airchuld- is now known as BatRumbata
+2020-03-26 14:10:31	--	BatRumbata is now known as airchild
+2020-03-26 14:11:04	gildarts	Do you see a list of people in this channel? The ones with a symbol next to their name are staff. But all you need to do is ask in this channel and they will get you eventually.
+2020-03-26 14:11:06	<--	imbb (~Imbb@111.122.73.4) has quit (Ping timeout: 260 seconds)
+2020-03-26 14:12:45	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 14:13:22	tetete	oh got it. the with with @
+2020-03-26 14:13:35	<--	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has left #freenode
+2020-03-26 14:13:42	tetete	gildarts and indomitable: thank you guys
+2020-03-26 14:14:06	indomitable	tetete, in other channels than this one, @nicks are usually "operators" and not staff
+2020-03-26 14:14:16	indomitable	staff can ban you from the entire network, operators only control their own channel
+2020-03-26 14:15:19	<--	CodeB_ (~CodeB@a89-153-16-231.cpe.netcabo.pt) has quit (Ping timeout: 260 seconds)
+2020-03-26 14:15:24	tetete	oh that means staff are really employee
+2020-03-26 14:15:36	<--	oliva_ (~oliva_@151.51.216.90) has quit (Quit: Leaving)
+2020-03-26 14:15:41	tetete	and operators are just a Channel owner
+2020-03-26 14:15:59	-->	oliva_ (~oliva_@151.51.216.90) has joined #freenode
+2020-03-26 14:16:03	<--	oliva_ (~oliva_@151.51.216.90) has quit (Remote host closed the connection)
+2020-03-26 14:16:04	tetete	indomitable: noted with thanks
+2020-03-26 14:16:25	indomitable	tetete, not really employees -- usually volunteers
+2020-03-26 14:16:30	indomitable	but they have been here a long time and have magical powers
+2020-03-26 14:17:09	tetete	hmm do you guys have a life
+2020-03-26 14:17:11	tetete	hahahahaha
+2020-03-26 14:17:20	indomitable	No, we are all friendless, basement-dwelling creatures of the night.
+2020-03-26 14:17:34	--	zz_ka6sox is now known as ka6sox
+2020-03-26 14:17:43	tetete	yeah, that's what i think generally.
+2020-03-26 14:17:55	indomitable	That was sarcasm. You may experience more of it on IRC.
+2020-03-26 14:18:00	tetete	you can't do both.
+2020-03-26 14:18:15	tetete	but how can you do both at the same time.
+2020-03-26 14:18:33	indomitable	tetete, you will find that most people here likely have families, a full time job that pays 5-7 figures (usd) and friends, in addition to hobbies like hanging out here
+2020-03-26 14:18:33	tetete	if you're face is on the screen all day long.
+2020-03-26 14:18:41	-->	virginiemaris (~Thunderbi@2a01:e35:2f00:5490:98e7:5011:b152:49f7) has joined #freenode
+2020-03-26 14:18:51	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:18:52	-->	imbb (~Imbb@111.122.73.4) has joined #freenode
+2020-03-26 14:18:52	indomitable	on IRC one tends to "idle"
+2020-03-26 14:18:57	indomitable	most people aren't active here all the time
+2020-03-26 14:19:17	tetete	on free time only..
+2020-03-26 14:19:18	indomitable	there are also a lot of students, including MScs and PhDs hanging about
+2020-03-26 14:19:28	indomitable	no, work time as well -- some people even get paid for helping users in channels
+2020-03-26 14:19:32	indomitable	or as a part of their job
+2020-03-26 14:19:37	-->	theo (~td512@209.141.57.101) has joined #freenode
+2020-03-26 14:19:40	<--	theo (~td512@209.141.57.101) has quit (Changing host)
+2020-03-26 14:19:40	-->	theo (~td512@2ProIntl/td512) has joined #freenode
+2020-03-26 14:19:50	tetete	not a surprised. you can't go here if you're not curious and not reading.
+2020-03-26 14:20:24	indomitable	there is a sizable amount of very smart people hanging around in various channels in freenode
+2020-03-26 14:20:26	-->	asdsa (~asdsa@2001:470:1f13:3f2::15) has joined #freenode
+2020-03-26 14:20:37	indomitable	professors, team leaders in large tech companies, etc...
+2020-03-26 14:20:50	tetete	so what your daily work?
+2020-03-26 14:20:55	tetete	*'s
+2020-03-26 14:21:04	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:21:04	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:21:41	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:21:43	indomitable	IT stuff
+2020-03-26 14:21:47	tetete	i'm having some issues on back reading the chat.
+2020-03-26 14:21:57	tetete	i can't back read in terminal
+2020-03-26 14:21:59	-->	rpifan_ (~rpifan@p200300D26714226426AC255862E15354.dip0.t-ipconnect.de) has joined #freenode
+2020-03-26 14:22:04	@kline	good afternoon
+2020-03-26 14:22:05	indomitable	You might have to use page up on weechat
+2020-03-26 14:22:08	indomitable	hi kline
+2020-03-26 14:22:20	tetete	@kline: hi
+2020-03-26 14:22:37	@kline	tetete, no need for the @, it's just a status flag for your info :)
+2020-03-26 14:22:48	indomitable	kline, you mean a crown to make sure we all bow as expected! :P
+2020-03-26 14:22:56	tetete	noted :)
+2020-03-26 14:23:02	indomitable	kline stands for King Line, he controls all the lines on freenode
+2020-03-26 14:23:10	@kline	indomitable, why do you think i announce my presence so?
+2020-03-26 14:23:19	tetete	for sure!
+2020-03-26 14:23:21	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:23:37	indomitable	He who controls the lines controls the universe.
+2020-03-26 14:23:41	tetete	kline: can you do me a favor?
+2020-03-26 14:23:50	@kline	depends on the favour
+2020-03-26 14:24:03	tetete	may i request you to help me to get a cloak?
+2020-03-26 14:24:03	-->	mcury (~mcury@unaffiliated/mcury) has joined #freenode
+2020-03-26 14:24:41	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:24:52	<--	rpifan (~rpifan@p200300D26714223445D4344BF57533C2.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-03-26 14:25:04	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:25:32	<--	galvanoport (~galvanopo@176.42.205.233) has quit (Remote host closed the connection)
+2020-03-26 14:25:37	tetete	indomitable: does it mean cloak - change my ip to something random characters?
+2020-03-26 14:25:41	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:25:41	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:25:47	indomitable	tetete, not random, but you might have to be registered a while before they'll give you one
+2020-03-26 14:26:08	tetete	oh so it's a one snap thing.
+2020-03-26 14:26:16	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:26:16	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:27:10	tetete	question- how to login when i disconnected
+2020-03-26 14:27:16	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:27:16	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:27:21	indomitable	tetete, you have to message "NickServ"
+2020-03-26 14:27:38	tetete	what's the syntax
+2020-03-26 14:27:41	indomitable	tetete, write /msg NickServ help
+2020-03-26 14:27:53	indomitable	you will want to look more at the "IDENTIFY"
+2020-03-26 14:27:55	indomitable	command
+2020-03-26 14:28:09	tetete	this one? - /msg NickServ IDENTIFY YourNick YourPassword
+2020-03-26 14:28:54	indomitable	yes
+2020-03-26 14:28:59	indomitable	don't write what your password is here
+2020-03-26 14:29:13	-->	zxiiro (uid113729@linuxfoundation/zxiiro) has joined #freenode
+2020-03-26 14:29:20	indomitable	one of the reasons to use "sasl" as I told you earlier, is so the ISP/people on your wifi can't see your password in such a command
+2020-03-26 14:29:41	tetete	question about sasl
+2020-03-26 14:29:46	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:29:49	tetete	is it a one time thing
+2020-03-26 14:29:56	tetete	or we need to put that everytime
+2020-03-26 14:30:01	@mquin	every time you connect
+2020-03-26 14:30:01	gildarts	Every time you connect.
+2020-03-26 14:30:05	<--	pandakekok9 (~pandakeko@wikimedia-commons/pandakekok9) has quit (Quit: leaving)
+2020-03-26 14:30:41	tetete	thanks guys
+2020-03-26 14:30:42	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:30:43	@mquin	indomitable: SASL itself doesn't provide that. TLS does
+2020-03-26 14:31:00	indomitable	mquin, I'm assuming the SASL is set up with TLS?
+2020-03-26 14:31:09	gildarts	I appear to need to work on my speed, mquin is too fast for me.
+2020-03-26 14:31:28	indomitable	gildarts, let's do a race in typeracer
+2020-03-26 14:31:29	@mquin	indomitable: it doesn't need to be
+2020-03-26 14:31:30	indomitable	for practice
+2020-03-26 14:31:33	gildarts	indomitable: separate concepts.
+2020-03-26 14:31:36	indomitable	still!
+2020-03-26 14:31:40	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:32:02	gildarts	Hah, not now.
+2020-03-26 14:32:15	indomitable	https://play.typeracer.com?rt=21buulqivx come on, gildarts.
+2020-03-26 14:32:34	tetete	how can i get a cloak? :)
+2020-03-26 14:33:27	tetete	i will try to reconnect and use sasl
+2020-03-26 14:33:28	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:33:30	tetete	brb
+2020-03-26 14:33:33	indomitable	tetete, you already are
+2020-03-26 14:33:35	indomitable	no need
+2020-03-26 14:33:47	tetete	how do you know?
+2020-03-26 14:33:49	@mquin	For EXTERNAL, TLS is required. The other mechs (PLAIN, ECDSA-NIST256P-CHALLENGE) work on regular connections as well
+2020-03-26 14:33:54	<--	asdsa (~asdsa@2001:470:1f13:3f2::15) has left #freenode
+2020-03-26 14:34:04	<--	Amanogawa_Saya (~Amanogawa@175.176.67.224) has quit (Quit: Leaving)
+2020-03-26 14:34:11	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:34:11	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:34:18	indomitable	tetete, I can use a command "whois" to see whether you are using a secure connection
+2020-03-26 14:34:20	<--	tetete (~christoph@110.93.80.83) has quit (Changing host)
+2020-03-26 14:34:20	-->	tetete (~christoph@unaffiliated/tetete) has joined #freenode
+2020-03-26 14:34:28	indomitable	if you write /whois tetete
+2020-03-26 14:34:29	indomitable	you will see
+2020-03-26 14:34:44	@mquin	indomitable: that doesn't mean he's used sasl to authenticate
+2020-03-26 14:34:53	indomitable	mquin, it doesn't? it just means tls? or "any secure protocol"?
+2020-03-26 14:35:15	tetete	weird. i can't type commands here
+2020-03-26 14:35:28	tetete	i need to close the channel :/
+2020-03-26 14:35:30	@mquin	tetete: you're now cloaked
+2020-03-26 14:35:36	@mquin	indomitable: SASL is not SSL
+2020-03-26 14:35:36	<--	imbb (~Imbb@111.122.73.4) has quit (Ping timeout: 260 seconds)
+2020-03-26 14:35:40	indomitable	mquin, I know...
+2020-03-26 14:35:41	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:35:50	tetete	woah! that's so fast. thanks a lot
+2020-03-26 14:35:51	<--	jmcgnh (~jmcgnh@wikipedia/jmcgnh) has quit (Read error: Connection reset by peer)
+2020-03-26 14:36:08	@mquin	it's got nothing to do with connection security, it's only a mechanism for authenticating
+2020-03-26 14:36:09	@kline	tetete, sorry, real life distracted me
+2020-03-26 14:36:48	bin_bash	whoa w'ere halfway there
+2020-03-26 14:36:48	-->	__dutch__ (~DutchIngr@unaffiliated/dutchingraham) has joined #freenode
+2020-03-26 14:36:49	tetete	no worries kline.
+2020-03-26 14:36:52	bin_bash	shit wrong channel
+2020-03-26 14:36:55	tetete	you did good
+2020-03-26 14:37:42	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:37:49	tetete	there's a note on the site it says "then use these commands to ensure that SSL/TLS is enabled for your connection:"
+2020-03-26 14:38:26	gildarts	indomitable: SASL is an authentication protocol, TLS is an encrypted communication protocol. They are tangential concepts.
+2020-03-26 14:38:59	indomitable	gildarts, I think I just confused myself, it's been so long since I've set up or even looked at SASL, I guess it's just a replacement for messaging nickserv, lol.
+2020-03-26 14:39:02	<--	wi (wi@2a04:92c7:16:358:e252:4dff:70f7:affe) has quit
+2020-03-26 14:39:19	indomitable	that's the problem with a decent irc config, you never have to look at it again
+2020-03-26 14:39:19	indomitable	:(
+2020-03-26 14:39:43	-->	wi (wi@2a04:92c7:16:358:e252:4dff:70f7:affe) has joined #freenode
+2020-03-26 14:39:58	thumbs	indomitable: it's not a "protection" at all. Stop misleading users.
+2020-03-26 14:40:04	tetete	how to confirm if i have cloak now?
+2020-03-26 14:40:10	indomitable	thumbs, we're over this now, stop piling on, you're adding nothing
+2020-03-26 14:40:13	indomitable	I have realized my mistake
+2020-03-26 14:40:26	gildarts	Yeah, it just makes sure you are identified as soon as your connection completes. Can also allow using certificates for authentication rather than a password.
+2020-03-26 14:40:33	indomitable	tetete, you have it -- you will have it whenever you authenticate
+2020-03-26 14:40:35	Surmaelk	tetete do /whois tetete
+2020-03-26 14:40:53	indomitable	gildarts, yeah. I actually have tor-sasl set up. lol.
+2020-03-26 14:40:59	indomitable	(not on this connection)
+2020-03-26 14:41:03	tetete	oh damn, not working when im inside this channel
+2020-03-26 14:41:10	indomitable	tetete, it's working...
+2020-03-26 14:41:12	indomitable	I see you as cloaked
+2020-03-26 14:41:25	-->	CodeB_ (~CodeB@a89-153-16-231.cpe.netcabo.pt) has joined #freenode
+2020-03-26 14:41:30	gildarts	tetete: The server messages are probably just being displayed on another buffer.
+2020-03-26 14:41:32	tetete	it's weird. i can't do a backslash code here
+2020-03-26 14:41:33	Surmaelk	it works tetete
+2020-03-26 14:41:54	indomitable	tetete, you probably can, but it's not showing in the current channel.
+2020-03-26 14:41:56	tetete	 i mean - no result when im typing that here
+2020-03-26 14:41:58	indomitable	weechat isn't a very "noob friendly" application
+2020-03-26 14:42:07	tetete	whaahahahha
+2020-03-26 14:42:12	-->	jmcgnh (~jmcgnh@wikipedia/jmcgnh) has joined #freenode
+2020-03-26 14:42:16	tetete	why you so harsh
+2020-03-26 14:42:23	indomitable	it isn't being harsh, you are literally new to IRC
+2020-03-26 14:42:24	indomitable	lol
+2020-03-26 14:42:37	tetete	but you can;t just say that
+2020-03-26 14:43:01	<--	gargus (~user@202-159-177-86.dyn.iinet.net.au) has quit (Quit: Leaving)
+2020-03-26 14:43:03	tetete	will try outside
+2020-03-26 14:43:07	<--	tetete (~christoph@unaffiliated/tetete) has left #freenode ("WeeChat 2.7.1")
+2020-03-26 14:43:12	-->	Tuxedo[Qyou] (~TuxQyou]@unaffiliated/tux-qyou/x-4822048) has joined #freenode
+2020-03-26 14:43:21	indomitable	I'm not sure he's learned to switch channels yet
+2020-03-26 14:43:24	indomitable	but we are making progress
+2020-03-26 14:43:29	-->	[itchyjunk] (~itchyjunk@unaffiliated/itchyjunk/x-1640057) has joined #freenode
+2020-03-26 14:43:50	-->	manjaro-web|43 (4f8fac8f@gateway/web/cgi-irc/kiwiirc.com/ip.79.143.172.143) has joined #freenode
+2020-03-26 14:44:04	-->	tetete (~christoph@unaffiliated/tetete) has joined #freenode
+2020-03-26 14:44:23	<--	Tux[Qyou] (TuxQyou]@gateway/vpn/privateinternetaccess/tuxqyou/x-46410882) has quit (Ping timeout: 250 seconds)
+2020-03-26 14:44:27	tetete	it shows outside the channel in this terminal
+2020-03-26 14:44:39	<--	pvdp665 (~pvdp@cpe-120-146-189-241.static.qld.bigpond.net.au) has quit (Remote host closed the connection)
+2020-03-26 14:44:55	indomitable	tetete, you don't have to leave the channel to look at another channel
+2020-03-26 14:44:55	indomitable	:-)
+2020-03-26 14:45:01	indomitable	weechat is hard to use, like I said
+2020-03-26 14:45:06	indomitable	will take some getting used to
+2020-03-26 14:45:10	tetete	are you using mac terminal?
+2020-03-26 14:45:14	tetete	teach me how.
+2020-03-26 14:46:33	tetete	or i am using a wrong medium
+2020-03-26 14:47:16	-->	Cprossu (~Cprossu@ip70-162-148-6.ph.ph.cox.net) has joined #freenode
+2020-03-26 14:47:19	gildarts	I would search for a non-command line client until you are used to IRC. weechat is great, but hard to use.
+2020-03-26 14:47:21	<--	manjaro-web|43 (4f8fac8f@gateway/web/cgi-irc/kiwiirc.com/ip.79.143.172.143) has quit (Remote host closed the connection)
+2020-03-26 14:47:21	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:47:26	<--	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has quit (Read error: Connection reset by peer)
+2020-03-26 14:48:49	--	remirol is now known as lorimer
+2020-03-26 14:49:45	<--	blkshp (~blkshp@about/windows/staff/blkshp) has quit (Ping timeout: 264 seconds)
+2020-03-26 14:49:51	<--	darkphoenix (darkphnx@unaffiliated/darkphoenix) has quit (Ping timeout: 272 seconds)
+2020-03-26 14:49:55	<--	Bas_Test6050 (~Bas_Test@static.181.139.9.5.clients.your-server.de) has quit (Quit: Bas_Test6050)
+2020-03-26 14:50:26	-->	malSet (~malSet@cpe-173-89-212-155.columbus.res.rr.com) has joined #freenode
+2020-03-26 14:50:42	-->	Bas_Test6050 (~Bas_Test@static.181.139.9.5.clients.your-server.de) has joined #freenode
+2020-03-26 14:52:30	-->	hggdh (~hggdh@ubuntu/member/hggdh) has joined #freenode
+2020-03-26 14:52:35	tetete	gildarts: thank you. will read about this.
+2020-03-26 14:52:39	opal	weechat has a qt gui now, gotta set it up though
+2020-03-26 14:52:42	opal	im using quassel fine
+2020-03-26 14:52:54	opal	dont really need a cli client
+2020-03-26 14:53:01	opal	er more accurately tui
+2020-03-26 14:53:22	-->	NorthwestVegan (~Northwest@gateway/tor-sasl/northwestvegan) has joined #freenode
+2020-03-26 14:54:13	-->	darkphoenix (darkphnx@unaffiliated/darkphoenix) has joined #freenode
+2020-03-26 14:54:23	-->	blkshp (~blkshp@about/windows/staff/blkshp) has joined #freenode
+2020-03-26 14:54:28	-->	forgotmynick (uid24625@gateway/web/irccloud.com/x-zezzmurrttoootur) has joined #freenode
+2020-03-26 14:55:25	-->	fsociety (~root@201-51-179-92.user3p.veloxzone.com.br) has joined #freenode
+2020-03-26 14:55:30	gildarts	Yeah, quassel isn’t bad. Never feels native anywhere though. Personally like hexchat, but it isn’t available on Mac.
+2020-03-26 14:55:49	--	fsociety is now known as Guest71877
+2020-03-26 14:56:54	tetete	should i use hexchat>
+2020-03-26 14:57:18	<--	mowcat (~mowcat@cpc105070-sgyl40-2-0-cust722.18-2.cable.virginm.net) has quit (Remote host closed the connection)
+2020-03-26 14:58:24	tetete	hmm. manjaro looks cool
+2020-03-26 14:59:03	opal	hexchat's fine too
+2020-03-26 14:59:10	-->	budiman (~esuga@140.213.0.43) has joined #freenode
+2020-03-26 14:59:11	<--	__dutch__ (~DutchIngr@unaffiliated/dutchingraham) has left #freenode ("WeeChat 2.7.1")
+2020-03-26 14:59:13	opal	hexchat's less native-feeling though heh
+2020-03-26 14:59:24	opal	quassel fits in with my system theme just fine
+2020-03-26 14:59:29	MrElendig	it needs to be ported to gtk3 already
+2020-03-26 14:59:37	opal	why
+2020-03-26 14:59:50	opal	you can use gtk theming with qt5
+2020-03-26 15:00:04	mrbell1984	take a look at the lounge chat, browser based irc client
+2020-03-26 15:00:08	mrbell1984	#thelounge
+2020-03-26 15:00:11	MrElendig	so that it will support wayland, scale correctly, a bunch of gtk2 bugs that will never get fixed etc
+2020-03-26 15:00:30	gildarts	Also IRCCloud if a web client is an option.
+2020-03-26 15:00:35	opal	qt5 supports wayland
+2020-03-26 15:00:41	MrElendig	gtk2 does not
+2020-03-26 15:00:45	<--	buriedalive (~misery@unaffiliated/buriedalive) has quit (Read error: Connection timed out)
+2020-03-26 15:00:45	MrElendig	hexchat uses gtk2
+2020-03-26 15:00:49	opal	oh
+2020-03-26 15:00:50	opal	i see
+2020-03-26 15:01:01	opal	i thought you meant quassel needs to be ported to gtk3
+2020-03-26 15:01:09	<--	genera (~genera@unaffiliated/genera) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:01:13	opal	yeah thats fair hexchat should move to 3
+2020-03-26 15:01:44	opal	i'd suggest against irccloud simply on the grounds that its proprietary. costs the same amount to spin up thelounge on a server
+2020-03-26 15:02:01	<--	budiman (~esuga@140.213.0.43) has left #freenode
+2020-03-26 15:02:17	opal	well not that fact alone
+2020-03-26 15:03:01	gildarts	IRCCloud does have decent mobile apps, but I’m mainly ZNC -> weechat|hexchat and IRCCloud connected for mobile.
+2020-03-26 15:03:35	-->	kasaltie (~kasaltie@host-89-229-140-10.dynamic.mm.pl) has joined #freenode
+2020-03-26 15:03:46	<--	kasaltie (~kasaltie@host-89-229-140-10.dynamic.mm.pl) has left #freenode
+2020-03-26 15:04:02	-->	buchbinder (~buchbinde@178.115.129.153.wireless.dyn.drei.com) has joined #freenode
+2020-03-26 15:04:32	mrbell1984	with the lounge chat #thelounge you can chat via browser and with ZNC get push notifications on iOS or by default Android.
+2020-03-26 15:04:36	mrbell1984	nothing more to do
+2020-03-26 15:04:45	mrbell1984	Google VPS is free for a year to spin up a server
+2020-03-26 15:04:51	mrbell1984	if you know how to configure it that is
+2020-03-26 15:05:17	<--	Guest71877 (~root@201-51-179-92.user3p.veloxzone.com.br) has quit (Ping timeout: 265 seconds)
+2020-03-26 15:05:33	<--	pglife_bot (~pglife@momjian.us) has quit (Remote host closed the connection)
+2020-03-26 15:05:38	-->	sennar (osz@51.255.224.63) has joined #freenode
+2020-03-26 15:05:52	<--	sennar (osz@51.255.224.63) has left #freenode
+2020-03-26 15:06:00	-->	sennar (osz@51.255.224.63) has joined #freenode
+2020-03-26 15:06:28	sennar	hello
+2020-03-26 15:06:42	sennar	is it possible to have a vhost?
+2020-03-26 15:06:58	<--	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has quit (Quit: Bye)
+2020-03-26 15:07:08	-->	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 15:07:13	<--	theo (~td512@2ProIntl/td512) has quit (Ping timeout: 265 seconds)
+2020-03-26 15:07:25	-->	genera (~genera@unaffiliated/genera) has joined #freenode
+2020-03-26 15:07:35	-->	mohan43u (~mohan43u@157.50.229.39) has joined #freenode
+2020-03-26 15:08:53	-->	Rothschild666 (~Rothschil@c-69-249-29-95.hsd1.pa.comcast.net) has joined #freenode
+2020-03-26 15:09:02	mohan43u	hi.. howto request freenode to become op for already created channel?
+2020-03-26 15:09:16	-->	pglife_bot (~pglife@momjian.us) has joined #freenode
+2020-03-26 15:10:35	-->	ExoUNX (~ExoUNX@unaffiliated/exounx) has joined #freenode
+2020-03-26 15:12:15	-->	frmus (~frmus@unaffiliated/frmus) has joined #freenode
+2020-03-26 15:12:25	-->	fsociety_ (~root@201-51-179-92.user3p.veloxzone.com.br) has joined #freenode
+2020-03-26 15:12:58	tetete	indomitable
+2020-03-26 15:13:15	<--	buchbinder (~buchbinde@178.115.129.153.wireless.dyn.drei.com) has quit (Changing host)
+2020-03-26 15:13:15	-->	buchbinder (~buchbinde@unaffiliated/buchbinder) has joined #freenode
+2020-03-26 15:13:40	indomitable	yes sweetheart
+2020-03-26 15:14:00	<--	mgol (~m_gol@84-10-254-144.static.chello.pl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-26 15:15:43	<--	pglife_bot (~pglife@momjian.us) has quit (Remote host closed the connection)
+2020-03-26 15:15:43	<--	alexge50 (~alexge50@unaffiliated/alexge50) has quit (Read error: Connection reset by peer)
+2020-03-26 15:16:18	<--	ExoUNX (~ExoUNX@unaffiliated/exounx) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:16:40	<--	u0_a84_ (~u0_a84@109.86.189.201) has quit (Ping timeout: 256 seconds)
+2020-03-26 15:16:41	<--	voltage_ (~voltage_@unaffiliated/voltage/x-4834960) has quit (Quit: Leaving)
+2020-03-26 15:16:56	<--	fsociety_ (~root@201-51-179-92.user3p.veloxzone.com.br) has quit (Read error: Connection reset by peer)
+2020-03-26 15:16:58	<--	sookii (5c1e77b7@gateway/web/cgi-irc/kiwiirc.com/ip.92.30.119.183) has quit (Remote host closed the connection)
+2020-03-26 15:16:58	<--	magnoliaa (cbdc9feb@gateway/web/cgi-irc/kiwiirc.com/ip.203.220.159.235) has quit (Remote host closed the connection)
+2020-03-26 15:17:03	-->	alexge50 (~alexge50@unaffiliated/alexge50) has joined #freenode
+2020-03-26 15:17:09	<--	JesusIsJehovah68 (57483e4a@gateway/web/cgi-irc/kiwiirc.com/ip.87.72.62.74) has quit (Remote host closed the connection)
+2020-03-26 15:17:12	-->	scde (~scde@p200300D38F073480581CCAC81986EEFB.dip0.t-ipconnect.de) has joined #freenode
+2020-03-26 15:17:25	-->	fsociety_ (~root@201-51-179-92.user3p.veloxzone.com.br) has joined #freenode
+2020-03-26 15:18:36	<--	buchbinder (~buchbinde@unaffiliated/buchbinder) has quit (Quit: buchbinder)
+2020-03-26 15:18:54	<--	nickodd (~nickodd@unaffiliated/nickodd) has quit (Remote host closed the connection)
+2020-03-26 15:18:55	-->	u0_a84 (~u0_a84@46-133-78-123.mobile.vf-ua.net) has joined #freenode
+2020-03-26 15:19:19	-->	eyepeetee- (~ipt@13.92.154.153) has joined #freenode
+2020-03-26 15:19:24	<--	genera (~genera@unaffiliated/genera) has quit (Read error: Connection reset by peer)
+2020-03-26 15:19:25	-->	pglife_bot (~pglife@momjian.us) has joined #freenode
+2020-03-26 15:20:09	<--	macc24 (~random@unaffiliated/maccraft) has quit (Ping timeout: 256 seconds)
+2020-03-26 15:20:57	<--	eyepeetee (~ipt@13.92.154.153) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:22:15	<--	sennar (osz@51.255.224.63) has left #freenode
+2020-03-26 15:23:37	-->	kkd (~memxor@172.105.239.110) has joined #freenode
+2020-03-26 15:23:37	<--	kkd (~memxor@172.105.239.110) has quit (Changing host)
+2020-03-26 15:23:37	-->	kkd (~memxor@unaffiliated/kartikeya) has joined #freenode
+2020-03-26 15:24:16	-->	sawebb (~Sawebb@75.112.5.74) has joined #freenode
+2020-03-26 15:24:17	-->	nickodd (~nickodd@unaffiliated/nickodd) has joined #freenode
+2020-03-26 15:24:47	<--	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has quit (Quit: Bye!)
+2020-03-26 15:24:51	-->	voltage_ (~voltage_@unaffiliated/voltage/x-4834960) has joined #freenode
+2020-03-26 15:24:56	-->	shinobu_san (~shinobu_s@parkerjohansen.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 15:26:07	-->	jack3 (the_kink@eggdrop/journeyman/jack3) has joined #freenode
+2020-03-26 15:26:38	-->	caramel_ (~caramel@unaffiliated/caramel) has joined #freenode
+2020-03-26 15:27:21	-->	akem_ (~akem@134.19.189.148) has joined #freenode
+2020-03-26 15:27:41	-->	theo (~td512@209.141.57.101) has joined #freenode
+2020-03-26 15:28:00	-->	satanist_ (~satanist@unaffiliated/satanist) has joined #freenode
+2020-03-26 15:28:08	<--	theo (~td512@209.141.57.101) has quit (Changing host)
+2020-03-26 15:28:08	-->	theo (~td512@2ProIntl/td512) has joined #freenode
+2020-03-26 15:28:10	<--	Kmos (~kmos@us7.ircnow.org) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:28:36	<--	Butterfly^ (Butterfly^@gateway/vpn/privateinternetaccess/butterfly/x-89248776) has quit (Disconnected by services)
+2020-03-26 15:28:44	-->	theaetetus (~quassel@209-169-215-26-dynamic.midco.net) has joined #freenode
+2020-03-26 15:28:44	<--	theaetetus (~quassel@209-169-215-26-dynamic.midco.net) has quit (Changing host)
+2020-03-26 15:28:44	-->	theaetetus (~quassel@unaffiliated/theaetetus) has joined #freenode
+2020-03-26 15:28:45	-->	Butterfly^ (Butterfly^@gateway/vpn/privateinternetaccess/butterfly/x-89248776) has joined #freenode
+2020-03-26 15:28:46	<--	momken (~momken@77.81.147.8) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:28:58	-->	lilmike_ (~server@mtserver.mwtd.net) has joined #freenode
+2020-03-26 15:28:59	<--	yoink (~yoink@unaffiliated/yoink) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:28:59	<--	dan- (~d@unaffiliated/dan-) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:28:59	<--	johan (johan@2ProIntl/meffe) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:28:59	-->	cpe_ (~cpe@unaffiliated/cpe) has joined #freenode
+2020-03-26 15:28:59	<--	emma (~em@unaffiliated/emma) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:29:08	-->	dan| (~d@unaffiliated/dan-) has joined #freenode
+2020-03-26 15:29:22	<--	lilmike (~server@mtserver.mwtd.net) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:22	<--	RazorCola (~Erasmus@unaffiliated/erasmus) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:22	<--	Ahti (~Ahti@unaffiliated/ahti) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:22	<--	raoni (~raoni@labs-gw.ic.unicamp.br) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:22	<--	cranq (~crank@107.161.164.124) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:23	<--	cornfeedhobo (~cornfeedh@unaffiliated/cornfeed) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:29:23	<--	sjohnson (~sjohnson@cow.sj.rfc1459.net) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:29:28	-->	christopher1 (~christoph@110.93.80.83) has joined #freenode
+2020-03-26 15:29:31	<--	cpe (~cpe@unaffiliated/cpe) has quit (Read error: Connection reset by peer)
+2020-03-26 15:29:31	--	cpe_ is now known as cpe
+2020-03-26 15:29:48	--	lilmike_ is now known as lilmike
+2020-03-26 15:29:52	-->	raoni (~raoni@labs-gw.ic.unicamp.br) has joined #freenode
+2020-03-26 15:29:52	-->	alter_ego (~nobrandhe@66.115.154.81) has joined #freenode
+2020-03-26 15:29:56	-->	kmos_ (~kmos@us7.ircnow.org) has joined #freenode
+2020-03-26 15:29:57	<--	tetete (~christoph@unaffiliated/tetete) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	alterego_ (~nobrandhe@66.115.154.81) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	akem (~akem@134.19.189.148) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	swordsmanz (~swordsman@irc.neko.sx) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	berndj (~berndj@197.242.93.82) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	caramel (~caramel@unaffiliated/caramel) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	theaetetus_ (~quassel@209-169-215-26-dynamic.midco.net) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	satanist (~satanist@unaffiliated/satanist) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	z4Ck (zACk@gateway/shell/ircnow/x-ylxlsfqlpprhroef) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:30:10	-->	mgol (~m_gol@84-10-254-144.static.chello.pl) has joined #freenode
+2020-03-26 15:30:17	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 15:30:20	-->	Ahti (~Ahti@unaffiliated/ahti) has joined #freenode
+2020-03-26 15:30:27	-->	Jantz (~IceChat9@118-93-142-216.dsl.dyn.ihug.co.nz) has joined #freenode
+2020-03-26 15:30:28	-->	RazorCola (~Erasmus@unaffiliated/erasmus) has joined #freenode
+2020-03-26 15:30:32	-->	berndj (~berndj@azna.co.za) has joined #freenode
+2020-03-26 15:30:42	-->	emma (~em@li247-180.members.linode.com) has joined #freenode
+2020-03-26 15:30:43	<--	BerenErchamion (~chatzilla@S0106f0f2493c2d93.th.shawcable.net) has quit (Quit: ChatZilla 0.9.92-rdmsoft [XULRunner 35.0.1/20150122214805])
+2020-03-26 15:30:47	<--	dongcarl (~dongcarl@unaffiliated/dongcarl) has quit (Read error: Connection reset by peer)
+2020-03-26 15:30:54	<--	emma (~em@li247-180.members.linode.com) has quit (Changing host)
+2020-03-26 15:30:54	-->	emma (~em@unaffiliated/emma) has joined #freenode
+2020-03-26 15:31:19	-->	cranq (~crank@107.161.164.124) has joined #freenode
+2020-03-26 15:31:28	-->	swordsmanz (~swordsman@irc.neko.sx) has joined #freenode
+2020-03-26 15:31:40	-->	yoink (~yoink@unaffiliated/yoink) has joined #freenode
+2020-03-26 15:31:46	<--	christopher1 (~christoph@110.93.80.83) has left #freenode
+2020-03-26 15:32:47	-->	sjohnson (~sjohnson@cow.sj.rfc1459.net) has joined #freenode
+2020-03-26 15:32:51	-->	Grldfrdom (uid391113@gateway/web/irccloud.com/x-nnzgudppmhkqqsiy) has joined #freenode
+2020-03-26 15:33:42	-->	fahadash (uid44972@gateway/web/irccloud.com/x-twgblewkqiyuenkn) has joined #freenode
+2020-03-26 15:34:18	<--	theo (~td512@2ProIntl/td512) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:34:25	<--	mcury (~mcury@unaffiliated/mcury) has quit (Quit: Konversation terminated!)
+2020-03-26 15:35:01	-->	z4Ck (zACk@gateway/shell/ircnow/x-qojdoshwajkztmje) has joined #freenode
+2020-03-26 15:36:16	-->	genera (~genera@unaffiliated/genera) has joined #freenode
+2020-03-26 15:38:00	-->	theo (~td512@209.141.57.101) has joined #freenode
+2020-03-26 15:38:00	<--	theo (~td512@209.141.57.101) has quit (Changing host)
+2020-03-26 15:38:00	-->	theo (~td512@2ProIntl/td512) has joined #freenode
+2020-03-26 15:39:33	<--	Acinonyx (~acinonyx@librespace/acinonyx) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:39:40	-->	macc24 (~random@unaffiliated/maccraft) has joined #freenode
+2020-03-26 15:39:57	-->	Acinonyx (~acinonyx@librespace/acinonyx) has joined #freenode
+2020-03-26 15:42:20	<--	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has quit (Read error: Connection reset by peer)
+2020-03-26 15:43:03	<--	wi (wi@2a04:92c7:16:358:e252:4dff:70f7:affe) has quit
+2020-03-26 15:43:23	-->	RandomRaven (sid405934@gateway/web/irccloud.com/x-mczgioxhjioiegqt) has joined #freenode
+2020-03-26 15:43:24	-->	wi (wi@2a04:92c7:16:358:e252:4dff:70f7:affe) has joined #freenode
+2020-03-26 15:43:46	-->	s0ckpuppet (~sock@unaffiliated/s0ckpuppet) has joined #freenode
+2020-03-26 15:44:16	<--	kmos_ (~kmos@us7.ircnow.org) has quit (Quit: IRCNow and Forever!)
+2020-03-26 15:44:38	<--	CodeB_ (~CodeB@a89-153-16-231.cpe.netcabo.pt) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:47:15	<--	Ahti (~Ahti@unaffiliated/ahti) has quit (Ping timeout: 260 seconds)
+2020-03-26 15:47:20	-->	navmed (76665cfa@118.102.92.250) has joined #freenode
+2020-03-26 15:47:24	-->	buriedalive (~misery@unaffiliated/buriedalive) has joined #freenode
+2020-03-26 15:48:12	-->	\mSg (~mSg@irchelp/msg) has joined #freenode
+2020-03-26 15:49:35	navmed	Coronavirus Live Stream - Real-time counter, Maps, and worldwide stats.https://www.youtube.com/watch?v=qTbR2UKTQQc
+2020-03-26 15:49:45	-->	littleclover (~littleclo@60.53.23.173) has joined #freenode
+2020-03-26 15:49:51	@e	navmed: please don't send that link anywhere else
+2020-03-26 15:49:51	<--	littleclover (~littleclo@60.53.23.173) has quit (Client Quit)
+2020-03-26 15:49:58	<--	Freejack_ (~quassel@unaffiliated/freejack) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-03-26 15:50:01	<--	crvi (~crvi@crvi.powered.by.lunarbnc.net) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net)
+2020-03-26 15:50:05	@e	or rather, please don't send anything unsolicited anywhere on freenode
+2020-03-26 15:50:22	-->	crvi (~crvi@crvi.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 15:50:41	-->	cornfeedhobo (~cornfeedh@unaffiliated/cornfeed) has joined #freenode
+2020-03-26 15:51:16	LjL	navmed, you'we welcome to send unsolicited, but relevant, things like that on ##covid-19
+2020-03-26 15:51:20	-->	tetete (~christoph@unaffiliated/tetete) has joined #freenode
+2020-03-26 15:51:25	LjL	although we already have a long list of trackers
+2020-03-26 15:51:55	-->	kmos_ (~kmos@94.252.122.101) has joined #freenode
+2020-03-26 15:51:55	<--	makaveli7 (~makaveli7@unaffiliated/makaveli7) has quit (Ping timeout: 260 seconds)
+2020-03-26 15:52:02	<--	kmos_ (~kmos@94.252.122.101) has quit (Client Quit)
+2020-03-26 15:53:05	-->	eyepeetee (~ipt@13.92.154.153) has joined #freenode
+2020-03-26 15:53:18	-->	Guest63770 (~kmos@kmos.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 15:53:58	<--	eyepeetee- (~ipt@13.92.154.153) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:54:03	<--	Guest63770 (~kmos@kmos.powered.by.lunarbnc.net) has left #freenode
+2020-03-26 15:54:11	<--	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has quit (Quit: Bye)
+2020-03-26 15:54:21	-->	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 15:54:38	<--	His_Dudeness__ (~His_Duden@ip-176-199-253-59.hsi06.unitymediagroup.de) has quit (Ping timeout: 256 seconds)
+2020-03-26 15:54:44	-->	sidetrack (~sidetrack@2605:6000:1522:4d71:7c6e:d03b:997a:debd) has joined #freenode
+2020-03-26 15:54:51	<--	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has quit (Client Quit)
+2020-03-26 15:55:01	-->	ComputerTech (~ComputerT@computertech.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 15:55:44	<--	Gerula (~Gerula@unaffiliated/gerula) has quit (Remote host closed the connection)
+2020-03-26 15:55:47	<--	buriedalive (~misery@unaffiliated/buriedalive) has quit (Quit: Remote host closed the connection)
+2020-03-26 15:56:55	tetete	hi
+2020-03-26 15:57:12	-->	Gerula (~Gerula@unaffiliated/gerula) has joined #freenode
+2020-03-26 15:57:15	<--	mIk3_08 (~Thunderbi@unaffiliated/mik3-08/x-1549088) has quit (Quit: mIk3_08)
+2020-03-26 15:57:40	-->	dmartzol (~dani@2601:249:8d80:4b60:5d93:48ed:428d:b50a) has joined #freenode
+2020-03-26 15:57:52	[itchyjunk]	hi
+2020-03-26 15:57:54	--	rpifan_ is now known as rpifan
+2020-03-26 15:57:58	-->	Freejack_ (~quassel@unaffiliated/freejack) has joined #freenode
+2020-03-26 15:58:10	-->	Kmos (~kmos@kmos.powered.by.lunarbnc.net) has joined #freenode
+2020-03-26 15:58:54	-->	buriedalive (~misery@unaffiliated/buriedalive) has joined #freenode
+2020-03-26 15:59:30	<--	sidetrack (~sidetrack@2605:6000:1522:4d71:7c6e:d03b:997a:debd) has quit (Ping timeout: 256 seconds)
+2020-03-26 15:59:45	<--	tsdgeos1 (~tsdgeos@176.113.74.179) has quit
+2020-03-26 16:01:47	-->	Czar_Hey (uid256268@wikimedia/k6ka) has joined #freenode
+2020-03-26 16:01:55	<--	niee (~user@MINE.THE.GAP.MEDOLINA.INFO) has quit (Ping timeout: 246 seconds)
+2020-03-26 16:02:27	<--	fsociety_ (~root@201-51-179-92.user3p.veloxzone.com.br) has quit (Read error: Connection reset by peer)
+2020-03-26 16:02:40	-->	niee (~user@MINE.THE.GAP.MEDOLINA.INFO) has joined #freenode
+2020-03-26 16:02:54	-->	KH4056 (~KH405@104.254.90.195) has joined #freenode
+2020-03-26 16:03:15	<--	KH405 (~KH405@104.254.90.195) has quit (Ping timeout: 250 seconds)
+2020-03-26 16:03:15	--	KH4056 is now known as KH405
+2020-03-26 16:04:28	-->	SpiderDisco (~SpiderDis@unaffiliated/spiderdisco) has joined #freenode
+2020-03-26 16:04:30	-->	pxs (~pxs@176.60.179.138) has joined #freenode
+2020-03-26 16:04:45	-->	fsociety (~root@201-51-179-92.user3p.veloxzone.com.br) has joined #freenode
+2020-03-26 16:05:09	--	fsociety is now known as Guest13744
+2020-03-26 16:05:57	<--	kai_ (uid344109@gateway/web/irccloud.com/x-zkqfoadonpkewlwv) has quit (Quit: Connection closed for inactivity)
+2020-03-26 16:07:56	<--	navmed (76665cfa@118.102.92.250) has left #freenode

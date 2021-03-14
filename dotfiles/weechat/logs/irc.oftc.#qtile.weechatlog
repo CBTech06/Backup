@@ -1,0 +1,98 @@
+2020-12-13 20:29:36	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #qtile
+2020-12-13 20:29:36	--	Topic for #qtile is "- a hackable Python window manager | http://qtile.org/ | Please use the mailing list if you can't idle until there is a response."
+2020-12-13 20:29:36	--	Topic set by ChanServ (services@services.oftc.net) on Thu, 11 Apr 2019 09:19:08
+2020-12-13 20:29:36	--	Channel #qtile: 51 nicks (2 ops, 0 voices, 49 normals)
+2020-12-13 20:29:38	--	Channel created on Sat, 31 Jul 2010 15:37:08
+2020-12-13 20:29:40	captainchris	hi everybody 
+2020-12-13 20:30:34	chraist	Hi
+2020-12-13 20:31:04	captainchris	Hello chraist
+2020-12-13 20:31:31	captainchris	I new to qtile i used i3
+2020-12-13 20:44:21	captainchris	and i would like to know, I configured my qtile with my two screens and i have two bars with 3 groups but i have 1 2 3 on left and 1 2 3 on right the same screens .I can't do 1 2 3 on left and 4 5 6 on right 
+2020-12-13 20:44:38	captainchris	I took example on qtile-examples
+2020-12-13 21:06:02	captainchris	it's the same screen on the left and on the right
+2020-12-13 21:10:29	<--	chraist (~chraist@h-208-237.A324.priv.bahnhof.se) has quit (Quit: Leaving)
+2020-12-13 21:44:15	<--	kewin (~kewin@185.228.231.205) has quit (Read error: Connection reset by peer)
+2020-12-13 21:48:47	-->	kewin (~kewin@193.57.125.53) has joined #qtile
+2020-12-13 22:04:54	captainchris	'Hi everybody 
+2020-12-14 20:51:31	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #qtile
+2020-12-14 20:51:31	--	Topic for #qtile is "- a hackable Python window manager | http://qtile.org/ | Please use the mailing list if you can't idle until there is a response."
+2020-12-14 20:51:31	--	Topic set by ChanServ (services@services.oftc.net) on Mon, 14 Dec 2020 14:40:41
+2020-12-14 20:51:31	--	Channel #qtile: 50 nicks (3 ops, 0 voices, 47 normals)
+2020-12-14 20:51:32	--	Channel created on Sat, 31 Jul 2010 15:37:08
+2020-12-14 20:51:35	captainchris	hello evrybody 
+2020-12-14 20:53:08	captainchris	I'm new to qtile. and i have a little problem with groups. I created 6 group desk1 desk 2 desk3 ... and i would like tree desktop on left and three desktop on right
+2020-12-14 20:53:37	captainchris	123 on left and 456 on right. Actually i have 123456 on left and 123456 on right 
+2020-12-14 20:54:47	<--	cortesi (sid83819@id-83819.highgate.irccloud.com) has quit (Read error: Connection reset by peer)
+2020-12-14 20:56:09	-->	cortesi (sid83819@id-83819.highgate.irccloud.com) has joined #qtile
+2020-12-14 21:11:28	captainchris	]/connect freenode
+2020-12-14 21:11:33	captainchris	sorry ;)
+2020-12-14 21:28:19	ronniedroid	That is called pinning workspace to monitors
+2020-12-14 21:28:37	ronniedroid	There is an issue on it on the qtile github 
+2020-12-14 21:28:53	ronniedroid	But, it is not very straight forward how to do it
+2020-12-14 21:29:49	ronniedroid	I myself am trying to learn how to use the qtile way of managing workspaces in multimonitor setup
+2020-12-14 21:32:36	<--	kewin (~kewin@193.56.244.125) has quit (Read error: Connection reset by peer)
+2020-12-14 21:38:57	-->	kewin (~kewin@185.228.230.237) has joined #qtile
+2020-12-20 16:41:59	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #qtile
+2020-12-20 16:41:59	--	Topic for #qtile is "- a hackable Python window manager | http://qtile.org/ | Please use the mailing list if you can't idle until there is a response."
+2020-12-20 16:41:59	--	Topic set by ChanServ (services@services.oftc.net) on Mon, 14 Dec 2020 14:40:41
+2020-12-20 16:41:59	--	Channel #qtile: 50 nicks (2 ops, 0 voices, 48 normals)
+2020-12-20 16:42:00	--	Channel created on Sat, 31 Jul 2010 15:37:08
+2020-12-20 16:42:03	captainchris	hi everybody 
+2020-12-20 16:45:13	captainchris	o
+2020-12-20 16:45:13	captainchris	http://ix.io/2ISv
+2020-12-20 16:45:13	captainchris	y
+2020-12-20 16:45:49	captainchris	I define groups like this with match to open each app on desktop but nothing works
+2020-12-20 17:11:22	-->	tcl1 (~tcl@2a0a-a541-11e3-0-8d77-4496-bb4b-27a7.ipv6dyn.netcologne.de) has joined #qtile
+2020-12-20 17:15:49	<--	tcl (~tcl@2a0a-a541-11e3-0-8d77-4496-bb4b-27a7.ipv6dyn.netcologne.de) has quit (Ping timeout: 480 seconds)
+2020-12-20 17:33:14	mcol	Are you using the right Match syntax for your version? There have been some changes to that recent
+2020-12-20 17:33:25	mcol	Is this git version or a release?
+2020-12-20 17:44:49	--	tcl1 is now known as tcl
+2020-12-20 17:51:23	captainchris	it's a git version 
+2020-12-20 17:51:32	captainchris	if i use letters it works
+2020-12-20 17:51:43	captainchris	if i use azerty for 12345
+2020-12-20 17:51:45	captainchris	6
+2020-12-20 18:10:31	mcol	that seems weird
+2020-12-20 18:10:41	mcol	any log output when it fails?
+2020-12-20 18:25:04	<--	dditthardt (~dditthard@c-66-56-7-170.hsd1.ga.comcast.net) has quit (Read error: Connection reset by peer)
+2020-12-20 18:41:02	captainchris	nothin in qtile.log
+2020-12-20 18:43:29	mcol	maybe create an issue on github to get more eyes on it
+2020-12-20 18:56:43	-->	dditthardt (~dditthard@c-66-56-7-170.hsd1.ga.comcast.net) has joined #qtile
+2020-12-20 19:07:09	@tych0	hrm
+2020-12-20 19:07:16	@tych0	looks like ci is having some issues with cairo all of the sudden?
+2020-12-20 19:15:07	@tych0	and oddly they're two different failures
+2020-12-20 19:19:05	dditthardt	re-run?
+2020-12-20 19:19:39	dditthardt	library versions haven't changed in ubuntu
+2020-12-20 19:20:00	dditthardt	(in the middle of getting actions to run locally)
+2020-12-20 19:21:57	@tych0	dditthardt: i'd re run but then we'd lose the logs :)
+2020-12-20 19:25:13	dditthardt	download them!
+2020-12-20 19:27:45	@tych0	this actually looks like it could be an xcffib bug
+2020-12-20 19:28:02	@tych0	dditthardt: maybe. i'd prefer to just leave them where they are vs. having all green tests
+2020-12-20 19:28:13	@tych0	that way if someone searches again maybe they'll find them
+2020-12-20 19:28:49	@tych0	but in any case
+2020-12-20 19:28:56	@tych0	this looks like somthing went horribly wrong...
+2020-12-20 19:50:16	<--	Tokoyami (~Yami@188.166.48.4) has quit (Quit: ~@~)
+2020-12-20 19:52:05	-->	Tokoyami (~Yami@188.166.48.4) has joined #qtile
+2020-12-20 20:02:38	<--	tcl (~tcl@2a0a-a541-11e3-0-8d77-4496-bb4b-27a7.ipv6dyn.netcologne.de) has quit (Quit: WeeChat 2.9)
+2020-12-20 20:06:47	-->	davidbachman (~davidbach@212-186-25-215.cable.dynamic.surfer.at) has joined #qtile
+2020-12-20 20:11:35	captainchris	hi everybody
+2020-12-20 20:39:05	<--	davidbachman (~davidbach@212-186-25-215.cable.dynamic.surfer.at) has quit (Quit: WeeChat 3.0)
+2020-12-20 20:45:45	<--	hallyn (~sehh33ad@mail.hallyn.com) has quit
+2020-12-20 20:55:29	-->	tcl (~tcl@2a0a-a541-11e3-0-8d77-4496-bb4b-27a7.ipv6dyn.netcologne.de) has joined #qtile
+2020-12-20 20:56:21	tcl	I just noticed that my ScratchPads are broken. I have only had a short look at the recent commits, can somebody try to open a ScratchPad, please? mcol maybe?
+2020-12-20 21:33:58	mcol	tcl: working just as usual for me on master
+2020-12-20 21:34:06	tcl	Thanks for checking.
+2020-12-20 21:34:52	tcl	I think I just found the cause, the wm_class and title aren't properly set anymore. That's likely something on my end.
+2020-12-20 22:04:55	captainchris	hi is there a solution to hise mouse cursor and use qtile mouseless without use of unclutter and xinput ??
+2020-12-20 22:05:07	captainchris	to hide ^
+2020-12-20 22:12:10	<--	tcl (~tcl@2a0a-a541-11e3-0-8d77-4496-bb4b-27a7.ipv6dyn.netcologne.de) has quit (Quit: WeeChat 2.9)
+2020-12-20 22:12:36	mcol	hi captainchris 
+2020-12-20 22:12:50	mcol	i think unclutter is the only way you're going to get that
+2020-12-20 22:12:53	mcol	although.........
+2020-12-20 22:13:18	mcol	you could use xcffib to hide/show mouse upon keybindings/hooks if you figured out how!
+2020-12-20 22:16:02	captainchris	okay
+2020-12-20 22:17:33	mcol	i have a snippet that might help
+2020-12-20 22:17:34	mcol	one sec
+2020-12-20 22:20:32	mcol	https://f.mcol.xyz/1608499726.py
+2020-12-20 22:21:17	mcol	i think something like that should work, if you bind show_cursor and hide_cursor to keybindings, or execute them at hooks or whatever
+2020-12-20 22:32:31	captainchris	ok it's pretty cool 
+2020-12-20 22:32:35	captainchris	thank you 

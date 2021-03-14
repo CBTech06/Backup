@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_5='/etc/X11'
+let g:netrw_dirhist_4='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_3='/home/captainchris/.oh-my-bash'
+let g:netrw_dirhist_2='/home/captainchris/.oh-my-bash/themes/modern'
+let g:netrw_dirhist_1='/home/captainchris/.oh-my-bash'
+let g:netrw_dirhist_0='/usr/include/SFML/Graphics'
+let g:netrw_dirhist_9='/usr/include/SFML'
+let g:netrw_dirhist_8='/usr/include'
+let g:netrw_dirhist_7='/usr'

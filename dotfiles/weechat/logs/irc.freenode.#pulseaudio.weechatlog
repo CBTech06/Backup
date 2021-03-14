@@ -1,0 +1,39 @@
+2020-02-12 22:46:13	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #pulseaudio
+2020-02-12 22:46:13	--	Topic for #pulseaudio is "Stable release: 13.0 || Troubleshooting: https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Users/Troubleshooting/"
+2020-02-12 22:46:13	--	Topic set by tanuk on Fri, 13 Sep 2019 16:40:09
+2020-02-12 22:46:13	--	Channel #pulseaudio: 120 nicks (0 ops, 0 voices, 120 normals)
+2020-02-12 22:46:15	--	Channel created on Sat, 30 Jan 2010 08:48:24
+2020-02-12 22:46:18	captainchris	hi everybody 
+2020-02-12 22:47:37	wabbits	hello captainchris
+2020-02-12 22:53:35	-->	Mortiarty (~Mortiarty@193-104-197-6.cust.norisab.net) has joined #pulseaudio
+2020-02-12 22:59:06	-->	__imp__ (~imp@2804:14d:5c9b:45b9:5c12:66a2:f08f:6f29) has joined #pulseaudio
+2020-02-13 10:04:23	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #pulseaudio
+2020-02-13 10:04:23	--	Topic for #pulseaudio is "Stable release: 13.0 || Troubleshooting: https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Users/Troubleshooting/"
+2020-02-13 10:04:23	--	Topic set by tanuk on Fri, 13 Sep 2019 16:40:09
+2020-02-13 10:04:23	--	Channel #pulseaudio: 122 nicks (0 ops, 0 voices, 122 normals)
+2020-02-13 10:04:25	--	Channel created on Sat, 30 Jan 2010 08:48:24
+2020-02-13 10:04:26	captainchris	hi everybody 
+2020-02-13 20:12:19	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #pulseaudio
+2020-02-13 20:12:19	--	Topic for #pulseaudio is "Stable release: 13.0 || Troubleshooting: https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/Users/Troubleshooting/"
+2020-02-13 20:12:19	--	Topic set by tanuk on Fri, 13 Sep 2019 16:40:09
+2020-02-13 20:12:19	--	Channel #pulseaudio: 125 nicks (0 ops, 0 voices, 125 normals)
+2020-02-13 20:12:21	--	Channel created on Sat, 30 Jan 2010 08:48:24
+2020-02-13 20:12:24	captainchris	hello everybody 
+2020-02-13 20:15:45	Pali	wabbits: so seems no :-( probably this is my last reply to ofono devs: https://lore.kernel.org/linux-bluetooth/20200213191534.vz2mzxhkhr6i73r4@pali/
+2020-02-13 20:16:55	Pali	I will send summary to pulseaudio ML with question if there is somebody interested in having HFP in pulseaudio / Linux
+2020-02-13 20:21:44	wabbits	Pali some people are interested in HFP for reasons separate from HD codecs. But there are a lot of people interested in HD codecs and some are interested in the for HSP/HFP. Hope that makes sense.
+2020-02-13 20:22:33	wabbits	Personally I only care about HFP if it gives my HD bi-directional low latency codecs suitable for voip.
+2020-02-13 20:22:52	wabbits	if there is a way to have that without HFP its ok by me.
+2020-02-13 20:24:51	Pali	HSP and HFP are only bluetooth profiles which support bidirectional audio
+2020-02-13 20:25:10	Pali	(there is A2DP FastStream codec, but only supported by a few Creative Labs headsets)
+2020-02-13 20:26:04	Pali	bidirectional wideband is only supported by HFP (+by A2DP FastStream)
+2020-02-13 20:26:37	Pali	no other options
+2020-02-13 20:27:10	Pali	this is why I started whole discussion about it 3 months ago and reason why I prepared prototype of my hsphfpd daemon
+2020-02-13 20:29:06	<--	Mortiarty (~Mortiarty@i5E86B3A3.versanet.de) has quit (Read error: Connection reset by peer)
+2020-02-13 20:32:34	wabbits	waiting for the mail before I respond further
+2020-02-13 20:32:37	wabbits	Pali ^
+2020-02-13 20:38:08	<--	kugel (~kugel@rockbox/developer/kugel) has quit (Ping timeout: 268 seconds)
+2020-02-13 20:47:18	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2020-02-13 21:11:44	-->	SimonNL (~SimonNL@62-145-202-109.cable.dynamic.v4.ziggo.nl) has joined #pulseaudio
+2020-02-13 21:25:44	-->	Mortiarty (~Mortiarty@45.148.4.28) has joined #pulseaudio
+2020-02-13 21:32:57	captainchris	:quit

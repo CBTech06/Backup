@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd "$HOME/Doc/Notes"
+
+  file=$(ls *.md | rofi -modi window,drun -sidebar-mode -showtab  -dmenu -p  "Notes")
+  #file=$(rg --files --follow | rofi -dmenu -no-custom  -i -p "Notes:")
+
+[[ -n "$file" ]] || exit
+
+exec termite -e "nvim \"$file\""

@@ -1,0 +1,795 @@
+2020-01-24 21:06:01	-->	captainchris1 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-01-24 21:06:01	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2020-01-24 21:06:01	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Tue, 09 Aug 2016 06:33:51
+2020-01-24 21:06:01	--	Channel #archlinux-unregistered: 302 nicks (6 ops, 0 voices, 296 normals)
+2020-01-24 21:06:03	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-01-24 21:07:40	-->	clixkhouse (~androirc@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-01-24 21:08:00	-->	phantomotap (~phantomot@c-68-35-81-65.hsd1.al.comcast.net) has joined #archlinux-unregistered
+2020-01-24 21:08:06	<--	phantomotap (~phantomot@c-68-35-81-65.hsd1.al.comcast.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-01-24 21:10:03	-->	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-01-24 21:10:03	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2020-01-24 21:10:03	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Tue, 09 Aug 2016 06:33:51
+2020-01-24 21:10:03	--	Channel #archlinux-unregistered: 303 nicks (6 ops, 0 voices, 297 normals)
+2020-01-24 21:10:05	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-01-24 21:10:09	chris06	hi everybody 
+2020-01-24 21:10:10	@EMIYA	chris06: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Humans can use ?invite to get a pass.)
+2020-01-24 21:12:18	<--	Mete- (~joao@170.80.106.220) has quit (Remote host closed the connection)
+2020-03-02 20:55:37	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-03-02 20:55:37	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there. The bot can give you a one-time ticket. ==="
+2020-03-02 20:55:37	--	Topic set by tigrmesh (~tigrmesh@archlinux/op/tigrmesh) on Tue, 09 Aug 2016 06:33:51
+2020-03-02 20:55:37	--	Channel #archlinux-unregistered: 307 nicks (5 ops, 0 voices, 302 normals)
+2020-03-02 20:55:38	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-03-02 20:55:44	captainchris	hi everybody 
+2020-03-02 20:55:56	captainchris	anyone use ranger filemanager ?? 
+2020-03-02 20:56:14	<--	Nekit12340071 (~Nekit1234@84.51.83.163) has quit (Quit: The Lounge - https://thelounge.github.io)
+2020-03-02 21:12:57	-->	tristah (~tristah@bl23-118-235.dsl.telepac.pt) has joined #archlinux-unregistered
+2020-03-02 21:13:14	<--	tristah (~tristah@bl23-118-235.dsl.telepac.pt) has quit (Client Quit)
+2020-03-02 21:14:34	-->	CHRiSNEW (~chrisnew@nuntius.chaoslog.de) has joined #archlinux-unregistered
+2020-07-25 20:32:14	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-07-25 20:32:14	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-07-25 20:32:14	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-07-25 20:32:14	--	Channel #archlinux-unregistered: 385 nicks (6 ops, 0 voices, 379 normals)
+2020-07-25 20:32:14	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-07-25 20:33:01	<--	truthseeker (~avalance@110.235.225.182) has quit (Ping timeout: 256 seconds)
+2020-07-25 20:35:48	<--	Hitashi (~Hitashi@89-83-167-245.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-07-25 20:37:41	<--	grandfso (~quassel@static.194.168.251.148.clients.your-server.de) has quit (Quit: No Ping reply in 180 seconds.)
+2020-10-04 20:20:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-04 20:20:10	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-04 20:20:10	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-10-04 20:20:10	--	Channel #archlinux-unregistered: 339 nicks (5 ops, 0 voices, 334 normals)
+2020-10-04 20:20:10	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-04 20:20:58	-->	iwx (~wind@90.207.9.160) has joined #archlinux-unregistered
+2020-10-04 20:29:51	-->	gridcommand (~gridcomma@2601:86:600:a2a:e8d5:b568:65c0:79d0) has joined #archlinux-unregistered
+2020-10-04 20:32:35	-->	dubadub (~textual@238.234.86.88.rdns.comcable.net) has joined #archlinux-unregistered
+2020-10-04 20:33:27	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-04 20:33:27	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-04 20:33:27	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-10-04 20:33:27	--	Channel #archlinux-unregistered: 342 nicks (5 ops, 0 voices, 337 normals)
+2020-10-04 20:33:27	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-04 20:33:49	<--	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has left #archlinux-unregistered
+2020-10-11 16:40:53	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-11 16:40:53	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-11 16:40:53	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-10-11 16:40:53	--	Channel #archlinux-unregistered: 330 nicks (5 ops, 0 voices, 325 normals)
+2020-10-11 16:40:53	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-11 16:43:27	-->	tyjak_ (~tyjak@63.250.56.118) has joined #archlinux-unregistered
+2020-10-11 16:45:01	-->	TheEpicProgramme (494c2080@c-73-76-32-128.hsd1.tx.comcast.net) has joined #archlinux-unregistered
+2020-10-11 16:45:18	--	TheEpicProgramme is now known as Epic11234
+2020-10-11 16:45:21	<--	tyjak_ (~tyjak@63.250.56.118) has quit (Client Quit)
+2020-10-11 16:45:29	-->	tyjak_ (~tyjak@63.250.56.118) has joined #archlinux-unregistered
+2020-10-11 16:46:12	-->	dogamak1 (~dogamak@pipari.karhusaari.me) has joined #archlinux-unregistered
+2020-10-11 16:47:00	<--	tyjak_ (~tyjak@63.250.56.118) has quit (Client Quit)
+2020-10-11 16:55:10	@EMIYA	Epic11234: Login detected, you can /join #archlinux now.
+2020-10-11 16:55:24	<--	Epic11234 (494c2080@c-73-76-32-128.hsd1.tx.comcast.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-11 16:57:47	<--	graffen (~graffen@mail.graffen.io) has quit (Ping timeout: 260 seconds)
+2020-10-11 17:05:06	<--	Jarcode__ (~SomeoneIs@2604:3d08:7a7f:5e00::9f5) has quit (Ping timeout: 244 seconds)
+2020-10-11 17:12:37	-->	graffen (~graffen@mail.graffen.io) has joined #archlinux-unregistered
+2020-10-11 17:13:04	<--	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 17:15:13	-->	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has joined #archlinux-unregistered
+2020-10-11 17:19:34	-->	joc (~joc@148.255.83.238) has joined #archlinux-unregistered
+2020-10-11 17:22:00	<--	da39a3ee5e6b4b0d (~textual@n11211935170.netvigator.com) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-10-11 17:31:41	-->	Vrondir (~nikola@85.187.40.98) has joined #archlinux-unregistered
+2020-10-11 17:35:29	-->	md804 (25c9d364@ip-37-201-211-100.hsi13.unitymediagroup.de) has joined #archlinux-unregistered
+2020-10-11 17:37:04	<--	md804 (25c9d364@ip-37-201-211-100.hsi13.unitymediagroup.de) has quit (Remote host closed the connection)
+2020-10-11 17:52:22	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-11 18:00:06	-->	mawiegand_ (~mwiegand@134.19.107.132) has joined #archlinux-unregistered
+2020-10-11 18:09:12	-->	shouldbestudying (~ishouldst@cpe-76-178-50-96.natsow.res.rr.com) has joined #archlinux-unregistered
+2020-10-11 18:13:03	<--	hydr8 (eleight@gateway/shell/xshellz/x-vlynoxcthvpxcrzp) has quit (Remote host closed the connection)
+2020-10-11 18:17:06	-->	andre4s (~andre4s@200116b82842ff002ef05dfffe5853a8.dip.versatel-1u1.de) has joined #archlinux-unregistered
+2020-10-11 18:17:41	-->	xybol (~quassel@74.215.55.36) has joined #archlinux-unregistered
+2020-10-11 18:27:33	-->	Phryq (~Phryq@46.147.175.49) has joined #archlinux-unregistered
+2020-10-11 18:41:56	<--	Nekit12340071252 (~Nekit1234@213.193.17.133) has quit (Quit: The Lounge - https://thelounge.github.io)
+2020-10-11 18:48:32	<--	andre4s (~andre4s@200116b82842ff002ef05dfffe5853a8.dip.versatel-1u1.de) has quit (Quit: Leaving)
+2020-10-11 18:54:17	<--	Vrondir (~nikola@85.187.40.98) has quit (Quit: Konversation terminated!)
+2020-10-11 18:55:58	-->	shay (~shay@37.142.1.233) has joined #archlinux-unregistered
+2020-10-11 18:57:56	<--	shay (~shay@37.142.1.233) has quit (Client Quit)
+2020-10-11 19:01:05	<--	CrustY_ (~crusty@aftr-62-216-204-61.dynamic.mnet-online.de) has quit (Ping timeout: 272 seconds)
+2020-10-11 19:07:11	-->	CrustY_ (~crusty@aftr-62-216-204-61.dynamic.mnet-online.de) has joined #archlinux-unregistered
+2020-10-11 19:13:11	-->	Canaris (~Canaris@dyn-5-81.vpn.ruhr-uni-bochum.de) has joined #archlinux-unregistered
+2020-10-11 19:14:55	<--	Canaris (~Canaris@dyn-5-81.vpn.ruhr-uni-bochum.de) has quit (Client Quit)
+2020-10-11 19:19:45	-->	Canaris (~Canaris@dyn-5-81.vpn.ruhr-uni-bochum.de) has joined #archlinux-unregistered
+2020-10-11 19:20:58	-->	andre4s (~andre4s@200116b82842ff002ef05dfffe5853a8.dip.versatel-1u1.de) has joined #archlinux-unregistered
+2020-10-11 19:21:18	<--	Canaris (~Canaris@dyn-5-81.vpn.ruhr-uni-bochum.de) has quit (Client Quit)
+2020-10-11 19:22:10	<--	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has quit (Ping timeout: 240 seconds)
+2020-10-11 19:22:49	-->	Canaris (~Canaris@dyn-5-81.vpn.ruhr-uni-bochum.de) has joined #archlinux-unregistered
+2020-10-11 19:24:31	-->	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has joined #archlinux-unregistered
+2020-10-11 19:26:04	--	Canaris is now known as Canaris111
+2020-10-11 19:26:06	--	Canaris111 is now known as Canaris
+2020-10-11 19:28:56	@EMIYA	Canaris: Login detected, you can /join #archlinux now.
+2020-10-11 19:29:26	<--	Canaris (~Canaris@dyn-5-81.vpn.ruhr-uni-bochum.de) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-11 19:32:47	-->	Atomy (~atomy@jackinpoint.net) has joined #archlinux-unregistered
+2020-10-11 19:32:50	<--	Atomy (~atomy@jackinpoint.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-11 19:33:49	<--	joc (~joc@148.255.83.238) has quit
+2020-10-11 19:49:55	<--	rcoote (~rcoote@2a02:908:692:81c0:a9fc:53b3:24bb:bd50) has quit (Ping timeout: 240 seconds)
+2020-10-11 19:51:25	<--	veecue (~veecue@dynamic-095-114-040-110.95.114.pool.telefonica.de) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-10-11 19:55:05	-->	syslock (~syslock@185.122.86.104) has joined #archlinux-unregistered
+2020-10-11 19:55:16	-->	veecue (~veecue@dynamic-095-114-040-110.95.114.pool.telefonica.de) has joined #archlinux-unregistered
+2020-10-11 19:58:26	-->	butcher_ (~bornjre@45.123.221.232) has joined #archlinux-unregistered
+2020-10-11 20:01:56	<--	noudle (~noudle@ip-62-143-118-145.hsi01.unitymediagroup.de) has quit
+2020-10-11 20:04:40	-->	roltux (~mbweadmin@containerlinux.nl) has joined #archlinux-unregistered
+2020-10-11 20:05:48	<--	roltux (~mbweadmin@containerlinux.nl) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-11 20:26:44	<--	CrustY_ (~crusty@aftr-62-216-204-61.dynamic.mnet-online.de) has quit (Ping timeout: 240 seconds)
+2020-10-11 20:32:12	-->	lude187 (~chris@d149-67-46-78.try.wideopenwest.com) has joined #archlinux-unregistered
+2020-10-11 20:32:41	<--	dude187 (~chris@d149-67-46-78.try.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-10-11 20:34:21	<--	shouldbestudying (~ishouldst@cpe-76-178-50-96.natsow.res.rr.com) has quit (Ping timeout: 244 seconds)
+2020-10-11 20:42:21	-->	CrustY_ (~crusty@aftr-62-216-204-169.dynamic.mnet-online.de) has joined #archlinux-unregistered
+2020-10-17 17:52:23	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-17 17:52:23	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-17 17:52:23	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-10-17 17:52:23	--	Channel #archlinux-unregistered: 334 nicks (4 ops, 0 voices, 330 normals)
+2020-10-17 17:52:23	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-17 17:52:30	<--	Smasher816 (~Smasher81@136.35.184.226) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-10-17 17:52:47	-->	Smasher816 (~Smasher81@136.35.184.226) has joined #archlinux-unregistered
+2020-10-17 17:54:35	<--	aesthetik (aesthetik@zack6849.com) has quit (Quit: Leaving)
+2020-10-17 17:54:53	-->	yetanotherdev (~YetAnothe@megumin.sed.lol) has joined #archlinux-unregistered
+2020-10-17 17:54:54	<--	yetanotherdev (~YetAnothe@megumin.sed.lol) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-17 17:58:51	<--	GunfighterJ (gunfighter@gunfighterj.foxbnc.co.uk) has quit (Ping timeout: 244 seconds)
+2020-10-17 18:01:45	-->	dr_gonzo (~dr_gonzo_@ip-88-152-204-41.hsi03.unitymediagroup.de) has joined #archlinux-unregistered
+2020-10-17 18:02:50	-->	_gypcio (uid22991@gateway/web/irccloud.com/x-zowurydgbrebsxui) has joined #archlinux-unregistered
+2020-10-17 18:04:26	-->	mrestof (~Mrestof@185.191.177.192) has joined #archlinux-unregistered
+2020-10-17 18:07:31	@EMIYA	mrestof: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-10-17 18:08:20	-->	u-neeks (~x@2804:7f3:8383:5428:a8d0:4ccd:b3e8:6bcc) has joined #archlinux-unregistered
+2020-10-17 18:11:44	@EMIYA	mrestof: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-10-17 18:11:56	<--	natsuya (~x@2804:7f3:8383:5428:a8d0:4ccd:b3e8:6bcc) has quit (Ping timeout: 272 seconds)
+2020-10-17 18:17:48	@EMIYA	mrestof: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-10-17 18:18:48	--	mrestof is now known as Mrestof
+2020-10-17 18:18:52	--	Mrestof is now known as mrestof
+2020-10-17 18:23:38	@EMIYA	mrestof: Login detected, you can /join #archlinux now.
+2020-10-17 18:23:49	<--	mrestof (~Mrestof@185.191.177.192) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-17 18:25:25	<--	nietomek (~tomasz@staticline-195-234-21-179.toya.net.pl) has quit (Quit: WeeChat 2.9)
+2020-10-17 18:28:47	<--	lonewulf1 (~lonewulf@104-0-8-151.lightspeed.stlsmo.sbcglobal.net) has quit (Quit: leaving)
+2020-10-17 18:30:28	-->	multi8 (~dark@194-237-126-92.customer.telia.com) has joined #archlinux-unregistered
+2020-10-17 18:38:12	<--	multi8 (~dark@194-237-126-92.customer.telia.com) has quit (Quit: WeeChat 2.9)
+2020-10-17 18:38:35	<--	thrym (~thrym@p4fcad4e8.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-10-17 18:39:30	-->	thrym (~thrym@p4fcad8aa.dip0.t-ipconnect.de) has joined #archlinux-unregistered
+2020-10-17 18:41:49	-->	signal_vs_noise (~signal_vs@cgn-89-1-212-203.nc.de) has joined #archlinux-unregistered
+2020-10-17 18:42:25	@EMIYA	signal_vs_noise: Login detected, you can /join #archlinux now.
+2020-10-17 18:43:10	<--	signal_vs_noise (~signal_vs@cgn-89-1-212-203.nc.de) has quit (Client Quit)
+2020-10-17 18:44:27	-->	GunfighterJ (gunfighter@gunfighterj.foxbnc.co.uk) has joined #archlinux-unregistered
+2020-10-17 18:46:14	<--	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-10-17 18:46:21	-->	aesthetik (aesthetik@zack6849.com) has joined #archlinux-unregistered
+2020-10-17 18:47:53	-->	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has joined #archlinux-unregistered
+2020-10-17 18:50:29	<--	cassie91 (~privchat@i16-lef02-th2-89-83-167-245.ft.lns.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-17 18:52:10	-->	_CrustY (~crusty@aftr-62-216-204-39.dynamic.mnet-online.de) has joined #archlinux-unregistered
+2020-10-17 18:53:45	-->	cordoba (~peter@cpc106993-hali7-2-0-cust748.17-1.cable.virginm.net) has joined #archlinux-unregistered
+2020-10-17 18:55:22	<--	cordoba (~peter@cpc106993-hali7-2-0-cust748.17-1.cable.virginm.net) has left #archlinux-unregistered
+2020-10-17 18:56:11	-->	nothing (~nothing@85-171-172-151.rev.numericable.fr) has joined #archlinux-unregistered
+2020-10-17 18:56:28	<--	Brueggus (~kivie@2a02:8108:1b80:9a0:9c50:ecff:eb38:7797) has quit (Quit: Verlassend)
+2020-10-17 19:13:05	-->	indiosmirc (~indiosmir@82.84.249.93) has joined #archlinux-unregistered
+2020-10-17 19:13:53	<--	indiosmirc (~indiosmir@82.84.249.93) has quit (Remote host closed the connection)
+2020-10-17 19:13:54	-->	koshak (~denis@i16-lef02-th2-89-83-167-245.ft.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-17 19:38:10	-->	wefwefwefwfeef (~Srain@mue-88-130-68-209.dsl.tropolys.de) has joined #archlinux-unregistered
+2020-10-17 19:38:43	<--	wefwefwefwfeef (~Srain@mue-88-130-68-209.dsl.tropolys.de) has left #archlinux-unregistered
+2020-10-17 19:52:35	-->	jfkkkr (588244d1@mue-88-130-68-209.dsl.tropolys.de) has joined #archlinux-unregistered
+2020-10-17 19:52:49	<--	jfkkkr (588244d1@mue-88-130-68-209.dsl.tropolys.de) has left #archlinux-unregistered
+2020-10-17 20:04:27	<--	nothing (~nothing@85-171-172-151.rev.numericable.fr) has quit (Quit: Leaving)
+2020-10-17 20:07:38	-->	Herbert (~herbert@177.76.246.109) has joined #archlinux-unregistered
+2020-10-17 20:14:40	<--	xybol (~quassel@dsl-50-5-206-99.fuse.net) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-10-17 20:16:24	<--	AHemlocksLie (~pi@cpe-192-136-209-207.tx.res.rr.com) has quit (Ping timeout: 246 seconds)
+2020-10-17 20:17:15	<--	Herbert (~herbert@177.76.246.109) has quit (Quit: Leaving)
+2020-10-17 20:17:27	@EMIYA	jvreeland38: Login detected, you can /join #archlinux now.
+2020-10-17 20:17:39	<--	jvreeland38 (~jvreeland@c-73-157-133-136.hsd1.or.comcast.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-17 20:20:37	-->	prototype (~konnoprot@host-233-204.nyropro.rochester.ny.us.clients.pavlovmedia.net) has joined #archlinux-unregistered
+2020-10-17 20:21:11	<--	veecue_ (~veecue@dynamic-095-114-053-079.95.114.pool.telefonica.de) has quit (Ping timeout: 240 seconds)
+2020-10-17 20:21:18	<--	Nekit12340071252 (~Nekit1234@84.51.99.176) has quit (Quit: The Lounge - https://thelounge.github.io)
+2020-10-17 20:23:08	-->	xybol (~quassel@dsl-50-5-206-99.fuse.net) has joined #archlinux-unregistered
+2020-10-17 20:23:25	--	prototype is now known as klercke
+2020-10-17 20:24:08	@EMIYA	klercke: Login detected, you can /join #archlinux now.
+2020-10-17 20:24:19	<--	klercke (~konnoprot@host-233-204.nyropro.rochester.ny.us.clients.pavlovmedia.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-17 20:24:36	<--	truthseeker_ (~avalance@139.5.248.99) has quit (Ping timeout: 264 seconds)
+2020-10-17 20:24:54	-->	klercke (~konnoprot@host-233-204.nyropro.rochester.ny.us.clients.pavlovmedia.net) has joined #archlinux-unregistered
+2020-10-17 20:25:02	<--	klercke (~konnoprot@host-233-204.nyropro.rochester.ny.us.clients.pavlovmedia.net) has left #archlinux-unregistered
+2020-10-17 20:27:12	-->	veecue (~veecue@dynamic-095-114-053-079.95.114.pool.telefonica.de) has joined #archlinux-unregistered
+2020-10-17 20:32:50	-->	da39a3ee5e6b4b0d (~textual@n11211935170.netvigator.com) has joined #archlinux-unregistered
+2020-10-17 20:34:10	-->	dviola (~diego@187.39.20.101) has joined #archlinux-unregistered
+2020-10-17 20:35:39	<--	_CrustY (~crusty@aftr-62-216-204-39.dynamic.mnet-online.de) has quit (Ping timeout: 246 seconds)
+2020-10-17 20:35:48	-->	_CrustY (~crusty@45.86.203.96) has joined #archlinux-unregistered
+2020-10-17 20:38:04	-->	JohnDVD (~JohnDVD@dynamic-002-247-250-034.2.247.pool.telefonica.de) has joined #archlinux-unregistered
+2020-10-17 20:38:14	<--	irb (NSAEchelon@retribution.maleficarum.org) has quit (Ping timeout: 260 seconds)
+2020-10-17 20:38:22	-->	irb (~irb@107.152.99.41) has joined #archlinux-unregistered
+2020-10-17 20:39:34	-->	chr0mag (~chr0mag@172.103.250.197) has joined #archlinux-unregistered
+2020-10-17 20:45:30	-->	qazxsw1122 (~qazxsw112@80.246.94.57) has joined #archlinux-unregistered
+2020-10-17 20:47:39	@EMIYA	qazxsw1122: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-10-17 20:48:13	<--	qazxsw1122 (~qazxsw112@80.246.94.57) has quit (Remote host closed the connection)
+2020-10-17 20:54:20	-->	Sylvain (5bae2c8e@91.174.44.142) has joined #archlinux-unregistered
+2020-10-17 20:55:15	<--	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has quit (Ping timeout: 246 seconds)
+2020-10-17 20:55:35	<--	Sylvain (5bae2c8e@91.174.44.142) has quit (Remote host closed the connection)
+2020-10-17 20:57:12	-->	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has joined #archlinux-unregistered
+2020-10-17 21:18:40	<--	_CrustY (~crusty@45.86.203.96) has quit (Ping timeout: 260 seconds)
+2020-10-17 21:19:59	-->	davidv7 (~davidv7@BSN-143-126-183.dynamic.siol.net) has joined #archlinux-unregistered
+2020-10-17 21:25:42	-->	acidtestr_ (~acidtestr@c-98-240-29-143.hsd1.tn.comcast.net) has joined #archlinux-unregistered
+2020-10-17 21:27:25	<--	Byan (~nullstrin@cermak.nullstring.io) has quit (Ping timeout: 260 seconds)
+2020-10-17 21:27:40	-->	Byan (~nullstrin@cermak.nullstring.io) has joined #archlinux-unregistered
+2020-10-17 21:28:35	<--	acidtestr (~acidtestr@c-98-240-29-143.hsd1.tn.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-10-17 21:29:07	<--	dr_gonzo (~dr_gonzo_@ip-88-152-204-41.hsi03.unitymediagroup.de) has quit (Quit: Leaving)
+2020-10-17 21:31:10	-->	SigmaX (~eric@pool-108-31-70-227.washdc.fios.verizon.net) has joined #archlinux-unregistered
+2020-10-17 21:37:35	<--	supercoven_ (~Supercove@dsl-hkibng32-54fb54-166.dhcp.inet.fi) has quit (Read error: Connection reset by peer)
+2020-10-17 21:38:11	-->	Nekit12340071252 (~Nekit1234@84.51.99.176) has joined #archlinux-unregistered
+2020-10-17 21:52:52	-->	whatsthecraic (~quassel@507286B6.static.ziggozakelijk.nl) has joined #archlinux-unregistered
+2020-10-17 22:00:09	<--	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Quit: anth0)
+2020-10-17 22:01:42	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-17 22:07:34	-->	nietomek (~tomasz@staticline-195-234-21-179.toya.net.pl) has joined #archlinux-unregistered
+2020-10-17 22:10:47	<--	Vrondir (~nikola@85.187.40.98) has quit (Quit: Konversation terminated!)
+2020-10-17 22:17:07	<--	Phryq (~Phryq@46.147.176.17) has quit (Remote host closed the connection)
+2020-10-17 22:27:41	-->	bsleep (bsleep@2600:3c02::f03c:91ff:fe94:1173) has joined #archlinux-unregistered
+2020-10-17 22:29:44	<--	dviola (~diego@187.39.20.101) has left #archlinux-unregistered
+2020-10-17 22:35:52	<--	JohnDVD (~JohnDVD@dynamic-002-247-250-034.2.247.pool.telefonica.de) has quit (Remote host closed the connection)
+2020-10-17 22:36:17	-->	JohnDVD (~JohnDVD@dynamic-002-247-250-034.2.247.pool.telefonica.de) has joined #archlinux-unregistered
+2020-10-17 22:38:09	<--	osmc (~osmc@host217-39-60-209.range217-39.btcentralplus.com) has quit (Read error: Connection reset by peer)
+2020-10-17 22:41:34	-->	preflex (~ashes@c-73-228-47-78.hsd1.nm.comcast.net) has joined #archlinux-unregistered
+2020-10-17 22:41:37	<--	_gypcio (uid22991@gateway/web/irccloud.com/x-zowurydgbrebsxui) has quit (Quit: Connection closed for inactivity)
+2020-10-17 22:43:31	-->	Kilroo (~Kilroo@71.71.105.78) has joined #archlinux-unregistered
+2020-10-17 22:43:32	<--	Kilroo (~Kilroo@71.71.105.78) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-17 22:44:56	-->	forestman88 (~forestman@nat-0-30.msu.umos.ru) has joined #archlinux-unregistered
+2020-10-17 22:45:39	<--	forestman88 (~forestman@nat-0-30.msu.umos.ru) has quit (Client Quit)
+2020-10-17 22:46:18	<--	gigitux (~gigitux@host-87-3-193-97.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2020-10-17 22:47:07	-->	Herbert (~herbert@177.76.246.109) has joined #archlinux-unregistered
+2020-10-17 22:51:35	<--	chr0mag (~chr0mag@172.103.250.197) has quit (Quit: chr0mag)
+2020-10-17 22:51:59	<--	koshak (~denis@i16-lef02-th2-89-83-167-245.ft.lns.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-17 22:53:50	<--	Herbert (~herbert@177.76.246.109) has quit (Quit: Leaving)
+2020-10-17 22:55:06	-->	_gypcio (uid22991@gateway/web/irccloud.com/x-zrorccchkkrcvscu) has joined #archlinux-unregistered
+2020-10-17 23:04:51	<--	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-10-17 23:05:23	-->	MickyMan77 (~MickyMan7@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-17 23:06:30	-->	Hurlsworth (~tim@c-73-225-237-194.hsd1.wa.comcast.net) has joined #archlinux-unregistered
+2020-10-17 23:20:22	-->	ergZay (~ergZay@c-98-210-50-216.hsd1.ca.comcast.net) has joined #archlinux-unregistered
+2020-10-24 21:00:35	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-24 21:00:35	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-24 21:00:35	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-10-24 21:00:35	--	Channel #archlinux-unregistered: 337 nicks (4 ops, 0 voices, 333 normals)
+2020-10-24 21:00:35	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-24 21:00:58	-->	cer0 (~cer0@2806:104e:1c:19e1:7e9a:a871:c3d:813f) has joined #archlinux-unregistered
+2020-10-24 21:01:02	-->	davidv7 (~davidv7@BSN-143-120-195.dynamic.siol.net) has joined #archlinux-unregistered
+2020-10-24 21:01:46	<--	onsmc (~m@88.133.28.253) has left #archlinux-unregistered
+2020-10-24 21:09:50	-->	h3ck (~Android@2409:4061:2c99:a723:12bf:b7b7:b72c:9d51) has joined #archlinux-unregistered
+2020-10-24 21:09:52	<--	h3ck (~Android@2409:4061:2c99:a723:12bf:b7b7:b72c:9d51) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-24 21:12:09	<--	anonzadas (~anonzadas@ja.sefod.eu) has quit (Quit: ZNC 1.6.5+deb1 - http://znc.in)
+2020-10-24 21:17:23	<--	_gypcio (uid22991@gateway/web/irccloud.com/x-qbpulfgxpxvxfgyg) has quit (Quit: Connection closed for inactivity)
+2020-10-24 21:18:44	@EMIYA	cer0: Login detected, you can /join #archlinux now.
+2020-10-24 21:30:15	<--	cer0 (~cer0@2806:104e:1c:19e1:7e9a:a871:c3d:813f) has quit (Quit: cer0)
+2020-10-24 21:31:16	-->	_nightw0lf (~batman@46-116-78-72.bb.netvision.net.il) has joined #archlinux-unregistered
+2020-10-24 21:42:12	<--	ogarro (~huhn@89-83-167-245.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-24 21:53:11	-->	murdoc1 (~murdoc@dslb-002-201-173-151.002.201.pools.vodafone-ip.de) has joined #archlinux-unregistered
+2020-10-24 21:56:02	-->	tubwuu (591bed3a@89.27.237.58) has joined #archlinux-unregistered
+2020-10-24 21:56:31	-->	AndroUserr (~androirc@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-24 22:07:10	<--	tubwuu (591bed3a@89.27.237.58) has quit (Max SendQ exceeded)
+2020-10-24 22:15:51	-->	asciiclown (~thom@024-216-102-054.res.spectrum.com) has joined #archlinux-unregistered
+2020-10-24 22:16:05	<--	asciiclown (~thom@024-216-102-054.res.spectrum.com) has left #archlinux-unregistered
+2020-10-24 22:19:14	-->	anonzadas (~anonzadas@ja.sefod.eu) has joined #archlinux-unregistered
+2020-10-24 22:19:23	<--	sergiomiguelrp_ (~quassel@190.123.237.219) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-10-24 22:19:41	<--	AndroUserr (~androirc@89-83-167-245.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-24 22:20:08	-->	Bourne_Again (~wilssonma@186.6.197.17) has joined #archlinux-unregistered
+2020-10-24 22:21:52	<--	Bourne_Again (~wilssonma@186.6.197.17) has left #archlinux-unregistered
+2020-10-24 22:24:32	-->	penny24 (~privchat@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-24 22:33:32	-->	gures (ba06c511@186.6.197.17) has joined #archlinux-unregistered
+2020-10-24 22:34:21	<--	gures (ba06c511@186.6.197.17) has quit (Remote host closed the connection)
+2020-10-24 22:38:45	<--	penny24 (~privchat@89-83-167-245.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-24 22:39:32	-->	spenat (~spenat@c-1125235c.012-6-62726f1.bbcust.telenor.se) has joined #archlinux-unregistered
+2020-10-24 22:43:36	-->	akad (~akad@109107030050.radomsko.vectranet.pl) has joined #archlinux-unregistered
+2020-10-24 22:46:17	-->	NoTiFy (~SantosD@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-24 23:30:04	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-24 23:30:04	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-24 23:30:04	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:59
+2020-10-24 23:30:04	--	Channel #archlinux-unregistered: 337 nicks (4 ops, 0 voices, 333 normals)
+2020-10-24 23:30:05	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-24 23:40:52	-->	Nekit12340071252 (~Nekit1234@91.189.242.131) has joined #archlinux-unregistered
+2020-10-24 23:44:35	<--	itsnotgoodname4 (~itsnotgoo@c-24-18-94-47.hsd1.wa.comcast.net) has left #archlinux-unregistered
+2020-10-24 23:51:38	-->	akad (~akad@109107030050.radomsko.vectranet.pl) has joined #archlinux-unregistered
+2020-10-25 19:28:33	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-25 19:28:33	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-25 19:28:33	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:59
+2020-10-25 19:28:33	--	Channel #archlinux-unregistered: 337 nicks (4 ops, 0 voices, 333 normals)
+2020-10-25 19:28:35	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-25 19:30:26	<--	c0eos (~c0eos@171.244.116.78.rev.sfr.net) has quit (Quit: ZNC - https://znc.in)
+2020-10-25 19:30:44	-->	c0eos (~c0eos@171.244.116.78.rev.sfr.net) has joined #archlinux-unregistered
+2020-10-25 19:38:20	<--	Steve13 (~privchat@i16-lef02-th2-89-83-167-245.ft.lns.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-25 19:48:10	<--	_CrustY (~crusty@aftr-62-216-204-149.dynamic.mnet-online.de) has quit (Remote host closed the connection)
+2020-10-25 19:48:35	-->	_CrustY (~crusty@aftr-62-216-204-149.dynamic.mnet-online.de) has joined #archlinux-unregistered
+2020-10-25 19:58:02	-->	andybkof2001 (~andy37@201.141.61.28) has joined #archlinux-unregistered
+2020-10-25 19:58:17	@EMIYA	andybkof2001: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-10-25 19:59:40	@EMIYA	andybkof2001: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-10-25 19:59:49	<--	andybkof2001 (~andy37@201.141.61.28) has left #archlinux-unregistered
+2020-10-25 20:00:34	<--	hendrikpern (~hendriker@46.219.248.16) has quit (Read error: Connection reset by peer)
+2020-10-25 20:00:45	-->	hendrikpern (~hendriker@185.233.202.193) has joined #archlinux-unregistered
+2020-10-25 20:01:17	<--	hendrikpern (~hendriker@185.233.202.193) has quit (Remote host closed the connection)
+2020-10-25 20:01:34	-->	misterd (~Mibbit@i16-lef02-th2-89-83-167-245.ft.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-25 20:01:42	-->	hendrikpern (~hendriker@46.219.248.16) has joined #archlinux-unregistered
+2020-10-25 20:04:19	-->	akad (~akad@109107030050.radomsko.vectranet.pl) has joined #archlinux-unregistered
+2020-10-25 20:06:09	@EMIYA	akad: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-10-25 20:06:53	@EMIYA	akad: Login detected, you can /join #archlinux now.
+2020-10-25 20:07:03	-->	thomasD13 (~thomas@2001:16b8:3f91:ad00:7c5d:9649:de13:d255) has joined #archlinux-unregistered
+2020-10-25 20:07:05	<--	akad (~akad@109107030050.radomsko.vectranet.pl) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-10-25 20:19:12	<--	thomasD13 (~thomas@2001:16b8:3f91:ad00:7c5d:9649:de13:d255) has quit (Ping timeout: 260 seconds)
+2020-10-25 20:23:41	<--	rcoote (~rcoote@2a02:908:692:81c0:ec62:2854:b24a:4f2) has quit (Quit: Konversation terminated!)
+2020-10-25 20:25:25	<--	misterd (~Mibbit@i16-lef02-th2-89-83-167-245.ft.lns.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-25 20:29:31	<--	bsleep (~bsleep@li1319-160.members.linode.com) has quit (Quit: Goodbye!)
+2020-10-25 20:33:03	-->	bsleep (bsleep@2600:3c02::f03c:91ff:fe94:1173) has joined #archlinux-unregistered
+2020-10-25 20:34:15	@EMIYA	ws2k3: Login detected, you can /join #archlinux now.
+2020-10-25 20:35:50	-->	s34r (~s34r@51.148.134.221) has joined #archlinux-unregistered
+2020-10-25 20:43:43	<--	s34r (~s34r@51.148.134.221) has quit (Quit: WeeChat 2.9)
+2020-10-25 20:49:51	-->	toobluesc (~toobluesc@2604:5500:c223:f900:b9ac:143d:b318:231a) has joined #archlinux-unregistered
+2020-10-25 20:56:16	-->	pvdp665564 (~pvdp@180-150-101-81.b49665.bne.static.aussiebb.net) has joined #archlinux-unregistered
+2020-10-25 21:03:25	-->	Guest10_ (~textual@p200300e82715fd00c8e33dfcc08915a2.dip0.t-ipconnect.de) has joined #archlinux-unregistered
+2020-10-25 21:03:40	<--	Guest10_ (~textual@p200300e82715fd00c8e33dfcc08915a2.dip0.t-ipconnect.de) has quit (Client Quit)
+2020-10-25 21:09:45	<--	mkru (~mkru@babilon.nat.student.pw.edu.pl) has quit (Quit: Leaving)
+2020-10-25 21:15:33	<--	Phryq (~Phryq@46.147.148.54) has quit (Remote host closed the connection)
+2020-10-31 11:45:08	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-31 11:45:08	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-31 11:45:08	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-10-31 11:45:08	--	Channel #archlinux-unregistered: 344 nicks (4 ops, 0 voices, 340 normals)
+2020-10-31 11:45:08	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-31 11:45:43	<--	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has left #archlinux-unregistered
+2020-10-31 22:03:27	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-10-31 22:03:27	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-10-31 22:03:27	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-10-31 22:03:27	--	Channel #archlinux-unregistered: 338 nicks (4 ops, 0 voices, 334 normals)
+2020-10-31 22:03:29	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-10-31 22:03:43	-->	Bakerboy (~gordy@84.65.181.154) has joined #archlinux-unregistered
+2020-10-31 22:04:23	-->	zeiplyn (~zeiplyn@adijon-655-1-145-55.w90-33.abo.wanadoo.fr) has joined #archlinux-unregistered
+2020-10-31 22:10:47	<--	dviola (~diego@187.39.20.143) has left #archlinux-unregistered
+2020-10-31 22:13:01	<--	KaraMom31 (~Kara@89-83-167-245.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-10-31 22:21:58	-->	Lynn17 (~Lynn17@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-31 22:22:14	<--	Lynn17 (~Lynn17@89-83-167-245.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2020-10-31 22:26:27	-->	anth0_ (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-31 22:28:08	<--	Anth0mk (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Ping timeout: 264 seconds)
+2020-10-31 22:28:17	<--	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Ping timeout: 260 seconds)
+2020-10-31 22:28:17	--	anth0_ is now known as anth0
+2020-10-31 22:45:57	<--	Bakerboy (~gordy@84.65.181.154) has quit (Ping timeout: 268 seconds)
+2020-10-31 22:48:09	-->	mawiegand_ (~mwiegand@port-92-192-72-1.dynamic.as20676.net) has joined #archlinux-unregistered
+2020-10-31 22:57:18	<--	Vrondir (~nikola@85.187.40.98) has quit (Quit: Konversation terminated!)
+2020-10-31 23:13:55	<--	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Quit: anth0)
+2020-10-31 23:14:08	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-31 23:20:52	-->	yunhao94_ (~yunhao94@183.197.176.181) has joined #archlinux-unregistered
+2020-10-31 23:24:45	<--	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Quit: anth0)
+2020-10-31 23:25:02	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-31 23:25:30	<--	yunhao94_ (~yunhao94@183.197.176.181) has quit (Ping timeout: 272 seconds)
+2020-10-31 23:26:02	<--	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Client Quit)
+2020-10-31 23:26:17	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-31 23:35:31	<--	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Quit: anth0)
+2020-10-31 23:35:46	-->	davidv7 (~davidv7@BSN-142-52-231.dynamic.siol.net) has joined #archlinux-unregistered
+2020-10-31 23:35:46	-->	Veracioux (~Veracioux@5.43.73.218) has joined #archlinux-unregistered
+2020-10-31 23:39:44	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-10-31 23:43:52	<--	mawiegand_ (~mwiegand@port-92-192-72-1.dynamic.as20676.net) has quit (Ping timeout: 260 seconds)
+2020-10-31 23:48:11	-->	mawiegand_ (~mwiegand@port-92-192-72-1.dynamic.as20676.net) has joined #archlinux-unregistered
+2020-11-01 12:18:15	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-unregistered
+2020-11-01 12:18:15	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-01 12:18:15	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-01 12:18:15	--	Channel #archlinux-unregistered: 335 nicks (4 ops, 0 voices, 331 normals)
+2020-11-01 12:18:20	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-01 12:18:40	<--	tespa (~tespa@ppp-94-65-131-117.home.otenet.gr) has quit (Client Quit)
+2020-11-01 12:23:30	-->	pvdp665564 (~pvdp@180-150-101-81.b49665.bne.static.aussiebb.net) has joined #archlinux-unregistered
+2020-11-01 12:36:29	<--	TMan459 (~TMan459@068-113-233-124.res.spectrum.com) has quit (Ping timeout: 264 seconds)
+2020-11-01 12:37:21	-->	ergZay (~ergZay@c-98-210-50-216.hsd1.ca.comcast.net) has joined #archlinux-unregistered
+2020-11-01 12:37:22	<--	ergZay (~ergZay@c-98-210-50-216.hsd1.ca.comcast.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-01 12:45:50	-->	jesee (~jesee@116.30.192.63) has joined #archlinux-unregistered
+2020-11-01 12:50:31	<--	jesee (~jesee@116.30.192.63) has quit (Quit: Leaving)
+2020-11-01 12:52:41	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-01 12:54:44	<--	CrustY_ (~crusty@45.86.203.209) has quit (Read error: Connection reset by peer)
+2020-11-01 13:09:42	-->	JohnDVD (~JohnDVD@dynamic-002-247-250-038.2.247.pool.telefonica.de) has joined #archlinux-unregistered
+2020-11-01 13:14:38	-->	i_hate_p_e_d_o_p (~privchat@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-01 13:17:21	<--	i_hate_p_e_d_o_p (~privchat@89-83-167-245.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-11-01 13:20:51	-->	blackstar (~blackstar@89-83-167-245.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-06 20:36:41	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-06 20:36:41	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-06 20:36:41	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-06 20:36:41	--	Channel #archlinux-unregistered: 335 nicks (4 ops, 0 voices, 331 normals)
+2020-11-06 20:36:41	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-06 20:43:30	<--	fgerling (~felgerlin@p4fe27989.dip0.t-ipconnect.de) has quit (Quit: WeeChat 2.9)
+2020-11-06 20:44:20	<--	sergiomiguelrp_ (~quassel@190.123.237.219) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-11-06 20:49:23	<--	enoq (~enoq@194-208-146-143.lampert.tv) has quit (Quit: enoq)
+2020-11-06 20:50:36	<--	CrustY_ (~crusty@aftr-62-216-204-66.dynamic.mnet-online.de) has quit (Ping timeout: 244 seconds)
+2020-11-06 21:01:01	<--	gigitux (~gigitux@host-79-52-4-169.retail.telecomitalia.it) has quit (Ping timeout: 256 seconds)
+2020-11-06 21:04:59	<--	Veracioux (~Veracioux@92.36.160.96) has quit (Ping timeout: 256 seconds)
+2020-11-06 21:05:16	-->	Lord_of_Life (~Lord@46.217.217.128) has joined #archlinux-unregistered
+2020-11-06 21:05:17	<--	Lord_of_Life (~Lord@46.217.217.128) has quit (Changing host)
+2020-11-06 21:05:17	-->	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has joined #archlinux-unregistered
+2020-11-06 21:05:59	<--	Lord_of_Life (~Lord@unaffiliated/lord-of-life/x-0885362) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-06 21:10:09	-->	lazur (~alloces@178-189-199-138.adsl.highway.telekom.at) has joined #archlinux-unregistered
+2020-11-06 21:38:08	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-06 21:55:49	<--	Brueggus (~kivie@2a0c:3b80:7b01:282::2) has quit (Remote host closed the connection)
+2020-11-06 21:59:23	-->	Veracioux (~Veracioux@92.36.160.96) has joined #archlinux-unregistered
+2020-11-06 22:07:29	-->	gregor550 (~thelounge@dynamic-093-132-040-028.93.132.pool.telefonica.de) has joined #archlinux-unregistered
+2020-11-06 22:08:53	<--	gregor550 (~thelounge@dynamic-093-132-040-028.93.132.pool.telefonica.de) has quit (Client Quit)
+2020-11-06 22:40:22	-->	lakiluki (~laki@141-138-54-60.dsl.iskon.hr) has joined #archlinux-unregistered
+2020-11-06 22:40:26	<--	lakiluki (~laki@141-138-54-60.dsl.iskon.hr) has quit (Changing host)
+2020-11-06 22:40:26	-->	lakiluki (~laki@unaffiliated/lakiluki) has joined #archlinux-unregistered
+2020-11-06 22:40:32	<--	lakiluki (~laki@unaffiliated/lakiluki) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-06 22:52:39	<--	Vrondir (~nikola@85.187.40.98) has quit (Quit: Konversation terminated!)
+2020-11-06 23:05:42	-->	Fidelio (~sne3413@45.9.236.13) has joined #archlinux-unregistered
+2020-11-06 23:08:51	<--	Fidelio (~sne3413@45.9.236.13) has quit (Remote host closed the connection)
+2020-11-06 23:10:50	-->	pvdp665564 (~pvdp@180-150-101-81.b49665.bne.static.aussiebb.net) has joined #archlinux-unregistered
+2020-11-06 23:16:22	<--	EagleTG (~eagletg@c-68-80-69-121.hsd1.pa.comcast.net) has quit (Remote host closed the connection)
+2020-11-06 23:20:21	<--	clone11_ (~clone@072-189-253-117.res.spectrum.com) has quit (Ping timeout: 256 seconds)
+2020-11-06 23:27:27	-->	acidtestr (~acidtestr@c-98-240-29-143.hsd1.tn.comcast.net) has joined #archlinux-unregistered
+2020-11-06 23:29:04	-->	acidtestr__ (~acidtestr@148.72.170.133) has joined #archlinux-unregistered
+2020-11-06 23:30:48	<--	acidtestr_ (~acidtestr@148.72.170.131) has quit (Ping timeout: 260 seconds)
+2020-11-06 23:31:39	<--	acidtestr (~acidtestr@c-98-240-29-143.hsd1.tn.comcast.net) has quit (Ping timeout: 246 seconds)
+2020-11-07 20:45:39	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-07 20:45:39	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-07 20:45:39	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-07 20:45:39	--	Channel #archlinux-unregistered: 335 nicks (4 ops, 0 voices, 331 normals)
+2020-11-07 20:45:39	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-07 20:45:54	--	root___ is now known as nougat
+2020-11-07 20:46:10	-->	JSHenry (~quassel@075-142-073-154.res.spectrum.com) has joined #archlinux-unregistered
+2020-11-07 20:47:07	-->	MrRaffo (~raffo@217.146.82.192) has joined #archlinux-unregistered
+2020-11-07 20:47:20	<--	nougat (~root@203.189.118.59) has quit (Client Quit)
+2020-11-07 20:47:35	<--	MrRaffo (~raffo@217.146.82.192) has quit (Quit: WeeChat 2.9)
+2020-11-07 20:47:49	-->	root___ (~root@203.189.118.59) has joined #archlinux-unregistered
+2020-11-07 20:50:16	<--	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2020-11-07 20:50:37	-->	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-07 20:51:36	-->	mkru (~mkru@babilon.nat.student.pw.edu.pl) has joined #archlinux-unregistered
+2020-11-07 20:52:42	<--	root___ (~root@203.189.118.59) has quit (Quit: leaving)
+2020-11-07 20:57:16	-->	fozz (~fozz@61.140.211.22) has joined #archlinux-unregistered
+2020-11-07 20:57:33	<--	fozz (~fozz@61.140.211.22) has quit (Client Quit)
+2020-11-07 20:59:30	-->	fozz (~fozz@61.140.211.22) has joined #archlinux-unregistered
+2020-11-07 21:02:40	-->	usbman5000 (6ad766ab@106.215.102.171) has joined #archlinux-unregistered
+2020-11-07 21:02:43	<--	usbman5000 (6ad766ab@106.215.102.171) has left #archlinux-unregistered
+2020-11-07 21:16:01	<--	cyrevolt (~cyrevolt@188.166.12.207) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-11-07 21:17:00	-->	cyrevolt (~cyrevolt@188.166.12.207) has joined #archlinux-unregistered
+2020-11-07 21:34:04	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-07 21:43:57	<--	dude187 (~chris@d149-67-46-78.try.wideopenwest.com) has quit (Ping timeout: 256 seconds)
+2020-11-07 21:50:47	-->	marian_ (~marian@d75-155-226-80.bchsia.telus.net) has joined #archlinux-unregistered
+2020-11-07 21:52:06	<--	marian_ (~marian@d75-155-226-80.bchsia.telus.net) has quit (Client Quit)
+2020-11-07 21:54:05	<--	mkru (~mkru@babilon.nat.student.pw.edu.pl) has quit (Quit: Leaving)
+2020-11-07 21:54:14	-->	azax (~root@bzq-79-182-106-180.red.bezeqint.net) has joined #archlinux-unregistered
+2020-11-07 21:54:50	<--	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2020-11-07 21:55:12	-->	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-07 21:57:32	@EMIYA	azax: You're not in #archlinux yet -- please log in to your freenode account first. (Type /topic for more info. Alternatively, type ?invite to get a one-time invite.)
+2020-11-07 21:57:53	@EMIYA	Ok, you can now /join the channel.
+2020-11-07 21:57:59	<--	azax (~root@bzq-79-182-106-180.red.bezeqint.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-07 22:08:30	<--	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2020-11-07 22:08:58	-->	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-07 22:10:19	<--	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2020-11-07 22:10:46	-->	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-07 22:10:51	<--	Nekit12340071252 (~Nekit1234@91.189.242.131) has quit (Quit: The Lounge - https://thelounge.github.io)
+2020-11-07 22:18:51	-->	acidtestr (~acidtestr@c-98-240-29-143.hsd1.tn.comcast.net) has joined #archlinux-unregistered
+2020-11-07 22:20:09	<--	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2020-11-07 22:20:23	-->	aviallon5 (aviallon@static-176-139-104-217.ftth.abo.bbox.fr) has joined #archlinux-unregistered
+2020-11-07 22:20:28	-->	acidtestr_____ (~acidtestr@148.72.170.132) has joined #archlinux-unregistered
+2020-11-07 22:22:13	<--	acidtestr____ (~acidtestr@148.72.170.132) has quit (Ping timeout: 265 seconds)
+2020-11-07 22:23:15	<--	acidtestr (~acidtestr@c-98-240-29-143.hsd1.tn.comcast.net) has quit (Ping timeout: 246 seconds)
+2020-11-07 22:30:34	<--	guest33333 (~guest3333@host-95-232-22-216.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2020-11-07 22:40:55	-->	b0tanik_ (~b0tanik@134.249.122.244) has joined #archlinux-unregistered
+2020-11-07 22:51:30	-->	dirhael8 (~dirhael@defreitas.no) has joined #archlinux-unregistered
+2020-11-07 22:56:33	<--	Vrondir (~nikola@85.187.40.98) has quit (Quit: Konversation terminated!)
+2020-11-07 23:05:00	-->	mandanlo (~mandanlo@196.121.86.173) has joined #archlinux-unregistered
+2020-11-07 23:05:06	<--	mandanlo (~mandanlo@196.121.86.173) has quit (Remote host closed the connection)
+2020-11-07 23:14:29	-->	pvdp665564 (~pvdp@180-150-101-81.b49665.bne.static.aussiebb.net) has joined #archlinux-unregistered
+2020-11-07 23:16:37	-->	TMan459 (~TMan459@068-113-233-124.res.spectrum.com) has joined #archlinux-unregistered
+2020-11-07 23:18:27	<--	TMan459 (~TMan459@068-113-233-124.res.spectrum.com) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-07 23:31:43	-->	reaVer (~reaVer@80-100-12-65.ip.xs4all.nl) has joined #archlinux-unregistered
+2020-11-07 23:32:04	<--	reaVer (~reaVer@80-100-12-65.ip.xs4all.nl) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-07 23:33:53	-->	reaVer (~reaVer@80-100-12-65.ip.xs4all.nl) has joined #archlinux-unregistered
+2020-11-07 23:34:24	<--	reaVer (~reaVer@80-100-12-65.ip.xs4all.nl) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-10 12:44:16	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-10 12:44:16	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-10 12:44:16	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-10 12:44:16	--	Channel #archlinux-unregistered: 335 nicks (4 ops, 0 voices, 331 normals)
+2020-11-10 12:44:16	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-10 12:44:27	<--	hendrikpern (~hendriker@88.155.21.227) has quit (Quit: Bye)
+2020-11-10 12:44:45	-->	hendrikpern (~hendriker@185.143.147.195) has joined #archlinux-unregistered
+2020-11-10 12:45:17	-->	fozz (~fozz@61.140.211.139) has joined #archlinux-unregistered
+2020-11-10 12:47:52	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-10 13:28:54	--	irc: disconnected from server
+2020-11-13 21:20:30	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-13 21:20:30	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-13 21:20:30	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-13 21:20:30	--	Channel #archlinux-unregistered: 335 nicks (4 ops, 0 voices, 331 normals)
+2020-11-13 21:20:31	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-13 21:34:47	-->	benklop (~benklop@23-24-136-153-static.hfc.comcastbusiness.net) has joined #archlinux-unregistered
+2020-11-13 21:42:08	-->	FMC (~FMC@31.4.243.200) has joined #archlinux-unregistered
+2020-11-13 21:43:45	-->	noudle (~noudle@ip-62-143-118-145.hsi01.unitymediagroup.de) has joined #archlinux-unregistered
+2020-11-13 21:46:45	<--	FMC (~FMC@31.4.243.200) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-13 21:52:18	-->	ruin_ghost (~ruin_ghos@2600:8806:600:728:260b:c327:85d3:b14e) has joined #archlinux-unregistered
+2020-11-13 21:52:26	<--	ruin_ghost (~ruin_ghos@2600:8806:600:728:260b:c327:85d3:b14e) has quit (Client Quit)
+2020-11-13 22:07:27	<--	benklop (~benklop@23-24-136-153-static.hfc.comcastbusiness.net) has quit (Ping timeout: 264 seconds)
+2020-11-13 22:10:06	-->	nocst3r (~nocst3r@2a01:c22:d090:4900:355:2028:d5ce:3764) has joined #archlinux-unregistered
+2020-11-13 22:10:24	<--	nocst3r (~nocst3r@2a01:c22:d090:4900:355:2028:d5ce:3764) has quit (Remote host closed the connection)
+2020-11-13 22:25:24	-->	nocst3r (~nocst3r@2a01:c22:d090:4900:355:2028:d5ce:3764) has joined #archlinux-unregistered
+2020-11-13 22:31:21	-->	thermalthrottle_ (~quassel@93.183.152.66) has joined #archlinux-unregistered
+2020-11-13 22:31:38	-->	Guest91194 (~foopub@152.32.109.142) has joined #archlinux-unregistered
+2020-11-13 22:31:40	<--	thermalthrottle_ (~quassel@93.183.152.66) has quit (Client Quit)
+2020-11-13 22:32:30	<--	nocst3r (~nocst3r@2a01:c22:d090:4900:355:2028:d5ce:3764) has quit (Quit: Leaving)
+2020-11-13 22:35:10	-->	nocst3r (~nocst3r@2a01:c22:d090:4900:355:2028:d5ce:3764) has joined #archlinux-unregistered
+2020-11-13 22:36:10	<--	Guest91194 (~foopub@152.32.109.142) has quit (Ping timeout: 258 seconds)
+2020-11-13 22:37:27	<--	syslock (~syslock@dialin-ip-26-059.ilmenau.net) has quit (Quit: tschüß...)
+2020-11-13 22:38:32	-->	rgk (~rgk@li42-14.members.linode.com) has joined #archlinux-unregistered
+2020-11-13 22:39:04	-->	jstypo (~jstypo@190.73.69.129) has joined #archlinux-unregistered
+2020-11-13 22:39:10	<--	rgk (~rgk@li42-14.members.linode.com) has quit (Client Quit)
+2020-11-13 22:40:05	<--	jstypo (~jstypo@190.73.69.129) has left #archlinux-unregistered
+2020-11-13 22:41:49	<--	plwweasel (~quassel@c-24-98-191-131.hsd1.ga.comcast.net) has quit (Quit: No Ping reply in 180 seconds.)
+2020-11-13 22:43:15	-->	plwweasel (~quassel@c-24-98-191-131.hsd1.ga.comcast.net) has joined #archlinux-unregistered
+2020-11-13 22:43:52	-->	Geordinateur (~Geordinat@218.37.194.77.rev.sfr.net) has joined #archlinux-unregistered
+2020-11-13 22:44:58	-->	prismate (~prismate@2a02:810b:1ca0:cd8:a831:802:5d5e:7425) has joined #archlinux-unregistered
+2020-11-13 22:47:40	@EMIYA	prismate: Login detected, you can /join #archlinux now.
+2020-11-13 22:48:14	<--	prismate (~prismate@2a02:810b:1ca0:cd8:a831:802:5d5e:7425) has left #archlinux-unregistered
+2020-11-13 22:56:06	<--	gschanuel126 (~gschanuel@200.150.103.115) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-11-13 22:57:45	<--	Shnider_ (~shnider@134.41.29.223) has quit (Quit: Leaving)
+2020-11-13 22:58:33	<--	nocst3r (~nocst3r@2a01:c22:d090:4900:355:2028:d5ce:3764) has quit (Quit: Leaving)
+2020-11-13 23:00:15	-->	pvdp665564 (~pvdp@180-150-101-81.b49665.bne.static.aussiebb.net) has joined #archlinux-unregistered
+2020-11-13 23:00:47	-->	nocst3r (~nocst3r@2a01:c22:d090:4900:355:2028:d5ce:3764) has joined #archlinux-unregistered
+2020-11-15 13:02:47	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-15 13:02:47	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-15 13:02:47	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-15 13:02:47	--	Channel #archlinux-unregistered: 336 nicks (4 ops, 0 voices, 332 normals)
+2020-11-15 13:02:47	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-15 13:04:15	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-15 13:19:32	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-15 13:19:32	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-15 13:19:32	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-15 13:19:32	--	Channel #archlinux-unregistered: 337 nicks (4 ops, 0 voices, 333 normals)
+2020-11-15 13:19:32	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-15 13:19:39	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-15 21:02:59	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-15 21:02:59	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-15 21:02:59	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-15 21:02:59	--	Channel #archlinux-unregistered: 343 nicks (4 ops, 0 voices, 339 normals)
+2020-11-15 21:02:59	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-15 21:04:49	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-16 21:39:03	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-16 21:39:03	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-16 21:39:03	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-16 21:39:03	--	Channel #archlinux-unregistered: 350 nicks (4 ops, 0 voices, 346 normals)
+2020-11-16 21:39:04	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-16 21:39:10	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-19 19:53:12	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-19 19:53:12	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-19 19:53:12	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-19 19:53:12	--	Channel #archlinux-unregistered: 356 nicks (4 ops, 0 voices, 352 normals)
+2020-11-19 19:53:12	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-19 19:53:21	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-22 11:22:12	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-22 11:22:12	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-22 11:22:12	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-22 11:22:12	--	Channel #archlinux-unregistered: 346 nicks (4 ops, 0 voices, 342 normals)
+2020-11-22 11:22:12	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-22 11:22:23	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-25 20:10:13	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #archlinux-unregistered
+2020-11-25 20:10:13	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-25 20:10:13	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-25 20:10:13	--	Channel #archlinux-unregistered: 333 nicks (4 ops, 0 voices, 329 normals)
+2020-11-25 20:10:14	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-25 20:27:18	-->	zeiplyn (~zeiplyn@adijon-655-1-166-187.w90-6.abo.wanadoo.fr) has joined #archlinux-unregistered
+2020-11-25 20:31:06	-->	TMan459 (~TMan459@068-113-233-124.res.spectrum.com) has joined #archlinux-unregistered
+2020-11-25 20:34:12	<--	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-29 18:36:41	-->	captainchris (~captainch@2001:861:3181:3540:f71e:6ac3:b9c5:ee) has joined #archlinux-unregistered
+2020-11-29 18:36:41	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-29 18:36:41	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-29 18:36:41	--	Channel #archlinux-unregistered: 336 nicks (4 ops, 0 voices, 332 normals)
+2020-11-29 18:36:41	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-29 18:36:47	<--	captainchris (~captainch@2001:861:3181:3540:f71e:6ac3:b9c5:ee) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-11-29 18:51:55	--	irc: disconnected from server
+2020-11-30 21:29:25	-->	captainchris (~captainch@2001:861:3181:3540:f71e:6ac3:b9c5:ee) has joined #archlinux-unregistered
+2020-11-30 21:29:25	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-11-30 21:29:25	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-11-30 21:29:25	--	Channel #archlinux-unregistered: 336 nicks (4 ops, 0 voices, 332 normals)
+2020-11-30 21:29:25	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-11-30 21:30:10	<--	gwoplock (~quassel@70.240.245.118) has quit (Quit: http://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-11-30 21:30:14	-->	s3phir0th115 (~s3phir0th@204.111.136.23) has joined #archlinux-unregistered
+2020-11-30 21:31:26	<--	EagleTG (~eagletg@dyn206152.cc.lehigh.edu) has quit (Ping timeout: 246 seconds)
+2020-11-30 21:33:32	-->	gwoplock (~quassel@70.240.245.118) has joined #archlinux-unregistered
+2020-11-30 21:36:43	-->	noudle (~noudle@ip-62-143-118-145.hsi01.unitymediagroup.de) has joined #archlinux-unregistered
+2020-11-30 21:48:22	--	irc: disconnected from server
+2020-12-01 22:46:44	-->	captainchris (~captainch@2001:861:3181:3540:9e33:c22e:1581:96fa) has joined #archlinux-unregistered
+2020-12-01 22:46:44	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-01 22:46:44	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-01 22:46:44	--	Channel #archlinux-unregistered: 326 nicks (4 ops, 0 voices, 322 normals)
+2020-12-01 22:46:44	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-01 22:55:37	-->	joris (~joris@2a02-a44b-73c7-1-d510-d730-6b8f-fc73.fixed6.kpn.net) has joined #archlinux-unregistered
+2020-12-03 20:27:39	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #archlinux-unregistered
+2020-12-03 20:27:39	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-03 20:27:39	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-03 20:27:39	--	Channel #archlinux-unregistered: 340 nicks (4 ops, 0 voices, 336 normals)
+2020-12-03 20:27:39	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-03 20:37:08	<--	MetaHertz2 (~hz@nat-80-0.nsk.sibset.net) has quit (Quit: Leaving)
+2020-12-03 20:42:59	<--	matzkowsky (~matzkowsk@2001:16b8:57ca:9f00:5d3c:502f:bf18:e161) has quit (Remote host closed the connection)
+2020-12-03 21:09:50	-->	nullbeet (~nullbeet@2603-6011-4001-545e-0000-0000-0000-0eeb.res6.spectrum.com) has joined #archlinux-unregistered
+2020-12-03 21:10:24	<--	nullbeet (~nullbeet@2603-6011-4001-545e-0000-0000-0000-0eeb.res6.spectrum.com) has left #archlinux-unregistered
+2020-12-03 21:12:55	-->	mawiegand_ (~mwiegand@port-92-192-46-187.dynamic.as20676.net) has joined #archlinux-unregistered
+2020-12-03 21:13:53	<--	mawiegand (~mwiegand@port-92-192-46-187.dynamic.as20676.net) has quit (Ping timeout: 256 seconds)
+2020-12-03 21:25:27	<--	nickel84` (~user@37.228.235.160) has quit (Ping timeout: 272 seconds)
+2020-12-03 21:26:20	<--	ImmaSquatch (~ImmaSquat@2601:1c2:d00:d830::f58b) has quit (Remote host closed the connection)
+2020-12-03 21:29:09	-->	ImmaSquatch (~ImmaSquat@2601:1c2:d00:d830::f58b) has joined #archlinux-unregistered
+2020-12-03 21:31:17	<--	ImmaSquatch (~ImmaSquat@2601:1c2:d00:d830::f58b) has quit (Remote host closed the connection)
+2020-12-03 21:32:40	-->	ImmaSquatch (~ImmaSquat@2601:1c2:d00:d830::f58b) has joined #archlinux-unregistered
+2020-12-03 21:34:41	-->	h4x3d (~h4x3d@146-115-84-228.s3033.c3-0.sbo-ubr1.sbo.ma.cable.rcncustomer.com) has joined #archlinux-unregistered
+2020-12-03 21:48:45	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #archlinux-unregistered
+2020-12-03 21:48:45	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-03 21:48:45	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-03 21:48:45	--	Channel #archlinux-unregistered: 339 nicks (4 ops, 0 voices, 335 normals)
+2020-12-03 21:48:45	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-03 21:48:51	<--	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-04 21:19:17	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #archlinux-unregistered
+2020-12-04 21:19:17	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-04 21:19:17	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-04 21:19:17	--	Channel #archlinux-unregistered: 342 nicks (4 ops, 0 voices, 338 normals)
+2020-12-04 21:19:17	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-04 21:20:43	-->	ni291187 (~u931732@2600:1700:3571:d950:a4dc:36a8:b224:8554) has joined #archlinux-unregistered
+2020-12-04 21:28:39	<--	ni291187 (~u931732@2600:1700:3571:d950:a4dc:36a8:b224:8554) has quit (Ping timeout: 264 seconds)
+2020-12-04 21:33:31	-->	goodboy (~goodboy@bras-base-ptdvon2601w-grc-10-50-101-78-187.dsl.bell.ca) has joined #archlinux-unregistered
+2020-12-04 21:37:45	<--	nickel84` (~user@37.228.235.160) has quit (Ping timeout: 260 seconds)
+2020-12-04 21:38:01	-->	Sir_Andrei (~andrei@r179-28-204-5.dialup.mobile.ancel.net.uy) has joined #archlinux-unregistered
+2020-12-04 21:42:17	<--	noudle (~noudle@ip-62-143-118-145.hsi01.unitymediagroup.de) has quit
+2020-12-04 21:45:50	<--	Sir_Andrei (~andrei@r179-28-204-5.dialup.mobile.ancel.net.uy) has quit (Ping timeout: 256 seconds)
+2020-12-04 21:49:14	<--	goodboy (~goodboy@bras-base-ptdvon2601w-grc-10-50-101-78-187.dsl.bell.ca) has quit (Ping timeout: 256 seconds)
+2020-12-04 21:50:48	-->	goodboy (~goodboy@adsl-38-64-250-123.kwic.com) has joined #archlinux-unregistered
+2020-12-04 21:54:30	-->	Sir_Andrei (~andrei@r179-28-204-5.dialup.mobile.ancel.net.uy) has joined #archlinux-unregistered
+2020-12-04 21:59:08	<--	Sir_Andrei (~andrei@r179-28-204-5.dialup.mobile.ancel.net.uy) has quit (Client Quit)
+2020-12-04 22:05:05	<--	Alahakbar (~fckwhiTpl@2a01:c22:b818:c714::1d6) has quit (Remote host closed the connection)
+2020-12-04 22:05:14	<--	mickael (~mickael@2a01:e35:2fe0:5ac0:92bb:fd17:b577:8e93) has quit (Quit: mickael)
+2020-12-04 22:05:54	-->	Alahakbar (~fckwhiTpl@2a01:c22:b818:c714::1d6) has joined #archlinux-unregistered
+2020-12-04 22:06:56	<--	Brueggus (~kivie@2a0c:3b80:7b01:282::2) has quit (Quit: Verlassend)
+2020-12-04 22:07:16	<--	OwlZ (~hydron@ppp91-122-2-102.pppoe.avangarddsl.ru) has quit (Remote host closed the connection)
+2020-12-04 22:07:59	-->	OwlZ (~hydron@ppp91-122-2-102.pppoe.avangarddsl.ru) has joined #archlinux-unregistered
+2020-12-04 22:12:28	<--	OwlZ (~hydron@ppp91-122-2-102.pppoe.avangarddsl.ru) has quit (Ping timeout: 256 seconds)
+2020-12-04 22:15:08	<--	vvrng (~vvrng@141-136-172-164.dsl.iskon.hr) has quit (Ping timeout: 260 seconds)
+2020-12-04 22:17:01	-->	vvrng (~vvrng@141-136-145-118.dsl.iskon.hr) has joined #archlinux-unregistered
+2020-12-04 22:20:45	<--	Bendalf (~Bendalf.b@46.36.31.26) has quit (Read error: Connection reset by peer)
+2020-12-04 22:21:16	-->	Puns_and_ships (~aczaplews@cpc113460-oxfd27-2-0-cust620.4-3.cable.virginm.net) has joined #archlinux-unregistered
+2020-12-04 22:28:11	-->	Bendalf (~Bendalf@46.36.31.26) has joined #archlinux-unregistered
+2020-12-04 22:29:08	<--	straub (~straub@unaffiliated/straub) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-12-04 22:31:10	<--	kaiwulf (~kvirc@h122.131.101.208.dynamic.ip.windstream.net) has quit (Ping timeout: 256 seconds)
+2020-12-04 22:35:14	-->	xos (~xos@2600:6c56:4900:7ee5::5f7) has joined #archlinux-unregistered
+2020-12-04 22:37:10	<--	xos (~xos@2600:6c56:4900:7ee5::5f7) has left #archlinux-unregistered
+2020-12-04 22:38:43	-->	OwlZ (~hydron@ppp91-122-2-102.pppoe.avangarddsl.ru) has joined #archlinux-unregistered
+2020-12-04 22:43:57	<--	OwlZ (~hydron@ppp91-122-2-102.pppoe.avangarddsl.ru) has quit (Ping timeout: 240 seconds)
+2020-12-04 22:48:20	<--	goodboy (~goodboy@adsl-38-64-250-123.kwic.com) has quit (Ping timeout: 260 seconds)
+2020-12-04 22:48:50	-->	branau (~branau@ip70-190-96-4.ph.ph.cox.net) has joined #archlinux-unregistered
+2020-12-04 22:50:07	-->	goodboy (~goodboy@bras-base-ptdvon2601w-grc-10-50-101-78-187.dsl.bell.ca) has joined #archlinux-unregistered
+2020-12-04 22:52:55	<--	isgy (~jy@82.38.116.187) has quit (Ping timeout: 256 seconds)
+2020-12-04 22:54:58	--	branau is now known as lefteye
+2020-12-04 22:56:10	@EMIYA	lefteye: Login detected, you can /join #archlinux now.
+2020-12-04 22:59:05	<--	lefteye (~branau@ip70-190-96-4.ph.ph.cox.net) has left #archlinux-unregistered
+2020-12-04 22:59:13	-->	OwlZ (~hydron@ppp91-122-2-102.pppoe.avangarddsl.ru) has joined #archlinux-unregistered
+2020-12-04 23:02:27	-->	cupantae (~cupantae@109.255.216.237) has joined #archlinux-unregistered
+2020-12-04 23:02:37	<--	cupantae (~cupantae@109.255.216.237) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-04 23:05:18	<--	Puns_and_ships (~aczaplews@cpc113460-oxfd27-2-0-cust620.4-3.cable.virginm.net) has quit (Quit: WeeChat 2.9)
+2020-12-04 23:06:00	<--	OwlZ (~hydron@ppp91-122-2-102.pppoe.avangarddsl.ru) has quit (Ping timeout: 260 seconds)
+2020-12-04 23:06:38	<--	Guest26918 (~Sentire@87.122.213.249) has quit (Quit: Leaving)
+2020-12-06 13:01:52	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #archlinux-unregistered
+2020-12-06 13:01:52	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-06 13:01:52	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-06 13:01:52	--	Channel #archlinux-unregistered: 331 nicks (4 ops, 0 voices, 327 normals)
+2020-12-06 13:01:52	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-06 13:07:10	-->	horseface (~horseface@128.90.21.113) has joined #archlinux-unregistered
+2020-12-06 13:07:29	<--	horseface (~horseface@128.90.21.113) has quit (Remote host closed the connection)
+2020-12-06 13:07:48	<--	zeiplyn (~zeiplyn@adijon-655-1-127-130.w90-33.abo.wanadoo.fr) has quit (Quit: Leaving)
+2020-12-06 13:11:27	-->	cupantae (~cupantae@109.255.216.237) has joined #archlinux-unregistered
+2020-12-06 13:17:06	<--	Vrondir (~nikola@85.187.40.98) has quit (Quit: Konversation terminated!)
+2020-12-06 13:22:15	-->	tchan1 (~tchan@c-98-206-141-238.hsd1.il.comcast.net) has joined #archlinux-unregistered
+2020-12-06 13:23:10	-->	Herbert (~herbert@177.102.249.32) has joined #archlinux-unregistered
+2020-12-06 13:26:19	-->	gigitux (~gigitux@host-79-33-148-234.retail.telecomitalia.it) has joined #archlinux-unregistered
+2020-12-06 13:32:13	<--	OwlZ (~hydron@pppoe.95-55-129-37.dynamic.avangarddsl.ru) has quit (Remote host closed the connection)
+2020-12-06 13:37:17	<--	ren0v0 (~ren0v0@156.67.32.22) has quit (Ping timeout: 272 seconds)
+2020-12-06 13:46:42	<--	yef (~yef@unaffiliated/hijef) has quit (Read error: Connection reset by peer)
+2020-12-06 13:47:00	-->	yef (~yef@136.55.183.101) has joined #archlinux-unregistered
+2020-12-06 13:47:00	<--	yef (~yef@136.55.183.101) has quit (Changing host)
+2020-12-06 13:47:00	-->	yef (~yef@unaffiliated/hijef) has joined #archlinux-unregistered
+2020-12-06 13:55:50	-->	Pib (~Pib@167-179-186-79.a7b3ba.bne.nbn.aussiebb.net) has joined #archlinux-unregistered
+2020-12-06 13:56:28	-->	Nekit12340073 (~Nekit1234@134.0.102.59) has joined #archlinux-unregistered
+2020-12-06 14:00:25	-->	OwlZ (~hydron@pppoe.95-55-129-37.dynamic.avangarddsl.ru) has joined #archlinux-unregistered
+2020-12-06 14:05:41	@EMIYA	cupantae: Login detected, you can /join #archlinux now.
+2020-12-06 14:05:45	<--	cupantae (~cupantae@109.255.216.237) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-06 14:06:04	-->	vvrng (~vvrng@50-229.dsl.iskon.hr) has joined #archlinux-unregistered
+2020-12-06 14:06:42	-->	zeiplyn (~zeiplyn@adijon-655-1-127-130.w90-33.abo.wanadoo.fr) has joined #archlinux-unregistered
+2020-12-06 14:06:52	<--	davidv7 (~davidv7@BSN-143-123-193.dynamic.siol.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-06 14:11:28	<--	OwlZ (~hydron@pppoe.95-55-129-37.dynamic.avangarddsl.ru) has quit (Remote host closed the connection)
+2020-12-06 14:12:30	<--	yef (~yef@unaffiliated/hijef) has quit (Quit: peace be with you)
+2020-12-06 14:13:28	-->	yef (~yef@136.55.183.101) has joined #archlinux-unregistered
+2020-12-06 14:13:28	<--	yef (~yef@136.55.183.101) has quit (Changing host)
+2020-12-06 14:13:28	-->	yef (~yef@unaffiliated/hijef) has joined #archlinux-unregistered
+2020-12-06 14:23:23	<--	gigitux (~gigitux@host-79-33-148-234.retail.telecomitalia.it) has quit (Ping timeout: 264 seconds)
+2020-12-06 14:24:11	<--	tchan1 (~tchan@c-98-206-141-238.hsd1.il.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-12-06 14:24:42	-->	OwlZ (~hydron@pppoe.95-55-129-37.dynamic.avangarddsl.ru) has joined #archlinux-unregistered
+2020-12-06 14:25:28	-->	tchan1 (~tchan@c-98-206-141-238.hsd1.il.comcast.net) has joined #archlinux-unregistered
+2020-12-06 14:26:35	<--	tchan1 (~tchan@c-98-206-141-238.hsd1.il.comcast.net) has quit (Client Quit)
+2020-12-06 14:30:22	<--	OwlZ (~hydron@pppoe.95-55-129-37.dynamic.avangarddsl.ru) has quit (Ping timeout: 240 seconds)
+2020-12-06 14:31:15	-->	gschanuel1267874 (~gschanuel@201.89.125.40) has joined #archlinux-unregistered
+2020-12-12 12:29:05	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #archlinux-unregistered
+2020-12-12 12:29:05	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-12 12:29:05	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-12 12:29:05	--	Channel #archlinux-unregistered: 325 nicks (4 ops, 0 voices, 321 normals)
+2020-12-12 12:29:05	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-12 12:30:48	-->	Mr-istov (~quassel@77.29.208.114) has joined #archlinux-unregistered
+2020-12-12 12:38:04	-->	gigitux (~gigitux@host-82-59-95-173.retail.telecomitalia.it) has joined #archlinux-unregistered
+2020-12-12 12:49:01	<--	gigitux (~gigitux@host-82-59-95-173.retail.telecomitalia.it) has quit (Ping timeout: 260 seconds)
+2020-12-12 12:50:10	<--	scientes (~scientes@2001:bc8:62c:6e::1) has quit (Changing host)
+2020-12-12 12:50:10	-->	scientes (~scientes@unaffiliated/scientes) has joined #archlinux-unregistered
+2020-12-12 12:50:10	@EMIYA	scientes: Login detected, you can /join #archlinux now.
+2020-12-12 12:50:52	-->	storm_ (~storm@176.88.143.132) has joined #archlinux-unregistered
+2020-12-12 12:51:32	<--	scientes (~scientes@unaffiliated/scientes) has left #archlinux-unregistered
+2020-12-12 12:53:13	<--	storm_ (~storm@176.88.143.132) has quit (Client Quit)
+2020-12-12 12:53:52	-->	gigitux (~gigitux@82.59.95.173) has joined #archlinux-unregistered
+2020-12-12 12:57:25	-->	GyroW_ (~GyroW@d54C03E98.access.telenet.be) has joined #archlinux-unregistered
+2020-12-12 12:57:25	<--	GyroW_ (~GyroW@d54C03E98.access.telenet.be) has quit (Changing host)
+2020-12-12 12:57:25	-->	GyroW_ (~GyroW@unaffiliated/gyrow) has joined #archlinux-unregistered
+2020-12-12 12:58:00	<--	GyroW (~GyroW@unaffiliated/gyrow) has quit (Ping timeout: 240 seconds)
+2020-12-12 12:59:04	-->	cerber130783 (~cerber130@dhcp-196-229-208-178.metronv.ru) has joined #archlinux-unregistered
+2020-12-12 13:07:34	<--	madnight (~madnight@static.59.103.201.195.clients.your-server.de) has quit (Quit: ZNC 1.7.1 - https://znc.in)
+2020-12-12 13:07:40	-->	tuxflux (~tuxflux@180.51-175-248.customer.lyse.net) has joined #archlinux-unregistered
+2020-12-12 13:19:51	<--	tuxflux (~tuxflux@180.51-175-248.customer.lyse.net) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-12 13:26:05	<--	gigitux (~gigitux@82.59.95.173) has quit (Ping timeout: 256 seconds)
+2020-12-12 13:29:38	<--	Lord_of_Life_ (~Lord@46.217.220.217) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-12 13:32:32	<--	fqr (~fqrious@129.205.113.248) has quit (Ping timeout: 256 seconds)
+2020-12-12 13:42:48	<--	cerber130783 (~cerber130@dhcp-196-229-208-178.metronv.ru) has quit (Quit: Konversation terminated!)
+2020-12-12 13:44:58	-->	cerber130783 (~cerber130@dhcp-196-229-208-178.metronv.ru) has joined #archlinux-unregistered
+2020-12-12 13:45:57	-->	hudo__ (~hudo@62.68.25.98) has joined #archlinux-unregistered
+2020-12-12 13:51:49	<--	cerber130783 (~cerber130@dhcp-196-229-208-178.metronv.ru) has quit (Quit: Konversation terminated!)
+2020-12-12 13:55:00	<--	Mr-istov (~quassel@77.29.208.114) has quit (Ping timeout: 240 seconds)
+2020-12-12 13:55:58	-->	cerber130783 (~cerber130@dhcp-196-229-208-178.metronv.ru) has joined #archlinux-unregistered
+2020-12-12 14:03:27	-->	zeiplyn (~zeiplyn@adijon-655-1-136-124.w92-161.abo.wanadoo.fr) has joined #archlinux-unregistered
+2020-12-12 14:20:30	-->	gigitux (~gigitux@host-82-59-95-173.retail.telecomitalia.it) has joined #archlinux-unregistered
+2020-12-12 14:20:55	-->	madnight (~madnight@static.59.103.201.195.clients.your-server.de) has joined #archlinux-unregistered
+2020-12-12 14:24:39	<--	Vrondir (~nikola@85.187.40.98) has quit (Quit: Konversation terminated!)
+2020-12-12 14:27:49	-->	FMC (~FMC@31.4.243.109) has joined #archlinux-unregistered
+2020-12-12 14:29:40	-->	remonshai (~remonshai@103.157.94.64) has joined #archlinux-unregistered
+2020-12-12 14:30:13	<--	remonshai (~remonshai@103.157.94.64) has quit (Changing host)
+2020-12-12 14:30:13	-->	remonshai (~remonshai@unaffiliated/remonshai) has joined #archlinux-unregistered
+2020-12-12 14:30:13	@EMIYA	remonshai: Login detected, you can /join #archlinux now.
+2020-12-12 14:30:21	<--	remonshai (~remonshai@unaffiliated/remonshai) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-12 14:31:25	<--	soumik (~soumik@202.142.118.26) has quit (Quit: WeeChat 2.9)
+2020-12-12 14:38:07	-->	hudo_ (~hudo@62.68.25.98) has joined #archlinux-unregistered
+2020-12-12 14:40:15	<--	FMC (~FMC@31.4.243.109) has quit (Remote host closed the connection)
+2020-12-12 14:41:48	<--	hudo__ (~hudo@62.68.25.98) has quit (Ping timeout: 260 seconds)
+2020-12-12 14:43:07	-->	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has joined #archlinux-unregistered
+2020-12-12 14:43:47	<--	anth0 (~anth0@i15-les04-th2-31-35-41-128.sfr.lns.abo.bbox.fr) has quit (Client Quit)
+2020-12-12 14:44:45	-->	hudo__ (~hudo@62.68.25.98) has joined #archlinux-unregistered
+2020-12-12 14:47:51	-->	_CrustY (~crusty@2001:a61:5087:3301:150f:7cc1:324d:a07d) has joined #archlinux-unregistered
+2020-12-12 14:47:54	<--	hudo__ (~hudo@62.68.25.98) has quit (Client Quit)
+2020-12-12 14:49:04	<--	hudo_ (~hudo@62.68.25.98) has quit (Ping timeout: 265 seconds)
+2020-12-12 14:58:12	-->	Herbert (~herbert@179.97.154.131) has joined #archlinux-unregistered
+2020-12-12 14:58:28	<--	Herbert (~herbert@179.97.154.131) has quit (Client Quit)
+2020-12-12 15:05:06	-->	FMC (~FMC@31.4.243.120) has joined #archlinux-unregistered
+2020-12-12 15:07:08	<--	FMC (~FMC@31.4.243.120) has quit (Client Quit)
+2020-12-12 15:11:30	-->	FMC (~FMC@31.4.243.120) has joined #archlinux-unregistered
+2020-12-12 15:15:31	<--	Byan (~nullstrin@cermak.nullstring.io) has quit (Ping timeout: 256 seconds)
+2020-12-12 15:15:43	<--	FMC (~FMC@31.4.243.120) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-12 15:16:22	-->	Byan (~nullstrin@cermak.nullstring.io) has joined #archlinux-unregistered
+2020-12-12 15:20:09	<--	djanos (~djanos@ulmus.cannelle.eu.org) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-12-12 15:20:54	-->	djanos (~djanos@ulmus.cannelle.eu.org) has joined #archlinux-unregistered
+2020-12-12 15:24:03	<--	Nekit123400731 (~Nekit1234@134.0.102.59) has quit (Quit: The Lounge - https://thelounge.github.io)
+2020-12-12 15:31:53	-->	root_ (~root@103.13.105.34) has joined #archlinux-unregistered
+2020-12-12 15:31:55	--	root_ is now known as kai_oshin
+2020-12-12 15:32:00	@EMIYA	Ok, you can now /join the channel.
+2020-12-12 15:32:02	<--	kai_oshin (~root@103.13.105.34) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-12 15:36:19	<--	skylite (~skylite@2E6B2CD6.catv.pool.telekom.hu) has quit (Quit: bye...)
+2020-12-12 15:37:14	-->	skylite (~skylite@2E6B2CD6.catv.pool.telekom.hu) has joined #archlinux-unregistered
+2020-12-12 15:40:50	-->	FMC (~FMC@31.4.243.120) has joined #archlinux-unregistered
+2020-12-12 15:45:06	<--	FMC (~FMC@31.4.243.120) has quit (Client Quit)
+2020-12-12 15:49:55	<--	Kehet (~kehet@68.183.73.44) has quit (Quit: o.o)
+2020-12-12 15:54:16	-->	FMC (~FMC@31.4.243.120) has joined #archlinux-unregistered
+2020-12-12 15:56:51	<--	FMC (~FMC@31.4.243.120) has quit (Remote host closed the connection)
+2020-12-12 15:59:16	-->	BlndTger (~SioUx@bras-base-toroon1016w-grc-35-76-65-20-72.dsl.bell.ca) has joined #archlinux-unregistered
+2020-12-12 15:59:31	<--	BlndTger (~SioUx@bras-base-toroon1016w-grc-35-76-65-20-72.dsl.bell.ca) has quit (Client Quit)
+2020-12-12 16:00:29	-->	kaiwulf (~kvirc@h23.237.28.71.dynamic.ip.windstream.net) has joined #archlinux-unregistered
+2020-12-12 16:07:50	<--	notpiika (~quassel@pool-74-105-144-187.nwrknj.fios.verizon.net) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-12-14 21:11:58	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #archlinux-unregistered
+2020-12-14 21:11:58	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-14 21:11:58	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-14 21:11:58	--	Channel #archlinux-unregistered: 326 nicks (4 ops, 0 voices, 322 normals)
+2020-12-14 21:11:59	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-14 21:13:15	<--	notpiika (~quassel@pool-74-105-144-187.nwrknj.fios.verizon.net) has left #archlinux-unregistered
+2020-12-14 21:15:58	<--	petrkr (~petrkr@2a01:510:d501:2800:d30d:d8a3:cbcd:ea2c) has left #archlinux-unregistered
+2020-12-14 21:16:04	-->	GyroW (~GyroW@d54C03E98.access.telenet.be) has joined #archlinux-unregistered
+2020-12-14 21:16:04	<--	GyroW (~GyroW@d54C03E98.access.telenet.be) has quit (Changing host)
+2020-12-14 21:16:04	-->	GyroW (~GyroW@unaffiliated/gyrow) has joined #archlinux-unregistered
+2020-12-14 21:16:14	<--	GyroW_ (~GyroW@unaffiliated/gyrow) has quit (Ping timeout: 246 seconds)
+2020-12-14 21:17:33	-->	ImmaSquatch (~ImmaSquat@2601:1c2:d00:d830::68e0) has joined #archlinux-unregistered
+2020-12-14 21:19:41	<--	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-16 20:13:46	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #archlinux-unregistered
+2020-12-16 20:13:46	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-16 20:13:46	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-16 20:13:46	--	Channel #archlinux-unregistered: 325 nicks (4 ops, 0 voices, 321 normals)
+2020-12-16 20:13:47	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-16 20:13:49	<--	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-19 13:16:00	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #archlinux-unregistered
+2020-12-19 13:16:00	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-19 13:16:00	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-19 13:16:00	--	Channel #archlinux-unregistered: 322 nicks (4 ops, 0 voices, 318 normals)
+2020-12-19 13:16:01	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-19 13:16:05	<--	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))
+2020-12-19 13:29:20	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #archlinux-unregistered
+2020-12-19 13:29:20	--	Topic for #archlinux-unregistered is "=== You need a freenode account to join #archlinux. Register by following the instructions at <http://freenode.net/kb/answer/registration>. You can get a list of people who can help you by typing `/msg chanserv access #archlinux list`, or join #freenode and ask there on how to register an account. Alternatively, EMIYA can give you a one-time ticket, talk in here for instructions. ==="
+2020-12-19 13:29:20	--	Topic set by Namarrgon (~Namarrgon@archlinux/op/namarrgon) on Sun, 31 May 2020 19:08:58
+2020-12-19 13:29:20	--	Channel #archlinux-unregistered: 324 nicks (4 ops, 0 voices, 320 normals)
+2020-12-19 13:29:21	--	Channel created on Sun, 28 Dec 2014 00:49:46
+2020-12-19 13:29:28	<--	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has left #archlinux-unregistered (requested by EMIYA (Moving to #archlinux.))

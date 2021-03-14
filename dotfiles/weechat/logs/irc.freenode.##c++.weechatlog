@@ -1,0 +1,1353 @@
+2020-03-22 12:15:57	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined ##c++
+2020-03-22 12:15:57	--	Topic for ##c++ is "is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2017 (a.k.a. C++17) || https://isocpp.org/faq || pastes: https://wandbox.org/ || other channels: ##c++-general ##c++-social"
+2020-03-22 12:15:57	--	Topic set by ville (~ville@212-149-214-47.bb.dnainternet.fi) on Wed, 15 Jan 2020 19:15:49
+2020-03-22 12:15:57	--	Channel ##c++: 899 nicks (0 ops, 1 voice, 898 normals)
+2020-03-22 12:15:59	--	Channel created on Sat, 15 Sep 2001 05:15:35
+2020-03-22 12:17:13	captainchris	hi everybody
+2020-03-22 12:18:16	<--	royal_screwup21 (~royal_scr@2001:630:e4:4220:595d:2563:67b7:e0ca) has quit (Quit: zzzz)
+2020-03-22 12:18:28	<--	Leone (~Leovale@CPE9050cac01073-CM9050cac01070.cpe.net.cable.rogers.com) has quit (Ping timeout: 256 seconds)
+2020-03-22 12:27:40	-->	jetchisel (~jetchisel@opensuse/member/jetchisel) has joined ##c++
+2020-03-22 12:28:00	<--	fflori (~fflori@194.230.155.107) has quit (Read error: Connection reset by peer)
+2020-03-22 12:29:48	-->	zano36 (25edfa3c@gateway/web/cgi-irc/kiwiirc.com/ip.37.237.250.60) has joined ##c++
+2020-03-22 12:30:40	-->	nuijkl123 (~nujikl123@2a02:a318:803b:e280:7f0b:7de3:3611:bc46) has joined ##c++
+2020-03-22 12:34:24	<--	zano36 (25edfa3c@gateway/web/cgi-irc/kiwiirc.com/ip.37.237.250.60) has quit (Client Quit)
+2020-03-22 12:34:35	<--	anon324 (~usr@gateway/tor-sasl/anon324) has quit (Remote host closed the connection)
+2020-03-22 12:35:30	-->	royal_screwup21 (~royal_scr@2001:630:e4:4220:595d:2563:67b7:e0ca) has joined ##c++
+2020-03-22 12:38:03	-->	hans_ (~hans@46.46.194.156) has joined ##c++
+2020-03-22 12:39:02	hans_	is there something particularly slow about this code? http://paste.debian.net/plain/1135951
+2020-03-22 12:39:04	RePaste	Paste 1135951 was moved to https://wandbox.org/permlink/BMtrMSHbFflojkkl hans_, for the sixth time, do not use paste sites that can't compile code.
+2020-03-22 12:39:05	lindylex	RandomReader : I tried a little different syntax structure https://wandbox.org/permlink/gWDMb42Cutk2GPQ0 starting with "Mick LaSalle" .
+2020-03-22 12:39:23	-->	anon324 (~usr@gateway/tor-sasl/anon324) has joined ##c++
+2020-03-22 12:39:50	-->	KPAPUPAPU (~KingPapu@n175-33-104-163.meb2.vic.optusnet.com.au) has joined ##c++
+2020-03-22 12:39:52	<--	KPAPUPAPU (~KingPapu@n175-33-104-163.meb2.vic.optusnet.com.au) has quit (Remote host closed the connection)
+2020-03-22 12:39:53	TinoDidriksen	hans_, nope.
+2020-03-22 12:40:14	hans_	compiled with g++7 with -Ofast it uses about 15 seconds on a 6GB file. running <?php $file=file_get_contents("6GBfile");?> use about 5 seconds to load the same file to memory
+2020-03-22 12:40:35	hans_	so.. php loads the file much faster than c++ here
+2020-03-22 12:40:40	<--	His_Dudeness__ (~His_Duden@ip-176-199-252-116.hsi06.unitymediagroup.de) has quit (Ping timeout: 250 seconds)
+2020-03-22 12:40:40	hans_	any idea why?
+2020-03-22 12:40:44	<--	anon324 (~usr@gateway/tor-sasl/anon324) has quit (Remote host closed the connection)
+2020-03-22 12:40:49	<--	pxs (~pxs@176.60.176.144) has quit (Read error: Connection reset by peer)
+2020-03-22 12:41:33	lindylex	RandomReader : Do you think this is a bad idea?
+2020-03-22 12:42:01	<--	al3xandr0s_ (~al3xandr0@45.139.213.252) has quit (Quit: FBI Attack)
+2020-03-22 12:42:14	TinoDidriksen	hans_, well, if you want the fastest possible way, get the size beforehand with stat() or seeking, then use stream.read() into a buffer. See https://tinodidriksen.com/2011/01/cpp-read-whole-file-performance/ for comparison benchmarks.
+2020-03-22 12:42:33	-->	gedda (~gedda@s17612523593.blix.com) has joined ##c++
+2020-03-22 12:42:50	<--	KingPapu (~KingPapu@n175-33-104-163.meb2.vic.optusnet.com.au) has quit (Ping timeout: 256 seconds)
+2020-03-22 12:44:49	hans_	TinoDidriksen, interesting, thanks
+2020-03-22 12:45:10	<--	Noti (~steffan@ip4da40774.direct-adsl.nl) has quit (Quit: Konversation terminated!)
+2020-03-22 12:45:19	TinoDidriksen	hans_, however, why do you want to read 6 GB? Use memory mapping instead?
+2020-03-22 12:46:33	hans_	well i want to run regexes against it
+2020-03-22 12:46:51	TinoDidriksen	That does not preclude mmap.
+2020-03-22 12:47:07	TinoDidriksen	Mapping the file gives you a char* buffer of the whole thing, but without using memory.
+2020-03-22 12:47:33	hans_	that sounds cool, i'll check it out, thanks
+2020-03-22 12:47:39	-->	edlinde (~edlinde@203.191.56.226) has joined ##c++
+2020-03-22 12:48:45	<--	royal_screwup21 (~royal_scr@2001:630:e4:4220:595d:2563:67b7:e0ca) has quit (Quit: zzzz)
+2020-03-22 12:49:24	<--	tracks_droid (~androirc@2600:100d:b103:d41d:0:24:bc1a:4801) has quit (Ping timeout: 260 seconds)
+2020-03-22 12:49:32	-->	anon324 (~usr@gateway/tor-sasl/anon324) has joined ##c++
+2020-03-22 12:49:43	<--	anon324 (~usr@gateway/tor-sasl/anon324) has quit (Remote host closed the connection)
+2020-03-22 12:51:32	-->	anon324 (~usr@gateway/tor-sasl/anon324) has joined ##c++
+2020-03-22 12:52:22	-->	plastico (~plastico@2001:8a0:de6b:1a00:9d14:766e:70a8:dcea) has joined ##c++
+2020-03-22 12:53:17	-->	MrCrackPot (~MrCrackPo@unaffiliated/mrcrackpot) has joined ##c++
+2020-03-22 12:54:52	-->	AbleBacon (~AbleBacon@unaffiliated/ablebacon) has joined ##c++
+2020-03-22 12:56:29	RandomReader	lindylex - the std::move isn't necessary in that case, but then neither is the explicit type since it knows what it is assigning to, so you can condense it to this: https://wandbox.org/permlink/snZfC0g6k5gL1u95
+2020-03-22 12:57:06	ville	anyone care to explain this one: http://coliru.stacked-crooked.com/a/af032f15bf5db0a0 comment in line 38, comment out line 40
+2020-03-22 12:57:45	-->	nakkht (~nakkht@85.203.154.235) has joined ##c++
+2020-03-22 12:57:50	RandomReader	personally I'd consider that fine, but it's about at the limit of what I would prefer to nest for readability, before I make a new variable
+2020-03-22 12:58:32	lindylex	RandomReader, wow that was what I was searching for.  This makes so much sense now.  Thanks for sharing this.
+2020-03-22 12:58:47	RandomReader	welcome
+2020-03-22 13:00:08	-->	rhl (~rhl6856@pool-108-54-100-60.nycmny.fios.verizon.net) has joined ##c++
+2020-03-22 13:00:15	RandomReader	it's technically possible to get all of that in the initialization of critics2, but you'd have to explicitly specify the type at one level of nesting, so I personally like the current option better
+2020-03-22 13:00:21	lindylex	RandomReader : Either way thanks I learned much.
+2020-03-22 13:00:35	-->	julian01 (~julian@213.240.192.89) has joined ##c++
+2020-03-22 13:00:52	lindylex	I like our latest solution best also.
+2020-03-22 13:02:35	ville	wait. i've been tricked by buggy ide again. nevermind. nevermind
+2020-03-22 13:04:11	<--	rhl (~rhl6856@pool-108-54-100-60.nycmny.fios.verizon.net) has quit (Ping timeout: 240 seconds)
+2020-03-22 13:04:49	ville	(it's jump-to goes to the && overload even though & one is called in the context)
+2020-03-22 13:08:30	<--	edlinde (~edlinde@203.191.56.226) has quit (Quit: edlinde)
+2020-03-22 13:09:50	-->	Marc0F3 (~marcofe@185.61.186.155) has joined ##c++
+2020-03-22 13:11:52	-->	edlinde (~edlinde@203.191.56.226) has joined ##c++
+2020-03-22 13:12:56	<--	edlinde (~edlinde@203.191.56.226) has quit (Client Quit)
+2020-03-22 13:13:32	<--	rajrajraj (uid72176@gateway/web/irccloud.com/x-gtteynwxvejktzpf) has quit (Quit: Connection closed for inactivity)
+2020-03-22 13:16:07	lindylex	RandomReader : This is my attempt at doing what you said https://wandbox.org/permlink/Wq2FCqbLUSw6XYkF  This line "critics3 =" How would I do it fromwhat you described?
+2020-03-22 13:16:20	<--	sternmull (~kringel@pD95ED84A.dip0.t-ipconnect.de) has left ##c++
+2020-03-22 13:16:54	-->	royal_screwup21 (~royal_scr@2001:630:e4:4220:595d:2563:67b7:e0ca) has joined ##c++
+2020-03-22 13:18:29	-->	Borkr (~Borkr@83.243.251.103) has joined ##c++
+2020-03-22 13:19:04	<--	royal_screwup21 (~royal_scr@2001:630:e4:4220:595d:2563:67b7:e0ca) has quit (Client Quit)
+2020-03-22 13:19:09	RandomReader	I was actually just experimenting with that using your previous code, seems it can actually infer what it needs in this case, so no explicit type needed: https://wandbox.org/permlink/DRiBCSsLK3PICeJJ
+2020-03-22 13:20:28	RandomReader	the syntax basically mirrors what you'd use for initializing an array, with the quirk that std::map stores pair<const key, value>
+2020-03-22 13:20:42	RandomReader	so map = { first_item, second_item, ... }
+2020-03-22 13:20:46	-->	snackoverflow (~audioburn@unaffiliated/theology) has joined ##c++
+2020-03-22 13:21:03	RandomReader	first_item here is pair<const string, map<string, int>>
+2020-03-22 13:21:20	RandomReader	so first_item = { a_string, a_map }
+2020-03-22 13:21:53	RandomReader	a_map of course is then { first_item } where first_item = pair<const string, int> so add more braces and so on
+2020-03-22 13:21:59	-->	Brainium (~brainium@unaffiliated/brainium) has joined ##c++
+2020-03-22 13:22:51	lindylex	I hate that I did not figure it out.  I was going in the right direction I feel.
+2020-03-22 13:22:59	RandomReader	yep you were
+2020-03-22 13:23:43	causative	is there a nice idiom for integer division rounding down, instead of rounding towards 0? so -1/2=-1
+2020-03-22 13:24:03	<--	jasonsmr (~jasonsmr@167.73.222.224) has quit (Ping timeout: 250 seconds)
+2020-03-22 13:24:54	-->	Anodl (~Anodl@p200300D4A74E9A00BC27E1D3710534DF.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 13:25:03	lindylex	Thanks for the guidance.  I was confused with how to assign the string the value of the map that contains the string and int.  Then what do i use to keep the values separated so I can add more.  I see it is the >> {} to use.
+2020-03-22 13:27:06	-->	rajrajraj (uid72176@gateway/web/irccloud.com/x-spldraxvjmumlrxe) has joined ##c++
+2020-03-22 13:27:43	<--	Jesus2 (~Sliffy@pD9E07EFC.dip0.t-ipconnect.de) has quit (Quit: Leaving)
+2020-03-22 13:27:47	lindylex	RandomReader : I tried this and it fails.  auto critics2 = map<string, map<string, int> >;  Would you use auto like this?
+2020-03-22 13:27:53	-->	Sliffy (~Sliffy@pD9E07EFC.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 13:28:09	RandomReader	auto critics2 = map<string, map<string, int>>{};
+2020-03-22 13:28:17	RandomReader	or () if you prefer, either works there
+2020-03-22 13:29:01	lindylex	I really prefer auto.  It looks better already.  Thanks for teaching me this.
+2020-03-22 13:29:18	RandomReader	causative - not something simple I know of
+2020-03-22 13:30:35	-->	bps (~bps@80.71.142.18) has joined ##c++
+2020-03-22 13:32:44	RandomReader	lindylex - my pattern for braces vs parentheses initialization is:  {} for empty/default, since it always does the right thing there; {...} for providing contents, like what we've been doing with the map; (...) for generating, like if I want a vector of 42 elements all the same
+2020-03-22 13:33:10	<--	mahmudov (~milisman@37.155.33.211) has quit (Read error: Connection reset by peer)
+2020-03-22 13:33:31	lindylex	I see what you are saying.
+2020-03-22 13:33:35	RandomReader	auto foo = T{};   if T is int, that's 0 .. if it's bool, that's false .. if it's a string, it's empty .. if it's a plain struct, it's the same idea for all of its members .. etc
+2020-03-22 13:34:05	RandomReader	(although bool and int I generally just spell out what I want instead of using that pattern, but as a starting point that holds)
+2020-03-22 13:34:37	-->	prince1 (~prince@203.246.179.184) has joined ##c++
+2020-03-22 13:34:54	-->	mahmudov (~milisman@37.155.33.211) has joined ##c++
+2020-03-22 13:35:04	-->	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has joined ##c++
+2020-03-22 13:35:07	lindylex	This is the design style that obfuscates the variable type you are talking about?
+2020-03-22 13:35:19	-->	jasonsmr (~jasonsmr@167.73.222.224) has joined ##c++
+2020-03-22 13:35:35	RandomReader	no, I always provide the type anyway, I just mean I tend to do  bool foo = false;   rather than  auto foo = bool{};
+2020-03-22 13:35:47	lindylex	Ok got it.
+2020-03-22 13:35:47	RandomReader	personal break from the pattern for no real reason, other than I just like it better
+2020-03-22 13:36:04	RandomReader	I very much dislike  auto foo{42};
+2020-03-22 13:36:16	RandomReader	I know it's an int, but I have to stare it and then make sure that's not a mistake
+2020-03-22 13:36:27	lindylex	Yes me too.
+2020-03-22 13:36:32	-->	mintograde (~mintograd@47.201.168.46) has joined ##c++
+2020-03-22 13:36:59	<--	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has quit (Client Quit)
+2020-03-22 13:37:15	RandomReader	and also remember that auto foo = {42};  is not an int
+2020-03-22 13:37:15	-->	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has joined ##c++
+2020-03-22 13:37:41	RandomReader	{ auto foo = {42};  cout << TYPE(foo); }  // because reasons
+2020-03-22 13:37:42	+geordi	lvalue initializer_list<int>
+2020-03-22 13:37:50	<--	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has quit (Client Quit)
+2020-03-22 13:38:18	<--	black_ant (~antilope@unaffiliated/black-ant/x-1505394) has quit (Ping timeout: 250 seconds)
+2020-03-22 13:38:22	-->	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has joined ##c++
+2020-03-22 13:38:35	lindylex	If I was using a scripting language it would cast it to the type I need to minimize conflict.
+2020-03-22 13:38:35	<--	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has quit (Client Quit)
+2020-03-22 13:39:01	causative	what I came up with was:  a > 0 || a % b == 0 ? a/b : a/b-1
+2020-03-22 13:39:10	-->	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has joined ##c++
+2020-03-22 13:39:11	causative	(in my case only a could have been negative, not b)
+2020-03-22 13:39:11	<--	prince1 (~prince@203.246.179.184) has quit (Ping timeout: 240 seconds)
+2020-03-22 13:39:46	<--	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has quit (Client Quit)
+2020-03-22 13:40:14	-->	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has joined ##c++
+2020-03-22 13:40:43	<--	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has quit (Client Quit)
+2020-03-22 13:41:00	-->	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has joined ##c++
+2020-03-22 13:41:20	RandomReader	causative - there's also std::div, which may or may not be useful
+2020-03-22 13:42:32	lindylex	RandomReader: thanks again for the tutelage.  This sleep cycle is calling.  See you soon and stay safe everyone.  Thanks for all the help everyone.
+2020-03-22 13:42:40	RandomReader	welcome, 'night!
+2020-03-22 13:42:45	lindylex	Night
+2020-03-22 13:45:04	<--	plastico (~plastico@2001:8a0:de6b:1a00:9d14:766e:70a8:dcea) has quit (Quit: WeeChat 2.7.1)
+2020-03-22 13:46:23	<--	cbreak (~cbreak@77-58-201-132.dclient.hispeed.ch) has quit (Read error: Connection reset by peer)
+2020-03-22 13:47:31	-->	ipe (~ipe@213-216-239-246.bb.dnainternet.fi) has joined ##c++
+2020-03-22 13:47:35	-->	cbreak (~cbreak@77-58-201-132.dclient.hispeed.ch) has joined ##c++
+2020-03-22 13:51:00	-->	His_Dudeness__ (~His_Duden@ip-176-199-255-170.hsi06.unitymediagroup.de) has joined ##c++
+2020-03-22 13:51:24	<--	mikroflops (~yogurt@c188-150-217-176.bredband.comhem.se) has quit (Ping timeout: 256 seconds)
+2020-03-22 13:51:30	-->	Deknos (~deknos@unaffiliated/menace) has joined ##c++
+2020-03-22 13:54:09	<--	lindylex (~lex@c-71-225-186-145.hsd1.pa.comcast.net) has quit (Quit: Leaving)
+2020-03-22 13:55:03	-->	Alekece (~aleprovos@81-64-160-88.rev.numericable.fr) has joined ##c++
+2020-03-22 13:55:20	-->	arora (~ashok@117.97.149.173) has joined ##c++
+2020-03-22 13:56:36	causative	default reference capturing lambdas are the laziest possible alternative to making a function out of a repeated block of code, you don't even have to round up the parameters, just "do this twice"
+2020-03-22 13:58:27	causative	auto doStuff = [&](){ ... (whatever) ... }; doStuff();  blah blah;  doStuff();
+2020-03-22 13:59:09	-->	mikroflops (~yogurt@c188-150-217-176.bredband.comhem.se) has joined ##c++
+2020-03-22 13:59:16	-->	akem (~akem@85.159.237.34) has joined ##c++
+2020-03-22 14:00:02	causative	I bet someone has written an angry article about this at some point
+2020-03-22 14:00:20	TinoDidriksen	Lazy is good.
+2020-03-22 14:00:51	<--	maxwilliamson (~maxwillia@gateway/tor-sasl/maxwilliamson) has quit (Remote host closed the connection)
+2020-03-22 14:01:58	-->	maxwilliamson (~maxwillia@gateway/tor-sasl/maxwilliamson) has joined ##c++
+2020-03-22 14:04:14	-->	royal_screwup21 (~royal_scr@eduroam-wireless-pat0.nomadic.bris.ac.uk) has joined ##c++
+2020-03-22 14:06:16	-->	SorcererX (~SorcererX@ti0071a400-3976.bb.online.no) has joined ##c++
+2020-03-22 14:06:31	<--	AimHere (~David@92.237.236.151) has quit (Ping timeout: 250 seconds)
+2020-03-22 14:07:25	-->	kn07 (~kn07@188.25.184.209) has joined ##c++
+2020-03-22 14:08:37	-->	AimHere (~David@92.237.236.151) has joined ##c++
+2020-03-22 14:12:08	<--	AbleBacon (~AbleBacon@unaffiliated/ablebacon) has quit (Read error: Connection reset by peer)
+2020-03-22 14:13:52	<--	epony (epony@unaffiliated/epony) has quit (Quit: reconf)
+2020-03-22 14:14:09	-->	epony (epony@unaffiliated/epony) has joined ##c++
+2020-03-22 14:15:08	<--	kn07 (~kn07@188.25.184.209) has quit (Ping timeout: 256 seconds)
+2020-03-22 14:15:18	-->	KAHR-Alpha (~Alpha@2a01cb0d024a660050973a476992525c.ipv6.abo.wanadoo.fr) has joined ##c++
+2020-03-22 14:16:52	<--	linarcx (~linarcx@151.241.59.98) has quit (Ping timeout: 250 seconds)
+2020-03-22 14:19:02	-->	bps2 (~bps@185.200.118.102) has joined ##c++
+2020-03-22 14:19:43	-->	ClaymorePT (~Claymore@188.251.245.88) has joined ##c++
+2020-03-22 14:21:25	-->	udv (~udv@p200300E6E708B16952E549FFFE18701F.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 14:21:27	<--	kst`` (~user@cpe-75-80-189-16.san.res.rr.com) has quit (Ping timeout: 264 seconds)
+2020-03-22 14:22:00	<--	bps (~bps@80.71.142.18) has quit (Ping timeout: 256 seconds)
+2020-03-22 14:25:41	-->	plastico (~plastico@2001:8a0:de6b:1a00:9d14:766e:70a8:dcea) has joined ##c++
+2020-03-22 14:28:40	-->	logicp- (~logicp@otwaon1073w-grc-04-184-144-79-188.dsl.bell.ca) has joined ##c++
+2020-03-22 14:28:44	captainchris	I have a segfault on allocation pointer 
+2020-03-22 14:28:47	captainchris	https://pastebin.com/5xpybeBn
+2020-03-22 14:28:49	RePaste	Paste 5xpybeBn was moved to https://wandbox.org/permlink/iuB7l2UgccTUinco captainchris, please avoid paste sites that can't even compile your code.
+2020-03-22 14:28:53	captainchris	why is not correct please 
+2020-03-22 14:29:14	<--	ClaymorePT (~Claymore@188.251.245.88) has quit (Quit: Mom decided I had to go to bed.)
+2020-03-22 14:29:50	-->	ARoxdale (~AlanRoxda@80.233.62.139) has joined ##c++
+2020-03-22 14:32:21	Svitkona	hard to say much without a real test case
+2020-03-22 14:33:17	captainchris	Svitkona: ok I'm trying to create an little porject 
+2020-03-22 14:36:11	-->	cosimone (~cosimone@2001:b07:ae5:db26:73a:8101:bd0:2ff9) has joined ##c++
+2020-03-22 14:37:50	-->	joshcom (~joshcom@140-186-64-141-dynamic.midco.net) has joined ##c++
+2020-03-22 14:39:18	captainchris	if i made script on the same file it's work 
+2020-03-22 14:39:23	captainchris	works
+2020-03-22 14:39:29	captainchris	but not in my case 
+2020-03-22 14:40:19	<--	Marc0F3 (~marcofe@185.61.186.155) has quit (Ping timeout: 250 seconds)
+2020-03-22 14:41:01	-->	Marc0F3 (~marcofe@185.61.186.146) has joined ##c++
+2020-03-22 14:45:56	captainchris	https://wandbox.org/permlink/UzDWppH0M4zt52lc
+2020-03-22 14:46:03	captainchris	Ok segmentation fault
+2020-03-22 14:46:55	Svitkona	i mean, we don't see a segmentation fault there
+2020-03-22 14:47:10	Svitkona	we need to see something that's like what you're doing
+2020-03-22 14:48:48	<--	Tempesta (Tempesta@unaffiliated/tempesta) has quit (Quit: AdiIRC is updating to v3.8 Beta Build (2020/03/17 UTC) 64 Bit)
+2020-03-22 14:49:03	-->	Tempesta (Tempesta@unaffiliated/tempesta) has joined ##c++
+2020-03-22 14:51:48	kmeow	@blackleitus_: what you're saying makes no sense
+2020-03-22 14:52:19	-->	chris64 (~chris@unaffiliated/chris64) has joined ##c++
+2020-03-22 14:56:27	kmeow	"+kmeow, integer overflows as stack overflow classic even with modern compilers stack cookies, sending a really big string it should be able to ovrwrite , and gets eip overwriten too"
+2020-03-22 14:56:31	kmeow	can anyone parse that
+2020-03-22 14:56:52	<--	cosimone (~cosimone@2001:b07:ae5:db26:73a:8101:bd0:2ff9) has quit (Remote host closed the connection)
+2020-03-22 14:59:09	gedda	whats the full context?
+2020-03-22 14:59:29	gedda	they are talking about buffer overflows
+2020-03-22 14:59:53	kmeow	he deleted his post on stack overflow
+2020-03-22 15:00:13	kmeow	wherein he described a stack overflow as an integer overflow
+2020-03-22 15:01:29	captainchris	Svitkona: https://wandbox.org/permlink/NVoV6kQ9MfHYTerg there is a segmentation fault 
+2020-03-22 15:02:07	captainchris	allocation for data 32x20 640 int nop ?? 
+2020-03-22 15:02:16	captainchris	allocation is correct 
+2020-03-22 15:02:17	Svitkona	captainchris, look at like 36
+2020-03-22 15:02:24	Svitkona	you're dereferencing an invalid pointer
+2020-03-22 15:03:06	<--	gargus (~user@202-159-177-86.dyn.iinet.net.au) has quit (Quit: Leaving)
+2020-03-22 15:03:49	-->	RangerBob (~brian@pool-173-72-170-17.clppva.fios.verizon.net) has joined ##c++
+2020-03-22 15:04:00	-->	linarcx (~linarcx@151.241.59.98) has joined ##c++
+2020-03-22 15:04:41	<--	Hello71 (~Hello71@gateway/tor-sasl/hello71) has quit (Remote host closed the connection)
+2020-03-22 15:05:30	-->	Hello71 (~Hello71@gateway/tor-sasl/hello71) has joined ##c++
+2020-03-22 15:06:17	-->	toverna (~uni@2.95.151.198) has joined ##c++
+2020-03-22 15:07:34	-->	PJBoy (~PJBoy@unaffiliated/pjboy) has joined ##c++
+2020-03-22 15:07:41	<--	royal_screwup21 (~royal_scr@eduroam-wireless-pat0.nomadic.bris.ac.uk) has quit (Quit: zzzz)
+2020-03-22 15:09:24	-->	saurav (~saurav@103.74.111.104) has joined ##c++
+2020-03-22 15:13:14	<--	saurav (~saurav@103.74.111.104) has quit (Client Quit)
+2020-03-22 15:13:16	captainchris	Svitkona: https://wandbox.org/permlink/UrCZNKwHqPCLzxW1 
+2020-03-22 15:13:33	captainchris	I think it's not a problem with my function at line 36 
+2020-03-22 15:13:52	Svitkona	it's undefined behaviour
+2020-03-22 15:14:07	captainchris	it's works if I don't modify my data ptr 
+2020-03-22 15:14:54	-->	Saukk (~Saukk@2001:998:d6:9488:1c59:9bb5:b94c:2) has joined ##c++
+2020-03-22 15:14:56	RandomReader	t is a pointer, it stores the location of a Try object
+2020-03-22 15:15:08	RandomReader	you haven't given it the location of any valid Try object
+2020-03-22 15:15:08	<--	hans_ (~hans@46.46.194.156) has quit (Remote host closed the connection)
+2020-03-22 15:15:27	RandomReader	using it is therefore undefined behavior and anything can happen, including pretending to work or blowing up
+2020-03-22 15:15:36	-->	hans_ (~hans@46.46.194.156) has joined ##c++
+2020-03-22 15:15:38	RandomReader	it's a problem and you need to fix it, period
+2020-03-22 15:15:56	RandomReader	just like the compiler warning on wandbox tells you...
+2020-03-22 15:16:25	<--	toverna (~uni@2.95.151.198) has quit (Quit: Konversation terminated!)
+2020-03-22 15:18:22	captainchris	3
+2020-03-22 15:19:11	<--	apaval (~apaval@124.108.22.44) has quit (Remote host closed the connection)
+2020-03-22 15:19:30	-->	apaval (~apaval@124.108.22.44) has joined ##c++
+2020-03-22 15:21:00	<--	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has quit (Ping timeout: 250 seconds)
+2020-03-22 15:28:52	<--	lh_mouse (~lh_mouse@unaffiliated/lh-mouse/x-3986007) has quit (Read error: Connection reset by peer)
+2020-03-22 15:31:20	-->	royal_screwup21 (~royal_scr@2001:630:e4:4220:e80e:336e:b065:f99b) has joined ##c++
+2020-03-22 15:33:58	-->	irrenhaus3 (~xenon@HSI-KBW-078-043-078-014.hsi4.kabel-badenwuerttemberg.de) has joined ##c++
+2020-03-22 15:35:38	-->	prince1 (~prince@203.246.179.184) has joined ##c++
+2020-03-22 15:38:08	-->	elg (~elg@85-76-102-126-nat.elisa-mobile.fi) has joined ##c++
+2020-03-22 15:39:38	-->	black_ant (~antilope@host86-137-153-63.range86-137.btcentralplus.com) has joined ##c++
+2020-03-22 15:39:38	<--	black_ant (~antilope@host86-137-153-63.range86-137.btcentralplus.com) has quit (Changing host)
+2020-03-22 15:39:38	-->	black_ant (~antilope@unaffiliated/black-ant/x-1505394) has joined ##c++
+2020-03-22 15:40:07	<--	prince1 (~prince@203.246.179.184) has quit (Ping timeout: 250 seconds)
+2020-03-22 15:43:56	<--	npaperbot (~npaperbot@dodecahedron.m-ou.se) has quit (Remote host closed the connection)
+2020-03-22 15:44:05	-->	npaperbot (~npaperbot@dodecahedron.m-ou.se) has joined ##c++
+2020-03-22 15:44:48	<--	His_Dudeness__ (~His_Duden@ip-176-199-255-170.hsi06.unitymediagroup.de) has quit (Remote host closed the connection)
+2020-03-22 15:45:41	<--	elg (~elg@85-76-102-126-nat.elisa-mobile.fi) has quit (Quit: leaving)
+2020-03-22 15:46:57	captainchris	ok you're right 
+2020-03-22 15:47:00	captainchris	thank you 
+2020-03-22 15:48:00	captainchris	I'm begginer how can i do if I use pointer of Tilemap ?? 
+2020-03-22 15:48:14	<--	remedan (~remedan@balak.me) has quit (Quit: Bye!)
+2020-03-22 15:48:35	-->	f4t4l_3rr0r (~PhoenixCo@unaffiliated/alien-fx-fiend/x-2870569) has joined ##c++
+2020-03-22 15:49:21	captainchris	ok I did Try *t = new Try
+2020-03-22 15:49:30	captainchris	is it good ?? 
+2020-03-22 15:49:36	captainchris	it's work 
+2020-03-22 15:49:55	Svitkona	why do you need to use new?
+2020-03-22 15:50:02	Svitkona	just use a plain old Try
+2020-03-22 15:50:26	captainchris	it doing proffessionnal with pointer ;) 
+2020-03-22 15:51:59	-->	remedan (~remedan@balak.me) has joined ##c++
+2020-03-22 15:54:01	<--	royal_screwup21 (~royal_scr@2001:630:e4:4220:e80e:336e:b065:f99b) has quit (Quit: zzzz)
+2020-03-22 15:54:11	cbreak	we professionals avoid pointers when we can.
+2020-03-22 15:54:39	cbreak	indirection is powerful, but it's also expensive, and the management overhead makes it harder to write correct / secure code.
+2020-03-22 15:55:06	-->	royal_screwup21 (~royal_scr@2001:630:e4:4220:e80e:336e:b065:f99b) has joined ##c++
+2020-03-22 15:57:44	-->	saundkim (~saundkim@pool-108-29-162-229.nycmny.fios.verizon.net) has joined ##c++
+2020-03-22 15:59:34	<--	bps2 (~bps@185.200.118.102) has quit (Ping timeout: 250 seconds)
+2020-03-22 15:59:44	captainchris	cbreak: ok but it is not Faster with pointer ??
+2020-03-22 16:00:09	<--	antonaid (~Thunderbi@217-208-141-113-no2620.tbcn.telia.com) has quit (Read error: Connection reset by peer)
+2020-03-22 16:00:11	<--	Alekece (~aleprovos@81-64-160-88.rev.numericable.fr) has quit (Ping timeout: 240 seconds)
+2020-03-22 16:01:39	gedda	captainchris, no pointer is faster than any pointer
+2020-03-22 16:02:29	cbreak	captainchris: indirection is not free
+2020-03-22 16:02:52	cbreak	if code using a pointer is faster than code not using a pointer depends on what that code does obviously
+2020-03-22 16:02:58	cbreak	can using a pointer avoid other overhead?
+2020-03-22 16:03:06	cbreak	can not using a pointer lead to more optimization?
+2020-03-22 16:03:19	cbreak	all of that obviously depends on the context
+2020-03-22 16:03:29	-->	di0_ (~di0_@unaffiliated/di0-/x-5053590) has joined ##c++
+2020-03-22 16:04:31	<--	joshcom (~joshcom@140-186-64-141-dynamic.midco.net) has quit (Ping timeout: 240 seconds)
+2020-03-22 16:08:34	<--	PJBoy (~PJBoy@unaffiliated/pjboy) has quit (Remote host closed the connection)
+2020-03-22 16:09:21	Alipha	And if you do *need* to use pointers, wrap it in a unique_ptr or possibly shared_ptr
+2020-03-22 16:11:22	-->	vdamewood (~vdamewood@unaffiliated/vdamewood) has joined ##c++
+2020-03-22 16:13:10	-->	jplejacq (~jplejacq@24.224.107.80) has joined ##c++
+2020-03-22 16:14:35	-->	Alekece (~aleprovos@81-64-160-88.rev.numericable.fr) has joined ##c++
+2020-03-22 16:15:13	-->	Chr0meiCe2 (457a2bf8@ool-457a2bf8.dyn.optonline.net) has joined ##c++
+2020-03-22 16:16:38	-->	PJBoy (~PJBoy@unaffiliated/pjboy) has joined ##c++
+2020-03-22 16:18:33	Chr0meiCe2	random question, if i have a single character like 'a', how can i use a bitwise operation to shift it one byte to the right to 'b' ?
+2020-03-22 16:19:00	Chr0meiCe2	i want this to work also for unsigned bytes like 0xFD or whatever
+2020-03-22 16:19:30	-->	vinleod (~vdamewood@unaffiliated/vdamewood) has joined ##c++
+2020-03-22 16:19:42	<--	apaval (~apaval@124.108.22.44) has quit (Read error: Connection reset by peer)
+2020-03-22 16:20:00	-->	apaval (~apaval@124.108.22.44) has joined ##c++
+2020-03-22 16:20:11	<--	vdamewood (~vdamewood@unaffiliated/vdamewood) has quit (Disconnected by services)
+2020-03-22 16:20:19	--	vinleod is now known as vdamewood
+2020-03-22 16:20:49	urdh	going from 'a' to 'b' is just adding one
+2020-03-22 16:20:51	TinoDidriksen	Chr0meiCe2, you can't. It is not guaranteed that 'a'+1 == 'b'
+2020-03-22 16:21:42	Hello71	although nobody uses EBCDIC nowadays...
+2020-03-22 16:21:44	cbreak	it is if you use ascii or unicode
+2020-03-22 16:21:46	-->	cgi (~cgi@unaffiliated/cgi) has joined ##c++
+2020-03-22 16:21:59	cbreak	consult the documentation of your text encoding format if in doubt.
+2020-03-22 16:22:20	TinoDidriksen	Doesn't change that fact that in this channel, only '0' through '9' are guaranteed contiguous and in order. If you want platform specific things, ask ##C++-general
+2020-03-22 16:22:27	Chr0meiCe2	So if i have a file there is no way to move all characters 1 byte over?
+2020-03-22 16:22:35	urdh	either way the question is vague; there's typically no bitwise shifting involved here
+2020-03-22 16:22:48	urdh	you want to prepend a byte to the beginning of a file?
+2020-03-22 16:22:57	-->	latenite (~latenite@p4FD7DCF5.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 16:23:02	<--	julian01 (~julian@213.240.192.89) has quit (Quit: Leaving)
+2020-03-22 16:23:09	urdh	or are you doing some sort of Caesar cipher thing?
+2020-03-22 16:23:31	cbreak	Chr0meiCe2: a and b are not one byte over
+2020-03-22 16:23:36	Chr0meiCe2	i just want to understand how to do it basically..... i don't know how
+2020-03-22 16:23:55	TinoDidriksen	Chr0meiCe2, you have some serious terminology issues as well. Moving "a" one byte over means getting "a\0" or "\0a" ... if you mean add one to the value, that's +1. If you mean shift one bit, that's a whole other result.
+2020-03-22 16:23:58	vdamewood	What does 'one byte over' mean?
+2020-03-22 16:24:18	cbreak	vdamewood: prepend a byte? :)
+2020-03-22 16:24:34	Alipha	If you add 1 to 'a', you will get 'b' if you're on a platform that uses ascii
+2020-03-22 16:24:34	TinoDidriksen	It sounds like you just want to add int(1) to all bytes, which is trivial.
+2020-03-22 16:24:41	-->	mgrech (~mgrech@194.166.99.28) has joined ##c++
+2020-03-22 16:24:47	<--	Serpent7776 (~Serpent77@90-156-31-193.internetia.net.pl) has quit (Read error: Connection reset by peer)
+2020-03-22 16:24:53	Chr0meiCe2	if a file contains 0x00  0x02,  i want the Result to contain 0x01 0x03
+2020-03-22 16:25:02	<--	saundkim (~saundkim@pool-108-29-162-229.nycmny.fios.verizon.net) has quit (Quit: saundkim)
+2020-03-22 16:25:22	vdamewood	That's just adding 1 to each byte.
+2020-03-22 16:25:24	cbreak	++
+2020-03-22 16:25:40	Chr0meiCe2	ok interesting I didn't realize
+2020-03-22 16:25:42	TinoDidriksen	Treat the file as a buffer of uint8_t and increment each one.
+2020-03-22 16:25:47	vdamewood	char stuff = 'a'; stuff++;
+2020-03-22 16:25:57	cbreak	don't do that with char
+2020-03-22 16:26:07	vdamewood	Eh, good point. uint8_t.
+2020-03-22 16:26:10	cbreak	char can be signed, for which overflows are UB
+2020-03-22 16:26:28	Chr0meiCe2	i'm working with unsigned char though
+2020-03-22 16:26:56	TinoDidriksen	That's almost always the same as uint8_t
+2020-03-22 16:27:30	vdamewood	I'm pretty sure on systems where unsigned char isn't the same as uint8_t, uint9_t doesn't exist.
+2020-03-22 16:27:42	vdamewood	s/uint9/uint8/
+2020-03-22 16:28:16	Chr0meiCe2	i hate all these charsets
+2020-03-22 16:28:19	Chr0meiCe2	there should just be one
+2020-03-22 16:28:27	Chr0meiCe2	totally annoying
+2020-03-22 16:28:27	vdamewood	Chr0meiCe2: What charsets?
+2020-03-22 16:28:56	Chr0meiCe2	i mean data types in general lol, its the one thing i hate about c++
+2020-03-22 16:29:09	Chr0meiCe2	but i still love C++
+2020-03-22 16:29:39	-->	bps2 (~bps@185.200.118.102) has joined ##c++
+2020-03-22 16:29:41	cbreak	vdamewood: I've heard of systems where CHAR_BIT is 64
+2020-03-22 16:29:42	Chr0meiCe2	i've gotten to used to being lazy in powershell
+2020-03-22 16:29:57	<--	di0_ (~di0_@unaffiliated/di0-/x-5053590) has quit (Ping timeout: 250 seconds)
+2020-03-22 16:30:10	cbreak	(and sizeof(T) is 1 for any basic type)
+2020-03-22 16:30:28	Chr0meiCe2	has anyone here ever seen a CONST VOLATILE method
+2020-03-22 16:30:37	Chr0meiCe2	would it ever be used?
+2020-03-22 16:30:41	vdamewood	cbreak: When an implementation has CHAR_BIT = 64, then they're required NOT to provide uint8_t.
+2020-03-22 16:30:55	cbreak	indeed.
+2020-03-22 16:31:06	Chr0meiCe2	super cocky lol wow
+2020-03-22 16:31:49	cbreak	Chr0meiCe2: https://en.cppreference.com/w/cpp/atomic/atomic/load
+2020-03-22 16:31:51	vdamewood	cbreak: Though, I'm kind of curious. What kind of system has CHAR_BIT = 64? I've heard of DPSs with 16, 24, and maybe 32.
+2020-03-22 16:31:56	cbreak	T load( std::memory_order order = std::memory_order_seq_cst ) const volatile noexcept;
+2020-03-22 16:32:03	vdamewood	err DSPs, I mean.
+2020-03-22 16:32:19	cbreak	vdamewood: don't remember the details. Apparently some kind of super computer thing
+2020-03-22 16:32:45	Chr0meiCe2	this is beyond my intelligence vdamewood i am quivering in fear
+2020-03-22 16:32:49	vdamewood	cbreak: Sounds like the kind of environment to have such unusual characteristics.
+2020-03-22 16:32:56	Chr0meiCe2	@cbreak i mean
+2020-03-22 16:33:34	cbreak	Chr0meiCe2: the purpose of atomic is to represent a value that changes atomically, the purpose of load is to get that value from the object
+2020-03-22 16:33:48	cbreak	and if that object is volatile, reading from it is still supposed to work
+2020-03-22 16:33:56	cbreak	so the load must also be volatile qualified
+2020-03-22 16:34:02	cbreak	similar to how const qualification works
+2020-03-22 16:34:16	cbreak	but to not make access unneccessarily expensive, there's a const non-volatile overload too
+2020-03-22 16:34:33	--	phlym_ is now known as phlym
+2020-03-22 16:34:43	Chr0meiCe2	wow cool
+2020-03-22 16:34:55	<--	fooobarrr (~fooobarrr@unaffiliated/fooobarrr) has quit (Ping timeout: 246 seconds)
+2020-03-22 16:35:36	cbreak	but really, volatile's hardly useful outside special usecases, like memory mapping some device in a kernel
+2020-03-22 16:35:56	Chr0meiCe2	yeah i have used regular volatile for Thread stuff but never const volatile method
+2020-03-22 16:36:00	cbreak	or some platform specific implementation details
+2020-03-22 16:36:04	cbreak	hahahaha
+2020-03-22 16:36:07	-->	Betal (~Betal@unaffiliated/betal) has joined ##c++
+2020-03-22 16:36:08	cbreak	volatile for thread stuff...
+2020-03-22 16:36:11	cbreak	funny :D
+2020-03-22 16:36:16	Chr0meiCe2	lolz
+2020-03-22 16:36:22	Chr0meiCe2	for sharing variables between threads
+2020-03-22 16:36:28	Chr0meiCe2	in win32 apps/etc
+2020-03-22 16:36:28	cbreak	volatile's stupid for that
+2020-03-22 16:36:38	Alipha	You should use std::atomic for that. Or mutexes
+2020-03-22 16:36:39	Chr0meiCe2	idk maybe i was dumb idk
+2020-03-22 16:36:41	cbreak	why would you want to supress optimization in threading code?
+2020-03-22 16:36:53	cbreak	isn't the whole point of threading to get more performance?
+2020-03-22 16:36:53	Chr0meiCe2	I used mutexes as well
+2020-03-22 16:37:01	ARoxdale	volatile also 'turns off' some compiler optimisations. Depends on the compiler, but some of them won't produce threadsafe code without adding volatiles and some additional memory fence instructions. I think if you use atomics, all that is handled automatically. I think.
+2020-03-22 16:37:11	-->	Serpent7776 (~Serpent77@90-156-31-193.internetia.net.pl) has joined ##c++
+2020-03-22 16:37:11	Oxyd	Where do people still get the idea that volatile has anything to do with threads_
+2020-03-22 16:37:15	Chr0meiCe2	but i delcared my global variables as volatile that were shared
+2020-03-22 16:37:22	cbreak	Oxyd: Java.
+2020-03-22 16:37:25	cbreak	probably?
+2020-03-22 16:37:26	Chr0meiCe2	I used CreateMutex in Win32
+2020-03-22 16:37:49	cbreak	Chr0meiCe2: if you use a mutex, then volatile won't give you thread safety, you already have it
+2020-03-22 16:37:59	cbreak	Chr0meiCe2: if you don't have a mutex, then you won't have thread safety, even without volatile
+2020-03-22 16:38:26	Chr0meiCe2	ah didnt know
+2020-03-22 16:38:29	cbreak	as far as c++ is concerned, volatile and threading are orthogonal
+2020-03-22 16:38:52	Chr0meiCe2	i just did throw &WinMain; at the end of my win32 app for fun
+2020-03-22 16:38:55	<--	wnbeser (~wnbeser@dkb-0jx1rf4rgp7hk0p-4.rev.dnainternet.fi) has quit (Quit: Leaving)
+2020-03-22 16:39:12	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Quit: Leaving.)
+2020-03-22 16:39:30	Chr0meiCe2	free(time()); could work if its the right time i suppose as well?
+2020-03-22 16:39:50	Chr0meiCe2	i like just messing around
+2020-03-22 16:39:54	ARoxdale	I have a link to a talk that goes over the pre-C++11 methods of multi-threaded C++, and compares/contrasts with the new atomics support. It's a pretty good talk for comparing the old-style vs newer style methods for atomic operations: https://www.youtube.com/watch?v=X1T3IQ4N-3g
+2020-03-22 16:41:51	ARoxdale	You can get thread safety with atomics only, but you have to to be extremely careful and you only have the lowest possible primitives to work with, and basically you will fail. Mutexes are the, horribly named, but most straightforward thread synchonisation primitive that "Just Works(TM)"
+2020-03-22 16:42:49	-->	fooobarrr (~fooobarrr@marangoni.bu.edu) has joined ##c++
+2020-03-22 16:42:49	<--	fooobarrr (~fooobarrr@marangoni.bu.edu) has quit (Changing host)
+2020-03-22 16:42:49	-->	fooobarrr (~fooobarrr@unaffiliated/fooobarrr) has joined ##c++
+2020-03-22 16:42:50	-->	wildlander (~wildlande@unaffiliated/wildlander) has joined ##c++
+2020-03-22 16:42:59	<--	RangerBob (~brian@pool-173-72-170-17.clppva.fios.verizon.net) has quit (Quit: Leaving)
+2020-03-22 16:43:22	cbreak	https://www.youtube.com/watch?v=ZQFzMfHIxng
+2020-03-22 16:43:27	cbreak	this is a great talk imo.
+2020-03-22 16:44:18	<--	latenite (~latenite@p4FD7DCF5.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-03-22 16:44:37	-->	latenite (~latenite@p4FD7DCF5.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 16:44:55	InPhase	For performance and organization, avoid high level mutexing.  Mutexes are also a pretty low level component for threading, and should be restricted to implementing higher level abstractions like message passing that provide better guarantees for a problem-resistant threading architecture.
+2020-03-22 16:46:11	InPhase	You don't get any scalability with threads if your threads spend all their time in contention, and you don't get reliability with threads if you have complicated logic where bugs can cause deadlocks.  So you want to abstract away those possibilities with a good interface.
+2020-03-22 16:46:53	cbreak	I've seen several talks from this Fedor Pikus guy, and they were all highly interesting and educative
+2020-03-22 16:47:11	cbreak	https://www.youtube.com/watch?v=rxQ5K9lo034 is an other one
+2020-03-22 16:49:38	-->	zcheng3 (~zcheng3@d198-53-38-251.abhsia.telus.net) has joined ##c++
+2020-03-22 16:49:39	<--	black_ant (~antilope@unaffiliated/black-ant/x-1505394) has quit (Ping timeout: 264 seconds)
+2020-03-22 16:54:06	-->	His_Dudeness__ (~His_Duden@176.199.255.170) has joined ##c++
+2020-03-22 16:55:45	<--	paperManu_ (~paperManu@138.197.128.151) has quit (Quit: ZNC 1.6.3+deb1ubuntu0.1 - http://znc.in)
+2020-03-22 16:56:25	-->	paperManu (~paperManu@138.197.128.151) has joined ##c++
+2020-03-22 16:56:40	<--	royal_screwup21 (~royal_scr@2001:630:e4:4220:e80e:336e:b065:f99b) has quit (Quit: zzzz)
+2020-03-22 16:56:51	-->	pepper_chico (~pepper_ch@gateway/tor-sasl/pepperchico/x-70212520) has joined ##c++
+2020-03-22 16:57:43	-->	cfoch (uid153227@gateway/web/irccloud.com/x-ugkqpxuijyhwheet) has joined ##c++
+2020-03-22 16:58:30	<--	f4t4l_3rr0r (~PhoenixCo@unaffiliated/alien-fx-fiend/x-2870569) has quit (Quit: .oO (bbl tc folks~!))
+2020-03-22 17:01:07	-->	banisterfiend (~textual@ruby/staff/banisterfiend) has joined ##c++
+2020-03-22 17:01:26	-->	royal_screwup21 (~royal_scr@eduroam-wireless-pat0.nomadic.bris.ac.uk) has joined ##c++
+2020-03-22 17:02:51	<--	bps2 (~bps@185.200.118.102) has quit (Ping timeout: 264 seconds)
+2020-03-22 17:02:56	<--	Anthaas (~Anthaas@unaffiliated/anthaas) has quit (Ping timeout: 256 seconds)
+2020-03-22 17:03:27	-->	biberu (~biberu@c188-149-190-212.bredband.comhem.se) has joined ##c++
+2020-03-22 17:04:34	<--	darkbit (~rm@152.32.100.41) has quit (Quit: WeeChat 2.7.1)
+2020-03-22 17:05:00	<--	jpzhu (~jpzhu@47.100.176.70) has quit (Ping timeout: 250 seconds)
+2020-03-22 17:05:30	-->	Anthaas (~Anthaas@unaffiliated/anthaas) has joined ##c++
+2020-03-22 17:05:54	-->	di0_ (~di0_@unaffiliated/di0-/x-5053590) has joined ##c++
+2020-03-22 17:06:00	-->	jpzhu (~jpzhu@47.100.176.70) has joined ##c++
+2020-03-22 17:06:32	-->	troulouliou_div2 (~troulouli@unaffiliated/troulouliou-div2/x-0271439) has joined ##c++
+2020-03-22 17:07:10	<--	zzattack (~frank@unaffiliated/zzattack) has quit (Ping timeout: 250 seconds)
+2020-03-22 17:07:54	-->	pxs (~pxs@176.60.176.144) has joined ##c++
+2020-03-22 17:11:15	<--	mad_enz (~mad_enz@2606:6d00:135:9d84:d1d0:1fe4:4afd:d73f) has quit (Ping timeout: 246 seconds)
+2020-03-22 17:17:27	-->	Iolo (~iolo@dsl-tkubng22-50de93-232.dhcp.inet.fi) has joined ##c++
+2020-03-22 17:20:14	--	hans_ is now known as hanshenrik
+2020-03-22 17:22:06	-->	tlab (~tlab@2601:245:c700:41f:d944:798c:bcea:68b4) has joined ##c++
+2020-03-22 17:24:09	-->	mad_enz (~mad_enz@2606:6d00:135:9d84:cd6c:cc39:1014:5187) has joined ##c++
+2020-03-22 17:24:58	<--	delli3 (~delli3@2601:280:c780:7ea0:3028:b6f2:c1f:6514) has quit (Read error: Connection reset by peer)
+2020-03-22 17:25:02	captainchris	it is possible de loop with ( for auto& value: ptr) on pointer  ?? 
+2020-03-22 17:25:59	ARoxdale	Don't think so. A point isn't a container so there wouldn't be a begin/end for the counter to know what to iterate
+2020-03-22 17:26:10	ARoxdale	I don't know much about auto range deduction though.
+2020-03-22 17:26:25	cbreak	it's obviously not possible on pointers, for exactly that reason
+2020-03-22 17:26:52	cbreak	ranged for loops only work on objects where begin(obj) and end(obj) return iterators
+2020-03-22 17:27:09	<--	omnihil (~user@gateway/tor-sasl/omnihil) has quit (Remote host closed the connection)
+2020-03-22 17:27:24	-->	omnihil (~user@gateway/tor-sasl/omnihil) has joined ##c++
+2020-03-22 17:28:14	Alipha	Use std::span
+2020-03-22 17:30:02	<--	omnihil (~user@gateway/tor-sasl/omnihil) has quit (Remote host closed the connection)
+2020-03-22 17:32:28	-->	omnihil (~user@gateway/tor-sasl/omnihil) has joined ##c++
+2020-03-22 17:32:41	--	snackoverflow is now known as audioburn
+2020-03-22 17:33:23	-->	zzattack (~frank@ip51cc4341.speed.planet.nl) has joined ##c++
+2020-03-22 17:33:23	<--	zzattack (~frank@ip51cc4341.speed.planet.nl) has quit (Changing host)
+2020-03-22 17:33:23	-->	zzattack (~frank@unaffiliated/zzattack) has joined ##c++
+2020-03-22 17:33:52	<--	Necktwi (~necktwi@157.48.198.206) has quit (Read error: Connection reset by peer)
+2020-03-22 17:33:53	-->	Necktwi_ (~necktwi@157.48.198.206) has joined ##c++
+2020-03-22 17:34:08	pepper_chico	std::span is c++20, not even yet released
+2020-03-22 17:36:32	-->	prince1 (~prince@203.246.179.184) has joined ##c++
+2020-03-22 17:37:06	-->	c3n7 (~draz_wi_@154.70.25.236) has joined ##c++
+2020-03-22 17:38:06	o][o	pepper_chico: experimental?
+2020-03-22 17:38:13	o][o	standalone lib?
+2020-03-22 17:40:51	<--	prince1 (~prince@203.246.179.184) has quit (Ping timeout: 240 seconds)
+2020-03-22 17:40:58	pepper_chico	sure, but not worth just for the task at hand
+2020-03-22 17:41:01	<--	Necktwi_ (~necktwi@157.48.198.206) has quit (Read error: Connection reset by peer)
+2020-03-22 17:41:29	pepper_chico	it's also on GSL lib
+2020-03-22 17:42:20	-->	aiolos (~Aiolos@151.76.118.34) has joined ##c++
+2020-03-22 17:42:49	<--	Toriality (~Toriality@2804:7f1:c180:9982:dd3b:2a96:47a1:750a) has quit (Ping timeout: 246 seconds)
+2020-03-22 17:43:41	<--	the_pilgrim (~quassel@89-181-193-184.net.novis.pt) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-03-22 17:44:37	-->	ciro (~ciro@unaffiliated/ciro) has joined ##c++
+2020-03-22 17:44:49	<--	Frishkorn (~Frishkorn@remorse.no) has left ##c++ ("Smell ya later!")
+2020-03-22 17:46:10	-->	Necktwi (~necktwi@157.48.198.206) has joined ##c++
+2020-03-22 17:47:39	<--	hanshenrik (~hans@46.46.194.156) has quit (Quit: Leaving)
+2020-03-22 17:47:54	<--	jsoft (~jsoft@unaffiliated/jsoft) has quit (Ping timeout: 250 seconds)
+2020-03-22 17:48:16	-->	al3xandr0s (~al3xandr0@2a02:587:4c4e:f700:20f7:ba02:9c42:c38d) has joined ##c++
+2020-03-22 17:48:17	<--	al3xandr0s (~al3xandr0@2a02:587:4c4e:f700:20f7:ba02:9c42:c38d) has quit (Changing host)
+2020-03-22 17:48:17	-->	al3xandr0s (~al3xandr0@unaffiliated/al3xandr0s) has joined ##c++
+2020-03-22 17:49:44	Alipha	You could write std::span in like 5 mins :-) (at least the relevant functions here)
+2020-03-22 17:52:25	<--	chris64 (~chris@unaffiliated/chris64) has quit (Quit: leaving)
+2020-03-22 17:52:28	o][o	or use a lib
+2020-03-22 17:53:08	o][o	the standalone libs are great for migrating code while the compiler isn't up to date
+2020-03-22 17:53:11	<--	Starhowl (~starhowl@p508D4B1A.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-03-22 17:54:05	-->	Starhowl (~starhowl@p508D43C4.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 17:59:15	<--	ARoxdale (~AlanRoxda@80.233.62.139) has quit (Ping timeout: 264 seconds)
+2020-03-22 18:02:15	<--	tracks (~ignis@108-76-140-209.lightspeed.jcsnms.sbcglobal.net) has quit (Ping timeout: 264 seconds)
+2020-03-22 18:02:18	JohnTalent	anyone have tips on sequential to parallel conversions?
+2020-03-22 18:02:28	<--	Elysion (~elysion@ppp118-210-22-223.adl-adc-lon-bras31.tpg.internode.on.net) has quit (Quit: Konversation terminated!)
+2020-03-22 18:03:51	<--	aiolos (~Aiolos@151.76.118.34) has quit (Ping timeout: 240 seconds)
+2020-03-22 18:05:24	-->	dv{0 (~D@190.189.217.10) has joined ##c++
+2020-03-22 18:09:16	-->	aiolos (~Aiolos@151.76.118.34) has joined ##c++
+2020-03-22 18:09:39	Alipha	https://wandbox.org/permlink/qL6yPQmna7ZidMVV :-)
+2020-03-22 18:09:53	-->	tane (~tane@dslb-002-206-072-121.002.206.pools.vodafone-ip.de) has joined ##c++
+2020-03-22 18:11:30	<--	seezer (quassel@quassel/developer/seezer) has quit (Quit: -)
+2020-03-22 18:13:12	-->	seezer (quassel@quassel/developer/seezer) has joined ##c++
+2020-03-22 18:13:44	<--	ExoUNX (~ExoUNX@unaffiliated/exounx) has quit (Quit: later fam...)
+2020-03-22 18:15:27	<--	tlab (~tlab@2601:245:c700:41f:d944:798c:bcea:68b4) has quit (Read error: Connection reset by peer)
+2020-03-22 18:17:30	-->	Wetmelon (~wetmelon@66-169-41-35.dhcp.gnvl.sc.charter.com) has joined ##c++
+2020-03-22 18:18:48	<--	aiolos (~Aiolos@151.76.118.34) has quit (Ping timeout: 256 seconds)
+2020-03-22 18:19:32	-->	tlab (~tlab@2601:245:c700:41f:e085:b087:78a0:20ff) has joined ##c++
+2020-03-22 18:20:16	-->	pulse (~pulse@unaffiliated/pulse) has joined ##c++
+2020-03-22 18:21:23	-->	aiolos (~Aiolos@151.76.118.34) has joined ##c++
+2020-03-22 18:22:28	-->	zpshank (~zpshank@c-73-135-24-230.hsd1.md.comcast.net) has joined ##c++
+2020-03-22 18:23:36	-->	blackleitus_ (~blackleit@2806:269:3401:33a1:f999:6f3f:606e:3e02) has joined ##c++
+2020-03-22 18:23:51	<--	nostar (~nostar@c-69-244-137-171.hsd1.mi.comcast.net) has quit (Ping timeout: 264 seconds)
+2020-03-22 18:24:20	-->	sauvin_ (sauvin@about/linux/staff/sauvin) has joined ##c++
+2020-03-22 18:24:55	-->	nostar (~nostar@c-69-244-137-171.hsd1.mi.comcast.net) has joined ##c++
+2020-03-22 18:26:09	<--	luke-jr (~luke-jr@unaffiliated/luke-jr) has quit (Quit: ZNC - http://znc.sourceforge.net)
+2020-03-22 18:26:25	-->	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has joined ##c++
+2020-03-22 18:26:28	<--	sauvin (sauvin@about/linux/staff/sauvin) has quit (Ping timeout: 250 seconds)
+2020-03-22 18:26:30	-->	luke-jr (~luke-jr@unaffiliated/luke-jr) has joined ##c++
+2020-03-22 18:26:43	--	sauvin_ is now known as sauvin
+2020-03-22 18:27:37	-->	stitched_unicorn (~Red@240d:1a:54a:bc00:463:b018:1d88:3613) has joined ##c++
+2020-03-22 18:27:46	<--	pxs (~pxs@176.60.176.144) has quit (Read error: Connection reset by peer)
+2020-03-22 18:30:51	-->	haniaF_ (~haniaF@79.184.91.221.ipv4.supernova.orange.pl) has joined ##c++
+2020-03-22 18:31:11	<--	haniaF (~haniaF@79.184.88.8.ipv4.supernova.orange.pl) has quit (Ping timeout: 240 seconds)
+2020-03-22 18:31:35	<--	haniaF_ (~haniaF@79.184.91.221.ipv4.supernova.orange.pl) has quit (Remote host closed the connection)
+2020-03-22 18:31:44	-->	haniaF (~haniaF@79.184.91.221.ipv4.supernova.orange.pl) has joined ##c++
+2020-03-22 18:33:31	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined ##c++
+2020-03-22 18:37:13	<--	bashquest (~bash0r@unaffiliated/bashquest) has quit (Quit: Leaving)
+2020-03-22 18:38:46	-->	tracks (~ignis@108-76-140-209.lightspeed.jcsnms.sbcglobal.net) has joined ##c++
+2020-03-22 18:39:10	-->	Jeanne-Kamikaze (~Jeanne-Ka@192.200.24.84) has joined ##c++
+2020-03-22 18:41:15	<--	tm (~sinnlos@unaffiliated/tm) has quit (Ping timeout: 264 seconds)
+2020-03-22 18:41:32	<--	audioburn (~audioburn@unaffiliated/theology) has quit (Quit: Leaving)
+2020-03-22 18:41:49	-->	snackoverflow (~audioburn@unaffiliated/theology) has joined ##c++
+2020-03-22 18:43:22	<--	stitched_unicorn (~Red@240d:1a:54a:bc00:463:b018:1d88:3613) has quit (Quit: stitched_unicorn)
+2020-03-22 18:43:51	-->	delli3 (~delli3@2601:280:c780:7ea0:cd4d:e8b7:fd52:9063) has joined ##c++
+2020-03-22 18:44:17	-->	pa (~pa@unaffiliated/pa) has joined ##c++
+2020-03-22 18:44:39	-->	tm (~sinnlos@unaffiliated/tm) has joined ##c++
+2020-03-22 18:45:20	-->	Involuntary (~Jeanne-Ka@107.152.99.41) has joined ##c++
+2020-03-22 18:45:30	<--	ciro (~ciro@unaffiliated/ciro) has quit (Quit: IRC client terminated!)
+2020-03-22 18:46:45	<--	pa (~pa@unaffiliated/pa) has quit (Quit: quit.)
+2020-03-22 18:46:59	<--	irf21k (~irf21k@2401:4900:3362:ab59:1:0:bccb:e8f5) has quit (Ping timeout: 260 seconds)
+2020-03-22 18:47:17	<--	jplejacq (~jplejacq@24.224.107.80) has quit (Quit: Leaving.)
+2020-03-22 18:47:45	<--	Jeanne-Kamikaze (~Jeanne-Ka@192.200.24.84) has quit (Ping timeout: 250 seconds)
+2020-03-22 18:47:52	-->	irf21k (~irf21k@2401:4900:3362:ab59:1:0:bf0a:80ec) has joined ##c++
+2020-03-22 18:48:29	-->	SleekUser (~SleekUser@ip68-109-83-59.oc.oc.cox.net) has joined ##c++
+2020-03-22 18:48:34	<--	troulouliou_div2 (~troulouli@unaffiliated/troulouliou-div2/x-0271439) has quit (Quit: Leaving)
+2020-03-22 18:49:21	-->	pa (~pa@unaffiliated/pa) has joined ##c++
+2020-03-22 18:49:27	-->	gelignite (~gelignite@55d4e683.access.ecotel.net) has joined ##c++
+2020-03-22 18:49:35	-->	dt01_ (~SleekUser@ip68-109-83-59.oc.oc.cox.net) has joined ##c++
+2020-03-22 18:49:55	-->	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 18:50:13	<--	blackleitus_ (~blackleit@2806:269:3401:33a1:f999:6f3f:606e:3e02) has quit (Remote host closed the connection)
+2020-03-22 18:50:21	-->	GuerrillaMonkey (~Jeanne-Ka@192.200.24.85) has joined ##c++
+2020-03-22 18:51:17	<--	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 18:51:40	-->	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 18:52:03	<--	dt01_ (~SleekUser@ip68-109-83-59.oc.oc.cox.net) has quit (Client Quit)
+2020-03-22 18:52:40	-->	dt01_ (~SleekUser@ip68-109-83-59.oc.oc.cox.net) has joined ##c++
+2020-03-22 18:52:46	<--	dt01_ (~SleekUser@ip68-109-83-59.oc.oc.cox.net) has quit (Remote host closed the connection)
+2020-03-22 18:52:57	<--	Involuntary (~Jeanne-Ka@107.152.99.41) has quit (Ping timeout: 250 seconds)
+2020-03-22 18:52:57	<--	ipe (~ipe@213-216-239-246.bb.dnainternet.fi) has quit (Ping timeout: 250 seconds)
+2020-03-22 18:53:20	<--	SleekUser (~SleekUser@ip68-109-83-59.oc.oc.cox.net) has quit (Ping timeout: 250 seconds)
+2020-03-22 18:54:42	-->	mmfood (~mmfood@81-232-132-159-no64.tbcn.telia.com) has joined ##c++
+2020-03-22 18:57:27	-->	frib (~frib@2601:585:8502:55c0:89fb:6144:8e7:af5d) has joined ##c++
+2020-03-22 18:59:15	<--	Starhowl (~starhowl@p508D43C4.dip0.t-ipconnect.de) has quit (Ping timeout: 264 seconds)
+2020-03-22 19:00:54	-->	Leovale (~Leovale@CPE9050cac01073-CM9050cac01070.cpe.net.cable.rogers.com) has joined ##c++
+2020-03-22 19:03:32	Alipha	really, DOT should probably have a precedence between * and +, but there's no existing operators with a precedence between them :-( and cross product should have precedence greater than dot product, so i'm not sure what you should do. use lots of parentheses ;-)
+2020-03-22 19:03:41	-->	lupulo (~javiero@113.red-79-146-129.dynamicip.rima-tde.net) has joined ##c++
+2020-03-22 19:04:02	<--	lupulo (~javiero@113.red-79-146-129.dynamicip.rima-tde.net) has quit (Client Quit)
+2020-03-22 19:04:16	-->	lupulo (~javiero@113.red-79-146-129.dynamicip.rima-tde.net) has joined ##c++
+2020-03-22 19:04:26	<--	frib (~frib@2601:585:8502:55c0:89fb:6144:8e7:af5d) has quit (Quit: Leaving)
+2020-03-22 19:04:46	-->	JDev0x539 (~startx@gateway/tor-sasl/jdev0x539) has joined ##c++
+2020-03-22 19:05:09	Alipha	oh, totally wrong channel
+2020-03-22 19:05:31	<--	aiolos (~Aiolos@151.76.118.34) has quit (Ping timeout: 250 seconds)
+2020-03-22 19:06:25	-->	ferche23 (~ferche23@200.123.38.117) has joined ##c++
+2020-03-22 19:10:36	<--	delli3 (~delli3@2601:280:c780:7ea0:cd4d:e8b7:fd52:9063) has quit (Read error: Connection reset by peer)
+2020-03-22 19:12:13	-->	Kostenko (~Kostenko@2001:8a0:7288:5300:e67b:f900:d4b6:e6f7) has joined ##c++
+2020-03-22 19:12:14	-->	r-purohit7 (75f183de@117.241.131.222) has joined ##c++
+2020-03-22 19:13:44	r-purohit7	which is the best compiler to easily install libraries in c++?
+2020-03-22 19:15:57	-->	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 19:16:15	vdamewood	I need to learn to use the bot.
+2020-03-22 19:16:33	vdamewood	r-purohit7: You should ask that question in ##c++-general.
+2020-03-22 19:17:03	r-purohit7	vdamewood: okay
+2020-03-22 19:18:33	-->	clime1 (~clime@89-24-42-88.nat.epc.tmcz.cz) has joined ##c++
+2020-03-22 19:19:21	<--	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Ping timeout: 240 seconds)
+2020-03-22 19:21:45	<--	plastico (~plastico@2001:8a0:de6b:1a00:9d14:766e:70a8:dcea) has quit (Quit: WeeChat 2.7.1)
+2020-03-22 19:22:28	<--	DerLG_ (~DerL@173.255.240.97) has left ##c++
+2020-03-22 19:22:54	<--	latenite (~latenite@p4FD7DCF5.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-03-22 19:23:29	<--	r-purohit7 (75f183de@117.241.131.222) has left ##c++
+2020-03-22 19:23:43	-->	imp (~imp@201.17.77.214) has joined ##c++
+2020-03-22 19:24:02	imp	how 'using' declaration works? Is just an alias?
+2020-03-22 19:24:24	-->	pnbeast (~pnbeast@2601:140:4200:f9d0::1) has joined ##c++
+2020-03-22 19:24:24	imp	or a search space?
+2020-03-22 19:25:27	-->	SwiftMatt (~Objective@2601:282:4300:3e:9575:6e14:701f:9047) has joined ##c++
+2020-03-22 19:26:04	<--	GuerrillaMonkey (~Jeanne-Ka@192.200.24.85) has quit (Quit: Leaving)
+2020-03-22 19:26:14	-->	Jeanne-Kamikaze (~Jeanne-Ka@192.200.24.85) has joined ##c++
+2020-03-22 19:26:55	<--	Jakube (~Jakube@213.147.165.187) has quit (Remote host closed the connection)
+2020-03-22 19:27:05	-->	noboruma (~noboruma@host-78-149-13-115.as13285.net) has joined ##c++
+2020-03-22 19:28:24	JohnTalent	Is measuring using ::chrono the only way to test effieciency in parrallel divisions on certain number of cores?
+2020-03-22 19:29:47	TinoDidriksen	No, usually you'd use an outside profiler.
+2020-03-22 19:30:49	-->	tcr (~trittweil@217.194.53.183) has joined ##c++
+2020-03-22 19:30:57	-->	BlackV3nom__ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 19:30:59	Alipha	imp: `using std::string;` makes it so you can refer to std::string just by using `string`. `using foo = std::string;` makes foo an alias for std::string
+2020-03-22 19:31:07	<--	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 19:31:19	<--	nolyc (~supybot@www.projectiwear.org) has quit (Remote host closed the connection)
+2020-03-22 19:31:28	Alipha	`using namespace std;` makes it so you can refer to anything in the std namespace without std::
+2020-03-22 19:32:19	-->	deadstorm (~storm@050-089-247-107.res.spectrum.com) has joined ##c++
+2020-03-22 19:33:22	JohnTalent	TinoDidriksen: ok
+2020-03-22 19:33:45	imp	Alipha: understood, you make an explanation by examples. I knew all of that already. I would like to know how it works? When declaring for example "using namespace foobar;" it will look for any unknown function/object reference in all "used" namespaces? It follows any order?
+2020-03-22 19:34:10	ville	in crtp is it alright to static_cast to T* during ctors and give that out?
+2020-03-22 19:34:14	<--	irf21k (~irf21k@2401:4900:3362:ab59:1:0:bf0a:80ec) has quit (Ping timeout: 260 seconds)
+2020-03-22 19:34:43	Alipha	imp: it looks in them all. if there are multiple results, you'll get an ambiguity error
+2020-03-22 19:35:04	Alipha	imp: except that ADL may give precedence to some over others
+2020-03-22 19:35:29	-->	nolyc (~supybot@www.projectiwear.org) has joined ##c++
+2020-03-22 19:35:35	Alipha	(ADL = argument-dependent lookup)
+2020-03-22 19:36:20	imp	Alipha: thank you. Is that "search table (maybe a hash table)" exposed to user space? Or it just happens during compilation?
+2020-03-22 19:36:38	Alipha	imp: nope. it's all internal to the compiler
+2020-03-22 19:37:18	imp	Alipha: thank you.
+2020-03-22 19:37:27	-->	prince1 (~prince@203.246.179.184) has joined ##c++
+2020-03-22 19:37:33	Alipha	imp: and actually, i'm not completely sure of the precedence rules. i mean, local variables are preferred over anything else. i'd have to play around with different scenarios... or perhaps someone can find some reference to the standard on the ordering
+2020-03-22 19:37:36	ville	hmm can't inherit multiple times from the same base class
+2020-03-22 19:37:46	-->	irf21k (~irf21k@2401:4900:3362:ab59:1:0:bf0a:80ec) has joined ##c++
+2020-03-22 19:38:39	Alipha	ville: i assume static_cast to T* during ctors would technically be UB since the object isn't of type T yet :-/
+2020-03-22 19:39:01	<--	SwiftMatt (~Objective@2601:282:4300:3e:9575:6e14:701f:9047) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2020-03-22 19:39:05	<--	klaatu (~klaatu@unaffiliated/klaatu) has quit (Quit: Leaving)
+2020-03-22 19:39:20	-->	edlinde (~edlinde@203.191.56.226) has joined ##c++
+2020-03-22 19:39:24	<--	sleepingforest (~sleepingf@unaffiliated/sleepingforest) has quit (Quit: bye!)
+2020-03-22 19:39:46	-->	sleepingforest (~sleepingf@unaffiliated/sleepingforest) has joined ##c++
+2020-03-22 19:41:24	-->	Goplat (~Goplat@reactos/developer/Goplat) has joined ##c++
+2020-03-22 19:41:31	-->	ciro (~ciro@unaffiliated/ciro) has joined ##c++
+2020-03-22 19:41:33	<--	edlinde (~edlinde@203.191.56.226) has quit (Client Quit)
+2020-03-22 19:41:51	<--	prince1 (~prince@203.246.179.184) has quit (Ping timeout: 240 seconds)
+2020-03-22 19:41:56	-->	edlinde (~edlinde@203.191.56.226) has joined ##c++
+2020-03-22 19:43:21	-->	P1RATEZ (piratez@unaffiliated/p1ratez) has joined ##c++
+2020-03-22 19:43:38	-->	Sheilong (uid293653@gateway/web/irccloud.com/x-ukmoorkiivxgqoyd) has joined ##c++
+2020-03-22 19:43:57	<--	npaperbot (~npaperbot@dodecahedron.m-ou.se) has quit (Remote host closed the connection)
+2020-03-22 19:44:05	-->	npaperbot (~npaperbot@dodecahedron.m-ou.se) has joined ##c++
+2020-03-22 19:44:16	-->	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has joined ##c++
+2020-03-22 19:44:40	ville	not dereffing it, just cast and handing it out
+2020-03-22 19:45:00	-->	SwiftMatt (~Objective@2601:282:4300:3e:9575:6e14:701f:9047) has joined ##c++
+2020-03-22 19:45:53	-->	krukudilo (~krukudilo@gateway/tor-sasl/krukudilo) has joined ##c++
+2020-03-22 19:46:04	-->	wildlander_ (~wildlande@unaffiliated/wildlander) has joined ##c++
+2020-03-22 19:47:15	<--	wildlander (~wildlande@unaffiliated/wildlander) has quit (Ping timeout: 264 seconds)
+2020-03-22 19:47:23	urdh	Alipha, imp: https://en.cppreference.com/w/cpp/language/unqualified_lookup
+2020-03-22 19:48:18	Alipha	urdh: thanks
+2020-03-22 19:48:33	--	PJBoy is now known as Guest16580
+2020-03-22 19:48:33	<--	Guest16580 (~PJBoy@unaffiliated/pjboy) has quit (Killed (tepper.freenode.net (Nickname regained by services)))
+2020-03-22 19:48:41	-->	PJBoy (~PJBoy@unaffiliated/pjboy) has joined ##c++
+2020-03-22 19:48:51	<--	edlinde (~edlinde@203.191.56.226) has quit (Ping timeout: 250 seconds)
+2020-03-22 19:49:34	urdh	also https://en.cppreference.com/w/cpp/language/namespace explains exactly how using-directives work with respect to unqualified lookup
+2020-03-22 19:50:24	ville	ideas for a situation where i want to make a type movable, but some external entities i can't change are holding back pointers it? i have a connection object i can use to disconnect so that's alright, but i would like to somehow "auto register" during move constructor with out having to manually type out the move operations
+2020-03-22 19:50:29	-->	Shikadi` (~Shikadi@135.30.27.136.in-addr.arpa) has joined ##c++
+2020-03-22 19:50:30	-->	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 19:50:39	<--	BlackV3nom__ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 19:50:48	<--	Jesin (~Jesin@pool-72-66-101-18.washdc.fios.verizon.net) has quit (Quit: Leaving)
+2020-03-22 19:51:06	-->	ipe (~ipe@213-216-239-246.bb.dnainternet.fi) has joined ##c++
+2020-03-22 19:52:05	-->	SeteDeNove (~Sete@177.106.2.214) has joined ##c++
+2020-03-22 19:52:09	-->	Noti (~steffan@ip4da40774.direct-adsl.nl) has joined ##c++
+2020-03-22 19:53:32	<--	Saukk (~Saukk@2001:998:d6:9488:1c59:9bb5:b94c:2) has quit (Remote host closed the connection)
+2020-03-22 19:57:27	<--	gedda (~gedda@s17612523593.blix.com) has quit (Ping timeout: 264 seconds)
+2020-03-22 19:58:03	-->	edlinde (~edlinde@183.83.147.168) has joined ##c++
+2020-03-22 19:59:30	<--	deadstorm (~storm@050-089-247-107.res.spectrum.com) has left ##c++
+2020-03-22 20:00:48	<--	jazzboi (~jazzboi@e51a-e529-1e5c-d402-a380-8a37-07d0-2001.dyn.estpak.ee) has quit (Quit: WeeChat 2.7.1)
+2020-03-22 20:01:01	-->	mossylane (~user@2a01:7c8:aaaa:12:5054:ff:fe69:1df9) has joined ##c++
+2020-03-22 20:04:26	o][o	ville: some sort of state pattern
+2020-03-22 20:04:27	<--	banisterfiend (~textual@ruby/staff/banisterfiend) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-22 20:04:39	o][o	when you move the instance out, it gets into a zombie state
+2020-03-22 20:05:07	o][o	state pattern is pretty suitable for connection sockets :)
+2020-03-22 20:05:22	<--	methos1 (methos@2600:3c03::f03c:91ff:fe8d:fdb4) has left ##c++
+2020-03-22 20:06:07	<--	mossylane (~user@2a01:7c8:aaaa:12:5054:ff:fe69:1df9) has quit (Quit: WeeChat 1.6)
+2020-03-22 20:07:19	<--	Groogy (~Groogy@c-158de155.013-22-73746f24.bbcust.telenor.se) has quit (Quit: WeeChat 2.7.1)
+2020-03-22 20:07:51	-->	GGMethos (methos@2600:3c03::f03c:91ff:fe8d:fdb4) has joined ##c++
+2020-03-22 20:10:11	<--	arora (~ashok@117.97.149.173) has quit (Ping timeout: 240 seconds)
+2020-03-22 20:11:32	<--	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 20:11:44	-->	mossylane (~user@2a01:7c8:aaaa:12:5054:ff:fe69:1df9) has joined ##c++
+2020-03-22 20:11:46	-->	Starhowl (~starhowl@p508D43C4.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 20:11:52	-->	plastico (~plastico@2001:8a0:de6b:1a00:9d14:766e:70a8:dcea) has joined ##c++
+2020-03-22 20:11:57	-->	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 20:12:44	<--	irf21k (~irf21k@2401:4900:3362:ab59:1:0:bf0a:80ec) has quit (Ping timeout: 260 seconds)
+2020-03-22 20:13:34	<--	zpshank (~zpshank@c-73-135-24-230.hsd1.md.comcast.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-22 20:14:51	<--	pulse (~pulse@unaffiliated/pulse) has quit (Ping timeout: 250 seconds)
+2020-03-22 20:14:51	<--	tefter (~bmaxa@109.72.51.23) has quit (Ping timeout: 240 seconds)
+2020-03-22 20:15:09	-->	xerox__ (~xerox@62.10.8.40) has joined ##c++
+2020-03-22 20:15:20	-->	tefter (~bmaxa@109.72.51.23) has joined ##c++
+2020-03-22 20:16:58	--	xerox_ is now known as Guest45877
+2020-03-22 20:17:22	<--	xerox__ (~xerox@62.10.8.40) has quit (Client Quit)
+2020-03-22 20:17:53	<--	Guest45877 (~xerox@unaffiliated/xerox) has quit (Ping timeout: 250 seconds)
+2020-03-22 20:21:14	-->	banisterfiend (~banisterf@ruby/staff/banisterfiend) has joined ##c++
+2020-03-22 20:22:13	<--	di0_ (~di0_@unaffiliated/di0-/x-5053590) has quit (Ping timeout: 250 seconds)
+2020-03-22 20:25:36	-->	Jesin (~Jesin@pool-72-66-101-18.washdc.fios.verizon.net) has joined ##c++
+2020-03-22 20:26:26	<--	noboruma (~noboruma@host-78-149-13-115.as13285.net) has quit (Remote host closed the connection)
+2020-03-22 20:27:20	<--	edlinde (~edlinde@183.83.147.168) has quit (Quit: edlinde)
+2020-03-22 20:28:28	-->	banister_ (~textual@2001:1c00:e08:faf0:dda6:c29f:cc89:7b95) has joined ##c++
+2020-03-22 20:29:20	JohnTalent	What are you favorite C++ profilers? I was thinking valgrind/helgrind.
+2020-03-22 20:29:28	JohnTalent	s/you/your
+2020-03-22 20:29:53	PJBoy	MSVC :)
+2020-03-22 20:30:23	indomitable	what is msvc
+2020-03-22 20:30:24	<--	His_Dudeness__ (~His_Duden@176.199.255.170) has quit (Ping timeout: 250 seconds)
+2020-03-22 20:30:38	TinoDidriksen	MS Visual Studio
+2020-03-22 20:30:43	o][o	general?
+2020-03-22 20:31:10	-->	pulse (~pulse@unaffiliated/pulse) has joined ##c++
+2020-03-22 20:31:19	-->	noboruma (~noboruma@host-78-149-13-115.as13285.net) has joined ##c++
+2020-03-22 20:35:18	<--	banister_ (~textual@2001:1c00:e08:faf0:dda6:c29f:cc89:7b95) has quit (Ping timeout: 246 seconds)
+2020-03-22 20:39:19	-->	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 20:39:47	pepper_chico	don't
+2020-03-22 20:40:09	pepper_chico	u better off sticking to valgrind/helgrind
+2020-03-22 20:41:01	<--	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Ping timeout: 240 seconds)
+2020-03-22 20:44:50	<--	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 20:46:11	<--	krukudilo (~krukudilo@gateway/tor-sasl/krukudilo) has quit (Quit: Leaving)
+2020-03-22 20:47:12	ville	o][o: the "connection" is not a network connection. it's an event signal. the "problem" is automating the process of regiseting the moved-to object to the same signal the moved-from object had in a way that i don't have to type out the move operations for all types that utilize these signals
+2020-03-22 20:47:33	<--	xi (~quassel@nilio.ca) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-03-22 20:47:55	-->	cosimone (~cosimone@2001:b07:ae5:db26:5cfc:b197:9d8e:9cbb) has joined ##c++
+2020-03-22 20:48:24	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Quit: Leaving.)
+2020-03-22 20:48:26	-->	xi (~quassel@2600:3c04::f03c:92ff:fee9:b05e) has joined ##c++
+2020-03-22 20:49:12	-->	jplejacq (~jplejacq@24.224.107.80) has joined ##c++
+2020-03-22 20:49:12	o][o	hard to comment more w/o seeing more code and w/o knowing what is the y of your xy. but the state pattern is suitable for all kinds of connections/channels. not just network ones
+2020-03-22 20:49:18	<--	cosimone (~cosimone@2001:b07:ae5:db26:5cfc:b197:9d8e:9cbb) has quit (Client Quit)
+2020-03-22 20:49:47	o][o	it's basically a delegate that changes when the state changes
+2020-03-22 20:49:58	<--	vicfred (~vicfred@85.203.21.134) has quit (Quit: Leaving)
+2020-03-22 20:50:35	-->	cosimone (~cosimone@93-34-136-249.ip50.fastwebnet.it) has joined ##c++
+2020-03-22 20:50:37	ville	there is no state. everything is "connected" always. that's what the thing is ensuring.
+2020-03-22 20:50:58	<--	fluentkopimist (~Scott@96-92-126-169-static.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2020-03-22 20:51:10	<--	Shikadi` (~Shikadi@135.30.27.136.in-addr.arpa) has quit (Read error: Connection reset by peer)
+2020-03-22 20:51:13	o][o	you can create states: 1) before moved-from  2) after moved-from
+2020-03-22 20:51:16	-->	fluentkopimist (~Scott@96-92-126-169-static.hfc.comcastbusiness.net) has joined ##c++
+2020-03-22 20:51:34	<--	Starhowl (~starhowl@p508D43C4.dip0.t-ipconnect.de) has quit (Quit: ZNC - https://znc.in)
+2020-03-22 20:52:14	-->	thechi (uid426263@gateway/web/irccloud.com/x-klkzqhbdxwwfdgra) has joined ##c++
+2020-03-22 20:52:46	ville	yeah. doing a poor job of communicating this. the network connection analogy doesn't quite suite this situation
+2020-03-22 20:53:39	-->	Shikadi` (~Shikadi@135.30.27.136.in-addr.arpa) has joined ##c++
+2020-03-22 20:54:01	ville	it's event/signal callbacks, and it needs to be re-registered to point to the new object. unfortunately the 3rd party library is decidedly uhelpful in this regard
+2020-03-22 20:54:27	<--	ipe (~ipe@213-216-239-246.bb.dnainternet.fi) has quit (Ping timeout: 264 seconds)
+2020-03-22 20:55:04	-->	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has joined ##c++
+2020-03-22 20:55:25	o][o	gah
+2020-03-22 20:55:44	o][o	well, in this case you should wrap its calls
+2020-03-22 20:56:39	-->	gareppa (~gareppa@unaffiliated/gareppa) has joined ##c++
+2020-03-22 20:56:41	Chr0meiCe2	can anyone share some example code of how to randomize the order of a vector of strings? preferably with an above average randomization seed method in terms of cryptographic security?   if not something basic is OK
+2020-03-22 20:56:47	-->	agile_prg (~nyb@2601:182:c780:23e0:8dd6:cb32:251f:ddd) has joined ##c++
+2020-03-22 20:56:58	o][o	Chr0meiCe2: std::shuffle
+2020-03-22 20:57:20	ville	yes that's what i am doing, but i also don't want to write move operations for all the classes that happen to register things for callbacks. that's what i am trying to automate.
+2020-03-22 20:57:29	o][o	Chr0meiCe2: 4th item -> https://en.cppreference.com/w/cpp/algorithm/random_shuffle
+2020-03-22 20:57:33	-->	Starhowl (~starhowl@p508D43C4.dip0.t-ipconnect.de) has joined ##c++
+2020-03-22 20:58:01	<--	ekaologik (~quassel@p200300CD6709B600B53465DEDA728D4F.dip0.t-ipconnect.de) has quit (Read error: Connection reset by peer)
+2020-03-22 20:58:27	Chr0meiCe2	coolthcx
+2020-03-22 21:01:21	<--	gareppa (~gareppa@unaffiliated/gareppa) has quit (Remote host closed the connection)
+2020-03-22 21:02:43	<--	mmfood (~mmfood@81-232-132-159-no64.tbcn.telia.com) has quit (Quit: Leaving)
+2020-03-22 21:02:51	<--	GDiaX (~Medic@118.34.136.95.rev.vodafone.pt) has quit (Ping timeout: 240 seconds)
+2020-03-22 21:05:02	<--	rendar (~rendar@unaffiliated/rendar) has quit
+2020-03-22 21:05:25	-->	GDiaX (~Medic@118.34.136.95.rev.vodafone.pt) has joined ##c++
+2020-03-22 21:05:40	-->	ExoUNX (~ExoUNX@unaffiliated/exounx) has joined ##c++
+2020-03-22 21:06:01	Chr0meiCe2	do i need to recall 	std::random_device rd;  std::mt19937 g(rd());   each time i want to reshuffle a new vector?  or only once at beginning of program?
+2020-03-22 21:07:11	TinoDidriksen	You should initialize a random engine only once and reuse it many times. It's very expensive to initialize engines.
+2020-03-22 21:07:31	Chr0meiCe2	k cool
+2020-03-22 21:07:39	<--	mahmudov (~milisman@37.155.33.211) has quit (Ping timeout: 264 seconds)
+2020-03-22 21:07:57	<--	mackal (~mike@141.154.54.5) has quit (Quit: BE VIGILANT.)
+2020-03-22 21:10:12	-->	banisterfiend_ (~banisterf@ruby/staff/banisterfiend) has joined ##c++
+2020-03-22 21:10:18	-->	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 21:11:00	<--	banisterfiend (~banisterf@ruby/staff/banisterfiend) has quit (Ping timeout: 246 seconds)
+2020-03-22 21:11:00	--	banisterfiend_ is now known as banisterfiend
+2020-03-22 21:11:15	<--	banisterfiend (~banisterf@ruby/staff/banisterfiend) has quit (Client Quit)
+2020-03-22 21:11:55	Alipha	ville: I don't think you should have the object be movable
+2020-03-22 21:13:07	-->	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 21:13:11	<--	B1ackV3nom (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 21:13:30	Alipha	Chr0meiCe2: if you actually need the order to be cryptographically secure, there's nothing in the std library for that
+2020-03-22 21:14:12	<--	rajkosto (~Rajko@cable-178-149-122-96.dynamic.sbb.rs) has quit (Read error: Connection reset by peer)
+2020-03-22 21:14:36	<--	logicp- (~logicp@otwaon1073w-grc-04-184-144-79-188.dsl.bell.ca) has quit (Ping timeout: 250 seconds)
+2020-03-22 21:15:57	<--	panikovsky (~panikovsk@87.117.58.158) has quit (Ping timeout: 250 seconds)
+2020-03-22 21:16:12	<--	SwiftMatt (~Objective@2601:282:4300:3e:9575:6e14:701f:9047) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2020-03-22 21:19:35	-->	BlackV3nom__ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has joined ##c++
+2020-03-22 21:19:47	<--	B1ackV3nom_ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 21:20:01	<--	agile_prg (~nyb@2601:182:c780:23e0:8dd6:cb32:251f:ddd) has quit (Read error: Connection reset by peer)
+2020-03-22 21:20:16	-->	banisterfiend (~banisterf@ruby/staff/banisterfiend) has joined ##c++
+2020-03-22 21:20:16	<--	banisterfiend (~banisterf@ruby/staff/banisterfiend) has quit (Remote host closed the connection)
+2020-03-22 21:20:36	<--	BlackV3nom__ (~B1ackWid0@gateway/tor-sasl/b1ackwid0w) has quit (Remote host closed the connection)
+2020-03-22 21:20:54	-->	agile_prg (~nyb@c-73-126-2-192.hsd1.ma.comcast.net) has joined ##c++
+2020-03-22 21:21:25	Chr0meiCe2	the std::shuffle doesn't seem to be randomizing for me , i get the same results each time?
+2020-03-22 21:22:00	-->	mahmudov (~milisman@176.30.103.217) has joined ##c++
+2020-03-22 21:22:03	TinoDidriksen	Same seed gives same result.
+2020-03-22 21:23:01	Chr0meiCe2	std::random_device rd;
+2020-03-22 21:23:07	Chr0meiCe2	where is seed being set?
+2020-03-22 21:23:26	Chr0meiCe2	i would think running program multiple times the seed would be different each time?
+2020-03-22 21:23:30	<--	cd (~cd@unaffiliated/cd) has quit (Quit: cd)
+2020-03-22 21:23:38	TinoDidriksen	{ random_device rd; mt19937 g(rd()); vector<int> v{1, 2, 3, 4, 5}; shuffle(v.begin(), v.end(), g); cout << v; shuffle(v.begin(), v.end(), g); cout, v; }
+2020-03-22 21:23:39	+geordi	{3, 4, 1, 2, 5}, {2, 3, 4, 5, 1}
+2020-03-22 21:23:48	TinoDidriksen	Works fine.
+2020-03-22 21:23:51	<--	clime1 (~clime@89-24-42-88.nat.epc.tmcz.cz) has quit (Ping timeout: 264 seconds)
+2020-03-22 21:23:51	<--	clime (~clime@89-24-42-88.nat.epc.tmcz.cz) has quit (Ping timeout: 264 seconds)
+2020-03-22 21:24:03	ville	Alipha: but i want to! would avoid a dynamic allocation if it was
+2020-03-22 21:24:09	Chr0meiCe2	i have a vector of strings though
+2020-03-22 21:24:17	TinoDidriksen	That doesn't change anything.
+2020-03-22 21:24:44	TinoDidriksen	{ random_device rd; mt19937 g(rd()); vector<string> v{"1"s, "2"s, "3"s, "4"s, "5"s}; shuffle(v.begin(), v.end(), g); cout << v; shuffle(v.begin(), v.end(), g); cout, v; }
+2020-03-22 21:24:45	+geordi	{"1", "3", "4", "2", "5"}, {"5", "3", "2", "1", "4"}
+2020-03-22 21:24:54	Chr0meiCe2	weird i get no randomization at all
+2020-03-22 21:25:06	TinoDidriksen	Well, pastebin some code then...
+2020-03-22 21:25:11	-->	banisterfiend (~banisterf@ruby/staff/banisterfiend) has joined ##c++
+2020-03-22 21:25:24	Chr0meiCe2	its a really long program, let me look at a few things and make sure im not doing something dumb
+2020-03-22 21:25:33	<--	mniip (mniip@freenode/staff/mniip) has quit (Ping timeout: 606 seconds)
+2020-03-22 21:25:51	<--	Jackneill (~Jackneill@unaffiliated/jackneill) has quit (Ping timeout: 240 seconds)
+2020-03-22 21:26:03	<--	JohnTalent (~john@unaffiliated/johntalent) has quit (Quit: leaving)
+2020-03-22 21:26:21	-->	saundkim (~saundkim@pool-108-29-162-229.nycmny.fios.verizon.net) has joined ##c++
+2020-03-22 21:27:09	ville	is it legal to static_cast between the base classes of a type? struct cc : aa, bb {} in bb's ctor could i cast this to aa*?
+2020-03-22 21:28:39	Oxyd	I wouldn't expect that to compile. Casting this to cc*, then to aa* should work, though.
+2020-03-22 21:29:55	-->	ARoxdale (~AlanRoxda@80.233.37.202) has joined ##c++
+2020-03-22 21:29:57	-->	mniip (mniip@freenode/staff/mniip) has joined ##c++
+2020-03-22 21:29:59	ville	that'll do as well
+2020-03-22 21:30:58	-->	nadder (~Richard@c188-151-234-235.bredband.comhem.se) has joined ##c++
+2020-03-22 21:32:46	Chr0meiCe2	nevermind it works, its just that its the same everytime unless the data changes
+2020-03-22 21:34:58	<--	Noti (~steffan@ip4da40774.direct-adsl.nl) has quit (Quit: Konversation terminated!)
+2020-03-22 21:35:30	<--	cosimone (~cosimone@93-34-136-249.ip50.fastwebnet.it) has quit (Quit: Terminated!)
+2020-03-22 21:38:28	-->	prince1 (~prince@203.246.179.184) has joined ##c++
+2020-03-22 21:39:07	<--	peepsalot (~real@cpe-173-174-78-249.austin.res.rr.com) has quit (Quit: Connection reset by peep)
+2020-03-22 21:39:44	-->	nostar_ (~nostar@104.37.31.74) has joined ##c++
+2020-03-22 21:40:54	-->	peepsalot (~real@cpe-173-174-78-249.austin.res.rr.com) has joined ##c++
+2020-03-22 21:41:29	<--	luke-jr (~luke-jr@unaffiliated/luke-jr) has quit (Quit: ZNC - http://znc.sourceforge.net)
+2020-03-22 21:41:51	<--	nolyc (~supybot@www.projectiwear.org) has quit (Ping timeout: 240 seconds)
+2020-03-22 21:42:03	<--	WhizzWr (Whizz@s-o-m-e.h-o-s-t.name) has quit (Ping timeout: 240 seconds)
+2020-03-22 21:42:20	<--	nostar (~nostar@c-69-244-137-171.hsd1.mi.comcast.net) has quit (Ping timeout: 250 seconds)
+2020-03-22 21:42:21	-->	luke-jr (~luke-jr@unaffiliated/luke-jr) has joined ##c++
+2020-03-22 21:42:40	-->	redj (~quassel@bchmpq5707w-grc-01-174-93-219-232.dsl.bell.ca) has joined ##c++
+2020-03-22 21:43:11	<--	mniip (mniip@freenode/staff/mniip) has quit (Ping timeout: 600 seconds)
+2020-03-22 21:43:39	<--	prince1 (~prince@203.246.179.184) has quit (Ping timeout: 264 seconds)
+2020-03-22 21:44:56	-->	Dinius (2ee6833e@46.230.131.62) has joined ##c++
+2020-03-22 21:46:08	<--	dv{0 (~D@190.189.217.10) has quit (Quit: Leaving)
+2020-03-22 21:46:17	-->	nolyc (~supybot@www.projectiwear.org) has joined ##c++
+2020-03-22 21:47:32	<--	CalimeroTeknik (~calimero@pradic.com) has quit (Quit: バイバイ)
+2020-03-22 21:49:20	-->	CalimeroTeknik (~calimero@pradic.com) has joined ##c++
+2020-03-22 21:50:27	<--	zerogue (~irc@138.197.175.130) has quit (Quit: Goodbye Cruel World)
+2020-03-22 21:51:18	-->	Guest16382 (~rusty@46.97.168.13) has joined ##c++
+2020-03-22 21:51:20	-->	mniip (mniip@freenode/staff/mniip) has joined ##c++
+2020-03-22 21:51:27	-->	zerogue (~irc@138.197.175.130) has joined ##c++
+2020-03-22 21:51:50	<--	jello_pudding (~jello_pud@2601:600:9f80:7780::a17) has quit (Ping timeout: 272 seconds)
+2020-03-22 21:55:04	-->	WhizzWr (Whizz@s-o-m-e.h-o-s-t.name) has joined ##c++
+2020-03-22 21:55:50	<--	JDev0x539 (~startx@gateway/tor-sasl/jdev0x539) has quit (Quit: Leaving)
+2020-03-22 21:59:56	<--	Dinius (2ee6833e@46.230.131.62) has quit (Remote host closed the connection)
+2020-03-22 22:00:09	<--	linarcx (~linarcx@151.241.59.98) has quit (Ping timeout: 250 seconds)
+2020-03-22 22:02:51	-->	His_Dudeness__ (~His_Duden@ip-176-199-255-170.hsi06.unitymediagroup.de) has joined ##c++
+2020-03-22 22:02:58	Chr0meiCe2	do you guys agree that reinitializing the c++ randomization seed every 3 hours is no big deal in terms of performance?
+2020-08-17 13:41:53	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined ##c++
+2020-08-17 13:41:53	--	Topic for ##c++ is "is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2017 (a.k.a. C++17) || https://isocpp.org/faq || pastes: https://wandbox.org/ || other channels: ##c++-general ##c++-social"
+2020-08-17 13:41:53	--	Topic set by ville (~ville@212-149-214-47.bb.dnainternet.fi) on Wed, 15 Jan 2020 19:15:49
+2020-08-17 13:41:53	--	Channel ##c++: 853 nicks (0 ops, 1 voice, 852 normals)
+2020-08-17 13:41:55	--	Channel created on Sat, 15 Sep 2001 05:15:35
+2020-08-17 13:42:02	captainchris	Hello everybody 
+2020-08-17 13:42:02	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Client Quit)
+2020-08-17 13:44:53	<--	deltam (~deltam@unaffiliated/deltam) has quit (Ping timeout: 240 seconds)
+2020-08-17 13:45:53	captainchris	I have this code: https://gist.github.com/captainchris06210/d84e92cb5fc975c5034d7937d666f0fd
+2020-08-17 13:45:59	RePaste	Paste d84e92cb5fc975c5034d7937d666f0fd was moved to https://wandbox.org/permlink/HB5yzH9NNHBvfjHM captainchris, for the second time, do not use paste sites that can't compile code.
+2020-08-17 13:47:00	-->	cc2 (~sander@p200300c6372fc70001b164280a7c00bb.dip0.t-ipconnect.de) has joined ##c++
+2020-08-17 13:47:03	captainchris	if I call the function in gui.cpp: data[0] = 0 or data[0] = 15
+2020-08-17 13:47:32	captainchris	How can i improve the scope of data ?
+2020-08-17 13:47:59	captainchris	data is int* in my class map
+2020-08-17 13:48:14	-->	lmat (~lmat@c-68-50-213-180.hsd1.in.comcast.net) has joined ##c++
+2020-08-17 13:48:46	-->	macbook (~macbook@77.99.142.187) has joined ##c++
+2020-08-17 13:48:49	-->	mahmudov (~milisman@94.54.0.28) has joined ##c++
+2020-08-17 13:50:06	<--	phax (~phax@unaffiliated/phax) has quit (Remote host closed the connection)
+2020-08-17 13:50:21	-->	phax (~phax@unaffiliated/phax) has joined ##c++
+2020-08-17 13:50:25	-->	tensor (uid137246@gateway/web/irccloud.com/x-iibjeqxtfbgouegb) has joined ##c++
+2020-08-17 13:51:40	<--	macbook (~macbook@77.99.142.187) has quit (Client Quit)
+2020-08-17 13:52:27	mujjingun_	jesus
+2020-08-17 13:52:38	mujjingun_	this is not C
+2020-08-17 13:53:12	captainchris	mujjingun_: It's not good ? 
+2020-08-17 13:54:00	<--	Necktwi (~necktwi@ferryfair.com) has quit (Ping timeout: 256 seconds)
+2020-08-17 13:55:09	-->	jplejacq (~jplejacq@24.224.107.80) has joined ##c++
+2020-08-17 13:55:23	mujjingun_	no
+2020-08-17 13:55:44	-->	Necktwi (~necktwi@ferryfair.com) has joined ##c++
+2020-08-17 13:55:50	mujjingun_	r u just trying to parse an integer
+2020-08-17 13:56:50	captainchris	yes the parseXML function work's perfectly and sote the data in a int* data. 
+2020-08-17 13:56:58	-->	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has joined ##c++
+2020-08-17 13:57:47	captainchris	If i call getData inside parseXML data[0] = 15, that's good but if i call getData outside the class data[0] = 0
+2020-08-17 13:58:21	captainchris	I wouldn't like use global function 
+2020-08-17 13:58:34	captainchris	to use ^
+2020-08-17 13:59:10	captainchris	what is the best way for me to getdata outside the class ?
+2020-08-17 13:59:49	mujjingun_	how is `data` allocated
+2020-08-17 14:00:02	captainchris	in my constructor 
+2020-08-17 14:00:10	mujjingun_	using what
+2020-08-17 14:01:40	captainchris	data = new int[NB_TILE_HEIGHT * NB_TILE_WIDTH] // NB_TILE_HEIGHT = 19 NB_TILE_WIDTH=32
+2020-08-17 14:03:26	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Quit: Connection closed)
+2020-08-17 14:03:54	<--	enriq (~pitagoras@2a01:e34:ec9e:1a90:e934:389:e69c:ef44) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-08-17 14:04:14	-->	deltam (~deltam@unaffiliated/deltam) has joined ##c++
+2020-08-17 14:05:55	<--	Necktwi (~necktwi@ferryfair.com) has quit (Ping timeout: 246 seconds)
+2020-08-17 14:05:57	captainchris	map.cpp and map.hpp 
+2020-08-17 14:06:01	captainchris	https://wandbox.org/permlink/RmhI3r51HioPAgHv
+2020-08-17 14:06:51	mujjingun_	why is data a static member
+2020-08-17 14:07:27	<--	atrament666 (~atrament@cpc95006-newt38-2-0-cust73.19-3.cable.virginm.net) has quit (Quit: Leaving.)
+2020-08-17 14:07:40	captainchris	it's a try 
+2020-08-17 14:07:57	mujjingun_	??
+2020-08-17 14:08:19	-->	Wetmelon (~wetmelon@066-169-041-035.res.spectrum.com) has joined ##c++
+2020-08-17 14:08:21	captainchris	first time int* data. I try to use static to fix my problem but it is not good 
+2020-08-17 14:08:41	mujjingun_	why would static fix the problem
+2020-08-17 14:08:53	captainchris	Idon't know 
+2020-08-17 14:08:57	mujjingun_	lol
+2020-08-17 14:09:00	captainchris	;)
+2020-08-17 14:09:10	captainchris	I'm beginner 
+2020-08-17 14:09:22	mujjingun_	i can see that
+2020-08-17 14:10:00	mujjingun_	can u show me where u call the getData function
+2020-08-17 14:12:51	-->	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has joined ##c++
+2020-08-17 14:13:00	captainchris	https://wandbox.org/permlink/DxIcjIabNSpt7w5e
+2020-08-17 14:13:23	captainchris	in my wxPanel 
+2020-08-17 14:13:41	captainchris	if i call the function inside parseXML the data are correct 
+2020-08-17 14:14:36	<--	indy (~indy@dsl-static-104.213-160-167.telecom.sk) has quit (Read error: Connection reset by peer)
+2020-08-17 14:14:38	mujjingun_	did u call parseXML() before getData()
+2020-08-17 14:14:51	captainchris	Yes 
+2020-08-17 14:15:33	-->	macbook (~macbook@77.99.142.187) has joined ##c++
+2020-08-17 14:16:27	<--	mujjingun_ (~park@112.170.180.163) has quit (Quit: Konversation terminated!)
+2020-08-17 14:17:33	captainchris	https://wandbox.org/permlink/meGyXAkpG2rltL5t
+2020-08-17 14:18:18	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Quit: Connection closed)
+2020-08-17 14:18:54	-->	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has joined ##c++
+2020-08-17 14:19:17	<--	Jantz (~IceChat9@118-93-27-99.dsl.dyn.ihug.co.nz) has quit (Ping timeout: 240 seconds)
+2020-08-17 14:19:36	<--	deltam (~deltam@unaffiliated/deltam) has quit (Ping timeout: 260 seconds)
+2020-08-17 14:21:02	-->	indy (~indy@dsl-static-104.213-160-167.telecom.sk) has joined ##c++
+2020-08-17 14:21:19	<--	macbook (~macbook@77.99.142.187) has quit (Quit: macbook)
+2020-08-17 14:23:02	-->	john_parr_ (~adamcruss@pool-100-0-196-181.bstnma.fios.verizon.net) has joined ##c++
+2020-08-17 14:23:44	-->	Samian (~456@65.127.236.102) has joined ##c++
+2020-08-17 14:24:03	-->	enriq (~pitagoras@2a01:e34:ec9e:1a90:e934:389:e69c:ef44) has joined ##c++
+2020-08-17 14:24:27	captainchris	https://wandbox.org/permlink/meGyXAkpG2rltL5t
+2020-08-17 14:27:45	<--	john_parr_ (~adamcruss@pool-100-0-196-181.bstnma.fios.verizon.net) has left ##c++
+2020-08-17 14:28:05	-->	mukunda (~mukunda@adsl-074-188-209-190.sip.asm.bellsouth.net) has joined ##c++
+2020-08-17 14:28:21	-->	corbe (~dcorbe@c-73-57-99-182.hsd1.fl.comcast.net) has joined ##c++
+2020-08-17 14:28:36	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Quit: Connection closed)
+2020-08-17 14:29:03	<--	hohum (~dcorbe@2601:588:c000:cc8:20c:29ff:fe7e:ae53) has quit (Ping timeout: 272 seconds)
+2020-08-17 14:29:03	--	corbe is now known as hohum
+2020-08-17 14:29:11	-->	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has joined ##c++
+2020-08-17 14:32:55	-->	Necktwi (~necktwi@ferryfair.com) has joined ##c++
+2020-08-17 14:34:04	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Ping timeout: 260 seconds)
+2020-08-17 14:37:03	<--	jetchisel (~jetchisel@opensuse/member/jetchisel) has quit (Quit: Unfortunately time is always against us -- [Morpheus])
+2020-08-17 14:37:49	<--	enriq (~pitagoras@2a01:e34:ec9e:1a90:e934:389:e69c:ef44) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-08-17 14:44:48	-->	deltam (~deltam@unaffiliated/deltam) has joined ##c++
+2020-08-17 14:45:37	-->	enriq (~pitagoras@2a01:e34:ec9e:1a90:e934:389:e69c:ef44) has joined ##c++
+2020-08-17 14:48:07	-->	kspalaiologos (~kspalaiol@176.221.122.69) has joined ##c++
+2020-08-17 14:51:34	<--	mahmudov (~milisman@94.54.0.28) has quit (Ping timeout: 256 seconds)
+2020-08-17 14:52:17	-->	n0cto (~nothing@136.37.148.44) has joined ##c++
+2020-08-17 14:53:22	peterR``	was "Yet another approach for constrained declarations" P1141 actually adopted for C++ 20?
+2020-08-17 14:54:14	<--	lh_ideapad (~lh_mouse@unaffiliated/lh-mouse/x-3986007) has quit (Remote host closed the connection)
+2020-08-17 14:54:25	<--	n0cto (~nothing@136.37.148.44) has quit (Client Quit)
+2020-08-17 14:56:28	<--	Karyon_ (~Karyon@CPE0c473d35fd93-CM0c473d35fd90.cpe.net.cable.rogers.com) has quit (Ping timeout: 260 seconds)
+2020-08-17 14:57:10	-->	Karyon_ (~Karyon@CPE0c473d35fd93-CM0c473d35fd90.cpe.net.cable.rogers.com) has joined ##c++
+2020-08-17 14:57:34	Eelis	peterR``: yes https://github.com/cplusplus/draft/commit/fc60a80689ba6dc79cfda6737252103e44319a42
+2020-08-17 14:58:19	<--	bigRoo (~user@131.236.55.49) has quit (Remote host closed the connection)
+2020-09-08 18:36:08	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined ##c++
+2020-09-08 18:36:08	--	Topic for ##c++ is "is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2017 (a.k.a. C++17) || https://isocpp.org/faq || pastes: https://wandbox.org/ || other channels: ##c++-general ##c++-social"
+2020-09-08 18:36:08	--	Topic set by ville (~ville@212-149-214-47.bb.dnainternet.fi) on Wed, 15 Jan 2020 19:15:49
+2020-09-08 18:36:08	--	Channel ##c++: 912 nicks (0 ops, 2 voices, 910 normals)
+2020-09-08 18:36:09	--	Channel created on Sat, 15 Sep 2001 05:15:35
+2020-09-08 18:36:21	-->	EvilPyro (~EvilPyro@160.red-88-15-153.dynamicip.rima-tde.net) has joined ##c++
+2020-09-08 18:36:21	<--	EvilPyro (~EvilPyro@160.red-88-15-153.dynamicip.rima-tde.net) has quit (Changing host)
+2020-09-08 18:36:21	-->	EvilPyro (~EvilPyro@unaffiliated/evilpyro) has joined ##c++
+2020-09-08 18:36:44	<--	EvilPyro (~EvilPyro@unaffiliated/evilpyro) has quit (Client Quit)
+2020-09-08 18:37:38	captainchris	Hello everybody. I have a strange behaviour with my code. I declare enum class in my game.hpp file and I would set value to my enum in my file menu.cpp. I included game.hpp in my menu.hpp but the compiler says error: ‘State’ does not name a type; did you mean ‘getdate’?
+2020-09-08 18:38:07	captainchris	It do'nt recognize the type of State. Here all the code https://gist.github.com/captainchris06210/8b8d4e381de1ba5dd7cb856724b91e96
+2020-09-08 18:38:11	RePaste	Paste 8b8d4e381de1ba5dd7cb856724b91e96 was moved to https://wandbox.org/permlink/B4efR9eP3r8nM4IA captainchris, for the third time, do not use paste sites that can't compile code, or you might be banned.
+2020-09-08 18:38:56	<--	cart_man (~rynot@169-1-114-185.ip.afrihost.co.za) has quit (Quit: Konversation terminated!)
+2020-09-08 18:39:24	captainchris	If i compile menu.cpp (g++ -g .... menu.cpp -o Menu) it works 
+2020-09-08 18:41:49	RazielXYZ	captain_morgan, why aren't you including menu.hpp in your menu.cpp
+2020-09-08 18:42:10	RazielXYZ	err
+2020-09-08 18:42:12	RazielXYZ	captainchris,
+2020-09-08 18:42:26	RazielXYZ	I've not had my coffee yet
+2020-09-08 18:42:46	RazielXYZ	captainchris, also, I'd reccommend not leaving that State in the global namespace anyway, if you can avoid it
+2020-09-08 18:42:48	RazielXYZ	shove it in game
+2020-09-08 18:44:04	captainchris	RazielXYZ: I have menu.hpp in my menu.cpp it just a snippet of code that i pasted
+2020-09-08 18:44:59	captainchris	I tried to put in a specific namespace but it doesn't works
+2020-09-08 18:46:25	RazielXYZ	organize your files properly, you've got game including menu and menu including game
+2020-09-08 18:48:00	-->	gsalazar (5e3dbd6b@gateway/web/cgi-irc/kiwiirc.com/ip.94.61.189.107) has joined ##c++
+2020-09-08 18:50:06	-->	Frobozz (~Frobozz@unaffiliated/frobozz) has joined ##c++
+2020-09-08 18:50:19	<--	Frobozz (~Frobozz@unaffiliated/frobozz) has quit (Remote host closed the connection)
+2020-09-08 18:52:59	-->	Xaleth (~NewbProgr@74-194-174-93.gtwncmta01.res.dyn.suddenlink.net) has joined ##c++
+2020-09-08 18:53:52	-->	e3 (~e@157.231.67.159) has joined ##c++
+2020-09-08 18:54:28	-->	gh0stless (~gh0stless@92.206.76.191) has joined ##c++
+2020-09-08 18:57:09	<--	e4 (~e@157.231.67.159) has quit (Ping timeout: 264 seconds)
+2020-09-08 18:58:08	-->	Edon (~Edon@h79-138-97-19.cust.a3fiber.se) has joined ##c++
+2020-09-08 18:59:51	<--	Necktwi (~necktwi@ferryfair.com) has quit (Ping timeout: 256 seconds)
+2020-09-08 19:04:24	captainchris	but why when I build menu.cpp alone it works
+2020-09-08 19:05:48	<--	e3 (~e@157.231.67.159) has quit (Quit: WeeChat 2.9)
+2020-09-08 19:06:07	<--	Xaleth (~NewbProgr@74-194-174-93.gtwncmta01.res.dyn.suddenlink.net) has quit (Ping timeout: 240 seconds)
+2020-09-08 19:06:11	RazielXYZ	because you have a guard in menu.hpp which only lets State be seen the first time it gets included
+2020-09-08 19:06:18	RazielXYZ	so whoever includes it second doesn't see it
+2020-09-08 19:06:26	-->	mimi_tom_ (~0xe3b7@CPE5c7695dc6a3c-CM5c7695dc6a3a.cpe.net.cable.rogers.com) has joined ##c++
+2020-09-08 19:06:51	-->	smerdyakov (~longboy@40.118.99.229) has joined ##c++
+2020-09-08 19:07:06	RazielXYZ	sorry, I mean the guard in game.hpp
+2020-09-08 19:07:08	-->	Jantz (~IceChat9@118-93-138-124.dsl.dyn.ihug.co.nz) has joined ##c++
+2020-09-08 19:07:13	<--	Jantz (~IceChat9@118-93-138-124.dsl.dyn.ihug.co.nz) has quit (Excess Flood)
+2020-09-08 19:07:34	Alipha	captainchris: menu.hpp including game.hpp and game.hpp including menu.hpp doesn't work
+2020-09-08 19:08:07	RazielXYZ	if you want an easy way out, just have a global include file
+2020-09-08 19:08:14	RazielXYZ	include that in all your cpps, include all hpps from that
+2020-09-08 19:08:25	Alipha	captainchris: one of the hpp files will get parsed first and so the compiler won't know what's in the other hpp file
+2020-09-08 19:08:32	<--	chibatan (main@gateway/vpn/protonvpn/satousama) has quit (Quit: WeeChat 2.3)
+2020-09-08 19:08:52	<--	mimi_tom (~0xe3b7@CPE5c7695dc6a3c-CM5c7695dc6a3a.cpe.net.cable.rogers.com) has quit (Ping timeout: 240 seconds)
+2020-09-08 19:09:30	-->	tbcr (~quassel@75.183.195.9) has joined ##c++
+2020-09-08 19:10:09	<--	IGHOR (~quassel@176.121.4.135) has quit (Quit: No Ping reply in 180 seconds.)
+2020-09-08 19:10:43	Alipha	captainchris: it looks like game.hpp doesn't even need menu.hpp
+2020-09-08 19:11:35	-->	ADG1089 (~ADG1089@122.163.155.88) has joined ##c++
+2020-09-08 19:12:34	Alipha	captainchris: so, remove #include "menu.hpp" from game.hpp
+2020-09-08 19:12:38	-->	IGHOR (~quassel@176.121.4.135) has joined ##c++
+2020-09-08 19:14:06	Alipha	captainchris: however, a couple other ways to resolve circular #include issues: move State into its own header. Or menu.hpp can simply forward declare State instead of including game.hpp: enum class State;
+2020-09-08 19:16:08	<--	Guest92750 (~uz3r@95-42-128-62.ip.btc-net.bg) has quit (Ping timeout: 256 seconds)
+2020-09-08 19:16:48	<--	gist_ (~jack@94.134.88.116) has quit (Ping timeout: 258 seconds)
+2020-09-08 19:17:09	<--	TzilTzal (~yaron@58.96.213.135) has quit (Quit: Leaving.)
+2020-09-08 19:17:20	<--	Ignacy (~Ignacy@185.244.214.243) has quit (Quit: Goodbye!)
+2020-09-08 19:17:23	<--	Anticom (~Anticom@87.190.49.75) has quit (Quit: Leaving)
+2020-09-08 19:17:53	<--	dr_traktor (5e15e3e8@94-21-227-232.pool.digikabel.hu) has quit (Remote host closed the connection)
+2020-09-08 19:18:06	<--	geowiesnot (~user@i15-les02-ix2-87-89-181-157.sfr.lns.abo.bbox.fr) has quit (Ping timeout: 265 seconds)
+2020-09-08 19:18:24	-->	IRCMonkey (~PhoenixCo@unaffiliated/alien-fx-fiend/x-2870569) has joined ##c++
+2020-09-08 19:19:03	<--	lihora (~suporte@2804:14d:72b1:9d9d:7565:2ae7:6017:393f) has left ##c++
+2020-09-08 19:19:03	-->	neshpion (~neshpion@unaffiliated/neshpion) has joined ##c++
+2020-09-08 19:19:26	captainchris	Alipha: I have my Menu object in game.cpp 
+2020-09-08 19:19:48	Alipha	captainchris: game.hpp doesn't need it though
+2020-09-08 19:20:37	Alipha	captainchris: your headers should only include what headers it needs. And your cpp files include what headers they need
+2020-09-08 19:20:43	<--	neshpion (~neshpion@unaffiliated/neshpion) has quit (Quit: WeeChat 2.9)
+2020-09-08 19:21:46	a88Games	need = "refer a name in a header"
+2020-09-08 19:21:51	-->	neshpion (~neshpion@unaffiliated/neshpion) has joined ##c++
+2020-09-08 19:22:07	<--	jobol (~jobol@2a01:e34:ee5c:ee50:d6be:d9ff:fea3:db03) has quit (Quit: Leaving)
+2020-09-08 19:26:31	-->	Ikoru (~Ikoru2@cpc115062-stok20-2-0-cust831.1-4.cable.virginm.net) has joined ##c++
+2020-09-08 19:26:48	Alipha	In general, header files should have many fewer #include statements than cpp files
+2020-09-08 19:27:15	a88Games	wuuuuut
+2020-09-08 19:27:33	a88Games	weird made up rules of thumb, han han han?
+2020-09-08 19:27:55	RazielXYZ	except when they have all of em, yeah :p
+2020-09-08 19:28:00	<--	rajkosto (~Rajko@cable-178-149-122-96.dynamic.sbb.rs) has quit (Read error: Connection reset by peer)
+2020-09-08 19:29:57	<--	zatumil (~Administr@cgn-89-1-209-213.nc.de) has quit (Quit: leaving)
+2020-09-08 19:30:01	<--	merethan_w (~merethan_@84-106-77-64.cable.dynamic.v4.ziggo.nl) has quit (Quit: Leaving)
+2020-09-08 19:31:24	-->	haniaF_ (~haniaF@79.184.97.164.ipv4.supernova.orange.pl) has joined ##c++
+2020-09-08 19:32:05	<--	Garbanzo (~Garbanzo@2602:304:6eac:dc10::46) has quit (Remote host closed the connection)
+2020-09-08 19:32:16	<--	cyp3d (~n0b0dy@unaffiliated/cyp3d) has quit (Ping timeout: 260 seconds)
+2020-09-08 19:32:34	<--	haniaF (~haniaF@79.184.97.164.ipv4.supernova.orange.pl) has quit (Ping timeout: 256 seconds)
+2020-09-08 19:32:53	<--	RangerBob (~brian@pool-173-72-244-228.clppva.fios.verizon.net) has quit (Quit: Leaving)
+2020-09-08 19:33:22	-->	skyscater (~skyscater@178-191-101-122.adsl.highway.telekom.at) has joined ##c++
+2020-09-08 19:33:22	-->	ac_slater (~weechat@2601:603:4e00:290:26fd:52ff:fe44:c011) has joined ##c++
+2020-09-08 19:33:32	-->	Garbanzo (~Garbanzo@2602:304:6eac:dc10::46) has joined ##c++
+2020-09-08 19:33:50	ac_slater	guys, should I be using std::this_thread::yield()? I never do
+2020-09-08 19:34:42	ac_slater	I see the notes on cppreference and I sorta want to be nice to all implementation s
+2020-09-08 19:34:46	ac_slater	implementations *I
+2020-09-08 19:35:15	ac_slater	usually my threads are blocking on a syscall or something and it gets weird at that point
+2020-09-08 19:35:47	-->	merethan_w (~merethan_@84-106-77-64.cable.dynamic.v4.ziggo.nl) has joined ##c++
+2020-09-08 19:35:48	-->	jstein (~jstein@gentoo/developer/jstein) has joined ##c++
+2020-09-08 19:36:06	jo3	in this code im trying to split out the client request body of `foostring_client` but it gives me the "Content-Type" header, can someone tell me what im doing wrong? https://wandbox.org/permlink/yKgeCY3HcUPxP9jX
+2020-09-08 19:37:51	-->	elPuma (484971dc@gateway/web/cgi-irc/kiwiirc.com/ip.72.73.113.220) has joined ##c++
+2020-09-08 19:38:04	Alipha	jo3: your Content-Type you send should be application/x-www-form-urlencoded
+2020-09-08 19:38:34	ac_slater	jo3: maybe escape the \r\n to be \\r\\n ?
+2020-09-08 19:38:49	ac_slater	idk nevermind me
+2020-09-08 19:38:59	Alipha	ac_slater: no
+2020-09-08 19:39:03	ac_slater	I would just use node's http parser ;)
+2020-09-08 19:39:04	<--	rendar (~rendar@unaffiliated/rendar) has quit
+2020-09-08 19:39:29	jo3	Alipha: yeah, I know. Its too long so I ignored to type it out (Im using the right type on the real code)
+2020-09-08 19:39:38	jo3	ac_slater: let me test it out
+2020-11-06 20:36:53	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined ##c++
+2020-11-06 20:36:53	--	Topic for ##c++ is "is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2017 (a.k.a. C++17) || https://isocpp.org/faq || pastes: https://wandbox.org/ || other channels: ##c++-general ##c++-social"
+2020-11-06 20:36:53	--	Topic set by ville (~ville@212-149-214-47.bb.dnainternet.fi) on Wed, 15 Jan 2020 19:15:49
+2020-11-06 20:36:53	--	Channel ##c++: 880 nicks (0 ops, 2 voices, 878 normals)
+2020-11-06 20:36:55	--	Channel created on Sat, 15 Sep 2001 05:15:35
+2020-11-06 20:37:00	captainchris	hi everybody 
+2020-11-06 20:39:36	-->	someotherguy (~Baconinva@eduroam-external-67.leeds.ac.uk) has joined ##c++
+2020-11-06 20:39:46	-->	Baconinvader (~Baconinva@eduroam-external-67.leeds.ac.uk) has joined ##c++
+2020-11-06 20:40:16	<--	Betal (~Betal@unaffiliated/betal) has quit (Ping timeout: 244 seconds)
+2020-11-06 20:40:38	PJBoy	!give poseid mvp
+2020-11-06 20:40:44	PJBoy	!give poseid vex
+2020-11-06 20:40:45	+nolyc	poseid: T x(); and T y(U(z)); declare functions named x and y, the latter with a parameter named z. Also, T(a); declares a variable called a.
+2020-11-06 20:41:35	PJBoy	if that wasn't a vexing parse, the lambda would be reading from `in` into a vector
+2020-11-06 20:41:46	PJBoy	and then returning that vector to initialise the other vector
+2020-11-06 20:42:48	PJBoy	so `std::vector<char> buffer_(std::istreambuf_iterator<char>(in), {});` would be correct for example
+2020-11-06 20:42:55	<--	ferdna (~ferdna@cpe-69-23-148-218.elp.res.rr.com) has quit (Quit: Leaving)
+2020-11-06 20:43:17	-->	Betal (~Betal@unaffiliated/betal) has joined ##c++
+2020-11-06 20:47:11	poseid	thanks, ok, this is tricky... buffer_ is a variable and function defintion
+2020-11-06 20:47:51	poseid	it looks like a variable , but the parser tries to make a function
+2020-11-06 20:48:40	<--	mahmutov (~milisman@unaffiliated/mahmutov) has quit (Remote host closed the connection)
+2020-11-06 20:49:00	-->	ib07 (~quassel@178-190-214-90.hdsl.highway.telekom.at) has joined ##c++
+2020-11-06 20:49:03	-->	mahmutov (~milisman@unaffiliated/mahmutov) has joined ##c++
+2020-11-06 20:50:42	<--	SirFancyPantsOfP (~SirFancyP@78.109.73.197) has quit (Read error: Connection reset by peer)
+2020-11-06 20:50:55	<--	RandomGuy90 (~RandomGuy@91.239.205.33) has quit (Ping timeout: 260 seconds)
+2020-11-06 20:53:44	<--	Betal (~Betal@unaffiliated/betal) has quit (Quit: WeeChat 2.9)
+2020-11-06 20:55:30	<--	ib07 (~quassel@178-190-214-90.hdsl.highway.telekom.at) has quit (Ping timeout: 256 seconds)
+2020-11-06 20:55:43	-->	ib07 (~quassel@178-190-214-90.hdsl.highway.telekom.at) has joined ##c++
+2020-11-06 20:55:59	<--	karakedi (~eAC53C340@unaffiliated/orphan) has quit (Remote host closed the connection)
+2020-11-06 20:58:22	-->	ac_slater (~weechat@2601:603:4e00:290:26fd:52ff:fe44:c011) has joined ##c++
+2020-11-06 20:58:25	ac_slater	guys, I never use iostreams. Is it possible to use ifstream_iterator and maybe std::copy to read a fixed amount of bytes from /dev/urandom into a vector?
+2020-11-06 20:58:45	ac_slater	the point is /dev/urandom doesn't have a size
+2020-11-06 20:58:57	ac_slater	and I don't know to use iterators or iostream :(
+2020-11-06 20:59:43	captainchris	Hi everybody I have a class block(const sf::Vector2f& pos) , and i want to store my block into my std::vector. I made std::vector<Block> blockContainer. 
+2020-11-06 21:00:02	cbreak	ac_slater: do you want to use that device specifically?
+2020-11-06 21:00:10	cbreak	c++ has random engines and the random device
+2020-11-06 21:00:21	ac_slater	cbreak: I know I can use <random> but yea, in this case I do
+2020-11-06 21:00:27	cbreak	https://en.cppreference.com/w/cpp/algorithm/copy_n
+2020-11-06 21:00:29	captainchris	and blockContainer.push_back(Block(sf::Vector2f(blockPos[i].x,blockPos[i].y)));
+2020-11-06 21:00:33	cbreak	ac_slater: why not the random_device?
+2020-11-06 21:00:42	cbreak	https://en.cppreference.com/w/cpp/numeric/random/random_device
+2020-11-06 21:00:45	captainchris	but all my block doesn't have a texture 
+2020-11-06 21:00:47	ac_slater	cbreak: cause /dev/urandom is a placeholder for /dev/myshit ;)
+2020-11-06 21:00:58	cbreak	you can pass that too
+2020-11-06 21:01:01	captainchris	it's white squares 
+2020-11-06 21:01:23	ac_slater	captainchris: so, first , we don't know what 'white squares' is. But it looks like you're having initialization problems.
+2020-11-06 21:01:28	cbreak	ac_slater: read the docs for your stdlib for details
+2020-11-06 21:01:54	captainchris	yes I know 
+2020-11-06 21:02:21	captainchris	i have white sqaure with correct position but I don't know why 
+2020-11-06 21:02:26	captainchris	https://gist.github.com/captainchris06210/7f7d4f196477f6faa506dfa992adf6aa
+2020-11-06 21:02:31	RePaste	Paste 7f7d4f196477f6faa506dfa992adf6aa was moved to https://wandbox.org/permlink/avFbs2sVwleMJcBj captainchris, for the fourth time, do not use paste sites that can't compile code, or you might be banned.
+2020-11-06 21:02:32	captainchris	All my code is here 
+2020-11-06 21:02:58	ac_slater	that's too much code
+2020-11-06 21:03:03	<--	hkais (~xenoadmin@p5dc0e688.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2020-11-06 21:03:08	ac_slater	you need to create a separate test
+2020-11-06 21:03:14	captainchris	ok
+2020-11-06 21:03:19	ac_slater	just with the types you need. Don't worry about your ACTUAL program
+2020-11-06 21:03:25	captainchris	0
+2020-11-06 21:03:26	ac_slater	just try to understand initialization
+2020-11-06 21:03:33	captainchris	yes of course
+2020-11-06 21:03:39	captainchris	I create a minimal code 
+2020-11-06 21:03:40	ac_slater	is sf::Vector2f copyable?
+2020-11-06 21:04:12	captainchris	I don't know 
+2020-11-06 21:04:22	captainchris	but position are good 
+2020-11-06 21:04:28	captainchris	not texture
+2020-11-06 21:04:40	ac_slater	well I have no idea idea since c++ has no idea what a "texture" is
+2020-11-06 21:05:13	ac_slater	not trying to be rude, but trying to show you that you need to understand what's happening at the LANGUAGE level
+2020-11-06 21:05:17	ac_slater	not the functional level
+2020-11-06 21:05:41	ac_slater	cbreak: ugh I have no idea std::copy_n existed
+2020-11-06 21:05:42	ac_slater	thanks!
+2020-11-06 21:08:54	<--	jmg_20080970 (~jiang@139.226.46.233) has quit (Quit: Leaving.)
+2020-11-06 21:09:07	-->	SwiftMatt (~Objective@2601:282:4300:3e:a939:b0de:3af:74af) has joined ##c++
+2020-11-06 21:09:09	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Quit: Connection closed)
+2020-11-06 21:09:25	-->	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has joined ##c++
+2020-11-06 21:09:55	-->	Stanley00 (~stanley00@unaffiliated/stanley00) has joined ##c++
+2020-11-06 21:10:49	<--	mahmutov (~milisman@unaffiliated/mahmutov) has quit (Remote host closed the connection)
+2020-11-06 21:12:54	-->	mahmutov (~milisman@unaffiliated/mahmutov) has joined ##c++
+2020-11-06 21:13:24	<--	irc_user (uid423822@gateway/web/irccloud.com/x-epbzivxsuvgflifa) has quit (Quit: Connection closed for inactivity)
+2020-11-06 21:14:44	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Ping timeout: 265 seconds)
+2020-11-06 21:14:46	<--	Stanley00 (~stanley00@unaffiliated/stanley00) has quit (Ping timeout: 256 seconds)
+2020-11-06 21:17:56	-->	boxxy (~puma@92-242-246-243.broadband.mtnet.hr) has joined ##c++
+2020-11-06 21:20:39	<--	poseid (86bfdc49@mudmzpr03-ext.imu.intel.com) has quit (Remote host closed the connection)
+2020-11-06 21:20:47	<--	jadzia_dax (~puma@193-19-221-210.broadband.mtnet.hr) has quit (Ping timeout: 256 seconds)
+2020-11-06 21:22:03	-->	gelignite (~gelignite@55d445b5.access.ecotel.net) has joined ##c++
+2020-11-06 21:30:22	<--	SwiftMatt (~Objective@2601:282:4300:3e:a939:b0de:3af:74af) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2020-11-06 21:35:13	<--	kpo_ (~kpo@bwu34.internetdsl.tpnet.pl) has quit (Read error: Connection reset by peer)
+2020-11-06 21:36:15	-->	kpo_ (~kpo@bwu34.internetdsl.tpnet.pl) has joined ##c++
+2020-11-06 21:38:16	-->	SwiftMatt (~Objective@2601:282:4300:3e:a939:b0de:3af:74af) has joined ##c++
+2020-11-06 21:40:35	-->	hkais (~xenoadmin@p4fcd6abb.dip0.t-ipconnect.de) has joined ##c++
+2020-11-06 21:43:25	<--	letto (~letto@86.121.194.164) has quit (Quit: Konversation terminated!)
+2020-11-06 21:45:10	-->	hyper_dave (~hyper_dav@196.191.53.228) has joined ##c++
+2020-11-06 21:45:24	-->	letto (~letto@86.121.194.164) has joined ##c++
+2020-11-06 21:45:32	-->	RandomGuy90 (~RandomGuy@91.239.205.33) has joined ##c++
+2020-11-06 21:48:00	<--	epony (epony@unaffiliated/epony) has quit (Quit: updates)
+2020-11-06 21:48:18	-->	mackal (~mike@141.154.54.5) has joined ##c++
+2020-11-06 21:48:21	<--	gh0stless (~gh0stless@92.206.77.170) has quit (Quit: Leaving)
+2020-11-06 21:49:15	-->	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has joined ##c++
+2020-11-06 21:52:20	-->	jasonsmr (~jasonsmr@071-089-147-147.biz.spectrum.com) has joined ##c++
+2020-11-06 21:52:33	-->	gh0stless (~gh0stless@92.206.77.170) has joined ##c++
+2020-11-06 21:53:20	-->	epony (epony@unaffiliated/epony) has joined ##c++
+2020-11-06 21:54:26	<--	royal_screwup21 (52254809@gateway/web/cgi-irc/kiwiirc.com/ip.82.37.72.9) has quit (Ping timeout: 256 seconds)
+2020-11-06 21:55:57	-->	cjaybo_ (~cjaybo@172.97.106.6) has joined ##c++
+2020-11-06 21:57:41	<--	nuclearg1 (~nucleargr@c-73-150-253-137.hsd1.nj.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-11-06 22:00:05	<--	rowbee (~augh@theguntretort.com) has quit (Quit: ZNC - https://znc.in)
+2020-11-06 22:00:38	<--	cjaybo_ (~cjaybo@172.97.106.6) has quit (Ping timeout: 258 seconds)
+2020-11-06 22:01:27	-->	rowbee (~augh@theguntretort.com) has joined ##c++
+2020-11-06 22:01:56	spiri	can you tell me why do i need enable_shared_from_this, because i don't understand that why
+2020-11-06 22:01:57	spiri	    std::shared_ptr<Bad> bp1 = std::make_shared<Bad>();
+2020-11-06 22:01:58	spiri	    std::shared_ptr<Bad> bp2 = bp1->getptr();
+2020-11-06 22:02:03	spiri	is causing problems
+2020-11-06 22:02:35	spiri	when i init bp1 then a pointer gets allocated in a static table of pointers inside std::shared_ptr<>
+2020-11-06 22:03:13	spiri	when i do return std::make_shared<T>(this) this pointer should be retrievable in the static table of this type instance
+2020-11-06 22:03:33	spiri	so i don't understand when to use it except of returning shared this
+2020-11-06 22:03:53	PJBoy	shared_ptr copying only working if you copy the shared_ptr
+2020-11-06 22:04:09	PJBoy	if you make a new shared_ptr from this, that won't be connected to other shared_ptrs
+2020-11-06 22:04:16	PJBoy	so you get double deletion
+2020-11-06 22:05:19	<--	SwiftMatt (~Objective@2601:282:4300:3e:a939:b0de:3af:74af) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2020-11-06 22:05:33	PJBoy	enable_shared_from_this essentially embeds a shared_ptr in the class as a member, so member functions access that instead
+2020-11-06 22:05:46	PJBoy	in that case all shared_ptrs will be copied from some unique source
+2020-11-06 22:07:13	spiri	ok
+2020-11-06 22:07:29	kkd	i think it has a weak_ptr internally, instead of a shared_ptr
+2020-11-06 22:07:43	spiri	so i should just create a further shared_ptr from another shared_ptr, not a plain old pointer
+2020-11-06 22:07:43	PJBoy	yeah that's true
+2020-11-06 22:07:54	PJBoy	yeah
+2020-11-06 22:08:02	spiri	ok
+2020-11-06 22:08:09	PJBoy	two unrelated smart pointers owning the same resource = bad
+2020-11-06 22:08:22	spiri	and what exactly is a weak_ptr?
+2020-11-06 22:08:27	PJBoy	where related means coped-from
+2020-11-06 22:08:34	spiri	ok
+2020-11-06 22:08:37	<--	amahl_ (~amahl@dxv5skyygb4zv7b-6sdzt-3.rev.dnainternet.fi) has quit (Ping timeout: 244 seconds)
+2020-11-06 22:08:54	PJBoy	weak_ptr is a pointer that can be made into a shared_ptr if the object is still alive
+2020-11-06 22:09:29	spiri	and why do i need this?
+2020-11-06 22:09:43	PJBoy	in general?
+2020-11-06 22:09:48	PJBoy	or for enable_shared_from_this?
+2020-11-06 22:10:00	spiri	the object should never manually be deleted so why shouldn't it be alive?
+2020-11-06 22:10:35	PJBoy	if what I called the internal shared_ptr were actually a shared_ptr
+2020-11-06 22:10:42	PJBoy	then the reference count would never drop to zero
+2020-11-06 22:11:35	PJBoy	so it's a weak_ptr
+2020-11-06 22:11:43	PJBoy	shared_ptrs can be generated from weak_ptrs
+2020-11-06 22:12:07	PJBoy	and they don't bump the reference count
+2020-11-06 22:12:45	spiri	ah oh i think i know yet what you mean
+2020-11-06 22:13:20	-->	genr8_ (~genr8_@unaffiliated/genbtc) has joined ##c++
+2020-11-06 22:14:57	captainchris	Okay ac_slatter I made a minimal code 
+2020-11-06 22:15:00	captainchris	https://wandbox.org/permlink/8UKg1g5MXiggmsGB
+2020-11-06 22:15:07	spiri	so i just misunderstood how shared_ptr<> works
+2020-11-06 22:15:19	spiri	it's not a static table inside
+2020-11-06 22:16:29	spiri	or maybe yes
+2020-11-06 22:16:42	spiri	it is very confusing
+2020-11-06 22:16:44	PJBoy	have you seen the cppreference page for shared_ptr
+2020-11-06 22:16:49	<--	blackbit (blackbit@unaffiliated/ahuemer) has quit (Ping timeout: 272 seconds)
+2020-11-06 22:16:54	-->	nuclearg1 (~nucleargr@c-73-150-253-137.hsd1.nj.comcast.net) has joined ##c++
+2020-11-06 22:16:55	PJBoy	I think the impl notes there are decent
+2020-11-06 22:17:04	spiri	many times
+2020-11-06 22:17:10	captainchris	spiri A good tutorial on internalpointers 
+2020-11-06 22:17:43	-->	triad (~triad@188.27.129.43) has joined ##c++
+2020-11-06 22:17:54	<--	darkbit (~db@152.32.100.91) has quit (Ping timeout: 264 seconds)
+2020-11-06 22:18:07	--	triad is now known as Guest39100
+2020-11-06 22:18:08	PJBoy	shared_ptr = raw pointer + pointer to control block for object
+2020-11-06 22:18:26	<--	Guest39100 (~triad@188.27.129.43) has quit (Changing host)
+2020-11-06 22:18:26	-->	Guest39100 (~triad@unaffiliated/triad) has joined ##c++
+2020-11-06 22:18:31	PJBoy	control block contains the shared details of the shared_ptr and all shared_ptr's copied from it
+2020-11-06 22:18:57	PJBoy	namely the reference count and deleter
+2020-11-06 22:19:31	<--	Guest39100 (~triad@unaffiliated/triad) has quit (Client Quit)
+2020-11-06 22:19:32	spiri	yes i already used some deleters
+2020-11-06 22:19:49	-->	triad_ (~triad@unaffiliated/triad) has joined ##c++
+2020-11-06 22:20:28	PJBoy	weak_ptrs also point to the control block
+2020-11-06 22:20:44	spiri	i don't know how to say
+2020-11-06 22:20:47	spiri	i somehow understand enable_shared_from_this
+2020-11-06 22:20:51	spiri	but somehow i don't
+2020-11-06 22:21:26	-->	Exaeta-winlaptop (~Exaeta@2601:c9:c000:20a8:2d71:e7ee:6928:89e7) has joined ##c++
+2020-11-06 22:21:53	spiri	but i think i'm easy with what i know about
+2020-11-06 22:21:54	PJBoy	also shared_ptr contains some magic that makes enable_shared_from_this to work >_>
+2020-11-06 22:21:55	spiri	thank you
+2020-11-06 22:22:22	PJBoy	the shared_ptr constructor checks if the shared_ptr its copying from points to an object that's derived from enable_shared_from_this
+2020-11-06 22:22:49	spiri	so it can avoid any case of a leak
+2020-11-06 22:22:50	PJBoy	and in that case it consults the internal weak_ptr
+2020-11-06 22:23:13	PJBoy	so you wouldn't be able to implement enable_shared_from_this yourself
+2020-11-06 22:23:25	PJBoy	it does require support on shared_ptr's constructor's side too
+2020-11-06 22:24:12	<--	biberu (~biberu@gateway/tor-sasl/biberu) has quit (Remote host closed the connection)
+2020-11-06 22:25:24	captainchris	It is possible to create vector of class instance and use construtor with pushback  like this std::Vector<classInstance>; and myVector.pushback(args)
+2020-11-06 22:25:55	PJBoy	sounds like you want emplace_back
+2020-11-06 22:26:19	captainchris	I made this https://wandbox.org/permlink/8UKg1g5MXiggmsGB line 63 
+2020-11-06 22:26:41	captainchris	the block have correct position but no texture 
+2020-11-06 22:27:34	PJBoy	yeah emplace_back(...) or push_back(Blocks(...))
+2020-11-06 22:27:45	<--	f10_ (~flo@ip5b402e34.dynamic.kabel-deutschland.de) has quit (Quit: Konversation terminated!)
+2020-11-06 22:27:57	-->	f10_ (~flo@ip5b402e34.dynamic.kabel-deutschland.de) has joined ##c++
+2020-11-06 22:28:01	-->	blackbit (blackbit@unaffiliated/ahuemer) has joined ##c++
+2020-11-06 22:28:25	PJBoy	although your Blocks has a non-explicit constructor
+2020-11-06 22:28:27	<--	sord937 (~sord937@gateway/tor-sasl/sord937) has quit (Quit: sord937)
+2020-11-06 22:28:31	PJBoy	so what you have currently should be fine
+2020-11-06 22:30:25	<--	rowbee (~augh@theguntretort.com) has quit (Quit: ZNC - https://znc.in)
+2020-11-06 22:33:07	<--	Orlando^ (~kenny@178.74.16.236) has quit (Ping timeout: 260 seconds)
+2020-11-06 22:33:34	<--	TheBeastie (~luis@dbdvtpyycfr3s--xk0pzt-3.rev.dnainternet.fi) has quit (Quit: bye bye :))
+2020-11-06 22:34:18	-->	TheBeastie (~luis@dbdvtpyycfr3s--xk0pzt-3.rev.dnainternet.fi) has joined ##c++
+2020-11-06 22:34:51	-->	Orlando^ (~kenny@178.74.16.236) has joined ##c++
+2020-11-06 22:35:18	<--	Baconinvader (~Baconinva@eduroam-external-67.leeds.ac.uk) has quit (Ping timeout: 264 seconds)
+2020-11-06 22:35:18	<--	someotherguy (~Baconinva@eduroam-external-67.leeds.ac.uk) has quit (Ping timeout: 264 seconds)
+2020-11-06 22:35:31	<--	ruurd (~ruurd@80-61-78-211.fixed.kpn.net) has quit (Ping timeout: 258 seconds)
+2020-11-06 22:36:10	-->	rowbee (~augh@theguntretort.com) has joined ##c++
+2020-11-06 22:36:23	<--	rumbler31___ (~jkordani@c-69-255-2-251.hsd1.md.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-11-06 22:36:35	Armoured	Ciao a tutti! :)
+2020-11-06 22:38:35	<--	ac_slater (~weechat@2601:603:4e00:290:26fd:52ff:fe44:c011) has quit (Ping timeout: 244 seconds)
+2020-11-06 22:38:39	-->	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has joined ##c++
+2020-11-06 22:38:55	-->	ac_slater (~weechat@2601:603:4e00:290:26fd:52ff:fe44:c011) has joined ##c++
+2020-11-06 22:39:43	captainchris	PJBoy: explicit construcotr ?? 
+2020-11-06 22:41:33	<--	jehelset (~jeh@cm-84.209.80.117.getinternet.no) has quit (Remote host closed the connection)
+2020-11-06 22:42:31	-->	Baconinvader (~Baconinva@eduroam-external-67.leeds.ac.uk) has joined ##c++
+2020-11-06 22:42:32	-->	someotherguy (~Baconinva@eduroam-external-67.leeds.ac.uk) has joined ##c++
+2020-11-06 22:47:24	<--	Deyaa (uid190709@gateway/web/irccloud.com/x-figdlrpwtzvrvgel) has quit (Quit: Connection closed for inactivity)
+2020-11-06 22:48:24	-->	rumbler31___ (~jkordani@c-69-255-2-251.hsd1.md.comcast.net) has joined ##c++
+2020-11-06 22:48:59	<--	black_ant (~antilope@unaffiliated/black-ant/x-1505394) has quit (Ping timeout: 265 seconds)
+2020-11-06 22:49:18	<--	gelignite (~gelignite@55d445b5.access.ecotel.net) has quit (Quit: Stay safe! Stay at home! Stop the chain reaction!)
+2020-11-06 22:50:12	<--	yrlf (~yrlf@omnath.yrlf.at) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-11-06 22:52:05	-->	yrlf (~yrlf@omnath.yrlf.at) has joined ##c++
+2020-11-06 22:52:55	<--	hyper_dave (~hyper_dav@196.191.53.228) has quit (Ping timeout: 272 seconds)
+2020-11-06 22:56:36	<--	ac_slater (~weechat@2601:603:4e00:290:26fd:52ff:fe44:c011) has quit (Ping timeout: 272 seconds)
+2020-11-06 22:59:08	-->	ClaymorePT (~Claymore@bl19-138-93.dsl.telepac.pt) has joined ##c++
+2020-11-06 23:00:21	-->	TCZ (~TCZ@ip-91.246.66.111.skyware.pl) has joined ##c++
+2020-11-06 23:02:18	<--	dholmes (~dholmes@c-73-164-101-81.hsd1.mn.comcast.net) has quit (Ping timeout: 264 seconds)
+2020-11-06 23:02:30	-->	MrMobius (~MrMobius@208.58.206.154) has joined ##c++
+2020-11-06 23:02:56	<--	MrMobius (~MrMobius@208.58.206.154) has quit (Remote host closed the connection)
+2020-11-06 23:03:27	-->	dholmes (~dholmes@c-73-164-101-81.hsd1.mn.comcast.net) has joined ##c++
+2020-11-06 23:03:51	-->	MrMobius (~MrMobius@208.58.206.154) has joined ##c++
+2020-11-06 23:07:09	<--	j0bk (~j0bk@unaffiliated/affiliated) has quit (Ping timeout: 246 seconds)
+2020-11-06 23:07:16	-->	j0bk_ (~j0bk@190.19.138.53) has joined ##c++
+2020-11-06 23:09:26	<--	tm (~sinnlos@unaffiliated/tm) has quit (Read error: Connection reset by peer)
+2020-11-06 23:09:37	-->	immibis (~immibis@62.156.144.218) has joined ##c++
+2020-11-06 23:10:44	-->	tm (~sinnlos@unaffiliated/tm) has joined ##c++
+2020-11-06 23:11:06	-->	Stanley00 (~stanley00@unaffiliated/stanley00) has joined ##c++
+2020-11-06 23:15:28	<--	hkais (~xenoadmin@p4fcd6abb.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-11-06 23:15:33	<--	Stanley00 (~stanley00@unaffiliated/stanley00) has quit (Ping timeout: 246 seconds)
+2020-11-06 23:15:57	-->	vdamewood (~vdamewood@unaffiliated/vdamewood) has joined ##c++
+2020-11-06 23:19:09	<--	jstein (~jstein@gentoo/developer/jstein) has quit (Quit: quit)
+2020-11-06 23:22:33	-->	triad__ (~triad@unaffiliated/triad) has joined ##c++
+2020-11-06 23:23:15	<--	braph2 (~braph@x4db60189.dyn.telefonica.de) has quit (Ping timeout: 256 seconds)
+2020-11-06 23:25:33	<--	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has quit (Ping timeout: 260 seconds)
+2020-11-06 23:26:19	<--	triad_ (~triad@unaffiliated/triad) has quit (Ping timeout: 260 seconds)
+2020-11-06 23:27:22	<--	triad__ (~triad@unaffiliated/triad) has quit (Ping timeout: 256 seconds)
+2020-11-06 23:30:56	<--	RangerBob (~brian@pool-173-72-244-228.clppva.fios.verizon.net) has quit (Quit: Leaving)
+2020-11-06 23:31:01	-->	ruurd (~ruurd@80-61-78-211.fixed.kpn.net) has joined ##c++
+2020-11-06 23:33:36	<--	saul (~saul@c-73-189-21-73.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-11-13 21:24:40	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined ##c++
+2020-11-13 21:24:40	--	Topic for ##c++ is "is a topical channel for discussing standard C++ specifications and code. || Current standard: ISO/IEC 14882:2017 (a.k.a. C++17) || https://isocpp.org/faq || pastes: https://wandbox.org/ || other channels: ##c++-general ##c++-social"
+2020-11-13 21:24:40	--	Topic set by ville (~ville@212-149-214-47.bb.dnainternet.fi) on Wed, 15 Jan 2020 19:15:49
+2020-11-13 21:24:40	--	Channel ##c++: 885 nicks (0 ops, 2 voices, 883 normals)
+2020-11-13 21:24:42	--	Channel created on Sat, 15 Sep 2001 05:15:35
+2020-11-13 21:24:45	captainchris	hi everybody 
+2020-11-13 21:25:30	<--	macbook (~macbook@cpc101496-gill19-2-0-cust142.20-1.cable.virginm.net) has quit (Ping timeout: 256 seconds)
+2020-11-13 21:27:26	computerquip	Wait no, I had it backwards, I was thinking of freestanding implementation.
+2020-11-13 21:28:54	-->	ambro718 (~ambro@unaffiliated/ambro718) has joined ##c++
+2020-11-13 21:29:17	Alipha	captainchris: hi
+2020-11-13 21:29:29	-->	macbook (~macbook@cpc101496-gill19-2-0-cust142.20-1.cable.virginm.net) has joined ##c++
+2020-11-13 21:30:11	captainchris	I have a strange comportement in my code. I try to realize a sokoban.I use vector to store block. I contruct object with emplace_back.
+2020-11-13 21:30:33	-->	skyscater (~skyscater@194-166-146-19.adsl.highway.telekom.at) has joined ##c++
+2020-11-13 21:30:40	captainchris	but I have 3 block and not 5. If i use a list, i have 5 blocks 
+2020-11-13 21:30:43	captainchris	https://wandbox.org/permlink/Psh9cV5UQKcwrvYY
+2020-11-13 21:30:56	captainchris	I don't understand why 
+2020-11-13 21:34:26	<--	spiri (~spiri@unaffiliated/spiri) has quit (Quit: ¯\_(ツ)_/¯)
+2020-11-13 21:34:50	-->	spiri (~spiri@unaffiliated/spiri) has joined ##c++
+2020-11-13 21:36:10	Alipha	!give captainchris general
+2020-11-13 21:36:12	+nolyc	captainchris: ##c++-general for algorithms, libraries, practices, projects, tools etc. notice the channel name starts with two #s.
+2020-11-13 21:36:40	captainchris	Ok sorry for the disturb
+2020-11-13 21:38:03	-->	josef__k (~jeremy@119-18-0-155.771200.syd.nbn.aussiebb.net) has joined ##c++
+2020-11-13 21:38:31	Alipha	captainchris: my guess is that sf::Drawable, sf::Transformable, sf::Texture, sf::Sprite, or sf::Vector2f is not logically copy-constructible, despite apparently having copy constructors. and so, when the vector resizes, it copies the Blocks and messes them up
+2020-11-13 21:38:58	<--	jmg_20080970 (~jiang@139.226.46.233) has quit (Quit: Leaving.)
+2020-11-13 21:39:29	captainchris	ok but it's strange when i use emplace_back i have 3 block with texture
+2020-11-13 21:39:33	Alipha	i'm curious if `blockContainer.resize(6);` at the beginning of main "fixes" the problem (though if it does fix it, you probably shouldn't be using a std::vector)
+2020-11-13 21:39:50	captainchris	no it's juste a try
+2020-11-13 21:40:11	captainchris	the 2 others blocks are white 
+2020-11-13 21:43:42	-->	gotadachi (~gotadachi@i114-183-225-1.s42.a013.ap.plala.or.jp) has joined ##c++
+2020-11-13 21:46:08	-->	sb35 (~sb35@68.168.122.244) has joined ##c++
+2020-11-13 21:47:58	-->	sabastiaan (~sabastiaa@100-25-144-85.ftth.glasoperator.nl) has joined ##c++
+2020-11-13 21:48:32	sabastiaan	Hi
+2020-11-13 21:48:36	captainchris	hi 
+2020-11-13 21:49:10	sabastiaan	if I have a vector, does it store a copy or a reference to that object?
+2020-11-13 21:49:14	-->	Jesin (~Jesin@pool-72-66-101-18.washdc.fios.verizon.net) has joined ##c++
+2020-11-13 21:49:39	Alipha	sabastiaan: copy
+2020-11-13 21:50:04	-->	gareppa (~gareppa@unaffiliated/gareppa) has joined ##c++
+2020-11-13 21:51:08	-->	gelignite (~gelignite@55d44811.access.ecotel.net) has joined ##c++
+2020-11-13 21:51:12	<--	gareppa (~gareppa@unaffiliated/gareppa) has quit (Max SendQ exceeded)
+2020-11-13 21:51:43	-->	gareppa (~gareppa@unaffiliated/gareppa) has joined ##c++
+2020-11-13 21:52:41	Alipha	c++ is generally very object/value oriented. copies of things actually make copies
+2020-11-13 21:54:52	<--	mahmutov (~milisman@unaffiliated/mahmutov) has quit (Remote host closed the connection)
+2020-11-13 21:54:59	-->	bitman (~hamood@068-186-114-171.res.spectrum.com) has joined ##c++
+2020-11-13 21:56:03	-->	led1 (~Thunderbi@217.66.160.14) has joined ##c++
+2020-11-13 21:57:40	<--	ooki (2e05fef3@HSI-KBW-046-005-254-243.hsi8.kabel-badenwuerttemberg.de) has quit (Remote host closed the connection)
+2020-11-13 22:00:09	<--	gareppa (~gareppa@unaffiliated/gareppa) has quit (Remote host closed the connection)
+2020-11-13 22:01:08	<--	moo (~wootehfoo@unaffiliated/wootehfoot) has quit (Quit: Leaving)
+2020-11-13 22:01:32	-->	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has joined ##c++
+2020-11-13 22:02:11	<--	nuclearg1 (~nucleargr@c-73-150-253-137.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-11-13 22:04:19	-->	f10 (~flo@ip5b402e34.dynamic.kabel-deutschland.de) has joined ##c++
+2020-11-13 22:04:24	-->	mahmutov (~milisman@unaffiliated/mahmutov) has joined ##c++
+2020-11-13 22:05:24	<--	callq (~callq@2603:3001:a00:400:69d6:6f3:e43a:c542) has quit (Quit: callq)
+2020-11-13 22:07:09	sabastiaan	if I have function and I want it return a struct
+2020-11-13 22:07:25	sabastiaan	can I make it so that it gets returned on the stack instead of the heap?
+2020-11-13 22:07:34	-->	LKoen (~LKoen@9.253.88.92.rev.sfr.net) has joined ##c++
+2020-11-13 22:07:47	PJBoy	objects do get returns on the stack
+2020-11-13 22:07:51	PJBoy	*returned
+2020-11-13 22:08:59	<--	Inline (~Inline@2a02:908:1252:7a80:4162:26a:5388:ffa8) has quit (Ping timeout: 272 seconds)
+2020-11-13 22:09:52	sabastiaan	since if I write smth like my_struct func() {}, and have x = func(), then addressing a member of x.y (defined in my struct) segfaults for me
+2020-11-13 22:10:21	-->	Zausel (~Zauselche@xdsl-89-0-188-158.nc.de) has joined ##c++
+2020-11-13 22:10:22	urdh	!testcase
+2020-11-13 22:10:24	+nolyc	A testcase is the _least_ amount of code that replicates your problem, paste it to https://wandbox.org/ then: 1) click run 2) click share 3) click url and 4) paste the url for us. You _must_ use that website. Do _not_ use a different website. Do _not_ paste code to the channel. See the testcase checklist at http://eel.is/iso-c++/testcase/
+2020-11-13 22:11:19	-->	grumbel (~grumbel@2a02:908:4b13:ea80:1dca:adda:eef3:686) has joined ##c++
+2020-11-13 22:14:58	<--	skyscater (~skyscater@194-166-146-19.adsl.highway.telekom.at) has quit (Read error: Connection reset by peer)
+2020-11-13 22:15:05	sabastiaan	nvm should have been more carefull
+2020-11-13 22:18:01	<--	led1 (~Thunderbi@217.66.160.14) has quit (Quit: led1)
+2020-11-13 22:21:32	<--	c077ee (uid471137@gateway/web/irccloud.com/x-ettizcuwkxrpdbrv) has quit (Quit: Updating details, brb)
+2020-11-13 22:22:24	-->	c077ee (sid471137@gateway/web/irccloud.com/x-wtxtlkqhkpyunqbb) has joined ##c++
+2020-11-13 22:23:54	-->	w41 (~volkov@ip-213-127-124-150.ip.prioritytelecom.net) has joined ##c++
+2020-11-13 22:27:08	-->	callq (~callq@2603:3001:a00:400:3ca8:f415:4257:7ab3) has joined ##c++
+2020-11-13 22:29:22	<--	w41 (~volkov@ip-213-127-124-150.ip.prioritytelecom.net) has quit (Ping timeout: 272 seconds)
+2020-11-13 22:30:04	<--	gelignite (~gelignite@55d44811.access.ecotel.net) has quit (Quit: Stay safe! Stay at home! Stop the chain reaction!)
+2020-11-13 22:30:17	-->	cliluw (~cliluw@unaffiliated/cliluw) has joined ##c++
+2020-11-13 22:31:04	<--	nickysn (~nickysn@95.111.71.90) has quit (Quit: Leaving)
+2020-11-13 22:34:48	<--	FlyingWaffleZ (~FlyingWaf@pool-96-227-133-211.phlapa.fios.verizon.net) has quit (Quit: Leaving)
+2020-11-13 22:35:51	<--	entel (uid256215@botters/entel) has quit
+2020-11-13 22:36:00	-->	entel (uid256215@botters/entel) has joined ##c++
+2020-11-13 22:37:42	-->	FlyingWaffle (~FlyingWaf@pool-96-227-133-211.phlapa.fios.verizon.net) has joined ##c++
+2020-11-13 22:38:00	<--	Freespirit-girl (~prada@unaffiliated/freespirit-girl) has quit (Remote host closed the connection)
+2020-11-13 22:38:07	-->	Freespirit-girl (~prada@2600:1700:2470:6010:bdbb:5b39:2111:a225) has joined ##c++
+2020-11-13 22:38:12	<--	spiri (~spiri@unaffiliated/spiri) has quit (Quit: ¯\_(ツ)_/¯)
+2020-11-13 22:38:31	--	Freespirit-girl is now known as Guest49303
+2020-11-13 22:40:33	-->	nickysn (~nickysn@95.111.71.90) has joined ##c++
+2020-11-13 22:41:14	-->	bamdad (~bamdad@gateway/tor-sasl/bamdad) has joined ##c++
+2020-11-13 22:47:10	<--	ladon (~ladon@ppp046177068077.access.hol.gr) has quit (Ping timeout: 256 seconds)
+2020-11-13 22:47:41	<--	Guest49303 (~prada@2600:1700:2470:6010:bdbb:5b39:2111:a225) has quit (Ping timeout: 260 seconds)
+2020-11-13 22:49:06	-->	Guest49303 (~prada@2600:1700:2470:6010:bdbb:5b39:2111:a225) has joined ##c++
+2020-11-13 22:49:23	<--	Guest49303 (~prada@2600:1700:2470:6010:bdbb:5b39:2111:a225) has quit (Client Quit)
+2020-11-13 22:58:45	-->	nuclearg1 (~nucleargr@c-73-150-253-137.hsd1.nj.comcast.net) has joined ##c++
+2020-11-13 23:03:11	<--	ambro718 (~ambro@unaffiliated/ambro718) has quit (Quit: Konversation terminated!)
+2020-11-13 23:04:00	-->	TCZ (~TCZ@ip-91.246.66.111.skyware.pl) has joined ##c++

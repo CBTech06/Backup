@@ -1,0 +1,34 @@
+#!/usr/bin/python3
+
+import time
+import os
+import sys 
+
+var=1500
+running = True
+color='#FF0000'
+
+min = var / 60
+sec = var % 60
+
+if os.environ.get('BLOCK_BUTTON'):
+    if os.eviron['BLOCK_BUTTON'] == '1':
+        text = "BTN1"
+
+"""
+if sec == 0:
+        if min !=0:
+                min -=1
+                sec = 59
+        else:
+            min = 0
+            sec = 0
+    else:
+        sec -=1
+
+    time.sleep(1)
+"""
+#output =  "<span color ='green' font='FontAwesome'>[Timer:  ", '{:02d}:{:02d}'.format(round(min),round(sec)), " ]</span>"
+
+output ='{:02d}:{:02d}'.format(round(min),round(sec))
+print ("[<span foreground='#FF0000' font='FontAwesome'>\uf110 </span>:  " , output, "]" ) 

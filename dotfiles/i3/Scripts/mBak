@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+if xinput list 8 | grep -q 'is disabled'; then 
+        ## ENABLE MOUSE
+        xinput --enable 8; 
+        xinput --enable 9;
+else
+        ## DISABLE MOUSE 
+        xinput --disable 8; 
+        xinput --disable 9; 
+        unclutter -idle 0;
+fi

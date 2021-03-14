@@ -1,0 +1,499 @@
+2020-02-08 21:30:17	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #zsh
+2020-02-08 21:30:17	--	Topic for #zsh is "v5.7.1 | http://zsh.sf.net/ | http://zsh.sf.net/FAQ | http://tinyurl.com/zsh-refcard-pdf | Just ask. | Nobody here or everybody clueless? try the zsh-users mailinglist: http://www.zsh.org/mla"
+2020-02-08 21:30:17	--	Topic set by llua (~llua@zsh/developer/llua) on Tue, 05 Feb 2019 18:41:37
+2020-02-08 21:30:17	--	Channel #zsh: 476 nicks (0 ops, 0 voices, 476 normals)
+2020-02-08 21:30:17	--	URL for #zsh: http://www.zsh.org/
+2020-02-08 21:30:19	--	Channel created on Tue, 02 Sep 2003 17:34:53
+2020-02-08 21:30:26	captainchris	hello everybody 
+2020-02-08 21:32:50	-->	growpotkin (~growpotki@130-45-30-154.dyn.grandenetworks.net) has joined #zsh
+2020-02-08 21:37:35	<--	muelleme (~muelleme@2a02:8070:8784:ad00:695b:1d8f:8c44:1a9a) has quit (Ping timeout: 256 seconds)
+2020-02-08 21:42:11	-->	z_fudge (~fudge@62.217.45.26) has joined #zsh
+2020-02-08 21:49:13	captainchris	I want
+2020-02-08 21:49:31	<--	ifreund (~ifreund@unaffiliated/ifreund) has left #zsh ("WeeChat 2.7")
+2020-02-08 21:54:18	<--	Ketchup901 (ketchup@unaffiliated/ketchup901) has quit (Ping timeout: 260 seconds)
+2020-02-08 21:55:16	-->	Ketchup901 (~ketchup@unaffiliated/ketchup901) has joined #zsh
+2020-02-08 22:01:31	rektide	is there a filename people use for files intended to be sourced by zsh?
+2020-02-08 22:01:58	rektide	i've been using .source but it was just totaly ad-hoc. i'm thinking maybe like .zsource or .zs to indicate that i intend this to be a zsh source file?
+2020-03-31 12:47:28	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #zsh
+2020-03-31 12:47:28	--	Topic for #zsh is "v5.8 | http://zsh.sf.net/ | http://zsh.sf.net/FAQ | http://tinyurl.com/zsh-refcard-pdf | Just ask. | Nobody here or everybody clueless? try the zsh-users mailinglist: http://www.zsh.org/mla"
+2020-03-31 12:47:28	--	Topic set by llua (~llua@zsh/developer/llua) on Sat, 22 Feb 2020 14:15:42
+2020-03-31 12:47:28	--	Channel #zsh: 452 nicks (0 ops, 0 voices, 452 normals)
+2020-03-31 12:47:28	--	URL for #zsh: http://www.zsh.org/
+2020-03-31 12:47:30	--	Channel created on Tue, 02 Sep 2003 17:34:53
+2020-03-31 12:47:34	captainchris	hi everybody 
+2020-03-31 12:47:44	captainchris	anyone uses dzen2 ??
+2020-03-31 12:50:57	-->	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has joined #zsh
+2020-03-31 13:01:09	<--	dedowsdi (~dedowsdi@183.192.229.151) has quit (Ping timeout: 256 seconds)
+2020-03-31 13:02:37	<--	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 13:03:10	-->	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has joined #zsh
+2020-03-31 13:05:41	<--	finsternis (~Y@23.226.237.192) has quit (Remote host closed the connection)
+2020-03-31 13:09:47	<--	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 13:11:11	-->	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has joined #zsh
+2020-03-31 13:11:24	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:dda:450b:3fa1:c7b5) has joined #zsh
+2020-03-31 13:12:04	<--	ahmed_elgabri (~ahmedelga@92.223.89.138) has quit (Ping timeout: 256 seconds)
+2020-03-31 13:13:53	<--	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has quit (Client Quit)
+2020-03-31 13:14:19	-->	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has joined #zsh
+2020-03-31 13:14:49	-->	dedowsdi (~dedowsdi@183.192.229.151) has joined #zsh
+2020-03-31 13:23:10	<--	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 13:23:26	-->	NeoCron (~neocron_@p200300C4CF2768002DF03A11130BD8F1.dip0.t-ipconnect.de) has joined #zsh
+2020-03-31 13:23:53	-->	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has joined #zsh
+2020-03-31 13:26:42	-->	crose (~weechat@2001:41d0:fe1d:5300:3512:16d2:5d96:3072) has joined #zsh
+2020-03-31 13:29:41	<--	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 13:30:04	-->	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has joined #zsh
+2020-03-31 13:32:09	<--	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has quit (Read error: Connection reset by peer)
+2020-03-31 13:32:54	-->	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has joined #zsh
+2020-03-31 13:41:12	-->	aliss (~ypm@202.red-83-55-39.dynamicip.rima-tde.net) has joined #zsh
+2020-03-31 13:43:28	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 240 seconds)
+2020-03-31 13:47:50	<--	bl4ckr41n (~bl4ckr41n@99-195-153-167.dyn.centurytel.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 13:50:49	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:dda:450b:3fa1:c7b5) has quit (Ping timeout: 252 seconds)
+2020-03-31 13:53:25	<--	dedowsdi (~dedowsdi@183.192.229.151) has quit (Quit: WeeChat 1.9.1)
+2020-03-31 13:54:34	<--	lavaflow (~martha@45.87.213.155) has quit (Ping timeout: 256 seconds)
+2020-03-31 13:54:51	<--	sgn (~sgn@116.109.3.106) has quit (Ping timeout: 250 seconds)
+2020-03-31 13:55:27	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:dda:450b:3fa1:c7b5) has joined #zsh
+2020-03-31 13:55:41	<--	mojisun (~weechat@gateway/tor-sasl/mojisun) has quit (Quit: mojisun)
+2020-03-31 13:59:09	-->	sgn (~sgn@116.109.6.245) has joined #zsh
+2020-03-31 13:59:11	<--	mwoodson (mwoodson@nat/redhat/x-ijkpmnzjkgywtxpy) has quit (Ping timeout: 250 seconds)
+2020-03-31 14:06:39	-->	mwoodson (mwoodson@nat/redhat/x-rftnfhqrpfijqtdx) has joined #zsh
+2020-03-31 14:09:21	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Read error: Connection reset by peer)
+2020-03-31 14:10:16	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-03-31 14:26:12	<--	gigetoo (~gigetoo@c83-250-41-185.bredband.comhem.se) has quit (Ping timeout: 246 seconds)
+2020-03-31 14:27:25	-->	gigetoo (~gigetoo@c83-250-41-185.bredband.comhem.se) has joined #zsh
+2020-03-31 14:32:19	-->	psprint (~psprint@91.245.82.2) has joined #zsh
+2020-03-31 14:39:07	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:dda:450b:3fa1:c7b5) has quit (Ping timeout: 272 seconds)
+2020-03-31 14:39:48	-->	m0u (~m0u@unaffiliated/m0u) has joined #zsh
+2020-03-31 14:50:19	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:dda:450b:3fa1:c7b5) has joined #zsh
+2020-03-31 14:55:35	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:dda:450b:3fa1:c7b5) has quit (Ping timeout: 272 seconds)
+2020-03-31 14:55:45	-->	Ischwitch (~Ingvix@134.19.189.116) has joined #zsh
+2020-03-31 14:56:47	<--	Ingvix (~Ingvix@85-76-165-87-nat.elisa-mobile.fi) has quit (Ping timeout: 264 seconds)
+2020-03-31 14:56:48	--	Ischwitch is now known as Ingvix
+2020-03-31 14:56:52	-->	trevor (~trevor@gradient/cofounder/trevor) has joined #zsh
+2020-03-31 14:58:47	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has joined #zsh
+2020-03-31 15:05:38	-->	N0ZYC (~nathan009@173-16-166-245.client.mchsi.com) has joined #zsh
+2020-03-31 15:13:48	<--	psprint (~psprint@91.245.82.2) has quit (Read error: Connection reset by peer)
+2020-03-31 15:20:25	--	caterfxo is now known as mrwisdom
+2020-03-31 15:23:58	<--	mwoodson (mwoodson@nat/redhat/x-rftnfhqrpfijqtdx) has quit (Ping timeout: 258 seconds)
+2020-03-31 15:26:10	-->	mwoodson (mwoodson@nat/redhat/x-pcsvwxusqhwjkldb) has joined #zsh
+2020-03-31 15:27:59	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has quit (Ping timeout: 252 seconds)
+2020-03-31 15:28:40	<--	_0x5eb_ (~seb@seb-hpws2.w1.tele.crt1.net) has quit (Quit: Goodbye!)
+2020-03-31 15:29:00	-->	_0x5eb_ (~seb@seb-hpws2.w1.tele.crt1.net) has joined #zsh
+2020-03-31 15:30:51	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has joined #zsh
+2020-03-31 15:37:43	-->	psprint (~psprint@91.245.82.2) has joined #zsh
+2020-03-31 15:39:38	<--	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has quit (Quit: ZNC 1.8.x-nightly-20190530-13450c7f - https://znc.in)
+2020-03-31 15:45:05	-->	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has joined #zsh
+2020-03-31 15:48:43	-->	Ketchup901 (ketchup@unaffiliated/ketchup901) has joined #zsh
+2020-03-31 15:49:54	Ketchup901	How can you match all files whose filenames contain two digits in a row (e.g. in ls)? like regex [0-9]{2}.
+2020-03-31 15:50:35	<--	badpixel- (~badpixel@192.150.253.196) has quit (Changing host)
+2020-03-31 15:50:35	-->	badpixel- (~badpixel@unaffiliated/badpixel) has joined #zsh
+2020-03-31 15:51:05	-->	cd (~cd@unaffiliated/cd) has joined #zsh
+2020-03-31 15:51:48	osse	Ketchup901: *[0-9][0-9]*
+2020-03-31 15:52:16	Ketchup901	anything more scalable? that one is good enough for me in this case, but what if I want to match 24 digits?
+2020-03-31 15:53:04	Mikachu	Ketchup901: *[0-9](#c24)*
+2020-03-31 15:55:31	osse	Aserejé, ja deje tejebe tude jebere sebiunouba majabi an de bugui an de buididipí
+2020-03-31 15:56:44	-->	honigkuchen (~honigkuch@ip5f5b4d31.dynamic.kabel-deutschland.de) has joined #zsh
+2020-03-31 15:57:08	Ketchup901	Doesn't seem to work Mikachu
+2020-03-31 15:57:15	Ketchup901	*[0-9](#c2)* that is
+2020-03-31 15:57:56	osse	Ketchup901: setopt extendedglob and try again
+2020-03-31 15:58:00	--	badpixel- is now known as badpixel
+2020-03-31 15:58:20	Ketchup901	ty ty :)
+2020-03-31 16:00:42	-->	esc (esc@kudu.in-berlin.de) has joined #zsh
+2020-03-31 16:00:43	<--	esc (esc@kudu.in-berlin.de) has quit (Changing host)
+2020-03-31 16:00:43	-->	esc (esc@gentoo/contributor/esc) has joined #zsh
+2020-03-31 16:00:46	<--	n35xdxb0 (~n35xdxb0@82.43.86.195) has quit (Remote host closed the connection)
+2020-03-31 16:00:49	osse	Ketchup901: I just lost the game.
+2020-03-31 16:01:55	Ketchup901	damnit
+2020-03-31 16:04:31	<--	wodencafe (wodencafe@woden.cafe) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2020-03-31 16:06:51	<--	gkh676 (~gkh@thor.kevinhill.nl) has quit (Quit: Goodbye!)
+2020-03-31 16:14:16	<--	Ketchup901 (ketchup@unaffiliated/ketchup901) has left #zsh ("thanks for your help :)")
+2020-03-31 16:15:00	-->	johnny56 (johnny56@gateway/vpn/protonvpn/johnny56) has joined #zsh
+2020-03-31 16:16:20	<--	drymer (~drymer@unaffiliated/drymer) has quit (Read error: Connection reset by peer)
+2020-03-31 16:17:17	Mikachu	how dare you make me remember that song exists
+2020-03-31 16:17:52	-->	drymer (~drymer@unaffiliated/drymer) has joined #zsh
+2020-03-31 16:18:05	osse	I used my huge balls
+2020-03-31 16:18:30	<--	johnny56_ (johnny56@gateway/vpn/protonvpn/johnny56) has quit (Ping timeout: 256 seconds)
+2020-03-31 16:20:29	Mikachu	well, i hope it was worth it, you only get one use
+2020-03-31 16:21:26	osse	I'll manage
+2020-03-31 16:23:15	-->	wodencafe (wodencafe@woden.cafe) has joined #zsh
+2020-03-31 16:25:59	-->	moondog (~Thunderbi@rev-185-22-215-103.radiolan.sk) has joined #zsh
+2020-03-31 16:26:18	<--	llucenic_ (~Thunderbi@rev-185-22-215-103.radiolan.sk) has quit (Quit: llucenic_)
+2020-03-31 16:34:29	-->	Sonderblade (~helloman@94.191.140.1.mobile.tre.se) has joined #zsh
+2020-03-31 16:36:57	<--	Kaivo (~Kaivo@192-222-129-52.qc.cable.ebox.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 16:37:26	-->	cdown_ (~cdown@199.201.66.0) has joined #zsh
+2020-03-31 16:38:30	-->	Kaivo (~Kaivo@192-222-129-52.qc.cable.ebox.net) has joined #zsh
+2020-03-31 16:40:02	<--	cdown (~cdown@89.32.122.5) has quit (Ping timeout: 256 seconds)
+2020-03-31 16:40:10	--	cdown_ is now known as cdown
+2020-03-31 16:45:15	<--	Sonderblade (~helloman@94.191.140.1.mobile.tre.se) has quit (Read error: Connection reset by peer)
+2020-03-31 16:45:24	-->	Sonderblade (~helloman@94.191.140.1.mobile.tre.se) has joined #zsh
+2020-03-31 16:52:37	<--	nikivi (~nikivi@nikivi.powered.by.lunarbnc.net) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net)
+2020-03-31 16:52:52	-->	nikivi (~nikivi@nikivi.powered.by.lunarbnc.net) has joined #zsh
+2020-03-31 16:58:54	<--	wodencafe (wodencafe@woden.cafe) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2020-03-31 16:59:00	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has quit (Ping timeout: 240 seconds)
+2020-03-31 17:04:01	<--	trevor (~trevor@gradient/cofounder/trevor) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-31 17:04:54	-->	lavaflow (~martha@45.87.213.155) has joined #zsh
+2020-03-31 17:05:21	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has joined #zsh
+2020-03-31 17:10:05	-->	trevor (~trevor@gradient/cofounder/trevor) has joined #zsh
+2020-03-31 17:28:51	<--	zlogan (~zlogan@2a02:908:f764:b5c0:1ca:6a8e:93c2:5f73) has quit (Ping timeout: 272 seconds)
+2020-03-31 17:31:24	-->	zlogan (~zlogan@2a02:908:f764:b5c0:b1c8:fa57:7798:1d94) has joined #zsh
+2020-03-31 17:34:04	<--	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has quit (Quit: ZNC 1.8.x-nightly-20190530-13450c7f - https://znc.in)
+2020-03-31 17:36:47	-->	wodencafe (wodencafe@woden.cafe) has joined #zsh
+2020-03-31 17:37:05	<--	tesseract (~tesseract@pop.92-184-110-56.mobile.abo.orange.fr) has quit (Quit: Leaving)
+2020-03-31 17:38:29	-->	cheet (~cheet@modemcable108.173-22-96.mc.videotron.ca) has joined #zsh
+2020-03-31 17:47:22	-->	vussl_ (vussl@gateway/vpn/mullvad/vussl) has joined #zsh
+2020-03-31 17:50:15	<--	vussl (vussl@gateway/vpn/mullvad/vussl) has quit (Ping timeout: 252 seconds)
+2020-03-31 17:51:13	-->	cseder (~cseder@183.81-166-27.customer.lyse.net) has joined #zsh
+2020-03-31 17:51:32	<--	wodencafe (wodencafe@woden.cafe) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2020-03-31 18:11:55	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has quit (Ping timeout: 272 seconds)
+2020-03-31 18:12:23	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has joined #zsh
+2020-03-31 18:14:17	<--	trevor (~trevor@gradient/cofounder/trevor) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-31 18:18:50	<--	aliss (~ypm@202.red-83-55-39.dynamicip.rima-tde.net) has quit (Quit: reboot)
+2020-03-31 18:19:25	-->	aliss (~ypm@202.red-83-55-39.dynamicip.rima-tde.net) has joined #zsh
+2020-03-31 18:25:55	-->	trevor (~trevor@gradient/cofounder/trevor) has joined #zsh
+2020-03-31 18:28:09	-->	snowe (~snowe@c-73-14-123-58.hsd1.co.comcast.net) has joined #zsh
+2020-03-31 18:28:20	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has quit (Ping timeout: 240 seconds)
+2020-03-31 18:29:20	-->	rdbeni0 (~user@public-gprs375599.centertel.pl) has joined #zsh
+2020-03-31 18:30:29	snowe	any way to force a reload of completions _in the current shell_ while using --no-rcs? Use case: I'm trying to test a completion generator. I generate the completion script, place it somewhere, then use a PTY to test tab completing. Only issue is that the completions aren't reloaded until the PTY is restarted. I tried using rehash and hash -rf, neither worked.
+2020-03-31 18:31:03	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has joined #zsh
+2020-03-31 18:33:56	phy1729	you can autoload compinit; $_  manually
+2020-03-31 18:37:39	snowe	what's the $_ do? I run autoload -U compinit && compinit after modifying the fpath already
+2020-03-31 18:38:00	phy1729	$_ is the last word of the last command
+2020-03-31 18:39:41	snowe	hm. that still didn't load it.
+2020-03-31 18:40:08	phy1729	Does the completer start with a #compdef line?
+2020-03-31 18:43:41	snowe	yeah
+2020-03-31 18:43:58	phy1729	rm .zcompdump and try again
+2020-03-31 18:46:29	-->	m0viefreak (~asdf@unaffiliated/m0viefreak) has joined #zsh
+2020-03-31 18:48:08	snowe	rm worked. is there any way to start zsh with a different .zcompdump file? I don't want to have to clobber mine every time I test this library.
+2020-03-31 18:49:09	-->	polemon (zsqDSsWYoy@eltanin.uberspace.de) has joined #zsh
+2020-03-31 18:49:35	phy1729	aiui the usual reason for needing to rm .zcompdump is creating the completer, starting zsh, then remembering to add the #compdef line
+2020-03-31 18:49:58	<--	rdbeni0 (~user@public-gprs375599.centertel.pl) has quit (Remote host closed the connection)
+2020-03-31 18:52:37	snowe	hm. but my generator automatically adds that. Can I set the fpath before loading zsh?
+2020-03-31 18:52:53	<--	osse (~osse@zsh/user/osse) has quit (Ping timeout: 258 seconds)
+2020-03-31 18:52:58	phy1729	fpath just bneeds to be correct before running compinit
+2020-03-31 18:53:12	snowe	hm... why oh why does it not work out of the box then....
+2020-03-31 18:56:40	-->	arosusi (~Adrian@ip9234939a.dynamic.kabel-deutschland.de) has joined #zsh
+2020-03-31 18:58:51	<--	arosusi (~Adrian@ip9234939a.dynamic.kabel-deutschland.de) has quit (Client Quit)
+2020-03-31 18:58:58	snowe	can I set $HOME before starting zsh?
+2020-03-31 18:59:08	-->	ensamvarg (~Adrian@ip9234939a.dynamic.kabel-deutschland.de) has joined #zsh
+2020-03-31 19:00:12	phy1729	> HOME=foo zsh -c 'print $HOME'
+2020-03-31 19:00:13	machabot	phy1729: foo
+2020-03-31 19:00:41	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has quit (Ping timeout: 272 seconds)
+2020-03-31 19:00:57	-->	n35xdxb0 (~n35xdxb0@82.43.86.195) has joined #zsh
+2020-03-31 19:01:31	-->	greedom (~greedom@muedsl-82-207-236-083.citykom.de) has joined #zsh
+2020-03-31 19:02:11	snowe	seems I can do that then.
+2020-03-31 19:03:02	phy1729	Though I'd wonder how you got a broken environment with an incorrect HOME
+2020-03-31 19:05:10	<--	aliss (~ypm@202.red-83-55-39.dynamicip.rima-tde.net) has quit (Quit: WeeChat 2.8)
+2020-03-31 19:06:10	snowe	the home wasn't incorrect.
+2020-03-31 19:07:00	phy1729	if it doesn't exist, zsh supplies it
+2020-03-31 19:07:12	phy1729	> env -i zsh -c env | tr \\n \
+2020-03-31 19:07:20	machabot	phy1729: qemu-system-i386: terminating on signal 15 from pid 30914 (<unknown process>)
+2020-03-31 19:07:28	phy1729	> env -i zsh -c env | tr \\n ' '
+2020-03-31 19:07:29	machabot	phy1729: HOME=/root LOGNAME=root SHLVL=0 PWD=/root OLDPWD=/root _=/usr/bin/env %
+2020-03-31 19:07:29	snowe	yeah, it was supplying it with my regular home. I think.
+2020-03-31 19:07:39	phy1729	heh bot trims trailing spaces
+2020-03-31 19:08:05	phy1729	You have an irregular home?
+2020-03-31 19:08:12	snowe	no.
+2020-03-31 19:08:37	phy1729	If what zsh was putting into HOME was incorrect, your userdata should be changed.
+2020-03-31 19:08:50	snowe	❯ zsh --no-rcs -c 'print $HOME'
+2020-03-31 19:08:51	snowe	/Users/tyler.thrailkill
+2020-03-31 19:09:20	-->	wodencafe (wodencafe@woden.cafe) has joined #zsh
+2020-03-31 19:09:36	snowe	Not sure what you mean.
+2020-03-31 19:10:02	phy1729	Is that value for HOME incorrect?
+2020-03-31 19:10:13	snowe	I'm trying to automate testing completions, irrespective of my current environment.
+2020-03-31 19:10:19	snowe	no. the value for home was correct.
+2020-03-31 19:10:36	snowe	but by setting it to a different home I can force it to not read the .zcompdump and then I don't need to remove it.
+2020-03-31 19:10:47	snowe	making my tests safer. also keeping my env intact.
+2020-03-31 19:10:48	<--	stepnem (~stepnem@185.112.167.47) has quit (Ping timeout: 240 seconds)
+2020-03-31 19:12:19	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has joined #zsh
+2020-03-31 19:12:46	-->	stepnem (~stepnem@185.112.167.47) has joined #zsh
+2020-03-31 19:15:07	-->	osse (~osse@zsh/user/osse) has joined #zsh
+2020-03-31 19:17:09	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:f50a:3c1c:caff:51c2) has quit (Ping timeout: 272 seconds)
+2020-03-31 19:32:08	<--	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has quit (Read error: Connection reset by peer)
+2020-03-31 19:33:06	-->	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has joined #zsh
+2020-03-31 19:34:26	snowe	oh wait. no, changing the home did not work.. It still isn't reading completions at startup.
+2020-03-31 19:34:37	snowe	I forgot that I already had a completion file in there and that's why it appeared to be working.
+2020-03-31 19:35:41	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #zsh
+2020-03-31 19:36:47	<--	uidzer0 (~uidzer0@2604:180:2:130d::dead:beef) has quit (Ping timeout: 272 seconds)
+2020-03-31 19:38:19	-->	uidzer0 (~uidzer0@168.235.83.215) has joined #zsh
+2020-03-31 19:48:24	<--	ensamvarg (~Adrian@ip9234939a.dynamic.kabel-deutschland.de) has quit (Ping timeout: 264 seconds)
+2020-03-31 19:59:23	<--	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 20:01:31	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #zsh
+2020-03-31 20:03:29	<--	wodencafe (wodencafe@woden.cafe) has quit (Quit: I'm out.)
+2020-03-31 20:10:54	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:9902:fc9a:e4d6:e697) has joined #zsh
+2020-03-31 20:13:40	<--	elphe (~cockatoo@124.191.70.116) has quit (Ping timeout: 256 seconds)
+2020-03-31 20:15:31	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:9902:fc9a:e4d6:e697) has quit (Ping timeout: 246 seconds)
+2020-03-31 20:16:30	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:9902:fc9a:e4d6:e697) has joined #zsh
+2020-03-31 20:18:14	-->	wodencafe (wodencafe@woden.cafe) has joined #zsh
+2020-03-31 20:53:13	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 260 seconds)
+2020-03-31 21:04:53	<--	sgn (~sgn@116.109.6.245) has quit (Ping timeout: 260 seconds)
+2020-03-31 21:05:49	-->	rdbeni0 (~user@public-gprs375599.centertel.pl) has joined #zsh
+2020-03-31 21:06:51	-->	sgn (~sgn@2402:800:6375:207b:2c99:6892:ba0e:1b27) has joined #zsh
+2020-03-31 21:09:50	-->	elphe (~cockatoo@124.191.70.116) has joined #zsh
+2020-03-31 21:14:28	<--	elphe (~cockatoo@124.191.70.116) has quit (Ping timeout: 240 seconds)
+2020-03-31 21:28:58	<--	foul_owl (~foul_owl@108.62.5.131) has quit (Read error: Connection reset by peer)
+2020-03-31 21:30:18	-->	foul_owl (~foul_owl@108.62.5.131) has joined #zsh
+2020-03-31 21:39:36	-->	Sasazuka (~Sasazuka@unaffiliated/sasazuka) has joined #zsh
+2020-03-31 21:40:40	<--	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has quit (Ping timeout: 240 seconds)
+2020-03-31 21:53:04	-->	Narrat (~Narrat@p200300DF5F0AAA6B14B90B2CAEE68881.dip0.t-ipconnect.de) has joined #zsh
+2020-03-31 21:53:47	-->	viraltaco_ (~taco@unaffiliated/d-b/x-8688605) has joined #zsh
+2020-03-31 21:58:24	-->	Sonicbit (~Sonicbit@unaffiliated/sonicbit) has joined #zsh
+2020-03-31 22:03:02	<--	Sonderblade (~helloman@94.191.140.1.mobile.tre.se) has quit (Ping timeout: 256 seconds)
+2020-03-31 22:06:10	-->	andril (~andril@2601:586:8400:a:488e:8cac:da17:904) has joined #zsh
+2020-03-31 22:07:17	-->	aliss (~ypm@202.red-83-55-39.dynamicip.rima-tde.net) has joined #zsh
+2020-03-31 22:10:37	-->	elphe (~cockatoo@124.191.70.116) has joined #zsh
+2020-03-31 22:11:04	-->	nuala (~nuala@dslb-088-074-174-216.088.074.pools.vodafone-ip.de) has joined #zsh
+2020-03-31 22:15:51	<--	elphe (~cockatoo@124.191.70.116) has quit (Ping timeout: 256 seconds)
+2020-03-31 22:18:59	<--	viraltaco_ (~taco@unaffiliated/d-b/x-8688605) has quit (Quit: 😴)
+2020-03-31 22:20:03	<--	wodencafe (wodencafe@woden.cafe) has quit (Quit: ZNC 1.6.6+deb1ubuntu0.2 - http://znc.in)
+2020-03-31 22:23:37	<--	Hilbert (~Hilbert@p200300DE7F1047011CBE11A620647792.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2020-03-31 22:39:40	<--	m0viefreak (~asdf@unaffiliated/m0viefreak) has quit (Remote host closed the connection)
+2020-03-31 22:40:45	<--	cdown (~cdown@199.201.66.0) has quit (Read error: Connection reset by peer)
+2020-03-31 22:42:23	-->	cdown (~cdown@89.32.122.5) has joined #zsh
+2020-03-31 22:45:02	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2020-03-31 22:46:07	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-03-31 22:53:24	-->	Sonderblade (~helloman@94.191.140.1.mobile.tre.se) has joined #zsh
+2020-03-31 22:54:46	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:9902:fc9a:e4d6:e697) has quit (Ping timeout: 246 seconds)
+2020-03-31 22:58:58	-->	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:654b:25b0:b75e:6cb3) has joined #zsh
+2020-03-31 23:01:10	-->	elphe (~cockatoo@124.191.70.116) has joined #zsh
+2020-03-31 23:05:45	<--	nuala (~nuala@dslb-088-074-174-216.088.074.pools.vodafone-ip.de) has quit (Ping timeout: 260 seconds)
+2020-03-31 23:06:03	<--	elphe (~cockatoo@124.191.70.116) has quit (Ping timeout: 250 seconds)
+2020-03-31 23:10:39	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:c108:592f:52a4:bfb4) has joined #zsh
+2020-03-31 23:11:55	-->	aelgabri (ahmedelgab@gateway/vpn/privateinternetaccess/gabri) has joined #zsh
+2020-03-31 23:12:11	<--	ahmed_elgabri (~ahmedelga@2a02:a446:d88a:0:654b:25b0:b75e:6cb3) has quit (Ping timeout: 252 seconds)
+2020-03-31 23:15:25	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:c108:592f:52a4:bfb4) has quit (Ping timeout: 246 seconds)
+2020-03-31 23:15:41	<--	dmc (~dmc@archlinux/trusteduser/polyzen) has quit (Remote host closed the connection)
+2020-03-31 23:17:47	-->	sfvm (~sfvm@37.228.247.184) has joined #zsh
+2020-03-31 23:25:07	-->	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has joined #zsh
+2020-03-31 23:26:51	<--	WinterStar (WinterStar@gateway/vpn/mullvad/winterstar) has quit (Ping timeout: 250 seconds)
+2020-03-31 23:30:02	<--	mrwisdom (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Ping timeout: 258 seconds)
+2020-04-04 10:48:12	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #zsh
+2020-04-04 10:48:12	--	Topic for #zsh is "v5.8 | http://zsh.sf.net/ | http://zsh.sf.net/FAQ | http://tinyurl.com/zsh-refcard-pdf | Just ask. | Nobody here or everybody clueless? try the zsh-users mailinglist: http://www.zsh.org/mla"
+2020-04-04 10:48:12	--	Topic set by llua (~llua@zsh/developer/llua) on Sat, 22 Feb 2020 14:15:42
+2020-04-04 10:48:12	--	Channel #zsh: 458 nicks (0 ops, 0 voices, 458 normals)
+2020-04-04 10:48:12	--	URL for #zsh: http://www.zsh.org/
+2020-04-04 10:48:14	--	Channel created on Tue, 02 Sep 2003 17:34:53
+2020-04-04 10:48:16	captainchris	hi everybody 
+2020-04-04 10:49:36	captainchris	it is possible to uses powerlevel10k on tty or disable on tty ?
+2020-04-04 10:50:36	-->	vussl (vussl@gateway/vpn/mullvad/vussl) has joined #zsh
+2020-04-04 10:52:31	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2020-04-04 10:53:53	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-04-04 10:59:41	-->	kryl99 (~kryl99@1.159.19.8) has joined #zsh
+2020-04-04 11:01:32	<--	rkta (~kt@62.113.246.111) has quit (Remote host closed the connection)
+2020-04-04 11:01:43	-->	rkta_ (~kt@62.113.246.111) has joined #zsh
+2020-04-04 11:01:51	--	rkta_ is now known as rkta
+2020-04-04 11:02:32	<--	vussl (vussl@gateway/vpn/mullvad/vussl) has quit (Ping timeout: 272 seconds)
+2020-04-04 11:03:48	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:a0d5:30c1:a7af:581c) has quit (Ping timeout: 272 seconds)
+2020-04-04 11:06:34	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:a0d5:30c1:a7af:581c) has joined #zsh
+2020-04-04 11:11:46	-->	vussl (vussl@gateway/vpn/mullvad/vussl) has joined #zsh
+2020-04-04 11:47:23	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #zsh
+2020-04-04 11:47:23	--	Topic for #zsh is "v5.8 | http://zsh.sf.net/ | http://zsh.sf.net/FAQ | http://tinyurl.com/zsh-refcard-pdf | Just ask. | Nobody here or everybody clueless? try the zsh-users mailinglist: http://www.zsh.org/mla"
+2020-04-04 11:47:23	--	Topic set by llua (~llua@zsh/developer/llua) on Sat, 22 Feb 2020 14:15:42
+2020-04-04 11:47:23	--	Channel #zsh: 457 nicks (0 ops, 0 voices, 457 normals)
+2020-04-04 11:47:23	--	URL for #zsh: http://www.zsh.org/
+2020-04-04 11:47:25	--	Channel created on Tue, 02 Sep 2003 17:34:53
+2020-04-04 11:47:26	captainchris	hi 
+2020-04-04 11:47:27	-->	llucenic_ (~Thunderbi@rev-185-22-215-103.radiolan.sk) has joined #zsh
+2020-04-04 11:47:35	captainchris	how to disable powerlevel10k on tty ? 
+2020-04-04 11:48:40	captainchris	I'm trying that
+2020-04-04 11:48:41	captainchris	https://pastebin.com/1d4dfSUK
+2020-04-04 11:48:52	-->	jetchisel (~jetchisel@opensuse/member/jetchisel) has joined #zsh
+2020-04-04 11:49:38	-->	alip (~alip@exherbo/developer/alip) has joined #zsh
+2020-04-04 11:59:13	<--	vussl (vussl@gateway/vpn/mullvad/vussl) has quit (Ping timeout: 265 seconds)
+2020-04-04 12:13:01	-->	kryl99 (~kryl99@1.159.19.8) has joined #zsh
+2020-04-04 12:17:39	<--	llucenic_ (~Thunderbi@rev-185-22-215-103.radiolan.sk) has quit (Ping timeout: 240 seconds)
+2020-04-04 12:17:42	-->	vussl (vussl@gateway/vpn/mullvad/vussl) has joined #zsh
+2020-04-04 12:20:02	<--	lemonzest (~lemonzest@unaffiliated/lemonzest) has quit (Quit: Quitting)
+2020-04-04 12:34:01	<--	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has quit (Ping timeout: 265 seconds)
+2020-04-04 12:37:32	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:a0d5:30c1:a7af:581c) has quit (Ping timeout: 272 seconds)
+2020-04-04 12:44:18	<--	kryl99 (~kryl99@1.159.19.8) has quit (Ping timeout: 256 seconds)
+2020-04-04 12:45:13	-->	kekXs___ (~nada3@188.65.94.156) has joined #zsh
+2020-04-04 12:47:44	osse	captainchris: must have space before ]]
+2020-04-04 12:48:05	-->	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has joined #zsh
+2020-04-04 12:52:56	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:a0d5:30c1:a7af:581c) has joined #zsh
+2020-04-04 12:55:46	<--	kekXs___ (~nada3@188.65.94.156) has quit (Quit: Leaving)
+2020-04-04 12:56:12	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2020-04-04 12:57:05	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-04-04 12:58:11	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:a0d5:30c1:a7af:581c) has quit (Ping timeout: 265 seconds)
+2020-04-04 13:01:34	<--	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has quit (Ping timeout: 265 seconds)
+2020-04-04 13:02:32	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 265 seconds)
+2020-04-04 13:02:37	-->	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has joined #zsh
+2020-04-04 13:02:39	captainchris	osse: oh thx
+2020-04-04 13:09:22	<--	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has quit (Ping timeout: 260 seconds)
+2020-04-04 13:11:42	<--	dedowsdi (~dedowsdi@223.104.213.74) has quit (Ping timeout: 260 seconds)
+2020-04-04 13:11:57	-->	zsh423 (8974a3cc@gateway/web/cgi-irc/kiwiirc.com/ip.137.116.163.204) has joined #zsh
+2020-04-04 13:12:08	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Ping timeout: 240 seconds)
+2020-04-04 13:13:57	-->	dedowsdi (~dedowsdi@183.192.229.151) has joined #zsh
+2020-04-04 13:15:57	-->	vussl_ (vussl@gateway/vpn/mullvad/vussl) has joined #zsh
+2020-04-04 13:16:35	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:70fe:c103:b076:6077) has joined #zsh
+2020-04-04 13:16:48	<--	vussl (vussl@gateway/vpn/mullvad/vussl) has quit (Ping timeout: 272 seconds)
+2020-04-04 13:17:15	-->	aliss (~ypm@170.red-83-55-36.dynamicip.rima-tde.net) has joined #zsh
+2020-04-04 13:21:32	-->	opal (~wowaname@volatile/founder/wowaname) has joined #zsh
+2020-04-04 13:21:37	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:70fe:c103:b076:6077) has quit (Ping timeout: 260 seconds)
+2020-04-04 13:26:26	<--	drymer (~drymer@unaffiliated/drymer) has quit (Read error: Connection reset by peer)
+2020-04-04 13:27:20	-->	drymer (~drymer@unaffiliated/drymer) has joined #zsh
+2020-04-04 13:27:33	-->	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has joined #zsh
+2020-04-04 13:27:40	<--	dedowsdi (~dedowsdi@183.192.229.151) has quit (Ping timeout: 265 seconds)
+2020-04-04 13:28:45	<--	InvisibleRasta (~Invisible@ns332573.ip-37-187-124.eu) has quit (Quit: WeeChat 2.3)
+2020-04-04 13:28:46	-->	dedowsdi (~dedowsdi@183.192.229.151) has joined #zsh
+2020-04-04 13:41:03	<--	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has quit (Ping timeout: 258 seconds)
+2020-04-04 13:46:06	<--	twe4ked (odin@outpost.spawncamp.net) has quit (Read error: Connection reset by peer)
+2020-04-04 13:46:48	-->	twe4ked (odin@outpost.spawncamp.net) has joined #zsh
+2020-04-04 13:47:08	-->	InvisibleRasta (~Invisible@ns332573.ip-37-187-124.eu) has joined #zsh
+2020-04-04 13:49:04	-->	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has joined #zsh
+2020-04-04 13:50:45	-->	ahmedelgabri (~ahmedelga@92.223.89.137) has joined #zsh
+2020-04-04 13:54:57	-->	m0viefreak (~asdf@unaffiliated/m0viefreak) has joined #zsh
+2020-04-04 14:04:52	-->	frezy (~frezy@ip5f5bd704.dynamic.kabel-deutschland.de) has joined #zsh
+2020-04-04 14:12:42	<--	caterfxo (~caterfxo@unaffiliated/caterfxo) has quit (Ping timeout: 256 seconds)
+2020-04-04 14:22:45	<--	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has quit (Ping timeout: 256 seconds)
+2020-04-04 14:23:42	frezy	hey, is it somehow possible to use "complete" for functions?
+2020-04-04 14:30:49	-->	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has joined #zsh
+2020-04-04 14:30:57	<--	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has quit (Read error: Connection reset by peer)
+2020-04-04 14:34:07	-->	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has joined #zsh
+2020-04-04 14:37:59	<--	dedowsdi (~dedowsdi@183.192.229.151) has quit (Quit: WeeChat 1.9.1)
+2020-04-04 14:39:23	-->	crose (~weechat@2001:41d0:fe1d:5300:3512:16d2:5d96:3072) has joined #zsh
+2020-04-04 14:39:34	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #zsh
+2020-04-04 14:40:58	-->	kryl99 (~kryl99@1.159.19.8) has joined #zsh
+2020-04-04 14:43:20	-->	zeden (~user@unaffiliated/zeden) has joined #zsh
+2020-04-04 14:45:10	<--	zeden (~user@unaffiliated/zeden) has quit (Client Quit)
+2020-04-04 14:45:40	-->	zeden (~user@unaffiliated/zeden) has joined #zsh
+2020-04-04 14:52:04	<--	kryl99 (~kryl99@1.159.19.8) has quit (Ping timeout: 265 seconds)
+2020-04-04 14:55:06	<--	zsh423 (8974a3cc@gateway/web/cgi-irc/kiwiirc.com/ip.137.116.163.204) has quit (Quit: http://www.kiwiirc.com/ - A hand crafted IRC client)
+2020-04-04 15:00:14	-->	rdbeni0 (~user@public-gprs377454.centertel.pl) has joined #zsh
+2020-04-04 15:02:32	<--	seventh__ (~seventh__@203.120.194.178.dynamic.wline.res.cust.swisscom.ch) has quit (Ping timeout: 260 seconds)
+2020-04-04 15:07:55	-->	honigkuchen (~honigkuch@ip5f5b4d31.dynamic.kabel-deutschland.de) has joined #zsh
+2020-04-04 15:10:01	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2020-04-04 15:10:52	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-04-04 15:21:32	-->	bn_work (uid268505@gateway/web/irccloud.com/x-nhvelrnsfojnnjxd) has joined #zsh
+2020-04-04 15:32:26	<--	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has quit (Quit: ZNC - 1.6.0 - http://znc.in)
+2020-04-04 15:38:08	<--	ahmedelgabri (~ahmedelga@92.223.89.137) has quit (Ping timeout: 250 seconds)
+2020-04-04 15:38:27	-->	tos9_ (~tos9@python/site-packages/tos9) has joined #zsh
+2020-04-04 15:38:44	<--	tos9 (~tos9@python/site-packages/tos9) has quit (Ping timeout: 258 seconds)
+2020-04-04 15:38:44	--	tos9_ is now known as tos9
+2020-04-04 15:41:37	<--	jamesbee (james@2600:3c03::f03c:91ff:fedf:6a5f) has left #zsh ("WeeChat 2.7")
+2020-04-04 15:46:42	<--	rdbeni0 (~user@public-gprs377454.centertel.pl) has quit (Ping timeout: 265 seconds)
+2020-04-04 15:46:48	<--	Jackneill (~Jackneill@unaffiliated/jackneill) has quit (Ping timeout: 250 seconds)
+2020-04-04 15:46:55	<--	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has quit (Read error: Connection reset by peer)
+2020-04-04 15:47:55	-->	bvdw (~bas@static.181.139.9.5.clients.your-server.de) has joined #zsh
+2020-04-04 15:49:04	-->	buckworst (~nate@202.138.253.14) has joined #zsh
+2020-04-04 15:52:37	<--	buckworst (~nate@202.138.253.14) has quit (Client Quit)
+2020-04-04 15:53:09	-->	buckworst (~nate@202.138.253.48) has joined #zsh
+2020-04-04 15:54:00	<--	buckworst (~nate@202.138.253.48) has quit (Client Quit)
+2020-04-04 15:54:20	-->	buckworst (~nate@202.138.253.3) has joined #zsh
+2020-04-04 16:04:40	<--	buckworst (~nate@202.138.253.3) has quit (Quit: WeeChat 2.8)
+2020-04-04 16:06:10	-->	m0u (~m0u@unaffiliated/m0u) has joined #zsh
+2020-04-04 16:08:09	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:3435:d285:476b:ae8c) has joined #zsh
+2020-04-04 16:09:51	-->	trevor (~trevor@gradient/cofounder/trevor) has joined #zsh
+2020-04-04 16:14:24	-->	buckworst (~nate@202.138.253.1) has joined #zsh
+2020-04-04 16:21:25	-->	plonk (~plonk@rosa.physik-pool.tu-berlin.de) has joined #zsh
+2020-04-04 16:23:54	<--	buckworst (~nate@202.138.253.1) has quit (Quit: WeeChat 2.8)
+2020-04-04 16:37:02	<--	trevor (~trevor@gradient/cofounder/trevor) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-04-04 16:39:05	-->	blackandblue (~batdownh@gateway/tor-sasl/blackandblue) has joined #zsh
+2020-04-04 16:40:14	<--	blackandblue (~batdownh@gateway/tor-sasl/blackandblue) has quit (Remote host closed the connection)
+2020-04-04 16:41:00	-->	trevor (~trevor@gradient/cofounder/trevor) has joined #zsh
+2020-04-04 16:51:17	garo	I've started to collect handy aliases and shell functions, if anyone wants to contribute (or use them): https://gitlab.com/ngaro/aliases
+2020-04-04 16:52:47	garo	It's also mirrored on github, just switch 'la' to 'hu' in the url
+2020-04-04 16:53:19	--	psprint is now known as psprint_
+2020-04-04 16:53:33	<--	trevor (~trevor@gradient/cofounder/trevor) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-04-04 16:53:37	--	psprint_ is now known as psprint__
+2020-04-04 16:54:08	--	psprint__ is now known as aeo1ackn
+2020-04-04 16:54:23	--	aeo1ackn is now known as zdharma
+2020-04-04 16:54:28	--	zdharma is now known as psprint
+2020-04-04 16:54:32	--	psprint is now known as psprint__
+2020-04-04 16:54:32	Mikachu	psprint: stop
+2020-04-04 16:54:36	--	psprint__ is now known as psprint
+2020-04-04 16:54:40	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2020-04-04 16:55:08	psprint	Mikachu, I was touching my nicks for the freenode purge next weekend
+2020-04-04 16:55:08	garo	It's not a new idea, i've found multiple similar repo's but it's seems that nobody adds comments about what the aliases and functions are supposed to do
+2020-04-04 16:56:02	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-04-04 17:02:33	-->	ij (~ij@NixOS/user/siers) has joined #zsh
+2020-04-04 17:02:41	ij	can zsh emulate bash's !(file1|file2)?
+2020-04-04 17:02:44	-->	fopso (~fopso@p200300CD472B6000C2143DFFFED3467B.dip0.t-ipconnect.de) has joined #zsh
+2020-04-04 17:03:04	psprint	ij, yes, if you: setopt kshglob
+2020-04-04 17:07:57	<--	fopso (~fopso@p200300CD472B6000C2143DFFFED3467B.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2020-04-04 17:09:31	-->	greedom (~greedom@i5E86B3F6.versanet.de) has joined #zsh
+2020-04-04 17:14:00	Mikachu	ij: you can use (^(file1|file2)) instead
+2020-04-04 17:21:07	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:3435:d285:476b:ae8c) has quit (Ping timeout: 265 seconds)
+2020-04-04 17:22:26	--	shibumi is now known as brain0
+2020-04-04 17:22:43	--	brain0 is now known as shibumi
+2020-04-04 17:23:18	-->	kryl99 (~kryl99@1.159.19.8) has joined #zsh
+2020-04-04 17:28:57	<--	remyo (uid1142@gateway/web/irccloud.com/x-zxwjaqyuyrjxbhlb) has quit (Quit: Connection closed for inactivity)
+2020-04-04 17:29:20	<--	kryl99 (~kryl99@1.159.19.8) has quit (Ping timeout: 265 seconds)
+2020-04-04 17:29:33	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2020-04-04 17:30:22	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-04-04 17:32:33	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:3435:d285:476b:ae8c) has joined #zsh
+2020-04-04 17:36:48	<--	drymer (~drymer@unaffiliated/drymer) has quit (Read error: Connection reset by peer)
+2020-04-04 17:37:07	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:3435:d285:476b:ae8c) has quit (Ping timeout: 260 seconds)
+2020-04-04 17:37:45	-->	drymer (~drymer@unaffiliated/drymer) has joined #zsh
+2020-04-04 17:39:56	-->	llucenic_ (~Thunderbi@rev-185-22-215-103.radiolan.sk) has joined #zsh
+2020-04-04 17:40:52	-->	buckworst (~nate@202.138.253.3) has joined #zsh
+2020-04-04 17:46:56	<--	buckworst (~nate@202.138.253.3) has quit (Quit: WeeChat 2.8)
+2020-04-04 17:53:05	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:503a:ff0d:a4a2:5dae) has joined #zsh
+2020-04-04 17:55:37	-->	Ark_ (~Ark@79.173.124.121) has joined #zsh
+2020-04-04 17:59:28	-->	kryl99 (~kryl99@1.159.19.8) has joined #zsh
+2020-04-04 18:05:35	<--	llucenic_ (~Thunderbi@rev-185-22-215-103.radiolan.sk) has quit (Ping timeout: 265 seconds)
+2020-04-04 18:10:09	<--	Ark_ (~Ark@79.173.124.121) has quit (Quit: Leaving)
+2020-04-04 18:10:24	-->	Ark_ (~Ark@79.173.124.121) has joined #zsh
+2020-04-04 18:11:12	<--	psprint (~psprint@91.245.82.2) has quit (Read error: Connection reset by peer)
+2020-04-04 18:15:49	<--	Ark_ (~Ark@79.173.124.121) has left #zsh
+2020-04-04 18:20:28	-->	psprint (~psprint@91.245.82.2) has joined #zsh
+2020-04-04 18:26:46	-->	cd (~cd@unaffiliated/cd) has joined #zsh
+2020-04-04 18:29:04	-->	trevor (~trevor@gradient/cofounder/trevor) has joined #zsh
+2020-04-04 18:33:19	<--	kryl99 (~kryl99@1.159.19.8) has quit (Ping timeout: 240 seconds)
+2020-04-04 18:34:41	<--	fry (~quassel@unaffiliated/fry) has quit (Read error: Connection reset by peer)
+2020-04-04 18:37:18	ij	Mikachu, nice
+2020-04-04 18:37:53	ij	psprint, I guess the literal exact syntax wasn't required
+2020-04-04 18:38:27	-->	fry (~quassel@unaffiliated/fry) has joined #zsh
+2020-04-04 18:42:50	-->	blackandblue (~batdownh@gateway/tor-sasl/blackandblue) has joined #zsh
+2020-04-04 18:47:08	<--	blackandblue (~batdownh@gateway/tor-sasl/blackandblue) has quit (Ping timeout: 240 seconds)
+2020-04-04 18:47:24	-->	johnny56_ (johnny56@gateway/vpn/protonvpn/johnny56) has joined #zsh
+2020-04-04 18:49:14	<--	johnny56 (johnny56@gateway/vpn/protonvpn/johnny56) has quit (Ping timeout: 250 seconds)
+2020-04-04 18:52:39	<--	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has quit (Quit: WeeChat 2.8)
+2020-04-04 18:53:13	-->	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has joined #zsh
+2020-04-04 18:55:58	-->	zsh423 (8974a3cc@gateway/web/cgi-irc/kiwiirc.com/ip.137.116.163.204) has joined #zsh
+2020-04-04 18:56:59	<--	zsh423 (8974a3cc@gateway/web/cgi-irc/kiwiirc.com/ip.137.116.163.204) has quit (Client Quit)
+2020-04-04 19:11:19	<--	bezwzgledny (~irc@104.217.253.244) has quit (Ping timeout: 240 seconds)
+2020-04-04 19:12:40	Mikachu	ij: be careful with the precedence rules, the () aren't part of the ^ construct so ^(foo)bar means !((foo)bar)
+2020-04-04 19:12:52	Mikachu	just in case you thought i added extra () for no reason, i didn't :)
+2020-04-04 19:12:57	<--	Decobus (~quassel@c-98-243-60-24.hsd1.mi.comcast.net) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-04-04 19:16:15	<--	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has quit (Quit: WeeChat 2.8)
+2020-04-04 19:17:49	-->	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has joined #zsh
+2020-04-04 19:28:47	-->	bezwzgledny (~irc@104.217.253.244) has joined #zsh
+2020-04-04 19:29:08	<--	iam730 (~iam730@104.143.92.15) has quit (Ping timeout: 260 seconds)
+2020-04-04 19:32:27	-->	iam730 (~iam730@c-71-198-201-85.hsd1.ca.comcast.net) has joined #zsh
+2020-04-04 19:34:31	-->	licensed (~licensed@unaffiliated/licensed) has joined #zsh
+2020-04-04 19:38:05	<--	geheimnis` (~geheimnis@23.226.237.192) has quit (Remote host closed the connection)
+2020-04-04 19:39:54	-->	geheimnis` (~geheimnis@23.226.237.192) has joined #zsh
+2020-04-04 19:44:17	-->	lalitmee (~lalitmee@27.7.103.184) has joined #zsh
+2020-04-04 19:44:35	<--	lalitmee (~lalitmee@27.7.103.184) has quit (Max SendQ exceeded)
+2020-04-04 19:45:41	-->	lalitmee (~lalitmee@27.7.103.184) has joined #zsh
+2020-04-04 19:47:51	-->	buckworst (~nate@202.138.253.34) has joined #zsh
+2020-04-04 19:52:05	-->	xantam (~xantam@unaffiliated/xantam) has joined #zsh
+2020-04-04 19:52:08	<--	ensamvarg (~Adrian@ip92342e37.dynamic.kabel-deutschland.de) has quit (Ping timeout: 256 seconds)
+2020-04-04 19:53:12	<--	foul_owl (~foul_owl@108.62.5.131) has quit (Ping timeout: 265 seconds)
+2020-04-04 19:57:40	-->	llucenic_ (~Thunderbi@rev-185-22-215-103.radiolan.sk) has joined #zsh
+2020-04-04 20:01:58	<--	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has quit (Quit: WeeChat 2.8)
+2020-04-04 20:03:28	-->	perrier-jouet (~perrier-j@modemcable012.251-130-66.mc.videotron.ca) has joined #zsh
+2020-04-04 20:06:06	-->	foul_owl (~foul_owl@108.62.5.131) has joined #zsh
+2020-04-04 20:10:24	-->	growpotkin (~growpotki@130-45-30-154.dyn.grandenetworks.net) has joined #zsh
+2020-04-04 20:12:45	<--	buckworst (~nate@202.138.253.34) has quit (Quit: WeeChat 2.8)
+2020-04-04 20:29:48	-->	kryl99 (~kryl99@1.159.19.8) has joined #zsh
+2020-04-04 20:34:27	<--	kryl99 (~kryl99@1.159.19.8) has quit (Ping timeout: 260 seconds)
+2020-04-04 20:45:25	-->	kenran (~kenran@i577BCDBB.versanet.de) has joined #zsh
+2020-04-04 20:46:42	<--	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:503a:ff0d:a4a2:5dae) has quit (Ping timeout: 260 seconds)
+2020-04-04 20:47:17	<--	xantam (~xantam@unaffiliated/xantam) has quit (Ping timeout: 260 seconds)
+2020-04-04 20:49:00	-->	xantam (~xantam@unaffiliated/xantam) has joined #zsh
+2020-04-04 20:50:18	<--	trevor (~trevor@gradient/cofounder/trevor) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-04-04 20:52:37	<--	iam730 (~iam730@c-71-198-201-85.hsd1.ca.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-04-04 20:53:45	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Read error: Connection reset by peer)
+2020-04-04 20:54:33	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-04-04 20:55:28	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Ping timeout: 240 seconds)
+2020-04-04 20:55:45	-->	iam730 (~iam730@104.143.92.74) has joined #zsh
+2020-04-04 20:57:08	-->	kryl99 (~kryl99@1.159.19.8) has joined #zsh
+2020-04-04 20:58:43	-->	opal (~wowaname@volatile/founder/wowaname) has joined #zsh
+2020-04-04 20:59:49	-->	mojisun (~weechat@gateway/tor-sasl/mojisun) has joined #zsh
+2020-04-04 21:04:58	-->	ahmedelgabri (~ahmedelga@2a02:a446:d88a:0:503a:ff0d:a4a2:5dae) has joined #zsh
+2020-04-04 21:08:35	-->	berndl (5f5bd23e@95.91.210.62) has joined #zsh
+2020-04-04 21:12:05	-->	lalit (~lalitmee@27.7.29.107) has joined #zsh
+2020-04-04 21:13:19	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Ping timeout: 240 seconds)
+2020-04-04 21:15:12	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #zsh
+2020-04-04 21:15:52	<--	lalitmee (~lalitmee@27.7.103.184) has quit (Ping timeout: 260 seconds)
+2020-04-04 21:16:28	<--	kenran (~kenran@i577BCDBB.versanet.de) has quit (Ping timeout: 260 seconds)
+2020-04-04 21:23:13	<--	licensed (~licensed@unaffiliated/licensed) has quit (Quit: licensed)
+2020-04-04 21:29:33	<--	kryl99 (~kryl99@1.159.19.8) has quit (Ping timeout: 265 seconds)

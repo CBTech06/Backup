@@ -1,0 +1,626 @@
+2020-01-30 20:06:59	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #kodi
+2020-01-30 20:06:59	--	Topic for #kodi is "Official Kodi channel | latest stable Kodi v18.5 'Leia' | https://kodi.tv | http://kodi.wiki | see also #kodi-linux | #kodi-dev for developers only | No discussion or support of piracy video addons!"
+2020-01-30 20:06:59	--	Topic set by davu (~davu@unaffiliated/david1977) on Wed, 20 Nov 2019 21:48:09
+2020-01-30 20:06:59	--	Channel #kodi: 296 nicks (1 op, 0 voices, 295 normals)
+2020-01-30 20:07:01	--	Channel created on Mon, 28 Jul 2014 02:07:14
+2020-01-30 20:07:06	captainchris	hi everybody
+2020-01-30 20:09:38	<--	rubdos (~rubdos@2a02:578:859d:700:8b44:5716:382d:a7da) has quit (Quit: WeeChat 2.4)
+2020-01-30 20:15:39	-->	leothrix (~leothrix@elastic/staff/leothrix) has joined #kodi
+2020-01-30 20:18:53	<--	gregl (~greg@cpe-24-194-253-7.nycap.res.rr.com) has quit (Remote host closed the connection)
+2020-01-30 20:19:49	<--	leothrix (~leothrix@elastic/staff/leothrix) has quit (Ping timeout: 245 seconds)
+2020-01-30 20:24:09	<--	DirkS (~DirkS@p549B94B0.dip0.t-ipconnect.de) has quit (Ping timeout: 258 seconds)
+2020-01-30 20:25:15	-->	rubdos (~rubdos@2a02:578:859d:700:8b44:5716:382d:a7da) has joined #kodi
+2020-01-30 20:29:06	-->	DirkS (~DirkS@p549B923A.dip0.t-ipconnect.de) has joined #kodi
+2020-01-30 20:36:16	-->	MightyBOB (~MightyBOB@76.99.21.35) has joined #kodi
+2020-01-30 20:38:13	-->	sgtpepper (~sgtpepper@stn.corrarello.net) has joined #kodi
+2020-01-30 20:45:09	<--	sgtpepper (~sgtpepper@stn.corrarello.net) has quit (Ping timeout: 268 seconds)
+2020-01-30 20:55:01	-->	leothrix (~leothrix@elastic/staff/leothrix) has joined #kodi
+2020-01-30 20:55:01	<--	twnqx (~twnqx@ip4d1467ab.dynamic.kabel-deutschland.de) has quit (Ping timeout: 268 seconds)
+2020-01-30 20:59:09	<--	leothrix (~leothrix@elastic/staff/leothrix) has quit (Ping timeout: 240 seconds)
+2020-01-30 21:00:45	-->	sgtpepper (~sgtpepper@stn.corrarello.net) has joined #kodi
+2020-01-30 21:01:37	<--	TeamKodi_ (teamkodi@kodi/bot/slackbot) has left #kodi
+2020-01-30 21:01:50	-->	TeamKodi_ (teamkodi@kodi/bot/slackbot) has joined #kodi
+2020-01-30 21:02:11	-->	Colty (Miramar-FL@2a00:c1e0:0:2:0:1:208:ab5e) has joined #kodi
+2020-01-30 21:02:27	<--	Colti (Miramar-FL@2a00:c1e0:0:2:0:1:208:ab5e) has quit (Ping timeout: 272 seconds)
+2020-01-30 21:03:49	<--	rubdos (~rubdos@2a02:578:859d:700:8b44:5716:382d:a7da) has quit (Quit: WeeChat 2.4)
+2020-01-30 21:12:40	-->	rubdos (~rubdos@2a02:578:859d:700:8b44:5716:382d:a7da) has joined #kodi
+2020-01-30 21:15:39	<--	Phylock (~Phylock@563415a8.rev.stofanet.dk) has quit (Ping timeout: 245 seconds)
+2020-01-30 21:29:45	-->	Phylock (~Phylock@563415a8.rev.stofanet.dk) has joined #kodi
+2020-01-30 21:34:29	-->	leothrix (~leothrix@elastic/staff/leothrix) has joined #kodi
+2020-01-30 21:34:36	<--	bacobart (~bart@ionosphere.nl) has quit (*.net *.split)
+2020-01-30 21:35:15	-->	bacobart (~bart@ionosphere.nl) has joined #kodi
+2020-01-30 21:37:33	<--	RoXX (~roxx@unaffiliated/roxx) has quit (Ping timeout: 240 seconds)
+2020-01-30 21:38:36	<--	barhom (~barhom@185-9-2-21.jallabredband.se) has quit (Quit: ZNC - 1.7.0-nightly-20150224-27d78795 - http://znc.in)
+2020-01-30 21:38:54	<--	leothrix (~leothrix@elastic/staff/leothrix) has quit (Ping timeout: 252 seconds)
+2020-01-30 21:40:23	-->	barhom (~barhom@185-9-2-21.jallabredband.se) has joined #kodi
+2020-01-30 21:43:26	-->	RoXX (~roxx@unaffiliated/roxx) has joined #kodi
+2020-01-30 21:49:32	<--	mackal (~mike@141.154.54.5) has quit (Quit: BE VIGILANT.)
+2020-01-30 21:58:14	<--	sgtpepper (~sgtpepper@stn.corrarello.net) has quit (Remote host closed the connection)
+2020-01-30 22:00:53	-->	leothrix (~leothrix@elastic/staff/leothrix) has joined #kodi
+2020-01-30 22:05:16	<--	Altiare (~Altiare@unaffiliated/altiare) has quit (Quit: Leaving)
+2020-01-30 22:05:34	<--	leothrix (~leothrix@elastic/staff/leothrix) has quit (Ping timeout: 260 seconds)
+2020-01-30 22:18:12	-->	kaben (~kaben@37.120.213.4) has joined #kodi
+2020-01-30 22:19:50	<--	kaben (~kaben@37.120.213.4) has quit (Remote host closed the connection)
+2020-01-30 22:23:19	-->	Fenster` (~Fenster@host-23-251-64-195.VABOLT2.epbfi.com) has joined #kodi
+2020-01-30 22:26:14	-->	sgtpepper (~sgtpepper@stn.corrarello.net) has joined #kodi
+2020-01-30 22:26:53	<--	Fenster (~Fenster@host-23-251-64-195.VABOLT2.epbfi.com) has quit (Ping timeout: 260 seconds)
+2020-02-08 17:24:17	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #kodi
+2020-02-08 17:24:17	--	Topic for #kodi is "Official Kodi channel | latest stable Kodi v18.5 'Leia' | https://kodi.tv | http://kodi.wiki | see also #kodi-linux | #kodi-dev for developers only | No discussion or support of piracy video addons!"
+2020-02-08 17:24:17	--	Topic set by davu (~davu@unaffiliated/david1977) on Wed, 20 Nov 2019 21:48:09
+2020-02-08 17:24:17	--	Channel #kodi: 288 nicks (1 op, 0 voices, 287 normals)
+2020-02-08 17:24:19	--	Channel created on Mon, 28 Jul 2014 02:07:14
+2020-02-08 17:24:22	captainchris	hello everybody 
+2020-02-08 17:24:57	captainchris	It is possbile to put icon on mainscreen I try with different skin ACE2 estuary but i didn"t know how to do it 
+2020-02-08 17:25:11	<--	troulouliou_dev (~troulouli@unaffiliated/troulouliou-dev/x-4757952) has quit (Quit: Leaving)
+2020-02-08 17:28:03	captainchris	like android tv ?? 
+2020-02-08 17:31:53	pragmaticenigma	captainchris, what do you mean by mainscreen? ... There is no main or home screen that I'm aware of
+2020-02-08 17:32:20	captainchris	pragmaticenigma: home screen I would like icon with youtube netflix ... on the home screen 
+2020-02-08 17:35:13	pragmaticenigma	captainchris, there is no "home screen" to add icons to... in the default skin there are categories running down the left side of the screen. You can press the letter "C" on an add on, and add it to favourites, which will then add a shortcut in the Favourites category.
+2020-02-08 17:36:38	captainchris	Ok it is not possible to get icon on the home screen
+2020-02-08 17:41:46	pauljw	captainchris, in estuary, if you scroll all the way to the bottom of the main tv shows screen there are icons for each studio that you have shows from.
+2020-02-08 17:45:42	-->	bolovanos (~bolovanos@ctrli.eu) has joined #kodi
+2020-02-08 17:53:07	<--	tommy`` (~kvirc@unaffiliated/tommy/x-6566540) has quit (Quit: KVIrc 5.0.1 Aria http://www.kvirc.net/)
+2020-02-08 17:54:35	<--	van777 (~u0_a125@unaffiliated/van777) has quit (Quit: WeeChat 2.7)
+2020-02-08 17:55:00	-->	van777 (~u0_a125@unaffiliated/van777) has joined #kodi
+2020-02-08 18:01:05	captainchris	and i have another problem with kodi, in my movies section I have american horror story and the jacket is not correct 
+2020-02-08 18:01:12	captainchris	it show octonauts jacket 
+2020-02-08 18:06:42	pauljw	that's a scraper issue, not kodi, but you should be able to go to the movie and refresh it.  it might list several options, pick the correct movie and date and it should repopulate with the correct graphics if they're available.  sometimes things just aren't online.
+2020-02-08 18:07:30	<--	bolovanos (~bolovanos@ctrli.eu) has quit (Ping timeout: 260 seconds)
+2020-02-08 18:16:43	<--	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has quit (Quit: shibboleth)
+2020-02-08 18:23:00	-->	klaas (~klaas@simply.kla.as) has joined #kodi
+2020-02-08 18:32:03	-->	zekuj (~o@xdsl-87-79-199-176.nc.de) has joined #kodi
+2020-02-08 18:32:45	zekuj	hey there. getting back to Kodi. I badly want to get logos for TV series to work. Logos are so much better than posters/banners. I found a wiki with skin capabilities. Supposedly Aura should support logos
+2020-02-08 18:33:02	zekuj	does anyone happen to have logos going? what next?
+2020-02-08 18:33:07	zekuj	can this even work with TMDB?
+2020-02-08 18:34:08	zekuj	i distinctly remember a setting like "prefer logos over banners" or so, but that was like 7 years ago?
+2020-02-08 18:39:44	pragmaticenigma	can you find an example of what you mean by "logos" ?
+2020-02-08 18:40:14	daftykins	yeah is this original airing station logos, or thumbnails?
+2020-02-08 18:43:15	-->	bolovanos (~bolovanos@host-213-235-140-105.ip.topnet.cz) has joined #kodi
+2020-02-08 18:43:53	zekuj	https://artworks.thetvdb.com/banners/series/75978/icons/62047362.jpg pragmaticenigma
+2020-02-08 18:44:11	zekuj	if you have a TV library set up with logos, it looks insanely clean
+2020-02-08 18:44:35	zekuj	a lot of xbmc skin shad pretty great "clear arts" as well, where logos or CD covers were transparently overlayed in the pause screens
+2020-02-08 18:45:01	zekuj	it gives the entire UX a feeling of branding, it completely baffles me why logos are not the default literally everywhere when it comes to TV
+2020-02-08 18:45:16	pragmaticenigma	zekuj, the artwork is selected by the scraper, so I think it all depends on what service and scraper you use on your media
+2020-02-08 18:45:30	zekuj	yeah i'll swap it to tvdb
+2020-02-08 18:45:35	zekuj	that used to be the default i think
+2020-02-08 18:46:27	zekuj	i mean worst case i'll add them manually it's not even so hard. main part is getting the skin to show them tho :P
+2020-02-08 18:46:38	zekuj	hope aura can actually do it like the wiki suggests
+2020-02-08 18:46:51	pragmaticenigma	the skin just uses what's stored with the meta deata
+2020-02-08 18:46:54	pragmaticenigma	*data
+2020-02-08 18:47:23	daftykins	zekuj: set it up on a clean install with one or two series to test perhaps
+2020-02-08 18:47:30	zekuj	bat "banners", "posters" and "logos" (at least in the past) are different metadata concepts and can co-exist
+2020-02-08 18:47:41	zekuj	you'd name them logo.png, poster.png and banner.png or so if you did it manually
+2020-02-08 18:48:02	zekuj	ah i'm at the process of swapping back from the plex anyway
+2020-02-08 18:48:12	zekuj	i should have never let myself get talked into doing the plex thing
+2020-02-08 18:48:34	zekuj	probably going to spin up emby and jellyfin later too
+2020-02-08 18:48:48	daftykins	no logos here with manually exported artwork... i wonder if it got dumped
+2020-02-08 18:50:43	pragmaticenigma	zekuj, I guess if I had any advice... i would just spend time getting reaquianted with Kodi as it exists today before trying to make it feel like it might of in yester-year
+2020-02-08 18:52:42	zekuj	yeah i kind of did, it's all set up and i am at the point where i am testing out different skins
+2020-02-08 18:52:43	daftykins	+1 to that
+2020-02-08 18:52:53	zekuj	the one thing that seems actually new are how widgets/addons integrate into skins now
+2020-02-08 18:54:41	-->	Portugol9 (~Portugol9@unaffiliated/portugol9) has joined #kodi
+2020-02-08 18:56:16	pragmaticenigma	I have mine setup with TheTVDB for tv series, and what I see is probably more like box art, I haven't seen TVDB supply plain logos in quite some time
+2020-02-08 18:56:34	zekuj	what skin do you use?
+2020-02-08 18:56:40	pragmaticenigma	everything I have is in the default
+2020-02-08 18:56:50	zekuj	that's Estuary i believe?
+2020-02-08 18:56:55	zekuj	yeah that skin has next to no capabilities
+2020-02-08 18:56:58	zekuj	by design
+2020-02-08 18:57:38	pragmaticenigma	I typically use what ever the program comes with. I find other skins hide features because the creator didn't use it, so they assume I won't want it either?
+2020-02-08 19:00:19	<--	RaNa (~RaNa@107-146-228-063.res.spectrum.com) has quit (Quit: I'm Out)
+2020-02-08 19:00:21	zekuj	That's the nice thing about having a default skin that is so limited, though
+2020-02-08 19:01:05	zekuj	that being said, I share your philosophy in general
+2020-02-08 19:01:36	daftykins	Estuary does all i need :)
+2020-02-08 19:01:46	zekuj	But coming back from Plex... my god I missed the power of Kodi :) it was nice being lazy for a few years. But now we have smart home stuff, home assistand and a harmony etc. stuff already feels so much nicer now
+2020-02-08 19:02:03	zekuj	so i want the bells, whistles and customization if that makes sense
+2020-02-08 19:02:21	daftykins	i'm surprised that Plex hasn't taken to any of those, what kind of issues were you having?
+2020-02-08 19:03:01	zekuj	With Plex? They keep abandoning their platforms. And they try to monetize it in less and less tasteful ways but I am very stubborn
+2020-02-08 19:03:14	daftykins	ah i see
+2020-02-08 19:03:14	zekuj	That being said, it is very polished by now
+2020-02-08 19:03:54	zekuj	but at this point my elderly parents are just too overwhelmed with the distractions and UI changes that are out of our control
+2020-02-08 19:04:01	zekuj	which... defeats the purpose of Plex
+2020-02-08 19:05:12	-->	RaNa (~RaNa@107-146-228-063.res.spectrum.com) has joined #kodi
+2020-02-08 19:05:33	daftykins	ah the old parent user conundrum :)
+2020-02-08 19:06:22	zekuj	just getting past a login page can take more than 30 minutes via phone
+2020-02-08 19:06:50	<--	Portugol9 (~Portugol9@unaffiliated/portugol9) has quit (Ping timeout: 240 seconds)
+2020-02-08 19:07:19	-->	Portugol9_ (~Portugol9@unaffiliated/portugol9) has joined #kodi
+2020-02-08 19:09:06	zekuj	hmm tvdb already looks much better than tmdb. but maybe i am just nostalgic
+2020-02-08 19:11:06	pragmaticenigma	I prefer tvdb, though I have had issues with the scraper pulling in the data for some really long lived shows (known bug when using MySQL for storing Video meta data)
+2020-02-08 19:11:41	zekuj	oh? that sounds exotic lol
+2020-02-08 19:12:54	pragmaticenigma	I run multiple instances of Kodi around my home... it's nice to have everything centralized
+2020-02-08 19:13:26	pragmaticenigma	only have to scrape the data once... the rest just at most need to back out and back into a series to see the new data
+2020-02-08 19:15:34	<--	al (quassel@niel.cx) has quit (Ping timeout: 240 seconds)
+2020-02-08 19:16:24	-->	al (quassel@niel.cx) has joined #kodi
+2020-02-08 19:20:18	<--	Very_slow (~Very_slow@CPEc412f5da6ef1-CMf81d0f9cdae0.cpe.net.cable.rogers.com) has quit (Quit: Leaving)
+2020-02-08 19:29:43	zekuj	ok nice, Aeon MX8 can definitely show the logos from TVDB \o/ meaning I can probably set up a skin of my liking the way i want to
+2020-02-08 19:30:12	<--	bolovanos (~bolovanos@host-213-235-140-105.ip.topnet.cz) has quit (Ping timeout: 272 seconds)
+2020-02-08 19:30:23	zekuj	i'll probably hook up the laptops to MariaDB to centralize that
+2020-02-08 19:30:37	zekuj	issue is my SO and I have iOS devices. RIP
+2020-02-08 19:31:20	--	Portugol9_ is now known as Portugol9
+2020-02-08 19:32:04	pragmaticenigma	zekuj, needs to be MySQL I believe... I don't know if the library in use will work for Maria
+2020-02-08 19:32:26	zekuj	oh? i'll rtfm anyway but tbh that would come as a surprise
+2020-02-08 19:32:49	zekuj	should be fine according to wiki at least
+2020-02-08 19:33:05	zekuj	MariaDB is basically just a community fork since Oracle is hitler re-incarnated
+2020-02-08 19:33:07	pragmaticenigma	zekuj, I guess helps to double check the documentation. It looks like it does work
+2020-02-08 19:33:07	pragmaticenigma	https://kodi.wiki/view/MySQL
+2020-02-08 19:33:36	zekuj	(hope that joke didn't offend anyone ^^)
+2020-02-08 19:34:02	pragmaticenigma	I'm aware of what MariaDB is... Ijust know know that Maria has also made some siginificant improvements to what was MySQL.. though I don't think the protocol has been changed
+2020-02-08 19:42:08	<--	donhw_ (~quassel@104.143.92.245) has quit (Remote host closed the connection)
+2020-02-08 19:42:26	-->	donhw (~quassel@104.143.92.245) has joined #kodi
+2020-02-08 19:46:06	-->	gregl (~greg@cpe-24-194-253-7.nycap.res.rr.com) has joined #kodi
+2020-02-08 19:46:27	captainchris	anyone tried plex server ?? 
+2020-02-08 19:47:21	<--	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-02-08 19:47:40	pragmaticenigma	captainchris, that doesn't sound like something related to Kodi... might be better asked in a plex channel?
+2020-02-08 19:48:00	-->	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has joined #kodi
+2020-02-08 19:48:04	captainchris	yes but i want to know if it's better than kodi 
+2020-02-08 19:48:40	TeamKodi	[unknown] Not a smart move to ask that in #kodi channel
+2020-02-08 19:48:53	TeamKodi	[unknown] Ever asked Adidas, if Nike is the better shoe? :)
+2020-02-08 19:49:22	daftykins	captainchris: they serve different purposes, what's right for you might not be right for me
+2020-02-08 19:59:58	<--	utack (~utack@2a02:810d:1380:a24:34fa:7f3c:9bf7:8407) has quit (Ping timeout: 272 seconds)
+2020-02-08 20:00:48	-->	K-tel (~jgata@c-76-119-218-134.hsd1.ma.comcast.net) has joined #kodi
+2020-02-08 20:02:04	K-tel	Right....so I have tons of TV shows.  Added the share to Kodi.  Indexed it.  Multiple times.  I click on the menu item for TV shows, nothing shows up, I have to browse folders.  Will this be fixed in a future update?
+2020-02-08 20:02:52	TeamKodi	[unknown] Sorry, we cannot fix Layer-8 issues
+2020-02-08 20:02:59	TeamKodi	[unknown] it's not hosted on github ...
+2020-02-08 20:03:41	K-tel	Ok, anyone here that's not an asshole?
+2020-02-08 20:05:32	<--	TeamKodi (teamkodi@kodi/bot/slackbot) has left #kodi
+2020-02-08 20:05:45	-->	TeamKodi (teamkodi@kodi/bot/slackbot) has joined #kodi
+2020-02-08 20:06:29	<--	Israphel (~quassel@246-59-17-190.fibertel.com.ar) has quit (Ping timeout: 268 seconds)
+2020-02-08 20:09:10	K-tel	I mean, I find it rather ridiculous that the basic function of showing me my content isn't functional.
+2020-02-08 20:09:55	TeamKodi	[unknown] Do you really think that a mediacenter with 10 million users, which primary feature is scraping local content like TV shows - has this feature broken?
+2020-02-08 20:10:04	TeamKodi	[unknown] Did you never consider that you just did something wrong?
+2020-02-08 20:10:23	pragmaticenigma	K-tel,  you also haven't given any information about your setup, no details what so ever... none of us are telepathic
+2020-02-08 20:10:32	TeamKodi	[unknown] Start with your debuglog
+2020-02-08 20:12:00	K-tel	I have windows shares with tons of content.  The music stuff is easy enough, all tagged, added the share, it indexed.....not exactly the best navigation, and artwork is spotty at best, but whatever.  But I added the share that movies and TV shows are on, movies mostly show up, although some come up incorrect, it shows blues brothers and blues brothers 2000, which is an insult to a classic movie, but nothing shows up under TV shows.
+2020-02-08 20:12:08	K-tel	And I have tons of TV shows in my folders.
+2020-02-08 20:12:20	K-tel	I can get to them if I browse by folder, so clearly Kodi has access to the files.
+2020-02-08 20:12:29	-->	utack (~utack@x5f75435a.dyn.telefonica.de) has joined #kodi
+2020-02-08 20:12:29	K-tel	But, it says I have no TV shows if I select that from the menu.
+2020-02-08 20:12:56	K-tel	I just find navigation in general to be lacking, and it's among the most non-intuitive programs I've ever used.
+2020-02-08 20:12:57	}8]	K-tel does your tv shows use a naming convention kodi knows?
+2020-02-08 20:13:26	K-tel	Not sure, there's been no requirements indicated by kodi as I set this up.
+2020-02-08 20:13:30	}8]	for example: tvshow/season.01/tvshow.s01e01.mkv
+2020-02-08 20:13:46	TeamKodi	[unknown] did you scrape it as tvshows? Or did you just scrape it as movies? Rather sounds like you chose a mixed folder and selected movies ...
+2020-02-08 20:14:14	K-tel	Well, I added the folder in movies, and when I went to add it in TV shows, it was already there.
+2020-02-08 20:14:23	K-tel	it seems kodi is acting like they're the same thing.
+2020-02-08 20:14:33	K-tel	So I figured, ok, whatever, you know where the files are....show me my stuff
+2020-02-08 20:14:38	K-tel	But nope
+2020-02-08 20:14:44	TeamKodi	[unknown] you figured wrong
+2020-02-08 20:14:54	K-tel	Well, there's nothing pointing me in the right direction
+2020-02-08 20:14:56	K-tel	the folder is added
+2020-02-08 20:14:58	K-tel	I index it
+2020-02-08 20:14:59	K-tel	nothing shows up
+2020-02-08 20:15:02	TeamKodi	[unknown] if you select content type "movie" then it obviously won't show up as tvshows
+2020-02-08 20:15:05	daftykins	only a whole wiki on how to name content
+2020-02-08 20:15:18	K-tel	But I also added it under tv shows
+2020-02-08 20:15:21	K-tel	or it's listed under tv shows
+2020-02-08 20:15:29	K-tel	and I index it when I'm trying to find tv shows
+2020-02-08 20:15:29	TeamKodi	[unknown] adding a share is first thing, selecting content is second
+2020-02-08 20:15:47	pragmaticenigma	K-tel, First... you will need to separate your movies and tv shows into different folders on your server. And then add the specific folders for movies and the specific folder for tvshows separately
+2020-02-08 20:15:47	TeamKodi	[unknown] if scraper is set to movie, you won't find any tv show
+2020-02-08 20:16:06	TeamKodi	[unknown] the wiki is again clear about that
+2020-02-08 20:16:22	K-tel	Then how come what I add under movies shows up under TV shows?
+2020-02-08 20:16:30	K-tel	Do you have any idea how confusing and non-intuitive that is?
+2020-02-08 20:16:39	K-tel	It's like you tried to program the biggest piece of garbage you could.
+2020-02-08 20:17:06	K-tel	I do have movies and TV shows in separate folders
+2020-02-08 20:17:07	daftykins	you're not even using Kodi's own terms, which shows you've not put any effort into understanding how the library management works
+2020-02-08 20:17:08	pragmaticenigma	K-tel, go on and keep insulting the people that are trying to help you... see how far you get
+2020-02-08 20:17:17	daftykins	you can't work it and you're blaming the devs, you are a classic idiot user
+2020-02-08 20:17:33	<--	PurpleCow4u (~Lila-Kuh@gateway/tor-sasl/lila-kuh) has quit (Remote host closed the connection)
+2020-02-08 20:17:44	-->	PurpleCow (~Lila-Kuh@gateway/tor-sasl/lila-kuh) has joined #kodi
+2020-02-08 20:17:49	K-tel	I"m the guy that helps idiot users, I'm typically caught between the middle of idiots that blame the developers, and developers that blame the idiots.....they're all idiots as far as I'm concerned.
+2020-02-08 20:18:07	daftykins	no, you're that user today.
+2020-02-08 20:18:16	-->	fritsch (~fritsch@kodi/staff/fritsch) has joined #kodi
+2020-02-08 20:18:37	pragmaticenigma	K-tel, if that were true... then you'd know step one is to consult the documentation that the developers and community have so gratiously put together to help avoid these situations
+2020-02-08 20:18:39	K-tel	Alright, so I need to remove my video share, and then add it back in twice, on the TV folder, and the movie folder, to start with.
+2020-02-08 20:18:49	TeamKodi	[unknown] no
+2020-02-08 20:18:53	pragmaticenigma	No K-tel you didn't follow what I said
+2020-02-08 20:19:07	K-tel	I mean....add it in, going down a level, I have movie and tv folders in my video share.
+2020-02-08 20:19:16	K-tel	so I need to add the individual folders instead of the parent
+2020-02-08 20:19:20	pragmaticenigma	correct
+2020-02-08 20:19:33	fritsch	and the movie one to movies
+2020-02-08 20:19:38	fritsch	and the tvshows to tvshows
+2020-02-08 20:19:50	fritsch	after the share is added it will ask for "which content"
+2020-02-08 20:19:50	daftykins	but only once the content naming structure matches what is suitable for Kodi's scrapers
+2020-02-08 20:19:51	K-tel	Um....any reason the software can't support having the parent folder added and sorting out the sources from there, for simplicity of configuration?  Just an honest question.
+2020-02-08 20:19:51	pragmaticenigma	K-tel, there is a way to do it with the parent... but for the moment it is easier if they're kept separate
+2020-02-08 20:19:55	fritsch	then choose appropriately
+2020-02-08 20:20:13	fritsch	K-tel: it can - but you told "the software". This is all movies
+2020-02-08 20:20:34	K-tel	how do I tell the software it's movies and tv shows?
+2020-02-08 20:20:47	fritsch	again, this was told to you as well
+2020-02-08 20:21:22	pragmaticenigma	K-tel, You add the parents share... then when in file browse mode you go to the movies folder, press C, then "set content"
+2020-02-08 20:21:35	pragmaticenigma	then setup for movies... then do the same process for tv shows
+2020-02-08 20:21:37	K-tel	press C....uh....I'm doing this on a fire stick.
+2020-02-08 20:21:47	fritsch	context menu button
+2020-02-08 20:22:04	fritsch	https://kodi.wiki/view/Adding_video_sources <- everything is explained in detail here
+2020-02-08 20:22:09	pragmaticenigma	K-tel, I'm done helping since you are purposefully holding back information... I remember at the beginning.. asking for details
+2020-02-08 20:22:31	K-tel	What makes you think I'm purposefully holding back information.
+2020-02-08 20:22:42	fritsch	you were asked to post your debuglog, did not do that
+2020-02-08 20:22:47	K-tel	I've given what I thought were relevent details, I've answered any questions asked, I'm not holding anything back.
+2020-02-08 20:23:05	K-tel	I'm not sure how to get a debuglog off of a firestick, or where to send it.
+2020-02-08 20:23:10	fritsch	you did not say anything about your system, even asked by two of them
+2020-02-08 20:23:13	pragmaticenigma	K-tel, RELEVENT WOULD BE WHAT PLATFORM YOU ARE RUNNING KODI ON!!!
+2020-02-08 20:23:18	fritsch	you refuse to even open the documentation
+2020-02-08 20:23:36	fritsch	https://kodi.wiki/view/Log_file
+2020-02-08 20:23:50	fritsch	you come in here, assuming you do everything right and ask others to fix their software
+2020-02-08 20:24:03	fritsch	while you clearly fail to use it and additionally read documentation
+2020-02-08 20:24:10	K-tel	I've read the documentation, I've gotten as far as installing kodi on a firestick, adding shares, watching and listening to content browsing folders, getting music indexed......I've read the documentation, I've not understood all of it.
+2020-02-08 20:24:12	-->	ducasse (~petter@unaffiliated/ducasse) has joined #kodi
+2020-02-08 20:24:15	pragmaticenigma	ask??? thats being polite... more like demanded we fix it
+2020-02-08 20:24:29	K-tel	I come in with some questions, clearly confused, and you do the typical user blaming game that most devs do
+2020-02-08 20:24:46	fritsch	so - what is ther result of the last 15 minutes?
+2020-02-08 20:24:49	daftykins	first off not everyone is a dev... and you started with complaining when you didn't know how to use it
+2020-02-08 20:24:56	pragmaticenigma	K-tel, no... that's called confirmation bias... you came here expecting that to happen... and at the first glimmer of it, you assume that was happening
+2020-02-08 20:25:02	fritsch	A user not reading, not giving information, demanding ...
+2020-02-08 20:25:07	fritsch	everything was fully confirmed
+2020-02-08 20:25:11	K-tel	result is I can try to set content type of my parent folder and see how far that gets me.
+2020-02-08 20:25:25	K-tel	content type of folders under parent folder I mean
+2020-02-08 20:25:27	fritsch	and again, this proves you did not read what others wrote
+2020-02-08 20:25:34	K-tel	or, remove, and readd individual folders
+2020-02-08 20:25:41	fritsch	that is correct
+2020-02-08 20:25:49	fritsch	good - then try and see if it works
+2020-02-08 20:26:05	fritsch	details with pictures here:  https://kodi.wiki/view/Adding_video_sources
+2020-02-08 20:27:07	fritsch	so first answer given: we cannot fix it in next version as you used it wrong still stands ... (just to emphasize on the confirmation bias)
+2020-02-08 20:27:32	daftykins	and once again, the content should be named in an acceptable form and in a sensible folder hierarchy too :)
+2020-02-08 20:27:53	fritsch	which is also emphasized and describe in the user manual :-)
+2020-02-08 20:32:40	daftykins	fritsch: hope you're well btw, feels like it's been a while
+2020-02-08 20:33:07	K-tel	Alright, changing the content type on the TV folder under my Videos folder has got me on the right path.
+2020-02-08 20:33:35	fritsch	perfect
+2020-02-08 20:33:55	fritsch	if you have a firetv4k and wonder about some videos being out of sync - make sure to check the android forum
+2020-02-08 20:33:57	K-tel	Any reason it relies on specific folder/naming schemes rather than tags for TV shows?
+2020-02-08 20:34:00	<--	van777 (~u0_a125@unaffiliated/van777) has quit (Read error: Connection reset by peer)
+2020-02-08 20:34:20	fritsch	K-tel: in fact, it does not rely on it, it relies on what user sets in first place
+2020-02-08 20:34:26	fritsch	if user says: these are movies
+2020-02-08 20:34:30	fritsch	it will only use the movie scraper
+2020-02-08 20:34:34	-->	van777 (~u0_a125@unaffiliated/van777) has joined #kodi
+2020-02-08 20:34:34	fritsch	no AI in there yet
+2020-02-08 20:35:30	K-tel	No, I mean, once it's set to TV shows, it has to be named in a specific way.  Why not scrape the tags instead?  Relying on file tags instead of naming schemes seems to have a better chance of success in identifying content from a programming point of view.
+2020-02-08 20:35:56	K-tel	Like it does for music.
+2020-02-08 20:37:11	K-tel	Oh, that reminds me....I added a specific music video folder to music videos, but music videos still comes up empty.
+2020-02-08 20:37:18	K-tel	What's the requirements there?
+2020-02-08 20:37:31	<--	SvenskTiger (~p0lisen@37.120.223.75) has quit (Ping timeout: 256 seconds)
+2020-02-08 20:38:35	fritsch	two things: a) Music Video is set as content
+2020-02-08 20:38:50	fritsch	b) proper naming as daftykins pointed out
+2020-02-08 20:39:02	fritsch	you can check with the "missing movie scanner" plugin
+2020-02-08 20:39:16	fritsch	which files are not found and check on the scraper site itself how to properly rename it
+2020-02-08 20:39:41	fritsch	as said above there is no AI involved, it's just regex and webservices that are queried
+2020-02-08 20:40:12	K-tel	well, my music video folder has folders in them by artist name, and under each artist are files, usually artist - song title.
+2020-02-08 20:40:29	pragmaticenigma	K-tel, refusing to read the documentation still? https://kodi.wiki/view/Music_videos
+2020-02-08 20:40:36	TeamKodi	[unknown] then, there is a configure tab for the scraper as shown here ^^
+2020-02-08 20:41:05	fritsch	pragmaticenigma: I think, the lesson is learned :-) let's be productive and forgiving again
+2020-02-08 20:41:13	K-tel	looks like my files under music videos should be showing up
+2020-02-08 20:41:51	fritsch	you need to tell the scraper in its settings: videos are in separate folders
+2020-02-08 20:42:06	fritsch	and compare with the link pragmaticenigma has just posted
+2020-02-08 20:42:12	K-tel	so music videos content doesn't automatically check subfolders?
+2020-02-08 20:42:17	fritsch	if issue persists: debuglog is mandatory
+2020-02-08 20:42:22	fritsch	K-tel: it will, but:
+2020-02-08 20:42:43	fritsch	some users have all movie files in one folder
+2020-02-08 20:42:50	fritsch	others have a separate folder name for the movie
+2020-02-08 20:42:58	fritsch	therefore kodi has a scraper setting for that
+2020-02-08 20:43:02	fritsch	please check the documentation
+2020-02-08 20:43:29	K-tel	I've read the documentation, my understanding was that default was to check subfolders.
+2020-02-08 20:43:48	fritsch	you really read all the three links we gave you?
+2020-02-08 20:44:05	fritsch	so, if it does not work -> post your debuglog
+2020-02-08 20:45:55	K-tel	when I click on music videos, it just shows me the shares I added.  If I try to back out of that, it just shows me the options for movies or music....but I want music videos.  I'm just completely confused at why this is navigating this way, this doesn't seem to match what you suggest or what the documentation shows at all, and I still don't know how to get a debuglog out of a firestick or where you want me to send it which I mentioned
+2020-02-08 20:45:55	K-tel	earlier.
+2020-02-08 20:46:19	pragmaticenigma	There is a toggle there K-tel ... "Scan recursively" if that isn't "on" it won't look through subfolders
+2020-02-08 20:46:32	K-tel	That's on by default.
+2020-02-08 20:46:47	fritsch	there are two modes in kodi file mode and scraped mode (if you want to call it that way)
+2020-02-08 20:47:19	fritsch	and for all file content to be come scraped content, a content type has to be set, configured and scanned
+2020-02-08 20:47:52	fritsch	for the debuglog you were given a wiki link already
+2020-02-08 20:48:24	fritsch	https://kodi.wiki/view/Log_file/Easy
+2020-02-08 20:48:36	fritsch	in short, install the plugin, press upload, remember the link
+2020-02-08 20:49:11	-->	Israphel (~quassel@246-59-17-190.fibertel.com.ar) has joined #kodi
+2020-02-08 20:50:21	fritsch	so then - back to slack bridge :-)
+2020-02-08 20:50:38	fritsch	only joined, cause this is the only possibility to become op and kick someone ...
+2020-02-08 20:50:40	<--	fritsch (~fritsch@kodi/staff/fritsch) has quit (Quit: leaving)
+2020-02-08 20:51:00	<--	zekuj (~o@xdsl-87-79-199-176.nc.de) has quit (Quit: Leaving)
+2020-02-08 20:52:01	K-tel	Ok, I was able to turn on logging.
+2020-02-08 20:52:23	K-tel	And, I mean, there are instructions to turn that on.  There are instructions to upload a log.  Uh....how do I get a log off of a firestick to my computer?
+2020-02-08 20:52:49	daftykins	no more help will be given because you're not reading the links
+2020-02-08 20:52:55	K-tel	I'M READING THE LINKS
+2020-02-08 20:53:04	daftykins	you're lying.
+2020-02-08 20:53:43	K-tel	...typical developers....idiots at helping....
+2020-02-08 20:54:19	daftykins	again, i'm not a dev
+2020-02-08 20:54:24	K-tel	Whatever
+2020-02-08 20:54:36	daftykins	typical users, lying about reading wiki links, then ask questions answered on them
+2020-02-08 20:54:49	K-tel	I've read this link, I turned on debugging, I see it's making a log file, I see instructions to upload a log file, but I don't see how I get the file from my firestick to anywhere else.
+2020-02-08 20:54:49	}8]	lol
+2020-02-08 20:55:08	K-tel	The instructions mention pressing keyboard buttons, these instructions don't have specifics on firesticks
+2020-02-08 20:55:51	daftykins	i own one myself, it's very intuitive
+2020-02-08 20:56:08	K-tel	It is, for everything else I've used on it.
+2020-02-08 20:56:29	daftykins	log file easy link has the answer to this, you are not reading - no more responses will be made.
+2020-02-08 20:57:16	K-tel	Fine, I have better things to do then try to make your garbage software function properly.
+2020-02-08 20:57:22	<--	K-tel (~jgata@c-76-119-218-134.hsd1.ma.comcast.net) has quit (Quit: Leaving)
+2020-02-08 20:57:32	freebs	lol
+2020-02-08 20:58:16	daftykins	good riddance
+2020-02-08 21:02:10	}8]	i think its the garbage user thats not functioning properly ;)
+2020-02-08 21:02:28	daftykins	do you think we should upgrade?
+2020-02-08 21:02:30	pragmaticenigma	perhaps the lesson here is... learn to use a program on a platform more friendly to learning on... like an actual computer
+2020-02-08 21:02:53	pragmaticenigma	then translate what you learned to the other, more harder to use device
+2020-02-08 21:03:34	daftykins	there's really no difference in user interaction, just obviously someone who doesn't understand Kodi's paradigms and thought they could troll the answers out of us instead of have to read
+2020-02-08 21:04:19	-->	fritsch (~fritsch@kodi/staff/fritsch) has joined #kodi
+2020-02-08 21:04:49	fritsch	in fact
+2020-02-08 21:04:54	fritsch	not sure what to say
+2020-02-08 21:05:13	fritsch	I am in this channel for more than 9 years ...
+2020-02-08 21:05:22	fritsch	I smell a layer 8 issue when I see it :-)
+2020-02-08 21:05:50	fritsch	should have kick banned him after that "asshole" word, but thought yeah - he might not have gotten my humor
+2020-02-08 21:05:58	fritsch	therefore waited a bit and tried my very best
+2020-02-08 21:06:37	fritsch	It's a trend of our times, if thinks don't work with first click, one blames the solution, rather than oneself ...
+2020-02-08 21:07:21	fritsch	s/thinks/things/ :-)
+2020-02-08 21:09:40	pragmaticenigma	what i found more annoying is that they claim to be a helpdesk person...
+2020-02-08 21:10:07	pragmaticenigma	if the users are blaming the devs, and the devs are blaming the users... and you're their intermediary... guess what... you're the problem
+2020-02-08 21:11:20	fritsch	:-)
+2020-02-08 21:11:24	fritsch	I thought exactly the same
+2020-02-08 21:11:32	fritsch	but stepped on my tongue
+2020-02-08 21:11:45	pragmaticenigma	What put me off was the lack of information, especially if their are in a position of helping users/devs... they should know the first 3 things are "What platform, what OS and it's version, and what version of the application
+2020-02-08 21:11:52	pragmaticenigma	?"
+2020-02-08 21:11:56	}8]	users want spoon-feeding from devs, devs want users to come with pre-existing knowledge..
+2020-02-08 21:12:03	fritsch	I still prefer these to the group of: I code professional since more than 20 years and did not see such bad buggy code ever before ...
+2020-02-08 21:12:29	fritsch	infact, I just wanted that he reads the three wiki links
+2020-02-08 21:12:48	fritsch	he even made it to IRC, which is on a higher level than scrolling through the wiki
+2020-02-08 21:13:09	fritsch	and if he works at a help desk, he exactly has to know: no help without proper logfiles, way to reproduce
+2020-02-08 21:13:15	pragmaticenigma	They're a frequent visitor of many channels fritsch ... they probably searched alis frist
+2020-02-08 21:13:18	fritsch	he disqualified himself when entering this channel
+2020-02-08 21:15:10	}8]	its not rocket science to understand that working against the people you're asking help from will likely get you nowhere. answer the questions, provide the requested material, no too difficult
+2020-02-08 21:15:46	fritsch	some users still think that we get money for hacking kodi
+2020-02-08 21:16:11	fritsch	that mostly all of us have long "outlived" university, got graduaded and not have a 50 hours week job + familiy :-)
+2020-02-08 21:16:15	fritsch	no one believes
+2020-02-08 21:16:41	fritsch	s/not/now/ :-)
+2020-02-08 21:16:44	fritsch	too tired to type
+2020-02-08 21:16:51	}8]	wait, you life exists beyond kodi source and a compiler?!?!?!?!  :o
+2020-02-08 21:16:58	fritsch	hehehe
+2020-02-08 21:17:01	}8]	how can that be?! ;)
+2020-02-08 21:17:16	fritsch	yeah, we heavily miss some fresh blood
+2020-02-08 21:17:26	fritsch	some platforms just have 1 developer left
+2020-02-08 21:18:49	}8]	it seems like most people fall into 1 of 2 categories. they have the time to help but lack the coding ability. or have the coding ability but no time to give.
+2020-02-08 21:20:27	pragmaticenigma	kodi is compiled???? :-P
+2020-02-08 21:20:46	fritsch	isn't it a nodejs application?
+2020-02-08 21:20:54	pragmaticenigma	I thought it was all written in Python now
+2020-02-08 21:20:59	pragmaticenigma	:-D
+2020-02-08 21:21:10	daftykins	EOL Python
+2020-02-08 21:21:11	daftykins	:o
+2020-02-08 21:21:23	}8]	heh
+2020-02-08 21:21:23	fritsch	hehe, don't tell anyone
+2020-02-08 21:21:40	fritsch	imagine google playstore would realize that we add an enire python environment into an app
+2020-02-08 21:21:56	fritsch	(android's sandboxing - not kodi's ;-) works quite well)
+2020-02-08 21:22:43	pragmaticenigma	I'm sure google is aware it's in there
+2020-02-08 21:23:51	fritsch	jep, for sure
+2020-02-08 21:24:23	-->	CryptoManiac (~MeGa@unaffiliated/cryptomaniac) has joined #kodi
+2020-02-08 21:24:37	--	TheFatherMind- is now known as TheFatherMind
+2020-02-08 21:24:49	}8]	how much of py2 -> py3 is just module & function name changes vs. actual changes that require re-writing pieces of code?  i know theres a ton of the former but unsure about the latter
+2020-02-08 21:25:05	fritsch	also tons
+2020-02-08 21:25:06	}8]	as it pertains to kodi that is, no in general
+2020-02-08 21:25:07	fritsch	:-)
+2020-02-08 21:25:11	pragmaticenigma	}8], there's a lot more ... specifically in string handling
+2020-02-08 21:25:19	fritsch	especially on the "closed OSs" like windows
+2020-02-08 21:25:32	fritsch	string handling was the obvious
+2020-02-08 21:25:38	fritsch	everybody has known
+2020-02-08 21:25:48	fritsch	but under the hood, the "LOCK"
+2020-02-08 21:25:52	fritsch	if you know what I am talking about
+2020-02-08 21:26:04	pragmaticenigma	string handling is what made it hard for me to move to python3
+2020-02-08 21:26:06	fritsch	windows was a huge issue and we just got it going very late in the cycle
+2020-02-08 21:26:13	pragmaticenigma	mostly from not understanding what was going on
+2020-02-08 21:26:42	fritsch	there is a python3 branch
+2020-02-08 21:26:53	fritsch	where you can check the history of the work
+2020-02-08 21:27:03	fritsch	that might shed a light
+2020-02-08 21:27:55	fritsch	see https://github.com/xbmc/xbmc/pull/16116
+2020-02-08 21:28:42	TeamKodi	[unknown] just seen the feature branch was removed
+2020-04-11 13:10:31	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #kodi
+2020-04-11 13:10:31	--	Topic for #kodi is "Official Kodi channel | latest stable Kodi v18.6 'Leia' | https://kodi.tv | http://kodi.wiki | see also #kodi-linux | #kodi-gsoc for GSoC | #kodi-dev for developers only | No discussion or support of piracy video addons!"
+2020-04-11 13:10:31	--	Topic set by keith (keith@kodi/staff/keith) on Tue, 17 Mar 2020 00:32:29
+2020-04-11 13:10:31	--	Channel #kodi: 284 nicks (1 op, 0 voices, 283 normals)
+2020-04-11 13:10:33	--	Channel created on Mon, 28 Jul 2014 02:07:14
+2020-04-11 13:10:35	captainchris	hi everybody
+2020-04-11 13:12:38	captainchris	I have trouble with youtube addon with api keys. I have follow tuto to create my key. And i have modified settings.xml to add keys I added keys to default
+2020-04-11 13:12:42	captainchris	but nothing change 
+2020-04-11 13:12:52	captainchris	how can i do to add keys ?
+2020-04-11 13:13:52	-->	pringau (~pringau@gateway/tor-sasl/pringau) has joined #kodi
+2020-04-11 13:21:30	-->	PowaBanga_ (~PowaBanga@unaffiliated/powabanga) has joined #kodi
+2020-04-11 13:22:38	-->	jacekowski (jacekowski@jacekowski.org) has joined #kodi
+2020-04-11 13:22:42	jacekowski	hi people
+2020-04-11 13:24:37	jacekowski	latest stable kodi (18.6), Windows 10, i7-4870HQ, GTX980M, and i can't play 4k HEVC HDR files
+2020-04-11 13:24:41	jacekowski	it is stutterin
+2020-04-11 13:24:42	jacekowski	g
+2020-04-11 13:24:50	jacekowski	every other player plays it with no problems
+2020-04-11 13:27:25	-->	Leatherface (~leatherfa@helvetet.eu) has joined #kodi
+2020-04-11 13:29:06	<--	PowaBanga_ (~PowaBanga@unaffiliated/powabanga) has quit (Ping timeout: 265 seconds)
+2020-04-11 13:41:14	<--	m1dnight_ (~m1dnight@78-22-11-99.access.telenet.be) has quit (Quit: WeeChat 2.4)
+2020-04-11 13:42:06	<--	TeamKodi (teamkodi@kodi/bot/slackbot) has left #kodi
+2020-04-11 13:42:18	-->	TeamKodi (teamkodi@kodi/bot/slackbot) has joined #kodi
+2020-04-11 13:47:14	kre10	captainchris, try to restart kodi
+2020-04-11 13:47:21	captainchris	I restarted 
+2020-04-11 13:50:02	captainchris	same problem 
+2020-04-11 13:51:16	-->	m1dnight_ (~m1dnight@188.ip-51-91-158.eu) has joined #kodi
+2020-04-11 13:52:51	kre10	try this:Enable the api configuration page, to enable this go to the Settings - API and enable Enable API configuration page
+2020-04-11 13:53:14	kre10	then you should then be able to update your keys by visiting http://<IP of Kodi device>:<port>/api
+2020-04-11 13:53:14	kre10	The port used is Settings - HTTP Server - Port which by default is 50152
+2020-04-11 13:53:55	SkyBird	+1
+2020-04-11 13:56:12	captainchris	I restarted kre10 ok I need to enable allow remote control via http ?? 
+2020-04-11 14:01:43	<--	RaNa (~RaNa@107-146-228-063.res.spectrum.com) has quit (Quit: I'm Out)
+2020-04-11 14:03:25	-->	Antioch (~Antioch@h175-177-044-119.catv02.itscom.jp) has joined #kodi
+2020-04-11 14:06:18	kre10	captainchris, yep
+2020-04-11 14:15:36	-->	tolecnal (tolecnal@login.xiro.net) has joined #kodi
+2020-04-11 14:22:47	-->	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has joined #kodi
+2020-04-11 14:24:48	<--	WinterStar (WinterStar@gateway/vpn/mullvad/winterstar) has quit (Ping timeout: 256 seconds)
+2020-04-11 14:33:44	<--	kre10 (~kre10@94.156.79.154) has quit (Ping timeout: 240 seconds)
+2020-04-11 14:46:06	-->	kre10 (~kre10@94.156.79.154) has joined #kodi
+2020-04-11 14:46:25	-->	RaNa (~RaNa@107-146-228-063.res.spectrum.com) has joined #kodi
+2020-04-11 14:54:41	<--	ChanServ (ChanServ@services.) has quit (shutting down)
+2020-04-11 14:59:58	<--	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has quit (Ping timeout: 265 seconds)
+2020-04-11 15:00:10	rmaw	what do I need to configure to get a release build of kodi when building ?
+2020-04-11 15:01:56	rmaw	I've set --disable-debug when building dependencies, and passed -DCMAKE_BUILD_TYPE=Release  to cmake for the kodi build
+2020-04-11 15:02:26	-->	ChanServ (ChanServ@services.) has joined #kodi
+2020-04-11 15:02:26	--	Mode #kodi [+o ChanServ] by sinisalo.freenode.net
+2020-04-11 15:02:27	rmaw	still getting kodiapp-armeabi-v7a-debug.apk out the other end after make; make apk
+2020-04-11 15:04:02	-->	IceLight (WinterStar@gateway/vpn/mullvad/winterstar) has joined #kodi
+2020-04-11 15:08:00	<--	ChanServ (ChanServ@services.) has quit (*.net *.split)
+2020-04-11 15:09:37	-->	ChanServ (ChanServ@services.) has joined #kodi
+2020-04-11 15:09:37	--	Mode #kodi [+o ChanServ] by sinisalo.freenode.net
+2020-04-11 15:15:07	-->	utack (~utack@2a02:810d:1380:a24:34fa:7f3c:9bf7:8407) has joined #kodi
+2020-04-11 15:26:03	-->	Gittun (YdK@217-121-62-4.cable.dynamic.v4.ziggo.nl) has joined #kodi
+2020-04-11 15:32:01	<--	forenbenutzer (~forenbenu@p4FE033E4.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-04-11 15:34:41	-->	forenbenutzer (~forenbenu@p54888481.dip0.t-ipconnect.de) has joined #kodi
+2020-04-11 15:42:46	captainchris	kre10: I can acces on kodi with port 8080: but i have only interface without api 
+2020-04-11 15:52:42	-->	jcea (~Thunderbi@2001:bc8:2ecd:caed:7670:6e00:7670:6e00) has joined #kodi
+2020-04-11 16:17:03	captainchris	I'm trying to connect to my kodi 192.168.1.16:50152/api
+2020-04-11 16:17:09	captainchris	but it is not working 
+2020-04-11 16:17:39	captainchris	I can to connect 192.168.1.16: 8080 
+2020-04-11 16:17:48	captainchris	why ?? 
+2020-04-11 16:25:44	<--	disrupted (~disrupted@p5DC33873.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-04-11 16:26:08	-->	disrupted (~disrupted@p4FF5EADE.dip0.t-ipconnect.de) has joined #kodi
+2020-04-11 16:31:17	captainchris	nmap says only 8080 is open 
+2020-04-11 16:41:57	TeamKodi	[black eagle] captainchris - Have you enabled the api page in the youtube settings ?
+2020-04-11 16:46:17	<--	Donno (~Donno@kodi/staff/Donno) has quit (Quit: sleeping)
+2020-04-11 16:52:08	<--	Stimrol (~Stimrol@89-160-153-213.du.xdsl.is) has quit (Ping timeout: 256 seconds)
+2020-04-11 16:53:55	captainchris	TeamKodi: yes
+2020-04-11 16:57:41	-->	jmadero (~joel@2600:8801:c400:289::16a2) has joined #kodi
+2020-04-11 16:58:10	captainchris	On settings youtube addon Liston on 192.168.1.16
+2020-04-11 16:58:14	captainchris	port 50152
+2020-04-11 16:58:34	captainchris	check my ip returns error http server is not running
+2020-04-11 17:02:54	<--	jmadero (~joel@2600:8801:c400:289::16a2) has left #kodi
+2020-04-11 17:04:13	TeamKodi	[black eagle] Odd, works for me.  Do you have a browser running on the same machine as Kodi ?  If so try entering *http://localhost:50152/api* into the address bar and press <enter>.
+2020-04-11 17:11:51	captainchris	Yes the browser is running on the smae machine 
+2020-04-11 17:12:44	TeamKodi	[black eagle] Have you tried entering that then ?
+2020-04-11 17:13:51	<--	zkrx (~quassel@adsl-178-39-206-222.adslplus.ch) has quit (Ping timeout: 250 seconds)
+2020-04-11 17:14:32	-->	fredmorcos (fredmorcos@gateway/vpn/protonvpn/fredmorcos) has joined #kodi
+2020-04-11 17:14:46	fredmorcos	Hello, Kodi insists on not reading a tvshow.nfo file
+2020-04-11 17:14:58	fredmorcos	the contents are: <?xml version="1.0" encoding="UTF-8" standalone="yes" ?><tvshow><uniqueid type="tvdb" default="true">355228</uniqueid></tvshow>
+2020-04-11 17:17:05	-->	zkrx (~quassel@adsl-178-39-206-222.adslplus.ch) has joined #kodi
+2020-04-11 17:17:07	-->	ffrogman (~ffrogman@unaffiliated/ffrogman) has joined #kodi
+2020-04-11 17:18:00	TeamKodi	[lrusak] check the debug log
+2020-04-11 17:18:28	<--	ffrogman (~ffrogman@unaffiliated/ffrogman) has left #kodi
+2020-04-11 17:23:15	fredmorcos	there's nothing in there, it's the kodi.log file, right?
+2020-04-11 17:32:29	-->	gavlee (~gav@unaffiliated/gavlee) has joined #kodi
+2020-04-11 17:35:53	captainchris	TeamKodi: now I have check my ip on youtube i don't know why it's work but i have error code 501 Server does not support this operation. 
+2020-04-11 17:37:36	captainchris	I have firefox 
+2020-04-11 17:39:02	<--	fredmorcos (fredmorcos@gateway/vpn/protonvpn/fredmorcos) has quit (Quit: Leaving)
+2020-04-11 17:40:22	-->	Stimrol (~Stimrol@89-160-229-35.du.xdsl.is) has joined #kodi
+2020-04-11 17:44:33	TeamKodi	[lrusak] fredmorcos yes, make sure debugging is enabled
+2020-04-11 17:46:00	<--	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-04-11 17:47:12	-->	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has joined #kodi
+2020-04-11 17:52:43	<--	utack (~utack@2a02:810d:1380:a24:34fa:7f3c:9bf7:8407) has quit (Remote host closed the connection)
+2020-04-11 17:52:45	-->	fireba11 (~fireba11@mail.enlightning.de) has joined #kodi
+2020-04-11 17:53:48	fireba11	hi, is there a way to verify database integrity? my kodi database is several years old and since i can see a few empty series folders i guess it's not exactly as it should be ...
+2020-04-11 17:55:43	freebs	external ?
+2020-04-11 17:56:09	freebs	optimize/repair
+2020-04-11 17:56:10	fireba11	freebs: no, internal e.g sqlite
+2020-04-11 17:56:35	<--	Stimrol (~Stimrol@89-160-229-35.du.xdsl.is) has quit (Ping timeout: 256 seconds)
+2020-04-11 17:57:17	freebs	i'd just delete the db files.. and rescan
+2020-04-11 17:57:25	freebs	new db !
+2020-04-11 17:58:24	fireba11	freebs: uhh ... that's about 40k files.i'm pretty sure it'll take a couple hours to fix all issues i'll run into with that :-D
+2020-04-11 18:02:16	fireba11	hm, maybe i'll do a backup, give rescan a try and see how bad the result is
+2020-04-11 18:02:43	freebs	i'd clean up your folders before hand
+2020-04-11 18:02:57	freebs	make sure what u want is what u have
+2020-04-11 18:03:29	freebs	timely yes... but better results in the end
+2020-04-11 18:03:38	fireba11	freebs: they are clean, but if i remember correctly i got quite a couple things i rescanned and selected the right result manually, so those will end up scanning wrong again
+2020-04-11 18:04:55	TeamKodi	[lrusak] "clean library"
+2020-04-11 18:05:26	fireba11	am using that quite regularily, doesn't fix my issues
+2020-04-11 18:12:05	-->	krabador (~krabador@unaffiliated/krabador) has joined #kodi
+2020-04-11 18:13:58	<--	jancoow (~jancoow@dhcp-077-251-034-091.chello.nl) has quit (Ping timeout: 265 seconds)
+2020-04-11 18:15:29	fireba11	hm, turns out my kodi provie is 5.4GB :-D
+2020-04-11 18:15:34	fireba11	profile
+2020-04-11 18:21:30	-->	jancoow (~jancoow@dhcp-077-251-034-091.chello.nl) has joined #kodi
+2020-04-11 18:21:49	freebs	i've had to rename .kodi and create new before
+2020-04-11 18:22:00	freebs	shit happens right
+2020-04-11 18:41:09	-->	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has joined #kodi
+2020-04-11 18:42:07	-->	donhw_ (~quassel@70.39.102.174) has joined #kodi
+2020-04-11 18:44:41	<--	donhw (~quassel@184-167-036-088.res.spectrum.com) has quit (Ping timeout: 256 seconds)
+2020-04-11 19:01:24	-->	freebs_ (~freebs@unaffiliated/freebs) has joined #kodi
+2020-04-11 19:01:24	<--	freebs (~freebs@unaffiliated/freebs) has quit (Ping timeout: 240 seconds)
+2020-04-11 19:01:32	--	freebs_ is now known as freebs
+2020-04-11 19:04:56	-->	Stimrol (~Stimrol@89-160-229-35.du.xdsl.is) has joined #kodi
+2020-04-11 19:08:25	<--	testman (~testman@BNG-212-222-4-dsl.simobil.net) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-04-11 19:11:04	<--	kre10 (~kre10@94.156.79.154) has quit (Ping timeout: 240 seconds)
+2020-04-11 19:12:52	<--	damex (quassel@unaffiliated/damex) has quit (Quit: damex)
+2020-04-11 19:15:33	-->	damex (quassel@unaffiliated/damex) has joined #kodi
+2020-04-11 19:20:04	-->	subvhome (~victorgil@cpe-74-71-111-178.nyc.res.rr.com) has joined #kodi
+2020-04-11 19:26:23	<--	damex (quassel@unaffiliated/damex) has quit (Quit: damex)
+2020-04-11 19:26:38	-->	damex (~quassel@unaffiliated/damex) has joined #kodi
+2020-04-11 19:38:40	<--	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-04-11 19:39:25	-->	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has joined #kodi
+2020-04-11 19:46:50	-->	hfb (~hfb@cpe-172-117-13-65.socal.res.rr.com) has joined #kodi
+2020-04-11 19:53:13	-->	MightyBOB (~MightyBOB@76.99.21.35) has joined #kodi
+2020-04-11 19:57:24	-->	ffrogman (~ffrogman@unaffiliated/ffrogman) has joined #kodi
+2020-04-11 20:02:07	-->	damex_ (quassel@unaffiliated/damex) has joined #kodi
+2020-04-11 20:02:24	<--	damex (~quassel@unaffiliated/damex) has quit (Ping timeout: 264 seconds)
+2020-04-11 20:04:16	<--	krabador (~krabador@unaffiliated/krabador) has quit (Remote host closed the connection)
+2020-04-11 20:04:33	-->	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has joined #kodi
+2020-04-11 20:21:33	<--	SkyBird (~stefangro@149.224.115.188) has quit
+2020-04-11 20:22:45	-->	SkyBird (~stefangro@149.224.115.188) has joined #kodi
+2020-04-11 20:23:20	-->	TheFatherMind (~TheFather@cpe-172-117-218-16.socal.res.rr.com) has joined #kodi
+2020-04-11 20:31:34	-->	krabador (~krabador@unaffiliated/krabador) has joined #kodi
+2020-04-11 20:31:56	captainchris	Inputstream adaptive is where on the kodi official repositry ?
+2020-04-11 20:33:58	-->	pauljw (pauljw@gateway/vpn/privateinternetaccess/pauljw) has joined #kodi
+2020-04-11 20:35:17	TeamKodi	[unknown] https://github.com/xbmc/repo-binary-addons/blob/Matrix/inputstream.adaptive/inputstream.adaptive.txt
+2020-04-11 20:36:29	captainchris	yes but it is not in kodi repo ?? 
+2020-04-11 20:38:41	daftykins	which version and OS are you trying from?
+2020-04-11 20:39:10	TeamKodi	[unknown] it's a binary addon
+2020-04-11 20:39:17	TeamKodi	[unknown] you have to compile it, if you don't use kodi's ppa
+2020-04-11 20:39:26	captainchris	ok 
+2020-04-11 20:40:17	captainchris	daftykins: kodi 18.6 leaia on linux 
+2020-04-11 20:40:56	daftykins	"Linux" is a kernel, not a distribution
+2020-04-11 20:41:12	captainchris	archlinux 
+2020-04-11 20:41:25	captainchris	you tell me OS 
+2020-04-11 20:42:26	TeamKodi	[unknown] whatever - same procedure - build it from source
+2020-04-11 20:42:34	TeamKodi	[unknown] aur might have some packages you can use
+2020-04-11 20:42:39	daftykins	'arch' is the answer yes
+2020-04-11 20:45:33	captainchris	TeamKodi: are you on archlinux ?
+2020-04-11 20:46:07	<--	subvhome (~victorgil@cpe-74-71-111-178.nyc.res.rr.com) has quit (Quit: subvhome)
+2020-04-11 20:46:08	TeamKodi	[unknown] No - I don't have freetime to waste
+2020-04-11 20:46:27	TeamKodi	[unknown] some years ago, when I did not work 60 hours a week - I made such experiments
+2020-04-11 20:47:10	TeamKodi	[unknown] for now: apt-get build-dep kodi - and I can start developing. No need for arch
+2020-04-11 20:48:03	captainchris	Ok good 
+2020-04-11 20:48:11	captainchris	and you are kodi devellopper ?? 
+2020-04-11 20:48:35	TeamKodi	[unknown] Yeah, since nearly 10 years :)
+2020-04-11 20:48:43	captainchris	good works 
+2020-04-11 20:48:47	captainchris	kodi is amazing 
+2020-04-11 20:48:55	TeamKodi	[unknown] thanks - we are a team - kodi is team work
+2020-04-11 20:49:07	<--	SkyBird (~stefangro@149.224.115.188) has quit
+2020-04-11 20:50:36	<--	ilmostro (~ilmostro@unaffiliated/ilmostro) has quit (Quit: Coyote finally caught me)
+2020-04-11 21:00:06	-->	ilmostro (~ilmostro@unaffiliated/ilmostro) has joined #kodi
+2020-04-11 21:01:13	-->	SkyBird (~stefangro@149.224.115.188) has joined #kodi
+2020-04-11 21:03:15	-->	Edgeman (~edgeman@ip-45-74-112-51.user.start.ca) has joined #kodi
+2020-04-11 21:03:39	<--	SkyBird (~stefangro@149.224.115.188) has quit (Client Quit)
+2020-04-11 21:07:02	-->	SkyBird (~stefangro@149.224.115.188) has joined #kodi
+2020-04-11 21:09:07	<--	SpeakerToMeat (~SpeakerTo@prgmr/customer/SpeakerToMeat) has quit (Read error: Connection reset by peer)
+2020-04-11 21:10:39	<--	SkyBird (~stefangro@149.224.115.188) has quit (Client Quit)
+2020-04-11 21:12:17	-->	SkyBird (~stefangro@149.224.115.188) has joined #kodi
+2020-04-11 21:18:17	-->	damex (~quassel@unaffiliated/damex) has joined #kodi
+2020-04-11 21:18:48	<--	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has quit (Quit: Going offline, see ya!)
+2020-04-11 21:25:16	-->	gi6f (d952226f@pD952226F.dip0.t-ipconnect.de) has joined #kodi
+2020-04-11 21:25:29	gi6f	Hello. My parents screamed at me some minutes ago because their timeshifted film broke after timeshifting
+2020-04-11 21:25:36	gi6f	Here is the logfile: https://pastebin.com/JKKD2avv
+2020-04-11 21:25:44	gi6f	There you can see how the timeshift started at about 20:51 o'clock and then there was errors when tried to playback again 10 minutes later
+2020-04-11 21:25:57	gi6f	The system have an ssd and there is 80gb free space. So the space cant be the issue
+2020-04-11 21:26:07	gi6f	There are no issues at dmesg listed
+2020-04-11 21:26:23	TeamKodi	[lrusak] looks ok to me
+2020-04-11 21:26:35	gi6f	Its running libreelec 9.2
+2020-04-11 21:28:19	daftykins	must be a backend responsible
+2020-04-11 21:28:58	gi6f	daftykins, its running live-tv from tvheadend
+2020-04-11 21:29:09	daftykins	there you go
+2020-04-11 21:29:42	gi6f	but where is now the issue?
+2020-04-11 21:30:04	gi6f	its just libreelec installed on a x86_64 machine
+2020-04-11 21:30:13	TeamKodi	[lrusak] does tvheadend support timeshift?
+2020-04-11 21:30:32	gi6f	yes
+2020-04-11 21:31:11	gi6f	its timeshifting with tvheadend since 3 years over different libreelec revisions
+2020-04-11 21:37:09	-->	gavlee_ (~gav@unaffiliated/gavlee) has joined #kodi
+2020-04-11 21:37:45	<--	gavlee (~gav@unaffiliated/gavlee) has quit (Ping timeout: 265 seconds)
+2020-04-11 21:42:16	<--	freebs (~freebs@unaffiliated/freebs) has quit (Ping timeout: 256 seconds)
+2020-04-11 21:46:58	<--	kekePower (~kekePower@ti0238a330-1073.bb.online.no) has quit (Read error: Connection reset by peer)
+2020-04-11 21:47:08	<--	Mortiarty (~Mortiarty@193.183.217.136) has quit (Quit: ZNC 1.7.2+deb3 - https://znc.in)
+2020-04-11 21:47:11	-->	kekePower (~kekePower@ti0238a330-1073.bb.online.no) has joined #kodi
+2020-04-11 21:54:13	-->	freebs (~freebs@unaffiliated/freebs) has joined #kodi
+2020-04-11 21:59:48	-->	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has joined #kodi
+2020-04-11 22:02:01	<--	forenbenutzer (~forenbenu@p54888481.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2020-04-11 22:04:51	<--	TeamKodi (teamkodi@kodi/bot/slackbot) has left #kodi
+2020-04-11 22:05:03	-->	TeamKodi (teamkodi@kodi/bot/slackbot) has joined #kodi
+2020-04-11 22:14:12	<--	Teraii (~teraii@2001:470:caaf:1::93) has quit (Quit: %Ho Ishuudaa%)
+2020-04-11 22:15:12	<--	damex_ (quassel@unaffiliated/damex) has quit (Read error: No route to host)
+2020-04-11 22:15:20	-->	damex__ (quassel@unaffiliated/damex) has joined #kodi
+2020-04-11 22:16:44	<--	damex__ (quassel@unaffiliated/damex) has quit (Client Quit)
+2020-04-11 22:17:03	-->	damex_ (quassel@unaffiliated/damex) has joined #kodi
+2020-04-11 22:17:08	-->	Teraii (~teraii@2001:470:caaf:1::93) has joined #kodi
+2020-04-11 22:20:52	<--	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has quit (Quit: Going offline, see ya!)
+2020-04-11 22:34:13	-->	Mortiarty (~Mortiarty@193.183.217.136) has joined #kodi
+2020-04-11 22:36:31	<--	cris10an (~cris10an@destiny.whatbox.ca) has quit (Quit: ... I'd love to stand around and chat but I've got to sit down in the lobby and wait for the limo ...)
+2020-04-11 22:38:02	<--	gi6f (d952226f@pD952226F.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-04-11 22:48:39	-->	cris10an (~cris10an@destiny.whatbox.ca) has joined #kodi

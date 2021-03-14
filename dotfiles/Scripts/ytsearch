@@ -1,0 +1,2 @@
+
+alias ws="url=$(cat ~/.config/Scripts/bookmarks | fzf -e -i --reverse | sed -e 's/^.*|//')" && "$1" "${url}" 

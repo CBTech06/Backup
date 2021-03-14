@@ -1,0 +1,42 @@
+q
+colorscheme night
+colorscheme zenburn
+colorscheme xterm-white
+colorscheme solarized-light
+colorscheme solarized-dark
+colorscheme jellybeans
+colorscheme gruvbox-warm
+colorscheme gruvbox-alt
+colorscheme gruvbox
+colorscheme green-mono-88
+colorscheme green
+colorscheme amazon
+colorscheme gray-88
+colorscheme dracula
+colorscheme default
+colorscheme cyan
+break-pane
+w
+filter F
+help 
+help MPRIS
+s
+Q
+colorscheme itunes-like
+colorscheme  
+update-cache 
+add
+wq
+v
+help
+refresh 
+update-cache -f
+update-cache f
+update cache -f
+update cache f
+y
+qy
+  bvn:l cxlshell lllllllomnipp
+colorscheme  cyan
+save 
+bind common <key> save

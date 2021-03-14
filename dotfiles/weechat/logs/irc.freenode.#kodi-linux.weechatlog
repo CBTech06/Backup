@@ -1,0 +1,51 @@
+2020-04-11 13:38:59	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #kodi-linux
+2020-04-11 13:38:59	--	Topic for #kodi-linux is "Official Kodi linux channel | latest stable Kodi v18.6 'Leia' | http://kodi.tv | http://kodi.wiki | see also #kodi-linux | #kodi-gsoc for GSoC | #kodi-dev for developers only | No  discussion or support of piracy video  addons!"
+2020-04-11 13:38:59	--	Topic set by keith (keith@kodi/staff/keith) on Tue, 17 Mar 2020 00:33:18
+2020-04-11 13:38:59	--	Channel #kodi-linux: 77 nicks (1 op, 0 voices, 76 normals)
+2020-04-11 13:39:01	--	Channel created on Sat, 02 Aug 2014 16:19:07
+2020-04-11 13:39:04	captainchris	hi everybody 
+2020-04-11 13:42:06	<--	TeamKodi (teamkodi@kodi/bot/slackbot) has left #kodi-linux
+2020-04-11 13:42:18	-->	TeamKodi (teamkodi@kodi/bot/slackbot) has joined #kodi-linux
+2020-04-11 14:13:25	<--	KjellR (~KjellR@55.84-48-210.nextgentel.com) has quit (Ping timeout: 260 seconds)
+2020-04-11 14:22:49	-->	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has joined #kodi-linux
+2020-04-11 14:24:48	<--	WinterStar (WinterStar@gateway/vpn/mullvad/winterstar) has quit (Ping timeout: 256 seconds)
+2020-04-11 14:30:55	-->	KjellR (~KjellR@55.84-48-210.nextgentel.com) has joined #kodi-linux
+2020-04-11 14:54:41	<--	ChanServ (ChanServ@services.) has quit (shutting down)
+2020-04-11 14:59:58	<--	IceLight (~WinterSta@dhcp-077-249-227-200.chello.nl) has quit (Ping timeout: 265 seconds)
+2020-04-11 15:02:26	-->	ChanServ (ChanServ@services.) has joined #kodi-linux
+2020-04-11 15:02:26	--	Mode #kodi-linux [+o ChanServ] by sinisalo.freenode.net
+2020-04-11 15:04:04	-->	IceLight (WinterStar@gateway/vpn/mullvad/winterstar) has joined #kodi-linux
+2020-04-11 15:08:00	<--	ChanServ (ChanServ@services.) has quit (*.net *.split)
+2020-04-11 15:09:37	-->	ChanServ (ChanServ@services.) has joined #kodi-linux
+2020-04-11 15:09:37	--	Mode #kodi-linux [+o ChanServ] by sinisalo.freenode.net
+2020-04-11 16:49:36	-->	Dominionionion__ (~Dominioni@097-101-014-065.res.spectrum.com) has joined #kodi-linux
+2020-04-11 16:52:11	<--	Dominionionion_ (~Dominioni@097-101-014-065.res.spectrum.com) has quit (Ping timeout: 250 seconds)
+2020-04-11 17:02:35	<--	Dominionionion__ (~Dominioni@097-101-014-065.res.spectrum.com) has quit (Ping timeout: 250 seconds)
+2020-04-11 17:17:27	-->	ffrogman (~ffrogman@unaffiliated/ffrogman) has joined #kodi-linux
+2020-04-11 17:18:26	<--	ffrogman (~ffrogman@unaffiliated/ffrogman) has left #kodi-linux
+2020-04-11 17:18:59	-->	Dominionionion (~Dominioni@097-101-014-065.res.spectrum.com) has joined #kodi-linux
+2020-04-11 17:46:00	<--	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-04-11 17:47:12	-->	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has joined #kodi-linux
+2020-04-11 18:11:09	captainchris	hi 
+2020-04-11 18:11:12	captainchris	anyobody here 
+2020-04-11 18:12:05	-->	krabador (~krabador@unaffiliated/krabador) has joined #kodi-linux
+2020-04-11 18:13:31	TeamKodi	[lrusak] wassup
+2020-04-11 18:41:09	-->	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has joined #kodi-linux
+2020-04-11 19:01:24	-->	freebs_ (~freebs@unaffiliated/freebs) has joined #kodi-linux
+2020-04-11 19:01:24	<--	freebs (~freebs@unaffiliated/freebs) has quit (Ping timeout: 240 seconds)
+2020-04-11 19:01:32	--	freebs_ is now known as freebs
+2020-04-11 19:38:40	<--	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-04-11 19:39:25	-->	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has joined #kodi-linux
+2020-04-11 20:04:16	<--	krabador (~krabador@unaffiliated/krabador) has quit (Remote host closed the connection)
+2020-04-11 20:31:34	-->	krabador (~krabador@unaffiliated/krabador) has joined #kodi-linux
+2020-04-11 20:50:36	<--	ilmostro (~ilmostro@unaffiliated/ilmostro) has quit (Quit: Coyote finally caught me)
+2020-04-11 21:00:01	-->	ilmostro (~ilmostro@unaffiliated/ilmostro) has joined #kodi-linux
+2020-04-11 21:18:48	<--	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has quit (Quit: Going offline, see ya!)
+2020-04-11 21:42:16	<--	freebs (~freebs@unaffiliated/freebs) has quit (Ping timeout: 256 seconds)
+2020-04-11 21:47:08	<--	Mortiarty (~Mortiarty@193.183.217.136) has quit (Quit: ZNC 1.7.2+deb3 - https://znc.in)
+2020-04-11 21:54:13	-->	freebs (~freebs@unaffiliated/freebs) has joined #kodi-linux
+2020-04-11 21:59:48	-->	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has joined #kodi-linux
+2020-04-11 22:04:51	<--	TeamKodi (teamkodi@kodi/bot/slackbot) has left #kodi-linux
+2020-04-11 22:05:03	-->	TeamKodi (teamkodi@kodi/bot/slackbot) has joined #kodi-linux
+2020-04-11 22:20:52	<--	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has quit (Quit: Going offline, see ya!)
+2020-04-11 22:34:13	-->	Mortiarty (~Mortiarty@193.183.217.136) has joined #kodi-linux

@@ -1,0 +1,54 @@
+2020-09-27 20:11:36	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #libgdx
+2020-09-27 20:11:36	--	Topic for #libgdx is " Welcome to the #libgdx channel. libGDX 1.9.10 released: http://www.badlogicgames.com/wordpress/?p=4015 - Logs: http://echelog.com/?libgdx - Submit your game to our gallery: http://libgdx.badlogicgames.com/gallery.html - If you have a question, just ask"
+2020-09-27 20:11:36	--	Topic set by Tomski (Tski@gateway/shell/elitebnc/x-ntumbnqieeoywhnu) on Fri, 19 Jul 2019 17:13:43
+2020-09-27 20:11:36	--	Channel #libgdx: 17 nicks (1 op, 0 voices, 16 normals)
+2020-09-27 20:11:38	--	Channel created on Tue, 07 Aug 2012 11:32:09
+2020-09-27 20:11:43	captainchris	hi everybody 
+2020-09-27 20:12:34	captainchris	I'm new under libgdx and java. I have some questions about building project under command line in linux 
+2020-09-27 20:13:22	captainchris	I use vim as text editor. How can i build file in desktop folder without intellij /eclipse/netbeans ?? 
+2020-09-27 20:13:50	captainchris	Lot's of tutorial are under windows or lot's use IDE 
+2020-09-27 20:31:52	<--	isdera (isdera@cpe-74-78-184-169.maine.res.rr.com) has quit (Ping timeout: 272 seconds)
+2020-09-27 22:03:08	-->	TEttinger (~notostrac@76-217-24-171.lightspeed.irvnca.sbcglobal.net) has joined #libgdx
+2020-09-27 22:17:10	bomb	don't do that captainchris
+2020-09-27 22:18:19	myke	do do that captainchris
+2020-09-27 22:18:27	myke	./gradlew desktop:build
+2020-09-27 22:18:32	myke	./gradlew desktop:run
+2020-09-27 22:18:39	myke	then ./gradlew tasks to see some other things you can do
+2020-09-27 22:19:08	myke	i strongly recommend using gradle on the command line before taking on IDE integrations, which tend to cause extra needless grief
+2020-09-27 22:19:58	myke	also join the discord https://discord.gg/9QMzSz
+2020-09-27 22:20:02	bomb	what a pointless endeavor :\
+2020-09-27 22:20:20	myke	i do most of my dev with just emacs and command line
+2020-09-27 22:20:30	myke	on windows too
+2020-09-27 22:20:32	myke	and mac
+2020-09-27 22:20:59	myke	allegedly intellij will run on my chromebook but i bet it's not a lovely dev experience.
+2020-09-27 22:21:07	bomb	glad it worked well for your hobby
+2020-09-27 22:21:49	myke	or captainchris could get discouraged by the extra problems of ide integrations that he doesn't even want, when you can just start editing java and go with gradle on the command line
+2020-09-27 22:22:02	myke	but why not spend a pointless hour futzing around with run configurations
+2020-09-27 22:23:13	bomb	that's just unrealistic in real life, still I've seen people pushing it for some reason. but whatever makes you happy
+2020-09-27 22:23:28	myke	he's clearly doing it for the first time
+2020-09-27 22:23:40	myke	how is it unrealistic if it's the fastest way to get going from scratch?
+2020-09-27 22:24:13	myke	running gradle from the command line is still the best way to ferret out build problems when the ide's errors are opaque
+2020-09-27 22:24:41	bomb	millions of people started programming in Java using an IDE, because it is the fastest way, not the vim
+2020-09-27 22:24:52	myke	well i can't speak to that
+2020-09-27 22:25:03	myke	i'm on the losing team of the Great Editor Wars
+2020-09-27 22:25:21	bomb	it's not editor wars, it's IDE vs editor
+2020-09-27 22:25:30	myke	one of the reasons i still don't use intellij much is because i'd need to spend hours/days learning all the functions i already know in emacs
+2020-09-27 22:26:05	myke	weirdly emacs was the first ide i used, for C, where you could run gdb inside emacs and when you hit a breakpoint it'd jump to that line in the source code in the other frame
+2020-09-27 22:26:21	myke	again can't speak for vi/vim here
+2020-09-27 22:27:19	bomb	he can also just use javac then. no need to spend hours/days learning gradle
+2020-09-27 22:28:38	myke	but libgdx's generator already makes a working gradle config for you, so you can just type ./gradlew desktop:r and the default project will work
+2020-09-27 22:28:53	myke	as long as you have a jdk installed, and android's sdk/build tools if you picked android
+2020-09-27 22:28:58	myke	everything else is handled by gradle
+2020-09-27 22:29:13	bomb	sounds integrated
+2020-09-27 22:29:28	myke	weird chat.
+2020-09-27 22:29:33	bomb	that's also the point of IDEs. a project generators make things ready for you, you hit just play
+2020-09-27 22:29:46	myke	yeah except when you import an existing gradle project it's not very well integrated at all
+2020-09-27 22:29:56	myke	in my experience it rarely, maybe never, has just worked
+2020-09-27 22:30:05	myke	intellij insists on upgrading the gradle and then often breaks it
+2020-09-27 22:30:18	myke	and if you don't set some directories and other things in the run configuration it doesn't work
+2020-09-27 22:30:25	myke	where it Just Works if you run it directly from the command line
+2020-09-27 22:30:32	bomb	hmm, can't speak for that, NetBeans user here
+2020-09-27 22:30:48	myke	guess netbeans is fine for hobby projects.
+2020-09-27 22:31:28	myke	so you're telling him to use something you haven't even used enough yourself to know why it has problems.
+2020-09-27 22:31:31	myke	cool
+2020-09-27 22:35:20	bomb	I'm just saying gdx-setup + gradle command line + emacs combination still resembles IDE workflow, a poor one. but you're telling me it worked for you, who am I to tell you otherwise

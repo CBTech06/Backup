@@ -1,0 +1,23 @@
+2020-01-24 21:06:59	-->	captainchris1 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-fr
+2020-01-24 21:06:59	--	Topic for #archlinux-fr is "Bienvenue sur #archlinux-fr | D?riv?s d'Arch inconnus ici | Mises ? jour, lisez les news : https://archlinux.fr | UTF-8 | HS: #arch-fr-off | Autovoice: off | Log public"
+2020-01-24 21:06:59	--	Topic set by CalimeroTeknik on Fri, 15 Mar 2019 21:11:19
+2020-01-24 21:06:59	--	Channel #archlinux-fr: 131 nicks (1 op, 0 voices, 130 normals)
+2020-01-24 21:06:59	--	PvNotice(ChanServ): Bienvenue sur le chan de la communaut? francophone d'Archlinux
+2020-01-24 21:06:59	--	URL for #archlinux-fr: http://www.archlinux.fr
+2020-01-24 21:07:01	--	Channel created on Sun, 26 Nov 2006 07:42:44
+2020-01-24 21:20:12	-->	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #archlinux-fr
+2020-01-24 21:20:12	--	Topic for #archlinux-fr is "Bienvenue sur #archlinux-fr | D?riv?s d'Arch inconnus ici | Mises ? jour, lisez les news : https://archlinux.fr | UTF-8 | HS: #arch-fr-off | Autovoice: off | Log public"
+2020-01-24 21:20:12	--	Topic set by CalimeroTeknik on Fri, 15 Mar 2019 21:11:19
+2020-01-24 21:20:12	--	Channel #archlinux-fr: 133 nicks (1 op, 0 voices, 132 normals)
+2020-01-24 21:20:12	--	PvNotice(ChanServ): Bienvenue sur le chan de la communaut? francophone d'Archlinux
+2020-01-24 21:20:12	--	URL for #archlinux-fr: http://www.archlinux.fr
+2020-01-24 21:20:14	--	Channel created on Sun, 26 Nov 2006 07:42:44
+2020-01-24 21:20:15	chris06	hey 
+2020-01-24 21:20:49	-->	serge__ (~serge__@171-28-127-151.dsl.ovh.fr) has joined #archlinux-fr
+2020-01-24 21:31:24	<--	serge__ (~serge__@171-28-127-151.dsl.ovh.fr) has quit (Quit: Leaving)
+2020-01-24 21:33:54	-->	jujudusud (~julien@2a01:cb1c:807c:b200:5a3c:7748:2cd6:cbb8) has joined #archlinux-fr
+2020-01-24 21:41:42	Lord_Vlad	Le probl?me de xbindkeys, c'est que j'ai des touches sp?ciales qui sont assign?es sur des touches normales... Genre ins et home ET je veux que mes raccourcis concernent les touches sp?ciales et pas les autres. Je viens de tester et... ben c'est pas le cas.
+2020-01-24 21:43:18	-->	Grazoth (~Grazoth@2a01:e0a:c3:4900:e240:af13:1de1:8831) has joined #archlinux-fr
+2020-01-24 21:46:24	Lord_Vlad	Il assigne la commande au r?sultat de la touche et pas la touche elle-meme
+2020-01-24 21:58:10	<--	pseudomyne (~xa@acaen-655-1-53-171.w83-115.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2020-01-24 22:00:59	<--	gnumdk (~gnumdk@roo49-1-82-245-53-14.fbx.proxad.net) has quit (Quit: gnumdk)

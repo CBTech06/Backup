@@ -1,0 +1,95 @@
+2020-02-12 22:51:01	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #jack
+2020-02-12 22:51:01	--	Topic for #jack is "The JACK Audio Connection Kit - http://www.jackaudio.org - FAQ @ http://jackaudio.org/faq - Bug Tracker @ https://github.com/jackaudio"
+2020-02-12 22:51:01	--	Topic set by falktx on Mon, 17 Dec 2018 22:36:45
+2020-02-12 22:51:01	--	Channel #jack: 42 nicks (1 op, 0 voices, 41 normals)
+2020-02-12 22:51:01	--	URL for #JACK: http://www.jackaudio.org
+2020-02-12 22:51:03	--	Channel created on Sun, 26 Nov 2006 07:42:45
+2020-02-12 22:51:07	captainchris	hello everybody 
+2020-02-12 22:51:36	captainchris	I have a problem with jack. I would like create a script to switch between two soundcards
+2020-02-12 22:53:15	<--	redtide (~redtide@host238-243-dynamic.8-87-r.retail.telecomitalia.it) has quit
+2020-02-12 22:53:58	captainchris	https://pastebin.com/sLaAdRpv
+2020-02-12 22:54:02	captainchris	I write this 
+2020-02-12 22:54:35	captainchris	but when a card is selected I use jack_control to quit jackdbus and i connect to other soundcard 
+2020-02-12 22:54:55	captainchris	but it stuck on running, on the second cmd 
+2020-02-13 09:00:53	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #jack
+2020-02-13 09:00:53	--	Topic for #jack is "The JACK Audio Connection Kit - http://www.jackaudio.org - FAQ @ http://jackaudio.org/faq - Bug Tracker @ https://github.com/jackaudio"
+2020-02-13 09:00:53	--	Topic set by falktx on Mon, 17 Dec 2018 22:36:45
+2020-02-13 09:00:53	--	Channel #jack: 41 nicks (1 op, 0 voices, 40 normals)
+2020-02-13 09:00:53	--	URL for #JACK: http://www.jackaudio.org
+2020-02-13 09:00:55	--	Channel created on Sun, 26 Nov 2006 07:42:45
+2020-02-13 09:01:00	captainchris	Hi everybody 
+2020-02-13 09:48:42	captainchris	Can i switch jack_control to use another soundcard 
+2020-02-13 09:49:02	captainchris	I try but it doesn't work 
+2020-02-13 09:49:30	captainchris	even if i stop jack_control exit and restart with another soundcar
+2020-02-13 09:49:31	captainchris	d
+2020-02-13 19:26:53	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #jack
+2020-02-13 19:26:53	--	Topic for #jack is "The JACK Audio Connection Kit - http://www.jackaudio.org - FAQ @ http://jackaudio.org/faq - Bug Tracker @ https://github.com/jackaudio"
+2020-02-13 19:26:53	--	Topic set by falktx on Mon, 17 Dec 2018 22:36:45
+2020-02-13 19:26:53	--	Channel #jack: 44 nicks (1 op, 0 voices, 43 normals)
+2020-02-13 19:26:53	--	URL for #JACK: http://www.jackaudio.org
+2020-02-13 19:26:55	--	Channel created on Sun, 26 Nov 2006 07:42:45
+2020-02-13 19:26:58	captainchris	hello everybody 
+2020-02-13 19:29:11	redtide	hi
+2020-02-13 19:30:39	falktx	hello
+2020-02-13 19:31:09	APic	Yo
+2020-02-13 19:34:54	<--	alextee (~alextee@188.29.164.59.threembb.co.uk) has quit (Ping timeout: 246 seconds)
+2020-02-13 19:42:48	captainchris	I have two soundcard when I set the first sound card with jack_control I start pulseaudio to set sink and source.
+2020-02-13 19:43:32	captainchris	when i stop jack and I set the second soundcard with jack control and run jack_control start I have the sound on the first 
+2020-02-13 19:44:06	captainchris	when i use qjack i can use the first and the second, why with jack _control it doen't work ?? 
+2020-02-13 19:48:27	-->	alextee (~alextee@92.40.174.18.threembb.co.uk) has joined #jack
+2020-02-13 19:52:05	<--	BlackMaria (~BlackMari@104-163-152-132.qc.dsl.ebox.net) has quit (Ping timeout: 260 seconds)
+2020-02-13 20:03:43	captainchris	no body can help me ?? 
+2020-02-13 20:07:45	redtide	I can't for sure, I don't use jack_control, nor pulseaudio and I only have 1 soundcard...
+2020-02-13 20:08:10	captainchris	and with jackd we can't switch between soundcard 
+2020-02-13 20:08:26	captainchris	when i change playback same problem 
+2020-02-13 20:08:27	redtide	(and not even QJackCtl if it is the one you mean)
+2020-02-13 20:13:28	falktx	captainchris: you want to have 2 cards working at the same time?
+2020-02-13 20:13:53	captainchris	no 
+2020-02-13 20:14:03	captainchris	i want to select just if i would change 
+2020-02-13 20:14:15	captainchris	first soudnd card is for my headphone 
+2020-02-13 20:14:22	captainchris	and the second for the speakers
+2020-02-13 20:14:41	captainchris	and sometimes i need change 
+2020-02-13 20:15:19	falktx	why do you use jack_control ?
+2020-02-13 20:15:30	falktx	why not something like qjackctl or cadence?
+2020-02-13 20:15:42	falktx	if you are going to stop jack and start it again, there is no differece
+2020-02-13 20:15:49	captainchris	I would like simple script 
+2020-02-13 20:16:35	falktx	if you show the current script(s), maybe we can help
+2020-02-13 20:18:06	captainchris	I made this in ptyhon 
+2020-02-13 20:18:09	captainchris	https://pastebin.com/SYhiMT2S
+2020-02-13 20:19:42	<--	pitch (~usr@unaffiliated/pitch) has quit (Ping timeout: 246 seconds)
+2020-02-13 20:23:54	captainchris	but it doesn't switch soundcard 
+2020-02-13 20:28:34	captainchris	falktx: it is correct jack_control 
+2020-02-13 20:29:02	captainchris	i run this script by ./jackStart --start MID or DSP24
+2020-02-13 20:29:12	captainchris	or ./jackStart --stop 
+2020-02-13 20:29:19	captainchris	to stop jackdbus 
+2020-02-13 20:58:36	falktx	python?
+2020-02-13 20:58:42	falktx	didnt you want something simple?
+2020-02-13 21:02:13	<--	redtide (~redtide@host238-243-dynamic.8-87-r.retail.telecomitalia.it) has quit
+2020-02-13 21:02:57	falktx	it is starting to not be the best tool anymore perhaps
+2020-02-13 21:03:14	falktx	captainchris: if you are stopping and starting jack, why not use jackd? why must you insist with jackdbus?
+2020-02-13 21:03:22	captainchris	yes 
+2020-02-13 21:03:28	captainchris	I tried everything
+2020-02-13 21:03:33	falktx	if you have the latest jack2 release, it will sync with pulseaudio fine
+2020-02-13 21:03:35	captainchris	jackd jack_control ... 
+2020-02-13 21:03:43	captainchris	it was the same problem 
+2020-02-13 21:03:54	falktx	then let it be with jackd
+2020-02-13 21:04:01	falktx	if there is no sound, issue is somewhere else
+2020-02-13 21:04:26	captainchris	with jackd I change -P hw:MID to hw:DSP24
+2020-02-13 21:04:36	captainchris	and the output is always on the same soundcard 
+2020-02-13 21:05:00	captainchris	I don't know why 
+2020-02-13 21:06:23	falktx	you are supposed to change the -d hw:...
+2020-02-13 21:06:28	falktx	-P is afterwards
+2020-02-13 21:06:31	falktx	you dont need it
+2020-02-13 21:06:39	captainchris	but -d is not alsa ?? 
+2020-02-13 21:06:47	falktx	-d alsa -d hw:MID
+2020-02-13 21:06:53	falktx	the 2nd -d is the alsa device
+2020-02-13 21:06:59	falktx	first -d is driver
+2020-02-13 21:07:20	captainchris	ok I thought -C is for capture(input) and -P playback(output)
+2020-02-13 21:08:17	falktx	yes, but those are to separate in/outs
+2020-02-13 21:08:32	falktx	without a 2nd -d, jack will use the default soundcard
+2020-02-13 21:08:36	falktx	which is often the first
+2020-02-13 21:08:43	falktx	(first soundcard in the system)
+2020-02-13 21:10:38	-->	redtide (~redtide@host238-243-dynamic.8-87-r.retail.telecomitalia.it) has joined #jack
+2020-02-13 21:14:31	captainchris	OK
+2020-02-13 21:14:37	captainchris	that's work
+2020-02-13 21:14:48	captainchris	thank you falktx for your help 

@@ -1,0 +1,95 @@
+2020-04-11 11:15:38	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #libreelec
+2020-04-11 11:15:38	--	Topic for #libreelec is "[~ LibreELEC Support Channel ~ current release: LibreELEC (Leia) 9.2.1 RELEASE ~ No discussion/support for piracy addons ~ https://libreelec.tv/2018/04/community-builds/ ~ https://freenode.irclog.whitequark.org/libreelec ~]"
+2020-04-11 11:15:38	--	Topic set by davu (~davu@unaffiliated/david1977) on Sat, 21 Mar 2020 13:36:11
+2020-04-11 11:15:38	--	Channel #libreelec: 125 nicks (1 op, 0 voices, 124 normals)
+2020-04-11 11:15:40	--	Channel created on Sun, 13 Mar 2016 00:21:54
+2020-04-11 11:15:44	captainchris	hi everybody 
+2020-04-11 11:59:15	-->	kekePower (~kekePower@ti0238a330-1073.bb.online.no) has joined #libreelec
+2020-04-11 12:06:02	-->	kre10 (~kre10@94.156.79.154) has joined #libreelec
+2020-04-11 12:12:08	-->	andy-burns (~Thunderbi@router.adslpipe.co.uk) has joined #libreelec
+2020-04-11 12:16:24	<--	Tobbi (~Tobbi@supertux/tobbi) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-04-11 12:43:27	-->	Tobbi (~Tobbi@supertux/tobbi) has joined #libreelec
+2020-04-11 12:45:44	<--	andy-burns (~Thunderbi@router.adslpipe.co.uk) has quit (Ping timeout: 258 seconds)
+2020-04-11 12:52:32	-->	andy-burns (~Thunderbi@router.adslpipe.co.uk) has joined #libreelec
+2020-04-11 13:04:32	-->	kivutar (~kivutar@95.130.13.198) has joined #libreelec
+2020-04-11 13:25:15	<--	gouchi (~gouchi@unaffiliated/gouchi) has quit (Remote host closed the connection)
+2020-04-11 14:05:57	<--	kivutar (~kivutar@95.130.13.198) has quit (Ping timeout: 256 seconds)
+2020-04-11 14:15:33	ChriChri	Moin
+2020-04-11 14:16:10	-->	kivutar (~kivutar@95.130.13.198) has joined #libreelec
+2020-04-11 14:16:43	ChriChri	I just downloaded from https://test.libreelec.tv/ the cubox-images. One is named *-cubox-dl.img.gz and another *-cubox-q.img.gz. Can anybody shed some light on the differences or give me a reference to read about it?
+2020-04-11 14:28:11	-->	gouchi (~gouchi@unaffiliated/gouchi) has joined #libreelec
+2020-04-11 14:33:44	<--	kre10 (~kre10@94.156.79.154) has quit (Ping timeout: 240 seconds)
+2020-04-11 14:46:17	-->	kre10 (~kre10@94.156.79.154) has joined #libreelec
+2020-04-11 14:47:09	<--	butterfly_ (~butterfly@unaffiliated/butterfly) has quit (Disconnected by services)
+2020-04-11 14:47:18	-->	butterfly (~butterfly@unaffiliated/butterfly) has joined #libreelec
+2020-04-11 14:54:41	<--	ChanServ (ChanServ@services.) has quit (shutting down)
+2020-04-11 14:55:22	ChriChri	O.k., I'll guess dl=dual lite, q=quad?
+2020-04-11 15:02:24	-->	ChanServ (ChanServ@services.) has joined #libreelec
+2020-04-11 15:02:24	--	Mode #libreelec [+o ChanServ] by sinisalo.freenode.net
+2020-04-11 15:07:19	<--	kivutar (~kivutar@95.130.13.198) has quit (Ping timeout: 250 seconds)
+2020-04-11 15:08:00	<--	ChanServ (ChanServ@services.) has quit (*.net *.split)
+2020-04-11 15:09:34	-->	ChanServ (ChanServ@services.) has joined #libreelec
+2020-04-11 15:09:34	--	Mode #libreelec [+o ChanServ] by sinisalo.freenode.net
+2020-04-11 15:26:03	-->	Gittun (YdK@217-121-62-4.cable.dynamic.v4.ziggo.nl) has joined #libreelec
+2020-04-11 15:54:28	-->	fraggle_boate__ (~fraggle@gol06-1-82-242-160-200.fbx.proxad.net) has joined #libreelec
+2020-04-11 15:54:57	<--	fraggle_boate_ (~fraggle@2a01:e35:2f2a:c80:e859:adaf:15e8:4eb9) has quit (Remote host closed the connection)
+2020-04-11 16:00:08	<--	gouchi (~gouchi@unaffiliated/gouchi) has quit (Remote host closed the connection)
+2020-04-11 16:21:35	captainchris	I would like to acces to my kodi /api when Im trying 192.168.1.6:50152/api it doesn't work 
+2020-04-11 16:21:57	captainchris	i have acces with 192.168.1.16:8080
+2020-04-11 16:22:01	captainchris	why ?? 
+2020-04-11 16:24:11	chewitt	Kodi JSON API is normally on 9090, and the web interface is 8080
+2020-04-11 16:24:25	chewitt	I'm not aware of any API port on 50152
+2020-04-11 16:28:41	-->	buzzmarshall (~Buzz@2607:fea8:1d21:3501:224:1dff:fe1f:2138) has joined #libreelec
+2020-04-11 16:29:28	captainchris	on kodi they said on 50152 
+2020-04-11 16:29:34	captainchris	I'm trying on 9090
+2020-04-11 16:29:55	captainchris	9090 is not working to 
+2020-04-11 16:31:01	captainchris	nmap says only 8080 is open 
+2020-04-11 17:18:26	<--	tafa (~ta20@www.irbug.org) has quit (Quit: ZNC - https://znc.in)
+2020-04-11 17:32:29	-->	gavlee (~gav@unaffiliated/gavlee) has joined #libreelec
+2020-04-11 17:45:47	-->	k-man_ (~jason@unaffiliated/k-man) has joined #libreelec
+2020-04-11 17:46:00	<--	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-04-11 17:47:12	-->	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has joined #libreelec
+2020-04-11 17:48:36	<--	k-man (~jason@unaffiliated/k-man) has quit (Ping timeout: 264 seconds)
+2020-04-11 18:41:09	-->	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has joined #libreelec
+2020-04-11 19:08:25	<--	testman (~testman@BNG-212-222-4-dsl.simobil.net) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-04-11 19:11:04	<--	kre10 (~kre10@94.156.79.154) has quit (Ping timeout: 240 seconds)
+2020-04-11 19:12:52	<--	damex (quassel@unaffiliated/damex) has quit (Quit: damex)
+2020-04-11 19:13:01	<--	BCMM (~BCMM@unaffiliated/bcmm) has quit (Ping timeout: 250 seconds)
+2020-04-11 19:15:33	-->	damex (quassel@unaffiliated/damex) has joined #libreelec
+2020-04-11 19:26:23	<--	damex (quassel@unaffiliated/damex) has quit (Quit: damex)
+2020-04-11 19:26:38	-->	damex (~quassel@unaffiliated/damex) has joined #libreelec
+2020-04-11 19:32:44	-->	gouchi (~gouchi@unaffiliated/gouchi) has joined #libreelec
+2020-04-11 19:38:40	<--	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has quit (Read error: Connection reset by peer)
+2020-04-11 19:39:25	-->	_abbenormal (~abbenorma@d28-23-151-19.dim.wideopenwest.com) has joined #libreelec
+2020-04-11 20:02:07	-->	damex_ (quassel@unaffiliated/damex) has joined #libreelec
+2020-04-11 20:02:24	<--	damex (~quassel@unaffiliated/damex) has quit (Ping timeout: 264 seconds)
+2020-04-11 20:04:33	-->	shibboleth (~shibbolet@gateway/tor-sasl/shibboleth) has joined #libreelec
+2020-04-11 20:09:04	-->	|Jeroen| (~jerre@d5153DC3E.access.telenet.be) has joined #libreelec
+2020-04-11 20:25:27	-->	kre10 (~kre10@94.156.79.154) has joined #libreelec
+2020-04-11 20:29:38	-->	BCMM (~BCMM@unaffiliated/bcmm) has joined #libreelec
+2020-04-11 20:33:58	-->	pauljw (pauljw@gateway/vpn/privateinternetaccess/pauljw) has joined #libreelec
+2020-04-11 21:03:27	<--	kre10 (~kre10@94.156.79.154) has quit (Remote host closed the connection)
+2020-04-11 21:07:58	<--	BCMM (~BCMM@unaffiliated/bcmm) has quit (Ping timeout: 265 seconds)
+2020-04-11 21:16:36	-->	gi6f (4fd779e9@p4FD779E9.dip0.t-ipconnect.de) has joined #libreelec
+2020-04-11 21:18:17	-->	damex (~quassel@unaffiliated/damex) has joined #libreelec
+2020-04-11 21:18:48	<--	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has quit (Quit: Going offline, see ya!)
+2020-04-11 21:20:47	<--	gi6f (4fd779e9@p4FD779E9.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-04-11 21:21:27	-->	gi6f (d952226f@pD952226F.dip0.t-ipconnect.de) has joined #libreelec
+2020-04-11 21:23:02	gi6f	Hello. My parents screamed at me some minutes ago because their timeshifted film broke after timeshifting
+2020-04-11 21:23:13	gi6f	Here is the logfile: https://pastebin.com/JKKD2avv
+2020-04-11 21:24:04	gi6f	There you can see how the timeshift started at about 20:51 o'clock and then there was errors when tried to playback again 10 minutes later
+2020-04-11 21:24:38	gi6f	The system have an ssd and there is 80gb free space. So the space cant be the issue
+2020-04-11 21:25:10	gi6f	There are no issues at dmesg listed
+2020-04-11 21:37:09	-->	gavlee_ (~gav@unaffiliated/gavlee) has joined #libreelec
+2020-04-11 21:37:45	<--	gavlee (~gav@unaffiliated/gavlee) has quit (Ping timeout: 265 seconds)
+2020-04-11 21:46:58	<--	kekePower (~kekePower@ti0238a330-1073.bb.online.no) has quit (Read error: Connection reset by peer)
+2020-04-11 21:47:11	-->	kekePower (~kekePower@ti0238a330-1073.bb.online.no) has joined #libreelec
+2020-04-11 21:59:48	-->	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has joined #libreelec
+2020-04-11 22:15:12	<--	damex_ (quassel@unaffiliated/damex) has quit (Read error: No route to host)
+2020-04-11 22:15:20	-->	damex__ (quassel@unaffiliated/damex) has joined #libreelec
+2020-04-11 22:16:44	<--	damex__ (quassel@unaffiliated/damex) has quit (Client Quit)
+2020-04-11 22:17:03	-->	damex_ (quassel@unaffiliated/damex) has joined #libreelec
+2020-04-11 22:17:52	-->	BCMM (~BCMM@unaffiliated/bcmm) has joined #libreelec
+2020-04-11 22:20:52	<--	zedfreak (~zedfreak@CPEc0562748019b-CM9050cab54040.cpe.net.cable.rogers.com) has quit (Quit: Going offline, see ya!)
+2020-04-11 22:35:13	<--	|Jeroen| (~jerre@d5153DC3E.access.telenet.be) has quit (Quit: dada)
+2020-04-11 22:38:02	<--	gi6f (d952226f@pD952226F.dip0.t-ipconnect.de) has quit (Remote host closed the connection)

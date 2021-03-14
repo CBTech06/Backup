@@ -1,0 +1,120 @@
+2020-01-24 22:19:16	-->	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #debian
+2020-01-24 22:19:16	--	Topic for #debian is "Current Debian release is buster, 10.2 point release /msg dpkg 10.2; /msg dpkg buster; /msg dpkg stretch->buster; /msg dpkg apt suite changed | Oldstable Stretch: /msg dpkg stretch; /msg dpkg 9.11; 9.11 needs dist-upgrade | NO FLOOD: /msg dpkg paste | offtopic: #debian-offtopic | testing/unstable: #debian-next @ irc.oftc.net | chanlogs: /msg dpkg irclog"
+2020-01-24 22:19:16	--	Topic set by somiaj (~jaimos@unaffiliated/somiaj) on Tue, 19 Nov 2019 01:01:10
+2020-01-24 22:19:16	--	Channel #debian: 1541 nicks (2 ops, 0 voices, 1539 normals)
+2020-01-24 22:19:16	--	PvNotice(ChanServ): Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+2020-01-24 22:19:16	--	URL for #debian: http://www.debian.org
+2020-01-24 22:19:16	--	Channel created on Sat, 10 Feb 2001 00:16:24
+2020-01-24 22:19:18	mtcdood	giving up on msmtp
+2020-01-24 22:19:24	-->	OS-67484 (~OS-67484@73.129.149.255) has joined #debian
+2020-01-24 22:19:30	<--	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has left #debian
+2020-01-24 22:27:57	-->	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #debian
+2020-01-24 22:27:57	--	Topic for #debian is "Current Debian release is buster, 10.2 point release /msg dpkg 10.2; /msg dpkg buster; /msg dpkg stretch->buster; /msg dpkg apt suite changed | Oldstable Stretch: /msg dpkg stretch; /msg dpkg 9.11; 9.11 needs dist-upgrade | NO FLOOD: /msg dpkg paste | offtopic: #debian-offtopic | testing/unstable: #debian-next @ irc.oftc.net | chanlogs: /msg dpkg irclog"
+2020-01-24 22:27:57	--	Topic set by somiaj (~jaimos@unaffiliated/somiaj) on Tue, 19 Nov 2019 01:01:10
+2020-01-24 22:27:57	--	Channel #debian: 1540 nicks (2 ops, 0 voices, 1538 normals)
+2020-01-24 22:27:57	--	PvNotice(ChanServ): Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+2020-01-24 22:27:57	--	URL for #debian: http://www.debian.org
+2020-01-24 22:27:59	--	Channel created on Sat, 10 Feb 2001 00:16:24
+2020-01-24 22:28:10	<--	elfatherbrown (~elfatherb@200.68.176.195) has quit (Ping timeout: 240 seconds)
+2020-01-24 22:29:35	<--	bhoman (~quassel@pool-108-35-122-201.nwrknj.fios.verizon.net) has quit (Read error: Connection reset by peer)
+2020-01-24 22:29:54	-->	bhoman (~quassel@pool-108-35-122-201.nwrknj.fios.verizon.net) has joined #debian
+2020-01-24 22:30:22	mtcdood	yes, I am
+2020-01-24 22:30:47	mtcdood	they specifically say they're not going to relay for that email address
+2020-01-24 22:31:41	<--	clixkhouse (~androirc@89-83-167-245.abo.bbox.fr) has quit (Read error: Connection reset by peer)
+2020-01-24 22:32:26	-->	jmarion (~jmarion@unaffiliated/jmarion) has joined #debian
+2020-01-24 22:33:02	jhutchins_wk	jsync2: Ot
+2020-01-24 22:33:13	<--	eh_hawk (~ehhawk@ool-18bbef1a.static.optonline.net) has quit (Quit: Ciao)
+2020-01-24 22:33:19	<--	dgallant0 (~dgallant@CPE98dac4988f09-CMbc4dfbbc35d0.cpe.net.fido.ca) has quit (Ping timeout: 265 seconds)
+2020-01-24 22:33:26	<--	towo` (~towo@unaffiliated/towo/x-4064351) has quit (Quit: Leaving)
+2020-01-24 22:33:28	jhutchins_wk	jsync2: It's not like I've memorized it.  In the 90's I used that to build SOHO routers and internet dialers.
+2020-01-24 22:33:44	-->	dgallant0 (~dgallant@fitz10681.telemetry.esentire.com) has joined #debian
+2020-01-24 22:34:35	-->	pancho (~pancho@nag77-2-83-152-154-106.fbx.proxad.net) has joined #debian
+2020-01-24 22:34:40	mtcdood	"From: <mtcdood@deb1020ts.mtcdood.me> to: <mtcdood@deb1020ts.mtcdood.me>"
+2020-01-24 22:34:45	mtcdood	it literally ignores its own configuration
+2020-01-24 22:35:09	mtcdood	 /etc/nullmailer/defaultdomain does not contain that host part
+2020-01-24 22:35:22	<--	soee (~soee@192.166.255.245) has quit (Ping timeout: 240 seconds)
+2020-01-24 22:35:58	jsync2	Aha.
+2020-01-24 22:36:12	mtcdood	nor does /etc/adminaddr
+2020-01-24 22:36:39	-->	Peyam (~maroufi@c83-250-236-236.bredband.comhem.se) has joined #debian
+2020-01-24 22:37:30	<--	TorpedoSkyline (~TorpedoSk@unaffiliated/torpedoskyline) has quit (Quit: My MacBook has gone to sleep. ZZZzzz?)
+2020-01-24 22:37:30	<--	lcabrera___ (~desarroll@static-237-241-26-46.ipcom.comunitel.net) has quit (Read error: Connection reset by peer)
+2020-01-24 22:37:59	-->	lcabrera___ (~desarroll@static-237-241-26-46.ipcom.comunitel.net) has joined #debian
+2020-11-25 20:10:20	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #debian
+2020-11-25 20:10:20	--	Topic for #debian is "Current Debian release is buster, 10.6 point release /msg dpkg 10.6; /msg dpkg buster; /msg dpkg stretch->buster; /msg dpkg apt suite changed | Stretch has limited LTS support: /msg dpkg stretch-lts ; /msg dpkg 9.13 | NO FLOOD: /msg dpkg paste | offtopic: #debian-offtopic | testing/unstable: #debian-next @ irc.oftc.net | chanlogs: /msg dpkg irclog"
+2020-11-25 20:10:20	--	Topic set by themill (~stuart@unaffiliated/themill) on Mon, 28 Sep 2020 08:26:34
+2020-11-25 20:10:20	--	Channel #debian: 1179 nicks (2 ops, 0 voices, 1177 normals)
+2020-11-25 20:10:20	--	PvNotice(ChanServ): Welcome to #Debian. This is a discussion channel; if you have a question about Debian GNU/Linux, ask and we will try our best to answer it. Newcomers should read the channel's guidelines by typing "/msg dpkg guidelines". Please do not paste in the channel; use #flood instead. Thank you.
+2020-11-25 20:10:20	--	URL for #debian: http://www.debian.org
+2020-11-25 20:10:22	--	Channel created on Sat, 10 Feb 2001 00:16:24
+2020-11-25 20:10:26	captainchris	hey everybody 
+2020-11-25 20:10:42	-->	longears (longears@gateway/vpn/protonvpn/longears) has joined #debian
+2020-11-25 20:10:49	captainchris	I try to create an alias for mpv to use it with cpulimit 
+2020-11-25 20:11:53	captainchris	https://pastebin.com/HXydY6bD
+2020-11-25 20:12:29	captainchris	but I can use $(pgrep mpv) works in bash but not in my function 
+2020-11-25 20:12:52	greycat	well there goes any slight temptation I had to open that URL
+2020-11-25 20:13:02	greycat	so, this "cpulimit" thing isn't an mpv option?
+2020-11-25 20:14:54	captainchris	nope cpulimit is an app to reduce cpu usage 
+2020-11-25 20:15:14	captainchris	when i wathc movie my cpu usage is up to 150%
+2020-11-25 20:15:25	captainchris	and after my computer freeze
+2020-11-25 20:15:30	<--	kreyren (~kreyren@fsf/member/kreyren) has quit (Remote host closed the connection)
+2020-11-25 20:15:33	<--	Ramle (~Ramle@host-85-201-5-216.dynamic.voo.be) has quit (Quit: WeeChat 2.8)
+2020-11-25 20:15:58	greycat	Then we would have to know how this cpulimit application works....
+2020-11-25 20:16:05	taman	captainchris, won't your line 2 run only after mpv has finished?
+2020-11-25 20:16:20	greycat	Hmm, there is a package named "cpulimit".
+2020-11-25 20:16:25	-->	Ramle (~Ramle@host-85-201-5-216.dynamic.voo.be) has joined #debian
+2020-11-25 20:16:34	captainchris	taman
+2020-11-25 20:16:46	captainchris	nope echo doesn't print anything
+2020-11-25 20:17:10	 *	greycat finds https://manpages.debian.org/buster/cpulimit/cpulimit.1.en.html
+2020-11-25 20:17:30	taman	captainchris, right because at that time there is no mpv process for it to report (is my theory).
+2020-11-25 20:17:51	captainchris	and how can i do ??
+2020-11-25 20:17:53	scrul00se	captainchris: right, because after mpv has finished, there's no mpv process for pgrep to find.  Try single & to background mpv instead of && to wait for exit status, maybe?
+2020-11-25 20:18:18	greycat	Why are you using pgrep AT ALL?  Doesn't this cpulimit thing handle it all for you?
+2020-11-25 20:18:48	greycat	cpulimit -your -options -here -- mpv --your --mpv --options
+2020-11-25 20:18:50	-->	kreyren (~kreyren@fsf/member/kreyren) has joined #debian
+2020-11-25 20:19:25	scrul00se	Or greycat might point out a much simpler way.  ;)
+2020-11-25 20:20:23	greycat	All I did was guess that there might be a program with that name, look for its man page on manpages.debian.org, and read it.
+2020-11-25 20:20:42	<--	asc (asc@6thpan.com) has left #debian
+2020-11-25 20:20:51	-->	short-bike (~short-bik@psychotic/community/short-bike) has joined #debian
+2020-11-25 20:21:40	<--	Ramle (~Ramle@host-85-201-5-216.dynamic.voo.be) has quit (Quit: WeeChat 2.8)
+2020-11-25 20:21:52	-->	Ramle (~Ramle@host-85-201-5-216.dynamic.voo.be) has joined #debian
+2020-11-25 20:22:58	<--	L0aD1nG (~L0aD1nG@unaffiliated/l0ad1ng) has quit (Ping timeout: 264 seconds)
+2020-11-25 20:25:27	jmcnaught	captainchris: another option is using systemd-run which can also set other limits documented in systemd.resource-control(5).  Something like: systemd-run --user --scope -p CPUQuota=20\% mpv ~/Videos/STEAL_THIS_MOVIE.avi
+2020-11-25 20:26:27	captainchris	jmcnaught: ok I didn't knpw 
+2020-11-25 20:26:49	greycat	Yikes... gonna have to do some deeper research on this one.
+2020-11-25 20:26:52	-->	Texou (~Texou@unaffiliated/texou) has joined #debian
+2020-11-25 20:27:13	greycat	Oh, great, the actual explanations aren't even in man pages.  It's pointing me to two .txt files.
+2020-11-25 20:27:17	<--	packagecompare (8a80f8f8@138.128.248.248) has quit (Remote host closed the connection)
+2020-11-25 20:30:08	captainchris	doesn't works well systemd. if I speed up the movie cpu usage is 140%
+2020-11-25 20:31:27	scrul00se	jmcnaught: Oooh, neat! I didn't know about systemd-run.
+2020-11-25 20:31:44	-->	nt1036 (~nt1036@2605:e000:1805:4ebb:34d0:4fc:b6ce:8949) has joined #debian
+2020-11-25 20:32:07	captainchris	greycat cpulimit need a app name or a PID app name returns me a segmentation fault
+2020-11-25 20:32:52	greycat	well, if the program doesn't do what its man page says, then I certainly can't help you with it.  file a bug report.
+2020-11-25 20:33:01	greycat	I'd never even heard of it before today.
+2020-11-25 20:33:49	<--	lucad111 (~lucad111@linaro/lucad111) has quit (Quit: Leaving)
+2020-11-25 20:33:53	greycat	I will note that the examples in the man page are not organized the way I would have organized them.  The stupid one is first, and the sensible one ("launch firefox and throttle it") is near the end.
+2020-11-25 20:34:12	<--	foka (~foka@198-48-139-15.cpe.pppoe.ca) has quit (Read error: Connection reset by peer)
+2020-11-25 20:34:44	<--	nksegos (Thunderbir@gateway/vpn/mullvad/nksegos) has quit (Ping timeout: 240 seconds)
+2020-11-25 20:36:22	-->	foka (~foka@198-48-139-15.cpe.pppoe.ca) has joined #debian
+2020-11-25 20:36:39	-->	L0aD1nG (~L0aD1nG@unaffiliated/l0ad1ng) has joined #debian
+2020-11-25 20:36:50	scrul00se	I will add that the project looks very abandoned, with a github repo that hasn't had an update in 6 years: https://github.com/opsengine/cpulimit
+2020-11-25 20:37:21	-->	pvdp6655644 (~pvdp@180-150-101-81.b49665.bne.static.aussiebb.net) has joined #debian
+2020-11-25 20:37:33	greycat	and the dates on the .txt files that systemd-run was using as a reference was about 5 years ago
+2020-11-25 20:38:24	greycat	I guess the concept of "write a userspace supervisor program that will continually -STOP and -CONT a monitored application" was tossed aside when someone decided to make the kernel do it
+2020-11-25 20:40:12	-->	AvatarA (~avatara@unaffiliated/avatara) has joined #debian
+2020-11-25 20:41:18	<--	brondif (~brondif@dgd9-cyfwlxw---tr7zvt-3.rev.dnainternet.fi) has left #debian ("Leaving")
+2020-11-25 20:42:08	<--	mklvr (~flingtoad@unaffiliated/mklvr) has quit (Ping timeout: 260 seconds)
+2020-11-25 20:44:48	-->	jaren999 (~cyr4x3@139.47.121.51) has joined #debian
+2020-11-25 20:44:52	-->	platvoeten (~platvoete@185.238.52.74) has joined #debian
+2020-11-25 20:45:35	<--	jaren999 (~cyr4x3@139.47.121.51) has quit (Client Quit)
+2020-11-25 20:45:53	-->	jaren999 (~cyr4x3@139.47.121.51) has joined #debian
+2020-11-25 20:49:12	<--	jaren999 (~cyr4x3@139.47.121.51) has quit (Client Quit)
+2020-11-25 20:50:43	scrul00se	Would it make sense to simply "nice" mpv, eg nice -n 10 mpv ~/Videos/STEAL_THIS_MOVIE.avi
+2020-11-25 20:50:59	greycat	that wouldn't reduce CPU usage
+2020-11-25 20:51:17	<--	kreyren (~kreyren@fsf/member/kreyren) has quit (Remote host closed the connection)
+2020-11-25 20:52:23	greycat	near as I can tell, the actual issue is "my laptop(?) overheats and shuts down if I transcode videos... but instead of fixing that issue, I still want to transcode videos on my broken hardware, but I need a monkey to flip the slow/fast switch a hundred times a second for me"
+2020-11-25 20:53:03	<--	cybercrypto (~morpheus@gateway/tor-sasl/cybercrypto) has quit (Ping timeout: 240 seconds)
+2020-11-25 20:53:27	-->	cybercrypto (~morpheus@gateway/tor-sasl/cybercrypto) has joined #debian
+2020-11-25 20:53:46	scrul00se	Ah. So... this may be a dumb question, but "when someone decided to make the kernel do it" — Is there an obvious userland interface to turn that knob up and down?
+2020-11-25 20:54:21	-->	ndegruchy (~nathan@fsf/member/ndegruchy) has joined #debian
+2020-11-25 20:55:00	greycat	we were just talking about one, called "cpulimit"
+2020-11-25 20:55:36	<--	m0u_ (~m0u@unaffiliated/m0u) has quit (Ping timeout: 240 seconds)

@@ -1,0 +1,11 @@
+configuration {
+        modi: "window,drun,ssh,combi";
+        show-icons:         true;
+        icon-theme:         "Papirus";
+	lines: 8;
+	font: "Hack 9";
+	terminal: "termite";
+	ssh-client: "ssh";
+	ssh-command: "{terminal} -e "{ssh-client} {host}"";
+	theme: "/usr/share/rofi/themes/glue_pro_blue.rasi";
+}

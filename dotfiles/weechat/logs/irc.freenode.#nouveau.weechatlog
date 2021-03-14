@@ -1,0 +1,61 @@
+2020-11-15 13:06:04	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #nouveau
+2020-11-15 13:06:04	--	Topic for #nouveau is "[logged] https://nouveau.freedesktop.org - Please read TroubleShooting, Bugs and FAQ first. Logs at https://people.freedesktop.org/~cbrill/dri-log/index.php"
+2020-11-15 13:06:04	--	Topic set by RSpliet (~RSpliet@5ED365C0.cm-7-4b.dynamic.ziggo.nl) on Tue, 23 May 2017 19:54:27
+2020-11-15 13:06:04	--	Channel #nouveau: 152 nicks (1 op, 0 voices, 151 normals)
+2020-11-15 13:06:06	--	Channel created on Sun, 26 Nov 2006 07:42:45
+2020-11-15 13:06:08	captainchris	hi everybody
+2020-11-15 13:06:41	captainchris	I installed xf86-video-nouveau on archlinux but qutebrowser and my 2D Games made in SFML doesn't work 
+2020-11-15 13:06:52	captainchris	I think it's openGL problem 
+2020-11-22 11:22:28	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #nouveau
+2020-11-22 11:22:28	--	Topic for #nouveau is "[logged] https://nouveau.freedesktop.org - Please read TroubleShooting, Bugs and FAQ first. Logs at https://people.freedesktop.org/~cbrill/dri-log/index.php"
+2020-11-22 11:22:28	--	Topic set by RSpliet (~RSpliet@5ED365C0.cm-7-4b.dynamic.ziggo.nl) on Tue, 23 May 2017 19:54:27
+2020-11-22 11:22:28	--	Channel #nouveau: 152 nicks (1 op, 0 voices, 151 normals)
+2020-11-22 11:22:30	--	Channel created on Sun, 26 Nov 2006 07:42:45
+2020-11-22 11:22:32	captainchris	hi everybody 
+2020-11-22 11:23:45	captainchris	I have a old nvidia gt240. with nvidia-driver-340xx its works fine but with nouveau driver vdpauinfo says alll codecs no supported and when i watch movie the cpu usage up to 140% and my computer freeze 
+2020-11-22 11:24:28	-->	herbas (~herbas@88.118.170.138) has joined #nouveau
+2020-11-22 11:44:20	-->	towo` (~towo@unaffiliated/towo/x-4064351) has joined #nouveau
+2020-11-22 11:48:50	<--	herbas (~herbas@88.118.170.138) has quit (Quit: herbas)
+2020-11-22 11:50:50	<--	sem2peie (~sem2peie@unaffiliated/sem2peie) has quit (Ping timeout: 256 seconds)
+2020-11-22 11:51:52	-->	mmu_man (~revol@vaf26-2-82-244-111-82.fbx.proxad.net) has joined #nouveau
+2020-11-22 11:57:44	-->	sem2peie (~sem2peie@unaffiliated/sem2peie) has joined #nouveau
+2020-11-22 11:57:44	<--	soreau (~soreau@unaffiliated/soreau) has quit (Read error: Connection reset by peer)
+2020-11-22 11:58:16	-->	soreau (~soreau@unaffiliated/soreau) has joined #nouveau
+2020-11-22 12:19:34	-->	sem2peie- (~sem2peie@unaffiliated/sem2peie) has joined #nouveau
+2020-11-22 12:19:53	<--	sem2peie (~sem2peie@unaffiliated/sem2peie) has quit (Ping timeout: 256 seconds)
+2020-11-22 12:19:53	--	sem2peie- is now known as sem2peie
+2020-11-22 12:34:29	-->	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has joined #nouveau
+2020-11-22 13:46:24	SolarAquarion	what's going on with nv130 with Hardware Acceleration
+2020-11-22 13:52:32	SolarAquarion	nv130 is i guess in "mesa"
+2020-11-22 13:53:06	HdkR	It's Pascal so it's supported in mesa
+2020-11-22 13:54:29	HdkR	But what sort of hardware acceleration? 3D? Video?
+2020-11-22 13:55:27	SolarAquarion	HdkR: Video
+2020-11-22 13:57:56	<--	Kevlar_Noir (~manjaro-u@2a01:e0a:5d7:e1e0:7aa9:cb75:c7b2:95f3) has quit (Quit: Konversation terminated!)
+2020-11-22 13:58:46	HdkR	ah, you're in for a bad time then
+2020-11-22 14:00:46	<--	YuGiOhJCJ (~YuGiOhJCJ@gateway/tor-sasl/yugiohjcj) has quit (Quit: YuGiOhJCJ)
+2020-11-22 14:16:01	captainchris	hi everybody 
+2020-11-22 14:16:03	captainchris	I have a old nvidia gt240. with nvidia-driver-340xx its works fine but with nouveau driver vdpauinfo says alll codecs no supported and when i watch movie the cpu usage up to 140% and my computer freeze 
+2020-12-06 13:02:37	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #nouveau
+2020-12-06 13:02:37	--	Topic for #nouveau is "[logged] https://nouveau.freedesktop.org - Please read TroubleShooting, Bugs and FAQ first. Logs at https://people.freedesktop.org/~cbrill/dri-log/index.php"
+2020-12-06 13:02:37	--	Topic set by RSpliet (~RSpliet@5ED365C0.cm-7-4b.dynamic.ziggo.nl) on Tue, 23 May 2017 19:54:27
+2020-12-06 13:02:37	--	Channel #nouveau: 146 nicks (1 op, 0 voices, 145 normals)
+2020-12-06 13:02:38	--	Channel created on Sun, 26 Nov 2006 07:42:45
+2020-12-06 13:03:49	captainchris	Hi everybody. I have an old nvidia gt240 with nouveau driver it works fine for basic usage. If i watch movie with mpv. MPV uses gpu instead of vdpau-copy. Is it normal ?? 
+2020-12-06 13:04:49	captainchris	I can't use vdpau to watch movie. I set VDPAU_DRIVER="nouveau" and DRI_PRIME=1 
+2020-12-06 13:07:50	-->	infinity0 (~infinity0@freenet/developer/infinity0) has joined #nouveau
+2020-12-06 13:23:18	-->	jschwart (~quassel@2001:985:2c6e:1:de9d:8b89:ba10:5a08) has joined #nouveau
+2020-12-06 13:25:49	jschwart	hi all, I'm facing a system with a "NVIDIA Corporation GF116 [GeForce GTS 450 Rev. 2]", the NVIDIA drivers do not work very well, Nouveau as provided by the OS is 1.0.16 (last release but 22 months old?)
+2020-12-06 13:26:29	jschwart	the system is primarily used for basic web browsing and so on with a single screen attached, would switching to Nouveau likely work better?
+2020-12-06 13:28:16	captainchris	jschwart: and when you watch movie the computer freeze ???
+2020-12-06 13:37:32	jschwart	captainchris: no, that I didn't see
+2020-12-06 13:39:34	<--	paulk-leonov (~paulk-leo@leonov.paulk.fr) has quit (Ping timeout: 260 seconds)
+2020-12-06 13:44:52	ZenWalker	seems kernel 5.9 has problems with nouveau driver
+2020-12-06 13:46:11	captainchris	ZenWalker: I have 5.8.18 kernel 
+2020-12-06 13:49:21	-->	paulk-leonov (~paulk-leo@vpn-0-22.aquilenet.fr) has joined #nouveau
+2020-12-06 13:50:01	-->	Kevlar_Noir (~manjaro-u@2a01:e0a:5d7:e1e0:b216:d9d5:ea89:4001) has joined #nouveau
+2020-12-06 14:09:33	juri_	I'm having infrequent freezes with kernel errors on 5.9, using both displays of a quadro 600. it doesn't take the machine out, but the first restart of xdm gives me garbled displays, the second one brings online the dvi display (leaving the display port one black). a full reboot gets me both displays again.
+2020-12-06 14:10:03	juri_	not a complaint, just an observation. keep up the good work, and let me know if i can help in any way.
+2020-12-06 14:13:55	<--	gnustomp (~gnustomp@fedora/gnustomp) has quit (Read error: Connection reset by peer)
+2020-12-06 14:14:41	-->	gnustomp (~gnustomp@fedora/gnustomp) has joined #nouveau
+2020-12-06 14:20:09	ZenWalker	captainchris: I have now 5.8 because 5.9 is unusable for me
+2020-12-06 14:33:17	<--	gnustomp (~gnustomp@fedora/gnustomp) has quit (Read error: Connection reset by peer)

@@ -1,0 +1,10 @@
+2020-04-05 11:08:58	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #vim-fr
+2020-04-05 11:08:58	--	Topic for #vim-fr is "Bienvenue sur le salon d'aide de Vim francophone | https://tuppervim.org |  /!\ TOUS LES ÉVÈNEMENTS SONT ANNULÉS POUR CAUSE DE COVID-19"
+2020-04-05 11:08:58	--	Topic set by maggick (~maggick@keller.lc) on Sat, 14 Mar 2020 10:45:44
+2020-04-05 11:08:58	--	Channel #vim-fr: 54 nicks (5 ops, 0 voices, 49 normals)
+2020-04-05 11:08:58	--	URL for #vim-fr: http://www.vim-fr.org
+2020-04-05 11:09:00	--	Channel created on Tue, 27 Jan 2009 06:27:23
+2020-04-05 11:09:05	captainchris	salut tout le monde 
+2020-04-05 11:09:39	captainchris	J'ai installé latex-live-preview pour créer mes docs en latex.
+2020-04-05 11:10:18	captainchris	J'ai utilisé vim-plug sous linux. Par contre je n'ai pas la command LLPStartPreview
+2020-04-05 11:10:38	captainchris	J'ai aussi essaye d'installé neotex, pareil par de command

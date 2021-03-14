@@ -1,0 +1,1164 @@
+2020-01-24 21:02:15		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2020-01-24 21:02:15		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2020-01-24 21:02:15		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2020-01-24 21:02:15		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2020-01-24 21:02:15		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2020-01-24 21:02:15		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2020-01-24 21:02:15		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2020-01-24 21:02:15		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2020-01-24 21:02:15		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2020-01-24 21:02:15		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2020-01-24 21:02:15		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2020-01-24 21:02:15		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2020-01-24 21:02:15		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2020-01-24 21:02:15		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2020-01-24 21:02:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-24 21:02:54	=!=	irc: unable to add temporary server "freenode" because the addition of temporary servers with command /connect is currently disabled
+2020-01-24 21:02:54	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-01-24 21:05:03		irc: server freenode added
+2020-01-24 21:05:49		Option changed: irc.server.freenode.nicks = "captainchris,chris06,chrisNick"  (default if null: "captainchris,captainchris1,captainchris2,captainchris3,captainchris4")
+2020-01-24 21:08:33		[script]  /script  list [-o|-ol|-i|-il]
+2020-01-24 21:08:33		                   search <text>
+2020-01-24 21:08:33		                   show <script>
+2020-01-24 21:08:33		                   load|unload|reload <script> [<script>...]
+2020-01-24 21:08:33		                   autoload|noautoload|toggleautoload <script> [<script>...]
+2020-01-24 21:08:33		                   install|remove|installremove|hold [-q] <script> [<script>...]
+2020-01-24 21:08:33		                   upgrade
+2020-01-24 21:08:33		                   update
+2020-01-24 21:08:33		WeeChat script manager
+2020-01-24 21:08:33		          list: list loaded scripts (all languages)
+2020-01-24 21:08:33		            -o: send list of loaded scripts to buffer (string in English)
+2020-01-24 21:08:33		           -ol: send list of loaded scripts to buffer (translated string)
+2020-01-24 21:08:33		            -i: copy list of loaded scripts in command line (for sending to buffer) (string in English)
+2020-01-24 21:08:33		           -il: copy list of loaded scripts in command line (for sending to buffer) (translated string)
+2020-01-24 21:08:33		        search: search scripts by tags, language (python, perl, ...), filename extension (py, pl, ...) or text; result is displayed on scripts buffer
+2020-01-24 21:08:33		          show: show detailed info about a script
+2020-01-24 21:08:33		          load: load script(s)
+2020-01-24 21:08:33		        unload: unload script(s)
+2020-01-24 21:08:33		        reload: reload script(s)
+2020-01-24 21:08:33		      autoload: autoload the script
+2020-01-24 21:08:33		    noautoload: do not autoload the script
+2020-01-24 21:08:33		toggleautoload: toggle autoload
+2020-01-24 21:08:33		       install: install/upgrade script(s)
+2020-01-24 21:08:33		        remove: remove script(s)
+2020-01-24 21:08:33		 installremove: install or remove script(s), depending on current state
+2020-01-24 21:08:33		          hold: hold/unhold script(s) (a script held will not be upgraded any more and cannot be removed)
+2020-01-24 21:08:33		            -q: quiet mode: do not display messages
+2020-01-24 21:08:33		       upgrade: upgrade all installed scripts which are obsolete (new version available)
+2020-01-24 21:08:33		        update: update local scripts cache
+2020-01-24 21:08:33		Without argument, this command opens a buffer with list of scripts.
+2020-01-24 21:08:33		On script buffer, the possible status for each script are:
+2020-01-24 21:08:33		  * i a H r N
+2020-01-24 21:08:33		  | | | | | |
+2020-01-24 21:08:33		  | | | | | obsolete (new version available)
+2020-01-24 21:08:33		  | | | | running (loaded)
+2020-01-24 21:08:33		  | | | held
+2020-01-24 21:08:33		  | | autoloaded
+2020-01-24 21:08:33		  | installed
+2020-01-24 21:08:33		  popular script
+2020-01-24 21:08:33		Keys on script buffer:
+2020-01-24 21:08:33		  alt+i  install script
+2020-01-24 21:08:33		  alt+r  remove script
+2020-01-24 21:08:33		  alt+l  load script
+2020-01-24 21:08:33		  alt+L  reload script
+2020-01-24 21:08:33		  alt+u  unload script
+2020-01-24 21:08:33		  alt+A  autoload script
+2020-01-24 21:08:33		  alt+h  (un)hold script
+2020-01-24 21:08:33		  alt+v  view script
+2020-01-24 21:08:33		Input allowed on script buffer:
+2020-01-24 21:08:33		  i/r/l/L/u/A/h/v  action on script (same as keys above)
+2020-01-24 21:08:33		  q                close buffer
+2020-01-24 21:08:33		  $                refresh buffer
+2020-01-24 21:08:33		  s:x,y            sort buffer using keys x and y (see /help script.look.sort)
+2020-01-24 21:08:33		  s:               reset sort (use default sort)
+2020-01-24 21:08:33		  word(s)          filter scripts: search word(s) in scripts (description, tags, ...)
+2020-01-24 21:08:33		  *                remove filter
+2020-01-24 21:08:33		Mouse actions on script buffer:
+2020-01-24 21:08:33		  wheel         scroll list
+2020-01-24 21:08:33		  left button   select script
+2020-01-24 21:08:33		  right button  install/remove script
+2020-01-24 21:08:33		Examples:
+2020-01-24 21:08:33		  /script search url
+2020-01-24 21:08:33		  /script install go.py urlserver.py
+2020-01-24 21:08:33		  /script remove go.py
+2020-01-24 21:08:33		  /script hold urlserver.py
+2020-01-24 21:08:33		  /script reload urlserver
+2020-01-24 21:08:33		  /script upgrade
+2020-01-24 21:09:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-24 21:17:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-24 21:17:21	=!=	irc: command "nick" must be executed on irc buffer (server, channel or private)
+2020-01-24 22:16:09		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-24 22:16:55		Option changed: irc.server.freenode.command = ""msg NickServ identify 87295986"  (default if null: "")
+2020-01-24 22:16:58		Option changed: irc.server.freenode.command = "msg NickServ identify 87295986"  (default if null: "")
+2020-01-24 22:18:31	=!=	Error: WeeChat main buffer can't be closed
+2020-01-24 22:18:44	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2020-01-24 22:18:52	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2020-01-24 22:19:06	=!=	irc: command "join" must be executed on connected irc server
+2020-01-24 22:27:42		Buffers list:
+2020-01-24 22:27:42		  [1] core.weechat (notify: all)
+2020-01-24 22:27:42		  [1] irc.server.freenode (notify: all)
+2020-01-24 22:27:42		  [2] irc.freenode.#debian (notify: all)
+2020-01-24 22:27:49		Windows list:
+2020-01-24 22:27:49		[1] (12:0;127x53) 
+2020-01-24 22:28:27		Buffers list:
+2020-01-24 22:28:27		  [1] core.weechat (notify: all)
+2020-01-24 22:28:27		  [1] irc.server.freenode (notify: all)
+2020-01-24 22:28:27		  [2] irc.freenode.#debian (notify: all)
+2020-01-24 22:28:27		  [3] irc.freenode.#gentoo (notify: all)
+2020-01-24 22:28:27		  [4] irc.freenode.#weechat (notify: all)
+2020-01-24 22:38:31	=!=	Error: unknown command "/clos" (type /help for help)
+2020-01-24 22:40:36		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-24 22:40:51		python scripts loaded:
+2020-01-24 22:40:51		  (none)
+2020-01-24 22:40:56	=!=	Error: unknown command "/ruby" (type /help for help)
+2020-01-24 22:43:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-24 22:44:24	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2020-01-24 22:44:36		irc: server rootme added
+2020-01-24 22:48:09		script: downloading list of scripts...
+2020-01-24 22:48:09		script: 364 scripts for WeeChat 2.7
+2020-01-24 22:50:10	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2020-01-24 22:50:21	=!=	irc: already connected to server "freenode"!
+2020-01-25 11:40:25		script: 364 scripts for WeeChat 2.7
+2020-01-25 11:40:25		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-25 11:40:39	=!=	irc: command "join" must be executed on connected irc server
+2020-01-25 11:40:56		Windows list:
+2020-01-25 11:40:56		[1] (11:0;128x54) 
+2020-01-25 11:40:57	=!=	Error: unknown command "/windows" (type /help for help)
+2020-01-25 11:47:15	=!=	Error: unknown command "/quert" (type /help for help)
+2020-01-25 11:47:41	=!=	Error: unknown command "/q[uery]" (type /help for help)
+2020-01-25 11:48:01	=!=	Error: unknown command "/q[uery]" (type /help for help)
+2020-01-25 20:14:51		script: 364 scripts for WeeChat 2.7
+2020-01-25 20:14:51		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-26 20:49:35		script: downloading list of scripts...
+2020-01-26 20:49:35		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-26 20:49:35		script: 364 scripts for WeeChat 2.7
+2020-01-30 20:05:32		script: downloading list of scripts...
+2020-01-30 20:05:32		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-01-30 20:05:33		script: 364 scripts for WeeChat 2.7
+2020-02-08 17:23:27		script: downloading list of scripts...
+2020-02-08 17:23:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-08 17:23:27		script: 364 scripts for WeeChat 2.7
+2020-02-08 21:28:58		script: 364 scripts for WeeChat 2.7
+2020-02-08 21:28:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-09 13:36:23		script: 364 scripts for WeeChat 2.7
+2020-02-09 13:36:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-09 20:57:30		script: downloading list of scripts...
+2020-02-09 20:57:30		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-09 20:57:30		script: 364 scripts for WeeChat 2.7
+2020-02-09 21:04:18		script: 364 scripts for WeeChat 2.7
+2020-02-09 21:04:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-12 21:24:56		script: downloading list of scripts...
+2020-02-12 21:24:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-12 21:24:56		script: 364 scripts for WeeChat 2.7
+2020-02-13 08:59:48		script: 364 scripts for WeeChat 2.7
+2020-02-13 08:59:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-13 19:26:23		script: 364 scripts for WeeChat 2.7
+2020-02-13 19:26:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-13 22:26:22		script: downloading list of scripts...
+2020-02-13 22:26:22		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-13 22:26:22		script: 364 scripts for WeeChat 2.7
+2020-02-17 18:30:05		script: downloading list of scripts...
+2020-02-17 18:30:05		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-17 18:30:06		script: 364 scripts for WeeChat 2.7
+2020-02-18 18:34:22		script: downloading list of scripts...
+2020-02-18 18:34:22		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-18 18:34:22		script: 364 scripts for WeeChat 2.7
+2020-02-29 13:19:11		script: downloading list of scripts...
+2020-02-29 13:19:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-02-29 13:19:11		script: 364 scripts for WeeChat 2.7.1
+2020-03-02 20:55:20		script: downloading list of scripts...
+2020-03-02 20:55:20		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-02 20:55:21		script: 364 scripts for WeeChat 2.7.1
+2020-03-09 14:04:37		script: downloading list of scripts...
+2020-03-09 14:04:37		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-09 14:04:38		script: 364 scripts for WeeChat 2.7.1
+2020-03-17 17:31:26		script: downloading list of scripts...
+2020-03-17 17:31:26		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-17 17:31:27		script: 364 scripts for WeeChat 2.7.1
+2020-03-20 21:01:51		script: downloading list of scripts...
+2020-03-20 21:01:51		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-20 21:01:51		script: 364 scripts for WeeChat 2.7.1
+2020-03-22 12:14:52		script: downloading list of scripts...
+2020-03-22 12:14:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-22 12:15:19		script: downloading list of scripts...
+2020-03-22 12:15:19		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-22 12:15:20		script: 364 scripts for WeeChat 2.7.1
+2020-03-23 11:00:59		script: 364 scripts for WeeChat 2.7.1
+2020-03-23 11:00:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-23 11:01:46		script: 364 scripts for WeeChat 2.7.1
+2020-03-23 11:01:46		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-23 14:57:40	=!=	You can not write text in this buffer
+2020-03-23 22:19:24		script: downloading list of scripts...
+2020-03-23 22:19:24		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-23 22:19:25		script: 364 scripts for WeeChat 2.7.1
+2020-03-24 11:55:52		script: 364 scripts for WeeChat 2.7.1
+2020-03-24 11:55:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 10:26:27		script: downloading list of scripts...
+2020-03-25 10:26:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 10:26:28		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 21:26:43		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 21:26:43		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 21:38:06		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 21:38:06		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 21:47:08		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 21:47:08		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 21:48:31		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 21:48:31		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 21:54:15		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 21:54:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 22:11:28	=!=	irc: command "join" must be executed on connected irc server
+2020-03-25 22:32:40		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 22:32:40		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 22:52:59		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 22:52:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 22:53:47		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 22:53:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 22:54:36		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 22:54:36		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-25 23:24:11		script: 364 scripts for WeeChat 2.7.1
+2020-03-25 23:24:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-26 11:35:16		script: downloading list of scripts...
+2020-03-26 11:35:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-26 11:35:16		script: 364 scripts for WeeChat 2.7.1
+2020-03-26 16:08:12		script: 364 scripts for WeeChat 2.7.1
+2020-03-26 16:08:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-26 16:24:59	=!=	irc: command "join" must be executed on connected irc server
+2020-03-26 16:25:50		script: 364 scripts for WeeChat 2.7.1
+2020-03-26 16:25:50		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-26 18:37:36		script: 364 scripts for WeeChat 2.7.1
+2020-03-26 18:37:36		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-26 18:39:02		script: 364 scripts for WeeChat 2.7.1
+2020-03-26 18:39:02		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-26 18:39:45		script: 364 scripts for WeeChat 2.7.1
+2020-03-26 18:39:45		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-28 09:45:00		script: downloading list of scripts...
+2020-03-28 09:45:00		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-28 09:45:00		script: 364 scripts for WeeChat 2.7.1
+2020-03-29 11:29:58		script: downloading list of scripts...
+2020-03-29 11:29:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-29 11:29:59		script: 364 scripts for WeeChat 2.7.1
+2020-03-29 11:30:08	=!=	irc: unable to add temporary server "#freenode" because the addition of temporary servers with command /connect is currently disabled
+2020-03-29 11:30:08	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-03-30 20:49:47		script: downloading list of scripts...
+2020-03-30 20:49:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-03-30 20:49:48		script: 364 scripts for WeeChat 2.7.1
+2020-03-31 10:52:13		script: 364 scripts for WeeChat 2.7.1
+2020-03-31 10:52:13		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-01 11:17:18		script: downloading list of scripts...
+2020-04-01 11:17:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-01 11:17:18		script: 364 scripts for WeeChat 2.7.1
+2020-04-01 23:35:03	=!=	irc: unable to add temporary server "oftc" because the addition of temporary servers with command /connect is currently disabled
+2020-04-01 23:35:03	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-04-02 11:14:50		script: 364 scripts for WeeChat 2.7.1
+2020-04-02 11:14:50		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-02 20:58:44		script: downloading list of scripts...
+2020-04-02 20:58:44		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-02 20:58:45		script: 364 scripts for WeeChat 2.7.1
+2020-04-03 20:54:27		script: 364 scripts for WeeChat 2.7.1
+2020-04-03 20:54:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-04 10:21:17		script: downloading list of scripts...
+2020-04-04 10:21:17		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-04 10:21:18		script: 364 scripts for WeeChat 2.7.1
+2020-04-04 10:44:11		script: 364 scripts for WeeChat 2.7.1
+2020-04-04 10:44:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-04 11:46:45		script: 364 scripts for WeeChat 2.7.1
+2020-04-04 11:46:45		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-05 10:15:15		script: 364 scripts for WeeChat 2.7.1
+2020-04-05 10:15:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-05 11:25:48		script: downloading list of scripts...
+2020-04-05 11:25:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-05 11:25:49		script: 364 scripts for WeeChat 2.8
+2020-04-05 11:26:39	=!=	irc: unable to add temporary server "#vim" because the addition of temporary servers with command /connect is currently disabled
+2020-04-05 11:26:39	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-04-07 20:56:04		script: downloading list of scripts...
+2020-04-07 20:56:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-07 20:56:05		script: 364 scripts for WeeChat 2.8
+2020-04-08 13:20:10		script: 364 scripts for WeeChat 2.8
+2020-04-08 13:20:10		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-08 20:41:39		script: 364 scripts for WeeChat 2.8
+2020-04-08 20:41:39		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-09 19:13:07		script: downloading list of scripts...
+2020-04-09 19:13:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-09 19:13:08		script: 364 scripts for WeeChat 2.8
+2020-04-11 11:08:24		script: downloading list of scripts...
+2020-04-11 11:08:24		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-11 11:08:25		script: 364 scripts for WeeChat 2.8
+2020-04-15 22:28:48		script: downloading list of scripts...
+2020-04-15 22:28:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-15 22:28:48		script: 364 scripts for WeeChat 2.8
+2020-04-17 17:37:29		script: downloading list of scripts...
+2020-04-17 17:37:29		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-17 17:37:29		script: 364 scripts for WeeChat 2.8
+2020-04-18 17:07:07		script: 364 scripts for WeeChat 2.8
+2020-04-18 17:07:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-19 11:07:15		script: downloading list of scripts...
+2020-04-19 11:07:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-19 11:07:15		script: 364 scripts for WeeChat 2.8
+2020-04-19 17:05:26		script: 364 scripts for WeeChat 2.8
+2020-04-19 17:05:26		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-19 17:05:36	=!=	irc: unable to add temporary server "frenode" because the addition of temporary servers with command /connect is currently disabled
+2020-04-19 17:05:36	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-04-20 22:03:51		script: downloading list of scripts...
+2020-04-20 22:03:51		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-20 22:03:51		script: 364 scripts for WeeChat 2.8
+2020-04-22 17:49:05		script: downloading list of scripts...
+2020-04-22 17:49:05		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-22 17:49:05		script: 364 scripts for WeeChat 2.8
+2020-04-22 17:49:33		script: 364 scripts for WeeChat 2.8
+2020-04-22 17:49:33		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-22 21:15:09		script: 364 scripts for WeeChat 2.8
+2020-04-22 21:15:09		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-23 11:27:27		script: 364 scripts for WeeChat 2.8
+2020-04-23 11:27:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-23 21:53:06		script: downloading list of scripts...
+2020-04-23 21:53:06		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-23 21:53:07		script: 364 scripts for WeeChat 2.8
+2020-04-23 22:32:11	=!=	Too few arguments for command "/query" (help on command: /help query)
+2020-04-24 13:24:40		script: 364 scripts for WeeChat 2.8
+2020-04-24 13:24:40		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-24 18:46:14		script: 364 scripts for WeeChat 2.8
+2020-04-24 18:46:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-25 21:09:35		script: downloading list of scripts...
+2020-04-25 21:09:35		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-25 21:09:35		script: 364 scripts for WeeChat 2.8
+2020-04-28 11:42:04		script: downloading list of scripts...
+2020-04-28 11:42:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-28 11:42:04		script: 364 scripts for WeeChat 2.8
+2020-04-29 23:01:21		script: downloading list of scripts...
+2020-04-29 23:01:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-04-29 23:01:21		script: 364 scripts for WeeChat 2.8
+2020-06-06 10:03:27		script: downloading list of scripts...
+2020-06-06 10:03:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-06-06 10:03:28		script: 364 scripts for WeeChat 2.8
+2020-07-25 18:16:12		script: downloading list of scripts...
+2020-07-25 18:16:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-07-25 18:16:12		script: 364 scripts for WeeChat 2.8
+2020-08-17 13:38:11		New key binding (context "default"): meta-B => /buflist toggle
+2020-08-17 13:38:12		script: downloading list of scripts...
+2020-08-17 13:38:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-08-17 13:38:12		script: 364 scripts for WeeChat 2.9
+2020-08-17 14:58:28		Options reloaded from sec.conf
+2020-08-17 14:58:28		Options reloaded from weechat.conf
+2020-08-17 14:58:28		Options reloaded from plugins.conf
+2020-08-17 14:58:28		Options reloaded from charset.conf
+2020-08-17 14:58:28		Options reloaded from logger.conf
+2020-08-17 14:58:28		Options reloaded from exec.conf
+2020-08-17 14:58:28		Options reloaded from trigger.conf
+2020-08-17 14:58:28		Options reloaded from spell.conf
+2020-08-17 14:58:28		Options reloaded from alias.conf
+2020-08-17 14:58:28		Options reloaded from buflist.conf
+2020-08-17 14:58:28		Options reloaded from fifo.conf
+2020-08-17 14:58:28		Options reloaded from xfer.conf
+2020-08-17 14:58:28		Options reloaded from irc.conf
+2020-08-17 14:58:28		Options reloaded from relay.conf
+2020-08-17 14:58:28		Options reloaded from lua.conf
+2020-08-17 14:58:28		Options reloaded from tcl.conf
+2020-08-17 14:58:28		Options reloaded from guile.conf
+2020-08-17 14:58:28		Options reloaded from python.conf
+2020-08-17 14:58:28		Options reloaded from perl.conf
+2020-08-17 14:58:28		Options reloaded from script.conf
+2020-08-17 14:58:28		Options reloaded from fset.conf
+2020-08-21 13:56:52		New key binding (context "default"): meta-B => /buflist toggle
+2020-08-21 13:56:53		script: downloading list of scripts...
+2020-08-21 13:56:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-08-21 13:56:54		script: 364 scripts for WeeChat 2.9
+2020-08-21 18:08:32		Options reloaded from sec.conf
+2020-08-21 18:08:32		Options reloaded from weechat.conf
+2020-08-21 18:08:32		Options reloaded from plugins.conf
+2020-08-21 18:08:32		Options reloaded from charset.conf
+2020-08-21 18:08:32		Options reloaded from logger.conf
+2020-08-21 18:08:32		Options reloaded from exec.conf
+2020-08-21 18:08:32		Options reloaded from trigger.conf
+2020-08-21 18:08:32		Options reloaded from spell.conf
+2020-08-21 18:08:32		Options reloaded from alias.conf
+2020-08-21 18:08:32		Options reloaded from buflist.conf
+2020-08-21 18:08:32		Options reloaded from fifo.conf
+2020-08-21 18:08:32		Options reloaded from xfer.conf
+2020-08-21 18:08:32		Options reloaded from irc.conf
+2020-08-21 18:08:32		Options reloaded from relay.conf
+2020-08-21 18:08:32		Options reloaded from lua.conf
+2020-08-21 18:08:32		Options reloaded from tcl.conf
+2020-08-21 18:08:32		Options reloaded from guile.conf
+2020-08-21 18:08:32		Options reloaded from python.conf
+2020-08-21 18:08:32		Options reloaded from perl.conf
+2020-08-21 18:08:32		Options reloaded from script.conf
+2020-08-21 18:08:32		Options reloaded from fset.conf
+2020-09-01 14:37:59		New key binding (context "default"): meta-B => /buflist toggle
+2020-09-01 14:37:59		script: downloading list of scripts...
+2020-09-01 14:37:59		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-09-01 14:38:00		script: 364 scripts for WeeChat 2.9
+2020-09-01 14:42:53		script: 364 scripts for WeeChat 2.9
+2020-09-01 14:42:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-09-01 14:42:58		script: 364 scripts for WeeChat 2.9
+2020-09-01 14:42:58		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-09-01 15:34:43		Options reloaded from sec.conf
+2020-09-01 15:34:43		Options reloaded from weechat.conf
+2020-09-01 15:34:43		Options reloaded from plugins.conf
+2020-09-01 15:34:43		Options reloaded from charset.conf
+2020-09-01 15:34:43		Options reloaded from logger.conf
+2020-09-01 15:34:43		Options reloaded from exec.conf
+2020-09-01 15:34:43		Options reloaded from trigger.conf
+2020-09-01 15:34:43		Options reloaded from spell.conf
+2020-09-01 15:34:43		Options reloaded from alias.conf
+2020-09-01 15:34:43		Options reloaded from buflist.conf
+2020-09-01 15:34:43		Options reloaded from fifo.conf
+2020-09-01 15:34:43		Options reloaded from xfer.conf
+2020-09-01 15:34:43		Options reloaded from irc.conf
+2020-09-01 15:34:43		Options reloaded from relay.conf
+2020-09-01 15:34:43		Options reloaded from lua.conf
+2020-09-01 15:34:43		Options reloaded from tcl.conf
+2020-09-01 15:34:43		Options reloaded from guile.conf
+2020-09-01 15:34:43		Options reloaded from python.conf
+2020-09-01 15:34:43		Options reloaded from perl.conf
+2020-09-01 15:34:43		Options reloaded from script.conf
+2020-09-01 15:34:43		Options reloaded from fset.conf
+2020-09-08 18:35:14		script: downloading list of scripts...
+2020-09-08 18:35:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-09-08 18:35:14		script: 364 scripts for WeeChat 2.9
+2020-09-08 19:39:43		Options reloaded from sec.conf
+2020-09-08 19:39:43		Options reloaded from weechat.conf
+2020-09-08 19:39:43		Options reloaded from plugins.conf
+2020-09-08 19:39:43		Options reloaded from charset.conf
+2020-09-08 19:39:43		Options reloaded from logger.conf
+2020-09-08 19:39:43		Options reloaded from exec.conf
+2020-09-08 19:39:43		Options reloaded from trigger.conf
+2020-09-08 19:39:43		Options reloaded from spell.conf
+2020-09-08 19:39:43		Options reloaded from alias.conf
+2020-09-08 19:39:43		Options reloaded from buflist.conf
+2020-09-08 19:39:43		Options reloaded from fifo.conf
+2020-09-08 19:39:43		Options reloaded from xfer.conf
+2020-09-08 19:39:43		Options reloaded from irc.conf
+2020-09-08 19:39:43		Options reloaded from relay.conf
+2020-09-08 19:39:43		Options reloaded from lua.conf
+2020-09-08 19:39:43		Options reloaded from tcl.conf
+2020-09-08 19:39:43		Options reloaded from guile.conf
+2020-09-08 19:39:43		Options reloaded from python.conf
+2020-09-08 19:39:43		Options reloaded from perl.conf
+2020-09-08 19:39:43		Options reloaded from script.conf
+2020-09-08 19:39:43		Options reloaded from fset.conf
+2020-09-12 12:56:14		script: downloading list of scripts...
+2020-09-12 12:56:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-09-12 12:56:15		script: 364 scripts for WeeChat 2.9
+2020-09-12 14:18:07		Options reloaded from sec.conf
+2020-09-12 14:18:07		Options reloaded from weechat.conf
+2020-09-12 14:18:07		Options reloaded from plugins.conf
+2020-09-12 14:18:07		Options reloaded from charset.conf
+2020-09-12 14:18:07		Options reloaded from logger.conf
+2020-09-12 14:18:07		Options reloaded from exec.conf
+2020-09-12 14:18:07		Options reloaded from trigger.conf
+2020-09-12 14:18:07		Options reloaded from spell.conf
+2020-09-12 14:18:07		Options reloaded from alias.conf
+2020-09-12 14:18:07		Options reloaded from buflist.conf
+2020-09-12 14:18:07		Options reloaded from fifo.conf
+2020-09-12 14:18:07		Options reloaded from xfer.conf
+2020-09-12 14:18:07		Options reloaded from irc.conf
+2020-09-12 14:18:07		Options reloaded from relay.conf
+2020-09-12 14:18:07		Options reloaded from lua.conf
+2020-09-12 14:18:07		Options reloaded from tcl.conf
+2020-09-12 14:18:07		Options reloaded from guile.conf
+2020-09-12 14:18:07		Options reloaded from python.conf
+2020-09-12 14:18:07		Options reloaded from perl.conf
+2020-09-12 14:18:07		Options reloaded from script.conf
+2020-09-12 14:18:07		Options reloaded from fset.conf
+2020-09-20 14:36:35		script: downloading list of scripts...
+2020-09-20 14:36:35		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-09-20 14:36:36		script: 364 scripts for WeeChat 2.9
+2020-09-27 20:11:16		script: downloading list of scripts...
+2020-09-27 20:11:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-09-27 20:11:16		script: 364 scripts for WeeChat 2.9
+2020-09-27 22:37:43		Options reloaded from sec.conf
+2020-09-27 22:37:43		Options reloaded from weechat.conf
+2020-09-27 22:37:43		Options reloaded from plugins.conf
+2020-09-27 22:37:43		Options reloaded from charset.conf
+2020-09-27 22:37:43		Options reloaded from logger.conf
+2020-09-27 22:37:43		Options reloaded from exec.conf
+2020-09-27 22:37:43		Options reloaded from trigger.conf
+2020-09-27 22:37:43		Options reloaded from spell.conf
+2020-09-27 22:37:43		Options reloaded from alias.conf
+2020-09-27 22:37:43		Options reloaded from buflist.conf
+2020-09-27 22:37:43		Options reloaded from fifo.conf
+2020-09-27 22:37:43		Options reloaded from xfer.conf
+2020-09-27 22:37:43		Options reloaded from irc.conf
+2020-09-27 22:37:43		Options reloaded from relay.conf
+2020-09-27 22:37:43		Options reloaded from lua.conf
+2020-09-27 22:37:43		Options reloaded from tcl.conf
+2020-09-27 22:37:43		Options reloaded from guile.conf
+2020-09-27 22:37:43		Options reloaded from python.conf
+2020-09-27 22:37:43		Options reloaded from perl.conf
+2020-09-27 22:37:43		Options reloaded from script.conf
+2020-09-27 22:37:43		Options reloaded from fset.conf
+2020-10-04 20:04:30		script: downloading list of scripts...
+2020-10-04 20:04:30		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-04 20:04:30		script: 364 scripts for WeeChat 2.9
+2020-10-04 20:05:18	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2020-10-04 20:11:11		Option changed: irc.server.freenode.autojoin = "#archlinux,#sfml,#wxwidgets"  (default if null: "")
+2020-10-04 20:11:19	=!=	irc: command "join" must be executed on irc buffer (server, channel or private)
+2020-10-04 20:11:35		Options reloaded from sec.conf
+2020-10-04 20:11:35		Options reloaded from weechat.conf
+2020-10-04 20:11:35		Options reloaded from plugins.conf
+2020-10-04 20:11:35		Options reloaded from charset.conf
+2020-10-04 20:11:35		Options reloaded from logger.conf
+2020-10-04 20:11:35		Options reloaded from exec.conf
+2020-10-04 20:11:35		Options reloaded from trigger.conf
+2020-10-04 20:11:35		Options reloaded from spell.conf
+2020-10-04 20:11:35		Options reloaded from alias.conf
+2020-10-04 20:11:35		Options reloaded from buflist.conf
+2020-10-04 20:11:35		Options reloaded from fifo.conf
+2020-10-04 20:11:35		Options reloaded from xfer.conf
+2020-10-04 20:11:35		Options reloaded from irc.conf
+2020-10-04 20:11:35		Options reloaded from relay.conf
+2020-10-04 20:11:35		Options reloaded from lua.conf
+2020-10-04 20:11:35		Options reloaded from tcl.conf
+2020-10-04 20:11:35		Options reloaded from guile.conf
+2020-10-04 20:11:35		Options reloaded from python.conf
+2020-10-04 20:11:35		Options reloaded from perl.conf
+2020-10-04 20:11:35		Options reloaded from script.conf
+2020-10-04 20:11:35		Options reloaded from fset.conf
+2020-10-04 20:11:39		script: 364 scripts for WeeChat 2.9
+2020-10-04 20:11:39		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-04 20:12:33	=!=	Error: option "irc.freenode.freenode.autoconnect" not found
+2020-10-04 20:12:39	=!=	Error: option "irc.freenode.autoconnect" not found
+2020-10-04 20:12:56		Option changed: irc.server.freenode.autoconnect = on  (default if null: off)
+2020-10-04 20:13:00		Options reloaded from sec.conf
+2020-10-04 20:13:00		Options reloaded from weechat.conf
+2020-10-04 20:13:00		Options reloaded from plugins.conf
+2020-10-04 20:13:00		Options reloaded from charset.conf
+2020-10-04 20:13:00		Options reloaded from logger.conf
+2020-10-04 20:13:00		Options reloaded from exec.conf
+2020-10-04 20:13:00		Options reloaded from trigger.conf
+2020-10-04 20:13:00		Options reloaded from spell.conf
+2020-10-04 20:13:00		Options reloaded from alias.conf
+2020-10-04 20:13:00		Options reloaded from buflist.conf
+2020-10-04 20:13:00		Options reloaded from fifo.conf
+2020-10-04 20:13:00		Options reloaded from xfer.conf
+2020-10-04 20:13:00		Options reloaded from irc.conf
+2020-10-04 20:13:00		Options reloaded from relay.conf
+2020-10-04 20:13:00		Options reloaded from lua.conf
+2020-10-04 20:13:00		Options reloaded from tcl.conf
+2020-10-04 20:13:00		Options reloaded from guile.conf
+2020-10-04 20:13:00		Options reloaded from python.conf
+2020-10-04 20:13:00		Options reloaded from perl.conf
+2020-10-04 20:13:00		Options reloaded from script.conf
+2020-10-04 20:13:00		Options reloaded from fset.conf
+2020-10-04 20:13:07		script: 364 scripts for WeeChat 2.9
+2020-10-04 20:13:07		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-04 20:17:36		Option changed: irc.server.freenode.autojoin = "#archlinux,#sfml,#wxwidgets"  (default if null: "")
+2020-10-04 20:33:08		script: 364 scripts for WeeChat 2.9
+2020-10-04 20:33:08		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-04 20:52:33		Options reloaded from sec.conf
+2020-10-04 20:52:33		Options reloaded from weechat.conf
+2020-10-04 20:52:33		Options reloaded from plugins.conf
+2020-10-04 20:52:33		Options reloaded from charset.conf
+2020-10-04 20:52:33		Options reloaded from logger.conf
+2020-10-04 20:52:33		Options reloaded from exec.conf
+2020-10-04 20:52:33		Options reloaded from trigger.conf
+2020-10-04 20:52:33		Options reloaded from spell.conf
+2020-10-04 20:52:33		Options reloaded from alias.conf
+2020-10-04 20:52:33		Options reloaded from buflist.conf
+2020-10-04 20:52:33		Options reloaded from fifo.conf
+2020-10-04 20:52:33		Options reloaded from xfer.conf
+2020-10-04 20:52:33		Options reloaded from irc.conf
+2020-10-04 20:52:33		Options reloaded from relay.conf
+2020-10-04 20:52:33		Options reloaded from lua.conf
+2020-10-04 20:52:33		Options reloaded from tcl.conf
+2020-10-04 20:52:33		Options reloaded from guile.conf
+2020-10-04 20:52:33		Options reloaded from python.conf
+2020-10-04 20:52:33		Options reloaded from perl.conf
+2020-10-04 20:52:33		Options reloaded from script.conf
+2020-10-04 20:52:33		Options reloaded from fset.conf
+2020-10-11 16:38:28		script: downloading list of scripts...
+2020-10-11 16:38:28		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-11 16:38:28		script: 364 scripts for WeeChat 2.9
+2020-10-11 20:57:42		Options reloaded from sec.conf
+2020-10-11 20:57:42		Options reloaded from weechat.conf
+2020-10-11 20:57:42		Options reloaded from plugins.conf
+2020-10-11 20:57:42		Options reloaded from charset.conf
+2020-10-11 20:57:42		Options reloaded from logger.conf
+2020-10-11 20:57:42		Options reloaded from exec.conf
+2020-10-11 20:57:42		Options reloaded from trigger.conf
+2020-10-11 20:57:42		Options reloaded from spell.conf
+2020-10-11 20:57:42		Options reloaded from alias.conf
+2020-10-11 20:57:42		Options reloaded from buflist.conf
+2020-10-11 20:57:42		Options reloaded from fifo.conf
+2020-10-11 20:57:42		Options reloaded from xfer.conf
+2020-10-11 20:57:42		Options reloaded from irc.conf
+2020-10-11 20:57:42		Options reloaded from relay.conf
+2020-10-11 20:57:42		Options reloaded from lua.conf
+2020-10-11 20:57:42		Options reloaded from tcl.conf
+2020-10-11 20:57:42		Options reloaded from guile.conf
+2020-10-11 20:57:42		Options reloaded from python.conf
+2020-10-11 20:57:42		Options reloaded from perl.conf
+2020-10-11 20:57:42		Options reloaded from script.conf
+2020-10-11 20:57:42		Options reloaded from fset.conf
+2020-10-17 17:51:52		script: downloading list of scripts...
+2020-10-17 17:51:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-17 17:51:53		script: 364 scripts for WeeChat 2.9
+2020-10-24 21:00:14		script: downloading list of scripts...
+2020-10-24 21:00:14		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-24 21:00:14		script: 364 scripts for WeeChat 2.9
+2020-10-24 22:46:56		Options reloaded from sec.conf
+2020-10-24 22:46:56		Options reloaded from weechat.conf
+2020-10-24 22:46:56		Options reloaded from plugins.conf
+2020-10-24 22:46:56		Options reloaded from charset.conf
+2020-10-24 22:46:56		Options reloaded from logger.conf
+2020-10-24 22:46:56		Options reloaded from exec.conf
+2020-10-24 22:46:56		Options reloaded from trigger.conf
+2020-10-24 22:46:56		Options reloaded from spell.conf
+2020-10-24 22:46:56		Options reloaded from alias.conf
+2020-10-24 22:46:56		Options reloaded from buflist.conf
+2020-10-24 22:46:56		Options reloaded from fifo.conf
+2020-10-24 22:46:56		Options reloaded from xfer.conf
+2020-10-24 22:46:56		Options reloaded from irc.conf
+2020-10-24 22:46:56		Options reloaded from relay.conf
+2020-10-24 22:46:56		Options reloaded from lua.conf
+2020-10-24 22:46:56		Options reloaded from tcl.conf
+2020-10-24 22:46:56		Options reloaded from guile.conf
+2020-10-24 22:46:56		Options reloaded from python.conf
+2020-10-24 22:46:56		Options reloaded from perl.conf
+2020-10-24 22:46:56		Options reloaded from script.conf
+2020-10-24 22:46:56		Options reloaded from fset.conf
+2020-10-24 23:29:28		script: 364 scripts for WeeChat 2.9
+2020-10-24 23:29:28		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-24 23:53:35		Options reloaded from sec.conf
+2020-10-24 23:53:35		Options reloaded from weechat.conf
+2020-10-24 23:53:35		Options reloaded from plugins.conf
+2020-10-24 23:53:35		Options reloaded from charset.conf
+2020-10-24 23:53:35		Options reloaded from logger.conf
+2020-10-24 23:53:35		Options reloaded from exec.conf
+2020-10-24 23:53:35		Options reloaded from trigger.conf
+2020-10-24 23:53:35		Options reloaded from spell.conf
+2020-10-24 23:53:35		Options reloaded from alias.conf
+2020-10-24 23:53:35		Options reloaded from buflist.conf
+2020-10-24 23:53:35		Options reloaded from fifo.conf
+2020-10-24 23:53:35		Options reloaded from xfer.conf
+2020-10-24 23:53:35		Options reloaded from irc.conf
+2020-10-24 23:53:35		Options reloaded from relay.conf
+2020-10-24 23:53:35		Options reloaded from lua.conf
+2020-10-24 23:53:35		Options reloaded from tcl.conf
+2020-10-24 23:53:35		Options reloaded from guile.conf
+2020-10-24 23:53:35		Options reloaded from python.conf
+2020-10-24 23:53:35		Options reloaded from perl.conf
+2020-10-24 23:53:35		Options reloaded from script.conf
+2020-10-24 23:53:35		Options reloaded from fset.conf
+2020-10-25 19:27:04		script: 364 scripts for WeeChat 2.9
+2020-10-25 19:27:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-25 19:28:20	=!=	irc: command "join" must be executed on connected irc server
+2020-10-25 21:24:03		Options reloaded from sec.conf
+2020-10-25 21:24:03		Options reloaded from weechat.conf
+2020-10-25 21:24:03		Options reloaded from plugins.conf
+2020-10-25 21:24:03		Options reloaded from charset.conf
+2020-10-25 21:24:03		Options reloaded from logger.conf
+2020-10-25 21:24:03		Options reloaded from exec.conf
+2020-10-25 21:24:03		Options reloaded from trigger.conf
+2020-10-25 21:24:03		Options reloaded from spell.conf
+2020-10-25 21:24:03		Options reloaded from alias.conf
+2020-10-25 21:24:03		Options reloaded from buflist.conf
+2020-10-25 21:24:03		Options reloaded from fifo.conf
+2020-10-25 21:24:03		Options reloaded from xfer.conf
+2020-10-25 21:24:03		Options reloaded from irc.conf
+2020-10-25 21:24:03		Options reloaded from relay.conf
+2020-10-25 21:24:03		Options reloaded from lua.conf
+2020-10-25 21:24:03		Options reloaded from tcl.conf
+2020-10-25 21:24:03		Options reloaded from guile.conf
+2020-10-25 21:24:03		Options reloaded from python.conf
+2020-10-25 21:24:03		Options reloaded from perl.conf
+2020-10-25 21:24:03		Options reloaded from script.conf
+2020-10-25 21:24:03		Options reloaded from fset.conf
+2020-10-31 11:44:47		script: downloading list of scripts...
+2020-10-31 11:44:47		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-31 11:44:48		script: 364 scripts for WeeChat 2.9
+2020-10-31 20:50:01		Options reloaded from sec.conf
+2020-10-31 20:50:01		Options reloaded from weechat.conf
+2020-10-31 20:50:01		Options reloaded from plugins.conf
+2020-10-31 20:50:01		Options reloaded from charset.conf
+2020-10-31 20:50:01		Options reloaded from logger.conf
+2020-10-31 20:50:01		Options reloaded from exec.conf
+2020-10-31 20:50:01		Options reloaded from trigger.conf
+2020-10-31 20:50:01		Options reloaded from spell.conf
+2020-10-31 20:50:01		Options reloaded from alias.conf
+2020-10-31 20:50:01		Options reloaded from buflist.conf
+2020-10-31 20:50:01		Options reloaded from fifo.conf
+2020-10-31 20:50:01		Options reloaded from xfer.conf
+2020-10-31 20:50:01		Options reloaded from irc.conf
+2020-10-31 20:50:01		Options reloaded from relay.conf
+2020-10-31 20:50:01		Options reloaded from lua.conf
+2020-10-31 20:50:01		Options reloaded from tcl.conf
+2020-10-31 20:50:01		Options reloaded from guile.conf
+2020-10-31 20:50:01		Options reloaded from python.conf
+2020-10-31 20:50:01		Options reloaded from perl.conf
+2020-10-31 20:50:01		Options reloaded from script.conf
+2020-10-31 20:50:01		Options reloaded from fset.conf
+2020-10-31 22:03:08		script: 364 scripts for WeeChat 2.9
+2020-10-31 22:03:08		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-10-31 23:51:06		Options reloaded from sec.conf
+2020-10-31 23:51:06		Options reloaded from weechat.conf
+2020-10-31 23:51:07		Options reloaded from plugins.conf
+2020-10-31 23:51:07		Options reloaded from charset.conf
+2020-10-31 23:51:07		Options reloaded from logger.conf
+2020-10-31 23:51:07		Options reloaded from exec.conf
+2020-10-31 23:51:07		Options reloaded from trigger.conf
+2020-10-31 23:51:07		Options reloaded from spell.conf
+2020-10-31 23:51:07		Options reloaded from alias.conf
+2020-10-31 23:51:07		Options reloaded from buflist.conf
+2020-10-31 23:51:07		Options reloaded from fifo.conf
+2020-10-31 23:51:07		Options reloaded from xfer.conf
+2020-10-31 23:51:07		Options reloaded from irc.conf
+2020-10-31 23:51:07		Options reloaded from relay.conf
+2020-10-31 23:51:07		Options reloaded from lua.conf
+2020-10-31 23:51:07		Options reloaded from tcl.conf
+2020-10-31 23:51:07		Options reloaded from guile.conf
+2020-10-31 23:51:07		Options reloaded from python.conf
+2020-10-31 23:51:07		Options reloaded from perl.conf
+2020-10-31 23:51:07		Options reloaded from script.conf
+2020-10-31 23:51:07		Options reloaded from fset.conf
+2020-11-01 12:17:53		script: downloading list of scripts...
+2020-11-01 12:17:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-01 12:17:54		script: 364 scripts for WeeChat 2.9
+2020-11-01 13:28:02		Options reloaded from sec.conf
+2020-11-01 13:28:02		Options reloaded from weechat.conf
+2020-11-01 13:28:02		Options reloaded from plugins.conf
+2020-11-01 13:28:02		Options reloaded from charset.conf
+2020-11-01 13:28:02		Options reloaded from logger.conf
+2020-11-01 13:28:02		Options reloaded from exec.conf
+2020-11-01 13:28:02		Options reloaded from trigger.conf
+2020-11-01 13:28:02		Options reloaded from spell.conf
+2020-11-01 13:28:02		Options reloaded from alias.conf
+2020-11-01 13:28:02		Options reloaded from buflist.conf
+2020-11-01 13:28:02		Options reloaded from fifo.conf
+2020-11-01 13:28:02		Options reloaded from xfer.conf
+2020-11-01 13:28:02		Options reloaded from irc.conf
+2020-11-01 13:28:02		Options reloaded from relay.conf
+2020-11-01 13:28:02		Options reloaded from lua.conf
+2020-11-01 13:28:02		Options reloaded from tcl.conf
+2020-11-01 13:28:02		Options reloaded from guile.conf
+2020-11-01 13:28:02		Options reloaded from python.conf
+2020-11-01 13:28:02		Options reloaded from perl.conf
+2020-11-01 13:28:02		Options reloaded from script.conf
+2020-11-01 13:28:02		Options reloaded from fset.conf
+2020-11-06 20:36:21		script: downloading list of scripts...
+2020-11-06 20:36:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-06 20:36:21		script: 364 scripts for WeeChat 2.9
+2020-11-06 23:33:51		Options reloaded from sec.conf
+2020-11-06 23:33:51		Options reloaded from weechat.conf
+2020-11-06 23:33:51		Options reloaded from plugins.conf
+2020-11-06 23:33:52		Options reloaded from charset.conf
+2020-11-06 23:33:52		Options reloaded from logger.conf
+2020-11-06 23:33:52		Options reloaded from exec.conf
+2020-11-06 23:33:52		Options reloaded from trigger.conf
+2020-11-06 23:33:52		Options reloaded from spell.conf
+2020-11-06 23:33:52		Options reloaded from alias.conf
+2020-11-06 23:33:52		Options reloaded from buflist.conf
+2020-11-06 23:33:52		Options reloaded from fifo.conf
+2020-11-06 23:33:52		Options reloaded from xfer.conf
+2020-11-06 23:33:52		Options reloaded from irc.conf
+2020-11-06 23:33:52		Options reloaded from relay.conf
+2020-11-06 23:33:52		Options reloaded from lua.conf
+2020-11-06 23:33:52		Options reloaded from tcl.conf
+2020-11-06 23:33:52		Options reloaded from guile.conf
+2020-11-06 23:33:52		Options reloaded from python.conf
+2020-11-06 23:33:52		Options reloaded from perl.conf
+2020-11-06 23:33:52		Options reloaded from script.conf
+2020-11-06 23:33:52		Options reloaded from fset.conf
+2020-11-07 20:45:09		script: downloading list of scripts...
+2020-11-07 20:45:09		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-07 20:45:10		script: 364 scripts for WeeChat 2.9
+2020-11-07 23:34:49		Options reloaded from sec.conf
+2020-11-07 23:34:49		Options reloaded from weechat.conf
+2020-11-07 23:34:49		Options reloaded from plugins.conf
+2020-11-07 23:34:49		Options reloaded from charset.conf
+2020-11-07 23:34:49		Options reloaded from logger.conf
+2020-11-07 23:34:49		Options reloaded from exec.conf
+2020-11-07 23:34:49		Options reloaded from trigger.conf
+2020-11-07 23:34:49		Options reloaded from spell.conf
+2020-11-07 23:34:49		Options reloaded from alias.conf
+2020-11-07 23:34:49		Options reloaded from buflist.conf
+2020-11-07 23:34:49		Options reloaded from fifo.conf
+2020-11-07 23:34:49		Options reloaded from xfer.conf
+2020-11-07 23:34:49		Options reloaded from irc.conf
+2020-11-07 23:34:49		Options reloaded from relay.conf
+2020-11-07 23:34:49		Options reloaded from lua.conf
+2020-11-07 23:34:49		Options reloaded from tcl.conf
+2020-11-07 23:34:49		Options reloaded from guile.conf
+2020-11-07 23:34:49		Options reloaded from python.conf
+2020-11-07 23:34:49		Options reloaded from perl.conf
+2020-11-07 23:34:49		Options reloaded from script.conf
+2020-11-07 23:34:49		Options reloaded from fset.conf
+2020-11-10 12:43:29		script: downloading list of scripts...
+2020-11-10 12:43:29		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-10 12:43:38		script: downloading list of scripts...
+2020-11-10 12:43:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-10 12:43:56		script: downloading list of scripts...
+2020-11-10 12:43:56		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-10 12:43:56		script: 364 scripts for WeeChat 2.9
+2020-11-10 13:18:48	=!=	irc: unable to add temporary server "oftc" because the addition of temporary servers with command /connect is currently disabled
+2020-11-10 13:18:48	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-11-10 13:28:58	=!=	irc: unable to add temporary server "oftc" because the addition of temporary servers with command /connect is currently disabled
+2020-11-10 13:28:58	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-11-10 13:44:57	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2020-11-10 13:45:12	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2020-11-10 13:45:23		irc: server added: oftc
+2020-11-10 14:43:06		Options reloaded from sec.conf
+2020-11-10 14:43:06		Options reloaded from weechat.conf
+2020-11-10 14:43:06		Options reloaded from plugins.conf
+2020-11-10 14:43:06		Options reloaded from charset.conf
+2020-11-10 14:43:06		Options reloaded from logger.conf
+2020-11-10 14:43:06		Options reloaded from exec.conf
+2020-11-10 14:43:06		Options reloaded from trigger.conf
+2020-11-10 14:43:06		Options reloaded from spell.conf
+2020-11-10 14:43:06		Options reloaded from alias.conf
+2020-11-10 14:43:06		Options reloaded from buflist.conf
+2020-11-10 14:43:06		Options reloaded from fifo.conf
+2020-11-10 14:43:06		Options reloaded from xfer.conf
+2020-11-10 14:43:06		Options reloaded from irc.conf
+2020-11-10 14:43:06		Options reloaded from relay.conf
+2020-11-10 14:43:06		Options reloaded from lua.conf
+2020-11-10 14:43:06		Options reloaded from tcl.conf
+2020-11-10 14:43:06		Options reloaded from guile.conf
+2020-11-10 14:43:06		Options reloaded from python.conf
+2020-11-10 14:43:06		Options reloaded from perl.conf
+2020-11-10 14:43:06		Options reloaded from script.conf
+2020-11-10 14:43:06		Options reloaded from fset.conf
+2020-11-13 21:20:11		script: downloading list of scripts...
+2020-11-13 21:20:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-13 21:20:12		script: 364 scripts for WeeChat 2.9
+2020-11-15 13:02:23		script: downloading list of scripts...
+2020-11-15 13:02:23		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-15 13:02:24		script: 364 scripts for WeeChat 2.9
+2020-11-15 13:12:36		Options reloaded from sec.conf
+2020-11-15 13:12:36		Options reloaded from weechat.conf
+2020-11-15 13:12:36		Options reloaded from plugins.conf
+2020-11-15 13:12:36		Options reloaded from charset.conf
+2020-11-15 13:12:36		Options reloaded from logger.conf
+2020-11-15 13:12:36		Options reloaded from exec.conf
+2020-11-15 13:12:36		Options reloaded from trigger.conf
+2020-11-15 13:12:36		Options reloaded from spell.conf
+2020-11-15 13:12:36		Options reloaded from alias.conf
+2020-11-15 13:12:36		Options reloaded from buflist.conf
+2020-11-15 13:12:36		Options reloaded from fifo.conf
+2020-11-15 13:12:36		Options reloaded from xfer.conf
+2020-11-15 13:12:36		Options reloaded from irc.conf
+2020-11-15 13:12:36		Options reloaded from relay.conf
+2020-11-15 13:12:36		Options reloaded from lua.conf
+2020-11-15 13:12:36		Options reloaded from tcl.conf
+2020-11-15 13:12:36		Options reloaded from guile.conf
+2020-11-15 13:12:36		Options reloaded from python.conf
+2020-11-15 13:12:36		Options reloaded from perl.conf
+2020-11-15 13:12:36		Options reloaded from script.conf
+2020-11-15 13:12:36		Options reloaded from fset.conf
+2020-11-15 13:18:05		script: 364 scripts for WeeChat 2.9
+2020-11-15 13:18:05		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-15 14:09:27		Options reloaded from sec.conf
+2020-11-15 14:09:28		Options reloaded from weechat.conf
+2020-11-15 14:09:28		Options reloaded from plugins.conf
+2020-11-15 14:09:28		Options reloaded from charset.conf
+2020-11-15 14:09:28		Options reloaded from logger.conf
+2020-11-15 14:09:28		Options reloaded from exec.conf
+2020-11-15 14:09:28		Options reloaded from trigger.conf
+2020-11-15 14:09:28		Options reloaded from spell.conf
+2020-11-15 14:09:28		Options reloaded from alias.conf
+2020-11-15 14:09:28		Options reloaded from buflist.conf
+2020-11-15 14:09:28		Options reloaded from fifo.conf
+2020-11-15 14:09:28		Options reloaded from xfer.conf
+2020-11-15 14:09:28		Options reloaded from irc.conf
+2020-11-15 14:09:28		Options reloaded from relay.conf
+2020-11-15 14:09:28		Options reloaded from lua.conf
+2020-11-15 14:09:28		Options reloaded from tcl.conf
+2020-11-15 14:09:28		Options reloaded from guile.conf
+2020-11-15 14:09:28		Options reloaded from python.conf
+2020-11-15 14:09:28		Options reloaded from perl.conf
+2020-11-15 14:09:28		Options reloaded from script.conf
+2020-11-15 14:09:28		Options reloaded from fset.conf
+2020-11-15 14:16:03		script: 364 scripts for WeeChat 2.9
+2020-11-15 14:16:03		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-15 14:34:41		Options reloaded from sec.conf
+2020-11-15 14:34:41		Options reloaded from weechat.conf
+2020-11-15 14:34:41		Options reloaded from plugins.conf
+2020-11-15 14:34:41		Options reloaded from charset.conf
+2020-11-15 14:34:41		Options reloaded from logger.conf
+2020-11-15 14:34:41		Options reloaded from exec.conf
+2020-11-15 14:34:41		Options reloaded from trigger.conf
+2020-11-15 14:34:41		Options reloaded from spell.conf
+2020-11-15 14:34:41		Options reloaded from alias.conf
+2020-11-15 14:34:41		Options reloaded from buflist.conf
+2020-11-15 14:34:41		Options reloaded from fifo.conf
+2020-11-15 14:34:41		Options reloaded from xfer.conf
+2020-11-15 14:34:41		Options reloaded from irc.conf
+2020-11-15 14:34:41		Options reloaded from relay.conf
+2020-11-15 14:34:41		Options reloaded from lua.conf
+2020-11-15 14:34:41		Options reloaded from tcl.conf
+2020-11-15 14:34:41		Options reloaded from guile.conf
+2020-11-15 14:34:41		Options reloaded from python.conf
+2020-11-15 14:34:41		Options reloaded from perl.conf
+2020-11-15 14:34:41		Options reloaded from script.conf
+2020-11-15 14:34:41		Options reloaded from fset.conf
+2020-11-15 21:02:38		script: 364 scripts for WeeChat 2.9
+2020-11-15 21:02:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-16 21:38:43		script: downloading list of scripts...
+2020-11-16 21:38:43		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-16 21:38:44		script: 364 scripts for WeeChat 2.9
+2020-11-19 19:52:51		script: downloading list of scripts...
+2020-11-19 19:52:51		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-19 19:52:51		script: 364 scripts for WeeChat 2.9
+2020-11-19 20:15:55		Options reloaded from sec.conf
+2020-11-19 20:15:55		Options reloaded from weechat.conf
+2020-11-19 20:15:55		Options reloaded from plugins.conf
+2020-11-19 20:15:55		Options reloaded from charset.conf
+2020-11-19 20:15:55		Options reloaded from logger.conf
+2020-11-19 20:15:55		Options reloaded from exec.conf
+2020-11-19 20:15:55		Options reloaded from trigger.conf
+2020-11-19 20:15:55		Options reloaded from spell.conf
+2020-11-19 20:15:55		Options reloaded from alias.conf
+2020-11-19 20:15:55		Options reloaded from buflist.conf
+2020-11-19 20:15:55		Options reloaded from fifo.conf
+2020-11-19 20:15:55		Options reloaded from xfer.conf
+2020-11-19 20:15:55		Options reloaded from irc.conf
+2020-11-19 20:15:55		Options reloaded from relay.conf
+2020-11-19 20:15:55		Options reloaded from lua.conf
+2020-11-19 20:15:55		Options reloaded from tcl.conf
+2020-11-19 20:15:55		Options reloaded from guile.conf
+2020-11-19 20:15:55		Options reloaded from python.conf
+2020-11-19 20:15:55		Options reloaded from perl.conf
+2020-11-19 20:15:55		Options reloaded from script.conf
+2020-11-19 20:15:55		Options reloaded from fset.conf
+2020-11-22 11:18:21		script: downloading list of scripts...
+2020-11-22 11:18:21		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-22 11:18:22		script: 364 scripts for WeeChat 2.9
+2020-11-25 20:09:35		script: downloading list of scripts...
+2020-11-25 20:09:35		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, lua, perl, python, relay, script, spell, tcl, trigger, xfer
+2020-11-25 20:09:35		script: 364 scripts for WeeChat 2.9
+2020-11-25 20:09:51	=!=	irc: unable to add temporary server "archlinux" because the addition of temporary servers with command /connect is currently disabled
+2020-11-25 20:09:51	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-11-25 20:56:33		Options reloaded from sec.conf
+2020-11-25 20:56:33		Options reloaded from weechat.conf
+2020-11-25 20:56:33		Options reloaded from plugins.conf
+2020-11-25 20:56:33		Options reloaded from charset.conf
+2020-11-25 20:56:33		Options reloaded from logger.conf
+2020-11-25 20:56:33		Options reloaded from exec.conf
+2020-11-25 20:56:33		Options reloaded from trigger.conf
+2020-11-25 20:56:33		Options reloaded from spell.conf
+2020-11-25 20:56:33		Options reloaded from alias.conf
+2020-11-25 20:56:33		Options reloaded from buflist.conf
+2020-11-25 20:56:33		Options reloaded from fifo.conf
+2020-11-25 20:56:33		Options reloaded from xfer.conf
+2020-11-25 20:56:33		Options reloaded from irc.conf
+2020-11-25 20:56:33		Options reloaded from relay.conf
+2020-11-25 20:56:33		Options reloaded from lua.conf
+2020-11-25 20:56:33		Options reloaded from tcl.conf
+2020-11-25 20:56:33		Options reloaded from guile.conf
+2020-11-25 20:56:33		Options reloaded from python.conf
+2020-11-25 20:56:33		Options reloaded from perl.conf
+2020-11-25 20:56:33		Options reloaded from script.conf
+2020-11-25 20:56:33		Options reloaded from fset.conf
+2020-11-29 18:36:15		script: downloading list of scripts...
+2020-11-29 18:36:15		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, trigger, xfer
+2020-11-29 18:36:15		script: 364 scripts for WeeChat 2.9
+2020-11-29 18:51:55		Options reloaded from sec.conf
+2020-11-29 18:51:55		Options reloaded from weechat.conf
+2020-11-29 18:51:55		Options reloaded from plugins.conf
+2020-11-29 18:51:55		Options reloaded from charset.conf
+2020-11-29 18:51:55		Options reloaded from logger.conf
+2020-11-29 18:51:55		Options reloaded from exec.conf
+2020-11-29 18:51:55		Options reloaded from trigger.conf
+2020-11-29 18:51:55		Options reloaded from alias.conf
+2020-11-29 18:51:55		Options reloaded from buflist.conf
+2020-11-29 18:51:55		Options reloaded from fifo.conf
+2020-11-29 18:51:55		Options reloaded from xfer.conf
+2020-11-29 18:51:55		Options reloaded from irc.conf
+2020-11-29 18:51:55		Options reloaded from relay.conf
+2020-11-29 18:51:55		Options reloaded from perl.conf
+2020-11-29 18:51:55		Options reloaded from guile.conf
+2020-11-29 18:51:55		Options reloaded from python.conf
+2020-11-29 18:51:55		Options reloaded from script.conf
+2020-11-29 18:51:55		Options reloaded from fset.conf
+2020-11-29 18:51:56		fifo: pipe closed
+2020-11-30 21:29:01		script: downloading list of scripts...
+2020-11-30 21:29:01		Plugins loaded: alias, buflist, charset, exec, fifo, fset, guile, irc, logger, perl, python, relay, script, trigger, xfer
+2020-11-30 21:29:01		script: 364 scripts for WeeChat 2.9
+2020-11-30 21:48:22		fifo: pipe closed
+2020-12-01 22:46:22		script: 364 scripts for WeeChat 3.0
+2020-12-01 22:46:22		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-01 22:55:52		Options reloaded from sec.conf
+2020-12-01 22:55:52		Options reloaded from weechat.conf
+2020-12-01 22:55:52		Options reloaded from plugins.conf
+2020-12-01 22:55:52		Options reloaded from charset.conf
+2020-12-01 22:55:52		Options reloaded from logger.conf
+2020-12-01 22:55:52		Options reloaded from exec.conf
+2020-12-01 22:55:52		Options reloaded from trigger.conf
+2020-12-01 22:55:52		Options reloaded from alias.conf
+2020-12-01 22:55:52		Options reloaded from buflist.conf
+2020-12-01 22:55:52		Options reloaded from fifo.conf
+2020-12-01 22:55:52		Options reloaded from xfer.conf
+2020-12-01 22:55:52		Options reloaded from irc.conf
+2020-12-01 22:55:52		Options reloaded from relay.conf
+2020-12-01 22:55:52		Options reloaded from script.conf
+2020-12-01 22:55:52		Options reloaded from fset.conf
+2020-12-03 20:27:20		script: 364 scripts for WeeChat 3.0
+2020-12-03 20:27:20		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-03 21:36:24		Options reloaded from sec.conf
+2020-12-03 21:36:24		Options reloaded from weechat.conf
+2020-12-03 21:36:24		Options reloaded from plugins.conf
+2020-12-03 21:36:24		Options reloaded from charset.conf
+2020-12-03 21:36:24		Options reloaded from logger.conf
+2020-12-03 21:36:24		Options reloaded from exec.conf
+2020-12-03 21:36:24		Options reloaded from trigger.conf
+2020-12-03 21:36:24		Options reloaded from alias.conf
+2020-12-03 21:36:24		Options reloaded from buflist.conf
+2020-12-03 21:36:24		Options reloaded from fifo.conf
+2020-12-03 21:36:24		Options reloaded from xfer.conf
+2020-12-03 21:36:24		Options reloaded from irc.conf
+2020-12-03 21:36:24		Options reloaded from relay.conf
+2020-12-03 21:36:24		Options reloaded from script.conf
+2020-12-03 21:36:24		Options reloaded from fset.conf
+2020-12-03 21:36:24		fifo: pipe closed
+2020-12-03 21:48:26		script: 364 scripts for WeeChat 3.0
+2020-12-03 21:48:26		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-03 22:35:26		fifo: pipe closed
+2020-12-04 21:18:53		script: 364 scripts for WeeChat 3.0
+2020-12-04 21:18:53		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-04 23:22:27		Options reloaded from sec.conf
+2020-12-04 23:22:27		Options reloaded from weechat.conf
+2020-12-04 23:22:27		Options reloaded from plugins.conf
+2020-12-04 23:22:27		Options reloaded from charset.conf
+2020-12-04 23:22:27		Options reloaded from logger.conf
+2020-12-04 23:22:27		Options reloaded from exec.conf
+2020-12-04 23:22:27		Options reloaded from trigger.conf
+2020-12-04 23:22:27		Options reloaded from alias.conf
+2020-12-04 23:22:27		Options reloaded from buflist.conf
+2020-12-04 23:22:27		Options reloaded from fifo.conf
+2020-12-04 23:22:27		Options reloaded from xfer.conf
+2020-12-04 23:22:27		Options reloaded from irc.conf
+2020-12-04 23:22:27		Options reloaded from relay.conf
+2020-12-04 23:22:27		Options reloaded from script.conf
+2020-12-04 23:22:27		Options reloaded from fset.conf
+2020-12-04 23:22:27		fifo: pipe closed
+2020-12-06 13:01:30		script: 364 scripts for WeeChat 3.0
+2020-12-06 13:01:30		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-06 14:04:16	=!=	Error: unknown command "/#fish" (type /help for help)
+2020-12-06 15:30:49		script: 364 scripts for WeeChat 3.0
+2020-12-06 15:30:49		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-06 15:34:41		fifo: pipe closed
+2020-12-12 12:28:49		script: 364 scripts for WeeChat 3.0
+2020-12-12 12:28:49		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-12 13:17:00	=!=	irc: unable to add temporary server "oftc" because the addition of temporary servers with command /connect is currently disabled
+2020-12-12 13:17:00	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2020-12-12 16:13:03		Options reloaded from sec.conf
+2020-12-12 16:13:03		Options reloaded from weechat.conf
+2020-12-12 16:13:03		Options reloaded from plugins.conf
+2020-12-12 16:13:03		Options reloaded from charset.conf
+2020-12-12 16:13:03		Options reloaded from logger.conf
+2020-12-12 16:13:03		Options reloaded from exec.conf
+2020-12-12 16:13:03		Options reloaded from trigger.conf
+2020-12-12 16:13:03		Options reloaded from alias.conf
+2020-12-12 16:13:03		Options reloaded from buflist.conf
+2020-12-12 16:13:03		Options reloaded from fifo.conf
+2020-12-12 16:13:03		Options reloaded from xfer.conf
+2020-12-12 16:13:03		Options reloaded from irc.conf
+2020-12-12 16:13:03		Options reloaded from relay.conf
+2020-12-12 16:13:03		Options reloaded from script.conf
+2020-12-12 16:13:03		Options reloaded from fset.conf
+2020-12-13 19:49:11		script: 364 scripts for WeeChat 3.0
+2020-12-13 19:49:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-13 19:49:19	=!=	You can not write text in this buffer
+2020-12-13 19:49:52		script: 364 scripts for WeeChat 3.0
+2020-12-13 19:49:52		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-13 19:52:12		script: 364 scripts for WeeChat 3.0
+2020-12-13 19:52:12		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-13 20:17:48		script: 364 scripts for WeeChat 3.0
+2020-12-13 20:17:48		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-13 20:29:05		irc: server added: oftc
+2020-12-13 20:30:16	=!=	Error: option "irc.server.oftc.autologin.autojoin" not found
+2020-12-13 22:29:07		Options reloaded from sec.conf
+2020-12-13 22:29:07		Options reloaded from weechat.conf
+2020-12-13 22:29:07		Options reloaded from plugins.conf
+2020-12-13 22:29:07		Options reloaded from charset.conf
+2020-12-13 22:29:07		Options reloaded from logger.conf
+2020-12-13 22:29:07		Options reloaded from exec.conf
+2020-12-13 22:29:07		Options reloaded from trigger.conf
+2020-12-13 22:29:07		Options reloaded from alias.conf
+2020-12-13 22:29:07		Options reloaded from buflist.conf
+2020-12-13 22:29:07		Options reloaded from fifo.conf
+2020-12-13 22:29:07		Options reloaded from xfer.conf
+2020-12-13 22:29:07	=!=	irc: warning: server "oftc" not found in configuration file, not deleted in memory because it's currently used
+2020-12-13 22:29:07		Options reloaded from irc.conf
+2020-12-13 22:29:07		Options reloaded from relay.conf
+2020-12-13 22:29:07		Options reloaded from script.conf
+2020-12-13 22:29:07		Options reloaded from fset.conf
+2020-12-14 20:42:11		script: 364 scripts for WeeChat 3.0
+2020-12-14 20:42:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-14 21:52:32		Options reloaded from sec.conf
+2020-12-14 21:52:33		Options reloaded from weechat.conf
+2020-12-14 21:52:33		Options reloaded from plugins.conf
+2020-12-14 21:52:33		Options reloaded from charset.conf
+2020-12-14 21:52:33		Options reloaded from logger.conf
+2020-12-14 21:52:33		Options reloaded from exec.conf
+2020-12-14 21:52:33		Options reloaded from trigger.conf
+2020-12-14 21:52:33		Options reloaded from alias.conf
+2020-12-14 21:52:33		Options reloaded from buflist.conf
+2020-12-14 21:52:33		Options reloaded from fifo.conf
+2020-12-14 21:52:33		Options reloaded from xfer.conf
+2020-12-14 21:52:33		Options reloaded from irc.conf
+2020-12-14 21:52:33		Options reloaded from relay.conf
+2020-12-14 21:52:33		Options reloaded from script.conf
+2020-12-14 21:52:33		Options reloaded from fset.conf
+2020-12-16 20:09:27		script: 364 scripts for WeeChat 3.0
+2020-12-16 20:09:27		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-16 20:09:33	=!=	You can not write text in this buffer
+2020-12-16 20:09:34	=!=	You can not write text in this buffer
+2020-12-16 20:09:35		Options reloaded from sec.conf
+2020-12-16 20:09:35		Options reloaded from weechat.conf
+2020-12-16 20:09:35		Options reloaded from plugins.conf
+2020-12-16 20:09:35		Options reloaded from charset.conf
+2020-12-16 20:09:35		Options reloaded from logger.conf
+2020-12-16 20:09:35		Options reloaded from exec.conf
+2020-12-16 20:09:35		Options reloaded from trigger.conf
+2020-12-16 20:09:35		Options reloaded from alias.conf
+2020-12-16 20:09:35		Options reloaded from buflist.conf
+2020-12-16 20:09:35		Options reloaded from fifo.conf
+2020-12-16 20:09:35		Options reloaded from xfer.conf
+2020-12-16 20:09:35		Options reloaded from irc.conf
+2020-12-16 20:09:35		Options reloaded from relay.conf
+2020-12-16 20:09:35		Options reloaded from script.conf
+2020-12-16 20:09:35		Options reloaded from fset.conf
+2020-12-16 20:13:28		script: 364 scripts for WeeChat 3.0
+2020-12-16 20:13:28		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-19 13:15:42		script: 364 scripts for WeeChat 3.0
+2020-12-19 13:15:42		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-19 13:18:53	=!=	No help available, "buffers" is not a command or an option
+2020-12-19 13:29:00		script: 364 scripts for WeeChat 3.0
+2020-12-19 13:29:00		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-19 13:51:14		Options reloaded from sec.conf
+2020-12-19 13:51:14		Options reloaded from weechat.conf
+2020-12-19 13:51:14		Options reloaded from plugins.conf
+2020-12-19 13:51:14		Options reloaded from charset.conf
+2020-12-19 13:51:14		Options reloaded from logger.conf
+2020-12-19 13:51:14		Options reloaded from exec.conf
+2020-12-19 13:51:14		Options reloaded from trigger.conf
+2020-12-19 13:51:14		Options reloaded from alias.conf
+2020-12-19 13:51:14		Options reloaded from buflist.conf
+2020-12-19 13:51:14		Options reloaded from fifo.conf
+2020-12-19 13:51:14		Options reloaded from xfer.conf
+2020-12-19 13:51:14		Options reloaded from irc.conf
+2020-12-19 13:51:14		Options reloaded from relay.conf
+2020-12-19 13:51:14		Options reloaded from script.conf
+2020-12-19 13:51:14		Options reloaded from fset.conf
+2020-12-20 16:40:57		script: 364 scripts for WeeChat 3.0
+2020-12-20 16:40:57		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2020-12-20 22:35:12		Options reloaded from sec.conf
+2020-12-20 22:35:12		Options reloaded from weechat.conf
+2020-12-20 22:35:12		Options reloaded from plugins.conf
+2020-12-20 22:35:12		Options reloaded from charset.conf
+2020-12-20 22:35:12		Options reloaded from logger.conf
+2020-12-20 22:35:12		Options reloaded from exec.conf
+2020-12-20 22:35:12		Options reloaded from trigger.conf
+2020-12-20 22:35:12		Options reloaded from alias.conf
+2020-12-20 22:35:12		Options reloaded from buflist.conf
+2020-12-20 22:35:12		Options reloaded from fifo.conf
+2020-12-20 22:35:12		Options reloaded from xfer.conf
+2020-12-20 22:35:12		Options reloaded from irc.conf
+2020-12-20 22:35:12		Options reloaded from relay.conf
+2020-12-20 22:35:12		Options reloaded from script.conf
+2020-12-20 22:35:12		Options reloaded from fset.conf
+2021-02-21 17:52:44		script: 364 scripts for WeeChat 3.0.1
+2021-02-21 17:52:44		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer
+2021-03-10 22:26:11		script: 364 scripts for WeeChat 3.0.1
+2021-03-10 22:26:11		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, relay, script, trigger, xfer

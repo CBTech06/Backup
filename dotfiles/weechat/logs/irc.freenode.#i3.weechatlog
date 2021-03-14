@@ -1,0 +1,1959 @@
+2020-03-24 11:56:35	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-24 11:56:35	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-24 11:56:35	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-24 11:56:35	--	Channel #i3: 319 nicks (3 ops, 0 voices, 316 normals)
+2020-03-24 11:56:38	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-24 11:56:40	captainchris	hi everybody
+2020-03-24 11:56:40	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-24 11:57:03	captainchris	I would like to know if i can change class name of my firefox 
+2020-03-24 11:57:40	captainchris	I have two profile on my firefox  I would like one firefox client on desktop 1 
+2020-03-24 11:57:46	captainchris	and other on desktop 2
+2020-03-24 12:02:49	<--	mniip (mniip@freenode/staff/mniip) has quit (Ping timeout: 606 seconds)
+2020-03-24 12:07:59	<--	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-03-24 12:08:16	-->	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-24 12:09:52	<--	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has quit (Client Quit)
+2020-03-24 12:10:05	-->	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-24 12:14:36	-->	mniip (mniip@freenode/staff/mniip) has joined #i3
+2020-03-24 11:16:26	<--	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-03-24 11:16:42	-->	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-24 11:17:49	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 250 seconds)
+2020-03-24 11:19:57	<--	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has quit (Client Quit)
+2020-03-24 11:20:09	-->	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-24 11:32:35	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-24 11:33:26	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 11:40:56	<--	d33cee (440ab673@ip68-10-182-115.hr.hr.cox.net) has quit (Remote host closed the connection)
+2020-03-24 11:44:42	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Ping timeout: 240 seconds)
+2020-03-24 11:46:38	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 12:08:14	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 256 seconds)
+2020-03-24 12:11:11	<--	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has quit (Ping timeout: 272 seconds)
+2020-03-24 12:14:20	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Ping timeout: 246 seconds)
+2020-03-24 12:14:55	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 12:20:07	-->	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has joined #i3
+2020-03-24 12:21:01	-->	narimiran (~miran@unaffiliated/miran) has joined #i3
+2020-03-24 12:21:44	-->	kline (~kline@freenode/staff/enucs.kline) has joined #i3
+2020-03-24 12:21:53	-->	norfrost (~marc@90.241.191.239) has joined #i3
+2020-03-24 12:23:44	<--	TikityTik (~TikityTik@unaffiliated/tikitytik) has quit (Ping timeout: 265 seconds)
+2020-03-24 12:23:56	kline	trying to configure i3-gaps on debian buster gives the usual syntax error near unexpected token LIBSN, but dpkg -l shows that libstartup-notification0 and -dev are installed. hows best to troubleshoot this?
+2020-03-24 12:23:56	botty	kline: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-24 12:24:55	kline	(if i comment it out, it just goes on to give the same unexpected token for XCB, the next in the list, again with all the required bits installed)
+2020-03-24 12:31:30	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Remote host closed the connection)
+2020-03-24 12:33:24	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-03-24 12:36:15	<--	berton (~berton@181.220.114.167) has quit (Remote host closed the connection)
+2020-03-24 12:37:36	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-03-24 12:43:51	kline	checking out release-4.17 in git allows it to succeed
+2020-03-24 12:45:25	captainchris	hi everybody
+2020-03-24 12:58:01	-->	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2020-03-24 13:03:10	<--	isomari (~isomari@41.217.24.195) has quit (Quit: WeeChat 2.8-rc1)
+2020-03-24 13:07:32	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 246 seconds)
+2020-03-24 13:15:10	<--	joemaro- (~joemaro@211.red-95-124-48.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2020-03-24 13:26:10	-->	isomari (~isomari@41.217.24.195) has joined #i3
+2020-03-24 13:27:49	<--	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has quit (Remote host closed the connection)
+2020-03-24 13:28:12	-->	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has joined #i3
+2020-03-24 13:32:52	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-24 13:33:04	<--	Max0815 (~Max0815@unaffiliated/max0815) has quit (Quit: WeeChat 1.9.1)
+2020-03-24 13:36:37	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 264 seconds)
+2020-03-24 13:36:38	--	eremitah_ is now known as eremitah
+2020-03-24 13:38:20	-->	joemaro- (~joemaro@211.red-95-124-48.dynamicip.rima-tde.net) has joined #i3
+2020-03-24 13:39:31	-->	narimiran (~miran@unaffiliated/miran) has joined #i3
+2020-03-24 13:50:04	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-24 13:52:57	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 250 seconds)
+2020-03-24 13:52:57	--	eremitah_ is now known as eremitah
+2020-03-24 13:55:05	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 265 seconds)
+2020-03-24 13:58:05	<--	isomari (~isomari@41.217.24.195) has quit (Quit: WeeChat 2.8-rc1)
+2020-03-24 14:03:54	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-24 14:06:45	<--	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has quit (Ping timeout: 256 seconds)
+2020-03-24 14:08:26	-->	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has joined #i3
+2020-03-24 14:10:47	-->	isomari (~isomari@41.217.24.195) has joined #i3
+2020-03-24 14:15:38	<--	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has quit (Ping timeout: 258 seconds)
+2020-03-24 14:17:46	-->	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has joined #i3
+2020-03-24 14:31:53	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-03-24 14:32:09	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 14:38:52	<--	plwweasel (~plwweasel@unaffiliated/plwweasel) has quit (Quit: WeeChat 2.4)
+2020-03-24 14:39:25	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-24 14:41:03	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 250 seconds)
+2020-03-24 14:41:22	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 240 seconds)
+2020-03-24 14:41:22	--	eremitah_ is now known as eremitah
+2020-03-24 14:43:04	-->	plwweasel (~quassel@unaffiliated/plwweasel) has joined #i3
+2020-03-24 14:46:58	<--	plwweasel (~quassel@unaffiliated/plwweasel) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-03-24 14:54:54	<--	ritalinona (~Other@gateway/tor-sasl/ritalinona) has quit (Remote host closed the connection)
+2020-03-24 14:55:14	-->	ritalinona (~Other@gateway/tor-sasl/ritalinona) has joined #i3
+2020-03-24 15:00:06	-->	quitman (~master@h46-236-86-33.cust.a3fiber.se) has joined #i3
+2020-03-24 15:02:37	-->	plwweasel (~quassel@unaffiliated/plwweasel) has joined #i3
+2020-03-24 15:04:22	<--	quitman (~master@h46-236-86-33.cust.a3fiber.se) has quit (Ping timeout: 240 seconds)
+2020-03-24 15:06:37	<--	joemaro- (~joemaro@211.red-95-124-48.dynamicip.rima-tde.net) has quit (Ping timeout: 264 seconds)
+2020-03-24 15:12:15	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Ping timeout: 250 seconds)
+2020-03-24 15:20:12	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-24 15:44:11	<--	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (Ping timeout: 258 seconds)
+2020-03-24 15:47:43	<--	batdog (~batdog@lnsq.elkins.co) has quit (Quit: Bye)
+2020-03-24 15:48:04	-->	batdog (~batdog@lnsq.elkins.co) has joined #i3
+2020-03-24 15:52:08	-->	joemaro- (~joemaro@211.red-95-124-48.dynamicip.rima-tde.net) has joined #i3
+2020-03-24 15:55:42	<--	c0c0 (~coco@ec2-52-48-32-45.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2020-03-24 15:57:50	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-03-24 16:06:27	<--	debugrr (~jgarrett@cloud.polarhome.org) has quit (Quit: WeeChat 2.6)
+2020-03-24 16:09:53	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 250 seconds)
+2020-03-24 16:10:10	-->	c0c0 (~coco@212-51-137-149.fiber7.init7.net) has joined #i3
+2020-03-24 16:11:36	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-03-24 16:20:17	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 250 seconds)
+2020-03-24 16:21:21	-->	connermcd (~connermcd@c-174-50-26-249.hsd1.la.comcast.net) has joined #i3
+2020-03-24 16:22:36	-->	quitman (~master@45.141.152.68) has joined #i3
+2020-03-24 16:22:46	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 246 seconds)
+2020-03-24 16:26:22	-->	plexigras (~plexigras@p200300E79F3A73BEC471EC7427770A78.dip0.t-ipconnect.de) has joined #i3
+2020-03-24 16:26:44	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-24 16:30:41	<--	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has quit (Ping timeout: 256 seconds)
+2020-03-24 16:31:54	<--	sQVe (~sQVe@unaffiliated/sqve) has quit (Quit: Bye!)
+2020-03-24 16:33:08	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 265 seconds)
+2020-03-24 16:35:50	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-24 16:37:17	<--	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has quit (Remote host closed the connection)
+2020-03-24 16:38:05	Elodin	captainchris: see if firefox accepts a window name argument when launched from the terminal
+2020-03-24 16:40:37	-->	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has joined #i3
+2020-03-24 16:41:31	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-03-24 16:44:32	<--	plexigras (~plexigras@p200300E79F3A73BEC471EC7427770A78.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2020-03-24 16:46:04	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-24 16:47:33	Elodin	i wonder how to make a conditional bind, like: if theres more than one output do this, else, do that
+2020-03-24 16:47:43	<--	c0c0 (~coco@212-51-137-149.fiber7.init7.net) has quit (Ping timeout: 260 seconds)
+2020-03-24 16:48:29	Elodin	i use that workspace_back_and_forth bind which makes sense for me when using only one display, but if i were to be using 2 i would prefer the bind to just focus the other display
+2020-03-24 16:56:11	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 17:01:31	-->	c0c0 (~coco@ec2-52-48-32-45.eu-west-1.compute.amazonaws.com) has joined #i3
+2020-03-24 17:07:15	-->	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2020-03-24 17:14:42	<--	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2020-03-24 17:16:44	-->	abjectnotfound (~abjectnot@ip68-99-110-239.hr.hr.cox.net) has joined #i3
+2020-03-24 17:17:34	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined #i3
+2020-03-24 17:17:59	<--	Delvien (Delvien@gateway/vpn/privateinternetaccess/delvien) has quit (Remote host closed the connection)
+2020-03-24 17:21:10	<--	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 17:21:27	-->	tau (~vy@vy/master) has joined #i3
+2020-03-24 17:22:18	<--	beano (~beano66@2a02:8109:ac0:3b68:6ecc:8013:a87d:fd68) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 17:22:26	-->	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has joined #i3
+2020-03-24 17:22:44	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 256 seconds)
+2020-03-24 17:28:22	<--	connermcd (~connermcd@c-174-50-26-249.hsd1.la.comcast.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 17:29:21	captainchris	hi elodin 
+2020-03-24 17:29:31	captainchris	no firefox can't take windows name 
+2020-03-24 17:29:44	captainchris	i tried with firefox --class=...
+2020-03-24 17:32:35	<--	norfrost (~marc@90.241.191.239) has quit (Remote host closed the connection)
+2020-03-24 17:38:34	-->	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2020-03-24 17:57:41	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-03-24 18:04:55	grove	A more moo
+2020-03-24 18:05:36	<--	ritalinona (~Other@gateway/tor-sasl/ritalinona) has quit (Remote host closed the connection)
+2020-03-24 18:06:34	-->	ritalinona (~Other@gateway/tor-sasl/ritalinona) has joined #i3
+2020-03-24 18:08:57	grove	Oops. A more modest wish: I like to have most of my firefox windows on workspace 2, but also one on workspace 9 (which is normally on a different monitor). To get the main windows where I want most of them I have put 'assign [class="Firefox"] 2' in my config. Is there a way to modify that, to get dialogs opened on the workspace of the window that opens it?
+2020-03-24 18:10:45	grove	I must admit that I haven't even checked with xprop yet, but now I got to remember it by seeing captainchris's question
+2020-03-24 18:11:05	@squigz	You can probably match dialogs based on other criteria - but there's no command to move it to the workspace where it originally started, as far as I know. Startup notifications might work on those, but assigning all firefox windows to a workspace will override that
+2020-03-24 18:12:36	captainchris	Yes i would like to have firefox on desktop 1 and other firefox with other profile on desktop 2
+2020-03-24 18:12:40	captainchris	like grove 
+2020-03-24 18:13:00	captainchris	but i can't modify class or title with firefox
+2020-03-24 18:13:12	grove	Elodin: Make a script that runs xrandr and does one thing if there is more than one output and another if there's only one and bind to that
+2020-03-24 18:13:32	@squigz	captainchris: If firefox doesn't have a way to specify class or instance name, there's not much you can do
+2020-03-24 18:14:04	@squigz	You can launch profile 1, call `i3-msg` to move it, then do the same with another profile
+2020-03-24 18:14:08	@squigz	but that isn't very reliable
+2020-03-24 18:15:18	grove	I would settle for something different from class to match on in my assign line, that doesn't match dialogs (it's easy to start wondering if a site is broken if it opened a dialog that you can't see)
+2020-03-24 18:15:24	nimaje	grove: probably you can make your criteria more specific to only match firefox's main windows and not the dialogs
+2020-03-24 18:26:42	-->	m1sosoup (~m1sosoup@62.23.209.50) has joined #i3
+2020-03-24 18:27:28	<--	mrtadis (~mrtadis@vi.k.slotkus.lt) has quit (Quit: leaving)
+2020-03-24 18:29:14	Elodin	grove: lol thats so simple and so effective, thanks
+2020-03-24 18:31:20	<--	tureba (~tureba@tureba.org) has quit (Quit: leaving)
+2020-03-24 18:34:11	-->	mrtadis (~mrtadis@vi.k.slotkus.lt) has joined #i3
+2020-03-24 18:34:22	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Ping timeout: 240 seconds)
+2020-03-24 18:34:22	<--	AT-x310 (~AT-x310@abordeaux-651-1-170-29.w90-5.abo.wanadoo.fr) has quit (Ping timeout: 240 seconds)
+2020-03-24 18:36:34	-->	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-24 18:38:28	-->	tureba (~tureba@tureba.org) has joined #i3
+2020-03-24 18:41:01	-->	drmbls (~drmbls@78-56-83-14.static.zebra.lt) has joined #i3
+2020-03-24 18:44:49	<--	theorangeone (quassel@gateway/vpn/privateinternetaccess/theorangeone) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	impulse (~impulse@S01062c7e81ff33f0.mh.shawcable.net) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	minnesotags (~herbgarci@c-24-118-22-254.hsd1.mn.comcast.net) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	beencubed (~beencubed@209.131.238.248) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	ermo (~ermo@foresight/developer/ermo) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	fuchur (~fuchur@185.213.155.170) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	cyphase (~cyphase@unaffiliated/cyphase) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	robotmay (~beepboop@80.172.187.81.in-addr.arpa) has quit (*.net *.split)
+2020-03-24 18:44:49	<--	nckx (~nckx@tobias.gr) has quit (*.net *.split)
+2020-03-24 18:44:50	<--	niklasb_ (~niklasb@unaffiliated/codeslay0r) has quit (*.net *.split)
+2020-03-24 18:45:05	-->	impulse (~impulse@S01062c7e81ff33f0.mh.shawcable.net) has joined #i3
+2020-03-24 18:45:10	-->	niklasb_ (~niklasb@unaffiliated/codeslay0r) has joined #i3
+2020-03-24 18:45:15	-->	robotmay (~beepboop@2001:8b0:7af0:2580:583a:3fa7:c8fe:86e2) has joined #i3
+2020-03-24 18:45:18	-->	ermo (~ermo@foresight/developer/ermo) has joined #i3
+2020-03-24 18:45:21	-->	nckx (~nckx@tobias.gr) has joined #i3
+2020-03-24 18:46:21	-->	theorangeone (quassel@gateway/vpn/privateinternetaccess/theorangeone) has joined #i3
+2020-03-24 18:46:21	-->	beencubed (~beencubed@209.131.238.248) has joined #i3
+2020-03-24 18:47:08	-->	cyphase (~cyphase@unaffiliated/cyphase) has joined #i3
+2020-03-24 18:47:26	<--	jwynn6 (~justin@050-088-122-078.res.spectrum.com) has quit (Ping timeout: 264 seconds)
+2020-03-24 18:48:19	-->	fuchur (~fuchur@185.213.155.170) has joined #i3
+2020-03-24 18:50:01	<--	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 18:50:08	-->	jwynn6 (~justin@050-088-122-078.res.spectrum.com) has joined #i3
+2020-03-24 18:52:49	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 264 seconds)
+2020-03-24 18:56:13	-->	notis (~notis@185.195.19.86) has joined #i3
+2020-03-24 18:58:53	<--	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has quit (Ping timeout: 250 seconds)
+2020-03-24 19:01:37	-->	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-24 19:09:55	<--	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (Ping timeout: 256 seconds)
+2020-03-24 19:16:08	<--	joemaro- (~joemaro@211.red-95-124-48.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2020-03-24 19:19:37	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 258 seconds)
+2020-03-24 19:27:45	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 19:33:25	-->	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2020-03-24 19:35:21	<--	drmbls (~drmbls@78-56-83-14.static.zebra.lt) has quit (Quit: Leaving)
+2020-03-24 19:42:54	-->	joemaro- (~joemaro@211.red-95-124-48.dynamicip.rima-tde.net) has joined #i3
+2020-03-24 19:47:54	<--	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has quit (Quit: Leaving)
+2020-03-24 19:58:25	-->	joemaro_ (~joemaro@46.6.189.74) has joined #i3
+2020-03-24 20:01:42	<--	joemaro- (~joemaro@211.red-95-124-48.dynamicip.rima-tde.net) has quit (Ping timeout: 240 seconds)
+2020-03-24 20:05:19	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Ping timeout: 265 seconds)
+2020-03-24 20:19:28	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-03-24 20:23:54	<--	quitman (~master@45.141.152.68) has quit (Quit: WeeChat 2.7)
+2020-03-24 20:25:38	-->	quitman (~master@45.141.152.68) has joined #i3
+2020-03-24 20:26:54	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-24 20:29:34	<--	ritalinona (~Other@gateway/tor-sasl/ritalinona) has quit (Max SendQ exceeded)
+2020-03-24 20:30:14	-->	ritalinona (~Other@gateway/tor-sasl/ritalinona) has joined #i3
+2020-03-24 20:45:02	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Ping timeout: 256 seconds)
+2020-03-24 20:48:43	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-03-24 20:50:42	<--	m1sosoup (~m1sosoup@62.23.209.50) has quit (Ping timeout: 256 seconds)
+2020-03-24 20:51:06	-->	beano (~beano66@2a02:8109:ac0:3b68:6ecc:8013:a87d:fd68) has joined #i3
+2020-03-24 20:53:25	-->	rkta_ (~kt@62.113.246.111) has joined #i3
+2020-03-24 20:53:49	<--	rkta (~kt@62.113.246.111) has quit (Read error: Connection reset by peer)
+2020-03-24 20:53:53	--	rkta_ is now known as rkta
+2020-03-24 20:55:35	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-03-24 20:55:58	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-03-24 20:58:13	<--	joemaro_ (~joemaro@46.6.189.74) has quit (Ping timeout: 264 seconds)
+2020-03-24 20:58:31	-->	joemaro- (~joemaro@46.222.128.147) has joined #i3
+2020-03-24 21:00:37	<--	c0c0 (~coco@ec2-52-48-32-45.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 264 seconds)
+2020-03-24 21:03:07	-->	joedoe47 (~joedoe47@c-98-254-188-143.hsd1.fl.comcast.net) has joined #i3
+2020-03-24 21:07:23	<--	lompik (~lompik@unaffiliated/lompik) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 21:07:26	<--	zanshin (~zanshin@ip24-255-217-102.ks.ks.cox.net) has quit (Ping timeout: 268 seconds)
+2020-03-24 21:08:59	<--	Trieste (~T@unaffiliated/trieste) has quit (Max SendQ exceeded)
+2020-03-24 21:09:36	-->	zanshin (~zanshin@ip24-255-217-102.ks.ks.cox.net) has joined #i3
+2020-03-24 21:10:53	-->	Trieste (~T@unaffiliated/trieste) has joined #i3
+2020-03-24 21:12:58	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 21:13:57	-->	c0c0 (~coco@212-51-137-149.fiber7.init7.net) has joined #i3
+2020-03-24 21:23:49	<--	emachado (~emachado@fsf/member/emachado) has quit (Quit: Leaving)
+2020-03-24 21:29:26	<--	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has quit (Ping timeout: 246 seconds)
+2020-03-24 21:37:01	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.7)
+2020-03-24 21:38:25	-->	AT-x310 (~AT-x310@pop.92-184-110-103.mobile.abo.orange.fr) has joined #i3
+2020-03-24 21:39:07	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-03-24 21:46:48	<--	AT-x310 (~AT-x310@pop.92-184-110-103.mobile.abo.orange.fr) has quit (Ping timeout: 256 seconds)
+2020-03-24 21:48:47	-->	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-24 21:51:01	<--	miller7 (~pidgin@unaffiliated/miller7) has quit (Ping timeout: 264 seconds)
+2020-03-24 22:03:06	<--	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 22:03:56	-->	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has joined #i3
+2020-03-24 22:17:45	<--	berton (~berton@181.220.114.167) has quit (Quit: Leaving)
+2020-03-24 22:21:13	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.7.1)
+2020-03-24 22:35:22	-->	johnny5 (~johnnyfiv@unaffiliated/isalive) has joined #i3
+2020-03-24 22:36:19	<--	johnnyfive (~johnnyfiv@unaffiliated/isalive) has quit (Ping timeout: 260 seconds)
+2020-03-24 22:37:14	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 256 seconds)
+2020-03-24 22:39:02	<--	c0c0 (~coco@212-51-137-149.fiber7.init7.net) has quit (Ping timeout: 240 seconds)
+2020-03-24 22:39:42	<--	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has quit (Ping timeout: 240 seconds)
+2020-03-24 22:40:31	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-03-24 22:41:53	-->	AT-x310 (~AT-x310@pop.92-184-110-88.mobile.abo.orange.fr) has joined #i3
+2020-03-24 22:43:42	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Ping timeout: 240 seconds)
+2020-03-24 22:44:43	-->	c0c0 (~coco@212-51-137-149.fiber7.init7.net) has joined #i3
+2020-03-24 22:51:33	-->	d33cee (440ab673@ip68-10-182-115.hr.hr.cox.net) has joined #i3
+2020-03-24 22:53:22	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 240 seconds)
+2020-03-24 23:01:16	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-24 23:07:08	-->	Hamilton (~Hamilton@unaffiliated/hamilton) has joined #i3
+2020-03-24 23:07:13	<--	joemaro- (~joemaro@46.222.128.147) has quit (Ping timeout: 264 seconds)
+2020-03-24 23:08:27	Hamilton	I think I discovered a bug. holding left_alt+shift (release) does work. right_alt+shift does work also. But if you use right_alt+shift, first, it doens't work again (but left_alt+shift always works)
+2020-03-24 23:08:27	botty	Hamilton: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-24 23:08:59	Hamilton	Sorry by shift I meant space
+2020-03-24 23:13:02	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.7)
+2020-03-24 23:16:03	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #i3
+2020-03-24 23:16:49	<--	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has quit (Ping timeout: 272 seconds)
+2020-03-25 10:27:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-25 10:27:10	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-25 10:27:10	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-25 10:27:10	--	Channel #i3: 317 nicks (3 ops, 0 voices, 314 normals)
+2020-03-25 10:27:12	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-25 10:27:13	captainchris	hi all 
+2020-03-25 10:27:14	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-25 10:35:51	-->	bitnoize (~mitya@158.255.208.222) has joined #i3
+2020-03-25 10:50:19	-->	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has joined #i3
+2020-03-25 10:53:06	-->	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-25 10:57:49	<--	joemaro- (~joemaro@250.red-95-124-4.dynamicip.rima-tde.net) has quit (Ping timeout: 250 seconds)
+2020-03-25 11:01:26	-->	plexigras (plexigras@gateway/vpn/privateinternetaccess/plexigras) has joined #i3
+2020-03-25 11:02:07	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-25 11:05:27	<--	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has quit (Quit: Leaving)
+2020-03-25 11:07:20	-->	tesseract (~tesseract@pop.92-184-110-177.mobile.abo.orange.fr) has joined #i3
+2020-03-25 11:17:38	-->	r3dux (~r3dux@2600:8802:1800:e2f:9d5e:e65b:afac:1a01) has joined #i3
+2020-03-25 11:19:29	<--	r3dux (~r3dux@2600:8802:1800:e2f:9d5e:e65b:afac:1a01) has quit (Client Quit)
+2020-03-25 11:27:35	<--	Nikkel (nikkel@sigkill.dk) has quit (Quit: WeeChat 2.4)
+2020-03-25 11:52:25	<--	knidos (~knidos@85.98.154.65) has quit (Ping timeout: 250 seconds)
+2020-03-25 12:04:33	<--	miller7 (~pidgin@unaffiliated/miller7) has quit (Ping timeout: 260 seconds)
+2020-03-25 12:11:37	-->	m1sosoup (~m1sosoup@port-92-194-65-104.dynamic.as20676.net) has joined #i3
+2020-03-25 12:13:44	-->	m0rph (~m1sosoup@62.23.209.50) has joined #i3
+2020-03-25 12:16:00	<--	m1sosoup (~m1sosoup@port-92-194-65-104.dynamic.as20676.net) has quit (Ping timeout: 240 seconds)
+2020-03-25 12:16:32	<--	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-03-25 12:21:42	<--	tuxmania (~tuxmania@176-136-236-133.abo.bbox.fr) has quit (Ping timeout: 256 seconds)
+2020-03-25 12:35:27	<--	kline (~kline@freenode/staff/enucs.kline) has left #i3 ("Leaving")
+2020-03-25 12:40:30	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-03-25 12:43:21	-->	quitman (~master@45.141.152.68) has joined #i3
+2020-03-25 12:44:28	<--	berton (~berton@181.220.114.167) has quit (Client Quit)
+2020-03-25 12:45:00	<--	CPrompt^ (~CPrompt^@75.183.21.65) has quit (Ping timeout: 246 seconds)
+2020-03-25 12:46:06	<--	darkbit (~rm@152.32.100.41) has quit (Quit: WeeChat 2.7.1)
+2020-03-25 12:48:07	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-03-25 12:54:15	<--	_thelion_ (~matthias@93-82-99-29.adsl.highway.telekom.at) has quit (Quit: WeeChat 2.7.1)
+2020-03-25 12:55:31	-->	ajnul0 (~ajnulo@2a02:8109:b5c0:40fc:3994:3fb7:664b:b48d) has joined #i3
+2020-03-25 13:03:18	<--	apetresc (~apetresc@toroon474qw-lp140-01-70-31-85-175.dsl.bell.ca) has quit (Quit: ZNC - http://znc.in)
+2020-03-25 13:03:50	<--	ajnul0 (~ajnulo@2a02:8109:b5c0:40fc:3994:3fb7:664b:b48d) has quit (Remote host closed the connection)
+2020-03-25 13:12:49	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-25 13:13:37	-->	apetresc (~apetresc@toroon474qw-lp140-01-70-31-85-175.dsl.bell.ca) has joined #i3
+2020-03-25 13:22:40	<--	bitnoize (~mitya@158.255.208.222) has quit (Ping timeout: 240 seconds)
+2020-03-25 13:22:52	-->	drmbls (~drmbls@78-56-83-14.static.zebra.lt) has joined #i3
+2020-03-25 13:24:12	<--	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has quit (Ping timeout: 246 seconds)
+2020-03-25 13:26:09	-->	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has joined #i3
+2020-03-25 13:27:39	-->	darkbit (~rm@152.32.100.41) has joined #i3
+2020-03-25 13:39:23	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-03-25 13:41:36	<--	darkbit (~rm@152.32.100.41) has quit (Quit: WeeChat 2.7.1)
+2020-03-25 13:42:27	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-03-25 13:44:42	-->	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2020-03-25 14:01:07	<--	plwweasel (~quassel@unaffiliated/plwweasel) has quit (Ping timeout: 250 seconds)
+2020-03-25 14:03:40	-->	joemaro- (~joemaro@250.red-95-124-4.dynamicip.rima-tde.net) has joined #i3
+2020-03-25 14:16:47	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 264 seconds)
+2020-03-25 14:24:47	-->	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-25 14:27:38	-->	knidos (~knidos@85.98.154.65) has joined #i3
+2020-03-25 14:30:46	-->	bitnoize (~mitya@158.255.208.222) has joined #i3
+2020-03-25 14:53:30	<--	pinpox| (~pinpox@2a0a-a546-6ca1-0-aaa1-59ff-fe07-7a11.ipv6dyn.netcologne.de) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-25 15:01:58	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Remote host closed the connection)
+2020-03-25 15:10:27	<--	random_yanek (~random_ya@87.116.228.192) has quit (Ping timeout: 250 seconds)
+2020-03-25 15:14:02	<--	bitnoize (~mitya@158.255.208.222) has quit (Ping timeout: 256 seconds)
+2020-03-25 15:14:10	<--	notis (~notis@185.195.19.86) has quit (Ping timeout: 265 seconds)
+2020-03-25 15:25:49	-->	bitnoize (~mitya@158.255.208.222) has joined #i3
+2020-03-25 15:29:54	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined #i3
+2020-03-25 15:32:43	<--	tau (~vy@vy/master) has quit (Quit:  in chess as in love, pleasure comes from power over your opponent.)
+2020-03-25 15:34:45	<--	bitnoize (~mitya@158.255.208.222) has quit (Ping timeout: 258 seconds)
+2020-03-25 15:38:31	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-25 15:40:21	<--	knidos (~knidos@85.98.154.65) has quit (Quit: WeeChat 2.7.1)
+2020-03-25 15:48:45	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 246 seconds)
+2020-03-25 15:50:53	-->	rardiol_ (~quassel@177.52.226.219) has joined #i3
+2020-03-25 15:51:25	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-25 15:53:04	<--	rardiol (~quassel@177.52.226.219) has quit (Ping timeout: 256 seconds)
+2020-03-25 15:56:55	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-03-25 15:59:40	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.7.1)
+2020-03-25 16:06:01	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-03-25 16:11:59	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 264 seconds)
+2020-03-25 16:12:19	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 258 seconds)
+2020-03-25 16:13:20	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-03-25 16:18:25	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 260 seconds)
+2020-03-25 16:24:40	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-25 16:25:01	-->	bitnoize (~mitya@158.255.208.222) has joined #i3
+2020-03-25 16:34:07	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-25 16:45:29	<--	joemaro- (~joemaro@250.red-95-124-4.dynamicip.rima-tde.net) has quit (Ping timeout: 260 seconds)
+2020-03-25 16:47:33	-->	joemaro (~joemaro@250.red-95-124-4.dynamicip.rima-tde.net) has joined #i3
+2020-03-25 16:52:17	-->	Elodin (~weechat@unaffiliated/padawan) has joined #i3
+2020-03-25 16:56:50	-->	kupi (uid212005@gateway/web/irccloud.com/x-mtqkmpfmkiqqzaiw) has joined #i3
+2020-03-25 16:59:22	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 256 seconds)
+2020-03-25 17:11:49	-->	tau (~vy@vy/master) has joined #i3
+2020-03-25 17:20:36	-->	joemaro_ (~joemaro@46.6.163.96) has joined #i3
+2020-03-25 17:23:40	<--	joemaro (~joemaro@250.red-95-124-4.dynamicip.rima-tde.net) has quit (Ping timeout: 240 seconds)
+2020-03-25 17:23:59	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2020-03-25 17:24:16	-->	johnnyfive (~johnnyfiv@unaffiliated/isalive) has joined #i3
+2020-03-25 17:24:57	<--	joemaro_ (~joemaro@46.6.163.96) has quit (Read error: Connection reset by peer)
+2020-03-25 17:25:00	<--	johnny5 (~johnnyfiv@unaffiliated/isalive) has quit (Ping timeout: 246 seconds)
+2020-03-25 17:28:34	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-25 17:46:51	<--	DamienCassou (damiencass@gateway/shell/matrix.org/x-prakqnmymgmijmle) has quit (Ping timeout: 256 seconds)
+2020-03-25 17:46:52	<--	Celmor[m] (celmormatr@gateway/shell/matrix.org/x-tpznmotjkeuuijnz) has quit (Ping timeout: 240 seconds)
+2020-03-25 17:50:59	-->	DamienCassou (damiencass@gateway/shell/matrix.org/x-zmkivujmjvlgmxjx) has joined #i3
+2020-03-25 17:52:47	-->	Celmor[m] (celmormatr@gateway/shell/matrix.org/x-cwkrwgcrlvirsnus) has joined #i3
+2020-03-25 17:52:51	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-25 17:53:01	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Client Quit)
+2020-03-25 18:10:43	<--	abjectnotfound (~abjectnot@ip68-99-110-239.hr.hr.cox.net) has quit (Quit: Leaving)
+2020-03-25 18:16:11	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 264 seconds)
+2020-03-25 18:28:25	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-03-25 18:28:43	-->	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has joined #i3
+2020-03-25 18:31:54	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-25 18:35:07	-->	CCDelivery (~CCDeliver@107-179-233-239.cpe.teksavvy.com) has joined #i3
+2020-03-25 18:38:55	captainchris	I everybody
+2020-03-25 18:38:58	captainchris	hi ^
+2020-03-25 18:39:27	captainchris	it possible to limit number application by desktop 
+2020-03-25 18:39:40	captainchris	if i open 3 terminal switch to another desktop ?? 
+2020-03-25 18:41:59	<--	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-25 18:46:25	Elodin	not natively
+2020-03-25 18:46:27	Elodin	no
+2020-03-25 18:47:58	<--	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has quit (Ping timeout: 260 seconds)
+2020-03-25 18:49:35	-->	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has joined #i3
+2020-03-25 18:51:31	<--	f8l (~f8l@89-64-84-212.dynamic.chello.pl) has quit (Remote host closed the connection)
+2020-03-25 18:52:18	-->	f8l (~f8l@89-64-84-212.dynamic.chello.pl) has joined #i3
+2020-03-25 19:03:39	<--	tesseract (~tesseract@pop.92-184-110-177.mobile.abo.orange.fr) has quit (Quit: Leaving)
+2020-03-25 19:12:04	-->	joemaro_ (~joemaro@250.red-95-124-4.dynamicip.rima-tde.net) has joined #i3
+2020-03-25 19:14:20	<--	spacekookie (~kookie@qaul.net/dev/spacekookie) has quit (Quit: No Ping reply in 60 seconds.)
+2020-03-25 19:14:39	-->	spacekookie (~kookie@qaul.net/dev/spacekookie) has joined #i3
+2020-03-25 19:24:35	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-25 19:27:20	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 240 seconds)
+2020-03-25 19:29:46	--	eremitah_ is now known as eremitah
+2020-03-25 19:29:46	<--	eremitah (~int@unaffiliated/eremitah) has quit (Excess Flood)
+2020-03-25 19:30:04	-->	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2020-03-25 19:58:04	-->	Human_G33k (~HumanG33k@62.147.242.8) has joined #i3
+2020-03-25 19:58:18	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-25 20:00:24	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-03-25 20:04:23	-->	buckworst (~nate@202.138.253.6) has joined #i3
+2020-03-25 20:07:48	<--	drmbls (~drmbls@78-56-83-14.static.zebra.lt) has quit (Quit: Leaving)
+2020-03-25 20:10:49	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-25 20:12:07	<--	rardiol_ (~quassel@177.52.226.219) has quit (Ping timeout: 256 seconds)
+2020-03-25 20:12:59	-->	rardiol (~quassel@177.52.226.219) has joined #i3
+2020-03-25 20:13:30	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 256 seconds)
+2020-03-25 20:13:30	--	eremitah_ is now known as eremitah
+2020-03-25 20:22:11	-->	thegala (~mirko@93-143-15-169.adsl.net.t-com.hr) has joined #i3
+2020-03-25 20:23:28	-->	joemaro (~joemaro@46.6.223.108) has joined #i3
+2020-03-25 20:24:11	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 250 seconds)
+2020-03-25 20:26:32	<--	joemaro_ (~joemaro@250.red-95-124-4.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2020-03-25 20:26:46	<--	eremitah (~int@unaffiliated/eremitah) has quit (Quit: quit)
+2020-03-25 20:27:06	-->	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2020-03-25 20:34:15	<--	Human_G33k (~HumanG33k@62.147.242.8) has quit (Remote host closed the connection)
+2020-03-25 20:34:29	-->	Human_G33k (~HumanG33k@62.147.242.8) has joined #i3
+2020-03-25 20:47:21	-->	berton_ (~berton@181.220.114.167) has joined #i3
+2020-03-25 20:49:45	<--	berton (~berton@181.220.114.167) has quit (Ping timeout: 250 seconds)
+2020-03-25 20:49:51	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-03-25 20:53:39	<--	jprince (~jprince@tikvpn.qx.net) has quit (Quit: jprince)
+2020-03-25 20:58:47	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 264 seconds)
+2020-03-25 21:02:07	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-25 21:04:21	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-25 21:21:52	-->	_thelion_ (~matthias@93-82-99-29.adsl.highway.telekom.at) has joined #i3
+2020-03-25 21:23:29	<--	emachado (~emachado@fsf/member/emachado) has quit (Quit: Leaving)
+2020-03-25 21:25:13	<--	pjs (~pjs@mail.netlandish.com) has quit (Quit: brb)
+2020-03-25 21:38:51	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-25 21:38:51	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-25 21:38:51	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-25 21:38:51	--	Channel #i3: 318 nicks (3 ops, 0 voices, 315 normals)
+2020-03-25 21:38:53	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-25 21:38:58	captainchris	hi everybody 
+2020-03-25 21:38:58	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-25 21:40:19	captainchris	I have a little problem  I have three windows (terminal) on the same desktop on left and two right I split container in vertically 
+2020-03-25 21:41:22	captainchris	but when i want to switch windows to see more on screen with meta+shift+j 
+2020-03-25 21:41:43	captainchris	the three container are vertical and don't respect organisation 
+2020-03-25 21:42:50	nimaje	you could focus parent on the two container and move them
+2020-03-25 21:42:52	-->	niklasb_ (~niklasb@unaffiliated/codeslay0r) has joined #i3
+2020-03-25 21:44:06	captainchris	how can i do that ?? 
+2020-03-25 21:45:40	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 240 seconds)
+2020-03-25 21:45:44	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Quit: Lost terminal)
+2020-03-25 21:49:41	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-25 21:49:41	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-25 21:49:41	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-25 21:49:41	--	Channel #i3: 318 nicks (3 ops, 0 voices, 315 normals)
+2020-03-25 21:49:43	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-25 21:49:58	captainchris	I tried to modify my config 
+2020-03-25 21:50:10	captainchris	I use weechat focus parent 
+2020-03-25 21:50:19	captainchris	cmus with layout splitv 
+2020-03-25 21:50:40	captainchris	but cmus doesn't split when i add a windows
+2020-03-25 22:11:52	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-25 22:11:52	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-25 22:11:52	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-25 22:11:52	--	Channel #i3: 316 nicks (3 ops, 0 voices, 313 normals)
+2020-03-25 22:11:54	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-25 22:12:50	captainchris	it isn't possible to define splitv and splitv on for_window [class ... to define container split vertically 
+2020-03-25 22:13:07	-->	joemaro (~joemaro@46.6.223.108) has joined #i3
+2020-03-25 22:13:19	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Ping timeout: 256 seconds)
+2020-03-25 22:13:23	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 250 seconds)
+2020-03-25 22:14:24	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-03-25 22:15:50	<--	berton_ (~berton@181.220.114.167) has quit (Quit: Leaving)
+2020-03-25 22:17:55	<--	strondeak (~quassel@83-160-108-130.ip.xs4all.nl) has quit (Quit: No Ping reply in 180 seconds.)
+2020-03-25 22:23:31	-->	pjs (~pjs@mail.netlandish.com) has joined #i3
+2020-03-25 22:33:20	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-25 22:33:20	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-25 22:33:20	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-25 22:33:20	--	Channel #i3: 316 nicks (3 ops, 0 voices, 313 normals)
+2020-03-25 22:33:20	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-25 22:33:22	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-25 22:33:23	captainchris	re everybody 
+2020-03-25 22:33:28	captainchris	sorry for interrupt 
+2020-03-25 22:34:43	captainchris	I didn't arrive to split correctly my container 
+2020-03-25 22:34:43	Elodin	you are not interrupting anything all cool
+2020-03-25 22:35:51	Elodin	i dont understand what you want to accomplish
+2020-03-25 22:35:55	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 250 seconds)
+2020-03-25 22:35:55	--	eremitah_ is now known as eremitah
+2020-03-25 22:36:16	captainchris	I want to splitv specific terminal that i use for music 
+2020-03-25 22:36:42	Elodin	you have a bind for it
+2020-03-25 22:36:59	Elodin	super+h and super+v i think are the default?
+2020-03-25 22:37:08	captainchris	https://pastebin.com/L5Nv7d8a
+2020-03-25 22:37:23	captainchris	yes of course but it is not possible to set by default
+2020-03-25 22:37:54	Elodin	i see
+2020-03-25 22:40:30	Elodin	captainchris: well, it works here
+2020-03-25 22:40:59	Elodin	captainchris: have you checked the xprop title of the window?
+2020-03-25 22:41:12	Elodin	maybe the title doesn't match the 'Music' you put there
+2020-03-25 22:41:40	captainchris	it open the window on workspace 7 
+2020-03-25 22:42:11	Elodin	captainchris: okay, do this then
+2020-03-25 22:42:17	<--	buckworst (~nate@202.138.253.6) has quit (Ping timeout: 256 seconds)
+2020-03-25 22:42:20	Elodin	open a new windows on workspace 7
+2020-03-25 22:42:27	Elodin	then open this Music app
+2020-03-25 22:42:31	Elodin	you will see it working
+2020-03-25 22:42:37	Elodin	should*
+2020-03-25 22:45:12	captainchris	sorry I really stupid, I use title instead class 
+2020-03-25 22:45:20	captainchris	I'm ^
+2020-03-25 22:50:40	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.7.1)
+2020-03-25 22:52:38	captainchris	ok I come back
+2020-03-25 23:10:51	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-25 23:10:51	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-25 23:10:51	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-25 23:10:51	--	Channel #i3: 315 nicks (3 ops, 0 voices, 312 normals)
+2020-03-25 23:10:53	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-25 23:10:58	captainchris	re 
+2020-03-25 23:11:22	captainchris	Ok it's work I arrive to split correctly my screen 
+2020-03-25 23:12:56	captainchris	I have weechat splith cmus splitv terminal 
+2020-03-25 23:13:20	captainchris	but when i move window to get terminal on the left i lost my organisation 
+2020-03-25 23:14:04	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-25 23:15:40	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 240 seconds)
+2020-03-25 23:15:40	--	eremitah_ is now known as eremitah
+2020-03-26 11:37:11	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-26 11:37:11	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-26 11:37:11	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-26 11:37:11	--	Channel #i3: 306 nicks (3 ops, 0 voices, 303 normals)
+2020-03-26 11:37:13	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-26 11:37:24	captainchris	hi everybody 
+2020-03-26 11:37:24	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-26 11:37:51	-->	quitman (~master@45.141.152.68) has joined #i3
+2020-03-26 11:38:44	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-26 11:38:57	<--	_McGuyver (mcguyver@unaffiliated/mcguyver) has quit (Ping timeout: 264 seconds)
+2020-03-26 11:39:10	captainchris	I have a problem with tiling movement 
+2020-03-26 11:39:15	captainchris	https://postimg.cc/hXLNkgVk
+2020-03-26 11:39:35	captainchris	I want to have a containver with splith  and one with splitv 
+2020-03-26 11:40:22	captainchris	in my config I assign layout splith; splitv and I can split my windows correctly 
+2020-03-26 11:40:44	captainchris	but when I move with $mod+Shift+j I lost my tilling
+2020-03-26 11:40:56	captainchris	all container goes splith
+2020-03-26 11:41:03	captainchris	containers ^
+2020-03-26 11:45:04	<--	r3dux (~r3dux@2600:8802:1800:e2f:dca5:969c:ceb0:bcdb) has quit (Ping timeout: 256 seconds)
+2020-03-26 11:54:08	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 256 seconds)
+2020-03-26 11:54:38	<--	joemaro (~joemaro@137.red-95-124-18.dynamicip.rima-tde.net) has quit (Ping timeout: 240 seconds)
+2020-03-26 11:57:00	<--	_thelion_ (~matthias@93-82-99-29.adsl.highway.telekom.at) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 12:04:05	<--	ritalinona (~Other@gateway/tor-sasl/ritalinona) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	koniu (~koniu@gateway/tor-sasl/koniu) has quit (Remote host closed the connection)
+2020-03-26 12:04:05	<--	cartwright (~chatting@gateway/tor-sasl/cantstanya) has quit (Read error: Connection reset by peer)
+2020-03-26 12:06:31	-->	opal (~wowaname@volatile/founder/wowaname) has joined #i3
+2020-03-26 12:07:19	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-03-26 12:20:04	-->	ritalinona (~Other@gateway/tor-sasl/ritalinona) has joined #i3
+2020-03-26 12:23:14	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-03-26 12:24:46	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-03-26 12:25:56	<--	bitnoize (~mitya@158.255.208.222) has quit (Remote host closed the connection)
+2020-03-26 12:26:00	-->	joemaro (~joemaro@137.red-95-124-18.dynamicip.rima-tde.net) has joined #i3
+2020-03-26 12:26:57	-->	bitnoize (~mitya@158.255.208.222) has joined #i3
+2020-03-26 12:29:00	-->	koniu (~koniu@gateway/tor-sasl/koniu) has joined #i3
+2020-03-26 12:31:22	-->	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has joined #i3
+2020-03-26 12:31:35	-->	cartwright (~chatting@gateway/tor-sasl/cantstanya) has joined #i3
+2020-03-26 12:36:11	<--	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-26 12:38:53	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-03-26 12:45:30	-->	Kaivo (~Kaivo@ec2-15-222-231-32.ca-central-1.compute.amazonaws.com) has joined #i3
+2020-03-26 12:47:44	-->	discape (~discape@87-236-224-150.dynamic.lounea.fi) has joined #i3
+2020-03-26 12:48:08	discape	Hi kings, I'm having some problems with my i3 config
+2020-03-26 12:48:08	botty	discape: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-26 12:48:30	<--	isomari (~isomari@41.217.24.195) has quit (Ping timeout: 265 seconds)
+2020-03-26 12:49:18	discape	Im trying to set the background to a color in pywal-generated .Xresources, but I would like to add "80" after the hex code, as in the alpha value
+2020-03-26 12:50:11	-->	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has joined #i3
+2020-03-26 12:50:34	discape	In my current config I have "set_from_resource $bg background", and in the i3 bar i have "backgroud $bg"
+2020-03-26 12:50:42	<--	Edu4rdSHL (~edu4rdshl@fsf/member/edu4rdshl) has quit (Quit: Leaving)
+2020-03-26 12:51:00	-->	Edu4rdSHL (~edu4rdshl@fsf/member/edu4rdshl) has joined #i3
+2020-03-26 12:51:16	discape	So could I do something like "background $bg + "80""?
+2020-03-26 12:59:35	-->	buckworst (~nate@202.138.253.1) has joined #i3
+2020-03-26 13:01:09	captainchris	hi everybody 
+2020-03-26 13:01:15	captainchris	I want to have a containver with splith  and one with splitv 
+2020-03-26 13:01:19	captainchris	but when I move with $mod+Shift+j I lost my tilling
+2020-03-26 13:01:25	captainchris	https://postimg.cc/WFBsmkCB
+2020-03-26 13:01:39	captainchris	it is possible 
+2020-03-26 13:05:49	nimaje	you could use the container swapping feature, captainchris
+2020-03-26 13:06:11	captainchris	nimaje I search for 
+2020-03-26 13:08:42	discape	Ill try changing the pywal source code
+2020-03-26 13:10:58	captainchris	nimaje: can i swap using bindsym?? 
+2020-03-26 13:12:00	<--	Vonter (~Vonter@124.123.105.150) has quit (Ping timeout: 256 seconds)
+2020-03-26 13:13:15	<--	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (Ping timeout: 260 seconds)
+2020-03-26 13:13:54	-->	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2020-03-26 13:13:56	nimaje	yes, you can do all the commands in a bindsym
+2020-03-26 13:14:22	<--	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has quit (Quit: Leaving)
+2020-03-26 13:16:20	-->	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2020-03-26 13:17:03	-->	Vonter (~Vonter@124.123.105.150) has joined #i3
+2020-03-26 13:20:17	captainchris	ok i mark the container child as swapee and i swap the parent with child
+2020-03-26 13:20:49	<--	discape (~discape@87-236-224-150.dynamic.lounea.fi) has quit (Quit: Lost terminal)
+2020-03-26 13:24:13	<--	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has quit (Ping timeout: 250 seconds)
+2020-03-26 13:24:37	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-03-26 13:25:33	-->	ChrisLane (~irc@cpc119606-heme14-2-0-cust161.9-1.cable.virginm.net) has joined #i3
+2020-03-26 13:34:20	<--	buckworst (~nate@202.138.253.1) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 13:37:03	captainchris	bindsym $mod+g mark --add swapee; mode swap; swap container with mark swapee
+2020-03-26 13:37:09	captainchris	I doesn't work 
+2020-03-26 13:37:14	<--	koniu (~koniu@gateway/tor-sasl/koniu) has quit (Remote host closed the connection)
+2020-03-26 13:37:34	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-03-26 13:37:53	-->	koniu (~koniu@gateway/tor-sasl/koniu) has joined #i3
+2020-03-26 13:40:01	nimaje	"mode swap"? where do you focus the container you want to swap with?
+2020-03-26 13:41:04	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-26 13:41:09	<--	grobi (~rtng@unaffiliated/grobi) has quit (Ping timeout: 240 seconds)
+2020-03-26 13:41:47	captainchris	https://postimg.cc/WFBsmkCB
+2020-03-26 13:41:57	captainchris	I want to swap A and B 
+2020-03-26 13:44:10	captainchris	 bindsym $mod+g focus; mark --add swapee; mode swap; swap container with mark swapee
+2020-03-26 13:45:29	nimaje	yeah, but your command doesn't focus the container to swap swapee with and what should "mode swap" do?
+2020-03-26 13:46:07	captainchris	I don't know 
+2020-03-26 13:49:46	captainchris	I do it on two cmd
+2020-03-26 13:49:56	captainchris	bindsym $mod+g mark --add swapee to mark container
+2020-03-26 13:50:11	captainchris	bindsym $mod+t swap container with mark swapee to swap
+2020-03-26 13:51:37	captainchris	it's messy on the i3 doc 
+2020-03-26 13:51:46	captainchris	I do not understand anything 
+2020-03-26 13:55:20	-->	miller7 (~pidgin@unaffiliated/miller7) has joined #i3
+2020-03-26 13:56:13	<--	Matej8 (~matej8@host.anze.xyz) has quit (Quit: Well, that went well)
+2020-03-26 13:56:42	<--	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has quit (Quit: Leaving)
+2020-03-26 13:59:29	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-26 14:00:32	-->	Matej8 (~matej8@host.anze.xyz) has joined #i3
+2020-03-26 14:05:49	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 250 seconds)
+2020-03-26 14:08:42	-->	joemaro_ (~joemaro@46.6.226.255) has joined #i3
+2020-03-26 14:12:33	<--	joemaro (~joemaro@137.red-95-124-18.dynamicip.rima-tde.net) has quit (Ping timeout: 264 seconds)
+2020-03-26 14:21:22	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-26 14:36:46	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 265 seconds)
+2020-03-26 14:44:18	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 240 seconds)
+2020-03-26 14:52:39	<--	joemaro_ (~joemaro@46.6.226.255) has quit (Read error: No route to host)
+2020-03-26 14:53:15	-->	joemaro_ (~joemaro@46.6.226.255) has joined #i3
+2020-03-26 14:55:42	<--	andyrtr (~andyrtr@archlinux/developer/andyrtr) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-26 14:57:00	-->	andyrtr (~andyrtr@archlinux/developer/andyrtr) has joined #i3
+2020-03-26 15:12:24	-->	AT-x310 (~AT-x310@abordeaux-651-1-82-151.w90-5.abo.wanadoo.fr) has joined #i3
+2020-03-26 15:13:53	-->	sva (~sva@vm-187.askja.de) has joined #i3
+2020-03-26 15:14:46	sva	hey, I've got a noob question here, pls laught at me: can I use i3 "on top" if xfce? xfce has a few features with I dont like to miss, which kept me from switching to i3 so far.
+2020-03-26 15:14:46	botty	sva: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-26 15:15:04	sva	thank botty :)
+2020-03-26 15:28:59	<--	grove (~grove@teresa.3001.dk) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:28:59	<--	gnulnx_ (~lopan@vps02.gnulnx.net) has quit (Ping timeout: 240 seconds)
+2020-03-26 15:29:14	-->	abondis_ (~abondis@unaffiliated/abondis) has joined #i3
+2020-03-26 15:29:21	<--	miller7 (~pidgin@unaffiliated/miller7) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:22	<--	timewalker (~timewalke@eth0.nu) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:22	<--	DaveDavenport (~qball@unaffiliated/qball) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:29	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-26 15:29:58	<--	joedoe47 (~joedoe47@c-98-254-188-143.hsd1.fl.comcast.net) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:29:58	<--	abondis (~abondis@unaffiliated/abondis) has quit (Ping timeout: 264 seconds)
+2020-03-26 15:30:08	-->	miller7 (~pidgin@unaffiliated/miller7) has joined #i3
+2020-03-26 15:30:13	--	eremitah_ is now known as eremitah
+2020-03-26 15:31:02	-->	timewalker (~timewalke@eth0.nu) has joined #i3
+2020-03-26 15:31:39	-->	joedoe47 (~joedoe47@c-98-254-188-143.hsd1.fl.comcast.net) has joined #i3
+2020-03-26 15:33:57	-->	joemaro- (~joemaro@37.29.171.188) has joined #i3
+2020-03-26 15:34:52	<--	joemaro_ (~joemaro@46.6.226.255) has quit (Ping timeout: 256 seconds)
+2020-03-26 15:47:43	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-26 15:50:45	<--	w1d3m0d3 (~w1d3m0d3@unaffiliated/w1d3m0d3) has quit (Changing host)
+2020-03-26 15:50:45	-->	w1d3m0d3 (~w1d3m0d3@fsf/member/w1d3m0d3) has joined #i3
+2020-03-26 15:59:47	captainchris	re everybody
+2020-03-26 16:00:42	captainchris	bindsym $mod+space swap container with mark swapee I have this
+2020-03-26 16:00:57	captainchris	swap works 
+2020-03-26 16:01:08	captainchris	but I can't select windows
+2020-03-26 16:02:59	captainchris	https://postimg.cc/WFBsmkCB
+2020-03-26 16:03:03	captainchris	I would like this 
+2020-03-26 16:03:12	captainchris	swap clockwidth 
+2020-03-26 16:03:38	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 240 seconds)
+2020-03-26 16:04:09	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 264 seconds)
+2020-03-26 16:05:43	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-03-26 16:06:39	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-03-26 16:28:52	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-26 16:28:52	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-26 16:28:52	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-26 16:28:52	--	Channel #i3: 310 nicks (3 ops, 0 voices, 307 normals)
+2020-03-26 16:28:54	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-26 16:30:56	captainchris	bindsym $mod+g  mark --add "swapee"; swap container with mark "swapee"
+2020-03-26 16:31:05	captainchris	what is wrong with this command 
+2020-03-26 16:34:02	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-03-26 16:34:59	<--	vdl (~vivien@147.ip-167-114-97.net) has quit (Quit: WeeChat 2.3)
+2020-03-26 16:35:41	-->	vdl (~vivien@147.ip-167-114-97.net) has joined #i3
+2020-03-26 16:39:10	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 256 seconds)
+2020-03-26 16:41:17	<--	joemaro- (~joemaro@37.29.171.188) has quit (Read error: Connection reset by peer)
+2020-03-26 16:42:07	-->	joemaro- (~joemaro@37.29.171.188) has joined #i3
+2020-03-26 16:46:00	-->	johnny5 (~johnnyfiv@unaffiliated/isalive) has joined #i3
+2020-03-26 16:47:18	<--	johnnyfive (~johnnyfiv@unaffiliated/isalive) has quit (Ping timeout: 240 seconds)
+2020-03-26 16:47:59	<--	koniu (~koniu@gateway/tor-sasl/koniu) has quit (Remote host closed the connection)
+2020-03-26 16:48:27	-->	koniu (~koniu@gateway/tor-sasl/koniu) has joined #i3
+2020-03-26 16:51:33	<--	johnny5 (~johnnyfiv@unaffiliated/isalive) has quit (Ping timeout: 264 seconds)
+2020-03-26 16:51:57	-->	johnnyfive (~johnnyfiv@unaffiliated/isalive) has joined #i3
+2020-03-26 16:53:20	<--	grobi (~rtng@unaffiliated/grobi) has quit (Ping timeout: 256 seconds)
+2020-03-26 16:54:39	-->	semeion (~semeion@unaffiliated/semeion) has joined #i3
+2020-03-26 16:55:06	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-03-26 17:03:17	-->	stultulo (~f8l@89-64-84-212.dynamic.chello.pl) has joined #i3
+2020-03-26 17:04:09	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 264 seconds)
+2020-03-26 17:04:44	<--	dddddd (~dddddd@unaffiliated/dddddd) has quit (Remote host closed the connection)
+2020-03-26 17:05:11	<--	f8l (~f8l@89-64-84-212.dynamic.chello.pl) has quit (Ping timeout: 260 seconds)
+2020-03-26 17:05:12	--	stultulo is now known as f8l
+2020-03-26 17:05:38	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-03-26 17:10:44	<--	joemaro- (~joemaro@37.29.171.188) has quit (Ping timeout: 258 seconds)
+2020-03-26 17:11:28	-->	joemaro- (~joemaro@37.29.171.188) has joined #i3
+2020-03-26 17:12:27	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Ping timeout: 240 seconds)
+2020-03-26 17:13:50	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined #i3
+2020-03-26 17:14:25	captainchris	I have mark swapee 
+2020-03-26 17:14:32	captainchris	but i can't swap container 
+2020-03-26 17:17:03	nimaje	swap should swap the current focused container with the marked container
+2020-03-26 17:19:21	<--	HumanGeek (~HumanG33k@62.147.242.8) has quit (Read error: Connection reset by peer)
+2020-03-26 17:20:34	-->	HumanGeek (~HumanG33k@62.147.242.8) has joined #i3
+2020-03-26 17:22:07	<--	hedin (~hedin@81.25.179.168) has quit (Ping timeout: 250 seconds)
+2020-03-26 17:34:57	captainchris	I made this bindsym $mod+g focus; mark "HUGE"
+2020-03-26 17:35:10	captainchris	and $mod+j swap container 
+2020-03-26 17:35:26	captainchris	but there is no solution to do this with one bind ?? 
+2020-03-26 17:35:55	-->	multiproc (~mark@unaffiliated/multiproc) has joined #i3
+2020-03-26 17:37:39	-->	hedin (~hedin@81.25.179.168) has joined #i3
+2020-03-26 17:40:02	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Read error: Connection reset by peer)
+2020-03-26 17:40:21	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-26 17:41:44	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-03-26 17:50:18	<--	m0rph (~m1sosoup@62.23.209.50) has quit (Quit: Leaving)
+2020-03-26 17:57:40	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Remote host closed the connection)
+2020-03-26 18:05:03	<--	qgTG (~qgTG@unaffiliated/qgtg) has quit (Ping timeout: 256 seconds)
+2020-03-26 18:10:07	captainchris	Ok i understood the concept of swaping 
+2020-03-26 18:10:18	nimaje	what container should the  focus  call focus? the currently focused one?
+2020-03-26 18:10:29	captainchris	is it possbiel to add titlebar to all windows in i3 
+2020-03-26 18:11:14	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #i3
+2020-03-26 18:12:23	nimaje	windows have a titlebar by default, if they haven't for you than you have changed something
+2020-03-26 18:12:29	<--	cartwright (~chatting@gateway/tor-sasl/cantstanya) has quit (Remote host closed the connection)
+2020-03-26 18:12:42	captainchris	Ok 
+2020-03-26 18:13:09	<--	joemaro- (~joemaro@37.29.171.188) has quit (Ping timeout: 264 seconds)
+2020-03-26 18:14:18	captainchris	I have titlebar when i"m in tabbedand stacking  mode 
+2020-03-26 18:14:51	<--	rubdos (~rubdos@2a02:578:859d:700:8b44:5716:382d:a7da) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 18:15:35	-->	cartwright (~chatting@gateway/tor-sasl/cantstanya) has joined #i3
+2020-03-26 18:15:45	captainchris	nope I'ts good i defined border pixel 
+2020-03-26 20:31:03	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-26 20:31:03	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-26 20:31:03	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-26 20:31:03	--	Channel #i3: 312 nicks (3 ops, 0 voices, 309 normals)
+2020-03-26 20:31:05	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-26 20:31:05	captainchris	re
+2020-03-26 20:31:07	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-26 20:31:23	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-26 20:32:46	-->	discape (~discape@87-236-224-150.dynamic.lounea.fi) has joined #i3
+2020-03-26 20:32:54	discape	Hi
+2020-03-26 20:32:54	botty	discape: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-26 20:33:03	discape	omfg who made this bot
+2020-03-26 20:33:19	-->	qgTG (~qgTG@unaffiliated/qgtg) has joined #i3
+2020-03-26 20:33:27	discape	Anyway I got a problem in my i3 config although everything seems to work
+2020-03-26 20:35:07	discape	the paste is in 87.236.224.150/get?id=a75fb341-b463-4144-a5be-687aa15da5d5
+2020-03-26 20:35:18	discape	Would be nice if anyone could check it out
+2020-03-26 20:37:07	Elodin	can you post on termbin or bpaste?
+2020-03-26 20:46:25	<--	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has quit (Ping timeout: 272 seconds)
+2020-03-26 20:46:29	@squigz	discape: I did.
+2020-03-26 20:46:37	@squigz	Use a public pastebin, as well
+2020-03-26 20:46:54	@squigz	And probably give more details as to what "a problem" is
+2020-03-26 20:46:59	@squigz	Maybe read the link the nice bot sends you
+2020-03-26 20:47:13	-->	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has joined #i3
+2020-03-26 20:59:34	-->	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2020-03-26 20:59:39	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 250 seconds)
+2020-03-26 21:05:13	-->	semeion (~semeion@unaffiliated/semeion) has joined #i3
+2020-03-26 21:06:13	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-26 21:09:49	discape	@squigz i3 says theres a problem in my i3 config
+2020-03-26 21:10:04	discape	I dont see any problems tho
+2020-03-26 21:11:42	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-26 21:12:29	<--	multiproc (~mark@unaffiliated/multiproc) has quit (Read error: Connection reset by peer)
+2020-03-26 21:13:10	<--	yidhra (~yidhra@208-76-164-225.pool.nctc.com) has quit (Ping timeout: 256 seconds)
+2020-03-26 21:14:45	<--	tau (~vy@vy/master) has quit (Remote host closed the connection)
+2020-03-26 21:14:52	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 256 seconds)
+2020-03-26 21:14:53	--	eremitah_ is now known as eremitah
+2020-03-26 21:15:48	<--	xelra (~xelra@unaffiliated/xelra) has quit (Remote host closed the connection)
+2020-03-26 21:18:08	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-26 21:20:33	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 256 seconds)
+2020-03-26 21:20:33	--	eremitah_ is now known as eremitah
+2020-03-26 21:22:10	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Ping timeout: 264 seconds)
+2020-03-26 21:26:18	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Ping timeout: 240 seconds)
+2020-03-26 21:27:21	<--	lord| (~solenodic@unaffiliated/solenodic) has quit (Quit: https://i.imgur.com/xacQ09F.mp4)
+2020-03-26 21:27:54	-->	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2020-03-26 21:33:32	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #i3
+2020-03-26 21:39:50	<--	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has quit (Ping timeout: 240 seconds)
+2020-03-26 21:42:05	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-03-26 21:43:46	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 256 seconds)
+2020-03-26 21:45:13	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-03-26 21:48:52	<--	semeion (~semeion@unaffiliated/semeion) has quit (Ping timeout: 265 seconds)
+2020-03-26 21:55:08	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-26 21:55:16	-->	notis (~notis@213.16.188.182.dsl.dyn.forthnet.gr) has joined #i3
+2020-03-26 22:01:46	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Ping timeout: 264 seconds)
+2020-03-26 22:03:37	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #i3
+2020-03-26 22:10:11	-->	jezza (~jezza@2001:984:c8e0:1:df1:adbb:8567:e83b) has joined #i3
+2020-03-26 22:10:15	<--	jezza (~jezza@2001:984:c8e0:1:df1:adbb:8567:e83b) has quit (Remote host closed the connection)
+2020-03-26 22:18:23	<--	berton (~berton@181.220.114.167) has quit (Remote host closed the connection)
+2020-03-26 22:23:39	<--	lord| (~solenodic@unaffiliated/solenodic) has quit (Read error: Connection reset by peer)
+2020-03-26 22:25:23	-->	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2020-03-26 22:29:37	discape	qiot
+2020-03-26 22:29:43	<--	discape (~discape@87-236-224-150.dynamic.lounea.fi) has quit (Quit: leaving)
+2020-03-26 22:29:52	-->	multiproc (~mark@unaffiliated/multiproc) has joined #i3
+2020-03-26 22:30:02	-->	yidhra (~yidhra@208-76-164-225.pool.nctc.com) has joined #i3
+2020-03-26 22:32:51	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 265 seconds)
+2020-03-26 22:37:56	<--	lord| (~solenodic@unaffiliated/solenodic) has quit (Read error: Connection reset by peer)
+2020-03-26 22:40:18	<--	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 22:41:03	-->	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has joined #i3
+2020-03-26 22:41:06	-->	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2020-03-26 22:47:51	-->	irc_user (uid423822@gateway/web/irccloud.com/x-nrupvgndiottxxem) has joined #i3
+2020-03-26 22:50:06	<--	joemaro- (~joemaro@31.221.238.84) has quit (Read error: Connection reset by peer)
+2020-03-26 22:52:30	<--	lord| (~solenodic@unaffiliated/solenodic) has quit (Read error: Connection reset by peer)
+2020-03-26 22:53:11	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-26 22:55:23	-->	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2020-03-26 22:58:56	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 22:59:29	-->	tau (~vy@vy/master) has joined #i3
+2020-03-26 23:01:10	-->	r3dux (~r3dux@2600:8802:1800:e2f:dca5:969c:ceb0:bcdb) has joined #i3
+2020-03-26 23:08:55	<--	byteturtle (~byteturtl@unaffiliated/byteturtle) has quit (Quit: ZNC - http://znc.in)
+2020-03-26 23:13:33	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Ping timeout: 250 seconds)
+2020-03-26 23:13:58	-->	semeion (~semeion@unaffiliated/semeion) has joined #i3
+2020-03-26 23:15:27	<--	tinywrkb (~tinywrkb@2001:470:7857:fb2::f) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net)
+2020-03-26 23:15:35	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.7)
+2020-03-26 23:15:55	<--	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-26 23:16:24	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-03-26 23:16:35	r3dux	Hello, I am using i3status. My battery indicator reads "75.81%" I would like it to just display the whole number (75%) is this possible?
+2020-03-26 23:16:55	-->	tinywrkb (~tinywrkb@tinywrkb.powered.by.lunarbnc.net) has joined #i3
+2020-03-26 23:16:56	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #i3
+2020-03-26 23:17:57	linux_dream	yes it is r3dux
+2020-03-26 23:18:54	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 256 seconds)
+2020-03-26 23:19:40	r3dux	linux_dream: What do i need to do? is it a formatting thing like with the date?
+2020-03-26 23:20:54	linux_dream	i dont remember r3dux now too late and lazy to check. but yeah something about .%f or somethng likt that for me worked
+2020-03-26 23:21:16	linux_dream	you can control how many digits you want to keep
+2020-03-26 23:21:19	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.7.1)
+2020-03-26 23:21:46	r3dux	linux_dream: hmmmm
+2020-03-28 09:52:34	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-28 09:52:34	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-28 09:52:34	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-28 09:52:34	--	Channel #i3: 300 nicks (3 ops, 0 voices, 297 normals)
+2020-03-28 09:52:36	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-28 09:52:40	captainchris	Hey everybody 
+2020-03-28 09:52:40	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-28 09:53:24	<--	joemaro (~joemaro@183.red-2-142-182.dynamicip.rima-tde.net) has quit (Remote host closed the connection)
+2020-03-28 09:55:47	captainchris	I would like to create window hotkeypopup like in awesome https://preview.redd.it/9y6vrdmnp4b41.png?width=1282&format=png&auto=webp&s=b394eebda763d555f71da42c184f14a74dc06303
+2020-03-28 09:56:01	captainchris	What is the best, using dzen or dunst ?? 
+2020-03-28 09:57:58	<--	yidhra (~yidhra@208-76-164-225.pool.nctc.com) has quit (Remote host closed the connection)
+2020-03-28 10:02:44	-->	yidhra (~yidhra@208-76-164-225.pool.nctc.com) has joined #i3
+2020-03-28 10:05:35	-->	alexherbo23 (~alexherbo@aputeaux-555-1-36-116.w90-43.abo.wanadoo.fr) has joined #i3
+2020-03-28 10:06:29	<--	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2020-03-28 10:07:16	<--	alexherbo2 (~alexherbo@aputeaux-555-1-36-116.w90-43.abo.wanadoo.fr) has quit (Read error: Connection reset by peer)
+2020-03-28 10:09:33	-->	alexherbo2 (~alexherbo@aputeaux-555-1-36-116.w90-43.abo.wanadoo.fr) has joined #i3
+2020-03-28 10:10:59	<--	alexherbo23 (~alexherbo@aputeaux-555-1-36-116.w90-43.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-03-28 10:13:06	<--	irc_user (uid423822@gateway/web/irccloud.com/x-iljozyhekofawlpx) has quit (Quit: Connection closed for inactivity)
+2020-03-28 10:15:55	-->	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has joined #i3
+2020-03-28 10:20:43	<--	funkatronixxx (~funkatron@a83-161-198-206.adsl.xs4all.nl) has quit (Client Quit)
+2020-03-28 10:28:52	-->	bitnoize (~mitya@158.255.208.222) has joined #i3
+2020-03-28 10:43:59	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-03-28 10:45:55	-->	narimiran (~miran@unaffiliated/miran) has joined #i3
+2020-03-28 10:51:28	nimaje	d33cee: no, nothing built-in, but with >ipc that should be possible to build
+2020-03-28 10:51:28	i3bot__	[Documentation reference] http://i3wm.org/docs/ipc.html
+2020-03-28 10:53:35	<--	alexherbo2 (~alexherbo@aputeaux-555-1-36-116.w90-43.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-03-28 10:54:31	<--	grobi (~rtng@unaffiliated/grobi) has quit (Remote host closed the connection)
+2020-03-28 11:06:02	-->	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has joined #i3
+2020-03-29 11:43:09	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-29 11:43:09	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-29 11:43:09	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-29 11:43:10	--	Channel #i3: 307 nicks (3 ops, 0 voices, 304 normals)
+2020-03-29 11:43:11	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-29 11:43:15	captainchris	hi everybody 
+2020-03-29 11:43:15	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-29 11:53:52	<--	Ahmed4119 (~Ahmed4119@165.16.96.244) has quit (Quit: Leaving)
+2020-03-29 11:55:38	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Remote host closed the connection)
+2020-03-29 12:01:36	-->	opal (~wowaname@volatile/founder/wowaname) has joined #i3
+2020-03-29 12:08:18	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-03-29 12:10:49	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 260 seconds)
+2020-03-29 12:15:52	--	pinpox- is now known as pinpox_
+2020-03-29 12:23:22	<--	joemaro- (~joemaro@230.red-2-140-163.dynamicip.rima-tde.net) has quit (Remote host closed the connection)
+2020-03-29 12:25:39	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-29 12:37:52	-->	joemaro (~joemaro@230.red-2-140-163.dynamicip.rima-tde.net) has joined #i3
+2020-03-29 12:44:57	<--	drmbls__ (~drmbls@78-56-83-14.static.zebra.lt) has quit (Quit: Leaving)
+2020-03-29 12:46:19	-->	knidos (~knidos@85.98.155.46) has joined #i3
+2020-03-29 13:14:24	-->	michael-kohlhaas (~michael-k@gateway/tor-sasl/michael-kohlhaas) has joined #i3
+2020-03-29 13:29:42	<--	darkbit (~rm@152.32.100.41) has quit (Quit: WeeChat 2.7.1)
+2020-03-29 13:37:37	<--	netvor (~amahdal@unaffiliated/netvor) has quit (Ping timeout: 260 seconds)
+2020-03-29 13:38:46	<--	kupi (uid212005@gateway/web/irccloud.com/x-qwrrjoyangicdgqq) has quit (Quit: Connection closed for inactivity)
+2020-03-29 13:57:06	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-29 14:08:25	<--	Aleksejs (~Aleksejs@haskell.lv) has quit (Ping timeout: 260 seconds)
+2020-03-29 14:12:05	-->	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2020-03-29 14:13:22	-->	Aleksejs (~Aleksejs@haskell.lv) has joined #i3
+2020-03-29 14:21:51	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 250 seconds)
+2020-03-29 14:28:14	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-29 14:32:57	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-29 14:35:48	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 265 seconds)
+2020-03-29 14:35:48	--	eremitah_ is now known as eremitah
+2020-03-29 14:47:25	-->	alexherbo29 (~alexherbo@aputeaux-651-1-324-90.w86-249.abo.wanadoo.fr) has joined #i3
+2020-03-29 14:48:43	<--	alexherbo2 (~alexherbo@aputeaux-555-1-36-116.w90-43.abo.wanadoo.fr) has quit (Ping timeout: 250 seconds)
+2020-03-29 14:48:44	--	alexherbo29 is now known as alexherbo2
+2020-03-29 14:48:55	<--	endre (znc@end.re) has quit (Ping timeout: 272 seconds)
+2020-03-29 14:56:36	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-03-29 15:04:22	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Read error: No route to host)
+2020-03-29 15:04:23	-->	tuxmania2 (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-29 15:05:05	-->	endre (znc@end.re) has joined #i3
+2020-03-29 15:05:22	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Ping timeout: 240 seconds)
+2020-03-29 15:08:45	-->	opal (~wowaname@volatile/founder/wowaname) has joined #i3
+2020-03-29 15:16:48	<--	alexherbo2 (~alexherbo@aputeaux-651-1-324-90.w86-249.abo.wanadoo.fr) has quit (Read error: Connection reset by peer)
+2020-03-29 15:18:51	-->	alexherbo2 (~alexherbo@aputeaux-651-1-324-90.w86-249.abo.wanadoo.fr) has joined #i3
+2020-03-29 15:19:05	<--	knidos (~knidos@85.98.155.46) has quit (Ping timeout: 252 seconds)
+2020-03-29 15:24:36	-->	knidos (~knidos@85.98.155.46) has joined #i3
+2020-03-29 15:25:29	<--	knidos (~knidos@85.98.155.46) has quit (Read error: Connection reset by peer)
+2020-03-29 15:25:48	-->	Hamilton (~Hamilton@unaffiliated/hamilton) has joined #i3
+2020-03-29 15:26:19	Hamilton	Does using i3ipc make system sluggish because it is listening to events and it is in python?
+2020-03-29 15:26:19	botty	Hamilton: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-29 15:30:01	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-29 15:32:24	-->	theoceaniscool (~theoceani@139.47.75.19) has joined #i3
+2020-03-29 15:32:50	<--	zanshin (~zanshin@ip24-255-217-102.ks.ks.cox.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-29 15:34:50	-->	zanshin (~zanshin@ip24-255-217-102.ks.ks.cox.net) has joined #i3
+2020-03-29 15:40:32	<--	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has quit (Read error: Connection reset by peer)
+2020-03-29 15:40:49	-->	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has joined #i3
+2020-03-29 15:41:25	Hamilton	How can I have that bspwm feature which rotates window placements clockwise? Like A | B/C => C | A/B => B | C/A => C | B/C
+2020-03-29 15:41:36	-->	lompik (~lompik@unaffiliated/lompik) has joined #i3
+2020-03-29 15:48:47	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 252 seconds)
+2020-03-29 15:58:46	-->	thegala_ (~mirko@93-137-22-38.adsl.net.t-com.hr) has joined #i3
+2020-03-29 16:07:04	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-03-29 16:13:08	<--	tuxmania2 (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2020-03-29 16:16:13	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-29 16:23:44	<--	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has quit (Ping timeout: 246 seconds)
+2020-03-29 16:26:03	-->	aps_ (~aps@2a02:908:df52:b280:9455:7667:9bf1:85a3) has joined #i3
+2020-03-29 16:34:37	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 252 seconds)
+2020-03-29 16:42:25	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-29 16:45:28	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 264 seconds)
+2020-03-29 16:45:28	--	eremitah_ is now known as eremitah
+2020-03-29 16:48:50	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-29 16:48:52	<--	cartwright (~chatting@gateway/tor-sasl/cantstanya) has quit (Read error: Connection reset by peer)
+2020-03-29 16:49:42	<--	alexherbo2 (~alexherbo@aputeaux-651-1-324-90.w86-249.abo.wanadoo.fr) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-03-29 16:52:06	-->	cartwright (~chatting@gateway/tor-sasl/cantstanya) has joined #i3
+2020-03-29 16:55:10	<--	andi- (~andi-@NixOS/user/andi-) has quit (Remote host closed the connection)
+2020-03-29 16:57:13	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-29 16:57:20	<--	c0c0 (~coco@ec2-52-48-32-45.eu-west-1.compute.amazonaws.com) has quit (Quit: WeeChat 2.6)
+2020-03-29 16:59:03	-->	andi- (~andi-@NixOS/user/andi-) has joined #i3
+2020-03-29 16:59:13	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 260 seconds)
+2020-03-29 16:59:52	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 264 seconds)
+2020-03-29 16:59:52	--	eremitah_ is now known as eremitah
+2020-03-29 17:06:57	-->	Kaivo (~Kaivo@192-222-129-52.qc.cable.ebox.net) has joined #i3
+2020-03-29 17:08:46	-->	jarvis-owl (~manjaro-i@107-62-78-N2.customer.vsm.sh) has joined #i3
+2020-03-29 17:21:32	<--	miller7 (~pidgin@unaffiliated/miller7) has quit (Ping timeout: 240 seconds)
+2020-03-29 17:21:40	<--	joemaro (~joemaro@230.red-2-140-163.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2020-03-29 17:21:53	<--	jarvis-owl (~manjaro-i@107-62-78-N2.customer.vsm.sh) has quit (Remote host closed the connection)
+2020-03-29 17:22:48	<--	Unode (~Unode@unaffiliated/unode) has left #i3 ("WeeChat 2.7")
+2020-03-29 17:28:02	-->	netvor (~amahdal@unaffiliated/netvor) has joined #i3
+2020-03-29 17:28:02	<--	netvor (~amahdal@unaffiliated/netvor) has quit (Client Quit)
+2020-03-29 17:28:26	-->	netvor (~amahdal@unaffiliated/netvor) has joined #i3
+2020-03-29 17:30:25	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-03-30 20:50:14	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-30 20:50:14	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-30 20:50:14	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-30 20:50:14	--	Channel #i3: 304 nicks (3 ops, 0 voices, 301 normals)
+2020-03-30 20:50:16	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-30 20:50:49	-->	CyberTrekker (cybertrekk@gateway/vpn/protonvpn/cybertrekker) has joined #i3
+2020-03-30 20:52:17	captainchris	hi everybody 
+2020-03-30 20:52:18	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-30 20:56:57	captainchris	anyone knows good tutorial about dzen to create window. I'm on github project but it really poor 
+2020-03-30 20:57:28	toketin	hi, with xfce4-power-manager I don't remember how to get the session locked by i3lock instead of xflock4
+2020-03-30 20:58:06	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-03-30 20:59:12	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Remote host closed the connection)
+2020-03-30 21:04:09	-->	zeltak (8MJrLUUkmy@karif.server-speed.net) has joined #i3
+2020-03-30 21:08:28	-->	superbolide (~superboli@cpe-66-27-85-1.san.res.rr.com) has joined #i3
+2020-03-30 21:12:55	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 265 seconds)
+2020-03-30 21:18:09	<--	theorangeone (quassel@gateway/vpn/privateinternetaccess/theorangeone) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-03-30 21:18:39	-->	theorangeone (quassel@gateway/vpn/privateinternetaccess/theorangeone) has joined #i3
+2020-03-30 21:20:13	<--	superbolide (~superboli@cpe-66-27-85-1.san.res.rr.com) has quit (Quit: Νενίκηκά σε Σολομών)
+2020-03-30 21:24:27	<--	ritalinona (~Other@gateway/tor-sasl/ritalinona) has quit (Remote host closed the connection)
+2020-03-30 21:24:51	-->	ritalinona (~Other@gateway/tor-sasl/ritalinona) has joined #i3
+2020-03-30 21:27:11	--	pinpox- is now known as pinpox_
+2020-03-30 21:27:46	captainchris	I'm trying to create hotkeypopup menu like awesomewm to show i3 keybinding 
+2020-03-30 21:27:59	captainchris	I made this script 
+2020-03-30 21:28:04	captainchris	https://i.imgur.com/AzWJYpY.png
+2020-03-30 21:28:11	captainchris	the screenshot 
+2020-03-30 21:28:25	captainchris	https://pastebin.com/L1ak0fSJ my snippet of code 
+2020-03-30 21:28:41	captainchris	the problem is I haven't multiline 
+2020-03-30 21:28:46	captainchris	I have single line 
+2020-03-30 21:33:38	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-30 21:39:06	-->	_thelion_ (~matthias@88-117-120-252.adsl.highway.telekom.at) has joined #i3
+2020-03-30 21:47:01	-->	superbolide (~superboli@cpe-66-27-85-1.san.res.rr.com) has joined #i3
+2020-03-30 21:50:44	captainchris	no body uses dzen 
+2020-03-30 22:03:27	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.7.1)
+2020-03-30 22:14:17	<--	emachado (~emachado@fsf/member/emachado) has quit (Quit: Leaving)
+2020-03-30 22:17:41	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 265 seconds)
+2020-03-30 22:30:00	demure	toketin: I exec xss-lock calling i3lock, in my i3 conf, to get screen locks.
+2020-03-30 22:32:13	-->	coco (~coco@212-51-137-149.fiber7.init7.net) has joined #i3
+2020-03-30 22:34:56	<--	grobi1 (~rtng@unaffiliated/grobi) has quit (Remote host closed the connection)
+2020-03-30 22:42:20	captainchris	nobody uses dzen2 ??
+2020-03-30 22:44:37	toketin	demure, ok thanks, in this way you just get the screen lock or also the suspension when on battery?
+2020-03-30 22:45:57	@squigz	captainchris: this is #i3
+2020-03-30 22:46:08	captainchris	yes 
+2020-03-30 22:46:19	captainchris	and there is no chan for dzen2
+2020-03-31 12:25:47	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-03-31 12:25:47	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-03-31 12:25:47	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-03-31 12:25:47	--	Channel #i3: 307 nicks (3 ops, 0 voices, 304 normals)
+2020-03-31 12:25:49	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-03-31 12:25:50	captainchris	hi everybody 
+2020-03-31 12:25:51	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-31 12:26:12	rouji	less cpu usage than no compositor? no
+2020-03-31 12:26:55	<--	snosk8r (~darkstard@2601:1c2:300:c8a0::60a4) has quit (Read error: Connection reset by peer)
+2020-03-31 12:28:42	toketin	hi guys, does anyone use xfce4-power-manager and i3lock here?
+2020-03-31 12:28:45	-->	snosk8r (~darkstard@2601:1c2:300:c8a0::60a4) has joined #i3
+2020-03-31 12:33:59	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2020-03-31 12:40:39	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-03-31 13:01:59	<--	rubdos (~rubdos@77.109.103.196) has quit (Ping timeout: 250 seconds)
+2020-03-31 13:04:39	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-03-31 13:05:41	<--	finsternis (~Y@23.226.237.192) has quit (Remote host closed the connection)
+2020-03-31 13:14:54	-->	joemaro- (~joemaro@96.red-2-140-131.dynamicip.rima-tde.net) has joined #i3
+2020-03-31 13:16:27	-->	Kabouik (~kabouik@2a01cb008023010021e2f0aac02c128d.ipv6.abo.wanadoo.fr) has joined #i3
+2020-03-31 13:16:57	<--	darkbit (~rm@152.32.100.41) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 13:17:17	-->	darkbit (~rm@152.32.100.41) has joined #i3
+2020-03-31 13:22:43	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-03-31 13:24:23	<--	rubdos (~rubdos@77.109.103.196) has quit (Ping timeout: 264 seconds)
+2020-03-31 13:25:01	captainchris	it is possible to add dzen menu in i3status bar 
+2020-03-31 13:27:26	captainchris	??
+2020-03-31 13:27:56	search_social	what's dzenmenu
+2020-03-31 13:28:33	captainchris	https://www.youtube.com/watch?v=lCfHYtqJ9Cg
+2020-03-31 13:28:46	captainchris	this guy uses dzen menubar 
+2020-03-31 13:29:14	captainchris	And i would keep i3statusbar but add entry in mi i3status 
+2020-03-31 13:29:17	search_social	put bar {} in .config/i3/config?
+2020-03-31 13:29:48	captainchris	i would like keep statusbar for my desktop 
+2020-03-31 13:30:14	search_social	yes
+2020-03-31 13:30:20	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-03-31 13:30:26	search_social	put bar {} in .config/i3/config?
+2020-03-31 13:32:10	<--	berton (~berton@181.220.114.167) has quit (Remote host closed the connection)
+2020-03-31 13:33:14	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-03-31 13:34:16	<--	TikityTik (~TikityTik@unaffiliated/tikitytik) has quit (Ping timeout: 256 seconds)
+2020-03-31 13:34:57	<--	rubdos (~rubdos@77.109.103.196) has quit (Client Quit)
+2020-03-31 13:36:17	-->	maneken (~weechat@unaffiliated/maneken) has joined #i3
+2020-03-31 13:40:03	<--	maneken (~weechat@unaffiliated/maneken) has quit (Client Quit)
+2020-03-31 13:41:01	<--	andyrtr (~andyrtr@archlinux/developer/andyrtr) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-31 13:42:20	-->	andyrtr (~andyrtr@archlinux/developer/andyrtr) has joined #i3
+2020-03-31 13:43:28	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 240 seconds)
+2020-03-31 13:43:47	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-03-31 14:02:08	-->	muffindrake (~muffindra@unaffiliated/muffindrake) has joined #i3
+2020-03-31 14:03:00	muffindrake	The scratchpad feature doesn't remember which monitor windows were on before being put into the scratchpad. That's intended, no?
+2020-03-31 14:03:00	botty	muffindrake: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-31 14:03:04	-->	Mossepo (~Mossepo@2001:708:10:4008:a::2039) has joined #i3
+2020-03-31 14:03:20	<--	snosk8r (~darkstard@2601:1c2:300:c8a0::60a4) has quit (Ping timeout: 240 seconds)
+2020-03-31 14:03:39	<--	darkstardevx (~darkstard@2601:1c2:300:c8a0::f4b4) has quit (Ping timeout: 252 seconds)
+2020-03-31 14:04:19	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-31 14:08:33	-->	darkstardevx (~darkstard@c-24-21-53-33.hsd1.or.comcast.net) has joined #i3
+2020-03-31 14:08:39	-->	snosk8r (~darkstard@c-24-21-53-33.hsd1.or.comcast.net) has joined #i3
+2020-03-31 14:09:47	<--	Edu4rdSHL (~edu4rdshl@fsf/member/edu4rdshl) has quit (Quit: Leaving)
+2020-03-31 14:10:02	-->	Edu4rdSHL (~edu4rdshl@fsf/member/edu4rdshl) has joined #i3
+2020-03-31 14:13:30	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-03-31 14:39:34	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-03-31 14:56:19	<--	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has quit (Quit: Leaving)
+2020-03-31 14:58:03	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 246 seconds)
+2020-03-31 14:58:42	-->	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2020-03-31 14:58:55	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-03-31 15:01:08	-->	quitman (~master@45.141.152.68) has joined #i3
+2020-03-31 15:07:19	hassoon	g'morning
+2020-03-31 15:13:01	<--	hedin (~hedin@81.25.179.168) has quit (Ping timeout: 260 seconds)
+2020-03-31 15:19:03	-->	xensky (~quassel@xengarden.xen.prgmr.com) has joined #i3
+2020-03-31 15:20:25	--	caterfxo is now known as mrwisdom
+2020-03-31 15:26:43	<--	Neele (uid424041@gateway/web/irccloud.com/x-zrnpaffhxokslbhh) has quit (Quit: Connection closed for inactivity)
+2020-03-31 15:38:13	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 260 seconds)
+2020-03-31 15:41:13	-->	AT-x310 (~AT-x310@apoitiers-656-1-129-42.w109-214.abo.wanadoo.fr) has joined #i3
+2020-03-31 15:54:11	-->	haro_ (beau@saweet.net) has joined #i3
+2020-03-31 15:54:26	<--	Hamilton1 (~Hamilton@unaffiliated/hamilton) has quit (Quit: Leaving)
+2020-03-31 15:56:19	<--	haro (beau@saweet.net) has quit (Ping timeout: 246 seconds)
+2020-03-31 15:56:19	<--	mk_modrzew (~panmodrze@46.101.156.27) has quit (Ping timeout: 246 seconds)
+2020-03-31 15:57:35	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-31 16:00:46	<--	n35xdxb0 (~n35xdxb0@82.43.86.195) has quit (Remote host closed the connection)
+2020-03-31 16:05:56	-->	drmbls (~drmbls@78-56-83-14.static.zebra.lt) has joined #i3
+2020-03-31 16:10:59	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-03-31 16:11:33	<--	ninjabuffet (~ninjabuff@unaffiliated/ninjabuffet) has quit (Quit: Laters)
+2020-03-31 16:16:04	-->	johnny56 (johnny56@gateway/vpn/protonvpn/johnny56) has joined #i3
+2020-03-31 16:18:30	<--	johnny56_ (johnny56@gateway/vpn/protonvpn/johnny56) has quit (Ping timeout: 256 seconds)
+2020-03-31 16:26:34	<--	Mossepo (~Mossepo@2001:708:10:4008:a::2039) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 16:27:27	<--	tomsmeding (~tomsmedin@2a03:b0c0:0:1010::767:3001) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-31 16:27:49	-->	tomsmeding (~tomsmedin@tomsmeding.com) has joined #i3
+2020-03-31 16:28:29	-->	ninjabuffet (~ninjabuff@unaffiliated/ninjabuffet) has joined #i3
+2020-03-31 16:36:57	<--	Kaivo (~Kaivo@192-222-129-52.qc.cable.ebox.net) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 16:38:30	-->	Kaivo (~Kaivo@192-222-129-52.qc.cable.ebox.net) has joined #i3
+2020-03-31 16:41:46	<--	ninjabuffet (~ninjabuff@unaffiliated/ninjabuffet) has quit (Quit: Laters)
+2020-03-31 16:43:26	<--	ermo (~ermo@foresight/developer/ermo) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-31 16:44:06	<--	koniu (~koniu@gateway/tor-sasl/koniu) has quit (Remote host closed the connection)
+2020-03-31 16:44:39	-->	koniu (~koniu@gateway/tor-sasl/koniu) has joined #i3
+2020-03-31 16:46:28	<--	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has quit (Read error: Connection reset by peer)
+2020-03-31 16:46:50	-->	arecaceae (root@gateway/vpn/privateinternetaccess/arecaceae) has joined #i3
+2020-03-31 16:56:48	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-31 16:58:30	-->	ermo (~ermo@foresight/developer/ermo) has joined #i3
+2020-03-31 17:04:11	<--	ermo (~ermo@foresight/developer/ermo) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-31 17:04:32	-->	ermo (~ermo@foresight/developer/ermo) has joined #i3
+2020-03-31 17:05:20	<--	hassoon (~hassoon@unaffiliated/hassen) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net)
+2020-03-31 17:05:53	-->	hassoon (~hassoon@unaffiliated/hassen) has joined #i3
+2020-03-31 17:09:51	<--	hassoon (~hassoon@unaffiliated/hassen) has quit (Client Quit)
+2020-03-31 17:10:23	-->	hassoon (~hassoon@unaffiliated/hassen) has joined #i3
+2020-03-31 17:17:26	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 256 seconds)
+2020-03-31 17:19:10	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-03-31 17:21:11	-->	ninjabuffet (~ninjabuff@unaffiliated/ninjabuffet) has joined #i3
+2020-03-31 17:23:39	-->	zChris (~zChris@unaffiliated/zchris) has joined #i3
+2020-03-31 17:24:01	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 246 seconds)
+2020-03-31 17:26:04	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-03-31 17:27:35	-->	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has joined #i3
+2020-03-31 17:27:49	-->	malmalmal (~malmalmal@98.red-79-146-117.dynamicip.rima-tde.net) has joined #i3
+2020-03-31 17:34:24	<--	ninjabuffet (~ninjabuff@unaffiliated/ninjabuffet) has quit (Quit: Laters)
+2020-03-31 17:37:05	<--	tesseract (~tesseract@pop.92-184-110-56.mobile.abo.orange.fr) has quit (Quit: Leaving)
+2020-03-31 17:47:20	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-03-31 17:49:48	<--	malmalmal (~malmalmal@98.red-79-146-117.dynamicip.rima-tde.net) has quit (Ping timeout: 240 seconds)
+2020-03-31 17:52:45	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Read error: Connection reset by peer)
+2020-03-31 17:53:09	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-31 17:54:33	-->	malmalmal (~malmalmal@98.red-79-146-117.dynamicip.rima-tde.net) has joined #i3
+2020-03-31 17:57:53	<--	notis (~notis@86.105.25.92) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 17:59:38	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-03-31 18:06:56	-->	notis (~notis@185.195.19.87) has joined #i3
+2020-03-31 18:07:04	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 256 seconds)
+2020-03-31 18:16:02	-->	Neele (uid424041@gateway/web/irccloud.com/x-ghgmacprolcrtlkn) has joined #i3
+2020-03-31 18:17:59	<--	malmalmal (~malmalmal@98.red-79-146-117.dynamicip.rima-tde.net) has quit (Remote host closed the connection)
+2020-03-31 18:22:29	<--	eater9 (~eater@216-180-85-7.starry-inc.net) has quit (Ping timeout: 260 seconds)
+2020-03-31 18:24:18	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-03-31 18:29:04	<--	hassoon (~hassoon@unaffiliated/hassen) has quit (Quit: Free ZNC ~ Powered by LunarBNC: https://LunarBNC.net)
+2020-03-31 18:29:23	-->	hassoon (~hassoon@unaffiliated/hassen) has joined #i3
+2020-03-31 18:30:51	-->	irc_user (uid423822@gateway/web/irccloud.com/x-dkiwaveumvuonyhv) has joined #i3
+2020-03-31 18:31:13	<--	rardiol (~quassel@177.52.226.219) has quit (Read error: Connection reset by peer)
+2020-03-31 18:32:30	<--	tomsmeding (~tomsmedin@tomsmeding.com) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-03-31 18:34:47	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-03-31 18:36:24	-->	tomsmeding (~tomsmedin@tomsmeding.com) has joined #i3
+2020-03-31 18:41:12	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2020-03-31 18:42:04	-->	rardiol (~quassel@177.52.226.219) has joined #i3
+2020-03-31 18:45:19	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-31 18:47:15	<--	mniip (mniip@freenode/staff/mniip) has quit (Remote host closed the connection)
+2020-03-31 18:50:37	-->	mniip (~mniip@freenode/staff/mniip) has joined #i3
+2020-03-31 18:55:17	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-03-31 19:00:30	<--	drmbls (~drmbls@78-56-83-14.static.zebra.lt) has quit (Quit: Leaving)
+2020-03-31 19:00:57	-->	n35xdxb0 (~n35xdxb0@82.43.86.195) has joined #i3
+2020-03-31 19:13:32	-->	eater9 (~eater@216-180-85-7.starry-inc.net) has joined #i3
+2020-03-31 19:17:09	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-03-31 19:20:02	-->	superbolide (~superboli@cpe-66-27-85-1.san.res.rr.com) has joined #i3
+2020-03-31 19:24:08	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-03-31 19:24:24	-->	thegala_ (~mirko@93-143-11-102.adsl.net.t-com.hr) has joined #i3
+2020-03-31 19:27:24	<--	thegala (~mirko@93-143-24-123.adsl.net.t-com.hr) has quit (Ping timeout: 264 seconds)
+2020-03-31 19:46:35	-->	swedneck (swedneckhi@gateway/shell/matrix.org/x-ugklrnygkdvakjtt) has joined #i3
+2020-03-31 19:52:38	<--	emachado (~emachado@fsf/member/emachado) has quit (Quit: Leaving)
+2020-03-31 20:02:48	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 264 seconds)
+2020-03-31 20:02:58	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-03-31 20:05:54	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Client Quit)
+2020-03-31 20:07:31	-->	ninjabuffet (~ninjabuff@unaffiliated/ninjabuffet) has joined #i3
+2020-03-31 20:11:16	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-03-31 20:18:03	<--	eater9 (~eater@216-180-85-7.starry-inc.net) has quit (Ping timeout: 256 seconds)
+2020-03-31 20:20:59	-->	eater9 (~eater@216-180-85-7.starry-inc.net) has joined #i3
+2020-03-31 20:23:40	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined #i3
+2020-03-31 20:24:25	<--	rubdos (~rubdos@77.109.103.196) has quit (Read error: Connection reset by peer)
+2020-03-31 20:25:25	<--	coco (~coco@ec2-52-48-32-45.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 256 seconds)
+2020-03-31 20:26:12	<--	eater9 (~eater@216-180-85-7.starry-inc.net) has quit (Ping timeout: 264 seconds)
+2020-03-31 20:37:00	<--	AT-x310 (~AT-x310@apoitiers-656-1-129-42.w109-214.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2020-03-31 20:38:25	-->	joemaro_ (~joemaro@155.red-2-140-134.dynamicip.rima-tde.net) has joined #i3
+2020-03-31 20:38:45	-->	AT-x310 (~AT-x310@pop.92-184-110-55.mobile.abo.orange.fr) has joined #i3
+2020-03-31 20:39:30	-->	coco (~coco@212-51-137-149.fiber7.init7.net) has joined #i3
+2020-03-31 20:42:01	<--	joemaro- (~joemaro@96.red-2-140-131.dynamicip.rima-tde.net) has quit (Ping timeout: 260 seconds)
+2020-03-31 20:43:05	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-03-31 20:45:17	<--	miller7 (~pidgin@unaffiliated/miller7) has quit (Ping timeout: 260 seconds)
+2020-03-31 20:48:29	-->	eater9 (~eater@216-180-84-255.starry-inc.net) has joined #i3
+2020-03-31 20:48:59	<--	Kabouik (~kabouik@2a01cb008023010021e2f0aac02c128d.ipv6.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2020-03-31 20:52:28	<--	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has quit (Ping timeout: 240 seconds)
+2020-03-31 20:53:13	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 260 seconds)
+2020-03-31 20:57:32	-->	mn3m (~mn3m@unaffiliated/mn3m) has joined #i3
+2020-03-31 21:03:50	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-03-31 21:12:31	<--	notis (~notis@185.195.19.87) has quit (Ping timeout: 250 seconds)
+2020-03-31 21:20:26	-->	allyriadil7 (~allyriadi@unaffiliated/allyriadil) has joined #i3
+2020-03-31 21:20:28	<--	AT-x310 (~AT-x310@pop.92-184-110-55.mobile.abo.orange.fr) has quit (Ping timeout: 265 seconds)
+2020-03-31 21:21:41	<--	zChris (~zChris@unaffiliated/zchris) has quit (Ping timeout: 260 seconds)
+2020-03-31 21:22:03	-->	AT-x310 (~AT-x310@apoitiers-656-1-129-42.w109-214.abo.wanadoo.fr) has joined #i3
+2020-03-31 21:22:35	<--	allyriadil (~allyriadi@unaffiliated/allyriadil) has quit (Ping timeout: 256 seconds)
+2020-03-31 21:22:35	--	allyriadil7 is now known as allyriadil
+2020-03-31 21:34:23	<--	muffindrake (~muffindra@unaffiliated/muffindrake) has quit (Quit: muffindrake)
+2020-03-31 21:34:40	-->	muffindrake (~muffindra@unaffiliated/muffindrake) has joined #i3
+2020-03-31 21:37:27	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-03-31 21:38:42	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-03-31 21:38:47	-->	Ryukz (~dwz@90-227-150-89-no257.tbcn.telia.com) has joined #i3
+2020-03-31 21:44:12	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Remote host closed the connection)
+2020-03-31 21:47:36	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-03-31 21:51:00	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Client Quit)
+2020-03-31 21:52:58	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 21:53:02	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-03-31 21:58:27	<--	eater9 (~eater@216-180-84-255.starry-inc.net) has quit (Ping timeout: 250 seconds)
+2020-03-31 22:05:38	search_social	hi all, don't have a question right now, so presenting a random solution ... debian was capturing Alt+arrow and switching vts when i didn't want it to, did a very hacky thing with dumpkeys loadkeys to get rid of it, couldn't find any sane way to do it
+2020-03-31 22:06:00	<--	yamii (~yamii@2a02:810c:ccc0:1368:425:f23a:b96f:3f2d) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 22:09:34	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-03-31 22:15:51	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 256 seconds)
+2020-03-31 22:26:01	-->	eater9 (~eater@216-180-84-255.starry-inc.net) has joined #i3
+2020-03-31 22:26:29	-->	notis (~notis@195.74.241.224.dsl.dyn.forthnet.gr) has joined #i3
+2020-03-31 22:32:17	-->	aaccmmll (~user@176.233.92.118) has joined #i3
+2020-03-31 22:32:48	<--	aaccmmll (~user@176.233.92.118) has quit (Client Quit)
+2020-03-31 22:36:43	-->	QDX45 (~malfort@pool-72-83-193-22.washdc.fios.verizon.net) has joined #i3
+2020-03-31 22:37:54	QDX45	hey all, what's the status of using i3 with multiple graphics cards?
+2020-03-31 22:37:54	botty	QDX45: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-31 22:38:13	QDX45	I'm in the same situation as this guy on reddit: https://www.reddit.com/r/i3wm/comments/2uhrql/i3_across_multiple_xorg_screens/
+2020-03-31 22:38:32	QDX45	I'm wondering if the solution is still to run multiple instances of i3
+2020-03-31 22:39:59	QDX45	I know it's a specifically i3wm issue, because I installed ubuntu 18.04 and had all 4 screens working automatically, then installed i3 and rebooted, and only 2 screens are being used.
+2020-03-31 22:43:28	-->	aaccmmll (~user@176.233.92.118) has joined #i3
+2020-03-31 22:43:50	<--	aaccmmll (~user@176.233.92.118) has quit (Client Quit)
+2020-03-31 22:44:26	search_social	QDX45: can't help, but would like to clarify ... the post seems to say that there are 3 separate concepts ... xorg "Xscreens", physical monitors, and video cards ...
+2020-03-31 22:45:04	QDX45	gotcha.  Sorry, I did some more testing and I think it might turn out to work after all.
+2020-03-31 22:45:41	search_social	by work, do you mean that a single window can be dragged between any of the monitors? because the post seems to say windows can't switch between monitors with differenent graphics cards
+2020-03-31 22:45:49	-->	aaccmmll (~user@176.233.92.118) has joined #i3
+2020-03-31 22:45:59	<--	aaccmmll (~user@176.233.92.118) has quit (Client Quit)
+2020-03-31 22:46:59	-->	wwalker (~wwalker@platinum.solid-constructs.com) has joined #i3
+2020-03-31 22:47:28	QDX45	initially, 'work' meant making all of the displays turn on simultaneously.
+2020-03-31 22:47:45	wwalker	Is there a way to move the window "marks" to the left side of the tab instead of the right?
+2020-03-31 22:47:45	botty	wwalker: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-03-31 22:48:45	search_social	QDX45: well the solution in the post you gave seems to say you can have all 4 monitors turn on simultaneously with 2 i3s, but windows will not be able to switch between monitors of different graphics cards
+2020-03-31 22:48:50	QDX45	I've gotten them working together now, so I think I'm good.  I moved over to ubuntu from void already, and seeing the same symptoms made me freak a bit and overreact.
+2020-03-31 22:49:11	QDX45	I just dragged a floating window across all 4.
+2020-03-31 22:49:18	search_social	QDX45: in i3 or ubuntu?
+2020-03-31 22:49:23	QDX45	i3
+2020-03-31 22:49:38	search_social	running 2 instances of i3 or 1 instance of i3?
+2020-03-31 22:49:38	QDX45	Thanks very much for your help. I think I'm good. :)
+2020-03-31 22:49:41	QDX45	just one
+2020-03-31 22:49:44	search_social	okay, thanks
+2020-03-31 22:49:50	QDX45	I posted before I checked xrandr
+2020-03-31 23:01:57	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2020-03-31 23:02:12	<--	eater9 (~eater@216-180-84-255.starry-inc.net) has quit (Ping timeout: 264 seconds)
+2020-03-31 23:04:19	<--	Ryukz (~dwz@90-227-150-89-no257.tbcn.telia.com) has quit (Ping timeout: 250 seconds)
+2020-03-31 23:05:25	<--	thegala_ (~mirko@93-143-11-102.adsl.net.t-com.hr) has quit (Read error: Connection reset by peer)
+2020-03-31 23:05:38	-->	eater9 (~eater@216-180-84-255.starry-inc.net) has joined #i3
+2020-03-31 23:05:51	-->	thegala_ (~mirko@93-143-11-102.adsl.net.t-com.hr) has joined #i3
+2020-03-31 23:06:56	<--	AT-x310 (~AT-x310@apoitiers-656-1-129-42.w109-214.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-03-31 23:10:02	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.7)
+2020-03-31 23:19:45	<--	berton (~berton@181.220.114.167) has quit (Remote host closed the connection)
+2020-03-31 23:28:47	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 23:28:48	<--	eater9 (~eater@216-180-84-255.starry-inc.net) has quit (Ping timeout: 240 seconds)
+2020-03-31 23:30:02	<--	mrwisdom (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Ping timeout: 258 seconds)
+2020-03-31 23:30:22	<--	irc_user (uid423822@gateway/web/irccloud.com/x-dkiwaveumvuonyhv) has quit (Quit: Connection closed for inactivity)
+2020-03-31 23:30:52	<--	joemaro_ (~joemaro@155.red-2-140-134.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2020-03-31 23:32:00	<--	theoceaniscool (~theoceani@139.47.75.19) has quit (Ping timeout: 256 seconds)
+2020-04-01 20:35:59	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-04-01 20:35:59	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-04-01 20:35:59	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-04-01 20:35:59	--	Channel #i3: 301 nicks (3 ops, 0 voices, 298 normals)
+2020-04-01 20:36:00	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-04-01 20:36:40	-->	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has joined #i3
+2020-04-01 20:36:55	-->	defnottk (~defnottk@97-117-95-42.slkc.qwest.net) has joined #i3
+2020-04-01 20:43:15	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-01 20:46:01	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 250 seconds)
+2020-04-01 20:46:01	--	eremitah_ is now known as eremitah
+2020-04-01 20:49:28	<--	zChris (~zChris@unaffiliated/zchris) has quit (Quit: ZNC 1.7.4 - https://znc.in)
+2020-04-01 20:49:30	<--	rubdos (~rubdos@77.109.103.196) has quit (Quit: WeeChat 2.7.1)
+2020-04-01 20:52:18	-->	zChris (~zChris@unaffiliated/zchris) has joined #i3
+2020-04-01 20:56:32	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-01 20:56:56	<--	eater9 (~eater@216-180-84-255.starry-inc.net) has quit (Ping timeout: 256 seconds)
+2020-04-01 20:57:20	<--	apetresc (~apetresc@toroon474qw-lp140-01-70-31-85-175.dsl.bell.ca) has quit (Quit: ZNC - http://znc.in)
+2020-04-01 20:58:02	-->	eater9 (~eater@216-180-84-255.starry-inc.net) has joined #i3
+2020-04-01 20:58:35	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 250 seconds)
+2020-04-01 20:58:35	--	eremitah_ is now known as eremitah
+2020-04-01 21:10:22	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.7.1)
+2020-04-01 21:14:29	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-04-01 21:14:37	<--	n000g (~NRG@unaffiliated/n000g) has quit (Ping timeout: 250 seconds)
+2020-04-01 21:15:18	-->	n000g (~NRG@unaffiliated/n000g) has joined #i3
+2020-04-01 21:15:26	<--	notis (~notis@195.74.241.224.dsl.dyn.forthnet.gr) has quit (Ping timeout: 240 seconds)
+2020-04-01 21:16:50	-->	circuitbone (uid355934@gateway/web/irccloud.com/x-zryuzriyzdfwskyz) has joined #i3
+2020-04-01 21:18:18	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-04-01 21:22:39	<--	lord| (~solenodic@unaffiliated/solenodic) has quit (Read error: Connection reset by peer)
+2020-04-01 21:23:49	-->	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2020-04-01 21:29:36	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-01 21:32:07	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 258 seconds)
+2020-04-01 21:32:07	--	eremitah_ is now known as eremitah
+2020-04-01 21:34:06	-->	tuxmania (~tuxmania@acs999.pck.nerim.net) has joined #i3
+2020-04-01 21:36:40	-->	apetresc (~apetresc@toroon474qw-lp140-01-70-31-85-175.dsl.bell.ca) has joined #i3
+2020-04-01 21:38:21	-->	tuxmania2 (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-01 21:40:47	<--	tuxmania (~tuxmania@acs999.pck.nerim.net) has quit (Ping timeout: 256 seconds)
+2020-04-01 21:42:22	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-01 21:45:07	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 260 seconds)
+2020-04-01 21:45:21	--	eremitah_ is now known as eremitah
+2020-04-01 21:46:33	<--	eater9 (~eater@216-180-84-255.starry-inc.net) has quit (Read error: Connection reset by peer)
+2020-04-01 21:47:52	<--	eremitah (~int@unaffiliated/eremitah) has quit (Quit: quit)
+2020-04-01 21:48:12	-->	eremitah (~int@unaffiliated/eremitah) has joined #i3
+2020-04-01 21:53:29	-->	eater9 (~eater@216-180-84-255.starry-inc.net) has joined #i3
+2020-04-01 22:02:19	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 256 seconds)
+2020-04-01 22:14:16	<--	wwalker (~wwalker@platinum.solid-constructs.com) has quit (Quit: leaving)
+2020-04-01 22:18:04	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-01 22:18:30	-->	notis (~notis@195.74.241.224.dsl.dyn.forthnet.gr) has joined #i3
+2020-04-01 22:20:13	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 265 seconds)
+2020-04-01 22:20:13	--	eremitah_ is now known as eremitah
+2020-04-01 22:22:55	<--	caterfxo (~caterfxo@unaffiliated/caterfxo) has quit (Ping timeout: 260 seconds)
+2020-04-01 22:23:38	<--	defnottk (~defnottk@97-117-95-42.slkc.qwest.net) has quit (Ping timeout: 256 seconds)
+2020-04-01 22:23:48	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-04-01 22:25:03	-->	caterfxo (~caterfxo@unaffiliated/caterfxo) has joined #i3
+2020-04-01 22:29:31	<--	caterfxo (~caterfxo@unaffiliated/caterfxo) has quit (Ping timeout: 256 seconds)
+2020-04-01 22:30:48	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #i3
+2020-04-01 22:50:31	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.8)
+2020-04-01 22:51:08	<--	zChris (~zChris@unaffiliated/zchris) has quit (Quit: ZNC 1.7.4 - https://znc.in)
+2020-04-01 22:52:12	<--	Human_G33k (~HumanG33k@62.147.242.8) has quit (Remote host closed the connection)
+2020-04-01 22:54:16	<--	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has quit (Quit: leaving)
+2020-04-01 22:54:28	-->	Human_G33k (~HumanG33k@62.147.242.8) has joined #i3
+2020-04-01 22:55:48	-->	zChris (~zChris@unaffiliated/zchris) has joined #i3
+2020-04-01 23:03:48	-->	caterfxo (caterfxo@gateway/vpn/privateinternetaccess/caterfxo) has joined #i3
+2020-04-01 23:05:09	<--	rubdos (~rubdos@77.109.103.196) has quit (Ping timeout: 264 seconds)
+2020-04-01 23:05:20	-->	Elodin (~weechat@unaffiliated/padawan) has joined #i3
+2020-04-01 23:06:00	Elodin	do you guys know why gnome applications lose the top bar when in fullscreen in i3?
+2020-04-01 23:06:00	botty	Elodin: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-01 23:08:08	<--	AT-x310 (~AT-x310@apoitiers-656-1-129-42.w109-214.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-04-01 23:12:01	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.7)
+2020-04-01 23:13:42	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Remote host closed the connection)
+2020-04-01 23:13:58	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-04-01 23:16:02	<--	berton_ (~berton@181.220.114.167) has quit (Quit: Leaving)
+2020-04-01 23:19:37	<--	rardiol (~quassel@177.52.226.219) has quit (Quit: https://quassel-irc.org - Chat comfortably. Anywhere.)
+2020-04-01 23:29:35	<--	tuxmania2 (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-04-01 23:35:16	-->	tuxmania2 (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-01 23:35:56	-->	rardiol (~quassel@177.52.226.219) has joined #i3
+2020-04-01 23:36:14	<--	miller7 (~pidgin@unaffiliated/miller7) has quit (Ping timeout: 256 seconds)
+2020-04-01 23:37:51	<--	coco (~coco@ec2-52-48-32-45.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 258 seconds)
+2020-04-01 23:39:14	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-02 11:15:34	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-04-02 11:15:34	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-04-02 11:15:34	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-04-02 11:15:34	--	Channel #i3: 300 nicks (3 ops, 0 voices, 297 normals)
+2020-04-02 11:15:36	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-04-02 11:15:37	captainchris	hi everybody 
+2020-04-02 11:15:38	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-02 11:16:13	captainchris	I define $mod+6 to switch to workspace 6 but it kill client 
+2020-04-02 11:16:36	captainchris	with 1-5 it's good but 6doesn't work 
+2020-04-02 11:16:40	captainchris	why ?? 
+2020-04-02 11:23:03	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-04-02 11:35:42	-->	bitnoize (~mitya@158.255.208.222) has joined #i3
+2020-04-02 11:41:58	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.8)
+2020-04-02 11:43:56	-->	r3dux (~r3dux@2600:8802:1800:e2f:f02c:189c:d756:bb81) has joined #i3
+2020-04-02 11:47:58	captainchris	0hi nobody there ?? 
+2020-04-02 11:48:01	captainchris	hi nobody there ?? 
+2020-04-02 11:54:39	<--	D0M (~D0M@biela.uberspace.de) has left #i3
+2020-04-02 11:57:03	<--	buckworst (~nate@202.138.253.34) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 11:57:12	r3dux	hey captainchris, whats up
+2020-04-02 12:08:22	<--	joemaro (~joemaro@31.221.223.138) has quit (Read error: Connection reset by peer)
+2020-04-02 12:09:37	-->	joemaro (~joemaro@40.red-2-140-172.dynamicip.rima-tde.net) has joined #i3
+2020-04-02 12:10:15	-->	quitman (~master@45.141.152.68) has joined #i3
+2020-04-02 12:15:39	-->	johnny56 (johnny56@gateway/vpn/protonvpn/johnny56) has joined #i3
+2020-04-02 12:18:19	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2020-04-02 12:20:14	@squigz	captainchris: As the bot has reminded you many times, please be patient - don't spam like that, please
+2020-04-02 12:24:32	captainchris	I don't spam 
+2020-04-02 12:24:47	captainchris	Hi rewrite my sentence beacuse the first is wrong 
+2020-04-02 12:24:59	captainchris	0hi and the secnod is good hi 
+2020-04-02 12:25:10	captainchris	;)
+2020-04-02 12:26:47	<--	TikityTik (~TikityTik@unaffiliated/tikitytik) has quit (Ping timeout: 258 seconds)
+2020-04-02 12:27:46	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 12:33:37	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Read error: No route to host)
+2020-04-02 12:33:56	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 12:35:02	-->	caveman (~caveman@cave.mn) has joined #i3
+2020-04-02 12:35:14	caveman	hi - how to start an app in a terminal upon starting i3?
+2020-04-02 12:35:14	botty	caveman: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-02 12:35:29	caveman	i want to have a tile open in a monitor with "journalctl -f"
+2020-04-02 12:36:00	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Read error: No route to host)
+2020-04-02 12:36:10	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-04-02 12:36:19	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 12:36:55	-->	dddddd (~dddddd@unaffiliated/dddddd) has joined #i3
+2020-04-02 12:38:07	r3dux	caveman: have you tried " exec --no-sartup-id <terminal> <command> " ?
+2020-04-02 12:39:36	caveman	r3dux: yes, but oops, just realized i forgot to put 'exec' in the command.
+2020-04-02 12:39:42	caveman	thx, not all works fine.
+2020-04-02 12:41:00	r3dux	its working now?
+2020-04-02 12:41:05	caveman	ya, ty.
+2020-04-02 12:41:12	r3dux	Cool, no problem!
+2020-04-02 12:42:57	captainchris	hey everybody
+2020-04-02 12:43:07	captainchris	can you try someting please 
+2020-04-02 12:43:22	captainchris	when I hit $mod+6 it kill client and you ?? 
+2020-04-02 12:43:28	captainchris	.
+2020-04-02 12:44:46	r3dux	captaichris: "nano .config/i3/config" "ctrl+w $mod+6"
+2020-04-02 12:44:58	r3dux	find out what its doing.
+2020-04-02 12:45:40	captainchris	no I ve found 
+2020-04-02 12:45:53	captainchris	$mod + - move to scratchpad 
+2020-04-02 12:46:04	captainchris	so $mod+6 move to scratchpad
+2020-04-02 12:47:38	r3dux	$mod+6 should take you to workspace #6 by default
+2020-04-02 12:47:43	captainchris	I'm so stupid 
+2020-04-02 12:47:44	r3dux	something must have gotten changed for you
+2020-04-02 12:48:03	r3dux	its all good, it happens from time to time when you're editing configs.
+2020-04-02 12:49:22	<--	Vonter (~Vonter@124.123.104.215) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 12:51:36	-->	Vonter (~Vonter@124.123.104.215) has joined #i3
+2020-04-02 12:51:40	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-04-02 12:51:57	<--	Vonter (~Vonter@124.123.104.215) has quit (Max SendQ exceeded)
+2020-04-02 12:52:00	<--	r3dux (~r3dux@2600:8802:1800:e2f:f02c:189c:d756:bb81) has quit (Quit: WeeChat 2.6)
+2020-04-02 12:52:57	-->	Vonter (~Vonter@124.123.104.215) has joined #i3
+2020-04-02 12:53:52	caveman	any way to start windows in i3, upon startup, while maintaining order?
+2020-04-02 12:54:10	<--	Vonter (~Vonter@124.123.104.215) has quit (Max SendQ exceeded)
+2020-04-02 12:55:58	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 265 seconds)
+2020-04-02 12:56:21	-->	H0lyD4wg (~h0lyd4wg@bzq-109-65-36-99.red.bezeqint.net) has joined #i3
+2020-04-02 13:03:29	H0lyD4wg	There's a feature of dvtm that I like, and I wonder if it's possible to replicate it's behavior with some configuration of i3. In dvtm, visible windows have numbers in their title bars, and it's possible to jump to any one of them immediately using those numbers.
+2020-04-02 13:03:29	botty	H0lyD4wg: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-02 13:04:34	-->	Vonter (~Vonter@124.123.104.215) has joined #i3
+2020-04-02 13:04:55	<--	Vonter (~Vonter@124.123.104.215) has quit (Max SendQ exceeded)
+2020-04-02 13:05:51	-->	Vonter (~Vonter@124.123.104.215) has joined #i3
+2020-04-02 13:05:59	H0lyD4wg	(as opposed to navigating with hjkl or using a window switcher like rofi, which unfortunately doesn't assign short unique identifiers to windows)
+2020-04-02 13:06:48	-->	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has joined #i3
+2020-04-02 13:15:14	-->	r3dux (~r3dux@2600:8802:1800:e2f:f02c:189c:d756:bb81) has joined #i3
+2020-04-02 13:17:43	<--	coco (~coco@ec2-52-48-32-45.eu-west-1.compute.amazonaws.com) has quit (Ping timeout: 240 seconds)
+2020-04-02 13:29:36	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-04-02 13:30:55	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2020-04-02 13:31:54	-->	coco (~coco@212-51-137-149.fiber7.init7.net) has joined #i3
+2020-04-02 13:33:22	<--	berton (~berton@181.220.114.167) has quit (Remote host closed the connection)
+2020-04-02 13:34:34	-->	berton (~berton@181.220.114.167) has joined #i3
+2020-04-02 13:55:01	-->	knidos (~knidos@85.98.153.30) has joined #i3
+2020-04-02 13:55:23	<--	grobi (~rtng@unaffiliated/grobi) has quit (Ping timeout: 240 seconds)
+2020-04-02 13:56:06	<--	r3dux (~r3dux@2600:8802:1800:e2f:f02c:189c:d756:bb81) has quit (Quit: WeeChat 2.6)
+2020-04-02 14:14:44	<--	H0lyD4wg (~h0lyd4wg@bzq-109-65-36-99.red.bezeqint.net) has quit (Quit: leaving)
+2020-04-02 14:20:54	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 14:23:13	-->	ttmx (5e3ee76f@gateway/web/cgi-irc/kiwiirc.com/ip.94.62.231.111) has joined #i3
+2020-04-02 14:30:33	<--	darkstardevx (~darkstard@c-24-21-53-33.hsd1.or.comcast.net) has quit (Quit: Leaving)
+2020-04-02 14:42:58	<--	aelien27 (~noident@047-033-127-194.res.spectrum.com) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-04-02 14:43:22	-->	aelien27 (~noident@047-033-127-194.res.spectrum.com) has joined #i3
+2020-04-02 14:51:28	joemaro	??polytheist
+2020-04-02 14:57:17	<--	defnottk (defnottk@gateway/vpn/privateinternetaccess/defnottk) has quit (Ping timeout: 265 seconds)
+2020-04-02 15:04:59	<--	opal (~wowaname@volatile/founder/wowaname) has quit (Ping timeout: 240 seconds)
+2020-04-02 15:08:31	<--	Linkandzelda (~Linkandze@unaffiliated/linkandzelda) has quit (Ping timeout: 256 seconds)
+2020-04-02 15:15:44	-->	tesseract-RH (~tesseract@pop.92-184-110-213.mobile.abo.orange.fr) has joined #i3
+2020-04-02 15:18:53	<--	cartwright (~chatting@gateway/tor-sasl/cantstanya) has quit (Ping timeout: 240 seconds)
+2020-04-02 15:18:55	<--	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has quit (Quit: Leaving)
+2020-04-02 15:19:20	-->	opal (~wowaname@volatile/founder/wowaname) has joined #i3
+2020-04-02 15:19:27	-->	Linkandzelda (~Linkandze@unaffiliated/linkandzelda) has joined #i3
+2020-04-02 15:19:45	-->	tau (~vy@vy/master) has joined #i3
+2020-04-02 15:21:39	<--	tau (~vy@vy/master) has quit (Read error: No route to host)
+2020-04-02 15:22:01	-->	cartwright (~chatting@gateway/tor-sasl/cantstanya) has joined #i3
+2020-04-02 15:23:36	<--	ttmx (5e3ee76f@gateway/web/cgi-irc/kiwiirc.com/ip.94.62.231.111) has quit (Ping timeout: 256 seconds)
+2020-04-02 15:28:57	<--	_thelion_ (~matthias@88-117-120-252.adsl.highway.telekom.at) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 15:49:08	<--	joemaro (~joemaro@40.red-2-140-172.dynamicip.rima-tde.net) has quit (Ping timeout: 260 seconds)
+2020-04-02 15:54:41	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-04-02 16:21:08	<--	lompik (~lompik@unaffiliated/lompik) has quit (Quit: WeeChat 2.8)
+2020-04-02 16:22:24	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-04-02 16:22:53	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-04-02 16:30:43	-->	stultulo (~f8l@89-64-84-212.dynamic.chello.pl) has joined #i3
+2020-04-02 16:32:07	<--	f8l (~f8l@89-64-84-212.dynamic.chello.pl) has quit (Ping timeout: 264 seconds)
+2020-04-02 16:32:08	--	stultulo is now known as f8l
+2020-04-02 16:38:25	<--	Elodin (~weechat@unaffiliated/padawan) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 16:44:43	<--	rubdos (~rubdos@77.109.103.196) has quit (Ping timeout: 264 seconds)
+2020-04-02 16:45:11	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-04-02 16:46:22	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-04-02 16:47:04	-->	joemaro (~joemaro@40.red-2-140-172.dynamicip.rima-tde.net) has joined #i3
+2020-04-02 16:59:22	-->	darkbit (~rm@152.32.100.41) has joined #i3
+2020-04-02 17:03:55	<--	rubdos (~rubdos@77.109.103.196) has quit (Ping timeout: 265 seconds)
+2020-04-02 17:05:08	-->	rubdos (~rubdos@77.109.103.196) has joined #i3
+2020-04-02 17:05:10	<--	sQVe (~sQVe@unaffiliated/sqve) has quit (Quit: Bye!)
+2020-04-02 17:05:15	<--	Neele (uid424041@gateway/web/irccloud.com/x-ghgmacprolcrtlkn) has quit (Excess Flood)
+2020-04-02 17:05:25	-->	Neele (uid424041@gateway/web/irccloud.com/x-pnuwhkypndmcnrsi) has joined #i3
+2020-04-02 17:06:45	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-04-02 17:07:10	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-04-02 17:21:08	-->	maneken (~weechat@unaffiliated/maneken) has joined #i3
+2020-04-02 17:24:57	-->	_thelion_ (~matthias@88-117-120-252.adsl.highway.telekom.at) has joined #i3
+2020-04-02 17:26:08	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Ping timeout: 252 seconds)
+2020-04-02 17:35:29	<--	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 17:35:59	-->	boomboxnation (~boomboxna@c-67-188-43-4.hsd1.ca.comcast.net) has joined #i3
+2020-04-02 17:39:00	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-04-02 17:39:35	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 258 seconds)
+2020-04-02 17:41:19	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-04-02 17:41:37	<--	rardiol (~quassel@177.52.226.219) has quit (Ping timeout: 265 seconds)
+2020-04-02 17:42:51	-->	rardiol (~quassel@177.52.226.219) has joined #i3
+2020-04-02 17:46:28	<--	abondis_ (~abondis@unaffiliated/abondis) has quit (Ping timeout: 256 seconds)
+2020-04-02 17:53:46	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-04-02 17:54:49	<--	tesseract-RH (~tesseract@pop.92-184-110-213.mobile.abo.orange.fr) has quit (Quit: Leaving)
+2020-04-02 18:02:13	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-04-02 18:06:14	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 18:11:35	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-04-02 18:28:37	-->	superbolide (~superboli@cpe-66-27-85-1.san.res.rr.com) has joined #i3
+2020-04-02 18:37:51	<--	maneken (~weechat@unaffiliated/maneken) has quit (Quit: WeeChat 2.4)
+2020-04-02 18:40:34	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 252 seconds)
+2020-04-02 18:42:02	<--	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has quit (Quit: Leaving)
+2020-04-02 18:42:08	-->	lompik (~lompik@unaffiliated/lompik) has joined #i3
+2020-04-02 18:53:25	-->	rardiol_ (~quassel@177.52.226.219) has joined #i3
+2020-04-02 18:54:19	<--	rardiol (~quassel@177.52.226.219) has quit (Ping timeout: 264 seconds)
+2020-04-02 18:57:11	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 18:57:58	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-04-02 18:59:34	-->	rardiol (~quassel@177.52.226.219) has joined #i3
+2020-04-02 19:01:44	<--	rardiol_ (~quassel@177.52.226.219) has quit (Ping timeout: 240 seconds)
+2020-04-02 19:07:56	<--	aelien27 (~noident@047-033-127-194.res.spectrum.com) has quit (Ping timeout: 260 seconds)
+2020-04-02 19:08:28	-->	aelien27 (~noident@047-033-127-194.res.spectrum.com) has joined #i3
+2020-04-02 19:10:20	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 256 seconds)
+2020-04-02 19:17:50	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-04-02 19:32:40	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 258 seconds)
+2020-04-02 19:34:22	-->	Pepe_vulgaris (~sph@unaffiliated/shadowphrogg3264) has joined #i3
+2020-04-02 19:43:10	<--	notis (~notis@195.74.241.224.dsl.dyn.forthnet.gr) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 19:46:42	-->	notis (~notis@185.163.111.163) has joined #i3
+2020-04-02 19:48:07	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-04-02 19:52:38	<--	lompik (~lompik@unaffiliated/lompik) has quit (Quit: WeeChat 2.8)
+2020-04-02 19:53:50	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-04-02 19:54:15	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-04-02 19:58:11	<--	traumschule (~traumschu@mehl.schokokeks.org) has quit (Remote host closed the connection)
+2020-04-02 20:15:30	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 256 seconds)
+2020-04-02 20:21:09	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-04-02 20:38:48	-->	joemaro_ (~joemaro@15.red-2-140-166.dynamicip.rima-tde.net) has joined #i3
+2020-04-02 20:40:39	-->	kw21 (~kw21@217-120-238-85.cable.dynamic.v4.ziggo.nl) has joined #i3
+2020-04-02 20:41:18	<--	kw21 (~kw21@217-120-238-85.cable.dynamic.v4.ziggo.nl) has quit (Read error: Connection reset by peer)
+2020-04-02 20:42:26	<--	joemaro (~joemaro@40.red-2-140-172.dynamicip.rima-tde.net) has quit (Ping timeout: 258 seconds)
+2020-04-02 20:46:50	<--	emachado (~emachado@fsf/member/emachado) has quit (Quit: Leaving)
+2020-04-02 20:50:12	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-02 20:50:47	<--	miller7 (~pidgin@unaffiliated/miller7) has quit (Ping timeout: 256 seconds)
+2020-04-02 20:50:58	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-04-02 20:51:36	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-04-02 20:51:41	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined #i3
+2020-04-02 20:53:43	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 264 seconds)
+2020-04-02 20:53:43	--	eremitah_ is now known as eremitah
+2020-04-02 20:55:36	captainchris	I'm working on popup windows that show keybindings in i3 
+2020-04-02 20:55:52	captainchris	https://ibb.co/rtgj8rk
+2020-04-02 20:56:01	captainchris	what do you think ?? 
+2020-04-02 20:57:00	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 258 seconds)
+2020-04-02 20:59:17	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-04-02 20:59:17	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-04-02 20:59:17	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-04-02 20:59:17	--	Channel #i3: 300 nicks (3 ops, 0 voices, 297 normals)
+2020-04-02 20:59:19	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-04-02 21:03:55	<--	search_social (~search_so@99-112-18-250.lightspeed.hstntx.sbcglobal.net) has quit (Ping timeout: 264 seconds)
+2020-04-02 21:11:25	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-04-02 21:14:18	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-04-02 21:14:59	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-04-02 21:18:04	-->	tau (~vy@vy/master) has joined #i3
+2020-04-02 21:33:46	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 21:40:43	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Ping timeout: 240 seconds)
+2020-04-02 21:41:05	<--	tau (~vy@vy/master) has quit (Ping timeout: 258 seconds)
+2020-04-02 21:54:25	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-04-02 21:56:58	-->	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has joined #i3
+2020-04-02 21:59:45	<--	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has quit (Quit: WeeChat 2.3)
+2020-04-02 22:01:34	-->	PyR3X (~PyR3X@cpe-67-249-205-179.twcny.res.rr.com) has joined #i3
+2020-04-02 22:01:47	<--	notis (~notis@185.163.111.163) has quit (Ping timeout: 258 seconds)
+2020-04-02 22:02:57	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-04-02 22:04:01	-->	notis (~notis@195.74.241.224.dsl.dyn.forthnet.gr) has joined #i3
+2020-04-02 22:13:51	-->	buckworst (~nate@202.138.253.1) has joined #i3
+2020-04-02 22:14:48	<--	buckworst (~nate@202.138.253.1) has quit (Client Quit)
+2020-04-02 22:16:28	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Ping timeout: 260 seconds)
+2020-04-02 22:16:42	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 256 seconds)
+2020-04-02 22:19:22	<--	Mossepo (Mossepo@gateway/vpn/mullvad/mossepo) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 22:28:49	<--	ScottE (~ScottE@unaffiliated/scotte) has quit (Ping timeout: 256 seconds)
+2020-04-02 22:29:11	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.8)
+2020-04-02 22:35:40	-->	ScottE (~ScottE@unaffiliated/scotte) has joined #i3
+2020-04-02 22:51:44	<--	ScottE (~ScottE@unaffiliated/scotte) has quit (Ping timeout: 240 seconds)
+2020-04-02 22:53:45	-->	ScottE (~ScottE@unaffiliated/scotte) has joined #i3
+2020-04-02 22:55:50	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-02 22:56:41	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Ping timeout: 256 seconds)
+2020-04-02 22:56:49	<--	superbolide (~superboli@cpe-66-27-85-1.san.res.rr.com) has quit (Quit: Νενίκηκά σε Σολομών)
+2020-04-02 23:06:09	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-04-02 23:12:10	<--	knidos (~knidos@85.98.153.30) has quit (Quit: WeeChat 2.7.1)
+2020-04-02 23:12:11	<--	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has quit (Quit: Leaving)
+2020-04-02 23:14:44	<--	berton (~berton@181.220.114.167) has quit (Quit: Leaving)
+2020-04-02 23:18:31	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.7)
+2020-04-02 23:21:09	<--	suffer (spider@patient0.linuxit.us) has quit (Read error: Connection reset by peer)
+2020-04-02 23:21:26	-->	suffer (spider@patient0.linuxit.us) has joined #i3
+2020-04-02 23:32:08	<--	rardiol (~quassel@177.52.226.219) has quit (Ping timeout: 256 seconds)
+2020-04-02 23:33:59	<--	joemaro_ (~joemaro@15.red-2-140-166.dynamicip.rima-tde.net) has quit (Ping timeout: 256 seconds)
+2020-04-02 23:39:32	<--	darkstardev13 (~darkstard@2601:1c2:300:c8a0::ce3) has quit (Quit: Leaving)
+2020-04-03 20:57:57	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-04-03 20:57:57	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-04-03 20:57:57	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-04-03 20:57:57	--	Channel #i3: 305 nicks (3 ops, 0 voices, 302 normals)
+2020-04-03 20:57:59	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-04-03 20:58:03	captainchris	hi everybody 
+2020-04-03 20:58:03	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-03 20:59:31	Elodin	ci chris
+2020-04-03 21:03:07	-->	fuchur (~fuchur@185.213.155.161) has joined #i3
+2020-04-03 21:13:26	-->	tuxmania (~tuxmania@lfbn-idf1-1-2020-23.w90-127.abo.wanadoo.fr) has joined #i3
+2020-04-03 21:17:12	-->	tau (~vy@vy/master) has joined #i3
+2020-04-03 21:17:35	<--	tau (~vy@vy/master) has quit (Read error: Connection reset by peer)
+2020-04-03 21:17:53	-->	tau (~vy@vy/master) has joined #i3
+2020-04-03 21:18:09	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-04-03 21:18:16	<--	tesseract (~tesseract@2a01:e0a:599:6450:79f5:290e:faad:3b66) has quit (Quit: Leaving)
+2020-04-03 21:23:46	<--	zChris (~zChris@unaffiliated/zchris) has quit (Quit: ZNC 1.7.4 - https://znc.in)
+2020-04-03 21:26:02	-->	rubdos_ (~rubdos@77.109.103.196) has joined #i3
+2020-04-03 21:27:20	-->	circuitbone (uid355934@gateway/web/irccloud.com/x-gulkgatlgpznqgys) has joined #i3
+2020-04-03 21:28:21	<--	rubdos (~rubdos@77.109.103.196) has quit (Ping timeout: 240 seconds)
+2020-04-09 22:21:44	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-04-09 22:21:44	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-04-09 22:21:44	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-04-09 22:21:44	--	Channel #i3: 308 nicks (3 ops, 0 voices, 305 normals)
+2020-04-09 22:21:46	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-04-09 22:21:57	captainchris	hi
+2020-04-09 22:21:57	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-09 22:22:27	captainchris	it is possible to create bindsym to top over a window 
+2020-04-09 22:22:37	captainchris	to put the windows in the first place ?? 
+2020-04-09 22:23:23	GermainZ	captainchris: what window?
+2020-04-09 22:23:48	nimaje	"top over"?
+2020-04-09 22:24:05	captainchris	yes 
+2020-04-09 22:24:12	captainchris	on the first plan 
+2020-04-09 22:24:20	captainchris	over all other windows 
+2020-04-09 22:24:32	GermainZ	https://i3wm.org/docs/userguide.html#_focus_parent ?
+2020-04-09 22:24:42	-->	circuitbone (uid355934@gateway/web/irccloud.com/x-uyvpoimbbzjbayqh) has joined #i3
+2020-04-09 22:25:07	captainchris	focus change container 
+2020-04-09 22:25:15	GermainZ	also see section 6.4
+2020-04-09 22:25:17	captainchris	but it does'nt switch 
+2020-04-09 22:25:30	GermainZ	but honestly I'm not sure I understand the question
+2020-04-09 22:25:35	nimaje	so raise a floating window that it is in front of all other floating windows?
+2020-04-09 22:25:52	captainchris	yes 
+2020-04-09 22:26:00	captainchris	I use scrtachpad 
+2020-04-09 22:26:20	captainchris	but i would like to know if it possible 
+2020-04-09 22:33:25	-->	nebunez (~user@2600:1700:3260:ccf0::29) has joined #i3
+2020-04-09 22:35:39	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 265 seconds)
+2020-04-09 22:37:59	-->	tuxmania (~tuxmania@lfbn-idf1-1-1084-149.w82-125.abo.wanadoo.fr) has joined #i3
+2020-04-09 22:46:44	<--	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has quit (Quit: Leaving)
+2020-04-09 22:55:09	<--	rkta (~kt@62.113.246.111) has quit (Ping timeout: 265 seconds)
+2020-04-09 22:57:26	-->	a0z (~a0z@80-44-23-80.dynamic.dsl.as9105.com) has joined #i3
+2020-04-09 23:00:46	<--	nebunez (~user@2600:1700:3260:ccf0::29) has quit (Ping timeout: 260 seconds)
+2020-04-09 23:02:54	<--	cartwright (~chatting@gateway/tor-sasl/cantstanya) has quit (Quit: WeeChat 2.5)
+2020-04-09 23:06:06	-->	cantstanya (~chatting@gateway/tor-sasl/cantstanya) has joined #i3
+2020-04-09 23:10:12	<--	berton (~berton@181.220.114.167) has quit (Quit: Leaving)
+2020-04-09 23:14:29	<--	superbolide (~superboli@cpe-66-27-85-1.san.res.rr.com) has quit (Quit: Νενίκηκά σε Σολομών)
+2020-04-09 23:15:29	-->	strungout (spider@ipv6.cerberus.network) has joined #i3
+2020-04-09 23:15:30	<--	suffer (spider@ipv6.cerberus.network) has quit (Ping timeout: 272 seconds)
+2020-04-09 23:17:24	<--	tuxmania (~tuxmania@lfbn-idf1-1-1084-149.w82-125.abo.wanadoo.fr) has quit (Quit: Leaving)
+2020-04-09 23:18:48	<--	penguu (~znc.bitbu@95.179.164.252) has quit (Remote host closed the connection)
+2020-04-09 23:18:51	<--	swflint (~swflint@fsf/member/swflint) has quit (Ping timeout: 260 seconds)
+2020-04-09 23:19:58	-->	swflint (~swflint@fsf/member/swflint) has joined #i3
+2020-04-09 23:21:41	-->	penguu (~znc.bitbu@95.179.164.252) has joined #i3
+2020-04-09 23:31:16	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.8)
+2020-04-09 23:32:51	<--	AT-x310 (~AT-x310@abordeaux-651-1-96-36.w90-5.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-04-09 23:34:43	-->	AT-x310 (~AT-x310@abordeaux-651-1-96-36.w90-5.abo.wanadoo.fr) has joined #i3
+2020-04-09 23:35:16	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-09 23:36:51	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 256 seconds)
+2020-04-09 23:36:51	--	eremitah_ is now known as eremitah
+2020-04-09 23:38:53	-->	TikityTik (~TikityTik@unaffiliated/tikitytik) has joined #i3
+2020-04-09 23:45:45	<--	indeedwatson (~yama@236-222-235-201.fibertel.com.ar) has quit (Quit: WeeChat 2.8)
+2020-04-09 23:46:40	-->	Kabdul (~textual@69.202.158.88) has joined #i3
+2020-04-09 23:46:47	-->	nebunez (~user@2600:1700:3260:ccf0::29) has joined #i3
+2020-04-09 23:47:19	<--	toketin (~toketin@185.170.137.12) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-04-09 23:48:52	-->	toketin (~toketin@185.170.137.12) has joined #i3
+2020-04-11 21:49:41	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-04-11 21:49:41	--	Topic for #i3 is "i3 v4.18 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-04-11 21:49:41	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Mon, 17 Feb 2020 18:35:51
+2020-04-11 21:49:41	--	Channel #i3: 306 nicks (3 ops, 0 voices, 303 normals)
+2020-04-11 21:49:43	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-04-11 21:49:45	captainchris	hi everybody 
+2020-04-11 21:49:45	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-11 21:49:49	-->	HumanG33k (~HumanG33k@62.147.242.8) has joined #i3
+2020-04-11 21:50:18	captainchris	it is possible to define with i3-msg start app floating ?? 
+2020-04-11 21:50:41	captainchris	i3-msg '[class="Battleship"]' floating enable doesn't work 
+2020-04-11 21:51:22	GermainZ	you need for_window in there
+2020-04-11 21:52:02	GermainZ	https://i3wm.org/docs/userguide.html#for_window did this not work?
+2020-04-11 21:52:31	nimaje	captainchris: are you sure the class is right?
+2020-04-11 21:52:48	captainchris	nimaje: yes 
+2020-04-11 21:53:03	captainchris	I used xprop
+2020-04-11 21:53:13	captainchris	why ?? my command is correct ?
+2020-04-11 21:53:17	nimaje	is the window there?
+2020-04-11 21:53:56	nimaje	no for_window, as that is a command, GermainZ
+2020-04-11 21:54:03	GermainZ	ah
+2020-04-11 21:54:17	captainchris	Yes GermainZ i3-msg returns error 
+2020-04-11 21:54:44	GermainZ	what's the error?
+2020-04-11 21:55:02	captainchris	ok the command works
+2020-04-11 21:55:19	captainchris	but i would like to set before running windows it is not possible 
+2020-04-11 21:56:03	@squigz	https://i3wm.org/docs/userguide.html#for_window
+2020-04-11 21:56:04	nimaje	than you have to use a for_window rule in the config
+2020-04-11 21:59:27	<--	anasr (~adham@102.184.12.116) has quit (Quit: Konversation terminated!)
+2020-04-11 22:02:43	-->	michael-kohlhaas (~michael-k@gateway/tor-sasl/michael-kohlhaas) has joined #i3
+2020-04-11 22:03:29	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 258 seconds)
+2020-04-11 22:03:36	captainchris	Yes but it's for my game devellopment 
+2020-04-11 22:03:44	captainchris	and the name change 
+2020-04-11 22:03:50	<--	Tramtrist (~Tramtrist@li661-112.members.linode.com) has left #i3
+2020-04-11 22:03:58	captainchris	I can't define class name for an sfml application 
+2020-04-11 22:08:38	nimaje	even throug class shouldn't change after the window is created the for_window rules get rechecked if it changes afaik
+2020-04-11 22:09:46	-->	anasr (~adham@102.184.12.116) has joined #i3
+2020-04-11 22:10:16	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-04-11 22:14:18	-->	Ryuuguu (~cosmic@gateway/tor-sasl/ryuuguu) has joined #i3
+2020-04-11 22:14:36	<--	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has quit (Ping timeout: 258 seconds)
+2020-04-11 22:15:34	-->	frolv (~frolv@c-73-231-179-130.hsd1.ca.comcast.net) has joined #i3
+2020-04-11 22:19:14	<--	anasr (~adham@102.184.12.116) has quit (Read error: No route to host)
+2020-04-11 22:19:31	-->	anasr (~adham@102.184.12.116) has joined #i3
+2020-04-11 22:29:00	impulse	is it possible to raise the window that a particular PTS is in? i can see the process in `ps`, but i can't find the window. The BASH process is a child of urxvtd
+2020-04-11 22:29:12	<--	hisacro (~hisacro@117.246.21.133) has quit (Quit: \o|)
+2020-04-11 22:29:16	-->	tuxmania (~tuxmania@lfbn-idf1-1-1084-149.w82-125.abo.wanadoo.fr) has joined #i3
+2020-04-11 22:41:51	<--	anasr (~adham@102.184.12.116) has quit (Read error: No route to host)
+2020-04-11 22:42:42	-->	anasr (~adham@102.184.12.116) has joined #i3
+2020-04-11 22:44:57	<--	alexherbo2 (~alexherbo@aputeaux-552-1-8-147.w86-249.abo.wanadoo.fr) has quit (Quit: The Lounge - https://thelounge.chat)
+2020-04-11 22:46:32	GermainZ	impulse: xdotool can do that
+2020-04-11 22:51:36	<--	anasr (~adham@102.184.12.116) has quit (Read error: Connection reset by peer)
+2020-04-11 22:52:47	-->	anasr (~adham@102.184.12.116) has joined #i3
+2020-04-11 23:02:04	<--	anasr (~adham@102.184.12.116) has quit (Quit: Konversation terminated!)
+2020-04-11 23:02:14	-->	anasr (~adham@102.184.12.116) has joined #i3
+2020-04-11 23:07:58	-->	eremitah_ (~int@unaffiliated/eremitah) has joined #i3
+2020-04-11 23:09:35	<--	eremitah (~int@unaffiliated/eremitah) has quit (Ping timeout: 265 seconds)
+2020-04-11 23:09:35	--	eremitah_ is now known as eremitah
+2020-04-11 23:12:12	<--	anasr (~adham@102.184.12.116) has quit (Read error: Connection reset by peer)
+2020-04-24 20:57:37	-->	captainchris (~captainch@2a01:cb1d:342:4200:b3eb:7c30:215c:d58d) has joined #i3
+2020-04-24 20:57:37	--	Topic for #i3 is "i3 v4.18.1 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-04-24 20:57:37	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Wed, 22 Apr 2020 09:30:53
+2020-04-24 20:57:37	--	Channel #i3: 318 nicks (2 ops, 0 voices, 316 normals)
+2020-04-24 20:57:39	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-04-24 20:57:41	captainchris	hi everybody 
+2020-04-24 20:57:41	botty	captainchris: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-24 20:58:29	captainchris	I saw on reddit a shot with 2 tabbed container and one not in the tabbed 
+2020-04-24 20:58:32	captainchris	https://preview.redd.it/wuup814pisu41.png?width=1920&format=png&auto=webp&s=6142277eed5628d5b0ca04abd38bf9601120311c
+2020-04-24 20:58:35	<--	joemaro (~joemaro@47.red-2-142-136.dynamicip.rima-tde.net) has quit (Ping timeout: 265 seconds)
+2020-04-24 20:58:41	captainchris	how can do taht ?? 
+2020-04-24 21:00:38	-->	m0u_ (~m0u@unaffiliated/m0u) has joined #i3
+2020-04-24 21:05:06	Elodin	the 2 tabbed container are in a parent container: so move focus to parent then open a vsplit based on that
+2020-04-24 21:05:36	-->	tuxmania (~tuxmania@2a01cb000dbd1f00727c20b6d2f87820.ipv6.abo.wanadoo.fr) has joined #i3
+2020-04-24 21:05:59	Elodin	captainchris: https://i.imgur.com/Wb3dmYb.png multiple ways really
+2020-04-24 21:06:18	captainchris	ok 
+2020-04-24 21:06:21	Elodin	if you already have 2 vsplits: then telling you want a stack/tabbed on that specific
+2020-04-24 21:06:35	Elodin	lemme see the command names i dont use the default keybinds
+2020-04-24 21:06:56	-->	grobi (~rtng@unaffiliated/grobi) has joined #i3
+2020-04-24 21:08:00	Elodin	captainchris: here:  i use this to  open an tab/stack inside that children container: split t; layout stacking|tabbed
+2020-04-24 21:08:44	Elodin	that is: i already have [Foo|bar] and want foo to have 2 tabbed things: then o move to foo and do that and open whatever i wannt
+2020-04-24 21:09:15	Elodin	if all i have is 2 tabbed windows on the workspace i must select the parent container containing the two then do a split
+2020-04-24 21:24:21	-->	Hamilton (~Hamilton@unaffiliated/hamilton) has joined #i3
+2020-04-24 21:24:21	<--	Hamilton (~Hamilton@unaffiliated/hamilton) has quit (Remote host closed the connection)
+2020-04-24 21:25:05	<--	brogon (~brogon@unaffiliated/brogon) has quit (Quit: leaving)
+2020-04-24 21:25:13	-->	Hamilton (~Hamilton@unaffiliated/hamilton) has joined #i3
+2020-04-24 21:25:49	<--	_Warl0ck (~warl0ck@c-73-83-145-12.hsd1.wa.comcast.net) has quit (Remote host closed the connection)
+2020-04-24 21:26:08	-->	_Warl0ck (~warl0ck@c-73-83-145-12.hsd1.wa.comcast.net) has joined #i3
+2020-04-24 21:26:34	Hamilton	Does anyone here also experience a grid on yellow-ish pixels when you switch workspaces fast or toggle full-screen fast?
+2020-04-24 21:26:34	botty	Hamilton: Hello! Please be specific with your questions (read https://squigzy.pw/GettingHelpOnIRC) - and remember to be patient, as it may be some time before someone is around who can answer your question. In the meantime, make sure you've read the user guide, as well as the current /topic
+2020-04-24 21:27:25	Elodin	Hamilton: can't say i do
+2020-04-24 21:29:18	Hamilton	:\ I added the tear-free option to my intel igpu. It has fixed tearing but still I see this "artifacts" time to time
+2020-04-24 21:39:12	-->	hisacro_ (~hisacro@117.209.137.106) has joined #i3
+2020-04-24 21:39:12	<--	hisacro_ (~hisacro@117.209.137.106) has quit (Client Quit)
+2020-04-24 21:39:37	-->	hisacro_ (~hisacro@117.209.137.106) has joined #i3
+2020-04-24 21:40:56	<--	hisacro_ (~hisacro@117.209.137.106) has quit (Client Quit)
+2020-04-24 21:41:14	-->	hisacro_ (~hisacro@117.209.153.106) has joined #i3
+2020-04-24 21:42:45	<--	hisacro (~hisacro@117.246.105.20) has quit (Ping timeout: 256 seconds)
+2020-04-24 21:43:01	<--	hisacro_ (~hisacro@117.209.153.106) has quit (Client Quit)
+2020-04-24 21:43:21	-->	hisacro_ (~hisacro@117.209.171.224) has joined #i3
+2020-04-24 21:45:17	-->	cdolan22 (~noident@047-033-127-194.res.spectrum.com) has joined #i3
+2020-04-24 21:45:43	<--	aelien27 (~noident@047-033-127-194.res.spectrum.com) has quit (Ping timeout: 264 seconds)
+2020-04-24 21:45:45	--	cdolan22 is now known as aelien27
+2020-04-24 21:57:36	-->	finsternis (~Y@23.226.237.192) has joined #i3
+2020-04-24 21:59:51	-->	joemaro (~joemaro@34.red-2-142-135.dynamicip.rima-tde.net) has joined #i3
+2020-04-24 22:14:59	<--	m0u_ (~m0u@unaffiliated/m0u) has quit (Ping timeout: 250 seconds)
+2020-04-24 22:18:27	<--	skontar (~skontar@ip4-83-240-125-108.cust.nbox.cz) has quit (Ping timeout: 256 seconds)
+2020-04-24 22:20:03	<--	solars (uid352068@gateway/web/irccloud.com/x-omsrenssswacuibx) has quit (Quit: Connection closed for inactivity)
+2020-04-24 22:26:22	-->	notis (~notis@185.51.134.221) has joined #i3
+2020-04-24 22:32:04	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Quit: WeeChat 2.7.1)
+2020-04-24 22:34:03	<--	Hamilton (~Hamilton@unaffiliated/hamilton) has quit (Ping timeout: 250 seconds)
+2020-04-24 22:36:24	<--	tuxmania (~tuxmania@2a01cb000dbd1f00727c20b6d2f87820.ipv6.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-04-24 22:38:04	<--	narimiran (~miran@unaffiliated/miran) has quit (Quit: leaving)
+2020-04-24 22:40:46	-->	tuxmania (~tuxmania@2a01cb000dbd1f00727c20b6d2f87820.ipv6.abo.wanadoo.fr) has joined #i3
+2020-04-24 22:48:11	<--	tuxmania (~tuxmania@2a01cb000dbd1f00727c20b6d2f87820.ipv6.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2020-04-24 22:54:33	-->	Hamilton (~Hamilton@unaffiliated/hamilton) has joined #i3
+2020-04-24 23:02:27	-->	tuxmania (~tuxmania@2a01cb000dbd1f00727c20b6d2f87820.ipv6.abo.wanadoo.fr) has joined #i3
+2020-04-24 23:06:43	<--	berton (~berton@181.220.114.167) has quit (Quit: Leaving)
+2020-04-24 23:07:49	<--	tuxmania (~tuxmania@2a01cb000dbd1f00727c20b6d2f87820.ipv6.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-04-24 23:10:09	-->	tuxmania (~tuxmania@lfbn-idf1-1-1084-149.w82-125.abo.wanadoo.fr) has joined #i3
+2020-04-24 23:10:13	<--	tuxmania (~tuxmania@lfbn-idf1-1-1084-149.w82-125.abo.wanadoo.fr) has quit (Remote host closed the connection)
+2020-04-24 23:10:25	<--	cnsvc (~cnsvc@gateway/tor-sasl/cnsvc) has quit (Ping timeout: 240 seconds)
+2020-04-24 23:13:31	-->	masticass (~masticass@185-212-226-165.shpv.eu) has joined #i3
+2020-04-24 23:13:39	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.8)
+2020-04-24 23:26:56	-->	hisacro (~hisacro@117.219.210.154) has joined #i3
+2020-04-24 23:28:14	-->	cnsvc (~cnsvc@gateway/tor-sasl/cnsvc) has joined #i3
+2020-04-24 23:29:38	<--	hisacro_ (~hisacro@117.209.171.224) has quit (Ping timeout: 256 seconds)
+2020-10-24 21:01:04	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-10-24 21:01:04	--	Topic for #i3 is "i3 v4.18.2 released | i3status 2.13 released | i3lock 2.12 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-10-24 21:01:04	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Sun, 26 Jul 2020 10:28:48
+2020-10-24 21:01:05	--	Channel #i3: 295 nicks (2 ops, 0 voices, 293 normals)
+2020-10-24 21:01:06	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-10-24 21:03:35	<--	dbmikus (~dbmikus@cpe-76-167-86-219.natsow.res.rr.com) has quit (Ping timeout: 272 seconds)
+2020-10-24 21:42:04	captainchris	HI everybody 
+2020-10-24 21:42:13	Deano59	hi :)
+2020-10-24 21:42:44	captainchris	I'm trying to script i3block to create countdown timer to my pomodoro session 
+2020-10-24 21:44:08	captainchris	I have a problem my timer works but i can't put in bash function 
+2020-10-24 21:45:25	captainchris	https://pastebin.com/Wmkgewh9
+2020-10-24 21:46:12	captainchris	in my if condition button ==1 ... if I do start nothing appear
+2020-10-24 21:51:23	<--	boomboxnation (~boomboxna@66.115.157.88) has quit (Quit: WeeChat 2.9)
+2020-10-24 22:06:25	<--	toketin (~toketin@185.170.138.113) has quit (Ping timeout: 246 seconds)
+2020-10-24 22:07:26	<--	mowcat (~mowcat@cpc105070-sgyl40-2-0-cust722.18-2.cable.virginm.net) has quit (Remote host closed the connection)
+2020-10-24 22:23:30	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 260 seconds)
+2020-10-24 22:24:50	-->	salaam (~salaam@unaffiliated/salaam) has joined #i3
+2020-10-24 22:25:16	-->	auk (auk@gateway/vpn/protonvpn/auk) has joined #i3
+2020-10-24 22:31:33	-->	mowcat (~mowcat@cpc105070-sgyl40-2-0-cust722.18-2.cable.virginm.net) has joined #i3
+2020-10-24 22:33:51	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.9)
+2020-10-24 22:43:18	<--	salaam (~salaam@unaffiliated/salaam) has quit (Ping timeout: 240 seconds)
+2020-10-31 11:46:06	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-10-31 11:46:06	--	Topic for #i3 is "i3 v4.18.3 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-10-31 11:46:06	--	Topic set by sur5r (~sur5r@x3650.sur5r.net) on Wed, 28 Oct 2020 21:51:13
+2020-10-31 11:46:06	--	Channel #i3: 289 nicks (2 ops, 0 voices, 287 normals)
+2020-10-31 11:46:09	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-10-31 11:46:47	captainchris	Hi everybody I want to know if there is a command to disable mouse or hide mouse cursor.
+2020-10-31 11:56:34	@sur5r	You can disable your mouse by using xinput(1)
+2020-10-31 11:57:03	@sur5r	I'm not aware of anything to hide the cursor, but I'm pretty sure something exists
+2020-10-31 12:55:21	<--	pavelow_ (~pavelow@opticalchimp.com) has quit (Quit: Leafing - Like a tree)
+2020-10-31 12:55:55	-->	pavelow (~pavelow@opticalchimp.com) has joined #i3
+2020-10-31 13:24:38	kjetilho	captainchris: are you looking for unclutter?
+2020-10-31 13:25:31	kjetilho	https://sourceforge.net/p/unclutter/wiki/Home/
+2020-10-31 13:30:22	captainchris	no I found a solution with xorg-xinput on archlinux 
+2020-10-31 13:30:39	captainchris	but I'm going to see unclutter 
+2020-10-31 13:35:31	-->	rememberYou (~user@unaffiliated/rememberyou) has joined #i3
+2020-10-31 13:39:47	captainchris	I made a bash script to disable mouse with xinput https://pastebin.com/usxk3k0a
+2020-10-31 13:41:02	captainchris	I want to bindsym like $mod+m exec myscript --disable and $mod+m exec myscript --enable it is possible with one keybinding
+2020-10-31 13:41:09	captainchris	like a toggle ??
+2020-10-31 13:41:44	captainchris	like in C myvar = condition ? true : false 
+2020-10-31 13:42:01	<--	Tramtrist (~Tramtrist@li1128-58.members.linode.com) has left #i3
+2020-10-31 13:52:42	kjetilho	implement it in your script.
+2020-10-31 13:52:43	kjetilho	if xinput list 16 | grep -q 'is disabled'; then xinput enable 16; else xinput disable 16; fi
+2020-10-31 13:52:50	kjetilho	(well, 13 in your case)
+2020-10-31 13:52:54	<--	rememberYou (~user@unaffiliated/rememberyou) has quit (Remote host closed the connection)
+2020-10-31 14:09:32	captainchris	ok thanks kjetilho 
+2020-10-31 14:09:42	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-10-31 14:10:21	captainchris	I have a little bug with xinput when I change focus with $mod+l the cursor is appear  on the center of window 
+2020-10-31 14:10:35	captainchris	appears ^ sorry 
+2020-10-31 14:10:48	captainchris	same with xdotool move 0 0 
+2020-10-31 14:10:56	captainchris	same with xdotool mousemove 0 0 
+2020-10-31 14:41:03	-->	alexherbo2 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has joined #i3
+2020-10-31 15:07:21	edlou	any reason i can't launch stubby through i3-msg in i3 config?
+2020-10-31 15:07:28	edlou	do i need to create shell script or something
+2020-10-31 15:14:40	<--	alexherbo2 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has quit (Ping timeout: 272 seconds)
+2020-10-31 15:17:14	-->	gloomy_desktop (~ldorigo@81.161.149.37) has joined #i3
+2020-10-31 15:31:08	-->	antikythera (antikyther@gateway/vpn/privateinternetaccess/antikythera) has joined #i3
+2020-10-31 15:33:55	<--	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has quit (Quit: WeeChat 2.8)
+2020-10-31 15:35:46	-->	alexherbo2 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has joined #i3
+2020-10-31 15:41:21	<--	emachado (~emachado@fsf/member/emachado) has quit (Quit: Leaving)
+2020-10-31 15:47:33	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-10-31 16:19:04	<--	somtom (xkrchna1@gateway/shell/fi.muni.cz/x-jsicxfcjieqsobju) has quit (Write error: Connection reset by peer)
+2020-10-31 16:27:45	-->	somtom (xkrchna1@gateway/shell/fi.muni.cz/x-fnvzqcmmeeervuny) has joined #i3
+2020-10-31 17:03:32	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 264 seconds)
+2020-10-31 17:10:00	edlou	random question: should i be able to exec --no-startup-id stubby through i3 as root in the startup config or do i have something else i need to do? i cant get it to load on startup
+2020-10-31 17:13:40	-->	auk (auk@gateway/vpn/protonvpn/auk) has joined #i3
+2020-10-31 17:30:05	-->	alexherbo24 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has joined #i3
+2020-10-31 17:30:36	<--	alexherbo2 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has quit (Read error: Connection reset by peer)
+2020-10-31 17:30:37	--	alexherbo24 is now known as alexherbo2
+2020-10-31 17:46:15	<--	waldek (~waldek@62.88.19.202) has quit (Ping timeout: 268 seconds)
+2020-10-31 17:47:25	-->	lordoski (~Thunderbi@88.211.106.61) has joined #i3
+2020-10-31 18:01:37	-->	michael-kohlhaas (~michael-k@gateway/tor-sasl/michael-kohlhaas) has joined #i3
+2020-10-31 18:10:56	<--	lordoski (~Thunderbi@88.211.106.61) has quit (Remote host closed the connection)
+2020-10-31 18:29:10	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.9)
+2020-10-31 18:29:22	-->	dbmikus (~dbmikus@cpe-76-167-86-219.natsow.res.rr.com) has joined #i3
+2020-10-31 18:36:23	<--	dbmikus (~dbmikus@cpe-76-167-86-219.natsow.res.rr.com) has quit (Ping timeout: 240 seconds)
+2020-10-31 18:41:20	<--	alexherbo2 (~alexherbo@lmontsouris-659-1-2-186.w193-248.abo.wanadoo.fr) has quit (Ping timeout: 264 seconds)
+2020-10-31 18:53:16	<--	ermo (~ermo@foresight/developer/ermo) has quit (Quit: ZNC 1.8.2 - https://znc.in)
+2020-10-31 19:04:54	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-10-31 19:07:05	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-10-31 19:11:56	-->	btimofeev (~user@5.187.71.114) has joined #i3
+2020-10-31 19:15:57	<--	btimofeev (~user@5.187.71.114) has left #i3 ("ERC (IRC client for Emacs 27.1)")
+2020-10-31 19:44:20	-->	alexherbo2 (~alexherbo@106.247.204.77.rev.sfr.net) has joined #i3
+2020-10-31 19:45:52	-->	theoceaniscool (~theoceani@188.127.171.56) has joined #i3
+2020-10-31 19:53:47	-->	stfwn (~stfwn@ip-80-113-48-152.ip.prioritytelecom.net) has joined #i3
+2020-10-31 19:56:08	<--	theoceaniscool (~theoceani@188.127.171.56) has quit (Ping timeout: 260 seconds)
+2020-10-31 19:56:08	<--	alexherbo2 (~alexherbo@106.247.204.77.rev.sfr.net) has quit (Ping timeout: 260 seconds)
+2020-10-31 20:00:00	<--	n000g (~NRG@unaffiliated/n000g) has quit (Ping timeout: 256 seconds)
+2020-10-31 20:01:17	-->	n000g (~NRG@unaffiliated/n000g) has joined #i3
+2020-10-31 20:04:42	<--	Oxyd76 (~quassel@5.18.101.116) has quit (Read error: Connection reset by peer)
+2020-10-31 20:04:48	-->	ermo (~ermo@foresight/developer/ermo) has joined #i3
+2020-10-31 20:05:09	-->	Oxyd76 (~quassel@5.18.101.116) has joined #i3
+2020-10-31 20:05:50	-->	frakturfreak (~frakturfr@unaffiliated/frakturfreak) has joined #i3
+2020-10-31 20:06:29	--	sphalerite is now known as spookyscarysphal
+2020-10-31 20:08:16	<--	stfwn (~stfwn@ip-80-113-48-152.ip.prioritytelecom.net) has quit (Quit: WeeChat 2.9)
+2020-10-31 20:08:32	<--	Oxyd76 (~quassel@5.18.101.116) has quit (Read error: Connection reset by peer)
+2020-10-31 20:08:46	-->	semeion (~semeion@unaffiliated/semeion) has joined #i3
+2020-10-31 20:09:01	<--	semeion (~semeion@unaffiliated/semeion) has quit (Client Quit)
+2020-10-31 20:12:41	-->	semeion (~semeion@unaffiliated/semeion) has joined #i3
+2020-10-31 20:13:18	-->	Oxyd76 (~quassel@5.18.101.116) has joined #i3
+2020-10-31 20:14:01	--	semeion is now known as mnemonic
+2020-10-31 20:18:59	-->	alexherbo2 (~alexherbo@122.247.204.77.rev.sfr.net) has joined #i3
+2020-10-31 20:32:32	<--	auk (auk@gateway/vpn/protonvpn/auk) has quit (Ping timeout: 256 seconds)
+2020-10-31 20:35:32	-->	stfwn (~stfwn@ip-80-113-48-152.ip.prioritytelecom.net) has joined #i3
+2020-10-31 20:36:59	stfwn	I have a new laptop and would like to use alt as the mod key. Simple enough -> top of the config file. But the status bar doesn't show up on keypress when you do this, and other programs don't "know" about the swap so also expect doing things with alt.
+2020-10-31 20:37:39	stfwn	Tried it with xmodmapping the mod1 and mod4 groups in reverse, but some programs like Firefox don't use the mod groups but rather the keys themselves.
+2020-10-31 20:37:55	stfwn	What's the most painless way to permanently, completely and entirely swap the Windows key and Alt_L?
+2020-10-31 20:39:01	-->	alexherbo21 (~alexherbo@119.245.204.77.rev.sfr.net) has joined #i3
+2020-10-31 20:40:16	<--	alexherbo2 (~alexherbo@122.247.204.77.rev.sfr.net) has quit (Ping timeout: 246 seconds)
+2020-10-31 20:40:17	--	alexherbo21 is now known as alexherbo2
+2020-10-31 22:03:43	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-10-31 22:03:43	--	Topic for #i3 is "i3 v4.18.3 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-10-31 22:03:43	--	Topic set by sur5r (~sur5r@x3650.sur5r.net) on Wed, 28 Oct 2020 21:51:13
+2020-10-31 22:03:43	--	Channel #i3: 292 nicks (2 ops, 0 voices, 290 normals)
+2020-10-31 22:03:46	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-10-31 22:03:47	captainchris	Hi everybody 
+2020-10-31 22:07:23	captainchris	I'm reading a tutorial on how to write a WM.
+2020-10-31 22:07:33	captainchris	so I need more precisions 
+2020-10-31 22:07:54	captainchris	to create a WM. we need to create a root window
+2020-10-31 22:08:34	captainchris	and when the top level window is mapped the WM is notified by substructure redirection on the root window 
+2020-10-31 22:08:39	captainchris	is that correct ?
+2020-10-31 22:19:21	-->	Digit (~user@fsf/member/digit) has joined #i3
+2020-10-31 22:23:59	qball	what does the tutorial say?
+2020-10-31 22:38:29	-->	corpix (~corpix@gateway/tor-sasl/corpix) has joined #i3
+2020-10-31 22:38:55	<--	corpix (~corpix@gateway/tor-sasl/corpix) has quit (Client Quit)
+2020-10-31 22:39:41	--	mnemonic is now known as Guest38830
+2020-10-31 22:40:15	-->	semeion (~semeion@unaffiliated/semeion) has joined #i3
+2020-10-31 22:43:04	<--	Guest38830 (~semeion@unaffiliated/semeion) has quit (Ping timeout: 272 seconds)
+2020-10-31 22:50:11	-->	auk (auk@gateway/vpn/protonvpn/auk) has joined #i3
+2020-10-31 22:51:09	<--	_thelion_ (~matthias@93-82-100-60.adsl.highway.telekom.at) has quit (Ping timeout: 256 seconds)
+2020-10-31 22:55:48	captainchris	https://jichu4n.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i/ 
+2020-10-31 22:56:32	captainchris	It's very interresting but it's hard for understand because I'm french and my english is not perfect 
+2020-10-31 22:56:41	captainchris	:)
+2020-10-31 23:04:01	qball	aah
+2020-10-31 23:28:32	-->	semeion_ (~semeion@unaffiliated/semeion) has joined #i3
+2020-10-31 23:29:22	--	semeion_ is now known as mnemonic
+2020-10-31 23:31:12	<--	semeion (~semeion@unaffiliated/semeion) has quit (Ping timeout: 272 seconds)
+2020-10-31 23:32:39	<--	edlou (uid413273@gateway/web/irccloud.com/x-ywgthkgjvdknzpvl) has quit (Quit: Connection closed for inactivity)
+2020-10-31 23:39:23	<--	mnemonic (~semeion@unaffiliated/semeion) has quit (Quit: WeeChat 2.9)
+2020-10-31 23:46:45	<--	random_yanek (~random_ya@2a01:118f:575:df00:c386:7d4d:2b96:641b) has quit (Ping timeout: 260 seconds)
+2020-10-31 23:49:35	-->	slyfox (~slyfox@gentoo/developer/slyfox) has joined #i3
+2020-11-01 12:18:17	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #i3
+2020-11-01 12:18:17	--	Topic for #i3 is "i3 v4.18.3 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-11-01 12:18:17	--	Topic set by sur5r (~sur5r@x3650.sur5r.net) on Wed, 28 Oct 2020 21:51:13
+2020-11-01 12:18:17	--	Channel #i3: 290 nicks (2 ops, 0 voices, 288 normals)
+2020-11-01 12:18:22	captainchris	Hi everybody 
+2020-11-01 12:18:28	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-11-01 12:18:44	captainchris	I would like to have a border colored without titlebar, is it possible ??
+2020-11-01 12:19:41	okraits	Yes, use something like 'default_border pixel 3'
+2020-11-01 12:31:00	<--	qgTG (~qgTG@unaffiliated/qgtg) has quit (Ping timeout: 240 seconds)
+2020-11-01 12:31:38	-->	qgTG (~qgTG@unaffiliated/qgtg) has joined #i3
+2020-11-01 12:34:59	-->	finsternis (~Y@23.226.237.192) has joined #i3
+2020-11-01 12:37:05	-->	qgTG_ (~qgTG@unaffiliated/qgtg) has joined #i3
+2020-11-01 12:37:17	<--	qgTG (~qgTG@unaffiliated/qgtg) has quit (Ping timeout: 264 seconds)
+2020-11-01 12:40:52	-->	horribleprogram (~horriblep@unaffiliated/nightcoder) has joined #i3
+2020-11-01 12:40:58	horribleprogram	I'm a bit new to i3
+2020-11-01 12:41:19	horribleprogram	I rebound jkl; to hjkl but in so, I lost my split horizontal that was bound to h
+2020-11-01 12:45:10	okraits	I use $mod+Ctrl+s for splith
+2020-11-01 12:45:41	okraits	Hmm, I thought I had used $mod+Ctrl+h
+2020-11-01 12:45:49	horribleprogram	okraits: how did you rebind it
+2020-11-01 12:45:54	horribleprogram	okraits: I'd rather use g
+2020-11-01 12:45:57	horribleprogram	$mod+g
+2020-11-01 12:46:15	okraits	bindsym $mod+Ctrl+s splith
+2020-11-01 12:52:56	horribleprogram	ty
+2020-11-01 13:02:34	horribleprogram	this got interesting
+2020-11-01 13:02:39	<--	Oxyd76 (~quassel@5.18.101.116) has quit (Read error: Connection reset by peer)
+2020-11-01 13:03:21	horribleprogram	I can switch back and forth from my left terminal and right terminal with $mod+h and $mod+l
+2020-11-01 13:03:31	horribleprogram	yet... there isn't a .i3/config file :/
+2020-11-01 13:03:38	horribleprogram	I checked /etc/i3/config
+2020-11-01 13:03:52	horribleprogram	and it looks pretty default, like the default generated one
+2020-11-01 13:05:01	horribleprogram	is there a way to be like... "yo i3, where did I bind h to focus left
+2020-11-01 13:05:03	captainchris	thx okraits 
+2020-11-01 13:05:38	horribleprogram	cuz it clearly is using $mod+h to focus left, like it's shifted over
+2020-11-01 13:05:55	horribleprogram	but on this particular debian machine, it seems like I never actually made a .i3/config file
+2020-11-01 13:06:12	captainchris	okraits: do I need use for_window [class.... for this 
+2020-11-01 13:06:15	captainchris	?
+2020-11-01 13:06:41	-->	Oxyd76 (~quassel@5.18.101.116) has joined #i3
+2020-11-01 13:07:04	horribleprogram	in fact, cat /etc/i3/config | grep focus only shows nothing that would show that I rebound focus left to h
+2020-11-01 13:09:12	horribleprogram	and would it be better to do something like
+2020-11-01 13:09:17	horribleprogram	set $up k
+2020-11-01 13:09:21	horribleprogram	set $right l
+2020-11-01 13:09:22	horribleprogram	etc
+2020-11-01 13:19:39	<--	ninjin (~ninjin@gateway/tor-sasl/ninjin) has quit (Ping timeout: 240 seconds)
+2020-11-01 13:21:11	horribleprogram	bindsym $mod+b split h
+2020-11-01 13:21:12	horribleprogram	doesn't work
+2020-11-01 13:21:43	horribleprogram	I restarted and even exited and logged back into i3
+2020-11-01 13:21:48	-->	ninjin (~ninjin@gateway/tor-sasl/ninjin) has joined #i3
+2020-11-01 13:24:50	horribleprogram	yeah this doesn't work
+2020-11-01 13:26:39	<--	Oxyd76 (~quassel@5.18.101.116) has quit (Read error: Connection reset by peer)
+2020-11-01 13:26:50	horribleprogram	https://pastebin.com/y7WzHgsJ
+2020-11-01 13:27:22	horribleprogram	any reason why this doesn't work? $mod+Shift+R doesn't load it, exiting and relogging doesn't load it
+2020-11-07 20:46:29	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #i3
+2020-11-07 20:46:29	--	Topic for #i3 is "i3 v4.18.3 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-11-07 20:46:29	--	Topic set by sur5r (~sur5r@x3650.sur5r.net) on Wed, 28 Oct 2020 21:51:13
+2020-11-07 20:46:29	--	Channel #i3: 292 nicks (2 ops, 0 voices, 290 normals)
+2020-11-07 20:46:31	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-11-07 20:46:34	captainchris	hi everybody 
+2020-11-07 20:47:30	captainchris	It is possible to block screen for 20 minutes to rest my eyes . I searched for xautolock with i3lock but I can 
+2020-11-07 20:47:43	captainchris	unlock screen with password 
+2020-11-07 20:48:06	captainchris	and xautolock run only if inactivity
+2020-11-07 21:00:43	pumpy	captainchris what about an acpi power down standby mode thing?
+2020-11-07 21:01:12	pumpy	if you dont wanna do that, you could use xrandr to set screen brightness really really low on some timer but then you can't override
+2020-11-07 21:01:16	pumpy	hmm what else
+2020-11-07 21:03:26	<--	narimiran (~miran@unaffiliated/miran) has quit (Ping timeout: 260 seconds)
+2020-11-07 21:05:39	@sur5r	captainchris: maybe sth. like workrave could help?
+2020-11-07 21:06:13	@sur5r	or safeeyes
+2020-11-07 21:14:18	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-11-07 21:14:38	qball	it does not turn off screen, might be able to script it
+2020-11-07 21:14:54	qball	damn I would be so pissed if screen would be forced off when working and no way to turn it back on :-P
+2020-11-07 21:18:18	<--	HumanG33k (~HumanG33k@2a01:e0a:5b9:7840:6600:6aff:fe5f:9d6) has quit (Remote host closed the connection)
+2020-11-07 21:18:33	-->	HumanG33k (~HumanG33k@2a01:e0a:5b9:7840:6600:6aff:fe5f:9d6) has joined #i3
+2020-11-07 21:18:36	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 258 seconds)
+2020-11-07 21:23:09	pumpy	just imagine if it started calling you the n word too!
+2020-11-07 21:23:40	qball	?
+2020-11-07 21:24:02	qball	weird remark
+2020-11-07 21:24:17	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 272 seconds)
+2020-11-07 21:27:59	captainchris	sur5r: Yes, I use workrave but I would prefer an script to my i3blocks
+2020-11-07 21:29:09	-->	IAmZeroFreak (~IAmZeroFr@2a02:2f0a:c512:c00:1e8d:c3b7:8e7b:e03c) has joined #i3
+2020-11-07 21:29:53	@sur5r	I siee
+2020-11-07 21:29:54	@sur5r	-e
+2020-11-07 21:29:56	@sur5r	-i
+2020-11-07 21:31:09	pumpy	qball oh i have my alert bell command run a synth voice that calls me n word
+2020-11-07 21:31:22	-->	m0u (~m0u@unaffiliated/m0u) has joined #i3
+2020-11-07 21:33:49	qball	why would you do that?
+2020-11-07 21:35:23	<--	RandomGuy90 (~RandomGuy@91.239.205.33) has quit (Quit: WeeChat 2.3)
+2020-11-07 21:38:00	-->	RandomGuy90 (~RandomGuy@91.239.205.33) has joined #i3
+2020-11-07 21:38:32	pumpy	it's funny
+2020-11-07 21:38:41	pumpy	makes me happy
+2020-11-07 21:41:03	qball	what ever floats your boat.
+2020-11-07 21:41:41	qball	I mostly try to get my computer to not bug me at all
+2020-11-07 21:41:49	qball	no popups, sounds or other things
+2020-11-07 21:42:54	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #i3
+2020-11-07 21:45:33	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.9)
+2020-11-07 22:24:03	<--	_thelion_ (~matthias@91-115-68-69.adsl.highway.telekom.at) has quit (Quit: WeeChat 2.9)
+2020-11-07 22:30:25	<--	darkbit (~db@136.158.7.86) has quit (Ping timeout: 260 seconds)
+2020-11-07 22:34:44	-->	kingx (~kingx@c-69-181-4-101.hsd1.ca.comcast.net) has joined #i3
+2020-11-07 22:39:50	-->	nebunez (~user@c-73-171-175-205.hsd1.fl.comcast.net) has joined #i3
+2020-11-07 22:46:49	<--	main (~main@unaffiliated/main) has quit (Quit: im out)
+2020-11-07 22:47:33	-->	main (~main@unaffiliated/main) has joined #i3
+2020-11-07 22:48:29	-->	auk (auk@gateway/vpn/protonvpn/auk) has joined #i3
+2020-11-07 22:58:32	<--	IAmZeroFreak (~IAmZeroFr@2a02:2f0a:c512:c00:1e8d:c3b7:8e7b:e03c) has quit (Quit: WeeChat 2.9)
+2020-11-07 23:25:53	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 256 seconds)
+2020-11-07 23:31:04	<--	main (~main@unaffiliated/main) has quit (Quit: im out)
+2020-11-07 23:32:42	<--	lord| (~solenodic@unaffiliated/solenodic) has quit (Read error: Connection reset by peer)
+2020-11-07 23:34:09	-->	lord| (~solenodic@unaffiliated/solenodic) has joined #i3
+2020-12-12 12:29:17	-->	captainchris (~captainch@2001:861:3181:3540:1b9c:b2cf:4cdb:68e6) has joined #i3
+2020-12-12 12:29:17	--	Topic for #i3 is "i3 v4.19 released | i3status 2.13 released | i3lock 2.13 released | http://code.i3wm.org/ | http://i3wm.org/ | http://faq.i3wm.org/ | https://bintray.com/i3/i3-autobuild/i3-wm#statistics | paste at http://p.nnev.de/ | file upload at https://transfer.sh/ | Container tutorial: https://youtu.be/AWA8Pl57UBY | #i3-offtopic"
+2020-12-12 12:29:17	--	Topic set by sECuRE (~sECuRE@i3/creator/sECuRE) on Sun, 15 Nov 2020 18:34:21
+2020-12-12 12:29:17	--	Channel #i3: 286 nicks (2 ops, 0 voices, 284 normals)
+2020-12-12 12:29:19	--	Channel created on Thu, 22 Jul 2010 21:58:13
+2020-12-12 12:29:22	captainchris	Hi everybody 
+2020-12-12 12:30:20	captainchris	I have dual screens and I want to change my screen I buy just one screen.It is possible to split screen into two like qtile fake screens ??
+2020-12-12 13:01:50	<--	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has quit (Quit: I've been here, a long long time ago in a far far away ... whatever  .. i am gone)
+2020-12-12 13:02:31	-->	f0rs3ti (~f0rs3ti@pivpn/maintainer/f0rs3ti) has joined #i3
+2020-12-12 13:54:00	<--	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 240 seconds)
+2020-12-12 14:03:20	<--	geowiesnot (~user@87-89-181-157.abo.bbox.fr) has quit (Ping timeout: 240 seconds)
+2020-12-12 14:09:16	<--	somis (~somis@149.56.153.184) has quit (Quit: WeeChat 2.9)
+2020-12-12 14:16:10	f8e4	how to reset the xkb_geometry & co ?
+2020-12-12 14:16:37	f8e4	i messed up: setxkbmap -print
+2020-12-12 14:21:04	f8e4	uff got it
+2020-12-12 14:21:06	f8e4	-------------
+2020-12-12 14:21:16	f8e4	captainchris why not just let tiling be sufficient
+2020-12-12 14:24:00	-->	_thelion_ (~matthias@93-82-101-105.adsl.highway.telekom.at) has joined #i3
+2020-12-12 14:28:34	f8e4	folks: where does i3status config eg 'order += "ethernet eth0" ' go ?
+2020-12-12 14:34:13	tejing	~/.config/i3status/config
+2020-12-12 14:34:23	f8e4	is i3status/i3status.conf ok ?
+2020-12-12 14:34:57	tejing	just read the i3status man page
+2020-12-12 14:35:06	tejing	it's literally the first thing it talks about
+2020-12-12 14:36:12	f8e4	ty
+2020-12-12 14:43:19	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #i3
+2020-12-12 14:49:05	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 272 seconds)
+2020-12-12 15:13:59	-->	cyphase (~cyphase@unaffiliated/cyphase) has joined #i3
+2020-12-12 15:30:54	<--	flexd (~flexd@rxd.no) has quit (Remote host closed the connection)
+2020-12-12 15:31:59	-->	flexd (~flexd@rxd.no) has joined #i3
+2020-12-12 15:37:08	-->	antikythera (antikyther@gateway/vpn/privateinternetaccess/antikythera) has joined #i3
+2020-12-12 15:39:09	<--	languitar (~languitar@semipol.de) has quit (Quit: I'm done ;))
+2020-12-12 15:40:29	-->	languitar (~languitar@semipol.de) has joined #i3
+2020-12-12 15:44:41	<--	languitar (~languitar@semipol.de) has quit (Client Quit)
+2020-12-12 15:45:07	-->	languitar (~languitar@semipol.de) has joined #i3
+2020-12-12 15:50:02	<--	languitar (~languitar@semipol.de) has quit (Read error: Connection reset by peer)
+2020-12-12 15:50:24	-->	languitar (~languitar@semipol.de) has joined #i3
+2020-12-12 15:55:39	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.9)

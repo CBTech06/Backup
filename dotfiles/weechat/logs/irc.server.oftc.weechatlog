@@ -1,0 +1,269 @@
+2020-11-10 13:45:30	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 13:45:31	--	irc: connected to irc.oftc.net/6697 (2a01:7e00::f03c:91ff:fe96:d48a)
+2020-11-10 13:45:31	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 13:45:31	--	irc: disconnecting from server...
+2020-11-10 13:45:31	--	irc: disconnected from server
+2020-11-10 13:45:31	--	irc: reconnecting to server in 10 seconds
+2020-11-10 13:45:41	--	irc: reconnecting to server...
+2020-11-10 13:45:41	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 13:45:42	--	irc: connected to irc.oftc.net/6697 (2001:6b0:e:2a18::116)
+2020-11-10 13:45:42	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 13:45:42	--	irc: disconnecting from server...
+2020-11-10 13:45:42	--	irc: disconnected from server
+2020-11-10 13:45:42	--	irc: reconnecting to server in 20 seconds
+2020-11-10 13:46:02	--	irc: reconnecting to server...
+2020-11-10 13:46:02	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 13:46:02	--	irc: connected to irc.oftc.net/6697 (2001:6b0:e:2a18::116)
+2020-11-10 13:46:02	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 13:46:02	--	irc: disconnecting from server...
+2020-11-10 13:46:02	--	irc: disconnected from server
+2020-11-10 13:46:02	--	irc: reconnecting to server in 40 seconds
+2020-11-10 13:46:42	--	irc: reconnecting to server...
+2020-11-10 13:46:42	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 13:46:42	--	irc: connected to irc.oftc.net/6697 (2a01:7e00::f03c:91ff:fe96:d48a)
+2020-11-10 13:46:42	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 13:46:42	--	irc: disconnecting from server...
+2020-11-10 13:46:42	--	irc: disconnected from server
+2020-11-10 13:46:42	--	irc: reconnecting to server in 1 minute, 20 seconds
+2020-11-10 13:48:02	--	irc: reconnecting to server...
+2020-11-10 13:48:02	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 13:48:02	--	irc: connected to irc.oftc.net/6697 (2001:6b0:e:2a18::116)
+2020-11-10 13:48:02	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 13:48:02	--	irc: disconnecting from server...
+2020-11-10 13:48:02	--	irc: disconnected from server
+2020-11-10 13:48:02	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2020-11-10 13:50:42	--	irc: reconnecting to server...
+2020-11-10 13:50:42	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 13:50:42	--	irc: connected to irc.oftc.net/6697 (2a01:7e00::f03c:91ff:fe96:d48a)
+2020-11-10 13:50:42	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 13:50:42	--	irc: disconnecting from server...
+2020-11-10 13:50:42	--	irc: disconnected from server
+2020-11-10 13:50:42	--	irc: reconnecting to server in 5 minutes, 20 seconds
+2020-11-10 13:56:02	--	irc: reconnecting to server...
+2020-11-10 13:56:02	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 13:56:02	--	irc: connected to irc.oftc.net/6697 (2a02:2f0d:bff0:1:81:18:73:124)
+2020-11-10 13:56:02	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 13:56:02	--	irc: disconnecting from server...
+2020-11-10 13:56:02	--	irc: disconnected from server
+2020-11-10 13:56:02	--	irc: reconnecting to server in 10 minutes
+2020-11-10 14:06:02	--	irc: reconnecting to server...
+2020-11-10 14:06:02	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 14:06:02	--	irc: connected to irc.oftc.net/6697 (2a01:7e00::f03c:91ff:fe96:d48a)
+2020-11-10 14:06:02	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 14:06:02	--	irc: disconnecting from server...
+2020-11-10 14:06:02	--	irc: disconnected from server
+2020-11-10 14:06:02	--	irc: reconnecting to server in 10 minutes
+2020-11-10 14:16:02	--	irc: reconnecting to server...
+2020-11-10 14:16:02	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 14:16:02	--	irc: connected to irc.oftc.net/6697 (2001:6b0:e:2a18::116)
+2020-11-10 14:16:02	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 14:16:02	--	irc: disconnecting from server...
+2020-11-10 14:16:02	--	irc: disconnected from server
+2020-11-10 14:16:02	--	irc: reconnecting to server in 10 minutes
+2020-11-10 14:26:02	--	irc: reconnecting to server...
+2020-11-10 14:26:02	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 14:26:02	--	irc: connected to irc.oftc.net/6697 (2a00:1a28:1100:12::50)
+2020-11-10 14:26:02	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 14:26:02	--	irc: disconnecting from server...
+2020-11-10 14:26:02	--	irc: disconnected from server
+2020-11-10 14:26:02	--	irc: reconnecting to server in 10 minutes
+2020-11-10 14:36:02	--	irc: reconnecting to server...
+2020-11-10 14:36:02	--	irc: connecting to server irc.oftc.net/6697...
+2020-11-10 14:36:02	--	irc: connected to irc.oftc.net/6697 (2a01:7e00::f03c:91ff:fe96:d48a)
+2020-11-10 14:36:02	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2020-11-10 14:36:02	--	irc: disconnecting from server...
+2020-11-10 14:36:02	--	irc: disconnected from server
+2020-11-10 14:36:02	--	irc: reconnecting to server in 10 minutes
+2020-12-13 20:29:11	--	irc: connecting to server irc.oftc.net/6667...
+2020-12-13 20:29:11	--	irc: connected to irc.oftc.net/6667 (2a02:2f0d:bff0:1:81:18:73:124)
+2020-12-13 20:29:11	--	dacia.oftc.net: *** Looking up your hostname...
+2020-12-13 20:29:11	--	dacia.oftc.net: *** Checking Ident
+2020-12-13 20:29:12	--	dacia.oftc.net: *** Couldn't look up your hostname
+2020-12-13 20:29:21	--	dacia.oftc.net: *** No Ident response
+2020-12-13 20:29:21	--	Welcome to the OFTC Internet Relay Chat Network captainchris
+2020-12-13 20:29:21	--	Your host is dacia.oftc.net[2a02:2f0d:bff0:1:81:18:73:124/6667], running version hybrid-7.2.2+oftc1.7.3
+2020-12-13 20:29:21	--	This server was created Sep 22 2018 at 19:22:40
+2020-12-13 20:29:21	--	dacia.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2020-12-13 20:29:21	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2020-12-13 20:29:21	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 ELIST=CMNTU SAFELIST KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2020-12-13 20:29:21	--	5PUAALE1R :your unique ID
+2020-12-13 20:29:21	--	There are 26 users and 14237 invisible on 19 servers
+2020-12-13 20:29:21	--	19 :IRC Operators online
+2020-12-13 20:29:21	--	3 :unknown connection(s)
+2020-12-13 20:29:21	--	2662 :channels formed
+2020-12-13 20:29:21	--	I have 3430 clients and 1 servers
+2020-12-13 20:29:21	--	Current local users: 3430  Max: 4227
+2020-12-13 20:29:21	--	Current global users: 14263  Max: 16103
+2020-12-13 20:29:21	--	Highest connection count: 4228 (4227 clients) (519390 connections received)
+2020-12-13 20:29:21	--	- dacia.oftc.net Message of the Day -
+2020-12-13 20:29:21	--	-   O
+2020-12-13 20:29:21	--	-    \   The Open and Free
+2020-12-13 20:29:21	--	-     O  Technology Community
+2020-12-13 20:29:21	--	-    /|  https://www.oftc.net
+2020-12-13 20:29:21	--	- O-O O
+2020-12-13 20:29:21	--	-
+2020-12-13 20:29:21	--	- Welcome to the OFTC IRC Network.
+2020-12-13 20:29:21	--	-
+2020-12-13 20:29:21	--	- The Open and Free Technology Community was founded at the
+2020-12-13 20:29:21	--	- end of 2001 by a group of experienced members of the Open
+2020-12-13 20:29:21	--	- Source and Free Software communities; it is aimed at
+2020-12-13 20:29:21	--	- providing these communities with better communication,
+2020-12-13 20:29:21	--	- development, and support infrastructure. Our goal is to
+2020-12-13 20:29:21	--	- provide stable services to members of the community in any
+2020-12-13 20:29:21	--	- part of the world, while listening closely to their needs
+2020-12-13 20:29:21	--	- and desires.
+2020-12-13 20:29:21	--	-
+2020-12-13 20:29:21	--	- We are not a general purpose chat platform, but a topical
+2020-12-13 20:29:21	--	- network intent on providing the open source and free
+2020-12-13 20:29:21	--	- software communities a means to cooperate and communicate.
+2020-12-13 20:29:21	--	- As such, illegal and off-topic activity, such as warez
+2020-12-13 20:29:21	--	- trading, will result in being barred from access.
+2020-12-13 20:29:21	--	-
+2020-12-13 20:29:21	--	- OFTC honors your privacy. To operate the network, we store
+2020-12-13 20:29:21	--	- and process information about IRC connections, nicknames,
+2020-12-13 20:29:21	--	- and channels. Our Privacy Policy explains what we do with
+2020-12-13 20:29:21	--	- that data, and what your rights are. By connecting, you
+2020-12-13 20:29:21	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2020-12-13 20:29:21	--	-
+2020-12-13 20:29:21	--	- If you require assistance with using the OFTC IRC network,
+2020-12-13 20:29:21	--	- stop by in channel #oftc, or email support@oftc.net with
+2020-12-13 20:29:21	--	- details. For help with non-IRC questions please refer to
+2020-12-13 20:29:21	--	- the respective channels and project homepages.
+2020-12-13 20:29:21	--	-
+2020-12-13 20:29:21	--	- Thanks and enjoy your stay! The OFTC team.
+2020-12-13 20:29:21	--	End of /MOTD command.
+2020-12-13 20:29:21	--	User mode [+i] by captainchris
+2020-12-13 20:29:21	--	NickServ (services@services.oftc.net): This nickname is registered and protected.  If it is your nickname, you may
+2020-12-13 20:29:21	--	NickServ (services@services.oftc.net): authenticate yourself to services with the IDENTIFY command.  You are
+2020-12-13 20:29:21	--	NickServ (services@services.oftc.net): getting this message because you are not on the access list for the
+2020-12-13 20:29:21	--	NickServ (services@services.oftc.net): captainchris nickname.
+2020-12-14 20:42:17	--	irc: connecting to server irc.oftc.net/6667...
+2020-12-14 20:42:17	--	irc: connected to irc.oftc.net/6667 (2a00:1a28:1100:12::50)
+2020-12-14 20:42:18	--	liquid.oftc.net: *** Looking up your hostname...
+2020-12-14 20:42:18	--	liquid.oftc.net: *** Checking Ident
+2020-12-14 20:42:18	--	liquid.oftc.net: *** Couldn't look up your hostname
+2020-12-14 20:42:28	--	liquid.oftc.net: *** No Ident response
+2020-12-14 20:42:28	--	Welcome to the OFTC Internet Relay Chat Network captainchris
+2020-12-14 20:42:28	--	Your host is liquid.oftc.net[2a00:1a28:1100:12::50/6667], running version hybrid-7.2.2+oftc1.7.3
+2020-12-14 20:42:28	--	This server was created Sep 22 2018 at 19:19:32
+2020-12-14 20:42:28	--	liquid.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2020-12-14 20:42:28	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2020-12-14 20:42:28	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS ELIST=CMNTU SAFELIST AWAYLEN=160 KNOCK EXCEPTS=e INVEX=I :are supported by this server
+2020-12-14 20:42:28	--	7YZAAD0ZT :your unique ID
+2020-12-14 20:42:28	--	There are 27 users and 14375 invisible on 19 servers
+2020-12-14 20:42:28	--	18 :IRC Operators online
+2020-12-14 20:42:28	--	2 :unknown connection(s)
+2020-12-14 20:42:28	--	2643 :channels formed
+2020-12-14 20:42:28	--	I have 3546 clients and 1 servers
+2020-12-14 20:42:28	--	Current local users: 3546  Max: 3701
+2020-12-14 20:42:28	--	Current global users: 14402  Max: 15437
+2020-12-14 20:42:28	--	Highest connection count: 3702 (3701 clients) (174584 connections received)
+2020-12-14 20:42:28	--	- liquid.oftc.net Message of the Day -
+2020-12-14 20:42:28	--	-   O
+2020-12-14 20:42:28	--	-    \   The Open and Free
+2020-12-14 20:42:28	--	-     O  Technology Community
+2020-12-14 20:42:28	--	-    /|  https://www.oftc.net
+2020-12-14 20:42:28	--	- O-O O
+2020-12-14 20:42:28	--	-
+2020-12-14 20:42:28	--	- Welcome to the OFTC IRC Network.
+2020-12-14 20:42:28	--	-
+2020-12-14 20:42:28	--	- The Open and Free Technology Community was founded at the
+2020-12-14 20:42:28	--	- end of 2001 by a group of experienced members of the Open
+2020-12-14 20:42:28	--	- Source and Free Software communities; it is aimed at
+2020-12-14 20:42:28	--	- providing these communities with better communication,
+2020-12-14 20:42:28	--	- development, and support infrastructure. Our goal is to
+2020-12-14 20:42:28	--	- provide stable services to members of the community in any
+2020-12-14 20:42:28	--	- part of the world, while listening closely to their needs
+2020-12-14 20:42:28	--	- and desires.
+2020-12-14 20:42:28	--	-
+2020-12-14 20:42:28	--	- We are not a general purpose chat platform, but a topical
+2020-12-14 20:42:28	--	- network intent on providing the open source and free
+2020-12-14 20:42:28	--	- software communities a means to cooperate and communicate.
+2020-12-14 20:42:28	--	- As such, illegal and off-topic activity, such as warez
+2020-12-14 20:42:28	--	- trading, will result in being barred from access.
+2020-12-14 20:42:28	--	-
+2020-12-14 20:42:28	--	- OFTC honors your privacy. To operate the network, we store
+2020-12-14 20:42:28	--	- and process information about IRC connections, nicknames,
+2020-12-14 20:42:28	--	- and channels. Our Privacy Policy explains what we do with
+2020-12-14 20:42:28	--	- that data, and what your rights are. By connecting, you
+2020-12-14 20:42:28	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2020-12-14 20:42:28	--	-
+2020-12-14 20:42:28	--	- If you require assistance with using the OFTC IRC network,
+2020-12-14 20:42:28	--	- stop by in channel #oftc, or email support@oftc.net with
+2020-12-14 20:42:28	--	- details. For help with non-IRC questions please refer to
+2020-12-14 20:42:28	--	- the respective channels and project homepages.
+2020-12-14 20:42:28	--	-
+2020-12-14 20:42:28	--	- Thanks and enjoy your stay! The OFTC team.
+2020-12-14 20:42:28	--	End of /MOTD command.
+2020-12-14 20:42:28	--	User mode [+i] by captainchris
+2020-12-14 20:42:28	--	NickServ (services@services.oftc.net): This nickname is registered and protected.  If it is your nickname, you may
+2020-12-14 20:42:28	--	NickServ (services@services.oftc.net): authenticate yourself to services with the IDENTIFY command.  You are
+2020-12-14 20:42:28	--	NickServ (services@services.oftc.net): getting this message because you are not on the access list for the
+2020-12-14 20:42:28	--	NickServ (services@services.oftc.net): captainchris nickname.
+2020-12-20 16:41:16	--	irc: connecting to server irc.oftc.net/6667...
+2020-12-20 16:41:17	--	irc: connected to irc.oftc.net/6667 (2a01:7e00::f03c:91ff:fe96:d48a)
+2020-12-20 16:41:17	--	coulomb.oftc.net: *** Looking up your hostname...
+2020-12-20 16:41:17	--	coulomb.oftc.net: *** Checking Ident
+2020-12-20 16:41:17	--	coulomb.oftc.net: *** Couldn't look up your hostname
+2020-12-20 16:41:28	--	coulomb.oftc.net: *** No Ident response
+2020-12-20 16:41:28	--	Welcome to the OFTC Internet Relay Chat Network captainchris
+2020-12-20 16:41:28	--	Your host is coulomb.oftc.net[2a01:7e00::f03c:91ff:fe96:d48a/6667], running version hybrid-7.2.2+oftc1.7.3
+2020-12-20 16:41:28	--	This server was created Sep 22 2018 at 19:19:59
+2020-12-20 16:41:28	--	coulomb.oftc.net hybrid-7.2.2+oftc1.7.3 CDGPRSabcdfgijklnorsuwxyz bciklmnopstvzeIMRS bkloveI
+2020-12-20 16:41:28	--	CALLERID CASEMAPPING=rfc1459 DEAF=D KICKLEN=160 MODES=4 NICKLEN=30 PREFIX=(ov)@+ STATUSMSG=@+ TOPICLEN=391 NETWORK=OFTC MAXLIST=beI:100 MAXTARGETS=1 CHANTYPES=# :are supported by this server
+2020-12-20 16:41:28	--	CHANLIMIT=#:120 CHANNELLEN=50 CHANMODES=eIqb,k,l,cimnpstzMRS AWAYLEN=160 KNOCK ELIST=CMNTU SAFELIST EXCEPTS=e INVEX=I :are supported by this server
+2020-12-20 16:41:28	--	0BGAADY1Q :your unique ID
+2020-12-20 16:41:28	--	There are 28 users and 14270 invisible on 19 servers
+2020-12-20 16:41:28	--	18 :IRC Operators online
+2020-12-20 16:41:28	--	2660 :channels formed
+2020-12-20 16:41:28	--	I have 3279 clients and 1 servers
+2020-12-20 16:41:28	--	Current local users: 3279  Max: 3863
+2020-12-20 16:41:28	--	Current global users: 14298  Max: 15437
+2020-12-20 16:41:28	--	Highest connection count: 3864 (3863 clients) (172061 connections received)
+2020-12-20 16:41:28	--	- coulomb.oftc.net Message of the Day -
+2020-12-20 16:41:28	--	-   O
+2020-12-20 16:41:28	--	-    \   The Open and Free
+2020-12-20 16:41:28	--	-     O  Technology Community
+2020-12-20 16:41:28	--	-    /|  https://www.oftc.net
+2020-12-20 16:41:28	--	- O-O O
+2020-12-20 16:41:28	--	-
+2020-12-20 16:41:28	--	- Welcome to the OFTC IRC Network.
+2020-12-20 16:41:28	--	-
+2020-12-20 16:41:28	--	- The Open and Free Technology Community was founded at the
+2020-12-20 16:41:28	--	- end of 2001 by a group of experienced members of the Open
+2020-12-20 16:41:28	--	- Source and Free Software communities; it is aimed at
+2020-12-20 16:41:28	--	- providing these communities with better communication,
+2020-12-20 16:41:28	--	- development, and support infrastructure. Our goal is to
+2020-12-20 16:41:28	--	- provide stable services to members of the community in any
+2020-12-20 16:41:28	--	- part of the world, while listening closely to their needs
+2020-12-20 16:41:28	--	- and desires.
+2020-12-20 16:41:28	--	-
+2020-12-20 16:41:28	--	- We are not a general purpose chat platform, but a topical
+2020-12-20 16:41:28	--	- network intent on providing the open source and free
+2020-12-20 16:41:28	--	- software communities a means to cooperate and communicate.
+2020-12-20 16:41:28	--	- As such, illegal and off-topic activity, such as warez
+2020-12-20 16:41:28	--	- trading, will result in being barred from access.
+2020-12-20 16:41:28	--	-
+2020-12-20 16:41:28	--	- OFTC honors your privacy. To operate the network, we store
+2020-12-20 16:41:28	--	- and process information about IRC connections, nicknames,
+2020-12-20 16:41:28	--	- and channels. Our Privacy Policy explains what we do with
+2020-12-20 16:41:28	--	- that data, and what your rights are. By connecting, you
+2020-12-20 16:41:28	--	- accept these terms: https://www.oftc.net/Privacy_Policy/
+2020-12-20 16:41:28	--	-
+2020-12-20 16:41:28	--	- If you require assistance with using the OFTC IRC network,
+2020-12-20 16:41:28	--	- stop by in channel #oftc, or email support@oftc.net with
+2020-12-20 16:41:28	--	- details. For help with non-IRC questions please refer to
+2020-12-20 16:41:28	--	- the respective channels and project homepages.
+2020-12-20 16:41:28	--	-
+2020-12-20 16:41:28	--	- Thanks and enjoy your stay! The OFTC team.
+2020-12-20 16:41:28	--	End of /MOTD command.
+2020-12-20 16:41:28	--	User mode [+i] by captainchris
+2020-12-20 16:41:28	--	NickServ (services@services.oftc.net): This nickname is registered and protected.  If it is your nickname, you may
+2020-12-20 16:41:28	--	NickServ (services@services.oftc.net): authenticate yourself to services with the IDENTIFY command.  You are
+2020-12-20 16:41:28	--	NickServ (services@services.oftc.net): getting this message because you are not on the access list for the
+2020-12-20 16:41:28	--	NickServ (services@services.oftc.net): captainchris nickname.
+2020-12-20 16:41:47	--	MSG(NcikServ): identify 87295986
+2020-12-20 16:41:47	--	NcikServ: No such nick/channel
+2020-12-20 16:41:52	--	MSG(NickServ): identify ********
+2020-12-20 16:41:52	--	User mode [+R] by captainchris
+2020-12-20 16:41:52	--	NickServ (services@services.oftc.net): You are successfully identified as captainchris.

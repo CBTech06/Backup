@@ -1,0 +1,5 @@
+#!/bin/bash
+url=$(sort ~/.config/Scripts/search_engines | sed 's/:.*//' | dmenu - i -p "Search Engine" | xargs -I % grep "%:" ~/.config/Scripts/search_engines | sed 's/.*://')
+search=$(echo | dmenu -i -p "Search" | xargs -I % encode %)
+
+w3m "$url$search"

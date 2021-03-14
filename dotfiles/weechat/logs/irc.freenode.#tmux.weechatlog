@@ -1,0 +1,60 @@
+2020-12-04 21:19:32	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #tmux
+2020-12-04 21:19:32	--	Topic for #tmux is "tmux is a terminal multiplexer | http://tmux.github.io/ | http://man.openbsd.org/OpenBSD-current/man1/tmux.1"
+2020-12-04 21:19:32	--	Topic set by nicm (~nicholas@host81-154-196-102.range81-154.btcentralplus.com) on Fri, 24 Apr 2020 11:18:04
+2020-12-04 21:19:32	--	Channel #tmux: 315 nicks (0 ops, 0 voices, 315 normals)
+2020-12-04 21:19:34	--	Channel created on Thu, 11 Jun 2009 21:16:11
+2020-12-04 21:19:36	captainchris	hi everyboyd 
+2020-12-04 21:23:08	SvenG	\o
+2020-12-04 21:26:56	-->	palooka-jock (~mike@45.126.44.146) has joined #tmux
+2020-12-04 21:37:35	-->	Oatmeal (~Suzeanne@ip68-4-181-8.oc.oc.cox.net) has joined #tmux
+2020-12-04 21:41:52	captainchris	I'm new on tmux 
+2020-12-04 21:42:19	captainchris	I try remap some key but it doesn't work 
+2020-12-04 21:42:35	captainchris	bind | split-window -h
+2020-12-04 21:42:55	captainchris	when I type ctrl-b | it doesn't split
+2020-12-04 21:43:46	captainchris	I put it on .tmux.conf in my ~ 
+2020-12-04 21:43:52	captainchris	it is correct ?
+2020-12-04 21:45:00	moritzdietz	captainchris: Run `tmux list-keys` inside your tmux and check if your mapping is listed there
+2020-12-04 21:45:01	SvenG	works for me :)
+2020-12-04 21:45:29	SvenG	maybe use '|' in the config?
+2020-12-04 21:45:30	SvenG	bind '|' split-window -h
+2020-12-04 21:45:49	SvenG	~/.tmux.config is the correct config file, yes
+2020-12-04 21:45:59	moritzdietz	SvenG: it does not need ' or "
+2020-12-04 21:46:06	SvenG	mind you: just adding this line does not update an already running instance of tmux
+2020-12-04 21:46:26	moritzdietz	Oh yeah: make sure to kill all active servers
+2020-12-04 21:46:36	SvenG	i just did this via the command line.. works :)
+2020-12-04 21:47:01	moritzdietz	Yeah it probably does - I just meant that it does not ~need~ it
+2020-12-04 21:47:02	SvenG	captainchris: PREFIX :bind | split-window -h
+2020-12-04 21:47:34	captainchris	SvenG: your command works
+2020-12-04 21:48:41	SvenG	\o/
+2020-12-04 21:49:53	captainchris	but not in the config file 
+2020-12-04 21:50:07	captainchris	if i use your command in terminal that's works
+2020-12-04 21:50:53	SvenG	good
+2020-12-04 21:51:13	SvenG	now.. when you add it to the config file, and start a new instance then it does not work?
+2020-12-04 21:51:24	captainchris	no 
+2020-12-04 21:51:27	moritzdietz	again check if the mapping is listed
+2020-12-04 21:51:34	moritzdietz	inside tmux
+2020-12-04 21:51:44	natechan	did you kill the _server_ (not end the session or kill the client)?  (killall tmux)
+2020-12-04 21:52:29	SvenG	let me see..  well.. i actually have this command in the tmux.config . and it does work,
+2020-12-04 21:52:46	moritzdietz	We know the command works
+2020-12-04 21:52:50	captainchris	Ok the server was not killed 
+2020-12-04 21:53:02	captainchris	it's works
+2020-12-04 21:53:03	moritzdietz	we want to find out if the server is killed which means the config is properly reloaded
+2020-12-04 21:53:07	moritzdietz	exactly
+2020-12-04 21:53:13	SvenG	i tried with tmux 2.3 to see if it doesnt work.  tmux 3.x is fine
+2020-12-04 21:53:24	moritzdietz	not needed
+2020-12-04 21:53:38	moritzdietz	the steps we asked about where to verify whether the configuration file was loaded
+2020-12-04 21:53:56	natechan	in the future, to avoid killing the server, you can <<PREFIX :source-file ~/.tmux.conf>>
+2020-12-04 21:54:40	SvenG	bind r source-file ~/.tmux.conf \; display "Reloaded!"
+2020-12-04 21:55:01	natechan	whoa, do you you reload your config that often, SvenG?
+2020-12-04 21:55:02	moritzdietz	Though I have found that some things need a server restart… but yes, a command like this or a key binding is nice
+2020-12-04 21:55:32	moritzdietz	This is one of the commands in every tmux configuration example out there in the internet I feel like
+2020-12-04 21:55:46	SvenG	natechan: quite often, yes.  trying a few new things every day.
+2020-12-04 21:57:31	natechan	:thumbsup: have that makes all the tmux servers (yeah, plural) reload their various conf files, so i sorta get it.  personally wouldn't want to spend a button in the prefix key table for that though
+2020-12-04 21:57:51	natechan	have [a script] that
+2020-12-04 22:29:26	<--	Fats (fats@gateway/vpn/privateinternetaccess/fats) has quit (Remote host closed the connection)
+2020-12-04 22:35:48	<--	causa_sui (~causasui@wikipedia/causa-sui) has quit (Read error: Connection reset by peer)
+2020-12-04 22:47:21	-->	Fats (fats@gateway/vpn/privateinternetaccess/fats) has joined #tmux
+2020-12-04 22:49:22	-->	Kryptron_ (~Kryptron@unaffiliated/kryptron) has joined #tmux
+2020-12-04 22:52:21	<--	Kryptron (~Kryptron@unaffiliated/kryptron) has quit (Ping timeout: 256 seconds)
+2020-12-04 23:00:47	<--	Kruppt (~Kruppt@50.111.11.19) has quit (Quit: Leaving)
+2020-12-04 23:13:46	<--	derk0pf (~derk0pf@ip5b413570.dynamic.kabel-deutschland.de) has quit (Ping timeout: 240 seconds)

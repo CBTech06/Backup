@@ -1,0 +1,90 @@
+{
+    // tabbed split container with 4 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "tabbed",
+    "percent": null,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 7,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 614,
+               "width": 914,
+               "x": 0,
+               "y": 0
+            },
+            "name": "gotop",
+            "percent": 0.25,
+            "swallows": [
+               {
+                "class": "^URxvt$",
+                "instance": "^gotop-startup$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 7,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 614,
+               "width": 914,
+               "x": 0,
+               "y": 0
+            },
+            "name": "newsboat",
+            "percent": 0.25,
+            "swallows": [
+               {
+                "class": "^URxvt$",
+                "instance": "^newsboat-startup$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 7,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 614,
+               "width": 914,
+               "x": 0,
+               "y": 0
+            },
+            "name": "cointop",
+            "percent": 0.25,
+            "swallows": [
+               {
+                "class": "^URxvt$",
+                "instance": "^cointop-startup$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 7,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 614,
+               "width": 914,
+               "x": 0,
+               "y": 0
+            },
+            "name": "mop",
+            "percent": 0.25,
+            "swallows": [
+               {
+                "class": "^URxvt$",
+                "instance": "^mop-startup$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}

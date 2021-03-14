@@ -1,0 +1,81 @@
+2020-03-30 21:48:02	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #xmonad
+2020-03-30 21:48:02	--	Topic for #xmonad is "Want to help? http://bit.ly/2nYjqpQ xmonad: the tiling window manager with formally proven extensions | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2020-03-30 21:48:02	--	Topic set by byorgey (~byorgey@haskell/developer/byorgey) on Thu, 07 Mar 2019 13:45:42
+2020-03-30 21:48:02	--	Channel #xmonad: 156 nicks (0 ops, 1 voice, 155 normals)
+2020-03-30 21:48:03	--	URL for #xmonad: http://xmonad.org
+2020-03-30 21:48:04	--	Channel created on Wed, 25 Apr 2007 06:33:15
+2020-03-30 21:48:07	captainchris	hi everybody 
+2020-03-30 21:48:21	captainchris	anyone uses dzen2, I need help 
+2020-03-30 21:53:22	-->	Habib (~Habib@185.16.206.89) has joined #xmonad
+2020-03-30 21:55:15	<--	Habib (~Habib@185.16.206.89) has left #xmonad
+2020-03-30 21:59:41	-->	dmwit (60ffe7c6@pool-96-255-231-198.washdc.fios.verizon.net) has joined #xmonad
+2020-03-30 21:59:48	-->	growpotkin (~growpotki@130-45-30-154.dyn.grandenetworks.net) has joined #xmonad
+2020-03-30 22:01:34	-->	abhixec (~abhixec@73.92.49.6) has joined #xmonad
+2020-03-30 22:07:18	<--	kelnoky (~shao@ip1f1222c4.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 2.7.1)
+2020-03-30 22:30:16	<--	SpiderPig (~matt@047-132-233-190.res.spectrum.com) has quit (Quit: leaving)
+2020-03-30 22:32:03	<--	funnel (~funnel@unaffiliated/espiral) has quit (Ping timeout: 260 seconds)
+2020-03-30 22:34:12	styledash	abhixec
+2020-03-30 22:34:27	styledash	windowCount :: X (Maybe String)
+2020-03-30 22:34:27	styledash	windowCount = gets $ Just . show . length . W.integrate' . W.stack . W.workspace . W.current . windowset
+2020-03-30 22:38:44	styledash	kmicu ask the question you want answered 😏
+2020-03-30 22:45:23	<--	ssmith (~ssmith@64.184.2.236) has quit (Quit: leaving)
+2020-03-31 11:47:08	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #xmonad
+2020-03-31 11:47:08	--	Topic for #xmonad is "Want to help? http://bit.ly/2nYjqpQ xmonad: the tiling window manager with formally proven extensions | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2020-03-31 11:47:08	--	Topic set by byorgey (~byorgey@haskell/developer/byorgey) on Thu, 07 Mar 2019 13:45:42
+2020-03-31 11:47:08	--	Channel #xmonad: 155 nicks (0 ops, 1 voice, 154 normals)
+2020-03-31 11:47:08	--	URL for #xmonad: http://xmonad.org
+2020-03-31 11:47:10	--	Channel created on Wed, 25 Apr 2007 06:33:15
+2020-03-31 11:47:19	captainchris	hi everybody who use dzen2 ?
+2020-03-31 11:48:14	kmicu	abhixec: You should be able to use it now with https://hackage.haskell.org/package/xmonad-contrib/docs/XMonad-Hooks-DynamicLog.html#g:3 (with minor adjustments) but dunno whether that’s a wise thing to do, geekosaur would know for sure fi counting windows is a safe thing in that Xorg context.
+2020-03-31 11:49:20	kmicu	Hi captainchris: I can help with xmobar/taffybar only. Please state the question anyway and idle here for some time.
+2020-03-31 11:49:57	captainchris	I need to create window popup to show keybings
+2020-03-31 11:52:12	kmicu	Is there some issue after executing dzen in XMonad?
+2020-03-31 12:24:29	<--	cfricke (~cfricke@unaffiliated/cfricke) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 12:27:32	captainchris	Yes i would like to create a window
+2020-03-31 13:01:30	kmicu	Something doesn’t work with https://wiki.archlinux.org/index.php/Dzen#Making_a_pop-up_with_dzen ?
+2020-03-31 13:24:01	<--	Natch (~Natch@h-112-130.A444.priv.bahnhof.se) has quit (Remote host closed the connection)
+2020-03-31 13:25:14	-->	jeetu (~jeetu@202.38.183.144) has joined #xmonad
+2020-03-31 13:56:59	-->	navi_se (~gian@2a02:c7f:22ae:c00:3252:cbff:fee8:f3e9) has joined #xmonad
+2020-03-31 13:58:59	<--	jeetu (~jeetu@202.38.183.144) has quit (Quit: WeeChat 2.3)
+2020-03-31 14:35:54	-->	Natch (~Natch@h-112-130.A444.priv.bahnhof.se) has joined #xmonad
+2020-03-31 15:06:46	-->	davemq (~davemq@99-179-0-50.lightspeed.austtx.sbcglobal.net) has joined #xmonad
+2020-03-31 15:28:29	<--	amiri (~amiri@cpe-76-91-154-9.socal.res.rr.com) has quit (Ping timeout: 256 seconds)
+2020-03-31 15:36:48	-->	amiri (~amiri@cpe-76-91-154-9.socal.res.rr.com) has joined #xmonad
+2020-03-31 15:56:19	<--	xacktm (xacktm@gateway/shell/panicbnc/x-rroihlixhtdcwzzo) has quit (Ping timeout: 246 seconds)
+2020-03-31 16:04:50	-->	xacktm (xacktm@gateway/shell/panicbnc/x-rympyqvdyojwbowl) has joined #xmonad
+2020-03-31 16:25:38	<--	crab (~crab@pitta.toroid.org) has quit (Remote host closed the connection)
+2020-03-31 16:26:50	-->	crab (~crab@pitta.toroid.org) has joined #xmonad
+2020-03-31 16:39:51	-->	ddellacosta (~dd@217.138.206.76) has joined #xmonad
+2020-03-31 16:50:24	<--	navi_se (~gian@2a02:c7f:22ae:c00:3252:cbff:fee8:f3e9) has quit (Ping timeout: 246 seconds)
+2020-03-31 16:50:40	<--	palo (~weechat@c-base/crew/palo) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 16:51:32	-->	palo (~weechat@c-base/crew/palo) has joined #xmonad
+2020-03-31 16:51:42	<--	z41nt (~Cristian@44-2-142-46.pool.kielnet.net) has quit (Quit: Leaving)
+2020-03-31 17:06:06	<--	dmwit (~dmwit@pool-96-255-231-198.washdc.fios.verizon.net) has quit (Ping timeout: 256 seconds)
+2020-03-31 17:08:14	-->	gazler (~gazler@2a00:23c6:bb04:a501:62a3:ca8c:b6b3:a057) has joined #xmonad
+2020-03-31 17:18:00	-->	dmwit (~dmwit@pool-96-255-231-198.washdc.fios.verizon.net) has joined #xmonad
+2020-03-31 17:19:54	-->	fcortesi (~fcortesi@78-66-245-190.fibertel.com.ar) has joined #xmonad
+2020-03-31 17:20:41	<--	theDon (~td@muedsl-82-207-238-102.citykom.de) has quit (Ping timeout: 256 seconds)
+2020-03-31 17:23:50	<--	fcortesi (~fcortesi@78-66-245-190.fibertel.com.ar) has quit (Remote host closed the connection)
+2020-03-31 17:25:55	-->	theDon (~td@muedsl-82-207-238-102.citykom.de) has joined #xmonad
+2020-03-31 17:29:40	--	jackhill_ is now known as jackhill
+2020-03-31 17:36:17	-->	navi_se (~gian@2a02:c7f:22ae:c00:3252:cbff:fee8:f3e9) has joined #xmonad
+2020-03-31 17:48:48	-->	mekeor (~mekeor@194.187.162.248) has joined #xmonad
+2020-03-31 17:57:53	<--	notis (~notis@86.105.25.92) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 17:59:57	-->	notis (~notis@185.195.19.87) has joined #xmonad
+2020-03-31 18:03:03	<--	mekeor (~mekeor@194.187.162.248) has quit (Ping timeout: 258 seconds)
+2020-03-31 18:23:57	<--	wonko7 (~wonko7@2a01:e35:2ffb:7040:d009:4907:ed91:918e) has quit (Ping timeout: 272 seconds)
+2020-03-31 18:34:02	-->	Habib (~Habib@185.16.206.89) has joined #xmonad
+2020-03-31 19:10:48	<--	stepnem (~stepnem@185.112.167.47) has quit (Ping timeout: 240 seconds)
+2020-03-31 19:12:45	-->	stepnem (~stepnem@185.112.167.47) has joined #xmonad
+2020-03-31 19:44:02	<--	sagax (~sagax_nb@213.138.71.146) has quit (Remote host closed the connection)
+2020-03-31 19:51:08	-->	sagax (~sagax_nb@213.138.71.146) has joined #xmonad
+2020-03-31 20:29:23	<--	abhixec (~abhixec@73.92.49.6) has quit (Ping timeout: 256 seconds)
+2020-03-31 20:31:05	-->	abhixec (~abhixec@73.93.152.224) has joined #xmonad
+2020-03-31 20:41:23	<--	abhixec (~abhixec@73.93.152.224) has quit (Quit: leaving)
+2020-03-31 21:12:31	<--	notis (~notis@185.195.19.87) has quit (Ping timeout: 250 seconds)
+2020-03-31 21:16:02	<--	navi_se (~gian@2a02:c7f:22ae:c00:3252:cbff:fee8:f3e9) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 22:26:25	-->	notis (~notis@195.74.241.224.dsl.dyn.forthnet.gr) has joined #xmonad
+2020-03-31 22:27:37	-->	jumper149 (~jumper149@p200300E54F25850076E50BFFFEAFC8D8.dip0.t-ipconnect.de) has joined #xmonad
+2020-03-31 22:29:46	jumper149	Hi, I would like to pattern-match on XMonad.Layout.Choose
+2020-03-31 22:30:03	jumper149	The only way I see that this is possible is by exporting the constructor.
+2020-03-31 23:11:36	<--	seschwar (~seschwar@unaffiliated/seschwar) has quit (Quit: :wq)

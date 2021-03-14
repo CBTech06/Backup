@@ -1,0 +1,45 @@
+2020-03-30 21:47:55	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #awesome
+2020-03-30 21:47:55	--	Topic for #awesome is ""There are over 175 awesome users on irc.oftc.net""
+2020-03-30 21:47:55	--	Topic set by blackpenguin on Mon, 08 Jun 2009 16:29:23
+2020-03-30 21:47:55	--	Channel #awesome: 35 nicks (0 ops, 0 voices, 35 normals)
+2020-03-30 21:47:57	--	Channel created on Tue, 27 Jan 2009 06:41:14
+2020-03-30 21:47:59	captainchris	hi everybody
+2020-03-30 21:51:16	captainchris	anyone uses dzen2, I need help to create popup windows
+2020-03-30 22:32:03	<--	funnel (~funnel@unaffiliated/espiral) has quit (Ping timeout: 260 seconds)
+2020-03-31 11:48:21	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #awesome
+2020-03-31 11:48:21	--	Topic for #awesome is ""There are over 175 awesome users on irc.oftc.net""
+2020-03-31 11:48:21	--	Topic set by blackpenguin on Mon, 08 Jun 2009 16:29:23
+2020-03-31 11:48:21	--	Channel #awesome: 34 nicks (0 ops, 0 voices, 34 normals)
+2020-03-31 11:48:23	--	Channel created on Tue, 27 Jan 2009 06:41:14
+2020-03-31 11:48:25	captainchris	hi everybody 
+2020-03-31 11:48:36	captainchris	anyone uses dzen2 
+2020-03-31 11:48:37	captainchris	??
+2020-03-31 13:08:35	TimBlo	?
+2020-03-31 13:09:22	TimBlo	this is like meta, isn't it?
+2020-03-31 13:09:46	TimBlo	i don't even know what it is
+2020-03-31 13:44:10	-->	alpha_Aquilae (~ircII@167.250.23.109.rev.sfr.net) has joined #awesome
+2020-03-31 13:53:33	<--	fiete (zDpMNZJFPx@qutebrowser/user/fiete) has quit (Quit: WeeChat 2.7.1)
+2020-03-31 13:54:05	-->	fiete (OtCkt6nyej@qutebrowser/user/fiete) has joined #awesome
+2020-03-31 14:03:39	<--	darkstardevx (~darkstard@2601:1c2:300:c8a0::f4b4) has quit (Ping timeout: 252 seconds)
+2020-03-31 14:08:35	-->	darkstardevx (~darkstard@c-24-21-53-33.hsd1.or.comcast.net) has joined #awesome
+2020-04-01 15:54:04	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #awesome
+2020-04-01 15:54:04	--	Topic for #awesome is ""There are over 175 awesome users on irc.oftc.net""
+2020-04-01 15:54:04	--	Topic set by blackpenguin on Mon, 08 Jun 2009 16:29:23
+2020-04-01 15:54:04	--	Channel #awesome: 35 nicks (0 ops, 0 voices, 35 normals)
+2020-04-01 15:54:06	--	Channel created on Tue, 27 Jan 2009 06:41:14
+2020-04-01 15:54:08	captainchris	hi everybody 
+2020-04-01 15:54:46	captainchris	I need your help. I just need a screenshot of hotkey popup to show keybindings.Please 
+2020-04-01 15:55:07	captainchris	I'm on I3 and I make similar script to show keybinding in I3.
+2020-04-01 15:55:14	captainchris	Thank's for your help 
+2020-04-01 16:08:40	-->	Prestige (~Prestige@2607:5300:60:f69::1) has joined #awesome
+2020-04-01 16:10:04	<--	Prestige (~Prestige@2607:5300:60:f69::1) has left #awesome
+2020-04-01 16:45:49	captainchris	nobody there 
+2020-04-01 18:30:51	-->	Plasmoduck_ (~Plasmoduc@245.34.168.202.cable.static.comindico.com.au) has joined #awesome
+2020-04-01 18:32:09	<--	Plasmoduck_ (~Plasmoduc@245.34.168.202.cable.static.comindico.com.au) has quit (Changing host)
+2020-04-01 18:32:09	-->	Plasmoduck_ (~Plasmoduc@unaffiliated/plasmoduck) has joined #awesome
+2020-04-01 18:34:01	Plasmoduck_	How can I make this line more FreeBSD friendly? awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
+2020-04-01 18:34:23	Plasmoduck_	It's for Awesomewm rc.lua theme I downloaded. But its spitting out errors when I restart awesome. errors like; error while running function stack traceback 'func' 'connect_for_each_screen' 'main chunk' 'at_screen_connect' (a nill value)
+2020-04-01 18:34:23	Plasmoduck_	<Plasmoduck_> <Plasmoduck_> <Plasmoduck_> I tried to just comment that line out but awesome wouldn't load
+2020-04-01 21:35:48	<--	mal`` (~mal``@static.38.6.217.95.clients.your-server.de) has quit (Quit: Leaving)
+2020-04-01 21:42:36	-->	mal`` (~mal``@static.38.6.217.95.clients.your-server.de) has joined #awesome
+2020-04-01 23:25:30	<--	alpha_Aquilae (~ircII@167.250.23.109.rev.sfr.net) has quit (Quit: bye o/)

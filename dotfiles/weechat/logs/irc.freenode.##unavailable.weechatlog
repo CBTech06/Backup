@@ -1,0 +1,464 @@
+2020-01-24 22:42:16	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined ##unavailable
+2020-01-24 22:42:16	--	Topic for ##unavailable is "You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network ( http://freenode.net/policies#off-topic-use ). Check their website for more information. Your client may be flapping in and out of the channel; in this case, check with channel ops. The channel may be clone-infested; please consult freenode network staff."
+2020-01-24 22:42:16	--	Topic set by c on Sun, 24 Apr 2016 02:35:36
+2020-01-24 22:42:16	--	Channel ##unavailable: 212 nicks (1 op, 0 voices, 211 normals)
+2020-01-24 22:42:16	--	PvNotice(ChanServ): You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network. Check their website for more information. Your client may be flapping in and out of channel; in this case, check with channel staff. The channel may be clone-infested; please consult freenode network staff.
+2020-01-24 22:42:19	--	Channel created on Thu, 30 Mar 2006 14:52:16
+2020-03-17 17:33:27	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined ##unavailable
+2020-03-17 17:33:27	--	Topic for ##unavailable is "You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network ( http://freenode.net/policies#off-topic-use ). Check their website for more information. Your client may be flapping in and out of the channel; in this case, check with channel ops. The channel may be clone-infested; please consult freenode network staff."
+2020-03-17 17:33:27	--	Topic set by c on Sun, 24 Apr 2016 02:35:36
+2020-03-17 17:33:27	--	Channel ##unavailable: 225 nicks (1 op, 0 voices, 224 normals)
+2020-03-17 17:33:27	--	PvNotice(ChanServ): You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network. Check their website for more information. Your client may be flapping in and out of channel; in this case, check with channel staff. The channel may be clone-infested; please consult freenode network staff.
+2020-03-17 17:33:29	--	Channel created on Thu, 30 Mar 2006 14:52:16
+2020-03-17 17:33:32	captainchris	hi everybody 
+2020-03-17 17:33:32	--	##unavailable: Cannot send to nick/channel
+2020-03-17 17:33:39	<--	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 256 seconds)
+2020-03-17 17:33:40	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:34:11	-->	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined ##unavailable
+2020-03-17 17:34:21	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:34:38	captainchris	I want to install purify colorscheme for vim https://github.com/kyoz/purify/blob/master/vim/colors/purify.vim
+2020-03-17 17:34:38	--	##unavailable: Cannot send to nick/channel
+2020-03-17 17:34:41	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:34:49	<--	patinux_ (~patinux@unaffiliated/patinux) has quit (Ping timeout: 250 seconds)
+2020-03-17 17:35:23	captainchris	but it say Unknown function: purify#get_colors
+2020-03-17 17:35:23	--	##unavailable: Cannot send to nick/channel
+2020-03-17 17:35:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:36:09	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:37:25	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:37:46	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:38:20	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:38:40	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:39:28	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:39:57	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 17:40:00	<--	S-AKY (~Thunderbi@93.85.76.244) has quit (Ping timeout: 246 seconds)
+2020-03-17 17:40:52	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 17:41:12	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:41:37	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:41:58	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:42:25	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:42:46	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has joined ##unavailable
+2020-03-17 17:46:36	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:46:57	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 17:48:35	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:48:56	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 17:49:14	-->	patinux_ (~patinux@unaffiliated/patinux) has joined ##unavailable
+2020-03-17 17:49:51	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:50:09	-->	ivanc___ (~ivanc@93-34-235-201.ip52.fastwebnet.it) has joined ##unavailable
+2020-03-17 17:50:11	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 17:50:19	<--	patinux_ (~patinux@unaffiliated/patinux) has quit (Read error: Connection reset by peer)
+2020-03-17 17:51:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:52:19	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 17:53:48	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 17:54:08	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 17:54:19	-->	cthulchu_ (~cthulchu@69.172.160.196) has joined ##unavailable
+2020-03-17 17:54:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 17:55:08	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 17:58:48	-->	netfreak1 (~Thunderbi@92.223.89.163) has joined ##unavailable
+2020-03-17 17:59:16	<--	gnoh (~dean@2a00:23a8:4325:8f00:78b6:1901:7195:80ef) has quit (Quit: Konversation terminated!)
+2020-03-17 18:00:17	<--	lchlan_ (~lachlan@167.98.27.226) has quit (Ping timeout: 256 seconds)
+2020-03-17 18:01:10	-->	zleap (~zleap@unaffiliated/zleap) has joined ##unavailable
+2020-03-17 18:01:21	<--	ivanc___ (~ivanc@93-34-235-201.ip52.fastwebnet.it) has quit (Ping timeout: 246 seconds)
+2020-03-17 18:01:42	-->	ivanc___ (~ivanc@185.214.203.63) has joined ##unavailable
+2020-03-17 18:02:57	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 18:03:18	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 18:07:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 18:08:16	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 18:09:00	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 18:09:20	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 18:09:48	-->	allana (~user@47.151.240.105) has joined ##unavailable
+2020-03-17 18:11:25	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 18:11:45	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 18:12:26	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 18:12:46	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 18:14:34	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 18:14:54	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has joined ##unavailable
+2020-03-17 18:17:28	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:30fc:289e) has quit (Remote host closed the connection)
+2020-03-17 18:17:48	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:18:05	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:18:25	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:19:28	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:19:48	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:21:34	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:21:55	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:23:56	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:24:17	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:28:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:28:21	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:28:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:29:08	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:31:07	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:31:28	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:33:23	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:33:44	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:34:35	-->	algun (~algun@unaffiliated/algun) has joined ##unavailable
+2020-03-17 18:35:00	<--	algun (~algun@unaffiliated/algun) has quit (Client Quit)
+2020-03-17 18:35:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:36:08	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:36:33	-->	lchlan_ (~lachlan@167.98.27.226) has joined ##unavailable
+2020-03-17 18:36:53	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:37:13	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:38:01	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:38:22	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:38:49	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:39:09	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:40:54	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:41:15	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:42:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:43:10	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:45:06	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:45:27	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:45:32	-->	Moki____ (~moki@CPEf81d0fb19fc3-CMf81d0fb19fc0.cpe.net.fido.ca) has joined ##unavailable
+2020-03-17 18:46:32	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:46:53	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:49:31	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:49:52	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has joined ##unavailable
+2020-03-17 18:51:07	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:80b2:229e) has quit (Remote host closed the connection)
+2020-03-17 18:51:26	<--	thomash (~thomash@2a00:f41:898:9580:f89a:785f:85b1:2) has quit (Read error: Connection reset by peer)
+2020-03-17 18:51:28	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 18:51:51	<--	pradeep (~pradeep@112.133.236.110) has quit (Ping timeout: 256 seconds)
+2020-03-17 18:52:31	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 18:52:52	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 18:52:52	-->	thomash (~thomash@public-gprs277109.centertel.pl) has joined ##unavailable
+2020-03-17 18:53:27	<--	thomash (~thomash@public-gprs277109.centertel.pl) has quit (Read error: Connection reset by peer)
+2020-03-17 18:54:03	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 18:54:23	-->	pradeep (~pradeep@112.133.236.110) has joined ##unavailable
+2020-03-17 18:54:24	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 18:55:35	-->	thomash (~thomash@public-gprs277109.centertel.pl) has joined ##unavailable
+2020-03-17 18:55:55	<--	thomash (~thomash@public-gprs277109.centertel.pl) has quit (Read error: Connection reset by peer)
+2020-03-17 18:56:50	-->	thomash (~thomash@public-gprs277109.centertel.pl) has joined ##unavailable
+2020-03-17 18:57:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 18:57:27	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 18:57:58	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 18:58:19	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 18:59:02	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 18:59:23	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:00:03	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:00:24	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:02:23	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:02:43	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:03:49	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:04:09	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:05:23	<--	Chiffr (~chiffr@d31128.smhi.se) has quit (Quit: Leaving)
+2020-03-17 19:06:05	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:06:26	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:07:53	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:08:13	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:08:56	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:09:17	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:10:54	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:11:15	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:16:02	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:16:23	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:17:56	<--	lchlan_ (~lachlan@167.98.27.226) has quit (Ping timeout: 246 seconds)
+2020-03-17 19:18:06	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:18:27	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:19:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:19:21	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:20:06	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:20:27	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:22:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:22:29	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 19:22:53	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 19:23:13	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:23:38	<--	thomash (~thomash@public-gprs277109.centertel.pl) has quit (Quit: Leaving)
+2020-03-17 19:24:05	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:24:25	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has joined ##unavailable
+2020-03-17 19:24:59	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:1034:2b9f) has quit (Remote host closed the connection)
+2020-03-17 19:25:19	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:25:49	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:26:10	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:26:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:27:10	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:28:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:29:00	<--	jf_simon (~quassel@2001:16b8:5cc7:800:ba27:ebff:fe29:1835) has quit (Quit: No Ping reply in 180 seconds.)
+2020-03-17 19:29:08	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:30:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:30:20	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:30:25	-->	algun (~algun@unaffiliated/algun) has joined ##unavailable
+2020-03-17 19:30:25	-->	lchlan_ (~lachlan@167.98.27.226) has joined ##unavailable
+2020-03-17 19:31:04	-->	jf_simon (~quassel@2001:16b8:5cc7:800:ba27:ebff:fe29:1835) has joined ##unavailable
+2020-03-17 19:31:24	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:31:44	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:32:01	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:32:21	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:35:25	-->	Kitzi (~Kitzi@cable-158-181-78-219.cust.telecolumbus.net) has joined ##unavailable
+2020-03-17 19:36:52	<--	shmeuh (~shm__@41.248.170.137) has quit (Quit: transactional shutdown)
+2020-03-17 19:38:51	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:38:54	-->	Guest38408 (~aladino@host67-103-dynamic.10-87-r.retail.telecomitalia.it) has joined ##unavailable
+2020-03-17 19:39:17	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 19:39:30	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 19:39:51	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:39:59	<--	Guest38408 (~aladino@host67-103-dynamic.10-87-r.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2020-03-17 19:40:27	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:40:48	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:41:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:41:33	-->	cschneid- (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined ##unavailable
+2020-03-17 19:41:38	-->	omuri (~moki@CPEf81d0fb19fc3-CMf81d0fb19fc0.cpe.net.fido.ca) has joined ##unavailable
+2020-03-17 19:41:38	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:42:02	<--	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 264 seconds)
+2020-03-17 19:42:17	<--	Moki____ (~moki@CPEf81d0fb19fc3-CMf81d0fb19fc0.cpe.net.fido.ca) has quit (Ping timeout: 256 seconds)
+2020-03-17 19:42:27	<--	vans (~vans@unaffiliated/vans) has quit (Ping timeout: 272 seconds)
+2020-03-17 19:42:46	-->	S-AKY (~Thunderbi@93.85.76.244) has joined ##unavailable
+2020-03-17 19:43:36	-->	Guest38408 (~aladino@host67-103-dynamic.10-87-r.retail.telecomitalia.it) has joined ##unavailable
+2020-03-17 19:43:52	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:44:13	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:44:19	<--	Guest38408 (~aladino@host67-103-dynamic.10-87-r.retail.telecomitalia.it) has quit (Remote host closed the connection)
+2020-03-17 19:45:42	-->	Mercant (Eye@101440.nexiu.de) has joined ##unavailable
+2020-03-17 19:46:06	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:46:27	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:48:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:49:10	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:49:16	-->	nb (~nb@prgmr/staff-emeritus/fedora.nb) has joined ##unavailable
+2020-03-17 19:49:24	<--	nb (~nb@prgmr/staff-emeritus/fedora.nb) has left ##unavailable
+2020-03-17 19:49:35	<--	lchlan_ (~lachlan@167.98.27.226) has quit (Ping timeout: 250 seconds)
+2020-03-17 19:50:39	<--	rZZZr (~rzr@lns-bzn-38-82-253-125-113.adsl.proxad.net) has quit (Changing host)
+2020-03-17 19:50:40	-->	rZZZr (~rzr@unaffiliated/rzr) has joined ##unavailable
+2020-03-17 19:50:42	--	rZZZr is now known as RzR
+2020-03-17 19:51:22	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:51:49	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 19:53:04	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 19:53:25	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:53:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:54:10	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:54:59	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:55:20	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:55:49	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:55:54	<--	ash-cr (3e06ed62@62.6.237.98) has quit (Remote host closed the connection)
+2020-03-17 19:56:09	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:56:59	-->	knutWarmBier (~knutAltBi@dyndsl-091-248-052-070.ewe-ip-backbone.de) has joined ##unavailable
+2020-03-17 19:58:29	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 19:58:50	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has joined ##unavailable
+2020-03-17 19:58:50	-->	lchlan_ (~lachlan@167.98.27.226) has joined ##unavailable
+2020-03-17 19:58:51	<--	cfoch (uid153227@gateway/web/irccloud.com/x-hghwxophcmfzeteu) has quit (Quit: Connection closed for inactivity)
+2020-03-17 20:00:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:40e5:249f) has quit (Remote host closed the connection)
+2020-03-17 20:01:03	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:02:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:03:10	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:03:57	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:04:26	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 20:07:20	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 20:07:23	<--	jaypeche (~jaypeche@2a01:e35:2f45:fa40:5231:28fb:2773:7a8c) has quit (Remote host closed the connection)
+2020-03-17 20:07:40	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:08:07	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:08:28	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:09:55	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:10:09	-->	jaypeche (~jaypeche@2a01:e35:2f45:fa40:5231:28fb:2773:7a8c) has joined ##unavailable
+2020-03-17 20:10:16	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:11:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:11:38	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:12:29	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:12:50	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:13:04	<--	jaypeche (~jaypeche@2a01:e35:2f45:fa40:5231:28fb:2773:7a8c) has quit (Client Quit)
+2020-03-17 20:13:36	-->	Moki____ (~moki@CPEf81d0fb19fc3-CMf81d0fb19fc0.cpe.net.fido.ca) has joined ##unavailable
+2020-03-17 20:14:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:14:38	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:15:43	<--	omuri (~moki@CPEf81d0fb19fc3-CMf81d0fb19fc0.cpe.net.fido.ca) has quit (Ping timeout: 256 seconds)
+2020-03-17 20:15:52	<--	wasutton3 (~wasutton3@75-46-236-127.lightspeed.tukrga.sbcglobal.net) has quit (Quit: ZNC 1.7.3 - https://znc.in)
+2020-03-17 20:16:56	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:17:21	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 20:18:19	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 20:18:39	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:19:03	<--	Moki____ (~moki@CPEf81d0fb19fc3-CMf81d0fb19fc0.cpe.net.fido.ca) has quit (Ping timeout: 250 seconds)
+2020-03-17 20:19:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:19:38	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:19:46	-->	wasutton3 (~wasutton3@75-46-236-127.lightspeed.tukrga.sbcglobal.net) has joined ##unavailable
+2020-03-17 20:19:57	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:20:20	-->	simplicius (~leftover@151.37.121.146) has joined ##unavailable
+2020-03-17 20:20:20	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:21:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:21:24	<--	simplicius (~leftover@151.37.121.146) has left ##unavailable
+2020-03-17 20:21:38	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:21:57	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:22:17	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:22:55	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:23:15	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:24:37	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:24:57	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:25:02	-->	shmeuh (~shm__@41.248.170.137) has joined ##unavailable
+2020-03-17 20:25:49	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:25:52	<--	sauvin (sauvin@about/linux/staff/sauvin) has quit (Read error: Connection reset by peer)
+2020-03-17 20:26:09	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:26:33	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:26:53	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:28:22	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:28:42	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:29:23	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:29:43	<--	knutWarmBier (~knutAltBi@dyndsl-091-248-052-070.ewe-ip-backbone.de) has left ##unavailable
+2020-03-17 20:29:51	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 20:31:36	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 20:31:56	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:32:20	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:32:40	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has joined ##unavailable
+2020-03-17 20:34:31	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:b0e4:249f) has quit (Remote host closed the connection)
+2020-03-17 20:34:51	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:35:16	<--	robert_ (~hellspawn@objectx/robert) has left ##unavailable
+2020-03-17 20:36:19	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:36:39	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:37:07	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:37:27	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:38:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:38:20	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:39:49	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:40:12	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:41:26	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:41:35	<--	lchlan_ (~lachlan@167.98.27.226) has quit (Read error: Connection reset by peer)
+2020-03-17 20:41:51	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 20:42:27	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 20:42:48	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:42:55	<--	vNistelroot (~bitchx@unaffiliated/vnistelroot) has quit (Ping timeout: 256 seconds)
+2020-03-17 20:42:57	<--	Mercant (Eye@101440.nexiu.de) has quit (Quit: "There is no creature on earth half so terrifying as a truly just man." - Varys)
+2020-03-17 20:44:03	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:44:24	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:45:20	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:46:03	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:47:20	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:47:41	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:48:20	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:48:40	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:49:00	<--	derjohn_was_occu (~derjohn@b2b-94-79-172-100.unitymedia.biz) has quit (Ping timeout: 246 seconds)
+2020-03-17 20:49:24	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:49:45	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:50:05	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:50:14	-->	vNistelroot (~bitchx@unaffiliated/vnistelroot) has joined ##unavailable
+2020-03-17 20:50:26	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:50:52	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:51:12	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:52:28	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:52:49	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:53:25	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:53:46	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:54:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:54:50	<--	shmeuh (~shm__@41.248.170.137) has quit (Read error: Connection reset by peer)
+2020-03-17 20:55:11	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:55:19	-->	patinux_ (~patinux@unaffiliated/patinux) has joined ##unavailable
+2020-03-17 20:55:33	<--	patinux_ (~patinux@unaffiliated/patinux) has quit (Read error: Connection reset by peer)
+2020-03-17 20:55:44	-->	shmeuh (~shm__@41.248.170.137) has joined ##unavailable
+2020-03-17 20:56:26	-->	derjohn_was_occu (~derjohn@p200300C62705F2006828BCEC577D2164.dip0.t-ipconnect.de) has joined ##unavailable
+2020-03-17 20:56:36	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:56:57	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 20:58:23	-->	allana` (~user@195.204.116.20) has joined ##unavailable
+2020-03-17 20:59:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 20:59:26	<--	allana (~user@47.151.240.105) has quit (Ping timeout: 246 seconds)
+2020-03-17 20:59:38	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 21:00:04	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 21:00:25	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 21:01:23	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 21:01:43	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 21:02:21	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 21:02:41	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 21:03:22	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 21:03:43	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 21:04:01	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 21:04:22	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has joined ##unavailable
+2020-03-17 21:04:45	<--	vNistelroot (~bitchx@unaffiliated/vnistelroot) has quit (Ping timeout: 246 seconds)
+2020-03-17 21:07:25	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:96:1e9f) has quit (Remote host closed the connection)
+2020-03-17 21:07:52	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 21:08:20	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 21:08:40	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:09:45	<--	marred (~portra400@45.175.237.200) has quit (Ping timeout: 250 seconds)
+2020-03-17 21:09:54	-->	vNistelroot (~bitchx@unaffiliated/vnistelroot) has joined ##unavailable
+2020-03-17 21:10:22	-->	robert_ (~hellspawn@072-186-097-130.res.spectrum.com) has joined ##unavailable
+2020-03-17 21:10:22	<--	robert_ (~hellspawn@072-186-097-130.res.spectrum.com) has quit (Changing host)
+2020-03-17 21:10:22	-->	robert_ (~hellspawn@objectx/robert) has joined ##unavailable
+2020-03-17 21:10:33	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:10:54	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:11:23	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:11:44	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:12:06	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:12:27	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:12:53	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:13:14	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:14:01	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:14:22	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:15:30	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:16:02	-->	Sili (~Thunderbi@2a04:ee41:4:203d:8d94:743c:3411:395b) has joined ##unavailable
+2020-03-17 21:16:03	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:16:21	<--	Sili (~Thunderbi@2a04:ee41:4:203d:8d94:743c:3411:395b) has left ##unavailable
+2020-03-17 21:17:35	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:17:57	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:18:34	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:18:55	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:19:18	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:19:38	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:19:58	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:20:19	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:20:56	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:21:17	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:22:20	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:22:40	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:23:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:23:21	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:24:37	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:24:58	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:25:49	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:26:09	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:26:50	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:27:10	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:28:26	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:28:47	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:29:29	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:29:36	<--	shmeuh (~shm__@41.248.170.137) has quit (Ping timeout: 246 seconds)
+2020-03-17 21:29:50	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:30:19	-->	patinux_ (~patinux@unaffiliated/patinux) has joined ##unavailable
+2020-03-17 21:30:29	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:30:39	<--	patinux_ (~patinux@unaffiliated/patinux) has quit (Read error: Connection reset by peer)
+2020-03-17 21:30:44	<--	balr0g (~tired_iro@pool-96-246-40-117.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2020-03-17 21:30:57	<--	algun (~algun@unaffiliated/algun) has quit (Quit: algun)
+2020-03-17 21:31:04	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:31:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:32:14	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 21:32:58	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 21:33:18	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:34:00	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:34:20	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:35:31	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:35:51	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:36:24	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:36:28	-->	jaypeche (~jaypeche@2a01:e35:2f45:fa40:5231:28fb:2773:7a8c) has joined ##unavailable
+2020-03-17 21:36:44	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:37:04	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:37:24	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:38:48	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:39:08	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:39:54	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:40:14	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:40:17	<--	robert_ (~hellspawn@objectx/robert) has left ##unavailable
+2020-03-17 21:40:52	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:41:12	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has joined ##unavailable
+2020-03-17 21:41:51	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:9070:449f) has quit (Remote host closed the connection)
+2020-03-17 21:42:11	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:4021:3e9f) has joined ##unavailable
+2020-03-17 21:45:25	-->	algun (~algun@unaffiliated/algun) has joined ##unavailable
+2020-03-17 21:45:57	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:4021:3e9f) has quit (Remote host closed the connection)
+2020-03-17 21:46:24	-->	eliyahuTBR (~eliyahu@212.76.124.210) has joined ##unavailable
+2020-03-17 21:47:02	<--	eliyahuTBR (~eliyahu@212.76.124.210) has quit (Remote host closed the connection)
+2020-03-17 21:47:22	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:4021:3e9f) has joined ##unavailable
+2020-03-17 21:47:57	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:4021:3e9f) has quit (Remote host closed the connection)
+2020-03-17 21:48:18	-->	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:4021:3e9f) has joined ##unavailable
+2020-03-17 21:48:47	<--	eliyahuTBR (~eliyahu@2a01:6500:a051:fc53:26cd:c7a4:4021:3e9f) has quit (Remote host closed the connection)
+2020-03-17 21:48:57	-->	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined ##unavailable
+2020-03-17 21:49:37	<--	cschneid- (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 250 seconds)
+2020-03-17 21:52:51	<--	algun (~algun@unaffiliated/algun) has quit (Quit: algun)
+2020-03-17 21:58:04	<--	jaypeche (~jaypeche@2a01:e35:2f45:fa40:5231:28fb:2773:7a8c) has quit (Remote host closed the connection)
+2020-03-17 21:59:42	-->	algun (~algun@unaffiliated/algun) has joined ##unavailable
+2020-03-17 22:08:23	-->	Farid-fr (~CLDX@2a01:e0a:4e0:a760:5c76:a083:969e:b77d) has joined ##unavailable
+2020-03-17 22:08:43	<--	Farid-fr (~CLDX@2a01:e0a:4e0:a760:5c76:a083:969e:b77d) has left ##unavailable
+2020-04-02 20:57:34	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined ##unavailable
+2020-04-02 20:57:34	--	Topic for ##unavailable is "You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network ( http://freenode.net/policies#off-topic-use ). Check their website for more information. Your client may be flapping in and out of the channel; in this case, check with channel ops. The channel may be clone-infested; please consult freenode network staff."
+2020-04-02 20:57:34	--	Topic set by c on Sun, 24 Apr 2016 02:35:36
+2020-04-02 20:57:34	--	Channel ##unavailable: 224 nicks (1 op, 0 voices, 223 normals)
+2020-04-02 20:57:34	--	PvNotice(ChanServ): You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network. Check their website for more information. Your client may be flapping in and out of channel; in this case, check with channel staff. The channel may be clone-infested; please consult freenode network staff.
+2020-04-02 20:57:36	--	Channel created on Thu, 30 Mar 2006 14:52:16
+2020-04-02 20:57:38	captainchris	hi everybody 
+2020-04-02 20:57:38	--	##unavailable: Cannot send to nick/channel
+2020-04-02 20:58:07	captainchris	I made simple script to show windows popup that print keybindings
+2020-04-02 20:58:07	--	##unavailable: Cannot send to nick/channel
+2020-09-01 14:39:23	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined ##unavailable
+2020-09-01 14:39:23	--	Topic for ##unavailable is "You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network ( http://freenode.net/policies#off-topic-use ). Check their website for more information. Your client may be flapping in and out of the channel; in this case, check with channel ops. The channel may be clone-infested; please consult freenode network staff."
+2020-09-01 14:39:23	--	Topic set by c on Sun, 24 Apr 2016 02:35:36
+2020-09-01 14:39:23	--	Channel ##unavailable: 201 nicks (1 op, 0 voices, 200 normals)
+2020-09-01 14:39:23	--	PvNotice(ChanServ): You've tried to join an unavailable channel. Perhaps the group was never here or has moved off-network. Check their website for more information. Your client may be flapping in and out of channel; in this case, check with channel staff. The channel may be clone-infested; please consult freenode network staff.
+2020-09-01 14:39:25	--	Channel created on Thu, 30 Mar 2006 14:52:16
+2020-09-01 14:39:29	captainchris	hi everybody 
+2020-09-01 14:39:29	--	##unavailable: Cannot send to nick/channel
+2020-09-01 14:42:36	captainchris	Hello 
+2020-09-01 14:42:37	--	##unavailable: Cannot send to nick/channel

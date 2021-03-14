@@ -1,0 +1,193 @@
+2020-04-17 17:38:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #vimwiki
+2020-04-17 17:38:10	--	Topic for #vimwiki is "Official IRC channel for vimwiki | See https://github.com/vimwiki/vimwiki | This channel is currently low traffic – you may need to wait a few hours for someone to answer"
+2020-04-17 17:38:10	--	Topic set by Nudin on Fri, 10 Aug 2018 16:32:19
+2020-04-17 17:38:10	--	Channel #vimwiki: 34 nicks (0 ops, 0 voices, 34 normals)
+2020-04-17 17:38:12	--	Channel created on Mon, 23 Oct 2017 00:40:21
+2020-04-17 17:38:15	captainchris	hi everybody 
+2020-04-17 17:39:57	nihilazo	hello
+2020-04-17 17:40:14	captainchris	I discovered vimwiki now.
+2020-04-17 17:43:56	captainchris	I searched tool to make note.I try to use turtl joplin boostnode 
+2020-04-17 17:44:34	captainchris	but I prefer tool cli 
+2020-04-17 17:44:50	captainchris	and vimwiki are so perfect 
+2020-04-17 17:45:01	captainchris	that's all ;)
+2020-04-17 18:07:47	-->	wuxiao (614012f0@97.64.18.240.16clouds.com) has joined #vimwiki
+2020-04-17 18:54:13	<--	wuxiao (614012f0@97.64.18.240.16clouds.com) has quit (Ping timeout: 240 seconds)
+2020-04-17 19:22:13	captainchris	what do you use vim gvim or nvim ?? 
+2020-04-17 20:17:32	brennen	regular terminal vim.
+2020-04-17 20:22:15	nihilazo	nvim
+2020-04-17 20:22:51	nihilazo	mainly because it stores things in xdg rather than folders all over the place, honestly
+2020-04-17 20:22:57	nihilazo	but async is also super useful
+2020-04-17 20:35:35	captainchris	nihilazo: yes me too 
+2020-04-17 20:35:42	captainchris	all config files at the same place 
+2020-04-17 20:36:36	captainchris	and what linux distribution do you use ? 
+2020-04-17 20:37:00	nihilazo	arch linux
+2020-04-17 20:37:08	captainchris	yeah boy me too 
+2020-04-17 20:37:09	captainchris	;)
+2020-04-17 20:37:19	captainchris	I love arch 
+2020-04-17 20:53:47	brennen	arch is neat, but my main use of it is to read arch wiki to figure out how to do things on other distros
+2020-04-17 20:54:02	brennen	archwiki is flat out amazing.
+2020-04-17 20:54:17	brennen	(long time debian head here.)
+2020-04-17 21:12:22	nihilazo	arch wiki is the greatest resource, honestly. I've no idea how anybody would manage a linux system without it, even a non-arch system
+2020-04-17 21:16:29	captainchris	yes before I used gentoo gentoo is very good distribution 
+2020-04-17 21:16:46	captainchris	but compilation to update distribution is very long 
+2020-04-17 21:20:43	captainchris	and do you use nerdtree ? 
+2020-04-17 21:24:58	nihilazo	I don't use nerdtree, no
+2020-04-17 21:25:17	nihilazo	I don't use much honestly, there are many improvements I could make to my vim setup but it's currently quite simple
+2020-04-17 21:25:30	nihilazo	just switched out airline for lightline, I suppose
+2020-04-17 21:27:35	brennen	captainchris: i'm a big fan of nerdtree, for whatever it's worth.
+2020-04-17 21:28:14	brennen	i find these bindings pretty useful: https://code.p1k3.com/gitea/brennen/bpb-kit/src/branch/master/home/.vimrc#L547
+2020-04-17 21:34:06	captainchris	ok 
+2020-04-17 21:34:30	thecliguy	I wonder if there will be a vimwiki release soon... I think it was expected to happen some time around March/April.
+2020-04-17 21:35:33	thecliguy	This is either the best time to do it (people are at home not doing so much) or the worst (they have job and health concerns to worry about).
+2020-04-17 21:39:16	thecliguy	I guess it depends which camp the project maintainers are in.
+2020-04-17 22:07:17	brennen	a more regular release cadence does seem like a good idea.
+2020-04-17 22:11:08	captainchris	and what desktop/wm do you use ?? 
+2020-04-17 22:11:58	nihilazo	me? i3-gaps, because I fell for the meme and I've yet to find anything I like more
+2020-04-17 22:13:12	brennen	xmonad
+2020-04-17 22:14:59	captainchris	waowww I use i3gaos too 
+2020-04-17 22:15:12	captainchris	xmonad is not hard with haskell code ?? 
+2020-04-17 22:19:01	brennen	the configuration can be a little tricky
+2020-04-17 22:19:33	nihilazo	what are the major advantages of xmonad vs i3?
+2020-04-17 22:22:01	captainchris	I use lot of time awesome and lua gives me button 
+2020-04-17 22:22:08	thecliguy	Well, I've asked the question about a release: https://github.com/vimwiki/vimwiki/issues/638
+2020-04-17 22:22:10	captainchris	I switch to I3 
+2020-04-17 22:24:03	thecliguy	I hope people don't think it heartless to ask the question what with the state of the world right now. I tried to be empathetic to the current situation.
+2020-04-17 22:24:17	brennen	captainchris: honestly i don't know how to answer that.  i used i3 a bit and it didn't really seem like what i wanted, but i was already very used to xmonad at that point.
+2020-04-17 22:37:30	captainchris	Yes of course everybody has different taste 
+2020-04-17 22:46:05	ubitux	and some people obviously have bad taste :s
+2020-04-17 22:47:01	brennen	the things i like about xmonad are speed/responsiveness, the layout model, and the ability to switch workspaces independently on multiple monitors.
+2020-04-17 22:48:41	captainchris	nihilazo: and I suppose  your terminal is termite ??? ahahah ;)
+2020-04-17 22:48:54	captainchris	brennen: what terminal emulator do you use ?? 
+2020-04-17 22:51:46	nihilazo	my terminal is termite but I've been meaning to check out other things
+2020-04-17 22:52:35	nihilazo	I never use termite's specific features and maybe I could use something smaller and faster
+2020-04-17 22:57:17	brennen	right now i use konsole for most things and gnome-terminal for the window where i usually have my vimwiki open.  until pretty recently i used plain old uxterm for most things.
+2020-04-17 22:57:34	brennen	i've also experimented with alacritty recently.  it seems pretty nice.
+2020-04-17 22:59:42	brennen	if i remember right i'm just using gnome-terminal for vimwiki notes because it was easier to set up with the xmonad namedscratchpad extension.
+2020-04-17 23:00:12	nihilazo	alacritty would probably be my terminal of choice but I've no idea if it works across things like raspberry pis and I know for sure it doesn't work on older laptops
+2020-04-17 23:00:20	nihilazo	which are what I still use a lot of the time
+2020-04-17 23:03:32	brennen	yeah, i imagine the gpu acceleration does rule out some older hardware.
+2020-04-17 23:04:34	brennen	honestly, i'd probably still just be running xterm but it's easier to tweak fonts and change them on the fly with some of the newer options.
+2020-04-17 23:07:13	ubitux	alacritty is awesome, but there are still a few annoying limitations
+2020-04-17 23:08:10	ubitux	most important ones being the scrollback search (#1017) and opening links with the keyboard (#1725)
+2020-04-17 23:08:16	ubitux	i miss those from my urxvt time
+2020-04-17 23:08:51	ubitux	there are a few other details, but aside from that, definitely my most recent workflow modernization
+2020-04-17 23:10:26	ubitux	they're working on a vi-mode though, which is likely going to address these issues soon enough
+2020-04-17 23:24:24	captainchris	It's very interresting to talk with you 
+2020-04-17 23:59:08	captainchris	bye guy
+2020-04-18 21:42:13	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #vimwiki
+2020-04-18 21:42:13	--	Topic for #vimwiki is "Official IRC channel for vimwiki | See https://github.com/vimwiki/vimwiki | This channel is currently low traffic – you may need to wait a few hours for someone to answer"
+2020-04-18 21:42:13	--	Topic set by Nudin on Fri, 10 Aug 2018 16:32:19
+2020-04-18 21:42:13	--	Channel #vimwiki: 36 nicks (0 ops, 0 voices, 36 normals)
+2020-04-18 21:42:15	--	Channel created on Mon, 23 Oct 2017 00:40:21
+2020-04-18 21:42:19	captainchris	hi everybody 
+2020-04-18 21:51:15	nihilazo	hi
+2020-04-18 21:51:56	captainchris	hi nihilazo 
+2020-04-18 21:52:02	captainchris	how are you today ?? 
+2020-04-18 21:53:16	nihilazo	tired, been trying to get calendar+taskwarrior sync servers going with no luck
+2020-04-18 21:54:42	nihilazo	taskwiki seems to like removing links from task names which is annoying because I often like to make a link from a todo entry with the information for that thing
+2020-04-18 21:55:15	captainchris	yes I understand 
+2020-04-18 21:55:38	captainchris	sometime i spent lot of times to do something and sometimes tha't doesn't work 
+2020-04-18 21:55:49	captainchris	it makes me nervous 
+2020-04-18 22:42:49	captainchris	nihilazo: How do you have installed vimpwiki in nvim ??
+2020-04-18 22:43:19	captainchris	Because I don't have syntax highlighting for header 
+2020-04-18 22:43:26	captainchris	I use  vimplug 
+2020-04-18 22:44:37	<--	mw0 (~maximilia@p200300060368474426A96140A102F942.dip0.t-ipconnect.de) has quit (Ping timeout: 246 seconds)
+2020-04-18 23:19:14	nihilazo	just install it like you would in vim
+2020-04-18 23:19:29	nihilazo	but in ~/.config/nvim/init.vim rather than ~/.vimrc
+2020-04-18 23:19:34	nihilazo	unless you have something weird going on
+2020-04-19 11:07:43	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #vimwiki
+2020-04-19 11:07:43	--	Topic for #vimwiki is "Official IRC channel for vimwiki | See https://github.com/vimwiki/vimwiki | This channel is currently low traffic – you may need to wait a few hours for someone to answer"
+2020-04-19 11:07:43	--	Topic set by Nudin on Fri, 10 Aug 2018 16:32:19
+2020-04-19 11:07:43	--	Channel #vimwiki: 35 nicks (0 ops, 0 voices, 35 normals)
+2020-04-19 11:07:45	--	Channel created on Mon, 23 Oct 2017 00:40:21
+2020-04-19 11:07:47	captainchris	hello
+2020-04-19 11:08:16	captainchris	I would like add c++ code in my wiki 
+2020-04-19 11:08:38	captainchris	I tried with {{{cpp snippet of code }}} but I don't have syntax color for cpp 
+2020-04-19 11:10:23	ubitux	try to :e the file
+2020-04-19 11:10:38	ubitux	(i'm also assuming you're doing it multi line)
+2020-04-19 11:13:20	ubitux	you can see that mentionned in the Note in :h vimwiki-option-automatic_nested_syntaxes
+2020-04-19 11:19:27	captainchris	ubitux: Ok I saw  the file on the Doc folder entries.png 
+2020-04-19 11:19:34	captainchris	{{{go ... 
+2020-04-19 11:22:12	captainchris	nope that doesn't work 
+2020-04-19 11:22:36	captainchris	I made all like the help {{{cpp }}} and re-edit with :e 
+2020-04-19 11:23:03	captainchris	I have also header no colorscheme 
+2020-04-19 11:23:39	captainchris	I have # comment ands if i change color of vimwikiheader1 it change the comments 
+2020-04-19 11:49:40	ubitux	did you do it multiline?
+2020-04-19 11:51:35	captainchris	yes 
+2020-04-19 11:51:54	captainchris	{{{cpp 
+2020-04-19 11:52:07	captainchris	std::cout << "\n"  std::endl;
+2020-04-19 11:52:10	captainchris	}}}
+2020-04-19 12:40:36	<--	fl1p (~user@ec2-52-67-221-231.sa-east-1.compute.amazonaws.com) has quit (Remote host closed the connection)
+2020-04-19 13:01:17	captainchris	ubitux do you have syntax color on cpp in your vimwiki ?
+2020-04-19 13:01:30	ubitux	yes, it works for me
+2020-04-19 13:01:42	captainchris	do you use vim or nvim ?? 
+2020-04-19 13:03:10	ubitux	it works with both, i just tested
+2020-04-19 13:03:59	captainchris	ok 
+2020-04-19 13:04:01	ubitux	http://b.pkh.me/s/2020-04-19-130501-Iulitee4.png
+2020-04-19 13:04:09	ubitux	this is barebone vim
+2020-04-19 13:04:29	ubitux	with nothing configured
+2020-04-19 13:07:01	captainchris	and do you install plugin vim vimplug or manually ?? 
+2020-04-19 13:07:27	captainchris	me I have Vimwiki command, I can create todo list,table, ...  
+2020-04-19 13:07:29	ubitux	i did the manual thing for this particular test
+2020-04-19 13:07:40	ubitux	but it shouldn't make a difference
+2020-04-19 13:08:23	captainchris	yes =Header= doesn't work 
+2020-04-19 13:08:30	captainchris	it's #Header# 
+2020-04-19 13:08:42	ubitux	isn't it because you're using markdown?
+2020-04-19 13:08:55	ubitux	if so, you need to use ```cpp ...
+2020-04-19 13:09:21	captainchris	yes 
+2020-04-19 13:09:31	captainchris	it's work like that
+2020-04-19 13:09:54	captainchris	Ok I need to you use .wiki ?? 
+2020-04-19 13:10:05	captainchris	instead .md 
+2020-04-19 13:10:14	ubitux	well, depend what you want
+2020-04-19 13:10:32	ubitux	.md → markdown → ``` ... ```
+2020-04-19 13:10:40	ubitux	.wiki → vimwiki → {{{ ... }}}
+2020-04-19 13:10:48	ubitux	i prefer markdown tbh
+2020-04-19 13:15:40	captainchris	ok
+2020-04-19 13:27:51	-->	fl1p (~user@ec2-52-67-221-231.sa-east-1.compute.amazonaws.com) has joined #vimwiki
+2020-04-19 13:41:23	rabbitear_g	https://www.youtube.com/watch?v=DT1NJwEi6nw
+2020-04-19 21:15:22	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #vimwiki
+2020-04-19 21:15:22	--	Topic for #vimwiki is "Official IRC channel for vimwiki | See https://github.com/vimwiki/vimwiki | This channel is currently low traffic – you may need to wait a few hours for someone to answer"
+2020-04-19 21:15:22	--	Topic set by Nudin on Fri, 10 Aug 2018 16:32:19
+2020-04-19 21:15:22	--	Channel #vimwiki: 37 nicks (0 ops, 0 voices, 37 normals)
+2020-04-19 21:15:24	--	Channel created on Mon, 23 Oct 2017 00:40:21
+2020-04-19 21:15:28	captainchris	hey 
+2020-04-19 21:20:39	<--	grobi (~rtng@unaffiliated/grobi) has quit (Remote host closed the connection)
+2020-04-19 21:22:54	-->	grobi (~rtng@unaffiliated/grobi) has joined #vimwiki
+2020-04-19 21:27:41	<--	grobi (~rtng@unaffiliated/grobi) has quit (Read error: Connection reset by peer)
+2020-04-19 22:08:50	captainchris	I modify script to add highlight bar and colored text 
+2020-04-19 22:08:59	captainchris	what do you thing of it ?? 
+2020-04-19 22:09:01	captainchris	https://ibb.co/XSWdcjG
+2020-04-19 22:24:56	-->	grobi (~rtng@unaffiliated/grobi) has joined #vimwiki
+2020-04-19 22:26:52	nihilazo	is that for vimwiki headers?
+2020-04-19 22:27:18	nihilazo	looks cool
+2020-04-19 22:28:17	captainchris	I added <t1> to title 
+2020-04-19 22:28:23	-->	rabbitear_g2 (~rabbitear@gateway/tor-sasl/rabbitearg/x-03735317) has joined #vimwiki
+2020-04-19 22:28:28	captainchris	If you want i paste the code 
+2020-04-19 22:28:36	<--	rabbitear_g (~rabbitear@gateway/tor-sasl/rabbitearg/x-03735317) has quit (Ping timeout: 240 seconds)
+2020-04-19 22:28:45	nihilazo	nah it's k
+2020-04-19 22:28:47	nihilazo	looks cool though
+2020-04-19 22:31:48	--	rabbitear_g2 is now known as rabbitear_g
+2020-04-19 23:13:46	<--	mw0 (~maximilia@p200300060368474426A96140A102F942.dip0.t-ipconnect.de) has quit (Quit: WeeChat 2.8)
+2020-04-19 23:57:29	captainchris	:q
+2020-10-11 18:13:36	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #vimwiki
+2020-10-11 18:13:36	--	Topic for #vimwiki is "Official IRC channel for vimwiki | See https://github.com/vimwiki/vimwiki | This channel is currently low traffic – you may need to wait a few hours for someone to answer"
+2020-10-11 18:13:36	--	Topic set by Nudin on Fri, 10 Aug 2018 16:32:19
+2020-10-11 18:13:36	--	Channel #vimwiki: 40 nicks (0 ops, 0 voices, 40 normals)
+2020-10-11 18:13:38	--	Channel created on Mon, 23 Oct 2017 00:40:21
+2020-10-11 18:13:41	captainchris	hello everybody 
+2020-10-11 18:28:25	captainchris	I use vimwiki with neovim 
+2020-10-11 18:29:01	captainchris	I user markdown headers ### but when i type ]]] .it says no next header found 
+2020-10-11 18:44:20	<--	grobi (~rtng@unaffiliated/grobi) has quit (Quit: WeeChat 2.8)
+2020-10-11 19:58:16	captainchris	nobody there ??? 
+2020-10-11 20:23:56	brennen	captainchris: this is a fairly low-traffic channel.  you'll usually get an answer but you might need to wait a few hours.
+2020-10-11 20:25:58	brennen	captainchris: i can't reproduce in regular vim or my current build of neovim, for whatever that's worth.
+2020-10-11 20:26:07	brennen	]] seems to jump between headers.
+2020-10-11 20:28:59	brennen	might be something that was fixed on the dev branch, now that i think about it.
+2020-10-11 20:34:29	captainchris	[= says no next sibling header
+2020-10-11 20:34:47	captainchris	and ]] no next hearder found 
+2020-10-11 20:36:05	captainchris	brennen: do you use wiki or markdown
+2020-10-11 20:47:22	brennen	captainchris: i typically use vimwiki markup, but i have a markdown wiki set up for testing things like this.
+2020-10-11 20:47:49	brennen	what version of vimwiki do you have installed?
+2020-10-11 20:47:53	captainchris	ok header works with .wiki file but not with .md
+2020-10-11 20:48:13	captainchris	on the github 
+2020-10-11 20:49:34	captainchris	nervermind I'm going to switch to .wiki if it's work 

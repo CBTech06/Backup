@@ -1,0 +1,502 @@
+2020-11-13 21:37:22	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined ##C++-general
+2020-11-13 21:37:22	--	Topic for ##C++-general is "Algorithms, libraries, practices, projects and tools || pastes: http://coliru.stacked-crooked.com/ || stats/logs: http://goo.gl/KSSg3 || English only!"
+2020-11-13 21:37:22	--	Topic set by ville (~ville@212-149-214-47.bb.dnainternet.fi) on Fri, 15 Nov 2019 12:33:12
+2020-11-13 21:37:22	--	Channel ##C++-general: 426 nicks (0 ops, 2 voices, 424 normals)
+2020-11-13 21:37:24	--	Channel created on Wed, 29 Jun 2011 13:06:20
+2020-11-13 21:37:26	captainchris	hi evverybody 
+2020-11-13 21:38:04	-->	josef__k (~jeremy@119-18-0-155.771200.syd.nbn.aussiebb.net) has joined ##C++-general
+2020-11-13 21:38:55	xissburg	<< bin << 0xef
+2020-11-13 21:38:56	+geordi	11101111
+2020-11-13 21:45:36	captainchris	I try to create a sokoban with c++.I use a vector to store my block. when i use emplace_back to create a i have 3 blocks correct and 2 white.
+2020-11-13 21:46:08	captainchris	When i use list i have 5/5 blocks correct. but i would preffer use vector instead of list 
+2020-11-13 21:49:15	-->	Jesin (~Jesin@pool-72-66-101-18.washdc.fios.verizon.net) has joined ##C++-general
+2020-11-13 21:49:54	Alipha	captainchris's code is at https://wandbox.org/permlink/Psh9cV5UQKcwrvYY
+2020-11-13 21:50:04	-->	gareppa (~gareppa@unaffiliated/gareppa) has joined ##C++-general
+2020-11-13 21:50:31	captainchris	Sorry I doesn't paste the linke of coliru 
+2020-11-13 21:50:39	captainchris	http://coliru.stacked-crooked.com/a/33b1750266382bb2
+2020-11-13 21:51:07	<--	paul424 (~tom@ip-31-0-126-192.multi.internet.cyfrowypolsat.pl) has quit (Remote host closed the connection)
+2020-11-13 21:51:09	-->	gelignite (~gelignite@55d44811.access.ecotel.net) has joined ##C++-general
+2020-11-13 21:51:12	<--	gareppa (~gareppa@unaffiliated/gareppa) has quit (Max SendQ exceeded)
+2020-11-13 21:51:43	-->	gareppa (~gareppa@unaffiliated/gareppa) has joined ##C++-general
+2020-11-13 21:54:33	<--	ImQ009 (~ImQ009@unaffiliated/imq009) has quit (Quit: Leaving)
+2020-11-13 21:54:35	rpav	why do you have blockPos and blockContainer
+2020-11-13 21:55:00	-->	bitman (~hamood@068-186-114-171.res.spectrum.com) has joined ##C++-general
+2020-11-13 21:55:25	captainchris	BlockPos(vector) Get the position of all blocks in xml files
+2020-11-13 21:55:27	rpav	`bool gameInitialized(true);` how does that compile
+2020-11-13 21:56:03	-->	led1 (~Thunderbi@217.66.160.14) has joined ##C++-general
+2020-11-13 21:56:05	captainchris	And BlockContainer is my instance class
+2020-11-13 21:56:11	captainchris	(object)
+2020-11-13 21:56:53	captainchris	rpav is not correct book game... ??
+2020-11-13 21:56:55	PJBoy	why wouldn't `bool gameInitialized(true);` compile?
+2020-11-13 21:57:00	PJBoy	{ bool gameInitialized(true); }
+2020-11-13 21:57:01	+geordi	 
+2020-11-13 21:57:10	rpav	captainchris: presumably you should have a grid-like vector of blocks that represent the board and each holds the type of thing (solid, none, or crate)
+2020-11-13 21:57:40	<--	ooki (2e05fef3@HSI-KBW-046-005-254-243.hsi8.kabel-badenwuerttemberg.de) has quit (Remote host closed the connection)
+2020-11-13 21:58:15	rpav	oh right duh, my brain kept trying to parse it as a prototype
+2020-11-13 21:59:09	captainchris	I'm beginner and I have lot's of difficult to do well code
+2020-11-13 21:59:34	rpav	well, if you have a board then you can move things around, then if you have an associating of type -> sprite, you can render the board by iterating it and drawing the appropriate sprite
+2020-11-13 21:59:37	<--	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has quit (Remote host closed the connection)
+2020-11-13 21:59:45	rpav	i mean there are some variations on that, but
+2020-11-13 22:00:09	<--	gareppa (~gareppa@unaffiliated/gareppa) has quit (Remote host closed the connection)
+2020-11-13 22:00:18	rpav	you mostly need to be able to manipulate crates and tell whether a square is unoccupied
+2020-11-13 22:00:25	LordKalma	evening, what's up?
+2020-11-13 22:00:39	rpav	my blood pressure, what about you
+2020-11-13 22:00:58	captainchris	there it's minimal compilable code. I have big code with menu,map ... 
+2020-11-13 22:01:07	Alipha	rpav: there's meds for that. or you can exercise and eat less salt
+2020-11-13 22:01:08	<--	moo (~wootehfoo@unaffiliated/wootehfoot) has quit (Quit: Leaving)
+2020-11-13 22:01:13	rpav	Alipha: ;)
+2020-11-13 22:01:32	-->	wootehfoot (~wootehfoo@unaffiliated/wootehfoot) has joined ##C++-general
+2020-11-13 22:01:41	LordKalma	I'm a bit heavy myself, trying to get better
+2020-11-13 22:02:11	<--	nuclearg1 (~nucleargr@c-73-150-253-137.hsd1.nj.comcast.net) has quit (Ping timeout: 260 seconds)
+2020-11-13 22:02:34	rpav	it's been a day of weird errors, i'm still trying to fix one
+2020-11-13 22:02:50	rpav	well weird bugs, not compilation errors or anything nice and mundane
+2020-11-13 22:03:00	LordKalma	today I only did python, so meh
+2020-11-13 22:03:25	PJBoy	hey same here haha
+2020-11-13 22:05:23	Alipha	i do java at work, so...
+2020-11-13 22:05:24	<--	callq (~callq@2603:3001:a00:400:69d6:6f3:e43a:c542) has quit (Quit: callq)
+2020-11-13 22:05:42	Alipha	irc ##c++ channels is my intellectual stimulation ;-)
+2020-11-13 22:05:49	LordKalma	why are java software so bad?
+2020-11-13 22:05:57	LordKalma	JabRef stops opening every other day
+2020-11-13 22:05:58	captainchris	I thought that i use vector to store block to after check the position with my player.
+2020-11-13 22:06:16	captainchris	I send the vector to my player class and check my player position with block position 
+2020-11-13 22:06:32	captainchris	And it's strand when i use list all blocks are good 
+2020-11-13 22:06:39	captainchris	strange ^
+2020-11-13 22:06:56	Alipha	captainchris: as i said in ##c++, i don't think it's safe to copy objects of your Blocks class, and std::vector copies it when it resizes
+2020-11-13 22:07:16	rpav	probably ^
+2020-11-13 22:07:17	PJBoy	python definitely gives me some intellectual stimulation
+2020-11-13 22:07:21	PJBoy	but not the kind I like
+2020-11-13 22:07:22	rpav	also iterating every block to check it is inefficient
+2020-11-13 22:07:35	-->	LKoen (~LKoen@9.253.88.92.rev.sfr.net) has joined ##C++-general
+2020-11-13 22:07:35	xlirate	auto func(auto&& a, auto&& b) requires A<a> && B1<b> || B2<b>{} does not seem to work. How should I be trying to do this?
+2020-11-13 22:08:21	-->	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has joined ##C++-general
+2020-11-13 22:08:32	Alipha	xlirate: do you have your operator precedence wrong? what you have is the same as (A<a> && B1<b>) || B2<b>
+2020-11-13 22:08:41	PJBoy	what on earth are you trying to do there haha
+2020-11-13 22:08:50	LordKalma	captainchris, maybe you should think a bit about the abstractions (objections) and the methods to make then interact
+2020-11-13 22:09:01	xlirate	is_float<b> || integral<b>
+2020-11-13 22:09:04	PJBoy	yeah what do you mean by "does not work"?
+2020-11-13 22:09:13	kkd	that A<a> is making me go crazy
+2020-11-13 22:09:17	PJBoy	hahaha
+2020-11-13 22:09:17	xlirate	Something balked when I had parens, but that is working now
+2020-11-13 22:09:40	Alipha	captainchris: oh, sorry, i meant reserve, not resize. `blockContainer.reserve(6);` Can you try that?
+2020-11-13 22:09:46	PJBoy	well, I demand a test case
+2020-11-13 22:09:55	captainchris	nope resize doesnt compile 
+2020-11-13 22:10:07	Alipha	captainchris: what about reserve?
+2020-11-13 22:10:35	LordKalma	btw, doing pythonic python is actually quite interesting. many write C-ish python
+2020-11-13 22:10:53	LordKalma	also, now in python I miss static typing so fucking much
+2020-11-13 22:11:08	PJBoy	yeah I very much miss that
+2020-11-13 22:11:15	captainchris	Alipha reserve works like a charm 
+2020-11-13 22:11:20	PJBoy	there are type annotations
+2020-11-13 22:11:24	captainchris	thank you 
+2020-11-13 22:11:27	PJBoy	but I haven't dabbled
+2020-11-13 22:11:35	LordKalma	duck typing always leaves me like "what if?"
+2020-11-13 22:11:35	-->	Zausel (~Zauselche@xdsl-89-0-188-158.nc.de) has joined ##C++-general
+2020-11-13 22:11:36	Alipha	captainchris: yeah, then that's evidence that your Blocks class isn't copyable
+2020-11-13 22:11:43	LordKalma	also, the other thing is that IDEs can't help you as much
+2020-11-13 22:11:54	LordKalma	because you define a function, you know what you going to pass to it
+2020-11-13 22:11:56	captainchris	ok so it's not a good idea to do that 
+2020-11-13 22:12:07	captainchris	??
+2020-11-13 22:12:09	LordKalma	but the IDE doesn't so it doesn't know if objects have the members you claim
+2020-11-13 22:12:11	rpav	SFML sounds poorly-behaved if it doesn't copy correctly but copying compiles
+2020-11-13 22:12:15	kkd	starting with C ruined my brain
+2020-11-13 22:12:18	Alipha	captainchris: add `Blocks(const Blocks &) = delete; Blocks &operator=(const Blocks &) = delete;` inside your class Blocks { }; so that you'll get an error if you try to copy it
+2020-11-13 22:12:44	Alipha	rpav: indeed
+2020-11-13 22:12:50	LordKalma	When I think of C I think of this header file:
+2020-11-13 22:12:51	LordKalma	https://github.com/jgaeddert/liquid-dsp/blob/master/include/liquid.h
+2020-11-13 22:13:02	LordKalma	 look at these macros that do templating and macros and namespacing
+2020-11-13 22:13:06	LordKalma	you know, stuff c++ has :)
+2020-11-13 22:13:59	rpav	LordKalma: the main thing that annoys me in python besides the whitespace thing is its rather lacking dispatch
+2020-11-13 22:14:07	kkd	9k lines of macros
+2020-11-13 22:14:12	kkd	yes! yes! yes!
+2020-11-13 22:14:12	rpav	you more or less have single dispatch and `if`
+2020-11-13 22:14:13	PJBoy	python whitespace is a blessing
+2020-11-13 22:14:21	LordKalma	yes, 9k lines of macros :)
+2020-11-13 22:14:25	LordKalma	lacking dispatch? how so?
+2020-11-13 22:14:32	rpav	what i just said
+2020-11-13 22:14:37	PJBoy	it has no function overloading
+2020-11-13 22:14:44	rpav	also try copying and pasting blocks correctly and you'll find how mcuh of a blessing that is heh
+2020-11-13 22:14:50	rpav	function overloading isn't dispatch
+2020-11-13 22:14:53	<--	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has quit (Ping timeout: 240 seconds)
+2020-11-13 22:14:55	LordKalma	I don't kknow what "single dispatch" is
+2020-11-13 22:14:57	PJBoy	so you have to dispatch *args based on type and number
+2020-11-13 22:15:00	LordKalma	I'm a noob, remember that haha
+2020-11-13 22:15:09	captainchris	Alipha: error: static assertion failed: result type must be constructible from value type of input range
+2020-11-13 22:15:15	captainchris	I have this error
+2020-11-13 22:15:25	rpav	but like, no `switch` or other things, just inefficiencies
+2020-11-13 22:15:26	PJBoy	copy+pasting python with an IDE is fine
+2020-11-13 22:15:35	LordKalma	yap
+2020-11-13 22:15:44	rpav	you can't be sure of that
+2020-11-13 22:15:50	Alipha	captainchris: oh, right. well, don't use a std::vector then :-) um, you could use a std::deque, which is closer to a vector than std::list
+2020-11-13 22:15:51	rpav	you can never be sure
+2020-11-13 22:15:51	PJBoy	and without an IDE it only takes a few indents/dedents
+2020-11-13 22:16:08	Alipha	captainchris: or just use a std::list
+2020-11-13 22:16:31	PJBoy	and yeah, switch in python would be kinda pointless
+2020-11-13 22:16:35	rpav	(single dispatch is basically what a `virtual` function is in C++)
+2020-11-13 22:16:36	captainchris	 yes but std::list is a bit more difficult with iterator ;)
+2020-11-13 22:16:40	LordKalma	I use vscode. With pylint, the formatter "black" and the multi-token AI code predictor "tabnine" code writes itself
+2020-11-13 22:16:43	captainchris	it must be simple vector 
+2020-11-13 22:16:49	rpav	PJBoy: err, it's never pointless
+2020-11-13 22:17:31	rpav	well, done correctly, but if there's one thing that characterizes python, it's "one wrongest way to do things"
+2020-11-13 22:17:36	Alipha	captainchris: std::deque is also a random-access iterator
+2020-11-13 22:17:42	PJBoy	python's slow regardless
+2020-11-13 22:17:58	LordKalma	depends on what you're doing
+2020-11-13 22:17:59	PJBoy	so no point adding a construct that only exists for negligible speed gain
+2020-11-13 22:18:01	<--	led1 (~Thunderbi@217.66.160.14) has quit (Quit: led1)
+2020-11-13 22:18:12	LordKalma	I've seen benchmarks of specific use cases that are interesting
+2020-11-13 22:18:23	LordKalma	python processing regex on text pretty much as fast as C code
+2020-11-13 22:18:29	<--	xissburg (~xissburg@unaffiliated/xissburg) has quit (Quit: ZZZzzz…)
+2020-11-13 22:18:35	PJBoy	and of course you can just use an associative array if you really want jump table behaviour
+2020-11-13 22:18:40	LordKalma	as long as the cython code does little as possible haha
+2020-11-13 22:18:54	rpav	this is of course why python is slow .. "well, no point in this one thing that would make it faster"
+2020-11-13 22:19:04	PJBoy	python's slow because it's interpreted
+2020-11-13 22:19:10	LordKalma	yes
+2020-11-13 22:19:16	PJBoy	unless you use pypy or whatever
+2020-11-13 22:19:21	PJBoy	in which case I'm not so sure
+2020-11-13 22:19:29	rpav	python is byte compiled
+2020-11-13 22:19:35	rpav	it just has a shitty vm
+2020-11-13 22:19:42	PJBoy	there you go
+2020-11-13 22:20:10	PJBoy	I'm actually not sure that a switch could ever work in python
+2020-11-13 22:20:11	LordKalma	on the other hand it's a very flexible language
+2020-11-13 22:20:18	PJBoy	unless it were syntax sugar for an if else chain
+2020-11-13 22:20:23	rpav	LordKalma: that's my point; it's *not*
+2020-11-13 22:20:28	LordKalma	yesterday I monkey patched the print function hahah
+2020-11-13 22:20:42	PJBoy	yeah you can modify functions at runtime
+2020-11-13 22:20:48	rpav	its flexibility is shit, it has like 2 dispatch mechanisms, no syntax extension or metaprogramming to speak of, and is very limited in expressiveness
+2020-11-13 22:20:49	PJBoy	that's pretty nuts
+2020-11-13 22:21:00	LordKalma	have you even seen James Powell talks?
+2020-11-13 22:21:01	PJBoy	like there's no way to implement lru_cache in C++
+2020-11-13 22:21:08	rpav	whooptie do, basically everything can do that ;)
+2020-11-13 22:21:25	LordKalma	he made a pip installable package for fun that literally fucks with the cython code directly
+2020-11-13 22:21:30	rpav	google "c++ hot patching"
+2020-11-13 22:21:32	kkd	what is lru_cache? surely you could do it in C++?
+2020-11-13 22:21:34	LordKalma	and like changes the add operator behaviour for ints
+2020-11-13 22:21:39	rpav	kkd: trivially
+2020-11-13 22:22:04	PJBoy	lru_cache takes a function and returns a function that caches the last N results of that function
+2020-11-13 22:22:06	LordKalma	https://docs.python.org/3/library/functools.html#functools.lru_cache
+2020-11-13 22:22:21	rpav	the problem is people more or less use "basic C/C++" and then "python" and think python can like, do things because a few things are slightly easier to type or something heh
+2020-11-13 22:22:21	PJBoy	it's particularly good for recursive functions
+2020-11-13 22:22:36	PJBoy	and it's the recursive aspect that's impossible in C++
+2020-11-13 22:22:41	rpav	you mean memoizing?
+2020-11-13 22:22:43	kkd	so basically making your DP table for you
+2020-11-13 22:22:45	PJBoy	yeah
+2020-11-13 22:22:49	fooobarrr	this just sounds like memoization with more words
+2020-11-13 22:23:07	<--	hgn32 (~hgn32@91.193.4.186) has quit (Quit: Leaving)
+2020-11-13 22:23:07	rpav	google "c++ memoizing" and see how impossible it is
+2020-11-13 22:23:15	PJBoy	it is
+2020-11-13 22:23:29	PJBoy	it's impossible to take an opaque function and memoise it
+2020-11-13 22:23:40	PJBoy	such that recursive calls are memoised
+2020-11-13 22:23:47	rpav	https://stackoverflow.com/questions/17805969/writing-universal-memoization-function-in-c11
+2020-11-13 22:24:02	rpav	c++14, but i mean. it's almost 7 years later!
+2020-11-13 22:24:17	PJBoy	note that that solution doesn't memoise recursive calls
+2020-11-13 22:24:19	Alipha	https://github.com/alipha/cpp/blob/master/cached_function/example2.cpp ?
+2020-11-13 22:24:22	kkd	you could just recursively call the wrapper function, which will return early by reading form the table
+2020-11-13 22:24:26	kkd	from*
+2020-11-13 22:24:44	LordKalma	well, each tool to its problem
+2020-11-13 22:24:54	LordKalma	I like it to solve simple problems
+2020-11-13 22:25:04	kkd	hard problems are for perl
+2020-11-13 22:25:07	kkd	:-)
+2020-11-13 22:25:12	LordKalma	no
+2020-11-13 22:25:15	LordKalma	perl is a hard problem
+2020-11-13 22:25:36	LordKalma	cough latex
+2020-11-13 22:26:11	PJBoy	Alipha, that looks roughly like what python would do I think?
+2020-11-13 22:26:18	-->	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has joined ##C++-general
+2020-11-13 22:26:19	PJBoy	except python can replace the original function with the new one
+2020-11-13 22:26:30	PJBoy	because runtime
+2020-11-13 22:26:41	rpav	you could muck with the symbol table or something if you wanted, or whatever
+2020-11-13 22:27:03	LordKalma	the concept of a decorator in ython is very powerful indeed
+2020-11-13 22:27:06	kkd	there is interest in C++ JIT, so it might be able to compete in that space in the coming years
+2020-11-13 22:27:13	PJBoy	jesus christ at that implementation though
+2020-11-13 22:27:15	-->	callq (~callq@2603:3001:a00:400:3ca8:f415:4257:7ab3) has joined ##C++-general
+2020-11-13 22:27:21	PJBoy	like that's insanely complex
+2020-11-13 22:27:35	Alipha	PJBoy: my cached_function.hpp?
+2020-11-13 22:27:40	PJBoy	yeah
+2020-11-13 22:27:45	rpav	kkd: that seems weird since there's no VM to JIT currently
+2020-11-13 22:28:10	PJBoy	why is there interesting in C++ JIT?
+2020-11-13 22:28:18	LordKalma	ompilation times aha
+2020-11-13 22:28:20	LordKalma	typename U = R
+2020-11-13 22:28:24	LordKalma	what syntax is this?
+2020-11-13 22:28:34	rpav	it doesn't look *that* complex? heh
+2020-11-13 22:28:39	kkd	default template type parameter
+2020-11-13 22:28:51	rpav	it's some type utility stuff and a couple classes
+2020-11-13 22:28:52	LordKalma	fuck
+2020-11-13 22:28:58	LordKalma	I'm never gonna know c++
+2020-11-13 22:29:05	LordKalma	if this isn't "that complex"
+2020-11-13 22:29:09	PJBoy	look at all those pointer-to-member dereferences
+2020-11-13 22:29:15	kkd	LordKalma: chillax, i didn't know about it a month ago
+2020-11-13 22:29:15	rpav	LordKalma: meh, just write C++ a lot
+2020-11-13 22:29:17	LordKalma	rangergord, you were right
+2020-11-13 22:29:28	PJBoy	and careful use of move and forward
+2020-11-13 22:29:38	LordKalma	also, we found you a contender in ranting
+2020-11-13 22:29:45	PJBoy	hahaha
+2020-11-13 22:29:46	computerquip	Does anyone actually "know" C++?
+2020-11-13 22:29:49	computerquip	That's the real question.
+2020-11-13 22:29:54	PJBoy	Richard Smith
+2020-11-13 22:29:59	rpav	LordKalma: once not long ago i couldn't read the LLVM C++ tutorial; the C++ i knew was too old and it was easier for me to figure out the ocaml version
+2020-11-13 22:30:04	<--	gelignite (~gelignite@55d44811.access.ecotel.net) has quit (Quit: Stay safe! Stay at home! Stop the chain reaction!)
+2020-11-13 22:30:13	LordKalma	PJBoy, if there is anything I've learned about C++ in conference talks
+2020-11-13 22:30:20	rpav	(i definitely don't know ocaml)
+2020-11-13 22:30:20	LordKalma	is that EVERYTHING has a pitfall somewhere
+2020-11-13 22:30:37	PJBoy	that's just confirmation bias
+2020-11-13 22:30:47	kkd	but yeah i can't read template metaprogramming stuff, it makes my eyes bleed
+2020-11-13 22:30:55	PJBoy	conference talks are unlikely to talk about the good parts of the language
+2020-11-13 22:31:13	kkd	and would cause my brain's only core to spin at 100%
+2020-11-13 22:31:13	rpav	once you start writing template stuff and grasp the basic concept it's actually surprisingly easy
+2020-11-13 22:31:16	LordKalma	kkd, well, between template metaprogramming and that macro hell from liquid.h... what do you pick?
+2020-11-13 22:31:22	PJBoy	haha
+2020-11-13 22:31:41	rpav	like, my first attempts at "advanced" things were writing things like zip<Ts...> and it worked with minimal effort
+2020-11-13 22:32:00	PJBoy	yeah I'm not sure what defines advanced
+2020-11-13 22:32:07	LordKalma	hahah the other day we had a context here for writing zip and enumerate
+2020-11-13 22:32:13	LordKalma	with structured binding
+2020-11-13 22:32:41	rpav	PJBoy: well, your simple non-meta-y things are what probably most people basically write, some `template<typename T> class X { T x; ... };`
+2020-11-13 22:33:19	rpav	then you want to start doing things with parameter packs, because they're a lot nicer than variadic functions .. `print(...)` is pretty easy to write
+2020-11-13 22:33:30	kkd	more than that it's the subtle interaction of name lookup, ADL, and what not, that adds fuel to the fire
+2020-11-13 22:34:03	PJBoy	one of the weirder things happened to me recently
+2020-11-13 22:34:21	PJBoy	my "mentor" at work did my code review for a little python change
+2020-11-13 22:34:27	PJBoy	where I used a lambda
+2020-11-13 22:34:34	PJBoy	and he just couldn't wrap his head around it
+2020-11-13 22:34:41	rpav	but then like, zip is probably the next step up, where you want to take some <Ts...> and work with tuples of <Ts...> and apply functions to all of them, or something
+2020-11-13 22:34:44	fooobarrr	python lambda?
+2020-11-13 22:34:45	PJBoy	he thinks C++ lambdas are easy to understand!
+2020-11-13 22:34:48	PJBoy	yeah
+2020-11-13 22:34:50	LordKalma	lambda x: something_with_x(x)
+2020-11-13 22:34:51	LordKalma	?
+2020-11-13 22:34:55	PJBoy	yeah
+2020-11-13 22:34:58	fooobarrr	ok
+2020-11-13 22:35:47	PJBoy	it was as simple as `lambda filename, directory, method: compress(filename, directory, "extra arg", method)`
+2020-11-13 22:36:00	fooobarrr	C++ lambdas are reusable black holes
+2020-11-13 22:36:03	PJBoy	and the "extra arg" tripped him up so hard
+2020-11-13 22:36:20	rpav	o.O
+2020-11-13 22:36:32	LordKalma	def fun( filename, directory, method): return compress(filename, directory, "extra arg", method)
+2020-11-13 22:36:36	LordKalma	WHOA SO COMPLEX
+2020-11-13 22:36:43	PJBoy	yeah I even did that
+2020-11-13 22:36:51	PJBoy	I wrote the local function version of the same code
+2020-11-13 22:37:07	PJBoy	he must have been having a bad day
+2020-11-13 22:37:18	PJBoy	maybe he's used to everything being overly complex from too much C++
+2020-11-13 22:37:40	rpav	dunno profs ime tend to be stuck 20 years ago, but i mean, it's not like lambdas are new, or that kind of currying (or whatever) is new
+2020-11-13 22:37:50	LordKalma	c++ needs captures and what-nots
+2020-11-13 22:37:54	rpav	i don't think it was even new 20 years ago
+2020-11-13 22:38:01	LordKalma	in python everything is left in scope unless it's a context manager
+2020-11-13 22:38:02	rpav	c++ *has* captures
+2020-11-13 22:38:09	PJBoy	like I say, he knows C++ lambdas
+2020-11-13 22:38:12	<--	spiri (~spiri@unaffiliated/spiri) has quit (Quit: ¯\_(ツ)_/¯)
+2020-11-13 22:38:16	LordKalma	rpav, I meant when using a lambda
+2020-11-13 22:38:24	rpav	LordKalma: what other kind of capture would there be?
+2020-11-13 22:38:25	cbreak	c++ has captures
+2020-11-13 22:38:33	cbreak	you actually get to control how you capture what
+2020-11-13 22:38:41	cbreak	unlike in lesser langauges
+2020-11-13 22:38:43	LordKalma	urgh, I make a semantic error and mass confusion ensures
+2020-11-13 22:38:47	rpav	{ int x = 42; int y = [&]() { cout << x; }; y(); }
+2020-11-13 22:38:47	+geordi	error: cannot convert 'main(int, char**)::<lambda()>' to 'int' in initialization
+2020-11-13 22:38:48	PJBoy	he means C++ you have to *specify* captures
+2020-11-13 22:38:55	LordKalma	YES ffs
+2020-11-13 22:38:55	PJBoy	in python you *don't even need to*
+2020-11-13 22:39:02	kkd	english is the C++ of languages
+2020-11-13 22:39:03	Alipha	PJBoy: so, here's what all that complexity is doing. you specify a max size of the cache, which is the number of function calls it will cache. once that max is reached, it clears out the half oldest cached calls. it does that by keeping two sets of cached calls. if, for instance, you set the max to 40, the two cached call sets (old_calls and new_calls) will each have a max size of 20. once one
+2020-11-13 22:39:05	Alipha	("old_calls") gets filled to 20, the other one ("new_calls") will start to get filled. and then if one of the calls is made matching a previous call in old_calls, that call gets moved to new_calls. then once new_calls gets filled to 20, old_calls gets cleared out. and now, new_calls and old_calls are swapped, hence the member pointers.... and i just realized now that getting rid of the member pointers
+2020-11-13 22:39:05	kkd	most vexing parse
+2020-11-13 22:39:07	Alipha	and just doing a std::swap(calls1, calls2); would be simpler and just as efficient, since swapping is O(1), sighs.
+2020-11-13 22:39:11	rpav	{ int x = 42; auto y = [&]() { cout << x; }; y(); }
+2020-11-13 22:39:12	+geordi	42
+2020-11-13 22:39:14	computerquip	Isn't that lambda vs closures?
+2020-11-13 22:39:18	rpav	i'm tired
+2020-11-13 22:39:27	computerquip	Closures takes surrounding environment with it
+2020-11-13 22:39:34	rpav	and you don't "need to" in C++ other than specifying how you want them captured
+2020-11-13 22:39:40	LordKalma	anyway, in pythin if you do for i in range(5): pass the i variable is still in scope after the indented block
+2020-11-13 22:39:44	LordKalma	with value 4, of course
+2020-11-13 22:39:46	LordKalma	such fun
+2020-11-13 22:39:50	PJBoy	Alipha, oh you're doing double buffering
+2020-11-13 22:39:51	rpav	computerquip: c++ closures only capture what they need
+2020-11-13 22:39:57	cbreak	LordKalma: because python is a lesser language
+2020-11-13 22:39:57	PJBoy	that's neat
+2020-11-13 22:40:00	Alipha	PJBoy: yep
+2020-11-13 22:40:22	rpav	lexical closures are sortof the trivial thing
+2020-11-13 22:40:28	Alipha	... and now with my revelation, i want to go through and remove the member pointers
+2020-11-13 22:40:47	PJBoy	haha good luck
+2020-11-13 22:40:59	rpav	dynamic extent is where shit gets real ;)
+2020-11-13 22:41:06	PJBoy	I actually tried to make a lru_cache once
+2020-11-13 22:41:12	PJBoy	and it did not go well
+2020-11-13 22:41:27	PJBoy	like last month or so
+2020-11-13 22:42:04	PJBoy	I mean it worked perfectly for the non-recursive case
+2020-11-13 22:42:09	callq	when I needed to make a web scraper, I looked at what it took to make a network request in C++ and what it took to do it in python. I did that project in python.
+2020-11-13 22:42:34	PJBoy	that's fair
+2020-11-13 22:42:43	PJBoy	generally network stuff makes sense in python
+2020-11-13 22:43:00	fooobarrr	yeah bs4 makes life easy
+2020-11-13 22:43:05	fooobarrr	and urllib
+2020-11-13 22:43:09	rpav	you should look at waht it takes in node ;)
+2020-11-13 22:43:10	PJBoy	you can't get that C++ speed anyway, and python has a rich asynch feature set
+2020-11-13 22:43:19	LordKalma	callq, hehe. beautiful soup?
+2020-11-13 22:43:22	LordKalma	or selenium?
+2020-11-13 22:43:31	rpav	node gets you quite a bit of speed, easy portability, and very easy basically every god damn thing, even without all the packages
+2020-11-13 22:43:46	callq	Yeah it was years ago, but I remember feeling the weight being lifted off my shoulders, as everything I needed, I simply typed "import ____"
+2020-11-13 22:44:02	kkd	i think people also like Go for web/networking related stuff
+2020-11-13 22:44:24	LordKalma	i've used beautiful soup to scrap a table of a website
+2020-11-13 22:44:25	PJBoy	LordKalma, you mean lxml :p
+2020-11-13 22:44:26	<--	robod33 (~Username@79.113.239.51) has quit (Quit: Goe offline! ( http://marius.sucan.ro/ ))
+2020-11-13 22:44:45	LordKalma	a friend of mine uses selenium a lot  to scrape more javascript based websites
+2020-11-13 22:44:52	LordKalma	in fact, i'm going to tell you the most dumb crap
+2020-11-13 22:44:52	rpav	kkd: go seems to be an interesting balance of speed and ease of use too
+2020-11-13 22:44:58	PJBoy	screw node
+2020-11-13 22:45:04	PJBoy	javascript has no features
+2020-11-13 22:45:15	kkd	do PHP!
+2020-11-13 22:45:17	rpav	you clearly have no concept of what es6 has heh
+2020-11-13 22:45:28	rpav	or node, which has a larger standard library
+2020-11-13 22:45:30	PJBoy	nah I'm just trolling
+2020-11-13 22:45:31	LordKalma	he works for a company that does like stuff related to energy efficiency and etc. and our major electrical supplier company does NOT have public facing APIs
+2020-11-13 22:45:40	LordKalma	in fact, they are opening their first APIs now
+2020-11-13 22:45:42	PJBoy	I've actually used almost nothing but ES6
+2020-11-13 22:45:49	rpav	ah
+2020-11-13 22:45:49	LordKalma	so he had to build scrappers for almost everything
+2020-11-13 22:45:55	LordKalma	and it's a very JS heavy website
+2020-11-13 22:45:58	PJBoy	ES5 and below is a bad place to be though
+2020-11-13 22:45:58	kkd	> energy efficiency > uses python
+2020-11-13 22:46:23	rpav	i use it quite a bit for pipeline tools and other stuff, i've scratched on the surface of some web stuff and it's definitely vastly superior to everything there was 15-20 years ago, but i still </3 web
+2020-11-13 22:46:23	PJBoy	PHP is alright
+2020-11-13 22:46:31	fooobarrr	i think i've used JS a few times but most of the time i black out and don't remember wtf i was doing
+2020-11-13 22:46:34	PJBoy	I hate golang
+2020-11-13 22:46:45	LordKalma	why do all hosting providers are stuck in PHP land?
+2020-11-13 22:46:51	rpav	wordpress etc
+2020-11-13 22:46:55	LordKalma	why aren't we seeing more node.js shared hosting
+2020-11-13 22:46:57	rpav	"all the shit written in php"
+2020-11-13 22:47:05	rpav	there's plenty of node hosting
+2020-11-13 22:47:06	LordKalma	I know almost all web shit it written in php
+2020-11-13 22:47:10	<--	ladon (~ladon@ppp046177068077.access.hol.gr) has quit (Ping timeout: 256 seconds)
+2020-11-13 22:47:13	LordKalma	I run wordpress myself
+2020-11-13 22:47:14	-->	OldFaithful_ (~ye_olde@gateway/tor-sasl/goldie) has joined ##C++-general
+2020-11-13 22:47:19	PJBoy	the thing that PHP has that nothing else has, it the ability to weave in and out of PHP
+2020-11-13 22:47:25	rpav	like you don't even need full hosting anymore, isn't that what like aws lambda is
+2020-11-13 22:47:29	LordKalma	but I mean, it's not as ubiquitous
+2020-11-13 22:47:37	LordKalma	python even less
+2020-11-13 22:47:46	<--	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has quit (Disconnected by services)
+2020-11-13 22:47:50	PJBoy	<?php lala(); ?> <!-- some HTML --> <?php lalala(); ?
+2020-11-13 22:47:51	PJBoy	>
+2020-11-13 22:47:52	kkd	i've heard some facebook people use C++ for 'scripting' internally
+2020-11-13 22:47:53	--	OldFaithful_ is now known as OldFaithful
+2020-11-13 22:47:54	PJBoy	you just can't beat that
+2020-11-13 22:48:19	kkd	https://www.phoronix.com/scan.php?page=news_item&px=Facebook-JIT-Cpp-Scripting
+2020-11-13 22:48:23	rpav	you can't beat C++ for raw low level control combined with high level constructs
+2020-11-13 22:48:41	PJBoy	yeah indeed
+2020-11-13 22:48:45	PJBoy	aside from potentially rust
+2020-11-13 22:48:59	LordKalma	he said the language that shall not be named
+2020-11-13 22:49:04	LordKalma	wanna trigger half the channel?
+2020-11-13 22:49:18	PJBoy	just wait until I start asking about C++/rust interop
+2020-11-13 22:49:20	kkd	why are we even on irc, if not for the lulz
+2020-11-13 22:49:27	rpav	kkd: that's not very detailed ;/
+2020-11-13 22:49:30	rpav	sounds interesting, but
+2020-11-13 22:49:32	LordKalma	OmG I doNT sEe whY RuSt Is so WanTEd
+2020-11-13 22:49:36	PJBoy	C++ will be to rust what C is to C++
+2020-11-13 22:49:54	Alipha	all i read before reading the messages above it was "wanna trigger half the channel?" and i immediately thought of rust
+2020-11-13 22:49:58	Alipha	!rust
+2020-11-13 22:50:00	+nolyc	Rust is composed of iron oxides. In colloquial usage, the term is applied to red oxides, formed by the reaction of iron and oxygen in the presence of water or air moisture.
+2020-11-13 22:50:04	PJBoy	"can I throw rust-exceptions through an `extern "C++"`?"
+2020-11-13 22:50:17	rpav	oh i see, the middle bit in the image, LLVM IR .. but .. how is that faster
+2020-11-13 22:50:17	-->	OldFaithful_ (~ye_olde@gateway/tor-sasl/goldie) has joined ##C++-general
+2020-11-13 22:50:57	PJBoy	I starting looking at C# the other day
+2020-11-13 22:51:08	PJBoy	I think it might give C++ a run for its money w.r.t. language complexity
+2020-11-13 22:51:08	LordKalma	the advantage of having a JITed language is that you can do stuff like REPL easily
+2020-11-13 22:51:26	LordKalma	or like run half of the code, see some result, and write the rest accordingly
+2020-11-13 22:51:27	rpav	C# seems vaguely interesting as those things go .. i keep meaning to check out unity and just haven't the opportunity or need
+2020-11-13 22:51:39	PJBoy	there's cling
+2020-11-13 22:51:48	LordKalma	that's how I do python, it's constantly executing the bit I just wrote
+2020-11-13 22:51:52	LordKalma	see what it does, and keep going
+2020-11-13 22:52:08	PJBoy	I do the same thing, but with wandbox :p
+2020-11-13 22:52:13	PJBoy	or geordi
+2020-11-13 22:52:13	<--	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has quit (Ping timeout: 240 seconds)
+2020-11-13 22:52:16	LordKalma	ipython/notebooks are my debugger  ahah
+2020-11-13 22:52:32	rpav	compile times are annoying, i keep wanting a tool that manages all my source
+2020-11-13 22:53:26	rpav	like, can spit out every definition and declaration in separate files, with all proper deps, for development .. modify one thing, *only* direct deps get rebuilt .. or full unity (not the 3d one) builds for "faster compilation"
+2020-11-13 22:53:32	--	OldFaithful_ is now known as OldFaithful
+2020-11-13 22:53:40	CarloWood	kkd: I won't mention the channel- but when -after 25 year- I moved I said one sentence there ("CarloWood is bringing computers down for move to another city... Remember me when I do not return :(").  FIVE days later I reconnected and said: CarloWood surfaces for a second and take a huge gulp of air.   like NOTHING works - how can moving to another city break BOOTING? Grrrr   Plus... I scratched one of my large monitors *cries*
+2020-11-13 22:53:41	rpav	probably something one could accomplish with a clang tool but
+2020-11-13 22:54:01	CarloWood	kkd: reaction there: !give CarloWood offtopic
+2020-11-13 22:54:15	InPhase	rpav: It's called "make".  Wrapped with cmake for convenience.
+2020-11-13 22:54:33	rpav	if you mean ##c++ then sure, they're "topical" ;)
+2020-11-13 22:54:36	CarloWood	I mean, no sense of "us" "hanging out" "pals with the same interest" :/.
+2020-11-13 22:54:55	CarloWood	No I didn't mean ##C++ but yes, could have been there too.
+2020-11-13 22:55:00	rpav	CarloWood: but, have you never dealt with hardware?! ;) all sorts of crap can go wrong if you move
+2020-11-13 22:55:05	Alipha	PJBoy: C# has a lot of features, but they're not complex, heh.
+2020-11-13 22:55:23	InPhase	rpav: That make ends up doing a lot more than we like is because of the interwoven structure of C++ dependencies.  Touch one header file upstream on the include tree, and you'll be recompiling a lot.
+2020-11-13 22:55:28	rpav	InPhase: i have a feeling you didn't begin to understand the problem
+2020-11-13 22:55:29	PJBoy	Alipha, the value reference stuff confuses me right now
+2020-11-13 22:55:32	CarloWood	I have booted now, but vlc can't find my audio device - it makes no sense at all.
+2020-11-13 22:55:59	PJBoy	Alipha, structs are value types, classes are references types, all structs and classes are derived from object, object is a reference type
+2020-11-13 22:56:07	rpav	InPhase: yes, and thus the tool in question: if i split up everything, dependencies will be reduced to their minimal state
+2020-11-13 22:56:20	PJBoy	and on top of that, there's a ref keyword for parameters
+2020-11-13 22:56:21	InPhase	rpav: You mean split files into the units within the files?
+2020-11-13 22:56:31	ville	rpav: write your own build system
+2020-11-13 22:56:32	InPhase	rpav: Just...  make smaller files, and put one thing in each?
+2020-11-13 22:56:43	CodeMouse92	rpav: Ah, so I'm not the only one who quit that room because of hostility ;)
+2020-11-13 22:56:50	rpav	InPhase: every declaration ("class X { ... }") and definition ("void foo() { ... }")
+2020-11-13 22:57:04	rpav	well, declaration/definition in the class case, but :p
+2020-11-13 22:57:18	rpav	InPhase: did you even read what i typed heh
+2020-11-13 22:57:45	InPhase	rpav: I did.  But now how do you handle the preprocessor?
+2020-11-13 22:57:53	rpav	doing that actually sucks for *overall* compile times though, so if you want to maintain builds, you want more things in a file .. all the way to true unity builds
+2020-11-13 22:57:54	<--	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has quit (Remote host closed the connection)
+2020-11-13 22:58:03	rpav	InPhase: in what sense
+2020-11-13 22:58:04	InPhase	rpav: There are some fundamental language issues at play here that make it hard.
+2020-11-13 22:58:06	Alipha	PJBoy: well, references are actually c++ pointers without the arithmetic, and the ref keyword is more like c++ lvalue references. though i never thought about the fact that structs are derived from object, hm. that's interesting
+2020-11-13 22:58:20	rpav	not particularly, you
+2020-11-13 22:58:27	ville	rpav: also surely linux, and others, have way to map parts of a file so that they appear as their own files? or map multiple files so that they appear as single file?
+2020-11-13 22:58:33	rpav	...may need some forward decls, but you need those in any case
+2020-11-13 22:58:43	rpav	ville: that doesn't really solve any of the problem
+2020-11-13 22:58:45	PJBoy	Alipha, I presume they're like shared_ptrs? like python
+2020-11-13 22:58:47	-->	nuclearg1 (~nucleargr@c-73-150-253-137.hsd1.nj.comcast.net) has joined ##C++-general
+2020-11-13 22:59:02	PJBoy	they = references
+2020-11-13 22:59:07	-->	OldFaithful (~ye_olde@gateway/tor-sasl/goldie) has joined ##C++-general
+2020-11-13 22:59:09	InPhase	rpav: Well, you can change a header file adding "#define while if" and suddenly every single file that included that header needs to be recompiled.  There is no dependency tree for this other than the one in the original source files.
+2020-11-13 22:59:09	CarloWood	I bought this new PC with a whatsthenamelatestofthelatest with 32 cores... doesn't seem faster at ALL :/.  Moores law has been dead for ten years now or so I think.
+2020-11-13 22:59:11	ville	rpav: so you'd use libclang or other to analyze your source and then do whichever way you wanted to map it
+2020-11-13 22:59:18	rpav	ville: the "real problem" in this case is determining language-level deps so you can split things up and #include the right other things
+2020-11-13 22:59:34	ville	rpav: how is it a problem though?
+2020-11-13 22:59:35	rpav	ville: yes, *that's what i wrote*
+2020-11-13 22:59:36	Alipha	PJBoy: yes, pointers to garbage-collected objects
+2020-11-13 22:59:43	InPhase	rpav: Technically, you only have to recompile the files that had "while" in them.  But how do you figure that out without checking them all?
+2020-11-13 22:59:47	PJBoy	okay that bit makes sense
+2020-11-13 22:59:58	SnoopJ	CarloWood, at least that long yea, clocks rolled over pretty fast, and parallelism done right is...uncommon.
+2020-11-13 23:00:19	kill-animals	I've always just said, a reference is a pointer that has to exist. Some call me a heretic, but they hate me because I tell the truth.
+2020-11-13 23:00:52	Alipha	PJBoy: i've been thinking again about making a c++ garbage collection library :-) (version 2. i already have a gc library)
+2020-11-13 23:01:05	rpav	InPhase: err, the idea is the tool spits out a file-dependency-driven source tree
+2020-11-13 23:01:06	PJBoy	oh god
+2020-11-13 23:01:10	kkd	CarloWood: on a 4gig 2 core ram machine, i have 254 firefox tabs open, everything is smooth, tell me how
+2020-11-13 23:01:15	kill-animals	Alipha: ... Why make a garbage collection library for c++?
+2020-11-13 23:01:32	CarloWood	kkd: impossible
+2020-11-13 23:01:39	PJBoy	kill-animals, you're a heretic and I hate you
+2020-11-13 23:01:42	kkd	everytime i open the 5th new tab, it crashes, but saves the tab list, so until i go back on the tabs from the prior crash, it takes up no space
+2020-11-13 23:01:43	Alipha	kill-animals: so i can be lazy and not think about memory management like java programmers ;-)
+2020-11-13 23:01:49	CarloWood	plus, I need to start using firefox instead of chrome
+2020-11-13 23:01:50	PJBoy	kill-animals, also kill the frames
+2020-11-13 23:01:55	CodeMouse92	Alipha: That's why they invented smart pointers, you know
+2020-11-13 23:01:59	kill-animals	PJBoy: I forgive you. You know not what you do.
+2020-11-13 23:02:07	LordKalma	kill-animals: audio guys sometime use gcs
+2020-11-13 23:02:14	CodeMouse92	If you think you need a GC in C++, you're alomst certainly misunderstanding something profound.
+2020-11-13 23:02:26	LordKalma	To defer object destruction and de allocation out of the hot callback thread
+2020-11-13 23:02:28	PJBoy	kill-animals, in fairness, references have additional semantics compared to pointers
+2020-11-13 23:02:32	Alipha	CodeMouse92: you can't just std::shared_ptr everything!
+2020-11-13 23:02:34	CarloWood	I have usually so many tabs open that I still need to "do" something with that I can't even find the windows back.
+2020-11-13 23:02:38	PJBoy	kill-animals, particularly in the lvalue reference vs rvalue reference domain
+2020-11-13 23:02:41	kkd	shared_ptr sucks for performance
+2020-11-13 23:02:50	PJBoy	kill-animals, and the lifetime extension domain
+2020-11-13 23:02:59	kkd	you need GC sometimes, even in C++ (or more precisely deferred reclamation)
+2020-11-13 23:03:00	CodeMouse92	Alipha: I am well aware, but you're really only trading one difficulty for another so....good luck?
+2020-11-13 23:03:00	InPhase	rpav: But the preprocessor means that changes to a define mean that you have to recompile everything that comes after it in a translational unit, even other headers that sequentially follow.
+2020-11-13 23:03:03	ville	kill-animals: even pointers are not pointers!
+2020-11-13 23:03:04	kill-animals	Alipha: kek, but seriously, I personally have never had an issue with memory management. It is really seldom I've ever had a memory leak, but I do everything in Qt which makes things pretty trivial.
+2020-11-13 23:03:10	SnoopJ	we do alright with shared_ptr but I don't know if we use it in particularly hot code
+2020-11-13 23:03:11	<--	ambro718 (~ambro@unaffiliated/ambro718) has quit (Quit: Konversation terminated!)
+2020-11-13 23:03:17	CodeMouse92	kill-animals: Same. Thank you.
+2020-11-13 23:03:30	rpav	InPhase: yes
+2020-11-13 23:03:33	rpav	and?
+2020-11-13 23:03:34	CodeMouse92	Minus Qt, which I rarely work with (but prefer for GUI anyway)
+2020-11-13 23:03:58	PJBoy	rpav, without having read any of the discussion, it sounds like you want modules
+2020-11-13 23:04:00	-->	TCZ (~TCZ@ip-91.246.66.111.skyware.pl) has joined ##C++-general
+2020-11-13 23:04:01	InPhase	rpav: That can include adding a define, or removing one.  And the compiler does not have history, so that means any time a piece of source is touched, the compiler must recompile everything exactly as written after it in a translational unit to see if there are any preprocessor changes.
+2020-11-13 23:04:06	CarloWood	When I finally die, my kids (which I don't have, but in a matter of speaking) will have to close all my tabs and will relive my life, the good and the bad moment, shed tears and laughter and use many of them for anecdotes during the funeral.....
+2020-11-13 23:04:21	rpav	InPhase: yes, *and*?
+2020-11-13 23:04:22	kill-animals	CodeMouse92: Thank you? You mean you do things in Qt as well?
+2020-11-13 23:04:36	InPhase	rpav: So breaking the files apart changes nothing.  All the same work still needs to be done.
+2020-11-13 23:04:40	CodeMouse92	kill-animals: I mean, I too do a lot of memory management, and seldom have problems (including leaks).
+2020-11-13 23:04:44	kkd	CarloWood: counting your chickens before they hatch
+2020-11-13 23:04:49	rangergord	LordKalma, what was I right about? :P
+2020-11-13 23:04:52	InPhase	rpav: The only way to change the work is to actually write code that is more separated.
+2020-11-13 23:04:55	CodeMouse92	kill-animals: You said exactly what I was wanting to say
+2020-11-13 23:04:57	Alipha	CodeMouse92: in all seriousness though, i wrote my GC v1 because i started creating a scripting language interpreter in c++, and the scripting language is garbage-collected, so i needed to write a garbage collector.
+2020-11-13 23:04:59	rpav	InPhase: the idea is the tool spits out a minimalist set of files with single definitions / declarations and minimalist dependencies; it will thus only need to recompile bare necessities
+2020-11-13 23:05:08	CarloWood	Come on that was funny *sad nobody grabbed it as quote* or is that another channel?

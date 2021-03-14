@@ -1,0 +1,26 @@
+2020-01-25 20:15:43	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #SDL
+2020-01-25 20:15:43	--	Topic for #SDL is "Official SDL Channel http://www.libsdl.org/ | You must identify with NickServ to join/talk"
+2020-01-25 20:15:43	--	Topic set by akawaka (~akawaka@2605:e000:1701:40f8:211:32ff:fe51:9639) on Wed, 01 Aug 2018 18:04:39
+2020-01-25 20:15:43	--	Channel #SDL: 84 nicks (1 op, 0 voices, 83 normals)
+2020-01-25 20:15:43	--	PvNotice(ChanServ): Welcome to #sdl - The Offical Simple DirectMedia Layer Channel
+2020-01-25 20:15:43	--	URL for #SDL: http://www.libsdl.org/
+2020-01-25 20:15:45	--	Channel created on Sun, 26 Nov 2006 07:42:43
+2020-01-25 20:15:49	captainchris	Hi everybody 
+2020-01-25 20:16:25	captainchris	I need a information about imgui, can I ask here please ?? 
+2020-01-25 20:16:47	<--	J_L_P (~J_L_P@ool-435487ea.dyn.optonline.net) has quit (Quit: Leaving)
+2020-01-25 20:48:47	mort	captainchris: sure, though we may not know the answer
+2020-01-25 20:50:58	captainchris	I have an old computer without opengl. Can i Run imgui without opengl
+2020-01-25 20:51:02	captainchris	just with SDL ?? 
+2020-01-25 20:51:34	captainchris	I try to test but I have a segmentation fault 
+2020-01-25 21:23:07	LunarJetman	captainchris: there is a software opengl implementation
+2020-01-25 21:23:24	captainchris	ok so it is not possible 
+2020-01-25 21:23:31	captainchris	I need to have opengl 
+2020-01-25 21:23:44	LunarJetman	no idea. I don't use imgui: I am making my own toolkit
+2020-01-25 21:23:44	-->	aidanh_ (~aidanh@unaffiliated/aidanh) has joined #SDL
+2020-01-25 21:25:11	<--	aidanh (~aidanh@unaffiliated/aidanh) has quit (Ping timeout: 265 seconds)
+2020-01-25 21:25:11	--	aidanh_ is now known as aidanh
+2020-01-25 21:25:42	swivel	captainchris: are you incapable of rtfm?
+2020-01-25 21:27:54	swivel	the README.md clearly lists what renderers are included...
+2020-01-25 21:28:17	captainchris	I spent one day to test my program and you said me that 
+2020-01-25 21:28:45	captainchris	Are you stupid ?? 
+2020-01-25 21:30:45	captainchris	Fuck yourself beach 

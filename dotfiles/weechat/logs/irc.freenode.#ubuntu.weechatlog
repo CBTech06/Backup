@@ -1,0 +1,63 @@
+2020-11-25 20:12:43	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #ubuntu
+2020-11-25 20:12:43	--	Topic for #ubuntu is "Official Ubuntu Support Channel | IRC Guidelines: https://ubottu.com/y/gl | #ubuntu supports Ubuntu and official flavors; versions 16.04, 18.04, 20.04, 20.10 | Unofficial derivatives: use your distro's support channel, not here. | IRC info: https://ubottu.com/y/irc | Pastes to https://paste.ubuntu.com/ | Download: https://ubottu.com/y/dl"
+2020-11-25 20:12:43	--	Topic set by krytarik (krytarik@xebian/developer/krytarik) on Thu, 22 Oct 2020 20:58:13
+2020-11-25 20:12:43	--	Channel #ubuntu: 1221 nicks (1 op, 0 voices, 1220 normals)
+2020-11-25 20:12:43	--	PvNotice(ChanServ): Welcome to #ubuntu! Please read the channel topic. This channel is logged at irclogs.ubuntu.com. Use of this channel implies acceptance of terms at https://wiki.ubuntu.com/IRC/TermsOfService
+2020-11-25 20:12:43	--	URL for #ubuntu: https://www.ubuntu.com
+2020-11-25 20:12:45	--	Channel created on Sun, 26 Nov 2006 07:42:41
+2020-11-25 20:12:50	captainchris	Hi everybody 
+2020-11-25 20:15:30	<--	kreyren (~kreyren@fsf/member/kreyren) has quit (Remote host closed the connection)
+2020-11-25 20:15:58	<--	Paddy_NI (~Paddy_NI@80-42-161-160.dynamic.dsl.as9105.com) has quit (Quit: Leaving)
+2020-11-25 20:16:01	<--	hirogen (~hirogen@bcde88fb.skybroadband.com) has quit (Ping timeout: 256 seconds)
+2020-11-25 20:18:50	-->	kreyren (~kreyren@fsf/member/kreyren) has joined #ubuntu
+2020-11-25 20:22:10	-->	zakame_ (~zakame@ubuntu/member/zakame) has joined #ubuntu
+2020-11-25 20:22:19	-->	ijens (~ijens@unaffiliated/ijens) has joined #ubuntu
+2020-11-25 20:22:22	<--	czwolf (~Cz@2607:5300:60:1176::1) has quit (Ping timeout: 264 seconds)
+2020-11-25 20:22:22	<--	random1 (59bbaf94@gateway/web/cgi-irc/kiwiirc.com/ip.89.187.175.148) has quit (Quit: Connection closed)
+2020-11-25 20:23:26	-->	czwolf (~Cz@2607:5300:60:1176::1) has joined #ubuntu
+2020-11-25 20:24:45	-->	led1 (~Thunderbi@217.66.160.14) has joined #ubuntu
+2020-11-25 20:24:52	-->	flatr (~flatr@196.196.203.124) has joined #ubuntu
+2020-11-25 20:24:52	<--	zakame (~zakame@ubuntu/member/zakame) has quit (Ping timeout: 256 seconds)
+2020-11-25 20:26:37	Maik	hi captainchris
+2020-11-25 20:27:27	<--	led1 (~Thunderbi@217.66.160.14) has quit (Client Quit)
+2020-11-25 20:27:38	<--	hugh_marera (~hugh_mare@154.117.149.189) has quit (Quit: hugh_marera)
+2020-11-25 20:28:05	-->	hugh_marera (~hugh_mare@154.117.149.189) has joined #ubuntu
+2020-11-25 20:29:36	-->	tatertots (~tatertotz@ip72-198-103-199.ok.ok.cox.net) has joined #ubuntu
+2020-11-25 20:30:44	<--	czwolf (~Cz@2607:5300:60:1176::1) has quit (Ping timeout: 240 seconds)
+2020-11-25 20:31:44	-->	nt1036 (~nt1036@2605:e000:1805:4ebb:34d0:4fc:b6ce:8949) has joined #ubuntu
+2020-11-25 20:32:37	<--	pinheadm_ (~pinheadmz@pool-100-33-69-78.nycmny.fios.verizon.net) has quit (Quit: pinheadm_)
+2020-11-25 20:32:58	-->	pinheadmz (~pinheadmz@pool-100-33-69-78.nycmny.fios.verizon.net) has joined #ubuntu
+2020-11-25 20:34:17	-->	czwolf (~Cz@2607:5300:60:1176::1) has joined #ubuntu
+2020-11-25 20:35:51	<--	Fuchs (fuchs@freenode/staff/Fuchs) has quit (Quit: Gone for now)
+2020-11-25 20:38:47	<--	yuta (~pi@PPPa3505.e13.eacc.dti.ne.jp) has quit (Quit: Lost terminal)
+2020-11-25 20:39:30	-->	ennozdd (~ennozdd@195.142.69.21) has joined #ubuntu
+2020-11-25 20:40:12	-->	AvatarA (~avatara@unaffiliated/avatara) has joined #ubuntu
+2020-11-25 20:40:21	<--	fcastillo (~fcastillo@71-36-112-154.ptld.qwest.net) has quit (Quit: fcastillo)
+2020-11-25 20:40:31	<--	tieinv (~tieinv@unaffiliated/tieinv) has quit (Remote host closed the connection)
+2020-11-25 20:40:55	<--	brondif (~brondif@dgd9-cyfwlxw---tr7zvt-3.rev.dnainternet.fi) has left #ubuntu ("Leaving")
+2020-11-25 20:41:31	<--	ennozdd (~ennozdd@195.142.69.21) has quit (Quit: leaving)
+2020-11-25 20:44:20	-->	melanogaster-egg (~D-melanog@212.90.58.216) has joined #ubuntu
+2020-11-25 20:44:35	-->	zakame (~zakame@ubuntu/member/zakame) has joined #ubuntu
+2020-11-25 20:44:47	geosmile	BlueEagle, I'm tempted to use nftables - does shorewall wrap that up?
+2020-11-25 20:44:53	-->	platvoeten (~platvoete@185.238.52.74) has joined #ubuntu
+2020-11-25 20:46:04	-->	zakame__ (~zakame@ubuntu/member/zakame) has joined #ubuntu
+2020-11-25 20:46:58	<--	czwolf (~Cz@2607:5300:60:1176::1) has quit (Ping timeout: 264 seconds)
+2020-11-25 20:47:05	-->	TheSashm_ (~TheSashmo@158.106.77.7) has joined #ubuntu
+2020-11-25 20:47:15	-->	hirogen (hirogen@bcde88fb.skybroadband.com) has joined #ubuntu
+2020-11-25 20:47:27	<--	zakame_ (~zakame@ubuntu/member/zakame) has quit (Ping timeout: 265 seconds)
+2020-11-25 20:47:57	<--	RangerBob (~brian@pool-173-72-244-228.clppva.fios.verizon.net) has quit (Remote host closed the connection)
+2020-11-25 20:48:01	<--	PowaBanga (~PowaBanga@unaffiliated/powabanga) has quit (Ping timeout: 272 seconds)
+2020-11-25 20:48:04	-->	czwolf (~Cz@2607:5300:60:1176::1) has joined #ubuntu
+2020-11-25 20:48:17	BlueEagle	geosmile: I do not know what nftables is, so I am not able to answer.
+2020-11-25 20:48:40	-->	RangerBob (~brian@pool-173-72-244-228.clppva.fios.verizon.net) has joined #ubuntu
+2020-11-25 20:48:41	<--	RangerBob (~brian@pool-173-72-244-228.clppva.fios.verizon.net) has quit (Max SendQ exceeded)
+2020-11-25 20:48:56	<--	zakame (~zakame@ubuntu/member/zakame) has quit (Ping timeout: 240 seconds)
+2020-11-25 20:49:11	-->	RangerBob (~brian@pool-173-72-244-228.clppva.fios.verizon.net) has joined #ubuntu
+2020-11-25 20:49:27	<--	TheSashmo (~TheSashmo@158.106.77.7) has quit (Ping timeout: 256 seconds)
+2020-11-25 20:50:28	<--	mbeierl (~mbeierl@cpe383fb372b89a-cm383fb372b898.cpe.net.cable.rogers.com) has quit (Remote host closed the connection)
+2020-11-25 20:51:17	<--	kreyren (~kreyren@fsf/member/kreyren) has quit (Remote host closed the connection)
+2020-11-25 20:53:34	<--	czwolf (~Cz@2607:5300:60:1176::1) has quit (Ping timeout: 264 seconds)
+2020-11-25 20:54:04	<--	_Sym_ (~Sym@lineageos/maintainer/Sym) has quit (Ping timeout: 240 seconds)
+2020-11-25 20:55:12	-->	_Sym_ (~Sym@lineageos/maintainer/Sym) has joined #ubuntu
+2020-11-25 20:55:34	-->	geirha (~geirha@gina.it.ntnu.no) has joined #ubuntu
+2020-11-25 20:56:00	-->	czwolf (~Cz@2607:5300:60:1176::1) has joined #ubuntu

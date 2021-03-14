@@ -1,0 +1,32 @@
+2020-10-24 23:30:14	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #qutebrowser
+2020-10-24 23:30:14	--	Topic for #qutebrowser is "Current version: v1.14.0 - crowdfunding with shirts/stickers/swag: https://github.com/sponsors/The-Compiler/ - https://www.qutebrowser.org/ - Blog: https://blog.qutebrowser.org/ - Mailinglist: https://s.cmpl.cc/quteml - Roadmap: https://s.cmpl.cc/quteroadmap - Pastebin: https://p.cmpl.cc/ - bots: #qutebrowser-dev; offtopic: #qutebrowser-offtopic"
+2020-10-24 23:30:14	--	Topic set by The-Compiler (~compiler@qutebrowser/dev/The-Compiler) on Thu, 15 Oct 2020 14:55:03
+2020-10-24 23:30:14	--	Channel #qutebrowser: 245 nicks (0 ops, 0 voices, 245 normals)
+2020-10-24 23:30:14	--	URL for #qutebrowser: https://www.qutebrowser.org/
+2020-10-24 23:30:16	--	Channel created on Sun, 19 Jan 2014 23:03:37
+2020-10-24 23:30:18	captainchris	hi everybody 
+2020-10-24 23:30:47	captainchris	I'm new under qutebrowser 
+2020-10-24 23:30:51	-->	nullcone (uid11626@gateway/web/irccloud.com/x-hkffmitdltufizur) has joined #qutebrowser
+2020-10-24 23:31:45	captainchris	I would like change the tab of current page in config.py not autoconfig.yml. I change the value of colors.tabs.selected.even.bg but nothing change 
+2020-10-24 23:31:54	captainchris	the color ^ 
+2020-10-24 23:33:54	Ingvix	so how are you setting it
+2020-10-24 23:34:08	captainchris	in qute://settings 
+2020-10-24 23:34:50	Ingvix	that doesn't affect config.py. You have to type it there yourself
+2020-10-24 23:34:59	Ingvix	or export you current configuration from qb
+2020-10-24 23:35:13	captainchris	but quetbrowser ok 
+2020-10-24 23:37:21	Ingvix	I don't understand
+2020-10-24 23:42:42	captainchris	sorry a mistake 
+2020-10-24 23:43:03	captainchris	I found a theme on github a paste the theme into my config file
+2020-10-24 23:43:25	captainchris	but no one change 
+2020-10-24 23:44:18	captainchris	https://pastebin.com/vTKHKRAC
+2020-10-24 23:44:24	captainchris	this is correct 
+2020-10-24 23:44:46	captainchris	I removed all commentary 
+2020-10-24 23:45:56	Ingvix	you did restart the browser or run :config-source after adding them?
+2020-10-24 23:46:22	captainchris	I restart the browser but no :config-source 
+2020-10-24 23:46:37	Ingvix	yeah, restart should work as well
+2020-10-24 23:46:51	captainchris	Ok it works
+2020-10-24 23:46:55	captainchris	thx 
+2020-10-24 23:47:06	Ingvix	oh, okay then
+2020-10-24 23:50:13	-->	milkt_ (~debian@gateway/tor-sasl/milkt) has joined #qutebrowser
+2020-10-24 23:50:38	-->	derk0pf (~derk0pf@dynamic-046-114-039-188.46.114.pool.telefonica.de) has joined #qutebrowser
+2020-10-24 23:51:56	<--	milkt (~debian@gateway/tor-sasl/milkt) has quit (Ping timeout: 240 seconds)

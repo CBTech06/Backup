@@ -1,0 +1,28 @@
+2020-11-10 12:59:20	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #mupdf
+2020-11-10 12:59:20	--	Topic for #mupdf is "MuPDF development & discussion. Log: http://ghostscript.com/mupdfirclogs. Info: http://mupdf.com. Commercial enquiries: sales@artifex.com"
+2020-11-10 12:59:20	--	Topic set by Robin_Watts on Tue, 18 Apr 2017 13:16:47
+2020-11-10 12:59:20	--	Channel #mupdf: 36 nicks (5 ops, 0 voices, 31 normals)
+2020-11-10 12:59:20	--	URL for #mupdf: http://mupdf.com
+2020-11-10 12:59:22	--	Channel created on Mon, 29 Nov 2010 17:54:16
+2020-11-10 12:59:26	captainchris	hi everybody 
+2020-11-10 12:59:35	captainchris	anyone use zathura as pdf viewer 
+2020-11-10 13:14:36	-->	malc_ (~user@2a00:1370:8117:9bf8:96c6:91ff:fead:dcbf) has joined #mupdf
+2020-11-10 13:20:43	artifexirc-bot	<sebras> @ator for thr record: I believe I've reviewed and LGTMed everything on tor/master.
+2020-11-10 13:21:18	artifexirc-bot	<sebras> /me figures @ator has forgotten
+2020-11-10 13:22:14	 *	sebras figures @ator has forgotten
+2020-11-10 13:22:33	 *	malc_ is once again bedazzled by "i believe i did something in the past.." construction.
+2020-11-10 13:23:44	@sebras	hm I need to lookup how to do/me using Discord, apparently this was not the way...
+2020-11-10 13:24:24	@ator	@sebras okay, thank you!
+2020-11-10 13:26:08	@sebras	malc_: I believe I've reviewed everything, but maybe I've missed something..?
+2020-11-10 13:26:10	@ator	@sebras https://discordia.me/en/chat-commands lists /me
+2020-11-10 13:26:22	@sebras	if so I'd like ator to remind me.
+2020-11-10 13:27:02	artifexirc-bot	<ator> RAWR! (╯°□°）╯︵ ┻━┻
+2020-11-10 13:27:23	artifexirc-bot	<sebras> /me is not sure if it actually works...
+2020-11-10 13:27:33	malc_	sebras: that's not at all my initial interpretation, which was - i believe i did a, b, c OTOH maybe i'm approaching senility and really did nothing of the sort
+2020-11-10 13:27:40	artifexirc-bot	<ator> Oops. (╯°□°）╯︵ ┻━┻
+2020-11-10 13:27:53	artifexirc-bot	<ator> Oops. ┬─┬ ノ( ゜-゜ノ)
+2020-11-10 13:28:05	artifexirc-bot	<ator> The table is now back.
+2020-11-10 13:28:24	 *	artifexirc-bot <ator> is italic.
+2020-11-10 13:28:36	malc_	bloody kids with their kana and discord
+2020-11-10 13:28:37	@ator	that's all /me does
+2020-11-10 13:28:54	--	irc: disconnected from server

@@ -1,0 +1,34 @@
+# settings
+
+(GimpGegl-gimp-threshold-config "2018-06-02 12:37:46"
+    (time 1527935866)
+    (channel value)
+    (low 0.392157)
+    (high 1.000000))
+(GimpGegl-gimp-threshold-config "2018-06-02 12:30:52"
+    (time 1527935452)
+    (channel value)
+    (low 0.356863)
+    (high 1.000000))
+(GimpGegl-gimp-threshold-config "2018-05-30 22:06:09"
+    (time 1527710769)
+    (channel value)
+    (low 0.756863)
+    (high 1.000000))
+(GimpGegl-gimp-threshold-config "2018-05-30 21:46:36"
+    (time 1527709596)
+    (channel value)
+    (low 0.701961)
+    (high 1.000000))
+(GimpGegl-gimp-threshold-config "2018-05-30 21:02:48"
+    (time 1527706968)
+    (channel value)
+    (low 0.698039)
+    (high 1.000000))
+(GimpGegl-gimp-threshold-config "2018-05-30 21:01:34"
+    (time 1527706894)
+    (channel value)
+    (low 0.658824)
+    (high 1.000000))
+
+# end of settings

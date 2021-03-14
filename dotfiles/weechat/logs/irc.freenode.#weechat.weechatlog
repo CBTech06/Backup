@@ -1,0 +1,121 @@
+2020-01-24 21:18:59	-->	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #weechat
+2020-01-24 21:18:59	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 2.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2020-01-24 21:18:59	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 08 Dec 2019 10:32:15
+2020-01-24 21:18:59	--	Channel #weechat: 840 nicks (4 ops, 1 voice, 835 normals)
+2020-01-24 21:19:00	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2020-01-24 21:19:00	--	URL for #weechat: https://weechat.org/
+2020-01-24 21:19:01	--	Channel created on Sun, 26 Nov 2006 07:42:51
+2020-01-24 21:19:06	chris06	hello everybody 
+2020-01-24 21:19:06	--	#weechat: Cannot send to nick/channel
+2020-01-24 21:31:42	-->	palooka-jock (~mike@45.126.44.146) has joined #weechat
+2020-01-24 21:39:15	<--	yutayu (~pi@PPPa3814.e13.eacc.dti.ne.jp) has quit (Quit: WeeChat 2.7)
+2020-01-24 21:42:38	<--	rafasc (~rafasc@unaffiliated/rafasc) has quit (Ping timeout: 272 seconds)
+2020-01-24 21:43:15	-->	schne1der (~schneider@unaffiliated/schneider) has joined #weechat
+2020-01-24 21:46:26	<--	johnjay (~pi@38.120.10.99) has quit (Ping timeout: 272 seconds)
+2020-01-24 21:47:21	-->	rustbuckett (~downtime@2602:304:b226:4a99:d89b:5:2c98:5fab) has joined #weechat
+2020-01-24 21:49:21	<--	linarcx (~linarcx@151.241.40.227) has quit (Quit: WeeChat 2.7)
+2020-01-24 21:49:42	-->	linarcx (~linarcx@151.241.40.227) has joined #weechat
+2020-01-24 21:54:30	<--	palooka-jock (~mike@45.126.44.146) has quit (Quit: WeeChat 1.9.1)
+2020-01-24 21:55:29	-->	sfvm (~sfvm@37.228.248.157) has joined #weechat
+2020-01-24 21:59:36	-->	palooka-jock (~mike@45.126.44.146) has joined #weechat
+2020-01-24 22:00:10	-->	alexozer (~alexozer@72-0-150-238.tvc-ip.com) has joined #weechat
+2020-01-24 22:11:21	-->	yutayu (~pi@PPPa3901.e13.eacc.dti.ne.jp) has joined #weechat
+2020-01-24 22:14:47	-->	johnjay (~pi@38.120.10.99) has joined #weechat
+2020-01-24 22:15:12	-->	zerotech3 (~zerotech@BSN-182-127-196.dynamic.siol.net) has joined #weechat
+2020-01-24 22:28:11	-->	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #weechat
+2020-01-24 22:28:11	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 2.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2020-01-24 22:28:11	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 08 Dec 2019 10:32:15
+2020-01-24 22:28:11	--	Channel #weechat: 844 nicks (4 ops, 1 voice, 839 normals)
+2020-01-24 22:28:11	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2020-01-24 22:28:11	--	URL for #weechat: https://weechat.org/
+2020-01-24 22:28:13	--	Channel created on Sun, 26 Nov 2006 07:42:51
+2020-01-24 22:30:46	<--	chris06 (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has left #weechat
+2020-01-24 22:42:10	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #weechat
+2020-01-24 22:42:10	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 2.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2020-01-24 22:42:10	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 08 Dec 2019 10:32:15
+2020-01-24 22:42:10	--	Channel #weechat: 845 nicks (4 ops, 1 voice, 840 normals)
+2020-01-24 22:42:10	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2020-01-24 22:42:10	--	URL for #weechat: https://weechat.org/
+2020-01-24 22:42:13	--	Channel created on Sun, 26 Nov 2006 07:42:51
+2020-01-24 22:50:27	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #weechat
+2020-01-24 22:50:27	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 2.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2020-01-24 22:50:27	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 08 Dec 2019 10:32:15
+2020-01-24 22:50:27	--	Channel #weechat: 846 nicks (4 ops, 1 voice, 841 normals)
+2020-01-24 22:50:27	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2020-01-24 22:50:27	--	URL for #weechat: https://weechat.org/
+2020-01-24 22:50:30	--	Channel created on Sun, 26 Nov 2006 07:42:51
+2020-01-24 22:50:34	captainchris	hello everybody 
+2020-01-24 22:50:56	captainchris	how can i do to list all channels on freenode conatinaing python word 
+2020-01-24 22:51:14	captainchris	I try with list -re "python"
+2020-01-24 22:51:19	captainchris	but it doesn't work 
+2020-01-24 22:51:22	catbeard	captainchris: /msg alis list python
+2020-01-24 22:53:08	<--	SCHAPiE (~schapie@unaffiliated/schaap137) has quit (Excess Flood)
+2020-01-24 22:53:15	captainchris	ok thk and who why alis ?? 
+2020-01-24 22:53:38	catbeard	alis is specific to freenode
+2020-01-24 22:53:55	captainchris	oki 
+2020-01-24 22:54:00	captainchris	thank's you 
+2020-01-24 22:54:11	catbeard	np
+2020-01-24 22:57:17	<--	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has left #weechat ("bye all")
+2020-01-24 22:57:24	--	irc: disconnected from server
+2020-01-25 11:43:24	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #weechat
+2020-01-25 11:43:24	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 2.7 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2020-01-25 11:43:24	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sun, 08 Dec 2019 10:32:15
+2020-01-25 11:43:25	--	Channel #weechat: 828 nicks (4 ops, 1 voice, 823 normals)
+2020-01-25 11:43:25	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2020-01-25 11:43:25	--	URL for #weechat: https://weechat.org/
+2020-01-25 11:43:26	--	Channel created on Sun, 26 Nov 2006 07:42:51
+2020-01-25 11:43:29	captainchris	hello everybody
+2020-01-25 11:43:50	MrElendig	no idea where their docs for it is, if they even exists
+2020-01-25 11:44:45	coniptor	MrElendig: I'll check the link and see if I can find out how to get sasl going with bitlbee, or ask on their channel later on. ty. =)
+2020-01-25 11:44:57	-->	inky_0 (~inky_0@mob-5-90-73-219.net.vodafone.it) has joined #weechat
+2020-01-25 11:45:18	captainchris	It is possible to create a new windows for /msg alis list ??
+2020-01-25 11:45:32	grawity	if the server itself performs password validation, then there aren't many advantages in using SASL PLAIN over a server password
+2020-01-25 11:45:40	grawity	captainchris: /q[uery] alis list
+2020-01-25 11:46:28	<--	inky_0 (~inky_0@mob-5-90-73-219.net.vodafone.it) has quit (Max SendQ exceeded)
+2020-01-25 11:46:56	-->	inky_0 (~inky_0@mob-5-90-73-219.net.vodafone.it) has joined #weechat
+2020-01-25 11:49:06	<--	inky_0 (~inky_0@mob-5-90-73-219.net.vodafone.it) has quit (Remote host closed the connection)
+2020-01-25 11:49:50	Fear	how do you check if you are opped in weechat python?
+2020-01-25 11:52:24	-->	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has joined #weechat
+2020-01-25 11:54:56	@FlashCode	Fear: good question (I have the answer), I'll add an example in the scripting guide
+2020-01-25 11:57:05	<--	Vonter (~Vonter@124.123.107.73) has quit (Ping timeout: 265 seconds)
+2020-01-25 11:59:20	<--	puremouron (~ben@cpc82603-woki8-2-0-cust974.6-2.cable.virginm.net) has quit (Ping timeout: 240 seconds)
+2020-01-25 12:00:35	-->	Vonter (~Vonter@124.123.107.73) has joined #weechat
+2020-01-25 12:04:35	-->	feriman (~feriman@176.104.191.52) has joined #weechat
+2020-01-25 12:04:52	<--	dedowsdi (~dedowsdi@183.192.229.151) has quit (Ping timeout: 268 seconds)
+2020-01-25 12:05:37	-->	dedowsdi (~dedowsdi@183.192.229.151) has joined #weechat
+2020-01-25 12:07:34	<--	musr_ (~musr@gateway/tor-sasl/musr) has quit (Remote host closed the connection)
+2020-01-25 12:08:03	-->	musr_ (~musr@gateway/tor-sasl/musr) has joined #weechat
+2020-01-25 12:09:51	<--	blathijs (~matthijs@tika.stderr.nl) has quit (Ping timeout: 265 seconds)
+2020-01-25 12:11:19	-->	schne1der (~schneider@unaffiliated/schneider) has joined #weechat
+2020-01-25 12:15:25	<--	JayC (~JayC@gateway/tor-sasl/jayc) has quit (Remote host closed the connection)
+2020-01-25 12:15:48	-->	JayC (~JayC@gateway/tor-sasl/jayc) has joined #weechat
+2020-01-25 12:16:06	-->	blathijs (~matthijs@tika.stderr.nl) has joined #weechat
+2020-01-25 12:18:41	rxtx	FlashCode: When will the example be added?
+2020-01-25 12:19:21	<--	xcm (~xcm@ipa210.225.tellas.gr) has quit (Remote host closed the connection)
+2020-01-25 12:20:10	-->	xcm (~xcm@ipa210.225.tellas.gr) has joined #weechat
+2020-01-25 12:24:07	<--	andreas303 (~andreas@gateway/tor-sasl/andreas303) has quit (Remote host closed the connection)
+2020-01-25 12:24:32	Fear	would also be useful to have an example with /trigger
+2020-01-25 12:25:02	Fear	if efnet.channel.nick has prefix ...
+2020-01-25 12:29:28	-->	andreas303 (~andreas@gateway/tor-sasl/andreas303) has joined #weechat
+2020-01-25 12:30:01	-->	zerotech3 (~zerotech@BSN-182-127-196.dynamic.siol.net) has joined #weechat
+2020-01-25 12:30:09	rxtx	:D
+2020-01-25 12:30:30	-->	Exec1N (~nicexe@213.140.201.244) has joined #weechat
+2020-01-25 12:43:00	<--	Helenah (~s98259@unaffiliated/iveeee) has quit (Read error: Connection reset by peer)
+2020-01-25 12:44:21	<--	JayC (~JayC@gateway/tor-sasl/jayc) has quit (Ping timeout: 240 seconds)
+2020-01-25 12:44:22	-->	Helenah (~s98259@unaffiliated/iveeee) has joined #weechat
+2020-01-25 12:45:40	-->	JayC (~JayC@gateway/tor-sasl/jayc) has joined #weechat
+2020-01-25 12:50:21	-->	zst (~z@unaffiliated/zst) has joined #weechat
+2020-01-25 12:53:24	<--	plitter (~plitter@78.31.86.243) has quit (Quit: WeeChat 2.7)
+2020-01-25 12:56:54	-->	inky_0 (~inky_0@mob-5-90-73-219.net.vodafone.it) has joined #weechat
+2020-01-25 12:56:56	-->	plitter (~plitter@78.31.86.243) has joined #weechat
+2020-01-25 13:04:56	<--	inky_0 (~inky_0@mob-5-90-73-219.net.vodafone.it) has quit (Quit: Igloo IRC: https://iglooirc.com)
+2020-01-25 13:07:28	<--	spr0k3t (~spr0k3t@136.32.25.186) has quit (Quit: WeeChat 2.7)
+2020-10-04 20:16:40	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #weechat
+2020-10-04 20:16:40	--	Topic for #weechat is "https://weechat.org/ | Latest stable version: 2.9 | English support channel, *ONLY* about WeeChat software | Please read docs before asking! | Bug reports are welcome ONLY for latest stable or devel | Off-topic chan: #weechat-offtopic | Fingerprint: A9AB 5AB7 78FA 5C35 22FD 0378 F82F 4B16 DEC4 08F8"
+2020-10-04 20:16:40	--	Topic set by FlashCode (~FlashCode@weechat.org) on Sat, 18 Jul 2020 14:37:18
+2020-10-04 20:16:40	--	Channel #weechat: 824 nicks (4 ops, 1 voice, 819 normals)
+2020-10-04 20:16:40	--	PvNotice(ChanServ): Welcome to WeeChat english support channel. IMPORTANT: you *MUST* have read docs and FAQ before asking something on this channel! Read them at: https://weechat.org/doc/
+2020-10-04 20:16:40	--	URL for #weechat: https://weechat.org/
+2020-10-04 20:16:42	--	Channel created on Sun, 26 Nov 2006 07:42:51
+2020-10-04 20:16:45	captainchris	hi everybody 
+2020-10-04 20:19:36	--	irc: disconnected from server

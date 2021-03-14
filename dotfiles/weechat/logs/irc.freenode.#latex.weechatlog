@@ -1,0 +1,282 @@
+2020-04-07 20:58:46	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #latex
+2020-04-07 20:58:46	--	Topic for #latex is "Please provide a minimal working example | FAQ: http://texfaq.org | Ask donald-bot about  ,,lshort | For previews, ask donald-bot about ,,texbot | listings package for source code. Due to spam only registered users can speak"
+2020-04-07 20:58:46	--	Topic set by mh_le (~Mads@unaffiliated/mhle/x-0173978) on Thu, 27 Feb 2020 19:38:49
+2020-04-07 20:58:47	--	Channel #latex: 275 nicks (1 op, 0 voices, 274 normals)
+2020-04-07 20:58:47	--	PvNotice(ChanServ): Hi and Welcome to #LaTeX! Before you ask, please read the FAQ at http://faq.tug.org and the documentation at http://www.tug.org/begin.html
+2020-04-07 20:58:48	--	Channel created on Sun, 26 Nov 2006 07:42:42
+2020-04-07 20:58:51	captainchris	hi everybody 
+2020-04-07 21:08:47	<--	raf (~soyyo@unaffiliated/rafael-cunha/x-5167236) has quit (Remote host closed the connection)
+2020-04-07 21:08:52	captainchris	anyone is on linux ?? 
+2020-04-07 21:08:53	donald-bot	Yes
+2020-04-07 21:14:45	yushyin	someone is for sure
+2020-04-07 21:15:00	<--	PJBoy (~PJBoy@unaffiliated/pjboy) has quit (Killed (kornbluth.freenode.net (Nickname regained by services)))
+2020-04-07 21:15:07	-->	PJBoy (~PJBoy@unaffiliated/pjboy) has joined #latex
+2020-04-07 21:21:40	 *	ArthurStrong on Linux
+2020-04-07 21:26:23	-->	gareppa (~gareppa@unaffiliated/gareppa) has joined #latex
+2020-04-07 21:29:27	<--	gareppa (~gareppa@unaffiliated/gareppa) has quit (Remote host closed the connection)
+2020-04-07 21:38:26	captainchris	it ispossible to insert latex code like with C++
+2020-04-07 21:39:00	glyj	captainchris: ?  what do you mean ?
+2020-04-07 21:39:12	glyj	,,minted ?
+2020-04-07 21:39:13	donald-bot	glyj: hmm, minted is [0] an alternative to the listings package for neatly typesetting source code in LaTeX. Pros: Typesetting colored code is easier and more flexible. Cons: Requires the external Python tool "Pygments" ..[Type ,more]
+2020-04-07 21:39:15	captainchris	I want to create doc about latex for me 
+2020-04-07 21:39:31	glyj	,more
+2020-04-07 21:39:31	donald-bot	[1] hard to install on windows. See http://tex.stackexchange.com/questions/23458/how-to-install-syntax-highlight-package-minted-on-windows-7
+2020-04-07 21:39:34	captainchris	And i want to colorize latex code 
+2020-04-07 21:39:47	glyj	minted does
+2020-04-07 21:39:58	glyj	syntaxic colouring
+2020-04-07 21:41:28	glyj	captainchris:
+2020-04-07 21:41:43	captainchris	thank's
+2020-04-07 21:42:09	captainchris	I'm beginner. I started latex since this afternoon 
+2020-04-07 21:42:16	glyj	oh
+2020-04-07 21:42:30	captainchris	I'm using wikibooks do you have good website for latex tuto 
+2020-04-07 21:42:52	glyj	you'll have to add the option --shell-escape when compiling your document
+2020-04-07 21:43:54	glyj	I learnt with the ,lshort  but I don't think this is the best way :)
+2020-04-07 21:44:02	glyj	,lshort
+2020-04-07 21:44:03	donald-bot	From memory, lshort is a (Not So) Short Introduction to LaTeX at http://tobi.oetiker.ch/lshort/
+2020-04-07 21:47:08	<--	hax-scramper (~hax-scram@188.123.231.36) has quit (Ping timeout: 256 seconds)
+2020-04-07 21:48:43	-->	hax-scramper (~hax-scram@188.123.231.36) has joined #latex
+2020-04-07 21:56:57	<--	whatev3r (~whatevr@114.199.146.68) has quit (Remote host closed the connection)
+2020-04-07 22:02:10	<--	miskatonic (~user@2a02:810d:9c80:2823:200:ff:fe00:1f) has quit (Quit: ERC (IRC client for Emacs 24.5.1))
+2020-04-07 22:03:41	-->	derk0pf_ (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has joined #latex
+2020-04-07 22:06:28	<--	derk0pf (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-04-07 22:09:45	<--	albel727 (~albel727@unaffiliated/albel727) has quit (Ping timeout: 264 seconds)
+2020-04-07 22:15:43	-->	albel727 (~albel727@unaffiliated/albel727) has joined #latex
+2020-04-07 22:17:39	-->	jamesjames (~ilian@169-30-133-95.pool.ukrtel.net) has joined #latex
+2020-04-07 22:23:53	-->	adam4567 (~user@121.98.229.241) has joined #latex
+2020-04-07 22:28:19	adam4567	On a recent Ubuntu I have a working texlive full installation. Can I simply install Lyx now? With its PPA I guess, rather than simply apt install ..
+2020-04-07 22:29:13	captainchris	adam why you do not edit your tex files with vim ?
+2020-04-07 22:29:23	-->	whatev3r (~whatevr@114.199.146.68) has joined #latex
+2020-04-07 22:30:25	adam4567	a little tired of struggling with org-mode, to be honest
+2020-04-07 22:30:40	adam4567	Although, to be fair, org-mode has been quite good.
+2020-04-07 22:32:14	captainchris	vim is awesome 
+2020-04-07 22:32:29	captainchris	you can edit in live with vim-latexèlive-preview
+2020-04-07 22:32:54	glyj	ouch .... emacs/AucTeX  is not bad ^^
+2020-04-07 22:40:44	adam4567	Lyx was recommended, think I had it a while back. OK. Thanks glyj haven't tried AucTex will take a look
+2020-04-07 22:41:46	yushyin	by all means, if you like lyx use it, if you like texstudio use it
+2020-04-07 22:43:09	glyj	,,auctex
+2020-04-07 22:43:09	donald-bot	Try: preview-latex reftex
+2020-04-07 22:47:28	-->	SomeT (~SomeT@unaffiliated/somet) has joined #latex
+2020-04-07 22:47:42	SomeT	how do I reduce the spacing in an enumerate list?
+2020-04-07 22:47:53	SomeT	`\itemsep -0em`
+2020-04-07 22:47:56	SomeT	I try that but it dont work
+2020-04-07 22:48:03	yushyin	,,enumitem
+2020-04-07 22:48:03	donald-bot	enumitem -- a package that provides user control over the layout of the three basic list environments: enumerate, itemize and description: http://ctan.org/pkg/enumitem
+2020-04-07 22:49:19	SomeT	thx
+2020-04-07 22:51:55	SomeT	when I do
+2020-04-07 22:51:56	SomeT	\itemsep -0em
+2020-04-07 22:51:59	SomeT	with that package
+2020-04-07 22:52:01	SomeT	it still don't wokr
+2020-04-07 22:53:13	yushyin	,,mwe
+2020-04-07 22:53:13	donald-bot	A minimal working example should be as short as possible, covering only the code necessary (while still being a complete document) to reproduce the problem. See  ..[Type ,more]
+2020-04-07 22:53:40	SomeT	mwe?
+2020-04-07 22:53:40	donald-bot	A minimal working example should be as short as possible, covering only the code necessary (while still being a complete document) to reproduce the problem. See  ..[Type ,more]
+2020-04-07 22:53:47	glyj	,,ecm
+2020-04-07 22:53:47	donald-bot	I heard ecm is a complete example (from \documentclass to \end{document}) reproducing the problem in as little code as possible. Paste it at http://pastebin.tlhiv.org. If your LaTeX aborts with errors, paste them too.
+2020-04-07 22:53:49	SomeT	```{\textbf{Steps:}}
+2020-04-07 22:53:49	SomeT	\begin{enumerate}
+2020-04-07 22:53:49	SomeT	\itemsep -0em
+2020-04-07 22:53:49	SomeT	\item With the IP address of
+2020-04-07 22:53:49	SomeT	\item
+2020-04-07 22:53:49	SomeT	\end{enumerate}
+2020-04-07 22:53:49	SomeT	```
+2020-04-07 22:53:55	SomeT	done
+2020-04-07 22:53:59	yushyin	please provide a ,,mwe
+2020-04-07 22:53:59	donald-bot	A minimal working example should be as short as possible, covering only the code necessary (while still being a complete document) to reproduce the problem. See  ..[Type ,more]
+2020-04-07 22:54:25	yushyin	please read the documentation of enumitem, you used it wrong
+2020-04-07 22:55:42	<--	derk0pf_ (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2020-04-07 22:56:05	yushyin	that's not a complete example, it does not compile.
+2020-04-07 22:58:30	SomeT	ok
+2020-04-07 22:58:32	<--	SomeT (~SomeT@unaffiliated/somet) has quit
+2020-04-07 22:58:35	-->	derk0pf (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has joined #latex
+2020-04-07 23:00:51	<--	T0m1s (~tomita.si@n49-194-11-162.mas3.nsw.optusnet.com.au) has quit (Ping timeout: 265 seconds)
+2020-04-07 23:03:13	<--	derk0pf (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-04-07 23:07:02	<--	justanotheruser (~justanoth@unaffiliated/justanotheruser) has quit (Ping timeout: 256 seconds)
+2020-04-07 23:16:32	<--	whatev3r (~whatevr@114.199.146.68) has quit (Remote host closed the connection)
+2020-04-07 23:25:51	-->	justanotheruser (~justanoth@unaffiliated/justanotheruser) has joined #latex
+2020-04-07 23:28:58	-->	kristian_on_linu (~quassel@5cf3fd20.rev.dansknet.dk) has joined #latex
+2020-04-07 23:29:45	-->	T0m1s (~tomita.si@n49-194-11-162.mas3.nsw.optusnet.com.au) has joined #latex
+2020-04-07 23:35:27	-->	derk0pf (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has joined #latex
+2020-04-07 23:36:53	<--	T0m1s (~tomita.si@n49-194-11-162.mas3.nsw.optusnet.com.au) has quit (Ping timeout: 240 seconds)
+2020-04-07 23:40:13	<--	derk0pf (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2020-04-07 23:43:27	-->	cchristiansen (~christian@n114-74-148-12.sbr2.nsw.optusnet.com.au) has joined #latex
+2020-04-07 23:43:38	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.8)
+2020-04-07 23:46:18	<--	barteks2x (~barteks2x@c138-12.icpnet.pl) has quit (Ping timeout: 250 seconds)
+2020-04-07 23:47:32	<--	Tenobrus (~Tenobrus@c-24-7-57-230.hsd1.ca.comcast.net) has quit (Quit: Out.)
+2020-04-07 23:48:08	-->	Tenobrus (~Tenobrus@c-24-7-57-230.hsd1.ca.comcast.net) has joined #latex
+2020-04-07 23:48:10	<--	Tenobrus (~Tenobrus@c-24-7-57-230.hsd1.ca.comcast.net) has quit (Client Quit)
+2020-04-07 23:48:58	-->	Tenobrus (~Tenobrus@c-24-7-57-230.hsd1.ca.comcast.net) has joined #latex
+2020-04-07 23:51:03	-->	T0m1s (~tomita.si@n49-194-11-162.mas3.nsw.optusnet.com.au) has joined #latex
+2020-04-08 20:46:27	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #latex
+2020-04-08 20:46:27	--	Topic for #latex is "Please provide a minimal working example | FAQ: http://texfaq.org | Ask donald-bot about  ,,lshort | For previews, ask donald-bot about ,,texbot | listings package for source code. Due to spam only registered users can speak"
+2020-04-08 20:46:27	--	Topic set by mh_le (~Mads@unaffiliated/mhle/x-0173978) on Thu, 27 Feb 2020 19:38:49
+2020-04-08 20:46:27	--	Channel #latex: 275 nicks (1 op, 0 voices, 274 normals)
+2020-04-08 20:46:27	--	PvNotice(ChanServ): Hi and Welcome to #LaTeX! Before you ask, please read the FAQ at http://faq.tug.org and the documentation at http://www.tug.org/begin.html
+2020-04-08 20:46:29	--	Channel created on Sun, 26 Nov 2006 07:42:42
+2020-04-08 20:46:30	captainchris	hi everybody 
+2020-04-08 20:46:44	yushyin	hi captainchris
+2020-04-08 20:47:00	captainchris	it is possible to create a second page. I tried with \newpage and \pagebreak 
+2020-04-08 20:47:06	captainchris	but it doesn't work 
+2020-04-08 20:49:42	yushyin	try \pagebreak[4] or \clearpage
+2020-04-08 20:51:55	captainchris	I have no page it show the suit on my title on the first page 
+2020-04-08 20:53:14	yushyin	Then I don't understand your question.
+2020-04-08 20:55:06	captainchris	https://postimg.cc/LJXcF4YS
+2020-04-08 20:55:21	captainchris	Look in the top right corner 
+2020-04-08 20:56:45	captainchris	I would like page 1 and page 2
+2020-04-08 21:00:16	yushyin	well, funny :D
+2020-04-08 21:00:23	yushyin	pavonia: ^
+2020-04-08 21:01:38	-->	glyj (~glyj@anantes-650-1-208-109.w2-8.abo.wanadoo.fr) has joined #latex
+2020-04-08 21:03:09	captainchris	yushyin: yes it's funny
+2020-04-08 21:04:11	pavonia	Could you paste a ,,mwe,,?
+2020-04-08 21:04:11	donald-bot	A minimal working example should be as short as possible, covering only the code necessary (while still being a complete document) to reproduce the problem. See  ..[Type ,more]
+2020-04-08 21:04:27	glyj	,,ecm
+2020-04-08 21:04:27	donald-bot	ecm is a complete example (from \documentclass to \end{document}) reproducing the problem in as little code as possible. Paste it at http://pastebin.tlhiv.org. If your LaTeX aborts with errors, paste them too.
+2020-04-08 21:04:49	captainchris	pavonia: sorry what is ,,mwe,, I started latex yesterday 
+2020-04-08 21:04:49	donald-bot	A minimal working example should be as short as possible, covering only the code necessary (while still being a complete document) to reproduce the problem. See  ..[Type ,more]
+2020-04-08 21:05:19	pavonia	What donald-bot said
+2020-04-08 21:05:33	captainchris	Ok sorry I didn't see 
+2020-04-08 21:11:53	captainchris	On my new example it is working
+2020-04-08 21:19:15	captainchris	Ok sorry it is working 
+2020-04-08 21:19:39	captainchris	and I have another question  do you see listing C++, I coloured it in gray 
+2020-04-08 21:19:53	captainchris	but i have white line on each lines, did you see it ? 
+2020-04-08 21:20:09	iatrogenic	pavonia: I have not used that command at all
+2020-04-08 21:21:29	pavonia	Looks like we also need a ,,mwe,, here then
+2020-04-08 21:21:30	donald-bot	A minimal working example should be as short as possible, covering only the code necessary (while still being a complete document) to reproduce the problem. See  ..[Type ,more]
+2020-04-08 21:23:26	captainchris	ok
+2020-04-08 21:27:52	captainchris	https://pastebin.com/dkbFGMzp
+2020-04-08 21:28:06	captainchris	minimal example juste with listing code 
+2020-04-08 21:37:45	pavonia	captainchris: What's the issue with that?
+2020-04-08 21:47:35	captainchris	I have white line between each lines
+2020-04-08 21:49:15	-->	miskatonic (~user@2a02:810d:9c80:2823:200:ff:fe00:1f) has joined #latex
+2020-04-08 21:50:28	<--	whatev3r (~whatevr@114.199.146.68) has quit (Remote host closed the connection)
+2020-04-08 21:51:46	pavonia	Try playing with basicstyle=\linespread{1.05} or some other values
+2020-04-08 21:52:03	<--	AT-x310 (~AT-x310@abordeaux-651-1-96-36.w90-5.abo.wanadoo.fr) has quit (Quit: See you soon :))
+2020-04-08 21:55:08	<--	fledermaus (~vivek@78.32.176.249) has quit (Ping timeout: 256 seconds)
+2020-04-08 21:58:53	<--	leotaku (~leotaku@046075067013.atmpu0011.highway.a1.net) has quit (Ping timeout: 256 seconds)
+2020-04-08 22:11:56	-->	leotaku (~leotaku@046075067013.atmpu0011.highway.a1.net) has joined #latex
+2020-04-08 22:13:36	<--	contrapunctus (ba67a7fb31@gateway/shell/jabberfr/x-ebdgnxaxvkdhsnbt) has left #latex
+2020-04-08 22:16:17	<--	Codaraxis_ (Codaraxis@gateway/vpn/mullvad/codaraxis) has quit (Remote host closed the connection)
+2020-04-08 22:17:41	-->	Codaraxis_ (Codaraxis@gateway/vpn/mullvad/codaraxis) has joined #latex
+2020-04-08 22:22:35	<--	derk0pf_ (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has quit (Ping timeout: 250 seconds)
+2020-04-08 22:30:33	captainchris	Anyone uses listing, I can't have a good font for code
+2020-04-08 22:31:04	captainchris	courier is uggly, I use sffamily ttfamily 
+2020-04-08 22:32:13	<--	miskatonic (~user@2a02:810d:9c80:2823:200:ff:fe00:1f) has quit (Quit: ERC (IRC client for Emacs 24.5.1))
+2020-04-08 22:33:39	aliss	I give up
+2020-04-08 22:34:18	aliss	screw LaTeX, WordTeX rules: https://youtu.be/jlX_pThh7z8
+2020-04-08 22:34:55	glyj	TeXmacs is not bad either ,,texmacs
+2020-04-08 22:34:55	donald-bot	Tomorrow will be cancelled due to lack of interest.
+2020-04-08 22:35:08	glyj	!g texmacs
+2020-04-08 22:36:42	glyj	captainchris:  why don't you use minted ?
+2020-04-08 22:36:48	glyj	,,minted
+2020-04-08 22:36:48	donald-bot	I think minted is [0] an alternative to the listings package for neatly typesetting source code in LaTeX. Pros: Typesetting colored code is easier and more flexible. Cons: Requires the external Python tool "Pygments" ..[Type ,more]
+2020-04-08 22:37:47	glyj	captainchris: https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted
+2020-04-08 22:38:41	<--	aliss (~ypm@170.red-83-55-36.dynamicip.rima-tde.net) has quit (Quit: WeeChat 2.8)
+2020-04-08 22:38:58	-->	aliss (~ypm@170.red-83-55-36.dynamicip.rima-tde.net) has joined #latex
+2020-04-08 22:45:07	-->	whatev3r (~whatevr@114.199.146.68) has joined #latex
+2020-04-08 22:45:47	<--	leotaku (~leotaku@046075067013.atmpu0011.highway.a1.net) has quit (Quit: ZNC 1.7.5 - https://znc.in)
+2020-04-08 22:46:22	<--	stroibe974 (~sebastien@165.169.130.167) has quit (Quit: bye bye !)
+2020-04-08 22:46:37	-->	leotaku (~leotaku@046075067013.atmpu0011.highway.a1.net) has joined #latex
+2020-04-08 22:53:18	-->	derk0pf (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has joined #latex
+2020-04-08 22:55:25	<--	aliss (~ypm@170.red-83-55-36.dynamicip.rima-tde.net) has quit (Quit: reboot)
+2020-04-08 22:55:26	-->	fledermaus (~vivek@78.32.176.249) has joined #latex
+2020-04-08 22:58:06	-->	aliss (~ypm@170.red-83-55-36.dynamicip.rima-tde.net) has joined #latex
+2020-04-08 22:58:24	captainchris	glyj: It doesn't work
+2020-04-08 22:58:27	<--	derk0pf (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-04-08 22:58:39	captainchris	I have installed minted with pacman (Im on arch)
+2020-04-08 22:59:19	glyj	you have to install python with pygments
+2020-04-08 22:59:32	yushyin	community/python-pygments
+2020-04-08 23:00:32	glyj	dont forget the --shel-escape flag to allow the external call
+2020-04-08 23:00:43	glyj	--shell-escape
+2020-04-08 23:00:51	glyj	,,shell-escape
+2020-04-08 23:00:51	donald-bot	Someone is speaking well of you.
+2020-04-08 23:00:51	donald-bot	How unusual!
+2020-04-08 23:00:58	glyj	,,--shell-escape
+2020-04-08 23:00:58	donald-bot	Chicken Little was right.
+2020-04-08 23:01:03	captainchris	glyj: https://i.ibb.co/9hvQsvM/2020-04-08-225848-2560x1024-scrot.png
+2020-04-08 23:01:15	yushyin	and it won't change the font, it only does fancy coloring
+2020-04-08 23:01:18	captainchris	yes python-pigment installed with minted 
+2020-04-08 23:02:34	glyj	when compiling add --shell-escape to the lualatex command (if you are using lualatex engine )
+2020-04-08 23:04:02	yushyin	reading the doc does help in such cases
+2020-04-08 23:04:06	yushyin	:P
+2020-04-08 23:04:15	pavonia	It looks like some catcode messing is going on
+2020-04-08 23:05:28	aliss	glyj: I was joking
+2020-04-08 23:05:35	aliss	I'm not droping LaTeX
+2020-04-08 23:06:00	glyj	aliss: ^^
+2020-04-08 23:06:07	yushyin	you are free to use whatever you want, even wordtex!
+2020-04-09 19:13:47	-->	captainchris (~captainch@2a01:cb1d:342:4200:d0c2:2f:4ca:12b) has joined #latex
+2020-04-09 19:13:47	--	Topic for #latex is "Please provide a minimal working example | FAQ: http://texfaq.org | Ask donald-bot about  ,,lshort | For previews, ask donald-bot about ,,texbot | listings package for source code. Due to spam only registered users can speak"
+2020-04-09 19:13:47	--	Topic set by mh_le (~Mads@unaffiliated/mhle/x-0173978) on Thu, 27 Feb 2020 19:38:49
+2020-04-09 19:13:47	--	Channel #latex: 273 nicks (1 op, 0 voices, 272 normals)
+2020-04-09 19:13:47	--	PvNotice(ChanServ): Hi and Welcome to #LaTeX! Before you ask, please read the FAQ at http://faq.tug.org and the documentation at http://www.tug.org/begin.html
+2020-04-09 19:13:49	--	Channel created on Sun, 26 Nov 2006 07:42:42
+2020-04-09 19:13:50	captainchris	hi
+2020-04-09 19:15:26	mh_le	hi
+2020-04-09 19:16:21	contrapunctus	hi
+2020-04-09 19:25:12	-->	kristian_on_linu (~quassel@5cf3fd20.rev.dansknet.dk) has joined #latex
+2020-04-09 19:28:26	mh_le	does anyone know where mint stores the package files?
+2020-04-09 19:37:16	-->	raimis (~user@mx-ll-183.89.2-73.dynamic.3bb.co.th) has joined #latex
+2020-04-09 19:42:31	<--	raimis (~user@mx-ll-183.89.2-73.dynamic.3bb.co.th) has quit (Remote host closed the connection)
+2020-04-09 19:44:49	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Read error: Connection reset by peer)
+2020-04-09 19:45:12	<--	kaste (~kaste@gaf/kaste) has quit (Ping timeout: 265 seconds)
+2020-04-09 19:45:29	-->	kaste (~kaste@gaf/kaste) has joined #latex
+2020-04-09 19:46:49	captainchris	I installed minted. It is possible to add more keyword in minted. like command line keyword ? like convert feh ...
+2020-04-09 19:48:21	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 19:48:27	yushyin	mh_le: I can take a look later but I'm unfamiliar with memoir. My guess it, it is possible with some \phantom{} space, somehow. :D
+2020-04-09 19:49:07	aliss	hi, is there any reason why BibTool isn't in TeXLive? https://ctan.org/pkg/bibtool
+2020-04-09 19:49:46	yushyin	captainchris: this is going to be hard, unless you know python and know about lexer. You will need to write your own lexer. https://pygments.org/docs/lexerdevelopment/
+2020-04-09 19:52:23	captainchris	ok 
+2020-04-09 19:52:46	captainchris	I will use listing for that comments and minted for other language
+2020-04-09 19:53:15	mh_le	yushyin: thanks :)
+2020-04-09 20:00:19	<--	jamesjames (~ilian@99-4-133-95.pool.ukrtel.net) has quit (Ping timeout: 256 seconds)
+2020-04-09 20:01:26	<--	frrs (uid130725@gateway/web/irccloud.com/x-himcdycyyngsyadl) has quit (Quit: Connection closed for inactivity)
+2020-04-09 20:10:01	<--	fledermaus (~vivek@78.32.176.249) has quit (Ping timeout: 256 seconds)
+2020-04-09 20:11:09	-->	fledermaus (~vivek@78.32.176.249) has joined #latex
+2020-04-09 20:12:24	-->	dale_ (~dale@unaffiliated/dale) has joined #latex
+2020-04-09 20:12:50	--	dale_ is now known as dale
+2020-04-09 20:19:05	<--	fledermaus (~vivek@78.32.176.249) has quit (Ping timeout: 256 seconds)
+2020-04-09 20:24:54	-->	uks (~uksio@p200300CB1F04C70E946014833956DACB.dip0.t-ipconnect.de) has joined #latex
+2020-04-09 20:26:46	<--	uksio (~uksio@p200300CB1F04C73390F704031EE61E54.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2020-04-09 20:32:19	mh_le	yushyin: I solved it
+2020-04-09 20:32:22	-->	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has joined #latex
+2020-04-09 21:03:55	<--	stroibe974 (~sebastien@165.169.130.167) has quit (Quit: bye bye !)
+2020-04-09 21:04:50	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Ping timeout: 260 seconds)
+2020-04-09 21:07:28	yushyin	nice and you also got an answer on stackexchange
+2020-04-09 21:14:06	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 21:16:16	<--	derk0pf_ (~derk0pf@p5B2E500C.dip0.t-ipconnect.de) has quit (Quit: Lost terminal)
+2020-04-09 21:22:16	mh_le	yushyin: yeah that turned out to solve the problem is muhc more elegant way
+2020-04-09 21:34:10	-->	jamesjames (~ilian@32-37-133-95.pool.ukrtel.net) has joined #latex
+2020-04-09 21:34:13	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Ping timeout: 260 seconds)
+2020-04-09 21:35:25	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 21:39:49	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Ping timeout: 258 seconds)
+2020-04-09 21:44:16	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 21:57:18	<--	whatev3r (~whatevr@114.199.146.68) has quit (Remote host closed the connection)
+2020-04-09 22:07:46	<--	madage (~madage@gateway/tor-sasl/madage) has quit (Remote host closed the connection)
+2020-04-09 22:08:19	-->	madage (~madage@gateway/tor-sasl/madage) has joined #latex
+2020-04-09 22:11:39	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Ping timeout: 265 seconds)
+2020-04-09 22:13:23	captainchris	to use bicolor skin on tcolorbox you need to add package ?? 
+2020-04-09 22:13:23	donald-bot	No
+2020-04-09 22:15:32	captainchris	I used tutorial but bicolor doesn't work 
+2020-04-09 22:15:38	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 22:15:47	captainchris	I have frame color 
+2020-04-09 22:16:08	captainchris	and body colback 
+2020-04-09 22:16:18	captainchris	but no colbacklower 
+2020-04-09 22:18:50	-->	cchristiansen (~christian@n114-74-148-12.sbr2.nsw.optusnet.com.au) has joined #latex
+2020-04-09 22:20:09	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Ping timeout: 240 seconds)
+2020-04-09 22:22:41	yushyin	https://paste.xinu.at/m-1tr/
+2020-04-09 22:24:15	yushyin	(I just copy-pasted the example in the manual about colbacklower)
+2020-04-09 22:27:57	captainchris	yushyin: thank's
+2020-04-09 22:28:13	captainchris	i didn't use /tcbuselibrary...
+2020-04-09 22:36:08	mh_le	yushyin: it was even the author of memoir that replied
+2020-04-09 22:40:50	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 22:47:05	-->	ArthurStrong (~ArthurStr@slow.wreckage.volia.net) has joined #latex
+2020-04-09 22:49:58	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Ping timeout: 256 seconds)
+2020-04-09 22:55:09	<--	rkta (~kt@62.113.246.111) has quit (Ping timeout: 265 seconds)
+2020-04-09 23:00:04	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 23:01:20	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Excess Flood)
+2020-04-09 23:04:34	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex
+2020-04-09 23:14:15	<--	cfoch (uid153227@gateway/web/irccloud.com/x-dttndhkkpwdajllg) has quit (Quit: Connection closed for inactivity)
+2020-04-09 23:31:16	<--	linux_dream (~isaac@unaffiliated/linux-dream/x-5839402) has quit (Quit: WeeChat 2.8)
+2020-04-09 23:32:51	<--	AT-x310 (~AT-x310@abordeaux-651-1-96-36.w90-5.abo.wanadoo.fr) has quit (Ping timeout: 265 seconds)
+2020-04-09 23:34:43	-->	AT-x310 (~AT-x310@abordeaux-651-1-96-36.w90-5.abo.wanadoo.fr) has joined #latex
+2020-04-09 23:37:35	<--	ArthurStrong (~ArthurStr@slow.wreckage.volia.net) has quit (Quit: leaving)
+2020-04-09 23:49:06	<--	tpaper (~enrico@unaffiliated/paper8) has quit (Ping timeout: 265 seconds)
+2020-04-09 23:49:28	-->	tpaper (~enrico@unaffiliated/paper8) has joined #latex

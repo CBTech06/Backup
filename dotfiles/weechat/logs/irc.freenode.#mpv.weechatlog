@@ -1,0 +1,83 @@
+2020-11-15 21:03:25	-->	captainchris (~captainch@2001:861:3181:3540:6e87:88ed:4608:282c) has joined #mpv
+2020-11-15 21:03:25	--	Topic for #mpv is "mpv - video/audio player | http://mpv.io | http://mpv.io/manual/ | Dev.: #mpv-devel | Offtopic: #mpv-offtopic | Don't ask to ask | List of releases and release notes: https://github.com/mpv-player/mpv/releases | https://github.com/mpv-player/mpv/wiki/FAQ"
+2020-11-15 21:03:25	--	Topic set by wm4 (~wm4@ns379744.ip-5-196-70.eu) on Thu, 04 May 2017 10:00:25
+2020-11-15 21:03:25	--	Channel #mpv: 373 nicks (0 ops, 0 voices, 373 normals)
+2020-11-15 21:03:27	--	Channel created on Sun, 19 Aug 2012 18:05:28
+2020-11-15 21:03:31	captainchris	Hi all
+2020-11-15 21:04:36	captainchris	I have high CPU usage when I watch movie on mpv. 130 / 140% and after a momment my computer bug 
+2020-11-15 21:07:10	letty	captainchris i have that problem sometimes, it's caused by my computer being very slow
+2020-11-15 21:07:44	garoto	lol
+2020-11-15 21:09:55	captainchris	I have a old intel I5 with 8G of ram. It's not a basic computer 
+2020-11-15 21:10:17	garoto	"old intel i5" means nothing
+2020-11-15 21:11:08	garoto	I have an "old intel i5" as well, and it can decode 1440p HEVC alright
+2020-11-15 21:11:50	captainchris	Yes so why I have mpv problem. I have a lightweight system with i3wm and nothing 
+2020-11-15 21:12:09	captainchris	I don't understand why mpv use high cpu like that 
+2020-11-15 21:13:22	garoto	my point being there are many "old intel i5" potatoes around, so unless you clarify your specific HW combo, it's all a mistery
+2020-11-15 21:17:02	artefact	also you might want to specify what vo, decoder you are using and what file you're playing (codec, resolution, fps, profile...)
+2020-11-15 21:17:05	earnestly	captainchris: Decoding a non-hardware accelerated codec will do that, especially at 1080p60
+2020-11-15 21:18:05	captainchris	Ok i use vo=xv I think that reduce cpu usage 
+2020-11-15 21:18:20	captainchris	I need to change my graphic card to 
+2020-11-15 21:18:20	 *	earnestly raises eyebrow
+2020-11-15 21:18:39	artefact	isn't xv crap?
+2020-11-15 21:18:53	earnestly	Yes lol
+2020-11-15 21:19:10	durandal_1707	2020, and people still use xv....
+2020-11-15 21:19:53	earnestly	Well it ought to not produce lower cpu usage, then
+2020-11-15 21:19:55	artefact	maybe with 2005 hardware
+2020-11-15 21:20:04	captainchris	It's on github on Sytsem requirement 
+2020-11-15 21:20:30	captainchris	For the first time I read you say that i said a crap ;(
+2020-11-15 21:20:33	durandal_1707	that is some sort of minimal and poor one
+2020-11-15 21:20:56	earnestly	captainchris: lscpu will tell you the full cpu model name
+2020-11-15 21:21:00	earnestly	Tell the fine people here
+2020-11-15 21:21:42	artefact	or $(head -n5 /proc/cpuinfo)
+2020-11-15 21:23:58	-->	jkwnki (~jkwnki@p200300cd473d6c001e1bb5fffe7a47f7.dip0.t-ipconnect.de) has joined #mpv
+2020-12-06 13:04:54	-->	captainchris (~captainch@2001:861:3181:3540:db8a:e709:4579:e94e) has joined #mpv
+2020-12-06 13:04:54	--	Topic for #mpv is "mpv - video/audio player | http://mpv.io | http://mpv.io/manual/ | Dev.: #mpv-devel | Offtopic: #mpv-offtopic | Don't ask to ask | List of releases and release notes: https://github.com/mpv-player/mpv/releases | https://github.com/mpv-player/mpv/wiki/FAQ"
+2020-12-06 13:04:54	--	Topic set by wm4 (~wm4@ns379744.ip-5-196-70.eu) on Thu, 04 May 2017 10:00:25
+2020-12-06 13:04:54	--	Channel #mpv: 372 nicks (0 ops, 0 voices, 372 normals)
+2020-12-06 13:04:56	--	Channel created on Sun, 19 Aug 2012 18:05:28
+2020-12-06 13:04:59	captainchris	hi everybody 
+2020-12-06 13:06:08	<--	kevmitch (~kevmitch@S0106b0be766ec6dd.vc.shawcable.net) has quit (Remote host closed the connection)
+2020-12-06 13:09:47	avih	like, the technicality of a programming language is not enough on its own, and is not important in the grand scheme of things. languages come and go, techniques and data structures stay.
+2020-12-06 13:12:42	avih	though different languages lend themselves differently to different techniques or approaches
+2020-12-06 13:19:12	captainchris	I have a problem with hw accel and mpv. I use nouveau driver on void linux. When i watch movie mpv use gpu instead vdpau-copy.with nvidia-gt240 it is possible to use vdpau-copy with nouveau ??
+2020-12-06 13:19:52	JEEB	gpu is a renderer, not related to hwdec
+2020-12-06 13:20:21	JEEB	for hwdec you can --hwdec=vdpau or vdpau-copy ?
+2020-12-06 13:20:35	JEEB	although I would first check if you have vdpau available at all?
+2020-12-06 13:20:57	JEEB	vdpauinfo should tell you if you have a vdpau driver or if the driver provides any functionality
+2020-12-06 13:21:15	captainchris	Hi JEEB  thank's for your help 
+2020-12-06 13:21:32	JEEB	so check that vdpauinfo outputs something successfully and such
+2020-12-06 13:21:41	JEEB	that should tell you if you have a hwdec driver at all
+2020-12-06 13:22:15	JEEB	although apparently nouveau uses vaapi?
+2020-12-06 13:22:22	JEEB	> For Nouveau and the various AMD drivers, support can be added simply by installing the mesa-va-drivers package.
+2020-12-06 13:22:33	captainchris	I don't know vaapi is not used by intel ??
+2020-12-06 13:22:52	JEEB	although yes, apparently it also has a vdpau driver?
+2020-12-06 13:24:36	captainchris	https://pastebin.com/kZvzsFNK
+2020-12-06 13:24:47	-->	dreamon (~dreamon@unaffiliated/dreamon) has joined #mpv
+2020-12-06 13:24:54	captainchris	the problem with vdpau none decoder are supported 
+2020-12-06 13:25:29	JEEB	just check if you have the right driver installed
+2020-12-06 13:25:33	JEEB	but yes, that looks bad :D
+2020-12-06 13:25:38	JEEB	check vainfo?
+2020-12-06 13:25:57	JEEB	but yea, if nothing works then you just can't have hwdec with your nouveau setup. sorry.
+2020-12-06 13:26:51	captainchris	I export DRI_PRIME=1 and VDPAU_DRIVER=nouveau like archwiki said 
+2020-12-06 13:28:07	JEEB	then vdpauinfo should tell you the right thing
+2020-12-06 13:28:13	JEEB	if it tells you nothing is supported then nothing is supported
+2020-12-06 13:29:01	sfan5	did you make sure to configure nouveau as required to enable vdpau support?
+2020-12-06 13:29:24	sfan5	I remember reading that it requires external firmware for decoding
+2020-12-06 13:32:09	captainchris	sfan5: I install xf86-video-nouveau mesa-dri mesa-nouveau-dri mesa-vaapi mesa-vdpau
+2020-12-06 13:32:59	sfan5	https://wiki.archlinux.org/index.php/Hardware_video_acceleration#NVIDIA mentions a firmware package
+2020-12-06 13:34:27	captainchris	sfan I used voidlinux 
+2020-12-06 13:36:48	-->	Szadek_ (Szadek@gateway/vpn/mullvad/szadek) has joined #mpv
+2020-12-06 13:37:00	sfan5	well idk
+2020-12-06 13:37:28	sfan5	it doesn't seem like you installed the necessary firmware package but I don't know where that would be on void linux
+2020-12-06 13:38:15	-->	Flabb (~Flabb@89.169.90.19) has joined #mpv
+2020-12-06 13:39:34	<--	paulk-leonov (~paulk-leo@leonov.paulk.fr) has quit (Ping timeout: 260 seconds)
+2020-12-06 13:40:26	<--	durandal_1707 (~computer@77.237.97.78) has quit (Ping timeout: 260 seconds)
+2020-12-06 13:42:20	<--	fbg13 (~george@188.27.152.28) has quit (Ping timeout: 246 seconds)
+2020-12-06 13:42:29	-->	fbg13 (~george@188.27.152.136) has joined #mpv
+2020-12-06 13:43:57	-->	durandal_1707 (~computer@77.237.97.78) has joined #mpv
+2020-12-06 13:47:49	-->	paulk-leonov (~paulk-leo@vpn-0-22.aquilenet.fr) has joined #mpv
+2020-12-06 13:56:34	-->	Nekit12340073 (~Nekit1234@134.0.102.59) has joined #mpv
+2020-12-06 13:57:53	<--	Szadek_ (Szadek@gateway/vpn/mullvad/szadek) has quit (Ping timeout: 240 seconds)
+2020-12-06 14:02:22	-->	Kruppt (~Kruppt@50.111.3.62) has joined #mpv
+2020-12-06 14:25:36	<--	Jerrynicki (~niklas@p200300f577313300eac0baf106a7f2bb.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2020-12-06 14:26:46	-->	Jerrynicki (~niklas@p4fc06819.dip0.t-ipconnect.de) has joined #mpv
